@@ -2,6 +2,8 @@
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
+<img src="https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png" alt="Logo UPC" width="260"/>
+
 ### Ingeniería de Software
 
 ### Ciclo Académico: 2026-20
@@ -12,7 +14,7 @@
 
 ### NRC: 7760
 
-### Docente: [Completar]
+### Docente: Juan Antonio Flores Moroco
 
 # Informe de Trabajo Final
 
