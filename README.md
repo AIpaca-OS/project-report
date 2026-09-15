@@ -362,6 +362,8 @@ Se compararán respuestas por segmento, separando **características objetivas**
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+[Ver ficha en UXPressia](https://uxpressia.com/w/9076V/p/01Z67?tagId=noTag)
+* **Ficha de User Persona:**
 - Padre/Tutor: <img width="1050" height="1438" alt="Gabriela Morales" src="https://github.com/user-attachments/assets/a1add856-d769-4711-a1ff-2767317ceb7a" />
 
 - Conductor: [Insertar UXPressia]
@@ -389,10 +391,12 @@ Se compararán respuestas por segmento, separando **características objetivas**
 US01 Consultar estado actual; US02 Revisar timeline; US03 Confirmar recojo; US04 Confirmar entrega; US05 Registrar incidencia; US06 Conocer Rumbo desde Landing Page.
 
 ## 3.2. Impact Mapping
-[Insertar artefacto]
+[Ver ficha en UXPressia](https://uxpressia.com/w/9076V/i/NpC13?tagId=noTag&impactView=impact-map)
+<img width="1772" height="1554" alt="Impact mapping - Rumbo (1)" src="https://github.com/user-attachments/assets/0cc90e54-5425-4da1-92de-3e46695564b5" />
+
 
 ## 3.3. Product Backlog
-[Insertar backlog]
+[Insertar backlog] 0000
 
 ---
 
@@ -444,7 +448,7 @@ Landing Page + Angular Frontend + RESTful Web Services con Spring Boot + base de
 - Frontend Web Application: https://github.com/AIpaca-OS/frontend-web-application
 - Web Services: https://github.com/AIpaca-OS/web-services
 
-### 5.1.3. Source Code Style Guide & Conventions
+### 5.1.3. Source Code Style Guide & Conventions 0000
 [Completar conforme avancen las implementaciones]
 
 ### 5.1.4. Software Deployment Configuration
