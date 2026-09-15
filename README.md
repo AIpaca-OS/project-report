@@ -273,27 +273,61 @@ Se realizarán entrevistas semiestructuradas para comprender hábitos, procesos 
 
 ### 2.2.2. Registro de entrevistas
 
-Para cada entrevista se registrará nombre completo, edad, distrito, segmento, captura, URL del video consolidado, timing, duración y resumen descriptivo.
+Para cada entrevista se registrará nombre completo, edad, distrito, segmento, captura, URL del video, timing, duración y resumen descriptivo. Actualmente se cuenta con cinco entrevistas registradas: tres del segmento Padres/Tutores y dos del segmento Conductores de movilidad escolar.
 
 | # | Entrevistado | Edad | Distrito | Segmento | Screenshot | URL / Timing | Duración | Resumen |
 |---:|---|---:|---|---|---|---|---|---|
-| 1 | Gabriela  | 32 | Miraflores | Padre/Tutor | <img width="1105" height="425" alt="entrevista gabriela" src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VWo0MB) / 00:00 | 07:19 | Tutora a cargo de su sobrino de 8 años en primaria; sufre por retrasos mecánicos no avisados y considera crítico que el chofer no manipule el celular en marcha (solo estacionado), valorando el rastreo en vivo y un rango de pago de S/ 15 a S/ 25 al mes condicionado a un periodo de prueba gratis previo. |
-| 2 | Alejandro | 34 | Surco | Padre/Tutor | <img width="1108" height="391" alt="entrevista alejandro" src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" /> | [ ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=f5sdCh)|  05:10| Padre primerizo de un niño de 6 años en Surco; teme las distracciones al volante generadas por llamadas de otros padres y busca eliminar la espera en la calle mediante un mapa en tiempo real, alertas de ingreso al colegio y verificación legal del conductor, considerando viable una suscripción de S/ 15 a S/ 25 al mes. |
-| 3 | Eduardo |  34 |  Magdalena | Padre/Tutor | <img width="1106" height="435" alt="entrevista eduardo" src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" /> | [ ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=HlhpOR) | 03:26 | Padre de un niño de 4 años en inicial residente en Magdalena; experimenta ansiedad por la falta de visibilidad del trayecto ante averías imprevistas y prioriza alertas automáticas de abordaje con cinturón puesto y entrega a la profesora, aceptando un pago mensual de S/ 15 a S/ 25 para evitar la espera en la vereda. |
-| 4 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
-| 5 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
+| 1 | Gabriela  | 32 | Miraflores | Padre/Tutor | <img width="1105" height="425" alt="entrevista gabriela" src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=VWo0MB) / 00:00 | 07:19 | Tutora a cargo de su sobrino de 8 años en primaria; sufre por retrasos mecánicos no avisados y considera crítico que el chofer no manipule el celular en marcha (solo estacionado), valorando el rastreo en vivo y un rango de pago de S/ 15 a S/ 25 al mes condicionado a un periodo de prueba gratis previo. |
+| 2 | Alejandro | 34 | Surco | Padre/Tutor | <img width="1108" height="391" alt="entrevista alejandro" src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=f5sdCh) / 00:00 | 05:10 | Padre primerizo de un niño de 6 años en Surco; teme las distracciones al volante generadas por llamadas de otros padres y busca eliminar la espera en la calle mediante un mapa en tiempo real, alertas de ingreso al colegio y verificación legal del conductor, considerando viable una suscripción de S/ 15 a S/ 25 al mes. |
+| 3 | Eduardo | 34 | Magdalena | Padre/Tutor | <img width="1106" height="435" alt="entrevista eduardo" src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=HlhpOR) / 00:00 | 03:26 | Padre de un niño de 4 años en inicial residente en Magdalena; experimenta ansiedad por la falta de visibilidad del trayecto ante averías imprevistas y prioriza alertas automáticas de abordaje con cinturón puesto y entrega a la profesora, aceptando un pago mensual de S/ 15 a S/ 25 para evitar la espera en la vereda. |
+| 4 | Gabriel Alexandro Sosa Guevara | 20 | [Completar distrito] | Conductor | [Captura proporcionada; pendiente de cargar] | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft) / 00:00 | 09:51 | Conductor de movilidad escolar con 2 años de experiencia. La entrevista siguió el guion de 12 preguntas para el segmento y abordó organización de rutas, comunicación con familias, uso de tecnología, retrasos, confirmaciones, privacidad, historial y barreras de adopción. |
+| 5 | Brayan Solorzano Pineda | 25 | [Completar distrito] | Conductor | [Captura proporcionada; pendiente de cargar] | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m) / 00:00 | 09:05 | Conductor de movilidad escolar con 5 años de experiencia. La entrevista utilizó el mismo guion semiestructurado y cubrió organización de la jornada, canales digitales, incidencias, comunicación repetitiva, seguridad de uso durante la conducción, privacidad y necesidades de una posible solución digital. |
 | 6 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
+
+#### Entrevista — Gabriel Alexandro Sosa Guevara
+
+- **Edad:** 20 años.
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:** 2 años.
+- **Distrito:** [Completar].
+- **Duración:** 09:51.
+- **Timing de inicio:** 00:00.
+- **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
+- **Screenshot:** captura de Google Meet proporcionada; pendiente de carga al repositorio.
+
+**Resumen preliminar:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Durante la entrevista se aplicó el guion semiestructurado del segundo segmento, orientado a conocer su forma de organizar rutas y estudiantes, las herramientas digitales utilizadas, el proceso de recojo y entrega, el manejo de retrasos e incidencias, la comunicación con padres, las restricciones de uso de tecnología durante la conducción, el valor de conservar un historial, las consideraciones de privacidad y las condiciones de adopción de una herramienta digital. Los hallazgos específicos se incorporarán cuando se revise y consolide la transcripción de sus respuestas.
+
+#### Entrevista — Brayan Solorzano Pineda
+
+- **Edad:** 25 años.
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:** 5 años.
+- **Distrito:** [Completar].
+- **Duración:** 09:05.
+- **Timing de inicio:** 00:00.
+- **Video:** [Conductor 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m).
+- **Screenshot:** captura de Google Meet proporcionada; pendiente de carga al repositorio.
+
+**Resumen preliminar:** Brayan cuenta con 5 años de experiencia en el rubro. La sesión siguió las mismas 12 preguntas del diseño de entrevistas para conductores, permitiendo recopilar información comparable sobre operación cotidiana, canales de comunicación, retrasos, confirmaciones de recojo y entrega, acciones seguras durante la ruta, información que conviene conservar, privacidad y barreras de adopción. Los hallazgos concretos se completarán a partir de las respuestas registradas en video.
 
 ### 2.2.3. Análisis de entrevistas
 
 Se compararán respuestas por segmento, separando **características objetivas** (edad, distrito, experiencia, dispositivo, navegador, canales y organización) y **características subjetivas** (motivaciones, frustraciones, necesidades, actitud hacia tecnología, privacidad y barreras). Los porcentajes se completarán solo con datos reales.
+
 #### Datos Demográficos y Conductuales (Aspectos Objetivos)
 
-* **Edades:** El 100% de los entrevistados tiene entre 32 y 38 años.
+* **Edades:** El 100% de los entrevistados del segmento Padres/Tutores tiene entre 32 y 38 años.
 * **Rol de cuidado:** El 66.7% son padres de familia directos y el 33.3% corresponde a un tutor a cargo.
 * **Edades de los menores:** El 100% de los niños tiene entre 4 y 8 años (33.3% inicial de 4 años; 66.7% en 1er y 3er grado de primaria).
 * **Uso de herramientas digitales:** El 100% utiliza de forma diaria WhatsApp y aplicaciones con mapas (Google Maps, Waze).
 * **Frecuencia de contacto:** El 100% se comunica con el chofer entre 2 y 3 veces por semana, principalmente cuando la movilidad excede los 15 minutos de tardanza habitual.
+
+#### Datos preliminares del segmento Conductores
+
+* Se han registrado dos entrevistas: Gabriel Alexandro Sosa Guevara, de 20 años, y Brayan Solorzano Pineda, de 25 años.
+* La edad promedio de los conductores entrevistados hasta el momento es de **22,5 años**.
+* La experiencia declarada en transporte escolar es de **2 y 5 años**, con un promedio de **3,5 años**.
+* Los distritos y los hallazgos específicos de sus respuestas quedan pendientes de completar a partir de la revisión final de las grabaciones.
 
 #### Comportamientos y Rutinas Actuales
 
