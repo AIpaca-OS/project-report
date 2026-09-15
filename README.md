@@ -242,18 +242,19 @@ Se realizarán entrevistas semiestructuradas para comprender hábitos, procesos 
 
 ### Preguntas dirigidas al primer segmento — Padres y tutores
 
-1. ¿Cuál es tu nombre completo, edad, ocupación y distrito de residencia?
-2. ¿Qué relación tienes con el menor que utiliza movilidad escolar, qué edad tiene y con qué frecuencia utiliza este servicio?
-3. ¿Qué dispositivo, navegador y aplicaciones utilizas con mayor frecuencia para comunicarte o consultar información durante el día?
-4. Cuéntame cómo coordinas actualmente el recojo, traslado y regreso del menor con el conductor.
-5. ¿Cómo sabes actualmente que la movilidad está próxima, que el menor fue recogido o que llegó a su destino?
-6. ¿Qué situaciones inesperadas o retrasos has vivido durante un traslado escolar y cómo actuaste cuando ocurrieron?
-7. ¿En qué momentos del recorrido sientes mayor incertidumbre o falta de información?
-8. ¿Con qué frecuencia contactas al conductor durante una ruta, por qué motivos y qué consultas se repiten más?
-9. ¿Qué información o notificaciones te resultarían realmente útiles durante el recorrido y cuáles considerarías innecesarias?
-10. ¿Qué aspectos de privacidad o seguridad te preocuparían al utilizar una plataforma relacionada con la ubicación y el traslado de un menor?
-11. ¿Qué tendría que ofrecer una herramienta digital para que confíes en ella y la utilices con frecuencia, y qué dificultades podrían hacer que dejaras de usarla?
-12. Si pudieras cambiar una sola cosa de la forma en que hoy se coordina la movilidad escolar, ¿qué cambiarías y por qué?
+1. ¿Podría indicarnos su edad, el distrito donde reside y la edad y grado escolar de su(s) hijo(s) que utilizan el transporte escolar?
+2. Actualmente, ¿cómo se organiza con el recojo y retorno de sus hijos? ¿Sale a esperarlos, confía en el horario del conductor o utiliza alguna aplicación?
+3. ¿Qué aplicaciones móviles utiliza con mayor frecuencia en su día a día (por ejemplo, WhatsApp, Waze, redes sociales, aplicaciones del colegio)?
+4. Descríbanos su experiencia actual con el servicio de transporte escolar. ¿Qué es lo que más le preocupa o le genera incertidumbre durante el viaje de sus hijos?
+5. ¿Cuántas veces al día suele comunicarse con el conductor para preguntar por la ubicación o el estado del viaje de sus hijos?
+6. ¿Ha tenido experiencias donde el conductor llegó tarde, no pasó por su hijo o hubo confusión con los horarios? ¿Cómo manejó esa situación?
+7. ¿Qué opina sobre la seguridad vial y el uso del celular por parte del conductor? ¿Le genera preocupación saber que el conductor podría distraerse al atender llamadas o mensajes de los padres?
+8. Si existiera una aplicación que le mostrara en un mapa la ubicación exacta del vehículo en tiempo real y le notificara automáticamente cuando está cerca de su casa, sin que el conductor tenga que llamarle, ¿cómo cambiaría su rutina matutina?
+9. Además de la ubicación, ¿qué otra información le gustaría recibir, como la confirmación de que su hijo abordó el vehículo o llegó al colegio?
+10. ¿Estaría dispuesto a pagar una suscripción mensual por un servicio que le brinde esta tranquilidad y seguridad? ¿Cuánto consideraría justo pagar?
+11. ¿Qué característica de la aplicación sería la más importante para usted para sentirse tranquilo al confiar el transporte de su hijo a un conductor registrado en nuestra plataforma?
+
+
 
 ### Preguntas dirigidas al segundo segmento — Conductores de movilidad escolar
 
@@ -276,9 +277,9 @@ Para cada entrevista se registrará nombre completo, edad, distrito, segmento, c
 
 | # | Entrevistado | Edad | Distrito | Segmento | Screenshot | URL / Timing | Duración | Resumen |
 |---:|---|---:|---|---|---|---|---|---|
-| 1 | [Completar] | [ ] | [ ] | Padre/Tutor | [ ] | [ ] | [ ] | [ ] |
-| 2 | [Completar] | [ ] | [ ] | Padre/Tutor | [ ] | [ ] | [ ] | [ ] |
-| 3 | [Completar] | [ ] | [ ] | Padre/Tutor | [ ] | [ ] | [ ] | [ ] |
+| 1 | Gabriela  | 32 | Miraflores | Padre/Tutor | <img width="1105" height="425" alt="entrevista gabriela" src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VWo0MB) / 00:00 | 07:19 | Tutora a cargo de su sobrino de 8 años en primaria; sufre por retrasos mecánicos no avisados y considera crítico que el chofer no manipule el celular en marcha (solo estacionado), valorando el rastreo en vivo y un rango de pago de S/ 15 a S/ 25 al mes condicionado a un periodo de prueba gratis previo. |
+| 2 | Alejandro | 34 | Surco | Padre/Tutor | <img width="1108" height="391" alt="entrevista alejandro" src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" /> | [ ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=f5sdCh)|  05:10| Padre primerizo de un niño de 6 años en Surco; teme las distracciones al volante generadas por llamadas de otros padres y busca eliminar la espera en la calle mediante un mapa en tiempo real, alertas de ingreso al colegio y verificación legal del conductor, considerando viable una suscripción de S/ 15 a S/ 25 al mes. |
+| 3 | Eduardo |  34 |  Magdalena | Padre/Tutor | <img width="1106" height="435" alt="entrevista eduardo" src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" /> | [ ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=HlhpOR) | 03:26 | Padre de un niño de 4 años en inicial residente en Magdalena; experimenta ansiedad por la falta de visibilidad del trayecto ante averías imprevistas y prioriza alertas automáticas de abordaje con cinturón puesto y entrega a la profesora, aceptando un pago mensual de S/ 15 a S/ 25 para evitar la espera en la vereda. |
 | 4 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
 | 5 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
 | 6 | [Completar] | [ ] | [ ] | Conductor | [ ] | [ ] | [ ] | [ ] |
@@ -286,17 +287,43 @@ Para cada entrevista se registrará nombre completo, edad, distrito, segmento, c
 ### 2.2.3. Análisis de entrevistas
 
 Se compararán respuestas por segmento, separando **características objetivas** (edad, distrito, experiencia, dispositivo, navegador, canales y organización) y **características subjetivas** (motivaciones, frustraciones, necesidades, actitud hacia tecnología, privacidad y barreras). Los porcentajes se completarán solo con datos reales.
+#### Datos Demográficos y Conductuales (Aspectos Objetivos)
+
+* **Edades:** El 100% de los entrevistados tiene entre 32 y 38 años.
+* **Rol de cuidado:** El 66.7% son padres de familia directos y el 33.3% corresponde a un tutor a cargo.
+* **Edades de los menores:** El 100% de los niños tiene entre 4 y 8 años (33.3% inicial de 4 años; 66.7% en 1er y 3er grado de primaria).
+* **Uso de herramientas digitales:** El 100% utiliza de forma diaria WhatsApp y aplicaciones con mapas (Google Maps, Waze).
+* **Frecuencia de contacto:** El 100% se comunica con el chofer entre 2 y 3 veces por semana, principalmente cuando la movilidad excede los 15 minutos de tardanza habitual.
+
+#### Comportamientos y Rutinas Actuales
+
+* **Espera previa:** El 100% sale a la vereda con el menor entre 5 y 10 minutos antes de la hora pactada para no perder el turno de recojo.
+* **Fallas y retrasos previos:** El 100% ha sufrido demoras graves  por desperfectos mecánicos o congestión vehicular, avisadas tarde y resolviendo el traslado con taxis por aplicativo de último momento.
+* **Seguridad y uso del celular:** El 100% reconoce que el chofer no debería utilizar el teléfono mientras conduce niños. El 33.3%  señala que solo acepta el contacto telefónico si el vehículo está 100% estacionado.
+
+#### Expectativas y Necesidades para el Proyecto
+
+* **Seguimiento pasivo del viaje:** El 100% necesita conocer la ubicación del vehículo en tiempo real mediante un mapa interactivo para eliminar la necesidad de llamar o mandar mensajes al conductor.
+* **Aviso de proximidad:** El 100% requiere una notificación automática previa (a 2 cuadras de distancia) para salir de casa al momento exacto y evitar esperas en la calle.
+* **Confirmaciones de estado:** El 100% demanda saber cuándo el menor subió al vehículo y cuándo fue entregado de forma segura en la puerta del colegio. El 33.3%  agrega la confirmación del uso del cinturón de seguridad.
+* **Canal directo de incidencias:** El 100% necesita que el chofer pueda reportar averías mecánicas o tráfico atípico de forma simultánea a todos los padres involucrados en la ruta.
+* **Validación de seguridad:** El 100% prioriza la verificación de antecedentes penales, récord de papeletas, SOAT escolar al día y control de velocidad máxima permitida.
+
+#### Modelo de Acceso y Disposición Económica
+
+* **Rango de pago:** El 100% considera adecuado y justo pagar una mensualidad adicional de entre S/ 15 y S/ 25 por el servicio de monitoreo y seguridad.
+* **Modalidad de prueba:** El 33.3% (Gabriela) requiere un periodo de prueba gratis (*free trial*) para validar la precisión del GPS y la estabilidad del sistema antes de pagar la suscripción mensual.
 
 | Variable | Padres/Tutores | Conductores |
 |---|---:|---:|
-| Canal principal de comunicación | [ ]% | [ ]% |
-| Smartphone como dispositivo principal | [ ]% | [ ]% |
-| Necesidad de conocer/comunicar estado de ruta | [ ]% | [ ]% |
-| Retrasos/cambios frecuentes | [ ]% | [ ]% |
-| Confirmación de recojo/entrega | [ ]% | [ ]% |
-| Interés en notificaciones | [ ]% | [ ]% |
-| Preocupación por privacidad | [ ]% | [ ]% |
-| Barreras de adopción | [ ]% | [ ]% |
+| Canal principal de comunicación | 100 % | 100% |
+| Smartphone como dispositivo principal | 100% | 100% |
+| Necesidad de conocer/comunicar estado de ruta | 100% | 100% |
+| Retrasos/cambios frecuentes | 67% | [ ]% |
+| Confirmación de recojo/entrega | 100% | [ ]% |
+| Interés en notificaciones | 100% | [ ]% |
+| Preocupación por privacidad | 33% | [ ]% |
+| Barreras de adopción | 33% | [ ]% |
 
 ## 2.3. Needfinding
 
