@@ -12,7 +12,7 @@
 
 ### NRC: 7760
 
-### Docente: [Completar]
+### Docente: Juan Antonio Flores Moroco
 
 # Informe de Trabajo Final
 
@@ -24,11 +24,11 @@
 
 | Apellidos y Nombres | Código de Alumno |
 |---|---|
-| Lino Quispe, Leonardo Miguel | U202422298 |
-| Barrientos Quispe, Marcelo | U20221e646 |
+| Díaz Ramírez, Alejandro | U202423084 |
 | Geronimo Puma, Kevin Joel | U202423163 |
+| Lino Quispe, Leonardo Miguel | U202422298 |
 | Meza Soza, Alexandra Yamile | U20241b451 |
-| [Integrante 5] | [Código 5] |
+| Pareja Caceres, Diana | U202422589 |
 
 ### SEPTIEMBRE - 2026
 
@@ -595,13 +595,13 @@ Para Java y Spring Boot se utilizará `PascalCase` para clases, `camelCase` para
 
 ### 5.1.4. Software Deployment Configuration
 
-La primera versión de la Landing Page fue publicada mediante GitHub Pages desde el repositorio:
+Para la primera versión de la Landing Page se seleccionó **GitHub Pages** como plataforma de publicación. El repositorio está preparado para desplegar desde la rama `main` y el directorio `/(root)`.
 
-https://github.com/AIpaca-OS/landing-page
+**Repositorio:** https://github.com/AIpaca-OS/landing-page
 
-El sitio utiliza `index.html` como punto de entrada y las carpetas `css`, `js` e `img` para sus recursos.
+Al momento de registrar la evidencia de AV1, GitHub Pages todavía figuraba como **disabled**, por lo que falta confirmar la activación con la opción **Save** antes de considerar el despliegue finalizado.
 
-**Landing Page:** https://aipaca-os.github.io/landing-page/
+![Configuración de GitHub Pages](assets/chapter5/github-pages-config.webp)
 
 La configuración de despliegue del Frontend Web Application y de los Web Services se realizará en los siguientes Sprints.
 
@@ -609,9 +609,9 @@ La configuración de despliegue del Frontend Web Application y de los Web Servic
 
 ### 5.2.1. Sprint 1
 
-Durante el Sprint 1 se trabajó en la primera versión pública de Rumbo. El incremento principal fue la Landing Page, desarrollada con HTML5, CSS3 y JavaScript y publicada mediante GitHub Pages.
+Durante el Sprint 1 se implementó la primera versión funcional de la Landing Page de Rumbo con HTML5, CSS3 y JavaScript. La página presenta la propuesta de valor, el funcionamiento del servicio, beneficios, funcionalidades para padres/tutores y conductores, un formulario de contacto y llamados a la acción.
 
-La página presenta la propuesta de valor, el funcionamiento del servicio, beneficios, funcionalidades para padres/tutores y conductores, un formulario de contacto y llamados a la acción.
+La implementación ya se encuentra disponible en el repositorio; la publicación mediante GitHub Pages está pendiente de completar su activación.
 
 ### 5.2.1.1. Sprint Planning 1
 
@@ -621,9 +621,9 @@ La página presenta la propuesta de valor, el funcionamiento del servicio, benef
 | **Periodo** | 09/09/2026 - 15/09/2026 |
 | **Prepared By** | Lino Quispe, Leonardo Miguel |
 | **Attendees** | Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja |
-| **Sprint Goal** | Implementar y desplegar la primera versión de la Landing Page de Rumbo y avanzar los artefactos requeridos para AV1. |
+| **Sprint Goal** | Implementar la primera versión de la Landing Page de Rumbo, preparar su despliegue y avanzar los artefactos requeridos para AV1. |
 
-**Sprint Review:** se obtuvo una primera versión funcional y pública de la Landing Page, con navegación responsive y las secciones principales del producto.
+**Sprint Review:** se obtuvo una primera versión funcional de la Landing Page, con navegación responsive y las secciones principales del producto. La activación final de GitHub Pages quedó pendiente.
 
 **Sprint Retrospective:** se identificó como punto de mejora mantener las integraciones mediante `feature → develop → main` para conservar un historial más ordenado.
 
@@ -648,7 +648,7 @@ La página presenta la propuesta de valor, el funcionamiento del servicio, benef
 | T04 | Landing Structure | Implementar estructura HTML y navegación. | Kevin Geronimo / Alejandro Díaz | Done |
 | T05 | Landing Styles | Implementar estilos y diseño responsive. | Kevin Geronimo / Alejandro Díaz | Done |
 | T06 | Landing Interaction | Implementar menú móvil y formulario de contacto. | Kevin Geronimo / Alejandro Díaz | Done |
-| T07 | Landing Deployment | Publicar la primera versión en GitHub Pages. | Leonardo Lino / Kevin Geronimo | Done |
+| T07 | Landing Deployment | Configurar la publicación en GitHub Pages y registrar evidencia. | Leonardo Lino / Kevin Geronimo | In Progress |
 | T08 | Requirements | Completar Requirements Specification. | Equipo | In Progress |
 | T09 | Product Design | Completar los artefactos de Product Design. | Equipo | In Progress |
 | T10 | Chapter V | Documentar implementación, configuración y despliegue. | Leonardo Lino | In Progress |
@@ -664,48 +664,17 @@ Los principales cambios de implementación del Sprint 1 se encuentran en el repo
 
 El commit principal incorpora `index.html`, estilos CSS, JavaScript y recursos visuales de la Landing Page.
 
-> Insertar captura del historial de commits del repositorio `landing-page`.
+![Historial de commits de la Landing Page](assets/chapter5/landing-commits.webp)
 
 ### 5.2.1.5. Execution Evidence for Sprint Review
 
-La primera versión ejecutable incluye las siguientes secciones:
+La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, CTA, formulario de contacto y footer.
 
-#### Hero
+![Ejecución Desktop de la Landing Page](assets/chapter5/landing-desktop-evidence.webp)
 
-Presenta la propuesta de valor de Rumbo y los principales llamados a la acción.
+También se verificó el comportamiento responsive. En vista Mobile, la navegación se reorganiza en un menú desplegable y mantiene acceso a las principales secciones de la página.
 
-> Insertar captura del Hero.
-
-#### Contexto
-
-Presenta datos relacionados con transporte escolar, congestión y conectividad en Lima y Callao.
-
-> Insertar captura de la sección de indicadores.
-
-#### Cómo funciona
-
-Describe los hitos principales del recorrido: recojo confirmado, ruta en curso, incidencias y llegada confirmada.
-
-> Insertar captura de la sección "Cómo funciona".
-
-#### Beneficios y funcionalidades
-
-Muestra los beneficios generales y funcionalidades diferenciadas para padres/tutores y conductores.
-
-> Insertar captura de beneficios y funcionalidades.
-
-#### Contacto y Footer
-
-Incluye un formulario de contacto, navegación del sitio y acceso a términos y condiciones desde el footer.
-
-> Insertar captura de contacto y footer.
-
-#### Responsive Design
-
-La página se adapta a vista Desktop y Mobile.
-
-> Insertar captura Desktop.  
-> Insertar captura Mobile.
+![Ejecución Mobile de la Landing Page](assets/chapter5/landing-mobile-evidence.webp)
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -713,15 +682,11 @@ Durante Sprint 1 no se implementaron Web Services. El repositorio `web-services`
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-La Landing Page fue desplegada mediante GitHub Pages.
+Para el despliegue se seleccionó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
 
-**Repositorio:** https://github.com/AIpaca-OS/landing-page  
-**Landing Page:** https://aipaca-os.github.io/landing-page/
+![Configuración de GitHub Pages](assets/chapter5/github-pages-config.webp)
 
-El proceso consistió en publicar los archivos de la Landing Page, habilitar GitHub Pages y comprobar la carga pública del sitio.
-
-> Insertar captura de `Settings > Pages`.  
-> Insertar captura de la Landing Page desplegada.
+La evidencia muestra que, al momento de la captura, GitHub Pages todavía se encontraba deshabilitado. Por ello, el despliegue queda pendiente de activación mediante **Save** y posterior verificación de la URL pública.
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -731,11 +696,9 @@ En el repositorio de Landing Page se registra como principal evidencia de implem
 
 `826939d379fd977780cb7b2cb6091e02a50ad95f` — **Subir archivos de la landing page**, realizado el 15/09/2026.
 
-La evidencia final del Sprint incluirá las capturas de GitHub Insights correspondientes a commits, contributors, Network Graph y Pull Requests una vez integrados los avances de las ramas de trabajo.
+![Historial de commits del Sprint 1](assets/chapter5/landing-commits.webp)
 
-> Insertar captura de Contributors.  
-> Insertar captura de Network Graph.  
-> Insertar captura de commits y Pull Requests.
+Las capturas de Contributors, Network Graph y Pull Requests se incorporarán cuando se integren los avances de las ramas de trabajo.
 
 ---
 
@@ -743,7 +706,7 @@ La evidencia final del Sprint incluirá las capturas de GitHub Insights correspo
 
 - La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
 - Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
-- Para AV1, la implementación se concentra en la primera versión desplegada del Landing Page, mientras que Angular y Spring Boot quedan definidos como tecnologías para los productos que se desarrollarán progresivamente en los siguientes Sprints.
+- Para AV1, la implementación se concentra en la primera versión de la Landing Page. El despliegue en GitHub Pages se encuentra configurado pero pendiente de activación final, mientras que Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
 
 # Bibliografía
 
