@@ -595,13 +595,22 @@ Para Java y Spring Boot se utilizará `PascalCase` para clases, `camelCase` para
 
 ### 5.1.4. Software Deployment Configuration
 
-Para la primera versión de la Landing Page se seleccionó **GitHub Pages** como plataforma de publicación. El repositorio está preparado para desplegar desde la rama `main` y el directorio `/(root)`.
+Para la primera versión de la Landing Page se utilizó **GitHub Pages** como plataforma de publicación.
 
-**Repositorio:** https://github.com/AIpaca-OS/landing-page
+| Configuración | Valor |
+|---|---|
+| **Repository** | `AIpaca-OS/landing-page` |
+| **Source** | Deploy from a branch |
+| **Branch** | `main` |
+| **Folder** | `/(root)` |
+| **Entry point** | `index.html` |
 
-Al momento de registrar la evidencia de AV1, GitHub Pages todavía figuraba como **disabled**, por lo que falta confirmar la activación con la opción **Save** antes de considerar el despliegue finalizado.
+**Repositorio:** https://github.com/AIpaca-OS/landing-page  
+**URL pública:** https://aipaca-os.github.io/landing-page/
 
-![Configuración de GitHub Pages](assets/chapter5/github-pages-config.webp)
+La configuración quedó activa y GitHub Pages reporta el sitio como publicado.
+
+![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
 
 La configuración de despliegue del Frontend Web Application y de los Web Services se realizará en los siguientes Sprints.
 
@@ -611,7 +620,7 @@ La configuración de despliegue del Frontend Web Application y de los Web Servic
 
 Durante el Sprint 1 se implementó la primera versión funcional de la Landing Page de Rumbo con HTML5, CSS3 y JavaScript. La página presenta la propuesta de valor, el funcionamiento del servicio, beneficios, funcionalidades para padres/tutores y conductores, un formulario de contacto y llamados a la acción.
 
-La implementación ya se encuentra disponible en el repositorio; la publicación mediante GitHub Pages está pendiente de completar su activación.
+La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde su URL pública.
 
 ### 5.2.1.1. Sprint Planning 1
 
@@ -623,7 +632,7 @@ La implementación ya se encuentra disponible en el repositorio; la publicación
 | **Attendees** | Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja |
 | **Sprint Goal** | Implementar la primera versión de la Landing Page de Rumbo, preparar su despliegue y avanzar los artefactos requeridos para AV1. |
 
-**Sprint Review:** se obtuvo una primera versión funcional de la Landing Page, con navegación responsive y las secciones principales del producto. La activación final de GitHub Pages quedó pendiente.
+**Sprint Review:** se obtuvo una primera versión funcional de la Landing Page, con navegación responsive, las secciones principales del producto y despliegue público mediante GitHub Pages.
 
 **Sprint Retrospective:** se identificó como punto de mejora mantener las integraciones mediante `feature → develop → main` para conservar un historial más ordenado.
 
@@ -648,7 +657,7 @@ La implementación ya se encuentra disponible en el repositorio; la publicación
 | T04 | Landing Structure | Implementar estructura HTML y navegación. | Kevin Geronimo / Alejandro Díaz | Done |
 | T05 | Landing Styles | Implementar estilos y diseño responsive. | Kevin Geronimo / Alejandro Díaz | Done |
 | T06 | Landing Interaction | Implementar menú móvil y formulario de contacto. | Kevin Geronimo / Alejandro Díaz | Done |
-| T07 | Landing Deployment | Configurar la publicación en GitHub Pages y registrar evidencia. | Leonardo Lino / Kevin Geronimo | In Progress |
+| T07 | Landing Deployment | Configurar la publicación en GitHub Pages y registrar evidencia. | Leonardo Lino / Kevin Geronimo | Done |
 | T08 | Requirements | Completar Requirements Specification. | Equipo | In Progress |
 | T09 | Product Design | Completar los artefactos de Product Design. | Equipo | In Progress |
 | T10 | Chapter V | Documentar implementación, configuración y despliegue. | Leonardo Lino | In Progress |
@@ -682,11 +691,17 @@ Durante Sprint 1 no se implementaron Web Services. El repositorio `web-services`
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Para el despliegue se seleccionó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
+Para el despliegue se utilizó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
 
-![Configuración de GitHub Pages](assets/chapter5/github-pages-config.webp)
+La configuración quedó activa y el sitio fue publicado correctamente.
 
-La evidencia muestra que, al momento de la captura, GitHub Pages todavía se encontraba deshabilitado. Por ello, el despliegue queda pendiente de activación mediante **Save** y posterior verificación de la URL pública.
+![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
+
+**URL pública:** https://aipaca-os.github.io/landing-page/
+
+La siguiente evidencia muestra la Landing Page cargada desde la URL pública de GitHub Pages.
+
+![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-deployment.webp)
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -706,7 +721,7 @@ Las capturas de Contributors, Network Graph y Pull Requests se incorporarán cua
 
 - La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
 - Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
-- Para AV1, la implementación se concentra en la primera versión de la Landing Page. El despliegue en GitHub Pages se encuentra configurado pero pendiente de activación final, mientras que Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
+- Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
 
 # Bibliografía
 
