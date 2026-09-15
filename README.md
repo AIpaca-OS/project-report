@@ -328,7 +328,8 @@ Se compararán respuestas por segmento, separando **características objetivas**
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
-- Padre/Tutor: [Insertar UXPressia]
+- Padre/Tutor: <img width="1050" height="1438" alt="Gabriela Morales" src="https://github.com/user-attachments/assets/a1add856-d769-4711-a1ff-2767317ceb7a" />
+
 - Conductor: [Insertar UXPressia]
 
 ### 2.3.2. User Task Matrix
