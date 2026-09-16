@@ -529,7 +529,6 @@ US01 Consultar estado actual; US02 Revisar timeline; US03 Confirmar recojo; US04
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
-Para mantener coherencia entre la Landing Page y la aplicación web de Rumbo, definimos una guía de estilos basada en tokens visuales que priorizan la legibilidad, la calma para las familias y el contraste para los conductores.
 
 Las Style Guidelines de Rumbo establecen los lineamientos visuales y de comunicación que permiten mantener una experiencia consistente entre el Landing Page y los demás productos digitales de la solución. Estas directrices comprenden el uso de colores, tipografías, espaciado, componentes visuales y tono de comunicación.
 
@@ -593,7 +592,6 @@ Rumbo emplea las familias tipográficas **Outfit** y **Roboto**, seleccionadas p
 
 **Roboto**, en cambio, se utiliza para los elementos que requieren una lectura rápida y continua, como textos descriptivos, opciones de navegación, Call-to-Action, preguntas frecuentes y contenido del footer. Su utilización permite mantener una alta legibilidad y una apariencia consistente en los distintos componentes de la interfaz.
 
-
 #### Spacing and Shapes
 
 El sistema de espaciado de Rumbo está basado en múltiplos de 4px. Este enfoque garantiza consistencia visual en todos los componentes, facilita la alineación de elementos y reduce la toma de decisiones discrecionales durante el diseño y desarrollo. Todos los márgenes internos (padding) y la separación entre componentes siguen esta escala.
@@ -623,6 +621,7 @@ El tono de comunicación de Rumbo busca generar confianza y tranquilidad. Debido
 Los mensajes principales emplean frases breves orientadas al beneficio del usuario, como “Tranquilidad en cada trayecto” y “Empieza a sentirte más tranquilo hoy”. De esta manera, la propuesta de valor se comunica desde la perspectiva de la tranquilidad y seguridad que obtiene el usuario, en lugar de centrarse únicamente en características técnicas.
 
 ## 4.2. Information Architecture
+
 La arquitectura de información de Rumbo define cómo se organizan, etiquetan y conectan los contenidos y funcionalidades del Landing Page y de la Web Application. Su diseño considera las necesidades diferenciadas de los dos principales segmentos objetivo: padres o tutores, quienes principalmente consultan el estado del trayecto, y conductores de movilidad escolar, quienes registran los eventos que ocurren durante la ruta.
 
 En el Landing Page, la información se organiza con un enfoque informativo y progresivo, permitiendo que un visitante conozca primero la propuesta de valor de Rumbo, posteriormente sus beneficios y funcionamiento, y finalmente pueda acceder a una acción de registro o inicio de sesión.
@@ -724,6 +723,7 @@ De acuerdo con los lineamientos del proyecto, para cada página principal se def
 | **Meta Author** | `AIpaca OS` |
 
 ### 4.2.4. Searching Systems
+
 En la versión actual de Rumbo no se incorpora un sistema de búsqueda general ni en el Landing Page ni en los principales flujos definidos para la Web Application.
 
 En el Landing Page, el volumen de información es reducido y todos los contenidos pueden ser localizados mediante navegación global y enlaces internos.
@@ -745,6 +745,97 @@ Rumbo utiliza diferentes sistemas de navegación de acuerdo con el contexto del 
 
 La navegación busca reducir la cantidad de decisiones necesarias para alcanzar las acciones principales. Esto resulta especialmente importante para el perfil Driver, debido a que sus interacciones deben mantenerse breves durante la operación del servicio.
 
+#### Landing Page Navigation
+
+La navegación global del Landing Page se encuentra disponible mediante el header y permite acceder directamente a las principales secciones:
+
+`Home, Benefits, How it works, Features, Resources`
+
+Asimismo, el header incluye los Call-to-Action relacionados con acceso:
+
+`Sign in, Sign up`
+
+El footer proporciona navegación complementaria hacia información del producto, de la startup y documentos legales.
+
+#### Parent/Tutor Navigation
+
+Después de autenticarse, el Parent/Tutor accede directamente al Dashboard, que funciona como punto central de su experiencia.
+
+El prototipo de Rumbo conecta las vistas principales definidas en los wireflows para validar el recorrido antes de la implementación en Angular. El alcance priorizado para AV1 considera los flujos de consulta del padre/tutor y de registro del conductor.
+
+**Recorrido del padre/tutor:** `Sign In → Dashboard → Trip Detail → Trip Timeline / Notifications`.
+
+**Recorrido del conductor:** `Sign In → Assigned Route → Student List → Register Event / Report Incident → Route Summary`.
+
+Durante la revisión del prototipo se consideran como criterios principales:
+
+- acceso a la información principal en pocos pasos;
+- jerarquía clara del estado actual y ETA;
+- acciones breves para el conductor;
+- confirmación visual después de registrar un evento;
+- consistencia con la identidad visual de Rumbo;
+- comportamiento responsive para escritorio y dispositivos móviles.
+
+La propuesta visual toma como referencia los mock-ups elaborados en Figma para la Landing Page y extiende el mismo sistema de colores, tipografía, tarjetas y botones hacia la aplicación web.
+
+`Sign In → Dashboard`
+
+Desde el Dashboard puede acceder a:
+
+- `Trip Detail`
+- `Notifications`
+
+A partir de Trip Detail puede profundizar hacia:
+
+- `Trip Timeline`
+
+La estructura prioriza la consulta del estado actual antes de presentar información histórica o complementaria.
+
+#### Driver Navigation
+
+Después de iniciar sesión, el Driver accede directamente a la ruta que tiene asignada:
+
+`Sign In → Assigned Route`
+
+Assigned Route funciona como el principal punto de navegación operativa. Desde esta vista el conductor puede:
+
+- consultar `Student List`;
+- registrar `Pickup / Drop-off`;
+- registrar `Delay`;
+- registrar `Incident`.
+
+Después de completar cualquiera de estas acciones, la navegación retorna a Assigned Route para evitar recorridos innecesarios.
+
+<br>
+
+```mermaid
+flowchart TD
+    A["Rumbo"] --> B["Landing Page"]
+    A --> C["Web Application"]
+
+    B --> B1["Benefits"]
+    B --> B2["How it works"]
+    B --> B3["Features"]
+    B --> B4["Resources"]
+    B4 --> B41["FAQ"]
+    B --> B5["Sign In"]
+    B --> B6["Sign Up"]
+
+    C --> P["Parent / Tutor"]
+    C --> D["Driver"]
+
+    P --> P1["Dashboard"]
+    P1 --> P2["Trip Detail"]
+    P2 --> P3["Trip Timeline"]
+    P1 --> P4["Notifications"]
+
+    D --> D1["Assigned Route"]
+    D1 --> D2["Student List"]
+    D2 --> D3["Pickup / Drop-off"]
+    D1 --> D4["Report Delay"]
+    D1 --> D5["Report Incident"]
+```
+
 ### 4.3.1. Landing Page Wireframe
 
 El wireframe de la Landing Page organiza el contenido de forma secuencial para explicar la propuesta de Rumbo antes de llevar al usuario a una acción. La estructura toma como base el diseño trabajado en Figma y mantiene la misma jerarquía para Desktop y Mobile.
@@ -762,7 +853,9 @@ flowchart TD
     I --> J[Footer]
 ```
 
-En Desktop se utiliza una distribución amplia, con bloques en dos y tres columnas cuando el contenido lo permite. En Mobile los componentes se apilan en una sola columna, la navegación se transforma en menú desplegable y los botones principales ocupan mayor ancho para facilitar la interacción táctil.
+<div align="center">
+  <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Web Wireframe" width="750">
+</div>
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -780,11 +873,12 @@ El mock-up de alta fidelidad mantiene una estética limpia, con fondos claros, t
 | CTA y footer | Cierre de conversión y accesos informativos. |
 
 El mock-up conserva el sistema visual de Rumbo definido en 4.1: tonos verdes y oscuros para confianza y seguridad, superficies claras para lectura y componentes simples que pueden reutilizarse posteriormente en la Web Application.
-#### Landing Page Navigation
 
-La navegación global del Landing Page se encuentra disponible mediante el header y permite acceder directamente a las principales secciones:
+<div align="center">
+  <img src="./assets/chapter04/landingMockupDsk.png" alt="Landing Page Web Mock-Up" width="750">
+</div>
 
-`Home, Benefits, How it works, Features, Resources`
+## 4.4. Web Applications UX/UI Design
 
 El diseño de la Web Application considera dos experiencias principales: **padres/tutores** y **conductores**. En ambos casos se prioriza la información del trayecto, pero las acciones disponibles cambian según el rol. Los padres consultan; los conductores registran eventos de la ruta con la menor cantidad posible de pasos.
 
@@ -893,35 +987,11 @@ flowchart TD
 ```
 
 Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del conductor. Las operaciones críticas se realizan desde la ruta activa y generan un evento que luego puede ser consultado por los padres.
-Asimismo, el header incluye los Call-to-Action relacionados con acceso:
 
-`Sign in, Sign up`
+## 4.5. Web Applications Prototyping
+[Figma Prototype]
 
-El footer proporciona navegación complementaria hacia información del producto, de la startup y documentos legales.
-
-#### Parent/Tutor Navigation
-
-Después de autenticarse, el Parent/Tutor accede directamente al Dashboard, que funciona como punto central de su experiencia.
-
-El prototipo de Rumbo conecta las vistas principales definidas en los wireflows para validar el recorrido antes de la implementación en Angular. El alcance priorizado para AV1 considera los flujos de consulta del padre/tutor y de registro del conductor.
-
-**Recorrido del padre/tutor:** `Sign In → Dashboard → Trip Detail → Trip Timeline / Notifications`.
-
-**Recorrido del conductor:** `Sign In → Assigned Route → Student List → Register Event / Report Incident → Route Summary`.
-
-Durante la revisión del prototipo se consideran como criterios principales:
-
-- acceso a la información principal en pocos pasos;
-- jerarquía clara del estado actual y ETA;
-- acciones breves para el conductor;
-- confirmación visual después de registrar un evento;
-- consistencia con la identidad visual de Rumbo;
-- comportamiento responsive para escritorio y dispositivos móviles.
-
-La propuesta visual toma como referencia los mock-ups elaborados en Figma para la Landing Page y extiende el mismo sistema de colores, tipografía, tarjetas y botones hacia la aplicación web.
-`Sign In → Dashboard`
-
-Desde el Dashboard puede acceder a:
+## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
 
@@ -957,112 +1027,44 @@ flowchart LR
 Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArrivalConfirmed` y `DropOffConfirmed` alimentan el **Trip Timeline**. Las notificaciones se generan como consecuencia de eventos relevantes, mientras que `TripCompleted` marca el cierre del recorrido y permite conservar un historial consultable.
 
 ### 4.6.2. Software Architecture Context Diagram
+
 Este diagrama muestra la visión general del sistema Rumbo, posicionando la plataforma en el centro y detallando sus interacciones con los usuarios (padres y conductores) y dependencias externas (Auth0, Google Maps, FCM y SendGrid).
+
 <img width="775" height="501" alt="Diagrama-Contextos" src="https://github.com/user-attachments/assets/1fa0067c-5228-433b-9755-bacebecd81f8" />
 
-
 ### 4.6.3. Software Architecture Container Diagrams
+
 Este diagrama expone la arquitectura física y de despliegue. Divide el sistema en contenedores ejecutables: la Landing Page, la aplicación cliente (SPA en Angular), la lógica de negocio (API en Spring Boot)
+
 <img width="1069" height="1171" alt="Contenedores-Diagrama" src="https://github.com/user-attachments/assets/022fc782-e64d-481b-a732-9f64e2dcd7a4" />
 
 
 ### 4.6.4. Software Architecture Components Diagrams
+
 Este diagrama profundiza en el contenedor lógico del backend (API Application). Muestra la estructura interna basada en el patrón MVC utilizado en Spring Boot, detallando los controladores (REST y WebSockets), los servicios que encapsulan las reglas de negocio, la capa de acceso a datos mediante repositorios y la barrera de seguridad (Security Filter).
+
 <img width="697" height="812" alt="component-diagram-1" src="https://github.com/user-attachments/assets/1d7ca398-5c9f-46e8-b3b9-39fe16430330" />
 
 Este diagrama hace foco en la arquitectura interna de la Single Page Application (SPA) desarrollada en Angular. Detalla la separación de responsabilidades entre el enrutador protegido (AuthGuard), los componentes visuales de las vistas (mapas y paneles de gestión) y los servicios encargados de la conexión persistente (WebSockets) y el consumo de la API.
+
 <img width="711" height="799" alt="component-diagram-2" src="https://github.com/user-attachments/assets/04eeb9b7-6dc2-4f13-9553-063b4cec2099" />
 
-
-- `Trip Detail`
-- `Notifications`
-
-A partir de Trip Detail puede profundizar hacia:
-
-- `Trip Timeline`
-
-La estructura prioriza la consulta del estado actual antes de presentar información histórica o complementaria.
-
-#### Driver Navigation
+## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
+
 En esta sección se presenta el Diagrama de Clases UML del sistema, estructurado bajo el enfoque Domain-Driven Design (DDD). Su propósito es detallar la estructura interna de los Bounded Contexts identificados en el proyecto (tales como Seguimiento de Viajes y Gestión de Identidad).
 
 El modelo especifica las clases, interfaces y enumeraciones con sus respectivos atributos, métodos y niveles de acceso. Asimismo, define claramente las relaciones, direcciones y multiplicidades entre las entidades, garantizando la trazabilidad del diseño y delimitando las responsabilidades de cada contexto.
 <img width="1124" height="943" alt="Diagrama UML" src="https://github.com/user-attachments/assets/5d4e0ffb-ef0e-4b50-842a-e4432970f5fe" />
 
 ## 4.8. Database Design
+
 En esta sección se presenta el diseño de la base de datos relacional utilizada en el sistema. El diagrama entidad-relación (ERD) ilustra las tablas principales, sus atributos y las relaciones entre ellas. Cada tabla representa una entidad del dominio, con sus respectivas columnas que definen los datos almacenados. Las relaciones entre tablas se indican mediante líneas que muestran cómo las entidades están conectadas, incluyendo las cardinalidades (uno a uno, uno a muchos, muchos a muchos) para clarificar la naturaleza de las asociaciones. Este diseño asegura la integridad de los datos y optimiza el rendimiento de las consultas dentro del sistema.
+
 ### 4.8.1. Database Diagrams
+
 <img width="943" height="782" alt="database-erd" src="https://github.com/user-attachments/assets/9d547419-a688-4d81-bb47-b310a7de42ec" />
-Después de iniciar sesión, el Driver accede directamente a la ruta que tiene asignada:
-
-`Sign In → Assigned Route`
-
-Assigned Route funciona como el principal punto de navegación operativa. Desde esta vista el conductor puede:
-
-- consultar `Student List`;
-- registrar `Pickup / Drop-off`;
-- registrar `Delay`;
-- registrar `Incident`.
-
-Después de completar cualquiera de estas acciones, la navegación retorna a Assigned Route para evitar recorridos innecesarios.
-
-<br>
-
-```mermaid
-flowchart TD
-    A["Rumbo"] --> B["Landing Page"]
-    A --> C["Web Application"]
-
-    B --> B1["Benefits"]
-    B --> B2["How it works"]
-    B --> B3["Features"]
-    B --> B4["Resources"]
-    B4 --> B41["FAQ"]
-    B --> B5["Sign In"]
-    B --> B6["Sign Up"]
-
-    C --> P["Parent / Tutor"]
-    C --> D["Driver"]
-
-    P --> P1["Dashboard"]
-    P1 --> P2["Trip Detail"]
-    P2 --> P3["Trip Timeline"]
-    P1 --> P4["Notifications"]
-
-    D --> D1["Assigned Route"]
-    D1 --> D2["Student List"]
-    D2 --> D3["Pickup / Drop-off"]
-    D1 --> D4["Report Delay"]
-    D1 --> D5["Report Incident"]
-```
-### 4.3.1. Landing Page Wireframe
-
-<div align="center">
-  <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Web Wireframe" width="750">
-</div>
-
-### 4.3.2. Landing Page Mock-up
-
-<div align="center">
-  <img src="./assets/chapter04/landingMockupDsk.png" alt="Landing Page Web Mock-Up" width="750">
-</div>
-
-## 4.4. Web Applications UX/UI Design
-Angular + TypeScript + Angular Material. Vistas: login, estado de ruta, timeline, incidencias, ruta del conductor y confirmaciones.
-
-## 4.5. Web Applications Prototyping
-[Figma Prototype]
-
-## 4.6. Domain-Driven Software Architecture
-Landing Page + Angular Frontend + RESTful Web Services con Spring Boot + base de datos + servicio externo.
-
-## 4.7. Software Object-Oriented Design
-`Student`, `Parent`, `Driver`, `Vehicle`, `Route`, `Stop`, `Trip`, `Pickup`, `DropOff`, `RouteEvent`, `Incident`, `Notification`.
-
-## 4.8. Database Design
-`users`, `students`, `parents`, `drivers`, `vehicles`, `routes`, `route_stops`, `trips`, `trip_events`, `incidents`, `notifications`.
 
 ---
 
