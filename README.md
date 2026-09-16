@@ -687,7 +687,7 @@ flowchart LR
 Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArrivalConfirmed` y `DropOffConfirmed` alimentan el **Trip Timeline**. Las notificaciones se generan como consecuencia de eventos relevantes, mientras que `TripCompleted` marca el cierre del recorrido y permite conservar un historial consultable.
 
 ### 4.6.2. Software Architecture Context Diagram
-[Insertar C4 Context Diagram.]
+<img width="1387" height="720" alt="diagrama de contexto - Rumbo" src="https://github.com/user-attachments/assets/73805ee4-7580-4f54-bce5-2e80852469d0" />
 
 ### 4.6.3. Software Architecture Container Diagrams
 [Insertar C4 Container Diagram. Considerar Frontend Web Application Angular y RESTful Web Services Spring Boot.]
