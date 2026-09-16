@@ -690,7 +690,8 @@ Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArriv
 <img width="1387" height="720" alt="diagrama de contexto - Rumbo" src="https://github.com/user-attachments/assets/73805ee4-7580-4f54-bce5-2e80852469d0" />
 
 ### 4.6.3. Software Architecture Container Diagrams
-[Insertar C4 Container Diagram. Considerar Frontend Web Application Angular y RESTful Web Services Spring Boot.]
+<img width="987" height="1012" alt="diagrama de contenedores Rumbo" src="https://github.com/user-attachments/assets/c3fc2cc7-1814-4ab4-868b-be84016f4061" />
+
 
 ### 4.6.4. Software Architecture Components Diagrams
 [Insertar diagramas de componentes por bounded context cuando hayan sido validados.]
