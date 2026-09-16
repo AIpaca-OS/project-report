@@ -1224,7 +1224,6 @@ La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde 
 **Sprint Retrospective:** se identificó como punto de mejora mantener las integraciones mediante `feature → develop → main` para conservar un historial más ordenado.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
-[Completar con participación real]
 
 | Aspecto | Líder | Colaboradores |
 |---|---|---|
@@ -1250,8 +1249,7 @@ La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde 
 | T09 | Product Design | Completar los artefactos de Product Design. | Equipo | In Progress |
 | T10 | Chapter V | Documentar implementación, configuración y despliegue. | Leonardo Lino | In Progress |
 
-#### 5.2.1.5. Execution Evidence for Sprint Review
-[Insertar capturas y video]
+#### 5.2.1.4. Development Evidence for Sprint Review
 
 Los principales cambios de implementación del Sprint 1 se encuentran en el repositorio `landing-page`.
 
@@ -1263,10 +1261,9 @@ Los principales cambios de implementación del Sprint 1 se encuentran en el repo
 El commit principal incorpora `index.html`, estilos CSS, JavaScript y recursos visuales de la Landing Page.
 
 ![Historial de commits de la Landing Page](assets/chapter5/landing-commits.webp)
-#### 5.2.1.6. Services Documentation Evidence for Sprint Review
-La documentación de endpoints se incorporará cuando los Web Services formen parte del incremento implementado.
 
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
 **Landing Page:** https://github.com/AIpaca-OS/landing-page
 
 La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, CTA, formulario de contacto y footer.
@@ -1276,19 +1273,12 @@ La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales 
 También se verificó el comportamiento responsive. En vista Mobile, la navegación se reorganiza en un menú desplegable y mantiene acceso a las principales secciones de la página.
 
 ![Ejecución Mobile de la Landing Page](assets/chapter5/landing-mobile-evidence.webp)
-#### 5.2.1.8. Team Collaboration Insights during Sprint
-[Insertar evidencia real]
 
----
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante Sprint 1 no se implementaron Web Services. El repositorio `web-services` se encuentra preparado para el desarrollo posterior con Java, Spring Boot y Spring Data JPA. La documentación OpenAPI/Swagger se incorporará cuando existan endpoints implementados.
-# Conclusiones
 
-1. Rumbo se dirige a un mercado formal de movilidad escolar en Lima y Callao.
-2. La congestión sustenta la necesidad de gestionar retrasos y comunicar variaciones.
-3. La conectividad móvil respalda una experiencia web responsive.
-4. Las entrevistas permitirán priorizar funciones basadas en evidencia.
-5. AV1 se concentra en la primera versión implementada y desplegada del Landing Page.
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 Para el despliegue se utilizó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
 
@@ -1302,7 +1292,7 @@ La siguiente evidencia muestra la Landing Page cargada desde la URL pública de 
 
 ![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-deployment.webp)
 
-# Bibliografía
+#### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Durante Sprint 1 el equipo distribuyó el trabajo entre documentación, investigación, UX/UI e implementación de la Landing Page.
 
@@ -1313,15 +1303,23 @@ En el repositorio de Landing Page se registra como principal evidencia de implem
 ![Historial de commits del Sprint 1](assets/chapter5/landing-commits.webp)
 
 Las capturas de Contributors, Network Graph y Pull Requests se incorporarán cuando se integren los avances de las ramas de trabajo.
+
+# Conclusiones
+
+- La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
+
+- Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
+
+- Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
+
+# Bibliografía
+
 [1] Autoridad de Transporte Urbano para Lima y Callao. (2026, 10 de enero). *Vacaciones útiles seguras: ATU exhorta a padres de familia a usar movilidades escolares autorizadas*.
 
 [2] TomTom. (2026). *TomTom Traffic Index 2025: Lima, Peru*.
 
 [3] Observatorio Nacional de Seguridad Vial. (2026). *Estadísticas de siniestralidad vial 2025*.
 
-- La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
-- Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
-- Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
 [4] Instituto Nacional de Estadística e Informática. (2026, 26 de marzo). *El 98,4% de los hogares de Lima Metropolitana contó con telefonía móvil durante el cuarto trimestre de 2025*.
 
 [5] Elitech. (2026). *School Bus Tracker* (Versión 2.4) [Software]. https://schoolbustrackerapp.com/
