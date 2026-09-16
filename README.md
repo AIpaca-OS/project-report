@@ -453,7 +453,24 @@ La experiencia web se diseñará con enfoque responsive, accesible y consistente
 ## 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems
-[Completar organización jerárquica y secuencial del contenido.]
+En Rumbo organizamos la información pensando en dos necesidades: que los padres sigan el viaje de sus hijos sin confusión y que los conductores registren las paradas de forma rápida.
+
+1. Jerárquica: En la pantalla del padre, lo primero que se ve arriba es el estado del viaje y el mapa con el carro en movimiento. Más abajo aparecen los datos secundarios como la placa, el nombre del chofer y el tiempo estimado de llegada. En la landing page se aplica igual: primero el mensaje principal, luego las ventajas del servicio y al final el formulario de contacto.
+
+2. Secuencial: El conductor sigue un orden paso a paso durante el turno: marcar inicio de ruta, confirmar el recojo de cada niño en su parada, reportar retrasos si hay tráfico y marcar la llegada al colegio. El registro de nuevos usuarios también sigue pasos ordenados de inicio a fin.
+
+3. Matricial: Se usa en la lista de alumnos del chofer, donde en una sola tabla se cruza el nombre de cada niño con su orden de parada, dirección, estado de asistencia y teléfono de emergencia.
+
+ Esquemas de categorización
+
+1. Por audiencia: Los padres solo ven la ruta en vivo, las alertas de llegada y sus pagos. Los conductores ven la lista de paradas del día y los botones para avisar demoras. El administrador ve la lista general de usuarios y revisiones del sistema.
+
+2. Cronológica: Se usa en la línea de tiempo del viaje para mostrar cada suceso por hora exacta, como la salida del vehículo, la subida del escolar y la llegada a la escuela. También ordena el historial de viajes pasados por fecha.
+
+3. Por tópicos: Las opciones se agrupan por temas dentro del menú: Datos del estudiante, Dirección y paradas, Notificaciones y Facturación.
+
+4. Alfabética: La lista general de estudiantes se ordena por apellido de la A a la Z para buscar rápido a un alumno en caso de emergencia.
+
 
 ### 4.2.2. Labeling Systems
 [Completar etiquetas y términos visibles para los usuarios.]
