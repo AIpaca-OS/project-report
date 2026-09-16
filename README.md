@@ -401,11 +401,11 @@ Se compararán respuestas por segmento, separando **características objetivas**
 | Canal principal de comunicación | 100 % | 100% |
 | Smartphone como dispositivo principal | 100% | 100% |
 | Necesidad de conocer/comunicar estado de ruta | 100% | 100% |
-| Retrasos/cambios frecuentes | 67% | [ ]% |
-| Confirmación de recojo/entrega | 100% | [ ]% |
-| Interés en notificaciones | 100% | [ ]% |
-| Preocupación por privacidad | 33% | [ ]% |
-| Barreras de adopción | 33% | [ ]% |
+| Retrasos/cambios frecuentes | 67% | 100% |
+| Confirmación de recojo/entrega | 100% | 100% |
+| Interés en notificaciones | 100% | 100% |
+| Preocupación por privacidad | 33% | 100% |
+| Barreras de adopción | 33% | 100% |
 
 ## 2.3. Needfinding
 
@@ -414,7 +414,9 @@ Se compararán respuestas por segmento, separando **características objetivas**
 * **Ficha de User Persona:**
 - Padre/Tutor: <img width="1050" height="1438" alt="Gabriela Morales" src="https://github.com/user-attachments/assets/a1add856-d769-4711-a1ff-2767317ceb7a" />
 
-- Conductor: [Insertar UXPressia]
+- Conductor: [Ver UXPressia](https://uxpressia.com/w/9076V/p/pWKoA?tagId=noTag)
+  <img width="1050" height="1228" alt="Carlos Rivas" src="https://github.com/user-attachments/assets/84b05149-9953-4fa3-9ebe-e7d30a1ed526" />
+
 
 ### 2.3.2. User Task Matrix
 En esta sección se presenta la matriz de tareas de usuario (**User Task Matrix**), la cual analiza las actividades esenciales que realizan los dos segmentos objetivos del proyecto (**Padre/Tutor** representado por el arquetipo de Gabriela Morales, y **Conductor de Movilidad Escolar**) para cumplir con sus objetivos cotidianos de traslado escolar. 
