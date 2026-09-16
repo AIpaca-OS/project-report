@@ -1073,57 +1073,215 @@ En esta sección se presenta el diseño de la base de datos relacional utilizada
 ## 5.1. Software Configuration Management
 
 ### 5.1.1. Software Development Environment Configuration
-- Landing: HTML5, CSS3, JavaScript.
-- Frontend: Angular, TypeScript, Angular Material.
-- Web Services: Java, Spring Boot, Spring Data JPA.
-- API Docs: OpenAPI/Swagger.
-- Database: MySQL/PostgreSQL.
-- GitHub + GitFlow + Conventional Commits + Semantic Versioning.
-- i18n: `en_US` y `es_419`.
-- a11y: HTML semántico y ARIA.
+
+Para el desarrollo de Rumbo se definieron las siguientes herramientas:
+
+| Herramienta | Uso en el proyecto |
+|---|---|
+| GitHub | Repositorios, control de versiones y colaboración. |
+| Git | Control de versiones local. |
+| Visual Studio Code / WebStorm | Desarrollo de la Landing Page y Frontend Web Application. |
+| IntelliJ IDEA | Desarrollo de Web Services con Java. |
+| Figma | Wireframes, Mock-ups y prototipos. |
+| HTML5, CSS3 y JavaScript | Implementación de la Landing Page. |
+| Angular, TypeScript y Angular Material | Frontend Web Application. |
+| Java, Spring Boot y Spring Data JPA | RESTful Web Services. |
+| OpenAPI / Swagger | Documentación de Web Services. |
+| GitHub Pages | Despliegue de la Landing Page. |
+| Markdown | Documentación del Project Report. |
+
+Para AV1 la implementación se concentra en la primera versión de la Landing Page. El Frontend Web Application y los Web Services se desarrollarán en los siguientes Sprints.
 
 ### 5.1.2. Source Code Management
+
 - Project Report: https://github.com/AIpaca-OS/project-report
 - Landing Page: https://github.com/AIpaca-OS/landing-page
 - Frontend Web Application: https://github.com/AIpaca-OS/frontend-web-application
 - Web Services: https://github.com/AIpaca-OS/web-services
 
-### 5.1.3. Source Code Style Guide & Conventions 0000
-[Completar conforme avancen las implementaciones]
+GitHub es la plataforma utilizada para administrar el código y la documentación de Rumbo.
+
+#### Repositorios
+
+- **Project Report:** https://github.com/AIpaca-OS/project-report
+- **Landing Page:** https://github.com/AIpaca-OS/landing-page
+- **Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
+- **Web Services:** https://github.com/AIpaca-OS/web-services
+
+#### GitFlow
+
+El proyecto utiliza el siguiente flujo de ramas:
+
+- `main`: versión estable.
+- `develop`: integración del trabajo del equipo.
+- `feature/*`: trabajo de una funcionalidad o sección específica.
+- `release/*`: preparación de una versión.
+- `hotfix/*`: correcciones urgentes.
+
+En el Project Report se emplean ramas como:
+
+- `feature/chapter-1-introduction`
+- `feature/chapter-2-requirements-elicitation-and-analysis`
+- `feature/chapter-3-requirements-specification`
+- `feature/chapter-4-product-design`
+- `feature/chapter-5-product-implementation-validation-and-deployment`
+
+La Landing Page dispone de `main`, `develop` y `feature/landing-page-v1`. La primera carga funcional quedó registrada en `main`; los siguientes cambios se integrarán mediante el flujo `feature → develop → main`.
+
+#### Convenciones
+
+Para los commits se utilizará Conventional Commits:
+
+- `feat`: nueva funcionalidad.
+- `fix`: corrección.
+- `docs`: documentación.
+- `style`: cambios de formato.
+- `refactor`: reorganización de código.
+- `test`: pruebas.
+- `chore`: mantenimiento.
+
+Las versiones seguirán Semantic Versioning con el formato `MAJOR.MINOR.PATCH`.
+
+### 5.1.3. Source Code Style Guide & Conventions
+
+#### HTML
+
+La Landing Page utiliza HTML5 semántico, navegación mediante identificadores, atributos `alt` en imágenes y atributos ARIA cuando corresponde. Los nombres de clases se mantienen en `kebab-case`.
+
+Ejemplo:
+
+```html
+<section class="section" id="beneficios">
+```
+
+#### CSS
+
+Los estilos se organizan por secciones y utilizan variables CSS para colores, tipografías, radios y sombras. El diseño responsive se implementa con Grid, Flexbox y media queries.
+
+```css
+:root {
+  --azul: #12403D;
+  --verde: #3EA98A;
+  --arena: #F3D9A4;
+}
+```
+
+También se considera `prefers-reduced-motion` para mejorar la accesibilidad.
+
+#### JavaScript
+
+JavaScript se utiliza para el menú móvil y la validación básica del formulario de contacto. El código utiliza `strict mode`, nombres descriptivos y `camelCase` para variables y funciones.
+
+#### Frontend Web Application
+
+Para Angular y TypeScript se seguirán las convenciones oficiales del framework, utilizando `PascalCase` para clases y componentes y `camelCase` para variables y funciones.
+
+#### Web Services
+
+Para Java y Spring Boot se utilizará `PascalCase` para clases, `camelCase` para atributos y métodos y una organización por responsabilidades y bounded contexts. Los endpoints serán documentados con OpenAPI/Swagger.
 
 ### 5.1.4. Software Deployment Configuration
-[Completar]
+
+Para la primera versión de la Landing Page se utilizó **GitHub Pages** como plataforma de publicación.
+
+| Configuración | Valor |
+|---|---|
+| **Repository** | `AIpaca-OS/landing-page` |
+| **Source** | Deploy from a branch |
+| **Branch** | `main` |
+| **Folder** | `/(root)` |
+| **Entry point** | `index.html` |
+
+**Repositorio:** https://github.com/AIpaca-OS/landing-page  
+**URL pública:** https://aipaca-os.github.io/landing-page/
+
+La configuración quedó activa y GitHub Pages reporta el sitio como publicado.
+
+![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
+
+La configuración de despliegue del Frontend Web Application y de los Web Services se realizará en los siguientes Sprints.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
 
-#### 5.2.1.1. Sprint Planning 1
-**Sprint Goal:** diseñar, implementar y desplegar la primera versión responsive del Landing Page de Rumbo.
+Durante el Sprint 1 se implementó la primera versión funcional de la Landing Page de Rumbo con HTML5, CSS3 y JavaScript. La página presenta la propuesta de valor, el funcionamiento del servicio, beneficios, funcionalidades para padres/tutores y conductores, un formulario de contacto y llamados a la acción.
+
+La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde su URL pública.
+
+### 5.2.1.1. Sprint Planning 1
+
+| Campo | Detalle |
+|---|---|
+| **Sprint** | Sprint 1 |
+| **Periodo** | 09/09/2026 - 15/09/2026 |
+| **Prepared By** | Lino Quispe, Leonardo Miguel |
+| **Attendees** | Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja |
+| **Sprint Goal** | Implementar la primera versión de la Landing Page de Rumbo, preparar su despliegue y avanzar los artefactos requeridos para AV1. |
+
+**Sprint Review:** se obtuvo una primera versión funcional de la Landing Page, con navegación responsive, las secciones principales del producto y despliegue público mediante GitHub Pages.
+
+**Sprint Retrospective:** se identificó como punto de mejora mantener las integraciones mediante `feature → develop → main` para conservar un historial más ordenado.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 [Completar con participación real]
 
-#### 5.2.1.3. Sprint Backlog 1
-[Insertar board]
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Project Report y Capítulo V | Leonardo Lino | Equipo |
+| Investigación y entrevistas | Alexandra Meza | Equipo |
+| Landing Page UX/UI | Alejandro Díaz | Kevin Geronimo |
+| Landing Page Development | Kevin Geronimo | Alejandro Díaz |
+| Requirements & Product Design | Diana Pareja | Equipo |
+| Deployment & Evidence | Leonardo Lino | Kevin Geronimo |
 
-#### 5.2.1.4. Development Evidence for Sprint Review
-[Insertar rama, commit ID, mensaje y fecha]
+### 5.2.1.3. Sprint Backlog 1
+
+| ID | Tarea | Descripción | Responsable | Estado |
+|---|---|---|---|---|
+| T01 | Research | Sustentar la problemática y segmentos de Rumbo. | Equipo | In Progress |
+| T02 | Interviews | Realizar entrevistas y registrar evidencias. | Equipo | In Progress |
+| T03 | Landing UX/UI | Elaborar el diseño de la Landing Page. | Alejandro Díaz | In Progress |
+| T04 | Landing Structure | Implementar estructura HTML y navegación. | Kevin Geronimo / Alejandro Díaz | Done |
+| T05 | Landing Styles | Implementar estilos y diseño responsive. | Kevin Geronimo / Alejandro Díaz | Done |
+| T06 | Landing Interaction | Implementar menú móvil y formulario de contacto. | Kevin Geronimo / Alejandro Díaz | Done |
+| T07 | Landing Deployment | Configurar la publicación en GitHub Pages y registrar evidencia. | Leonardo Lino / Kevin Geronimo | Done |
+| T08 | Requirements | Completar Requirements Specification. | Equipo | In Progress |
+| T09 | Product Design | Completar los artefactos de Product Design. | Equipo | In Progress |
+| T10 | Chapter V | Documentar implementación, configuración y despliegue. | Leonardo Lino | In Progress |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 [Insertar capturas y video]
 
+Los principales cambios de implementación del Sprint 1 se encuentran en el repositorio `landing-page`.
+
+| Repository | Branch | Commit ID | Commit Message | Fecha |
+|---|---|---|---|---|
+| landing-page | main | `826939d379fd977780cb7b2cb6091e02a50ad95f` | Subir archivos de la landing page | 15/09/2026 |
+| landing-page | main / develop | `6554294b01f0988b5bada89602303ee620594af8` | docs: initialize Rumbo Open Source landing page | 09/09/2026 |
+
+El commit principal incorpora `index.html`, estilos CSS, JavaScript y recursos visuales de la Landing Page.
+
+![Historial de commits de la Landing Page](assets/chapter5/landing-commits.webp)
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 La documentación de endpoints se incorporará cuando los Web Services formen parte del incremento implementado.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 **Landing Page:** https://github.com/AIpaca-OS/landing-page
 
+La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, CTA, formulario de contacto y footer.
+
+![Ejecución Desktop de la Landing Page](assets/chapter5/landing-desktop-evidence.webp)
+
+También se verificó el comportamiento responsive. En vista Mobile, la navegación se reorganiza en un menú desplegable y mantiene acceso a las principales secciones de la página.
+
+![Ejecución Mobile de la Landing Page](assets/chapter5/landing-mobile-evidence.webp)
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 [Insertar evidencia real]
 
 ---
 
+Durante Sprint 1 no se implementaron Web Services. El repositorio `web-services` se encuentra preparado para el desarrollo posterior con Java, Spring Boot y Spring Data JPA. La documentación OpenAPI/Swagger se incorporará cuando existan endpoints implementados.
 # Conclusiones
 
 1. Rumbo se dirige a un mercado formal de movilidad escolar en Lima y Callao.
@@ -1132,16 +1290,38 @@ La documentación de endpoints se incorporará cuando los Web Services formen pa
 4. Las entrevistas permitirán priorizar funciones basadas en evidencia.
 5. AV1 se concentra en la primera versión implementada y desplegada del Landing Page.
 
----
+Para el despliegue se utilizó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
+
+La configuración quedó activa y el sitio fue publicado correctamente.
+
+![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
+
+**URL pública:** https://aipaca-os.github.io/landing-page/
+
+La siguiente evidencia muestra la Landing Page cargada desde la URL pública de GitHub Pages.
+
+![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-deployment.webp)
 
 # Bibliografía
 
+Durante Sprint 1 el equipo distribuyó el trabajo entre documentación, investigación, UX/UI e implementación de la Landing Page.
+
+En el repositorio de Landing Page se registra como principal evidencia de implementación el commit:
+
+`826939d379fd977780cb7b2cb6091e02a50ad95f` — **Subir archivos de la landing page**, realizado el 15/09/2026.
+
+![Historial de commits del Sprint 1](assets/chapter5/landing-commits.webp)
+
+Las capturas de Contributors, Network Graph y Pull Requests se incorporarán cuando se integren los avances de las ramas de trabajo.
 [1] Autoridad de Transporte Urbano para Lima y Callao. (2026, 10 de enero). *Vacaciones útiles seguras: ATU exhorta a padres de familia a usar movilidades escolares autorizadas*.
 
 [2] TomTom. (2026). *TomTom Traffic Index 2025: Lima, Peru*.
 
 [3] Observatorio Nacional de Seguridad Vial. (2026). *Estadísticas de siniestralidad vial 2025*.
 
+- La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
+- Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
+- Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
 [4] Instituto Nacional de Estadística e Informática. (2026, 26 de marzo). *El 98,4% de los hogares de Lima Metropolitana contó con telefonía móvil durante el cuarto trimestre de 2025*.
 
 [5] Elitech. (2026). *School Bus Tracker* (Versión 2.4) [Software]. https://schoolbustrackerapp.com/
