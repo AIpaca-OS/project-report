@@ -487,33 +487,204 @@ Para AV1 no se plantea un buscador general en la Landing Page. En la Web Applica
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
-[Insertar wireframes Desktop y Mobile elaborados en Figma.]
+
+El wireframe de la Landing Page organiza el contenido de forma secuencial para explicar la propuesta de Rumbo antes de llevar al usuario a una acción. La estructura toma como base el diseño trabajado en Figma y mantiene la misma jerarquía para Desktop y Mobile.
+
+```mermaid
+flowchart TD
+    A[Header y navegación] --> B[Hero: tranquilidad en cada trayecto]
+    B --> C[Beneficios principales]
+    C --> D[Cómo funciona Rumbo]
+    D --> E[Funcionalidades]
+    E --> F[Planes o alternativas de uso]
+    F --> G[Testimonios]
+    G --> H[Preguntas frecuentes]
+    H --> I[CTA final]
+    I --> J[Footer]
+```
+
+En Desktop se utiliza una distribución amplia, con bloques en dos y tres columnas cuando el contenido lo permite. En Mobile los componentes se apilan en una sola columna, la navegación se transforma en menú desplegable y los botones principales ocupan mayor ancho para facilitar la interacción táctil.
 
 ### 4.3.2. Landing Page Mock-up
-[Insertar mock-ups Desktop y Mobile elaborados en Figma.]
+
+El mock-up de alta fidelidad mantiene una estética limpia, con fondos claros, tipografía de alto contraste, tarjetas redondeadas y CTAs destacados. Las referencias trabajadas en Figma muestran como eje visual un hero con la propuesta **“Tranquilidad en cada trayecto”**, acompañado por una vista del seguimiento de la movilidad.
+
+| Sección | Decisión de diseño |
+|---|---|
+| Hero | Mensaje principal, breve descripción, CTA y representación visual del seguimiento. |
+| Beneficios | Tarjetas para monitoreo, alertas y comunicación. |
+| Cómo funciona | Proceso resumido en pasos consecutivos. |
+| Funcionalidades | Bloques visuales para seguimiento, incidencias, notificaciones y control de ruta. |
+| Planes | Tarjetas comparables con CTA diferenciado. |
+| Testimonios | Opiniones breves para reforzar confianza. |
+| FAQ | Acordeones con dudas frecuentes sobre seguridad y funcionamiento. |
+| CTA y footer | Cierre de conversión y accesos informativos. |
+
+El mock-up conserva el sistema visual de Rumbo definido en 4.1: tonos verdes y oscuros para confianza y seguridad, superficies claras para lectura y componentes simples que pueden reutilizarse posteriormente en la Web Application.
 
 ## 4.4. Web Applications UX/UI Design
 
+El diseño de la Web Application considera dos experiencias principales: **padres/tutores** y **conductores**. En ambos casos se prioriza la información del trayecto, pero las acciones disponibles cambian según el rol. Los padres consultan; los conductores registran eventos de la ruta con la menor cantidad posible de pasos.
+
 ### 4.4.1. Web Applications Wireframes
-[Insertar wireframes de las vistas principales de padres/tutores y conductores.]
+
+Los wireframes se definieron a partir de las tareas centrales de cada segmento.
+
+| Rol | Vista | Contenido principal |
+|---|---|---|
+| Padre/Tutor | Sign In | Correo, contraseña y recuperación de acceso. |
+| Padre/Tutor | Dashboard | Estado actual, estudiante, conductor, vehículo y ETA. |
+| Padre/Tutor | Trip Detail | Mapa o progreso de ruta y datos del trayecto. |
+| Padre/Tutor | Trip Timeline | Recojo, retrasos, incidencias y llegada en orden cronológico. |
+| Padre/Tutor | Notifications | Avisos relevantes asociados al estudiante. |
+| Conductor | Sign In | Acceso seguro al panel de ruta. |
+| Conductor | Assigned Route | Ruta activa, horario, paradas y estudiantes asignados. |
+| Conductor | Student List | Estado de recojo o entrega de cada estudiante. |
+| Conductor | Register Event | Confirmación rápida de recojo, llegada o entrega. |
+| Conductor | Report Incident | Tipo de incidencia, descripción breve y registro del evento. |
+
+La prioridad del wireframe es que la vista principal responda rápidamente a dos preguntas: **“¿qué está pasando en el trayecto?”** para la familia y **“¿qué debo registrar ahora?”** para el conductor.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
-[Insertar wireflows.]
+
+#### Wireflow — Padre/Tutor
+
+```mermaid
+flowchart LR
+    A[Sign In] --> B[Dashboard]
+    B --> C[Trip Detail]
+    C --> D[Trip Timeline]
+    B --> E[Notifications]
+    D --> C
+    E --> B
+```
+
+El padre ingresa al Dashboard y desde allí puede revisar el estado actual, abrir el detalle del viaje, consultar el historial de eventos o revisar las notificaciones asociadas.
+
+#### Wireflow — Conductor
+
+```mermaid
+flowchart LR
+    A[Sign In] --> B[Assigned Route]
+    B --> C[Student List]
+    C --> D[Register Pickup or Drop-off]
+    B --> E[Report Delay]
+    B --> F[Report Incident]
+    D --> B
+    E --> B
+    F --> B
+```
+
+El conductor mantiene como punto central la ruta asignada. Las acciones de recojo, entrega, retraso e incidencia regresan al mismo panel para evitar navegación innecesaria durante la jornada.
 
 ### 4.4.2. Web Applications Mock-ups
-[Insertar mock-ups de las vistas principales.]
+
+La propuesta visual de la Web Application reutiliza el lenguaje definido para la Landing Page: fondo claro, tarjetas blancas, verde como color de acción y tonos oscuros para textos y estados principales.
+
+| Vista | Componentes de alta fidelidad |
+|---|---|
+| Dashboard de padre/tutor | Tarjeta de estudiante, estado del viaje, ETA, conductor, vehículo y acceso al timeline. |
+| Trip Detail | Mapa o progreso visual, paradas, estado actual y última actualización. |
+| Timeline | Eventos con hora, tipo y estado mediante una línea cronológica. |
+| Notifications | Tarjetas de aviso con prioridad y fecha. |
+| Assigned Route | Ruta activa, número de estudiantes, próxima parada y acciones rápidas. |
+| Student List | Lista con nombre del estudiante y estado pendiente/recogido/entregado. |
+| Incident Form | Selector de tipo de incidencia, descripción corta y botón de registro. |
+
+Los controles del conductor se plantean con botones grandes, mensajes breves y confirmaciones visibles. Para padres se prioriza lectura rápida, estado actual y jerarquía visual de alertas.
 
 ### 4.4.3. Web Applications User Flow Diagrams
-[Insertar User Flow Diagrams.]
+
+#### User Flow — Padre/Tutor
+
+```mermaid
+flowchart TD
+    A[Iniciar sesión] --> B{¿Credenciales válidas?}
+    B -- No --> C[Mostrar error y reintentar]
+    C --> A
+    B -- Sí --> D[Dashboard]
+    D --> E[Consultar estado actual]
+    E --> F{¿Necesita más detalle?}
+    F -- Sí --> G[Ver Trip Detail / Timeline]
+    F -- No --> H[Continuar monitoreando]
+    G --> I[Revisar retrasos, incidencias o llegada]
+    I --> H
+```
+
+#### User Flow — Conductor
+
+```mermaid
+flowchart TD
+    A[Iniciar sesión] --> B[Ruta asignada]
+    B --> C[Iniciar trayecto]
+    C --> D[Ver próxima parada]
+    D --> E{¿Qué ocurrió?}
+    E -- Recojo --> F[Confirmar Pickup]
+    E -- Retraso --> G[Registrar Delay]
+    E -- Incidencia --> H[Registrar Incident]
+    F --> I{¿Quedan paradas?}
+    G --> I
+    H --> I
+    I -- Sí --> D
+    I -- No --> J[Confirmar llegada / Drop-off]
+    J --> K[Finalizar Trip]
+```
+
+Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del conductor. Las operaciones críticas se realizan desde la ruta activa y generan un evento que luego puede ser consultado por los padres.
 
 ## 4.5. Web Applications Prototyping
 
-[Insertar URL y captura del prototipo interactivo en Figma.]
+El prototipo de Rumbo conecta las vistas principales definidas en los wireflows para validar el recorrido antes de la implementación en Angular. El alcance priorizado para AV1 considera los flujos de consulta del padre/tutor y de registro del conductor.
+
+**Recorrido del padre/tutor:** `Sign In → Dashboard → Trip Detail → Trip Timeline / Notifications`.
+
+**Recorrido del conductor:** `Sign In → Assigned Route → Student List → Register Event / Report Incident → Route Summary`.
+
+Durante la revisión del prototipo se consideran como criterios principales:
+
+- acceso a la información principal en pocos pasos;
+- jerarquía clara del estado actual y ETA;
+- acciones breves para el conductor;
+- confirmación visual después de registrar un evento;
+- consistencia con la identidad visual de Rumbo;
+- comportamiento responsive para escritorio y dispositivos móviles.
+
+La propuesta visual toma como referencia los mock-ups elaborados en Figma para la Landing Page y extiende el mismo sistema de colores, tipografía, tarjetas y botones hacia la aplicación web.
 
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
-[Insertar EventStorming de nivel de diseño.]
+
+El Design-Level Event Storming organiza los principales comandos, agregados y eventos del dominio. Para Rumbo se identifican cuatro áreas funcionales: acceso de usuarios, gestión de rutas, ejecución del trayecto y comunicación de incidencias/notificaciones.
+
+| Actor | Command | Aggregate | Domain Event | Resultado / Policy |
+|---|---|---|---|---|
+| Conductor | `StartTrip` | Trip | `TripStarted` | Habilita el seguimiento del viaje. |
+| Conductor | `ConfirmPickup` | Trip | `PickupConfirmed` | Actualiza el timeline y notifica al padre/tutor. |
+| Conductor | `ReportDelay` | Trip | `DelayReported` | Actualiza estado y ETA; genera notificación. |
+| Conductor | `ReportIncident` | Incident | `IncidentReported` | Registra incidencia y alerta a usuarios vinculados. |
+| Conductor | `ConfirmSchoolArrival` | Trip | `SchoolArrivalConfirmed` | Registra llegada al colegio. |
+| Conductor | `ConfirmDropOff` | Trip | `DropOffConfirmed` | Registra entrega del estudiante. |
+| Conductor | `CompleteTrip` | Trip | `TripCompleted` | Cierra el viaje y conserva su historial. |
+| Sistema | `SendNotification` | Notification | `NotificationSent` | Informa el evento relevante al padre/tutor. |
+
+El flujo principal del dominio queda representado de la siguiente manera:
+
+```mermaid
+flowchart LR
+    A[Route Assigned] --> B[Trip Started]
+    B --> C[Pickup Confirmed]
+    C --> D[Trip In Progress]
+    D --> E[Delay Reported]
+    D --> F[Incident Reported]
+    D --> G[School Arrival Confirmed]
+    E --> H[Notification Sent]
+    F --> H
+    G --> I[Drop-off Confirmed]
+    I --> J[Trip Completed]
+```
+
+Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArrivalConfirmed` y `DropOffConfirmed` alimentan el **Trip Timeline**. Las notificaciones se generan como consecuencia de eventos relevantes, mientras que `TripCompleted` marca el cierre del recorrido y permite conservar un historial consultable.
 
 ### 4.6.2. Software Architecture Context Diagram
 [Insertar C4 Context Diagram.]
