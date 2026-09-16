@@ -529,6 +529,7 @@ US01 Consultar estado actual; US02 Revisar timeline; US03 Confirmar recojo; US04
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
+Para mantener coherencia entre la Landing Page y la aplicación web de Rumbo, definimos una guía de estilos basada en tokens visuales que priorizan la legibilidad, la calma para las familias y el contraste para los conductores.
 
 Las Style Guidelines de Rumbo establecen los lineamientos visuales y de comunicación que permiten mantener una experiencia consistente entre el Landing Page y los demás productos digitales de la solución. Estas directrices comprenden el uso de colores, tipografías, espaciado, componentes visuales y tono de comunicación.
 
@@ -744,12 +745,154 @@ Rumbo utiliza diferentes sistemas de navegación de acuerdo con el contexto del 
 
 La navegación busca reducir la cantidad de decisiones necesarias para alcanzar las acciones principales. Esto resulta especialmente importante para el perfil Driver, debido a que sus interacciones deben mantenerse breves durante la operación del servicio.
 
+### 4.3.1. Landing Page Wireframe
+
+El wireframe de la Landing Page organiza el contenido de forma secuencial para explicar la propuesta de Rumbo antes de llevar al usuario a una acción. La estructura toma como base el diseño trabajado en Figma y mantiene la misma jerarquía para Desktop y Mobile.
+
+```mermaid
+flowchart TD
+    A[Header y navegación] --> B[Hero: tranquilidad en cada trayecto]
+    B --> C[Beneficios principales]
+    C --> D[Cómo funciona Rumbo]
+    D --> E[Funcionalidades]
+    E --> F[Planes o alternativas de uso]
+    F --> G[Testimonios]
+    G --> H[Preguntas frecuentes]
+    H --> I[CTA final]
+    I --> J[Footer]
+```
+
+En Desktop se utiliza una distribución amplia, con bloques en dos y tres columnas cuando el contenido lo permite. En Mobile los componentes se apilan en una sola columna, la navegación se transforma en menú desplegable y los botones principales ocupan mayor ancho para facilitar la interacción táctil.
+
+### 4.3.2. Landing Page Mock-up
+
+El mock-up de alta fidelidad mantiene una estética limpia, con fondos claros, tipografía de alto contraste, tarjetas redondeadas y CTAs destacados. Las referencias trabajadas en Figma muestran como eje visual un hero con la propuesta **“Tranquilidad en cada trayecto”**, acompañado por una vista del seguimiento de la movilidad.
+
+| Sección | Decisión de diseño |
+|---|---|
+| Hero | Mensaje principal, breve descripción, CTA y representación visual del seguimiento. |
+| Beneficios | Tarjetas para monitoreo, alertas y comunicación. |
+| Cómo funciona | Proceso resumido en pasos consecutivos. |
+| Funcionalidades | Bloques visuales para seguimiento, incidencias, notificaciones y control de ruta. |
+| Planes | Tarjetas comparables con CTA diferenciado. |
+| Testimonios | Opiniones breves para reforzar confianza. |
+| FAQ | Acordeones con dudas frecuentes sobre seguridad y funcionamiento. |
+| CTA y footer | Cierre de conversión y accesos informativos. |
+
+El mock-up conserva el sistema visual de Rumbo definido en 4.1: tonos verdes y oscuros para confianza y seguridad, superficies claras para lectura y componentes simples que pueden reutilizarse posteriormente en la Web Application.
 #### Landing Page Navigation
 
 La navegación global del Landing Page se encuentra disponible mediante el header y permite acceder directamente a las principales secciones:
 
 `Home, Benefits, How it works, Features, Resources`
 
+El diseño de la Web Application considera dos experiencias principales: **padres/tutores** y **conductores**. En ambos casos se prioriza la información del trayecto, pero las acciones disponibles cambian según el rol. Los padres consultan; los conductores registran eventos de la ruta con la menor cantidad posible de pasos.
+
+### 4.4.1. Web Applications Wireframes
+
+Los wireframes se definieron a partir de las tareas centrales de cada segmento.
+
+| Rol | Vista | Contenido principal |
+|---|---|---|
+| Padre/Tutor | Sign In | Correo, contraseña y recuperación de acceso. |
+| Padre/Tutor | Dashboard | Estado actual, estudiante, conductor, vehículo y ETA. |
+| Padre/Tutor | Trip Detail | Mapa o progreso de ruta y datos del trayecto. |
+| Padre/Tutor | Trip Timeline | Recojo, retrasos, incidencias y llegada en orden cronológico. |
+| Padre/Tutor | Notifications | Avisos relevantes asociados al estudiante. |
+| Conductor | Sign In | Acceso seguro al panel de ruta. |
+| Conductor | Assigned Route | Ruta activa, horario, paradas y estudiantes asignados. |
+| Conductor | Student List | Estado de recojo o entrega de cada estudiante. |
+| Conductor | Register Event | Confirmación rápida de recojo, llegada o entrega. |
+| Conductor | Report Incident | Tipo de incidencia, descripción breve y registro del evento. |
+
+La prioridad del wireframe es que la vista principal responda rápidamente a dos preguntas: **“¿qué está pasando en el trayecto?”** para la familia y **“¿qué debo registrar ahora?”** para el conductor.
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+#### Wireflow — Padre/Tutor
+
+```mermaid
+flowchart LR
+    A[Sign In] --> B[Dashboard]
+    B --> C[Trip Detail]
+    C --> D[Trip Timeline]
+    B --> E[Notifications]
+    D --> C
+    E --> B
+```
+
+El padre ingresa al Dashboard y desde allí puede revisar el estado actual, abrir el detalle del viaje, consultar el historial de eventos o revisar las notificaciones asociadas.
+
+#### Wireflow — Conductor
+
+```mermaid
+flowchart LR
+    A[Sign In] --> B[Assigned Route]
+    B --> C[Student List]
+    C --> D[Register Pickup or Drop-off]
+    B --> E[Report Delay]
+    B --> F[Report Incident]
+    D --> B
+    E --> B
+    F --> B
+```
+
+El conductor mantiene como punto central la ruta asignada. Las acciones de recojo, entrega, retraso e incidencia regresan al mismo panel para evitar navegación innecesaria durante la jornada.
+
+### 4.4.2. Web Applications Mock-ups
+
+La propuesta visual de la Web Application reutiliza el lenguaje definido para la Landing Page: fondo claro, tarjetas blancas, verde como color de acción y tonos oscuros para textos y estados principales.
+
+| Vista | Componentes de alta fidelidad |
+|---|---|
+| Dashboard de padre/tutor | Tarjeta de estudiante, estado del viaje, ETA, conductor, vehículo y acceso al timeline. |
+| Trip Detail | Mapa o progreso visual, paradas, estado actual y última actualización. |
+| Timeline | Eventos con hora, tipo y estado mediante una línea cronológica. |
+| Notifications | Tarjetas de aviso con prioridad y fecha. |
+| Assigned Route | Ruta activa, número de estudiantes, próxima parada y acciones rápidas. |
+| Student List | Lista con nombre del estudiante y estado pendiente/recogido/entregado. |
+| Incident Form | Selector de tipo de incidencia, descripción corta y botón de registro. |
+
+Los controles del conductor se plantean con botones grandes, mensajes breves y confirmaciones visibles. Para padres se prioriza lectura rápida, estado actual y jerarquía visual de alertas.
+
+### 4.4.3. Web Applications User Flow Diagrams
+
+#### User Flow — Padre/Tutor
+
+```mermaid
+flowchart TD
+    A[Iniciar sesión] --> B{¿Credenciales válidas?}
+    B -- No --> C[Mostrar error y reintentar]
+    C --> A
+    B -- Sí --> D[Dashboard]
+    D --> E[Consultar estado actual]
+    E --> F{¿Necesita más detalle?}
+    F -- Sí --> G[Ver Trip Detail / Timeline]
+    F -- No --> H[Continuar monitoreando]
+    G --> I[Revisar retrasos, incidencias o llegada]
+    I --> H
+```
+
+#### User Flow — Conductor
+
+```mermaid
+flowchart TD
+    A[Iniciar sesión] --> B[Ruta asignada]
+    B --> C[Iniciar trayecto]
+    C --> D[Ver próxima parada]
+    D --> E{¿Qué ocurrió?}
+    E -- Recojo --> F[Confirmar Pickup]
+    E -- Retraso --> G[Registrar Delay]
+    E -- Incidencia --> H[Registrar Incident]
+    F --> I{¿Quedan paradas?}
+    G --> I
+    H --> I
+    I -- Sí --> D
+    I -- No --> J[Confirmar llegada / Drop-off]
+    J --> K[Finalizar Trip]
+```
+
+Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del conductor. Las operaciones críticas se realizan desde la ruta activa y generan un evento que luego puede ser consultado por los padres.
 Asimismo, el header incluye los Call-to-Action relacionados con acceso:
 
 `Sign in, Sign up`
@@ -760,9 +903,76 @@ El footer proporciona navegación complementaria hacia información del producto
 
 Después de autenticarse, el Parent/Tutor accede directamente al Dashboard, que funciona como punto central de su experiencia.
 
+El prototipo de Rumbo conecta las vistas principales definidas en los wireflows para validar el recorrido antes de la implementación en Angular. El alcance priorizado para AV1 considera los flujos de consulta del padre/tutor y de registro del conductor.
+
+**Recorrido del padre/tutor:** `Sign In → Dashboard → Trip Detail → Trip Timeline / Notifications`.
+
+**Recorrido del conductor:** `Sign In → Assigned Route → Student List → Register Event / Report Incident → Route Summary`.
+
+Durante la revisión del prototipo se consideran como criterios principales:
+
+- acceso a la información principal en pocos pasos;
+- jerarquía clara del estado actual y ETA;
+- acciones breves para el conductor;
+- confirmación visual después de registrar un evento;
+- consistencia con la identidad visual de Rumbo;
+- comportamiento responsive para escritorio y dispositivos móviles.
+
+La propuesta visual toma como referencia los mock-ups elaborados en Figma para la Landing Page y extiende el mismo sistema de colores, tipografía, tarjetas y botones hacia la aplicación web.
 `Sign In → Dashboard`
 
 Desde el Dashboard puede acceder a:
+
+### 4.6.1. Design-Level Event Storming
+
+El Design-Level Event Storming organiza los principales comandos, agregados y eventos del dominio. Para Rumbo se identifican cuatro áreas funcionales: acceso de usuarios, gestión de rutas, ejecución del trayecto y comunicación de incidencias/notificaciones.
+
+| Actor | Command | Aggregate | Domain Event | Resultado / Policy |
+|---|---|---|---|---|
+| Conductor | `StartTrip` | Trip | `TripStarted` | Habilita el seguimiento del viaje. |
+| Conductor | `ConfirmPickup` | Trip | `PickupConfirmed` | Actualiza el timeline y notifica al padre/tutor. |
+| Conductor | `ReportDelay` | Trip | `DelayReported` | Actualiza estado y ETA; genera notificación. |
+| Conductor | `ReportIncident` | Incident | `IncidentReported` | Registra incidencia y alerta a usuarios vinculados. |
+| Conductor | `ConfirmSchoolArrival` | Trip | `SchoolArrivalConfirmed` | Registra llegada al colegio. |
+| Conductor | `ConfirmDropOff` | Trip | `DropOffConfirmed` | Registra entrega del estudiante. |
+| Conductor | `CompleteTrip` | Trip | `TripCompleted` | Cierra el viaje y conserva su historial. |
+| Sistema | `SendNotification` | Notification | `NotificationSent` | Informa el evento relevante al padre/tutor. |
+
+El flujo principal del dominio queda representado de la siguiente manera:
+
+```mermaid
+flowchart LR
+    A[Route Assigned] --> B[Trip Started]
+    B --> C[Pickup Confirmed]
+    C --> D[Trip In Progress]
+    D --> E[Delay Reported]
+    D --> F[Incident Reported]
+    D --> G[School Arrival Confirmed]
+    E --> H[Notification Sent]
+    F --> H
+    G --> I[Drop-off Confirmed]
+    I --> J[Trip Completed]
+```
+
+Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArrivalConfirmed` y `DropOffConfirmed` alimentan el **Trip Timeline**. Las notificaciones se generan como consecuencia de eventos relevantes, mientras que `TripCompleted` marca el cierre del recorrido y permite conservar un historial consultable.
+
+### 4.6.2. Software Architecture Context Diagram
+Este diagrama muestra la visión general del sistema Rumbo, posicionando la plataforma en el centro y detallando sus interacciones con los usuarios (padres y conductores) y dependencias externas (Auth0, Google Maps, FCM y SendGrid).
+<img width="775" height="501" alt="Diagrama-Contextos" src="https://github.com/user-attachments/assets/1fa0067c-5228-433b-9755-bacebecd81f8" />
+
+
+### 4.6.3. Software Architecture Container Diagrams
+Este diagrama expone la arquitectura física y de despliegue. Divide el sistema en contenedores ejecutables: la Landing Page, la aplicación cliente (SPA en Angular), la lógica de negocio (API en Spring Boot)
+<img width="1069" height="1171" alt="Contenedores-Diagrama" src="https://github.com/user-attachments/assets/022fc782-e64d-481b-a732-9f64e2dcd7a4" />
+
+
+### 4.6.4. Software Architecture Components Diagrams
+Este diagrama profundiza en el contenedor lógico del backend (API Application). Muestra la estructura interna basada en el patrón MVC utilizado en Spring Boot, detallando los controladores (REST y WebSockets), los servicios que encapsulan las reglas de negocio, la capa de acceso a datos mediante repositorios y la barrera de seguridad (Security Filter).
+<img width="697" height="812" alt="component-diagram-1" src="https://github.com/user-attachments/assets/1d7ca398-5c9f-46e8-b3b9-39fe16430330" />
+
+Este diagrama hace foco en la arquitectura interna de la Single Page Application (SPA) desarrollada en Angular. Detalla la separación de responsabilidades entre el enrutador protegido (AuthGuard), los componentes visuales de las vistas (mapas y paneles de gestión) y los servicios encargados de la conexión persistente (WebSockets) y el consumo de la API.
+<img width="711" height="799" alt="component-diagram-2" src="https://github.com/user-attachments/assets/04eeb9b7-6dc2-4f13-9553-063b4cec2099" />
+
 
 - `Trip Detail`
 - `Notifications`
@@ -775,6 +985,16 @@ La estructura prioriza la consulta del estado actual antes de presentar informac
 
 #### Driver Navigation
 
+### 4.7.1. Class Diagrams
+En esta sección se presenta el Diagrama de Clases UML del sistema, estructurado bajo el enfoque Domain-Driven Design (DDD). Su propósito es detallar la estructura interna de los Bounded Contexts identificados en el proyecto (tales como Seguimiento de Viajes y Gestión de Identidad).
+
+El modelo especifica las clases, interfaces y enumeraciones con sus respectivos atributos, métodos y niveles de acceso. Asimismo, define claramente las relaciones, direcciones y multiplicidades entre las entidades, garantizando la trazabilidad del diseño y delimitando las responsabilidades de cada contexto.
+<img width="1124" height="943" alt="Diagrama UML" src="https://github.com/user-attachments/assets/5d4e0ffb-ef0e-4b50-842a-e4432970f5fe" />
+
+## 4.8. Database Design
+En esta sección se presenta el diseño de la base de datos relacional utilizada en el sistema. El diagrama entidad-relación (ERD) ilustra las tablas principales, sus atributos y las relaciones entre ellas. Cada tabla representa una entidad del dominio, con sus respectivas columnas que definen los datos almacenados. Las relaciones entre tablas se indican mediante líneas que muestran cómo las entidades están conectadas, incluyendo las cardinalidades (uno a uno, uno a muchos, muchos a muchos) para clarificar la naturaleza de las asociaciones. Este diseño asegura la integridad de los datos y optimiza el rendimiento de las consultas dentro del sistema.
+### 4.8.1. Database Diagrams
+<img width="943" height="782" alt="database-erd" src="https://github.com/user-attachments/assets/9d547419-a688-4d81-bb47-b310a7de42ec" />
 Después de iniciar sesión, el Driver accede directamente a la ruta que tiene asignada:
 
 `Sign In → Assigned Route`
