@@ -286,8 +286,6 @@ Se realizarán entrevistas semiestructuradas para comprender hábitos, procesos 
 10. ¿Estaría dispuesto a pagar una suscripción mensual por un servicio que le brinde esta tranquilidad y seguridad? ¿Cuánto consideraría justo pagar?
 11. ¿Qué característica de la aplicación sería la más importante para usted para sentirse tranquilo al confiar el transporte de su hijo a un conductor registrado en nuestra plataforma?
 
-
-
 ### Preguntas dirigidas al segundo segmento — Conductores de movilidad escolar
 
 1. ¿Cuál es tu nombre completo, edad, ocupación, distrito de residencia y cuántos años de experiencia tienes realizando transporte escolar?
@@ -307,44 +305,85 @@ Se realizarán entrevistas semiestructuradas para comprender hábitos, procesos 
 
 Para cada entrevista se registrará nombre completo, edad, distrito, segmento, captura, URL del video, timing, duración y resumen descriptivo. Actualmente se cuenta con seis entrevistas registradas: tres del segmento Padres/Tutores y tres del segmento Conductores de movilidad escolar.
 
-| # | Entrevistado | Edad | Distrito | Segmento | Screenshot | URL / Timing | Duración | Resumen |
-|---:|---|---:|---|---|---|---|---|---|
-| 1 | Gabriela  | 32 | Miraflores | Padre/Tutor | <img width="1105" height="425" alt="entrevista gabriela" src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=VWo0MB) / 00:00 | 07:19 | Tutora a cargo de su sobrino de 8 años en primaria; sufre por retrasos mecánicos no avisados y considera crítico que el chofer no manipule el celular en marcha (solo estacionado), valorando el rastreo en vivo y un rango de pago de S/ 15 a S/ 25 al mes condicionado a un periodo de prueba gratis previo. |
-| 2 | Alejandro | 34 | Surco | Padre/Tutor | <img width="1108" height="391" alt="entrevista alejandro" src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=f5sdCh) / 00:00 | 05:10 | Padre primerizo de un niño de 6 años en Surco; teme las distracciones al volante generadas por llamadas de otros padres y busca eliminar la espera en la calle mediante un mapa en tiempo real, alertas de ingreso al colegio y verificación legal del conductor, considerando viable una suscripción de S/ 15 a S/ 25 al mes. |
-| 3 | Eduardo | 34 | Magdalena | Padre/Tutor | <img width="1106" height="435" alt="entrevista eduardo" src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" /> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=HlhpOR) / 00:00 | 03:26 | Padre de un niño de 4 años en inicial residente en Magdalena; experimenta ansiedad por la falta de visibilidad del trayecto ante averías imprevistas y prioriza alertas automáticas de abordaje con cinturón puesto y entrega a la profesora, aceptando un pago mensual de S/ 15 a S/ 25 para evitar la espera en la vereda. |
-| 4 | Gabriel Alexandro Sosa Guevara | 20 | [Completar distrito] | Conductor | <img src="assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Entrevista a Gabriel Alexandro Sosa Guevara" width="320"/> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft) / 00:00 | 09:51 | Conductor de movilidad escolar con 2 años de experiencia. La entrevista siguió el guion de 12 preguntas para el segmento y abordó organización de rutas, comunicación con familias, uso de tecnología, retrasos, confirmaciones, privacidad, historial y barreras de adopción. |
-| 5 | Brayan Solorzano Pineda | 25 | [Completar distrito] | Conductor | <img src="assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Entrevista a Brayan Solorzano Pineda" width="320"/> | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m) / 00:00 | 09:05 | Conductor de movilidad escolar con 5 años de experiencia. La entrevista utilizó el mismo guion semiestructurado y cubrió organización de la jornada, canales digitales, incidencias, comunicación repetitiva, seguridad de uso durante la conducción, privacidad y necesidades de una posible solución digital. |
-| 6 | Vilma Hoyos Martinez | 56 | San Miguel | Conductor | <img src="assets/screenshots-interwiews/conductor-3.png" alt="Entrevista a Vilma Hoyos Martinez" width="320"/> | [Ver Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b451_upc_edu_pe/IQAarNiMmGEZT73ZVhSkpNMNAVFqyptTBINEQvTJU6AW7BY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=asjxgo) - 00:06 | 18:14 | Conductora de movilidad escolar con 25 años de experiencia. La entrevista utilizó el mismo guion semiestructurado de 12 preguntas y cubrió organización de la jornada, canales digitales, incidencias, comunicación repetitiva, seguridad de uso durante la conducción, privacidad y necesidades de una posible solución digital. El detalle de hallazgos se completará con la revisión de sus respuestas reales. |
+| # | Entrevistado | Edad | Distrito | Segmento | Duración | Referencia |
+| -: | ----------- | ---: | -------- | -------- | :-----   | ---------- |
+|  1 | Gabriela | 32 | Miraflores | Padre/Tutor |  07:19 | [Entrevista 1](#entrevista-1--gabriela) |
+|  2 | Alejandro Choquehuanca | 34 | Surco | Padre/Tutor | 05:10 | [Entrevista 2](#entrevista-2--alejandro-choquehuanca)  |
+|  3 | Eduardo Osorio | 34 | Magdalena | Padre/Tutor | 03:26 | [Entrevista 3](#entrevista-3--eduardo-osorio) |
+|  4 | Gabriel Alexandro Sosa Guevara | 20 | Olivos | Conductor | 09:51 | [Entrevista 4](#entrevista-4--gabriel-alexandro-sosa-guevara) |
+|  5 | Brayan Solorzano Pineda | 25 | Prueblo Libre | Conductor | 09:05 | [Entrevista 5](#entrevista-5--brayan-solorzano-pineda) |
+|  6 | Vilma Hoyos Martinez | 56 | San Miguel | Conductor | 18:14 | [Entrevista 6](#entrevista-6--vilma-hoyos-martinez) |
 
-#### Entrevista — Gabriel Alexandro Sosa Guevara
+## Entrevista 1 — Gabriela
+
+* **Edad:** 32 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Miraflores.
+* **Duración:** 07:19.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyIsInJlZmVycmFsVmlldyI6IlNoYXJlRGlhbG9nLUxpbmsiLCJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCJ9fQ%3D%3D&e=VWo0MB).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" alt="Captura de la entrevista a Gabriela" width="850"/></p>
+
+**Resumen preliminar:** Gabriela tiene 32 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus experiencias relacionadas con el transporte escolar de su sobrino de 8 años, especialmente los problemas ocasionados por retrasos mecánicos que no son comunicados oportunamente. Asimismo, destacó la importancia de evitar que el conductor manipule el celular mientras conduce, indicando que debería utilizarlo únicamente cuando se encuentre estacionado. Entre las funcionalidades de mayor interés se encuentra el rastreo en vivo de la movilidad. Respecto a la disposición de pago, considera viable un rango de S/ 15 a S/ 25 mensuales, siempre que pueda acceder previamente a un periodo de prueba gratuito.
+
+
+## Entrevista 2 — Alejandro Choquehuanca
+
+* **Edad:** 34 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Surco.
+* **Duración:** 05:10.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=f5sdCh).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" alt="Captura de la entrevista a Alejandro" width="850"/></p>
+
+**Resumen preliminar:** Alejandro tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones como padre de un niño de 6 años que utiliza transporte escolar en Surco. Entre sus preocupaciones se encuentra la distracción del conductor ocasionada por las llamadas de otros padres durante el trayecto. También manifestó interés en contar con un mapa en tiempo real que permita conocer la ubicación de la movilidad y reducir el tiempo de espera en la calle. Asimismo, considera importante recibir alertas cuando el estudiante ingresa al colegio y contar con mecanismos de verificación de la situación legal del conductor. Respecto a la disposición de pago, considera viable una suscripción mensual de S/ 15 a S/ 25.
+
+## Entrevista 3 — Eduardo Osorio
+
+* **Edad:** 34 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Magdalena.
+* **Duración:** 03:26.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IlNoYXJlRGlhbG9nLUxpbmsiLCJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCJ9fQ%3D%3D&e=HlhpOR).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" alt="Captura de la entrevista a Eduardo Osorio" width="850"/></p>
+
+**Resumen preliminar:** Eduardo tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones respecto al transporte escolar de su hijo de 4 años, quien se encuentra en inicial. Entre sus principales problemas se encuentra la ansiedad generada por la falta de visibilidad del trayecto, especialmente cuando ocurren averías imprevistas durante el recorrido. Manifestó interés en recibir alertas automáticas relacionadas con el abordaje del menor, incluyendo la confirmación de que viaje con el cinturón de seguridad puesto y que sea entregado correctamente a la profesora. Asimismo, considera valioso contar con información que le permita evitar la espera en la vereda. Respecto a la disposición de pago, acepta un rango de S/ 15 a S/ 25 mensuales.
+
+
+## Entrevista 4 — Gabriel Alexandro Sosa Guevara
 
 - **Edad:** 20 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
 - **Experiencia en el rubro:** 2 años.
-- **Distrito:** [Completar].
+- **Distrito:** Olivos.
 - **Duración:** 09:51.
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
 
 <p align="center"><img src="assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
 
-**Resumen preliminar:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Durante la entrevista se aplicó el guion semiestructurado del segundo segmento, orientado a conocer su forma de organizar rutas y estudiantes, las herramientas digitales utilizadas, el proceso de recojo y entrega, el manejo de retrasos e incidencias, la comunicación con padres, las restricciones de uso de tecnología durante la conducción, el valor de conservar un historial, las consideraciones de privacidad y las condiciones de adopción de una herramienta digital. Los hallazgos específicos se incorporarán cuando se revise y consolide la transcripción de sus respuestas.
+**Resumen preliminar:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Utiliza diariamente su teléfono para trabajar y principalmente usa WhatsApp para comunicarse con las familias y Google Maps para organizar sus rutas. Comenta que uno de los problemas que presenta es tener la información fragmentada en distintos chats, lo que hace poco práctico buscar entre conversaciones para verificar si un estudiante será recogido o consultar la dirección de un punto de llegada alternativo. Además, menciona que es repetitivo responder diariamente las preguntas de los padres sobre cuánto falta para que llegue su hijo, si la movilidad se encuentra cerca o si el estudiante se encuentra bien, ya que esto puede distraerlo mientras conduce. También considera que, en caso de utilizar una aplicación, esta debería ser fácil y rápida de utilizar para no quitarle tiempo durante la conducción. Entre las funcionalidades que considera útiles se encuentran una lista de alumnos, el orden de recojo y la posibilidad de registrar rápidamente cuándo recoge o entrega a un estudiante. Asimismo, le gustaría que los padres puedan visualizar el estado de la ruta y su ubicación para mantenerse informados sin necesidad de comunicarse constantemente con él.
 
-#### Entrevista — Brayan Solorzano Pineda
+## Entrevista 5 — Brayan Solorzano Pineda
 
 - **Edad:** 25 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
 - **Experiencia en el rubro:** 5 años.
-- **Distrito:** [Completar].
+- **Distrito:** Pueblo Libre.
 - **Duración:** 09:05.
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m).
 
 <p align="center"><img src="assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
 
-**Resumen preliminar:** Brayan cuenta con 5 años de experiencia en el rubro. La sesión siguió las mismas 12 preguntas del diseño de entrevistas para conductores, permitiendo recopilar información comparable sobre operación cotidiana, canales de comunicación, retrasos, confirmaciones de recojo y entrega, acciones seguras durante la ruta, información que conviene conservar, privacidad y barreras de adopción. Los hallazgos concretos se completarán a partir de las respuestas registradas en video.
+**Resumen preliminar:** Brayan cuenta con 5 años de experiencia en el rubro. Comenzó trabajando en transporte personal, pero luego se trasladó al rubro del transporte escolar. Utiliza un grupo de WhatsApp para enviar avisos a los padres; sin embargo, los tutores prefieren escribirle por privado. Además, utiliza WaySide para evitar el tráfico y el calendario de su teléfono para recordar horarios especiales. Ha tenido problemas para recordar cambios en las rutas debido a modificaciones en el recojo de un alumno, especialmente porque varios padres le escriben. Diariamente, los padres también le preguntan si ya se encuentra cerca o si los niños ya llegaron a la escuela, lo cual considera repetitivo. Comenta que durante la conducción no utilizaría una aplicación. Sin embargo, le sería útil contar con un registro del inicio del recorrido, la hora de recojo de cada alumno y la hora de llegada a la escuela. También considera útil registrar cuando un alumno no será recogido. En general, considera que una aplicación debería ayudarlo a organizar los cambios y permitir que los padres puedan seguir la ruta sin necesidad de preguntarle constantemente. No utilizaría una aplicación que lo obligue a realizar muchas acciones manualmente o que tenga un costo muy elevado. Como característica adicional, le gustaría que pudiera utilizarse en zonas donde existe poca señal.
 
-#### Entrevista — Vilma Hoyos Martinez
+## Entrevista 6 — Vilma Hoyos Martinez
 
 - **Edad:** 56 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
@@ -354,7 +393,7 @@ Para cada entrevista se registrará nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:06.
 - **Video:** [Conductor 3.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b451_upc_edu_pe/IQAarNiMmGEZT73ZVhSkpNMNAVFqyptTBINEQvTJU6AW7BY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=asjxgo).
 
-![Conductor3](assets/screenshots-interwiews/conductor-3.png)
+<p align="center"><img src="assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
 
 **Resumen preliminar:** Vilma cuenta con 25 años de experiencia en el rubro de la movilidad escolar. Empezó llevando a estudiantes del colegio San Toribio, en el Rímac, hace 10 años y actualmente está a cargo de 26 niños en San Miguel, a quienes lleva a los colegios Claretiano y Los Rosales. La señora Vilma cuenta con un ayudante, quien utiliza la aplicación WhatsApp para comunicarse con las familias, coordinar horarios, llamar para avisar que deben bajar, informar si el niño asistirá, si necesita esperar y compartir su ubicación en tiempo real. Ha presentado problemas con la puntualidad de los niños y con la coordinación con los padres respecto a si los niños serán recogidos o no. Comenta que tiene conocimientos casi nulos en tecnología. Los padres le han recomendado utilizar algunas aplicaciones para poder realizar un mejor seguimiento del recorrido de sus hijos, pero menciona que no sabe cómo utilizarlas y, por ese motivo, no las implementa.
 
