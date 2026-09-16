@@ -410,10 +410,43 @@ Estructura esperada: **Goal → Actor → Impact → Deliverable → User Story*
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
+Para mantener coherencia entre la Landing Page y la aplicación web de Rumbo, definimos una guía de estilos basada en tokens visuales que priorizan la legibilidad, la calma para las familias y el contraste para los conductores.
 
 ### 4.1.1. General Style Guidelines
-[Completar identidad visual de Rumbo: propósito de marca, paleta, tipografía, espaciado, iconografía, tono de comunicación y reglas de uso.]
+**Nombre:** Rumbo.
+**Propósito:** Brindar tranquilidad y control en los traslados escolares diarios en Lima y Callao, reduciendo la incertidumbre de los padres mediante seguimiento pasivo y facilitando la labor del conductor sin generar distracciones al volante.
+**Logotipo:** Compuesto por un isotipo representativo de ruta y protección (`brand-mark`) acompañado del nombre Rumbo con peso tipográfico destacado (`font-weight: 800`). Se debe mantener siempre un área libre alrededor del logo y evitar deformaciones en su escala.
 
+**2. Paleta de Colores**
+Tomamos como base las variables CSS implementadas en la Landing Page, organizadas según su rol en la interfaz:
+
+| Variable CSS | Color | HEX | Uso en la plataforma |
+|---|---|:---:|---|
+| `--azul-oscuro` | Deep Slate | `#0E2A28` | Títulos principales (H1, H2, H3), textos de botones y sombras. |
+| `--azul` | Azul Confianza | `#12403D` | Fondo del footer y contenedor de estadísticas. |
+| `--verde` | Verde Movimiento | `#3EA98A` | Botones primarios (CTA), confirmación de paradas y foco accesible. |
+| `--verde-suave` | Menta Suave | `#DCEFE7` | Fondos de secciones alternas y bordes de hitos de ruta. |
+| `--arena` | Arena Calidez | `#F3D9A4` | Números de métricas, badges y puntos de la línea de tiempo. |
+| `--gris` | Gris Equilibrio | `#B9C2C2` | Bordes de campos de texto e inputs de formularios. |
+| `--crema` | Crema Superficie | `#FBFAF6` | Fondo principal de la web y barra de navegación superior. |
+| `--blanco` | Blanco Puro | `#FFFFFF` | Tarjetas de notificación, modales y campos de entrada. |
+| `--texto` | Petróleo Oscuro | `#16302E` | Color estándar para párrafos y textos de lectura. |
+| `--texto-suave` | Salvia Textual | `#4B615E` | Subtítulos, descripciones secundarias y notas de apoyo. |
+
+**3. Tipografía**
+Utilizamos dos familias tipográficas complementarias:
+* **Títulos y encabezados (`--font-display`):** `"Baloo 2", ui-rounded, sans-serif`. Sus trazos redondeados transmiten cercanía y calidez para un servicio orientado a familias. Se usa en H1, H2 y H3 con peso 700.
+* **Cuerpo de texto e interfaz (`--font-body`):** `"Inter", system-ui, sans-serif`. Ofrece alta legibilidad en pantallas móviles y paneles de datos densos. Se aplica en párrafos (tamaño base de 16px con interlineado de 1.55) y en controles interactivos.
+
+**4. Espaciado y Formas**
+* **Bordes redondeados:** Aplicamos bordes suaves para una estética amigable: `--radius` (18px) para tarjetas estructurales, `--radius-sm` (10px) para inputs y notificaciones, y bordes redondeados completos (999px) para los botones de acción.
+* **Ancho de contenedor:** El contenido se centraliza en un ancho máximo de 1160px con márgenes laterales de 24px en escritorio y 18px en dispositivos móviles.
+
+**5. Tono de Comunicación**
+**Serio pero accesible:** Tratamos la seguridad y custodia de escolares con formalidad, pero sin usar un lenguaje excesivamente técnico o frío.
+**Respetuoso y claro:** Notificamos los estados de ruta de forma directa (*"El escolar ha abordado la unidad"* o *"Retraso reportado por congestión"*), priorizando la certeza sobre mensajes ambiguos.
+
+  
 ### 4.1.2. Web Style Guidelines
 La experiencia web se diseñará con enfoque responsive, accesible y consistente. Se considerarán los idiomas `en_US` y `es_419`, con inglés como idioma por defecto de la experiencia del producto, y se incluirán atributos ARIA cuando corresponda.
 
