@@ -410,37 +410,314 @@ Estructura esperada: **Goal → Actor → Impact → Deliverable → User Story*
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
+Las Style Guidelines de Rumbo establecen los lineamientos visuales y de comunicación que permiten mantener una experiencia consistente entre el Landing Page y los demás productos digitales de la solución. Estas directrices comprenden el uso de colores, tipografías, espaciado, componentes visuales y tono de comunicación.
+
+La identidad visual fue diseñada buscando transmitir tranquilidad, confianza y cercanía, atributos relacionados con la propuesta de valor de Rumbo y con las necesidades de sus principales segmentos objetivo: padres de familia y conductores de transporte escolar. Para ello, se emplea una composición visual limpia, con amplios espacios entre contenidos, superficies claras y tonos verdes como elementos principales de identificación y acción.
 
 ### 4.1.1. General Style Guidelines
-[Completar identidad visual de Rumbo: propósito de marca, paleta, tipografía, espaciado, iconografía, tono de comunicación y reglas de uso.]
+
+#### Branding
+La identidad visual de Rumbo busca proyectar una imagen cercana, segura y confiable. Al tratarse de una solución relacionada con el transporte escolar y la comunicación entre padres de familia y conductores, se priorizó una estética que transmita tranquilidad antes que una apariencia excesivamente tecnológica o corporativa.
+
+La marca utiliza principalmente tonalidades verdes acompañadas de colores crema y arena. Esta combinación permite diferenciar las acciones principales sin generar una interfaz visualmente agresiva. Asimismo, el uso de fondos claros y espacios amplios favorece la lectura y permite que los mensajes y Call-to-Action mantengan una jerarquía visual clara.
+
+<div align="center">
+  <img src="./assets/chapter04/logotipoRumbo.png" alt="Logotipo de Rumbo" width="300" height="300">
+  <p>Logotipo de Rumbo</p>
+</div>
+
+
+#### Color Palette
+La paleta cromática de Rumbo está compuesta principalmente por tonos verdes, crema y arena. Los colores verdes son utilizados para representar la identidad de la marca, destacar acciones y diferenciar elementos interactivos, mientras que los tonos crema permiten mantener superficies visualmente ligeras. Los tonos arena funcionan como colores de énfasis secundarios.
+
+**Primary Color I (#3EA98A):** Color verde usado para destacar elementos.
+
+![Primary Color I](./assets/chapter04/primaryColor1.png)
+
+**Primary Color II (#12403D):** Color verde oscuro usado para fondos y contraste.
+
+![Primary Color II](./assets/chapter04/primaryColor2.png)
+
+**Secondary Color I (#F3D9A4):** Color verde claro usado para elementos de énfasis secundario.
+
+![Secondary Color I](./assets/chapter04/secondaryColor1.png)
+
+**Secondary Color II (#F3D9A4):** Color arena usado para elementos de énfasis secundario.
+
+![Secondary Color II](./assets/chapter04/secondaryColor2.png)
+
+**Neutral Color I (#FBFAF6):** Color crema usado para superficies de contenido.
+
+![Neutral Color I](./assets/chapter04/neutralColor1.png)
+
+**Neutral Color II (#F5F4EA):** Color crema oscuro usado como fondo alternativo para distintas secciones.
+
+![Neutral Color II](./assets/chapter04/neutralColor2.png)
+
+**Neutral Color III (#0F172A):** Color azul oscuro usado para texto y detalles.
+
+![Neutral Color III](./assets/chapter04/neutralColor3.png)
+
+
+#### Typography
+
+Rumbo emplea las familias tipográficas **Outfit** y **Roboto**, seleccionadas para diferenciar los contenidos de alta jerarquía de los elementos funcionales y textos de lectura continua.
+
+| Typeface | Aplicación |
+|---|---|
+| **Outfit** | Títulos principales, encabezados de sección y mensajes de alto impacto visual. |
+| **Roboto** | Párrafos, navegación, botones, etiquetas, formularios y contenido complementario. |
+
+**Outfit** se utiliza en títulos como “Tranquilidad en cada trayecto”, “Beneficios diseñados para tu total tranquilidad” y “¿Cómo funciona Rumbo?”. Su geometría y peso visual permiten generar encabezados fácilmente identificables y fortalecer la personalidad del producto.
+
+**Roboto**, en cambio, se utiliza para los elementos que requieren una lectura rápida y continua, como textos descriptivos, opciones de navegación, Call-to-Action, preguntas frecuentes y contenido del footer. Su utilización permite mantener una alta legibilidad y una apariencia consistente en los distintos componentes de la interfaz.
+
+
+#### Spacing and Shapes
+
+El sistema de espaciado de Rumbo está basado en múltiplos de 4px. Este enfoque garantiza consistencia visual en todos los componentes, facilita la alineación de elementos y reduce la toma de decisiones discrecionales durante el diseño y desarrollo. Todos los márgenes internos (padding) y la separación entre componentes siguen esta escala.
+
+| Nivel | Tamaño | Uso en Rumbo |
+|---|---:|---|
+| `spacing-xs` | 4 px | Espaciado mínimo. Se utiliza entre elementos muy relacionados, como un icono y su etiqueta, o pequeños elementos internos de un componente. |
+| `spacing-s` | 8 px | Espaciado pequeño. Se aplica entre textos, iconos y elementos estrechamente relacionados dentro de botones, tarjetas y controles. |
+| `spacing-m` | 12 px | Espaciado secundario. Se emplea principalmente como padding interno de botones compactos, campos de formulario y grupos pequeños de contenido. |
+| `spacing-l` | 16 px | Espaciado estándar. Se utiliza como margen lateral base en dispositivos móviles y para separar elementos dentro de tarjetas y bloques de contenido. |
+| `spacing-xl` | 24 px | Espaciado intermedio. Se aplica como padding de tarjetas y contenedores principales, además de separar grupos de contenido relacionados. |
+| `spacing-xxl` | 32 px | Espaciado grande. Se utiliza en márgenes laterales de la experiencia Desktop y para separar componentes principales dentro de una misma sección. |
+| `spacing-3xl` | 48 px | Espaciado estructural. Se reserva para separar secciones principales del Landing Page y establecer una clara diferenciación entre bloques de información. |
+
+
+#### Tone of Voice
+
+El tono de comunicación de Rumbo busca generar confianza y tranquilidad. Debido a que la solución se relaciona con el transporte de menores, el producto evita expresiones excesivamente informales, humorísticas o alarmistas.
+
+| Dimensión | Posicionamiento | Justificación |
+|---|---|---|
+| Divertido – Serio | Serio con cercanía | La información relacionada con trayectos, retrasos e incidencias debe comunicarse con claridad y responsabilidad. |
+| Formal – Casual | Moderadamente casual | Se utiliza lenguaje sencillo y directo, evitando tecnicismos innecesarios para padres y conductores. |
+| Respetuoso – Irreverente | Respetuoso | La comunicación debe mantener la confianza entre familias, conductores y organizaciones educativas. |
+| Entusiasta – Sereno | Sereno y positivo | Rumbo busca disminuir la incertidumbre y transmitir control antes que urgencia o preocupación. |
+
+Los mensajes principales emplean frases breves orientadas al beneficio del usuario, como “Tranquilidad en cada trayecto” y “Empieza a sentirte más tranquilo hoy”. De esta manera, la propuesta de valor se comunica desde la perspectiva de la tranquilidad y seguridad que obtiene el usuario, en lugar de centrarse únicamente en características técnicas.
 
 ### 4.1.2. Web Style Guidelines
 La experiencia web se diseñará con enfoque responsive, accesible y consistente. Se considerarán los idiomas `en_US` y `es_419`, con inglés como idioma por defecto de la experiencia del producto, y se incluirán atributos ARIA cuando corresponda.
 
 ## 4.2. Information Architecture
+La arquitectura de información de Rumbo define cómo se organizan, etiquetan y conectan los contenidos y funcionalidades del Landing Page y de la Web Application. Su diseño considera las necesidades diferenciadas de los dos principales segmentos objetivo: padres o tutores, quienes principalmente consultan el estado del trayecto, y conductores de movilidad escolar, quienes registran los eventos que ocurren durante la ruta.
+
+En el Landing Page, la información se organiza con un enfoque informativo y progresivo, permitiendo que un visitante conozca primero la propuesta de valor de Rumbo, posteriormente sus beneficios y funcionamiento, y finalmente pueda acceder a una acción de registro o inicio de sesión.
+
+En la Web Application, la organización se encuentra orientada a tareas y cambia de acuerdo con el rol del usuario. Para padres y tutores se prioriza la consulta del estado actual del trayecto, su detalle, línea de tiempo y notificaciones. Para conductores se prioriza la ruta asignada y las acciones necesarias para registrar recojos, entregas, retrasos e incidencias con la menor cantidad posible de pasos.
+
 
 ### 4.2.1. Organization Systems
-[Completar organización jerárquica y secuencial del contenido.]
+
+Rumbo combina diferentes sistemas de organización de acuerdo con el tipo de contenido y las tareas que debe realizar cada usuario. No se utiliza un único esquema para toda la experiencia, sino que se selecciona el sistema que permita comprender y localizar la información con mayor facilidad.
+
+| Producto / contenido | Sistema de organización | Aplicación |
+|---|---|---|
+| Landing Page | Jerárquico | El visitante encuentra primero la propuesta de valor y posteriormente beneficios, funcionamiento, funcionalidades, recursos y Call-to-Action. |
+| How it works | Secuencial | Los principales eventos del trayecto se presentan siguiendo su orden natural: recojo, ruta en curso, eventual incidencia y llegada. |
+| Web Application | Según audiencia | La información y acciones disponibles se diferencian entre Parent/Tutor y Driver. |
+| Parent/Tutor Dashboard | Jerárquico | El estado actual del viaje ocupa el mayor nivel de prioridad, seguido por información complementaria del estudiante, conductor, vehículo y ETA. |
+| Trip Timeline | Cronológico | Los eventos registrados durante el trayecto se muestran según el momento en que ocurrieron. |
+| Driver Assigned Route | Jerárquico y orientado a tareas | La ruta activa y la próxima acción del conductor se priorizan sobre información secundaria. |
+| Student List | Secuencial | Los estudiantes asociados a la ruta se presentan como parte del flujo operativo del conductor, permitiendo registrar recojo o entrega. |
+| Notifications | Cronológico | Los avisos relacionados con el trayecto se presentan de acuerdo con su fecha y hora de generación. |
+
+La organización del Landing Page sigue principalmente un esquema jerárquico debido a que un visitante necesita comprender primero qué es Rumbo antes de conocer detalles específicos del producto.
+
+En la Web Application predomina una organización por audiencia y por tareas. Esta separación responde a que padres/tutores y conductores persiguen objetivos diferentes: los primeros consultan información del trayecto, mientras que los segundos registran eventos de la operación.
+
+Asimismo, la información temporal utiliza esquemas cronológicos. Esto resulta especialmente relevante en la línea de tiempo del viaje y en las notificaciones, donde el orden de ocurrencia permite comprender la evolución del trayecto.
 
 ### 4.2.2. Labeling Systems
-[Completar etiquetas y términos visibles para los usuarios.]
+
+El sistema de etiquetado de Rumbo utiliza términos breves, consistentes y relacionados con el dominio del transporte escolar. Las etiquetas buscan permitir que cada usuario anticipe con claridad qué información encontrará o qué acción realizará antes de seleccionar un elemento.
+
+Debido a que el idioma predeterminado de la solución será inglés (`en_US`), las etiquetas principales se definen en inglés y cuentan con su equivalente para español latinoamericano (`es_419`).
+
+| English (`en_US`) | Spanish (`es_419`) | Producto / asociación |
+|---|---|---|
+| Benefits | Beneficios | Landing Page: ventajas principales del producto. |
+| How it works | Cómo funciona | Landing Page: explicación resumida del funcionamiento de Rumbo. |
+| Features | Funcionalidades | Landing Page: principales capacidades del producto. |
+| Resources | Recursos | Landing Page: contenido complementario y FAQ. |
+| Sign in | Iniciar sesión | Acceso a la Web Application. |
+| Sign up | Registrarse | Creación de una cuenta. |
+| Dashboard | Panel principal | Vista principal de Parent/Tutor. |
+| Trip Status | Estado del trayecto | Estado actual del viaje. |
+| Trip Detail | Detalle del trayecto | Información ampliada sobre el viaje activo. |
+| Timeline | Línea de tiempo | Eventos del trayecto ordenados cronológicamente. |
+| Notifications | Notificaciones | Avisos asociados al estudiante o al trayecto. |
+| Assigned Route | Ruta asignada | Vista principal del conductor. |
+| Students | Estudiantes | Lista de estudiantes vinculados a la ruta. |
+| Confirm Pickup | Confirmar recojo | Registro de recojo de un estudiante. |
+| Confirm Drop-off | Confirmar entrega | Registro de entrega del estudiante. |
+| Report Delay | Reportar retraso | Registro de una demora durante el recorrido. |
+| Report Incident | Reportar incidencia | Registro de un evento excepcional. |
+| Terms of Service | Términos del servicio | Condiciones de utilización del producto. |
+| Privacy | Privacidad | Información relacionada con el tratamiento de datos. |
+
+Las mismas etiquetas deben mantenerse entre navegación, botones, formularios, notificaciones y documentación del producto, evitando utilizar términos diferentes para representar una misma acción.
 
 ### 4.2.3. SEO Tags and Meta Tags
-[Completar title, description, Open Graph y metadatos relevantes de la Landing Page.]
+
+Rumbo utilizará SEO Tags y Meta Tags para describir correctamente el contenido de las principales páginas del Landing Page y de la Web Application. Estos elementos permitirán proporcionar información relevante a navegadores, motores de búsqueda y plataformas externas.
+
+De acuerdo con los lineamientos del proyecto, para cada página principal se definirán como mínimo los valores de **Title**, **Description**, **Keywords** y **Author**.
+
+#### Landing Page
+
+| Elemento | Valor |
+|---|---|
+| **Title** | `Rumbo | School Transport Tracking and Communication` |
+| **Meta Description** | `Rumbo helps families and school transport drivers stay informed through trip monitoring, alerts and direct communication.` |
+| **Meta Keywords** | `school transport, school routes, trip monitoring, parents, drivers, alerts, school mobility` |
+| **Meta Author** | `AIpaca OS` |
+
+#### Web Application – Sign In
+
+| Elemento | Valor |
+|---|---|
+| **Title** | `Sign In | Rumbo` |
+| **Meta Description** | `Access your Rumbo account to view school trip information and manage route-related activities.` |
+| **Meta Keywords** | `Rumbo sign in, school transport, trip monitoring, parents, drivers` |
+| **Meta Author** | `AIpaca OS` |
+
+#### Web Application – Parent/Tutor Dashboard
+
+| Elemento | Valor |
+|---|---|
+| **Title** | `Parent Dashboard | Rumbo` |
+| **Meta Description** | `View the current school trip status, timeline and notifications associated with your student.` |
+| **Meta Keywords** | `school trip status, parent dashboard, trip timeline, school transport notifications` |
+| **Meta Author** | `AIpaca OS` |
+
+#### Web Application – Driver Assigned Route
+
+| Elemento | Valor |
+|---|---|
+| **Title** | `Assigned Route | Rumbo` |
+| **Meta Description** | `View the assigned school route and register pickups, drop-offs, delays and incidents.` |
+| **Meta Keywords** | `assigned route, school transport driver, pickup, drop-off, route incidents` |
+| **Meta Author** | `AIpaca OS` |
 
 ### 4.2.4. Searching Systems
-Para AV1 no se plantea un buscador general en la Landing Page. En la Web Application se evaluará búsqueda solo cuando exista una necesidad real derivada de los flujos de usuario.
+En la versión actual de Rumbo no se incorpora un sistema de búsqueda general ni en el Landing Page ni en los principales flujos definidos para la Web Application.
+
+En el Landing Page, el volumen de información es reducido y todos los contenidos pueden ser localizados mediante navegación global y enlaces internos.
+
+En la Web Application, los flujos actuales presentan información contextual asociada directamente al usuario autenticado. El padre o tutor accede al trayecto y notificaciones vinculadas con su estudiante, mientras que el conductor accede directamente a su ruta y estudiantes asignados. Por esta razón, en el alcance actual no existe un volumen de información que requiera un motor de búsqueda.
+
+| Producto / vista | Searching System | Justificación |
+|---|---|---|
+| Landing Page | No requerido | El contenido es reducido y accesible mediante navegación directa. |
+| Parent/Tutor Dashboard | No requerido en el alcance actual | La información presentada corresponde directamente al usuario autenticado. |
+| Trip Timeline | No requerido inicialmente | Los eventos se presentan cronológicamente dentro de un único trayecto. |
+| Driver Assigned Route | No requerido en el alcance actual | El conductor accede directamente a la ruta que tiene asignada. |
+| Student List | No requerido inicialmente | La lista corresponde únicamente a los estudiantes asociados con la ruta activa. |
+
+Si durante iteraciones posteriores el volumen de rutas, estudiantes, notificaciones o viajes históricos aumenta, se evaluará la incorporación de mecanismos de búsqueda, filtrado y ordenamiento como parte de nuevos User Stories.
 
 ### 4.2.5. Navigation Systems
-[Completar navegación de Landing Page y navegación preliminar de Web Application.]
+Rumbo utiliza diferentes sistemas de navegación de acuerdo con el contexto del usuario. El Landing Page emplea navegación global y contextual, mientras que la Web Application utiliza navegación orientada a tareas y roles.
+
+La navegación busca reducir la cantidad de decisiones necesarias para alcanzar las acciones principales. Esto resulta especialmente importante para el perfil Driver, debido a que sus interacciones deben mantenerse breves durante la operación del servicio.
+
+#### Landing Page Navigation
+
+La navegación global del Landing Page se encuentra disponible mediante el header y permite acceder directamente a las principales secciones:
+
+`Home, Benefits, How it works, Features, Resources`
+
+Asimismo, el header incluye los Call-to-Action relacionados con acceso:
+
+`Sign in, Sign up`
+
+El footer proporciona navegación complementaria hacia información del producto, de la startup y documentos legales.
+
+#### Parent/Tutor Navigation
+
+Después de autenticarse, el Parent/Tutor accede directamente al Dashboard, que funciona como punto central de su experiencia.
+
+`Sign In → Dashboard`
+
+Desde el Dashboard puede acceder a:
+
+- `Trip Detail`
+- `Notifications`
+
+A partir de Trip Detail puede profundizar hacia:
+
+- `Trip Timeline`
+
+La estructura prioriza la consulta del estado actual antes de presentar información histórica o complementaria.
+
+#### Driver Navigation
+
+Después de iniciar sesión, el Driver accede directamente a la ruta que tiene asignada:
+
+`Sign In → Assigned Route`
+
+Assigned Route funciona como el principal punto de navegación operativa. Desde esta vista el conductor puede:
+
+- consultar `Student List`;
+- registrar `Pickup / Drop-off`;
+- registrar `Delay`;
+- registrar `Incident`.
+
+Después de completar cualquiera de estas acciones, la navegación retorna a Assigned Route para evitar recorridos innecesarios.
+
+<br>
+
+```mermaid
+flowchart TD
+    A["Rumbo"] --> B["Landing Page"]
+    A --> C["Web Application"]
+
+    B --> B1["Benefits"]
+    B --> B2["How it works"]
+    B --> B3["Features"]
+    B --> B4["Resources"]
+    B4 --> B41["FAQ"]
+    B --> B5["Sign In"]
+    B --> B6["Sign Up"]
+
+    C --> P["Parent / Tutor"]
+    C --> D["Driver"]
+
+    P --> P1["Dashboard"]
+    P1 --> P2["Trip Detail"]
+    P2 --> P3["Trip Timeline"]
+    P1 --> P4["Notifications"]
+
+    D --> D1["Assigned Route"]
+    D1 --> D2["Student List"]
+    D2 --> D3["Pickup / Drop-off"]
+    D1 --> D4["Report Delay"]
+    D1 --> D5["Report Incident"]
+```
 
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
-[Insertar wireframes Desktop y Mobile elaborados en Figma.]
+
+<div align="center">
+  <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Web Wireframe" width="750">
+</div>
+
+
 
 ### 4.3.2. Landing Page Mock-up
-[Insertar mock-ups Desktop y Mobile elaborados en Figma.]
+
+<div align="center">
+  <img src="./assets/chapter04/landingMockupDsk.png" alt="Landing Page Web Mock-Up" width="750">
+</div>
+
+
 
 ## 4.4. Web Applications UX/UI Design
 
