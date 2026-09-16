@@ -514,7 +514,39 @@ Siguiendo el principio metodológico de Needfinding, las tareas descritas repres
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
-US01 Consultar estado actual; US02 Revisar timeline; US03 Confirmar recojo; US04 Confirmar entrega; US05 Registrar incidencia; US06 Conocer Rumbo desde Landing Page.
+
+### Epics
+
+- **EP01 — Gestión de usuarios y acceso.**
+- **EP02 — Gestión de rutas y viajes escolares.**
+- **EP03 — Seguimiento de estado y línea de tiempo.**
+- **EP04 — Comunicación de retrasos e incidencias.**
+- **EP05 — Landing Page e información pública.**
+
+### User Stories iniciales
+
+| ID | Epic | User Story | Story Points |
+|---|---|---|---:|
+| US01 | EP03 | Como padre/tutor, deseo consultar el estado actual del viaje para saber en qué etapa se encuentra la ruta. | 5 |
+| US02 | EP03 | Como padre/tutor, deseo revisar la línea de tiempo del trayecto para conocer los eventos ya registrados. | 5 |
+| US03 | EP04 | Como padre/tutor, deseo visualizar retrasos reportados para anticipar cambios en la hora de llegada. | 3 |
+| US04 | EP04 | Como padre/tutor, deseo recibir información sobre incidencias para comprender situaciones excepcionales. | 5 |
+| US05 | EP02 | Como conductor, deseo visualizar los estudiantes asignados a una ruta para organizar el recorrido. | 5 |
+| US06 | EP02 | Como conductor, deseo registrar hitos del trayecto para mantener actualizada la información de la ruta. | 5 |
+| US07 | EP04 | Como conductor, deseo registrar un retraso para comunicarlo a las familias vinculadas. | 3 |
+| US08 | EP04 | Como conductor, deseo registrar una incidencia para dejar constancia y comunicar el evento. | 5 |
+| US09 | EP05 | Como visitante, deseo conocer la propuesta de valor de Rumbo para comprender el producto. | 2 |
+| US10 | EP05 | Como visitante, deseo conocer los beneficios para padres y conductores para identificar si el producto responde a mis necesidades. | 2 |
+| US11 | EP05 | Como visitante, deseo cambiar entre inglés y español para consultar el contenido en un idioma disponible. | 3 |
+| US12 | EP05 | Como visitante, deseo acceder a términos y condiciones desde el footer para conocer las reglas del servicio. | 2 |
+
+### Criterios de aceptación de ejemplo
+
+**US01 — Consultar estado actual**
+- **Dado** que el padre/tutor tiene acceso a un viaje vigente, **cuando** ingresa a la vista del traslado, **entonces** el sistema muestra el estado actual y la hora del último evento registrado.
+
+**US07 — Registrar retraso**
+- **Dado** que el conductor tiene una ruta activa, **cuando** registra un retraso con una descripción válida, **entonces** el evento se incorpora a la línea de tiempo y queda disponible para los padres vinculados.
 
 ## 3.2. Impact Mapping
 [Ver ficha en UXPressia](https://uxpressia.com/w/9076V/i/NpC13?tagId=noTag&impactView=impact-map)
@@ -522,9 +554,22 @@ US01 Consultar estado actual; US02 Revisar timeline; US03 Confirmar recojo; US04
 
 
 ## 3.3. Product Backlog
-[Insertar backlog] 0000
 
----
+| Orden | ID | Título | Story Points |
+|---:|---|---|---:|
+| 1 | US09 | Presentar propuesta de valor en Landing Page | 2 |
+| 2 | US10 | Presentar beneficios por segmento | 2 |
+| 3 | US11 | Soportar inglés y español en Landing Page | 3 |
+| 4 | US12 | Acceso a términos y condiciones | 2 |
+| 5 | US01 | Consultar estado actual | 5 |
+| 6 | US02 | Consultar línea de tiempo | 5 |
+| 7 | US07 | Registrar retraso | 3 |
+| 8 | US08 | Registrar incidencia | 5 |
+| 9 | US05 | Consultar estudiantes asignados | 5 |
+| 10 | US06 | Registrar hitos del trayecto | 5 |
+| 11 | US03 | Visualizar retrasos | 3 |
+| 12 | US04 | Visualizar incidencias | 5 |
+
 
 # Capítulo IV: Product Design
 
@@ -537,6 +582,7 @@ La identidad visual fue diseñada buscando transmitir tranquilidad, confianza y 
 ### 4.1.1. General Style Guidelines
 
 #### Branding
+
 La identidad visual de Rumbo busca proyectar una imagen cercana, segura y confiable. Al tratarse de una solución relacionada con el transporte escolar y la comunicación entre padres de familia y conductores, se priorizó una estética que transmita tranquilidad antes que una apariencia excesivamente tecnológica o corporativa.
 
 La marca utiliza principalmente tonalidades verdes acompañadas de colores crema y arena. Esta combinación permite diferenciar las acciones principales sin generar una interfaz visualmente agresiva. Asimismo, el uso de fondos claros y espacios amplios favorece la lectura y permite que los mensajes y Call-to-Action mantengan una jerarquía visual clara.
