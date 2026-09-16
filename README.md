@@ -44,6 +44,7 @@
 |---|---|---|---|
 | 0.1 | 09/09/2026 | Lino Quispe, Leonardo Miguel | Creación de la estructura base del informe. |
 | 0.2 | 11/09/2026 | Equipo Rumbo | Actualización de integrantes y avance de los capítulos I y II para AV1. |
+| 0.3 | 15/09/2026 | Equipo Rumbo | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
 
 ---
 
@@ -117,9 +118,17 @@ El curso contribuye al cumplimiento del **ABET – EAC – Student Outcome 3: Ca
 
 ### 1.1.1. Descripción de la Startup
 
-**Rumbo** es una startup peruana enfocada en mejorar la seguridad, visibilidad y coordinación durante el transporte escolar. La propuesta surge a partir de una situación cotidiana para muchas familias: durante los recorridos pueden presentarse variaciones de horario, congestión, retrasos, cambios en la ruta o incidencias que obligan a padres y conductores a intercambiar información de forma constante.
+**Rumbo** es una startup peruana enfocada en mejorar la seguridad, visibilidad y coordinación durante el transporte escolar. La propuesta surge de una situación cotidiana para muchas familias: durante los recorridos pueden presentarse variaciones de horario, congestión, retrasos, cambios de ruta o incidencias que obligan a padres y conductores a intercambiar información de forma constante.
 
-Rumbo plantea una plataforma web responsive que centraliza los principales eventos del traslado y permite que los padres comprendan rápidamente qué está ocurriendo durante el recorrido. Para los conductores, la plataforma busca reducir la repetición de mensajes individuales y facilitar el registro de hitos como recojos, llegadas, entregas, retrasos e incidencias.
+El producto inicial de Rumbo es una plataforma web responsive que centraliza los principales eventos del traslado y permite que los padres comprendan rápidamente qué está ocurriendo durante el recorrido. Para los conductores, la plataforma busca reducir mensajes repetitivos y facilitar el registro de hitos como recojos, llegadas, entregas, retrasos e incidencias mediante interacciones breves y seguras.
+
+**Propuesta de valor.** Rumbo busca convertir información dispersa en una experiencia de seguimiento simple y confiable. Para las familias, la propuesta se traduce en mayor tranquilidad y menor incertidumbre. Para conductores y operadores de movilidad escolar, se traduce en menos coordinación manual, una comunicación más ordenada y un historial de eventos que puede servir para resolver consultas posteriores.
+
+**Modelo de negocio.** Rumbo se plantea como una solución **SaaS de suscripción recurrente**. El modelo comercial considera tres niveles de clientes potenciales: familias que requieran funcionalidades de seguimiento y notificaciones; conductores, asociaciones o cooperativas que necesiten administrar varias rutas o vehículos; e instituciones educativas que busquen una solución centralizada para coordinar y supervisar servicios de movilidad escolar. Los precios y condiciones comerciales se consideran hipótesis de negocio y deberán validarse antes de ser definidos como oferta final.
+
+**Alcance del MVP.** Para la primera etapa, Rumbo se concentra en el transporte escolar y en las funciones esenciales de estado del trayecto, timeline, confirmaciones de recojo y entrega, retrasos, incidencias y notificaciones. Este alcance permite validar la necesidad y el uso real sin incorporar todavía funcionalidades de mayor complejidad tecnológica.
+
+**Visión de crecimiento.** A largo plazo, Rumbo busca evolucionar desde la coordinación de movilidad escolar hacia un ecosistema de seguridad y acompañamiento de menores. Esta evolución podría incorporar zonas seguras y geofencing, integración con dispositivos IoT, cámaras inteligentes en puntos autorizados del hogar o instituciones y generación automática de alertas ante eventos relevantes. Estas capacidades forman parte del roadmap de escalabilidad y no del alcance de implementación de AV1.
 
 La startup inicia su propuesta en Lima y Callao, donde existe un mercado formal de transporte escolar y una alta disponibilidad de conectividad móvil. Rumbo no reemplaza los mecanismos oficiales de autorización ni las responsabilidades de seguridad del prestador del servicio; busca complementar la experiencia con información estructurada, oportuna y accesible.
 
@@ -146,25 +155,27 @@ El transporte escolar constituye un servicio formal y regulado en Lima y Callao.
 
 El INEI informó además que durante el cuarto trimestre de 2025 **98,4 % de los hogares de Lima Metropolitana contaba con telefonía móvil**, **90,3 % de la población de 6 años a más utilizaba Internet** y **91,0 % de los usuarios de Internet accedía mediante teléfono celular** [4].
 
-A partir de este contexto, Rumbo aborda la falta de una vista única y oportuna sobre el estado de la movilidad escolar, sus hitos, retrasos e incidencias.
+A partir de este contexto, Rumbo aborda la falta de una vista única y oportuna sobre el estado de la movilidad escolar, sus hitos, retrasos e incidencias. El problema no afecta únicamente a las familias: también genera carga operativa para los conductores, quienes deben responder consultas repetitivas y comunicar manualmente cambios o imprevistos a varias personas.
+
+Desde una perspectiva de negocio, esta situación genera una oportunidad para ofrecer una plataforma digital que aporte valor a ambos lados del servicio. Rumbo busca que las familias encuentren tranquilidad y visibilidad, mientras los operadores obtienen una forma más eficiente de organizar y comunicar los principales eventos de una ruta. Sobre esta base, el proyecto evaluará la viabilidad de un modelo SaaS con planes diferenciados para usuarios individuales, operadores de movilidad e instituciones educativas.
 
 #### Técnica de las 5 W's + 2 H's
 
-**What:** falta de información centralizada sobre recojo, traslado, retrasos, llegada e incidencias.  
+**What:** falta de información centralizada sobre recojo, traslado, retrasos, llegada e incidencias, junto con una coordinación manual que genera consultas repetitivas.  
 **When:** antes del recojo, durante el recorrido y al momento de la llegada o entrega.  
 **Where:** Lima y Callao.  
-**Who:** padres/tutores y conductores de movilidad escolar.  
-**Why:** congestión, tiempos variables, mensajes individuales y consultas repetitivas.  
-**How:** plataforma web responsive con estado del traslado, timeline, confirmaciones, retrasos, incidencias y notificaciones.  
-**How much:** 3758 vehículos escolares habilitados y 69,3 % de congestión promedio en Lima durante 2025.
+**Who:** padres/tutores y conductores de movilidad escolar; como clientes organizacionales futuros se consideran asociaciones, cooperativas e instituciones educativas.  
+**Why:** congestión, tiempos variables, mensajes individuales y necesidad de mayor eficiencia operativa.  
+**How:** plataforma web responsive con estado del traslado, timeline, confirmaciones, retrasos, incidencias y notificaciones, bajo un modelo SaaS escalable.  
+**How much:** 3758 vehículos escolares habilitados y 69,3 % de congestión promedio en Lima durante 2025. La disposición a pagar y el precio final deberán validarse con evidencia de mercado.
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statement
 
-La movilidad escolar opera en un contexto de tiempos variables y comunicación frecuente entre familias y conductores. Los padres necesitan conocer el estado del traslado sin depender exclusivamente de mensajes individuales y los conductores necesitan comunicar cambios, retrasos e incidencias de manera eficiente.
+La movilidad escolar opera en un contexto de tiempos variables y comunicación frecuente entre familias y conductores. Los padres necesitan conocer el estado del traslado sin depender exclusivamente de mensajes individuales y los conductores necesitan comunicar cambios, retrasos e incidencias de manera eficiente. Al mismo tiempo, para que la solución sea sostenible como negocio, Rumbo debe demostrar que puede generar valor recurrente suficiente para justificar una suscripción por parte de familias, operadores o instituciones.
 
-**¿Cómo podríamos mejorar la visibilidad y coordinación del transporte escolar para que los padres puedan conocer el estado del traslado y los conductores puedan comunicar los principales eventos de la ruta de forma rápida y ordenada?**
+**¿Cómo podríamos mejorar la visibilidad y coordinación del transporte escolar para que los padres puedan conocer el estado del traslado, los conductores puedan comunicar los principales eventos de la ruta de forma rápida y ordenada y el producto pueda sostenerse mediante un modelo de negocio escalable?**
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -172,7 +183,18 @@ La movilidad escolar opera en un contexto de tiempos variables y comunicación f
 1. Existe valor en centralizar digitalmente la información de la ruta.
 2. Los padres utilizarán Rumbo si pueden consultar información sin depender de mensajes individuales.
 3. Los conductores adoptarán la solución si registrar eventos requiere pocos pasos.
-4. La confianza dependerá de privacidad, permisos y protección de información del menor.
+4. Conductores, asociaciones o cooperativas pueden percibir valor económico si la plataforma reduce coordinación manual y consultas repetitivas.
+5. Las familias podrían aceptar un plan de pago si las funciones premium entregan suficiente tranquilidad y utilidad cotidiana.
+6. Las instituciones educativas podrían convertirse en clientes organizacionales si Rumbo facilita la supervisión de varias rutas o vehículos.
+7. La confianza dependerá de privacidad, permisos y protección de información del menor.
+8. Los precios, límites por plan y condiciones comerciales aún son hipótesis y requieren validación.
+
+**Business Outcomes**
+- Validar interés real por un modelo de suscripción recurrente.
+- Identificar qué segmento presenta mayor disposición a pagar.
+- Reducir la coordinación manual de eventos durante una ruta.
+- Lograr uso recurrente de las funciones de seguimiento y notificación.
+- Definir posteriormente planes comerciales según familia, vehículo, ruta o institución.
 
 **User Assumptions**
 - Padres/tutores necesitan consultar recojo, avance, llegada, retrasos e incidencias.
@@ -186,12 +208,14 @@ La movilidad escolar opera en un contexto de tiempos variables y comunicación f
 - Seguimiento del progreso.
 - Notificaciones.
 - Registro de incidencias.
+- Administración de varias rutas o vehículos como capacidad posterior para clientes organizacionales.
 
 **User Outcomes & Benefits**
 - Mayor tranquilidad y visibilidad para los padres.
 - Menos consultas rutinarias al conductor.
 - Mejor anticipación ante retrasos.
 - Historial ordenado de eventos del recorrido.
+- Mejor organización operativa para quienes administran más de una ruta.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -201,18 +225,26 @@ La movilidad escolar opera en un contexto de tiempos variables y comunicación f
 4. Mostrar el progreso aumentará la visibilidad del recorrido.
 5. Notificaciones de eventos relevantes mejorarán la coordinación.
 6. Un registro estructurado de incidencias mejorará la claridad ante imprevistos.
+7. Si Rumbo reduce consultas repetitivas y mejora el control de varias rutas, los operadores percibirán mayor valor en un plan de suscripción.
+8. Si las familias reciben información útil y oportuna durante el trayecto, aumentará la probabilidad de uso recurrente y de interés por funcionalidades premium.
 
 #### 1.2.2.4. Lean UX Canvas
 
 <p align="center"><img src="assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
 
+El Lean UX Canvas representa el MVP actual enfocado en movilidad escolar. Los supuestos comerciales incorporados en esta sección complementan el canvas y se validarán progresivamente antes de fijar precios o planes definitivos.
+
 ## 1.3. Segmentos objetivo
 
 ### Padres y tutores
-Padres, madres o tutores responsables de menores que utilizan movilidad escolar en Lima y Callao. Buscan disminuir la incertidumbre durante los recorridos y acceder a información clara sobre recojo, traslado, retrasos, llegada e incidencias.
+Padres, madres o tutores responsables de menores que utilizan movilidad escolar en Lima y Callao. Buscan disminuir la incertidumbre durante los recorridos y acceder a información clara sobre recojo, traslado, retrasos, llegada e incidencias. En el modelo comercial pueden actuar como usuarios finales y potenciales clientes de planes individuales o funcionalidades premium.
 
 ### Conductores de movilidad escolar
-Conductores que realizan rutas programadas para estudiantes. Necesitan organizar horarios, puntos de recojo, retrasos e incidencias y comunicar los eventos principales de forma rápida y segura.
+Conductores que realizan rutas programadas para estudiantes. Necesitan organizar horarios, puntos de recojo, retrasos e incidencias y comunicar los eventos principales de forma rápida y segura. Además de usuarios operativos, pueden convertirse en clientes directos cuando administran su propio servicio o forman parte de asociaciones y cooperativas.
+
+**Escalabilidad comercial.** Los dos segmentos anteriores se mantienen como foco de validación de AV1. A medida que Rumbo crezca, asociaciones, cooperativas de transporte escolar e instituciones educativas pueden incorporarse como clientes organizacionales mediante planes que agrupen varias rutas, vehículos y usuarios.
+
+**Evolución tecnológica.** El transporte escolar se plantea como el primer caso de uso de una plataforma más amplia de seguridad y acompañamiento de menores. En etapas posteriores podrían evaluarse zonas seguras y geofencing, integraciones con cámaras inteligentes o dispositivos IoT autorizados, detección automática de eventos y alertas asociadas a entradas, salidas o desvíos. Estas funcionalidades forman parte del roadmap y no son requisito del MVP actual.
 
 ---
 
@@ -447,18 +479,3 @@ La documentación de endpoints se incorporará cuando los Web Services formen pa
 ---
 
 # Anexos
-
-## Videos de Exposición
-**Microsoft Stream:** [Completar]
-
-## Entrevistas de Needfinding
-**Microsoft Stream:** [Completar]
-
-## Navegación del Prototipo
-**Microsoft Stream:** [Completar]
-
-## Enlaces del proyecto
-- https://github.com/AIpaca-OS/project-report
-- https://github.com/AIpaca-OS/landing-page
-- https://github.com/AIpaca-OS/frontend-web-application
-- https://github.com/AIpaca-OS/web-services
