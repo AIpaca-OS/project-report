@@ -426,21 +426,53 @@ Estructura esperada: **Goal → Actor → Impact → Deliverable → User Story*
 
 ## 3.3. Product Backlog
 
-| Orden | ID | Título | Story Points |
-|---:|---|---|---:|
-| 1 | US09 | Presentar propuesta de valor en Landing Page | 2 |
-| 2 | US10 | Presentar beneficios por segmento | 2 |
-| 3 | US11 | Soportar inglés y español en Landing Page | 3 |
-| 4 | US12 | Acceso a términos y condiciones | 2 |
-| 5 | US01 | Consultar estado actual | 5 |
-| 6 | US02 | Consultar línea de tiempo | 5 |
-| 7 | US07 | Registrar retraso | 3 |
-| 8 | US08 | Registrar incidencia | 5 |
-| 9 | US05 | Consultar estudiantes asignados | 5 |
-| 10 | US06 | Registrar hitos del trayecto | 5 |
-| 11 | US03 | Visualizar retrasos | 3 |
-| 12 | US04 | Visualizar incidencias | 5 |
-
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+|---|---|---|---|:---:|
+| 1 | US09 | Presentar propuesta de valor en Landing Page | Como visitante, deseo conocer la propuesta de valor de Rumbo para comprender el producto. | 2 |
+| 2 | US10 | Presentar beneficios por segmento | Como visitante, deseo conocer los beneficios para padres y conductores para identificar si el producto responde a mis necesidades. | 2 |
+| 3 | US11 | Soportar inglés y español en Landing Page | Como visitante, deseo cambiar entre inglés y español para consultar el contenido en un idioma disponible. | 3 |
+| 4 | US12 | Acceso a términos y condiciones desde el footer | Como visitante, deseo acceder a términos y condiciones desde el footer para conocer las reglas del servicio. | 2 |
+| 5 | US33 | Presentación de planes y precios en Landing Page | Como visitante, deseo consultar las tarifas y promociones del servicio para conocer el costo de suscripción mensual. | 2 |
+| 6 | US34 | Formulario público de contacto y soporte comercial | Como visitante, deseo remitir mis dudas comerciales a través de la web pública para que un asesor me oriente en el registro. | 2 |
+| 7 | US35 | Sección de preguntas frecuentes (FAQ) segmentada | Como visitante, deseo leer las preguntas frecuentes sobre el funcionamiento de la app para disipar mis dudas operativas antes de contratar. | 2 |
+| 8 | US01 | Consultar estado actual del viaje | Como padre/tutor, deseo consultar el estado actual del viaje para saber en qué etapa se encuentra la ruta. | 5 |
+| 9 | US02 | Revisar línea de tiempo del trayecto | Como padre/tutor, deseo revisar la línea de tiempo del trayecto para conocer los eventos ya registrados. | 5 |
+| 10 | US27 | Monitoreo vehicular sobre mapa en tiempo real | Como padre/tutor, deseo seguir la trayectoria de la unidad en un mapa interactivo para verificar su avance continuo. | 5 |
+| 11 | US03 | Visualizar retrasos reportados | Como padre/tutor, deseo visualizar retrasos reportados para anticipar cambios en la hora de llegada. | 3 |
+| 12 | US04 | Recibir información sobre incidencias | Como padre/tutor, deseo recibir información sobre incidencias para comprender situaciones excepcionales. | 5 |
+| 13 | US05 | Visualizar estudiantes asignados a una ruta | Como conductor, deseo visualizar los estudiantes asignados a una ruta para organizar el recorrido. | 5 |
+| 14 | US06 | Registrar hitos del trayecto | Como conductor, deseo registrar hitos del trayecto para mantener actualizada la información de la ruta. | 5 |
+| 15 | US07 | Registrar un retraso para comunicarlo | Como conductor, deseo registrar un retraso para comunicarlo a las familias vinculadas. | 3 |
+| 16 | US08 | Registrar una incidencia operativa | Como conductor, deseo registrar una incidencia para dejar constancia y comunicar el evento. | 5 |
+| 17 | US24 | Activación y conclusión manual del recorrido vehicular | Como conductor, deseo indicar el inicio y fin de la ruta escolar para activar la transmisión de coordenadas hacia las familias. | 3 |
+| 18 | US25 | Confirmación táctil de cinturón de seguridad abrochado | Como conductor (o asistente), deseo registrar que el escolar viaja con el cinturón colocado para velar por las normas de seguridad infantil. | 3 |
+| 19 | US26 | Registro de entrega segura en colegio o domicilio | Como conductor, deseo certificar la entrega del menor a la profesora o al tutor para finalizar la custodia formal. | 5 |
+| 20 | US29 | Alerta por radio perimetral de proximidad (Geofencing) | Como padre/tutor, deseo recibir una notificación cuando la movilidad esté a 500 metros de mi casa para no esperar en la vereda. | 5 |
+| 21 | US30 | Notificación por transbordo ante auxilio mecánico | Como padre/tutor, deseo recibir una alerta clara si los escolares deben ser transbordados a otra unidad por falla técnica insalvable. | 5 |
+| 22 | US32 | Bloqueo preventivo de llamadas durante la conducción | Como conductor, deseo que el sistema disuada a los apoderados de llamar mientras manejo para prevenir distracciones al volante. | 3 |
+| 23 | US20 | Notificación anticipada de inasistencia del alumno | Como padre/tutor, deseo notificar que mi hijo no usará la movilidad hoy para evitar paradas innecesarias y retrasos en ruta. | 3 |
+| 24 | US19 | Vinculación de escolar mediante código familiar | Como conductor, deseo enlazar a un escolar a mi unidad mediante su código único para incluirlo en mi ruta operativa. | 3 |
+| 25 | US21 | Reordenamiento inteligente de paradas por cercanía | Como conductor, deseo reorganizar la secuencia de recogida de escolares para optimizar el consumo de combustible y tiempos de traslado. | 5 |
+| 26 | US22 | Asignación de credenciales para copiloto de apoyo | Como conductor, deseo crear una cuenta secundaria para mi asistente de cabina para delegar el pase de lista sin usar mi cuenta principal. | 3 |
+| 27 | US23 | Programación de calendario con días no lectivos | Como padre/tutor, deseo marcar días festivos o feriados del colegio en el calendario para que la movilidad no pase por mi casa. | 3 |
+| 28 | US28 | Auditoría y consulta de bitácoras de viajes pasados | Como padre/tutor, deseo revisar el historial detallado de traslados anteriores para aclarar demoras o eventos sucedidos. | 5 |
+| 29 | US31 | Configuración personalizada de notificaciones push | Como padre/tutor, deseo seleccionar qué tipos de alertas recibir en mi celular para evitar exceso de notificaciones. | 3 |
+| 30 | US17 | Consulta de acreditación legal del conductor | Como padre/tutor, deseo verificar la vigencia de los documentos legales del conductor para certificar la formalidad del servicio. | 3 |
+| 31 | US14 | Registro de transportista y expediente vehicular | Como conductor, deseo registrar mis datos personales y los de mi unidad vehicular para postular al servicio de la plataforma. | 5 |
+| 32 | US36 | Pago de suscripción mediante tarjeta bancaria | Como padre/tutor, deseo abonar la cuota mensual del servicio mediante pasarela digital para mantener habilitada mi cuenta. | 5 |
+| 33 | US37 | Emisión y descarga de comprobantes de pago electrónicos | Como padre/tutor, deseo descargar boletas de venta digitales para respaldar mis pagos de movilidad ante mi presupuesto familiar. | 3 |
+| 34 | US38 | Cancelación voluntaria de suscripción en vacaciones | Como padre/tutor, deseo pausar o dar de baja mi suscripción al término del año lectivo para no incurrir en gastos durante las vacaciones escolares. | 2 |
+| 35 | US18 | Alta y gestión del perfil del menor | Como padre/tutor, deseo ingresar los datos del escolar y su centro educativo para vincularlo a su movilidad. | 3 |
+| 36 | US13 | Registro inicial de padre o tutor legal | Como visitante del segmento padre/tutor, deseo crear mi cuenta personal para comenzar a monitorear la movilidad de mis hijos. | 3 |
+| 37 | US15 | Autenticación y control de sesión con roles (RBAC) | Como usuario registrado, deseo iniciar sesión con mis credenciales para acceder a la funcionalidad asignada a mi rol. | 5 |
+| 38 | US16 | Recuperación de cuenta mediante enlace transitorio | Como usuario registrado, deseo recuperar mi contraseña mediante correo para restablecer el acceso en caso de olvido. | 3 |
+| 39 | TS01 | Endpoints REST para ingesta continua de coordenadas GPS | Como Developer, deseo exponer endpoints REST (`POST /api/v1/tracking/locations`) para almacenar las coordenadas enviadas por los vehículos. | 5 |
+| 40 | TS02 | Integración con Firebase Cloud Messaging para push | Como Developer, deseo integrar el SDK de FCM en el backend para distribuir las notificaciones de contingencia a los teléfonos de los padres. | 5 |
+| 41 | TS03 | Consumo de API externa de mapas para cálculo dinámico de ETA | Como Developer, deseo consumir el servicio Google Maps Distance Matrix para actualizar los tiempos de llegada considerando el tráfico real. | 5 |
+| 42 | TS04 | Mecanismo Offline First para persistencia temporal sin señal | Como Developer, deseo implementar almacenamiento local en IndexedDB para registrar hitos cuando la unidad transite por áreas sin señal celular. | 5 |
+| 43 | TS05 | Paginación y filtrado en endpoints de estudiantes | Como Developer, deseo implementar paginación y filtros de búsqueda en la API de estudiantes para optimizar el tiempo de respuesta del servidor. | 3 |
+| 44 | TS06 | Registro inmutable de logs y auditoría operativa | Como Developer, deseo estructurar una tabla de bitácora transaccional para auditar legalmente cualquier discrepancia en los recorridos. | 5 |
+| 45 | TS07 | Documentación interactiva de la API con Swagger / OpenAPI | Como Developer, deseo integrar Swagger UI en el backend para documentar y probar los endpoints del sistema de manera interactiva. | 2 |
 ---
 
 # Capítulo IV: Product Design
