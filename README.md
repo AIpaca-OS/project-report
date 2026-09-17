@@ -421,9 +421,9 @@ El backlog de requisitos se amplía a **50 historias en total: 42 User Stories f
 
 ## 3.2. Impact Mapping
 
-**Artefacto:** [Insertar captura y URL pública del Impact Map elaborado en UXPressia].
+**Artefacto:** <img width="1772" height="3958" alt="Impact mapping - Rumbo (3)" src="https://github.com/user-attachments/assets/d4da2148-8d21-449b-8f06-b585785b318e" />
 
-La estructura a representar en el artefacto es **Goal → Actor → Impact → Deliverable → User Story**. La siguiente matriz sirve como base para mantener coherencia entre objetivos, actores y backlog:
+
 
 | Business Goal | Actor | Impacto esperado | Deliverables principales | User Stories relacionadas |
 |---|---|---|---|---|
