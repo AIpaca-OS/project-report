@@ -18,7 +18,7 @@
 
 # Informe de Trabajo Final
 
-### Startup: Rumbo
+### Startup: AIpaca
 
 ### Producto: Rumbo
 
@@ -46,6 +46,7 @@
 | 0.2 | 11/09/2026 | Equipo Rumbo | Actualización de integrantes y avance de los capítulos I y II para AV1. |
 | 0.3 | 15/09/2026 | Equipo Rumbo | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
 | 0.4 | 17/09/2026 | Equipo Rumbo | Sincronización y ampliación del Capítulo I a partir de las mejoras realizadas en el proyecto de Aplicaciones Web. |
+| 0.5 | 17/09/2026 | Equipo AIpaca | Alineación de la identidad Startup AIpaca / Producto Rumbo y refinamiento de alcance, objetivos, restricciones y Lean UX para Open Source. |
 
 ---
 
@@ -119,23 +120,23 @@ El curso contribuye al cumplimiento del **ABET – EAC – Student Outcome 3: Ca
 
 ### 1.1.1. Descripción de la Startup
 
-**Rumbo** es una startup tecnológica peruana enfocada en el desarrollo de soluciones digitales que simplifican la coordinación del transporte escolar. Su propósito es aprovechar la tecnología para brindar tranquilidad a las familias y eficiencia a quienes prestan el servicio, mediante herramientas accesibles, seguras y fáciles de usar que permitan una comunicación clara, oportuna y ordenada entre padres, tutores y conductores de movilidad escolar.
+**AIpaca** es una startup tecnológica peruana enfocada en el desarrollo de soluciones digitales que simplifican la coordinación de servicios cotidianos, con especial atención en el transporte escolar. Su propósito es aprovechar la tecnología para brindar tranquilidad a las familias y eficiencia a quienes prestan el servicio mediante herramientas accesibles, seguras y fáciles de usar.
 
-El producto inicial de la startup es **Rumbo**, una plataforma web responsive orientada al uso móvil que centraliza la información del traslado escolar. La plataforma permite a los padres y tutores conocer el estado actual de la ruta, revisar una línea de tiempo con los principales hitos del recorrido y recibir notificaciones ante eventos relevantes como recojos, llegadas, retrasos o incidencias. A su vez, permite a los conductores consultar su ruta y los estudiantes asignados, confirmar recojos y entregas mediante interacciones breves y registrar incidencias una sola vez para comunicarlas a las familias correspondientes.
+El producto inicial de AIpaca es **Rumbo**, una plataforma web responsive orientada al uso móvil que centraliza la información del traslado escolar. Rumbo permite a los padres y tutores conocer el estado actual del viaje, revisar una línea de tiempo con los principales hitos del recorrido y recibir notificaciones ante eventos relevantes como recojos, llegadas, retrasos o incidencias. Para los conductores, permite consultar su ruta y los estudiantes asignados, confirmar recojos y entregas mediante interacciones breves y registrar incidencias una sola vez para comunicarlas a las familias correspondientes.
 
-La propuesta de Rumbo se centra en construir un ecosistema de coordinación del transporte escolar confiable, escalable y respetuoso de la privacidad, donde la información de cada traslado esté disponible únicamente para los usuarios autorizados. La solución no busca reemplazar las obligaciones de seguridad, autorización y operación que corresponden a los prestadores del servicio, ni la comunicación humana cuando esta sea necesaria. Su objetivo es complementarlas con información estructurada que reduzca la incertidumbre de las familias y la carga operativa de los conductores en una ciudad con alta congestión y tiempos de viaje variables.
+La propuesta de AIpaca busca construir un ecosistema de coordinación del transporte escolar confiable, escalable y respetuoso de la privacidad, donde la información de cada traslado esté disponible únicamente para los usuarios autorizados. Rumbo no reemplaza las obligaciones de seguridad, autorización y operación que corresponden a los prestadores del servicio ni la comunicación humana cuando sea necesaria; las complementa con información estructurada que reduzca la incertidumbre de las familias y la carga operativa de los conductores.
 
-**Misión:** Desarrollar herramientas digitales accesibles y confiables que permitan a padres, tutores y conductores de movilidad escolar coordinar los traslados de los estudiantes de forma clara y oportuna, brindando tranquilidad a las familias y eficiencia a quienes prestan el servicio.
+**Misión:** Desarrollar soluciones digitales accesibles y confiables que permitan a familias y prestadores de servicios coordinar actividades cotidianas de forma clara y oportuna, iniciando con la movilidad escolar mediante Rumbo.
 
-**Visión:** En los próximos cinco años, consolidar a Rumbo como una solución referente en coordinación digital del transporte escolar en el Perú y Latinoamérica, reconocida por generar confianza entre familias y prestadores del servicio mediante tecnología accesible, segura y escalable.
+**Visión:** En los próximos cinco años, consolidar a AIpaca como una startup referente en soluciones digitales de coordinación y seguridad para familias y prestadores de servicios en el Perú y Latinoamérica, con productos accesibles, seguros y escalables.
 
-**Propuesta de valor:** Rumbo convierte información dispersa en una experiencia de seguimiento simple y confiable. Para las familias, esto se traduce en mayor tranquilidad y menor incertidumbre. Para conductores y operadores de movilidad escolar, se traduce en menos coordinación manual, una comunicación más ordenada y un historial de eventos que puede servir para resolver consultas posteriores.
+**Propuesta de valor de Rumbo:** Convertir información dispersa del traslado escolar en una experiencia simple y confiable. Para las familias, esto se traduce en mayor tranquilidad y menor incertidumbre; para los conductores y operadores, en menos coordinación manual, comunicación más ordenada y un historial de eventos útil para resolver consultas posteriores.
 
-**Modelo de negocio:** Rumbo se plantea como una solución SaaS de suscripción recurrente. Como hipótesis comercial inicial, se considera un acceso sin costo para padres o tutores asociado al servicio y una suscripción para conductores u operadores que requieran gestionar rutas, estudiantes y eventos. A medida que el producto evolucione, podrán evaluarse planes organizacionales para asociaciones, cooperativas e instituciones educativas. Los precios, límites por plan y condiciones comerciales se consideran hipótesis de negocio y deberán validarse antes de definirse como oferta final.
+**Modelo de negocio:** AIpaca plantea a Rumbo como una solución SaaS de suscripción recurrente. Como hipótesis comercial inicial, los padres o tutores acceden a la experiencia vinculada al servicio de movilidad, mientras que conductores u operadores pueden contratar una suscripción para gestionar rutas, estudiantes y eventos. A medida que el producto evolucione podrán evaluarse planes organizacionales para asociaciones, cooperativas e instituciones educativas. Los precios, límites por plan y condiciones comerciales continúan siendo hipótesis y deberán validarse antes de convertirse en una oferta definitiva.
 
-**Alcance del MVP:** El alcance inicial está orientado a padres o tutores y conductores de movilidad escolar en Lima y Callao. La plataforma integra la consulta del estado del traslado, la línea de tiempo del trayecto, la confirmación de recojos y entregas, el registro de retrasos e incidencias y un centro de notificaciones. Este alcance permite validar la necesidad y el uso real sin incorporar todavía funcionalidades de mayor complejidad tecnológica.
+**Alcance del MVP:** Rumbo se concentra inicialmente en padres o tutores y conductores de movilidad escolar en Lima y Callao. El MVP prioriza el estado del traslado, la línea de tiempo del trayecto, la confirmación de recojos y entregas, el registro de retrasos e incidencias, la vista de ruta del conductor y las notificaciones relevantes. El objetivo es validar primero la coordinación basada en hitos y eventos sin depender de funcionalidades de mayor complejidad tecnológica.
 
-**Visión de crecimiento:** A mediano plazo, Rumbo podrá ampliar la solución hacia centros educativos y empresas de transporte escolar, incorporando la gestión de múltiples rutas y unidades. A largo plazo, podría evolucionar hacia un ecosistema más amplio de seguridad y acompañamiento de menores mediante zonas seguras y geofencing, integración con dispositivos IoT, cámaras inteligentes en puntos autorizados y generación automática de alertas. Estas capacidades forman parte del roadmap de escalabilidad y no del alcance de implementación de AV1.
+**Visión de crecimiento:** A mediano plazo, AIpaca podrá ampliar Rumbo hacia centros educativos y empresas de transporte escolar mediante la gestión de múltiples rutas y unidades. El seguimiento continuo por GPS, el cálculo dinámico de ETA y el geofencing pueden mantenerse en el Product Backlog como capacidades posteriores al MVP. A largo plazo también podrán evaluarse integraciones con dispositivos IoT, cámaras inteligentes en puntos autorizados y generación automática de alertas. Estas capacidades forman parte del roadmap de escalabilidad y no del alcance de implementación de AV1.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -154,7 +155,7 @@ La propuesta de Rumbo se centra en construir un ecosistema de coordinación del 
 
 ## 1.2. Solution Profile
 
-El **Solution Profile** presenta una descripción general de la solución propuesta por Rumbo. Aborda el contexto en el que opera el transporte escolar en Lima y Callao, los problemas detectados en la coordinación entre familias y conductores y las suposiciones estratégicas que guían el desarrollo del producto. Esta sección conecta el problema identificado con una propuesta de valor concreta y sirve como base para el diseño, la validación y el desarrollo posterior de la solución.
+El **Solution Profile** presenta una descripción general de **Rumbo**, producto desarrollado por AIpaca. Aborda el contexto en el que opera el transporte escolar en Lima y Callao, los problemas detectados en la coordinación entre familias y conductores y las suposiciones estratégicas que guían el desarrollo de la solución. Esta sección conecta el problema identificado con una propuesta de valor concreta y sirve como base para el diseño, la validación y el desarrollo posterior del producto.
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -185,7 +186,7 @@ El problema se presenta principalmente en Lima Metropolitana y el Callao, en las
 - **Verificación sin visibilidad en ruta:** las herramientas oficiales permiten comprobar la formalidad del servicio, pero no muestran el estado de cada traslado.
 
 **How (¿Cómo?) — ¿Cómo se abordará?**  
-Rumbo propone una plataforma web responsive orientada al uso móvil que centraliza el estado de cada traslado. Esta decisión es coherente con la alta conectividad de Lima Metropolitana: durante el cuarto trimestre de 2025, el INEI reportó **98,4 % de hogares con telefonía móvil** y **90,3 % de la población de 6 años a más utilizando Internet** (INEI, 2026).
+AIpaca propone Rumbo, una plataforma web responsive orientada al uso móvil que centraliza el estado de cada traslado. Esta decisión es coherente con la alta conectividad de Lima Metropolitana: durante el cuarto trimestre de 2025, el INEI reportó **98,4 % de hogares con telefonía móvil** y **90,3 % de la población de 6 años a más utilizando Internet** (INEI, 2026).
 
 Para los padres y tutores, la plataforma permitirá consultar el estado actual del viaje, revisar una línea de tiempo con los hitos del recorrido y recibir notificaciones ante recojos, llegadas, retrasos o incidencias. Para los conductores, permitirá consultar la ruta y los estudiantes asignados, confirmar recojos y entregas mediante interacciones breves y registrar una incidencia una sola vez para las familias correspondientes.
 
@@ -194,11 +195,28 @@ La información de cada menor deberá estar disponible únicamente para usuarios
 **How much (¿Cuánto?) — ¿Qué magnitud tiene y qué esfuerzo inicial requiere?**  
 La ATU reportó **3758 vehículos escolares habilitados en Lima y Callao**, lo que permite identificar un mercado formal y recurrente. Como referencia del mercado, Comparabien (2025) señala que el precio mensual por estudiante de una movilidad escolar puede variar aproximadamente entre S/ 150 y S/ 300 según distancia y servicios adicionales.
 
-Como estimación referencial elaborada por el equipo, el desarrollo de un primer producto funcional puede involucrar costos de diseño UX/UI y prototipado, frontend web responsive, backend/API REST y base de datos, integración de servicios, infraestructura en la nube, seguridad, cumplimiento normativo, marketing, piloto y soporte. Tomando como referencia el cálculo realizado para la propuesta académica, el rango total inicial se estima entre **S/ 23 300 y S/ 36 500**. Este monto es una hipótesis de planificación y no representa una cotización validada de mercado.
+Como estimación referencial elaborada por el equipo, el desarrollo de un primer producto funcional puede involucrar costos de diseño UX/UI y prototipado, frontend web responsive con Angular, backend y API REST con Spring Boot, base de datos, integración de servicios, infraestructura en la nube, seguridad, cumplimiento normativo, marketing, piloto y soporte. Tomando como referencia el cálculo realizado para la propuesta académica, el rango total inicial se estima entre **S/ 23 300 y S/ 36 500**. Este monto es una hipótesis de planificación y no representa una cotización validada de mercado.
+
+#### Objetivos y restricciones iniciales
+
+**Objetivo general:** Diseñar una solución digital que mejore la coordinación del transporte escolar entre padres/tutores y conductores, centralizando los principales eventos del traslado y reduciendo la dependencia de llamadas y mensajes individuales.
+
+**Objetivos específicos:**
+- Permitir que los padres comprendan rápidamente el estado del traslado y los principales hitos del recorrido.
+- Permitir que los conductores registren recojos, entregas, retrasos e incidencias mediante interacciones breves y seguras.
+- Mantener un historial estructurado de eventos del viaje para facilitar consultas posteriores.
+- Validar durante el proyecto qué funcionalidades generan mayor valor antes de ampliar el alcance tecnológico.
+
+**Restricciones iniciales:**
+- El alcance de validación de AV1 se concentra en padres/tutores y conductores de movilidad escolar de Lima y Callao.
+- La interacción del conductor debe diseñarse para realizarse únicamente cuando sea seguro hacerlo y sin incentivar el uso del dispositivo mientras conduce.
+- El acceso a información de menores debe limitarse a usuarios autorizados y considerar la normativa de protección de datos personales.
+- Para AV1, la implementación se concentra en la primera versión desplegada del Landing Page; Angular y Spring Boot se desarrollarán progresivamente en los siguientes Sprints.
+- GPS en tiempo real, ETA dinámico, geofencing, IoT y cámaras inteligentes forman parte de capacidades posteriores y no constituyen requisitos del MVP de AV1.
 
 ### 1.2.2. Lean UX Process
 
-El proceso Lean UX adoptado para Rumbo busca reducir el riesgo de construir funcionalidades que no aporten valor mediante la validación continua de supuestos. El enfoque se organiza en cuatro componentes: definición del problema, formulación de assumptions, creación de hypothesis statements y síntesis en el Lean UX Canvas.
+El proceso Lean UX adoptado por AIpaca para Rumbo busca reducir el riesgo de construir funcionalidades que no aporten valor mediante la validación continua de supuestos. El enfoque se organiza en cuatro componentes: definición del problema, formulación de assumptions, creación de hypothesis statements y síntesis en el Lean UX Canvas.
 
 #### 1.2.2.1. Lean UX Problem Statement
 
@@ -208,17 +226,17 @@ Lo que los productos y servicios existentes no resuelven completamente es una vi
 
 Rumbo abordará esta brecha mediante una plataforma web responsive en la que los conductores confirmen hitos con interacciones breves y los padres consulten el estado actual, la línea de tiempo del viaje y las notificaciones relevantes.
 
-El segmento inicial estará compuesto por conductores de movilidad escolar que operan en Lima y Callao y por los padres o tutores que contratan sus servicios.
+El segmento inicial estará compuesto por conductores de movilidad escolar que operan en Lima y Callao y por los padres o tutores que utilizan sus servicios.
 
-Se considerará una señal inicial de éxito reducir en **60 %** las consultas de padres sobre el estado de la ruta y lograr que al menos **80 %** de los recojos y entregas de una ruta quede confirmado dentro de Rumbo durante un piloto controlado.
+Se considerará una señal inicial de éxito reducir en **60 %** las consultas de padres sobre el estado de la ruta y lograr que al menos **80 %** de los recojos y entregas de una ruta quede confirmado dentro de Rumbo durante un piloto controlado. Estas cifras son objetivos de validación y no resultados ya demostrados.
 
 - **Domain:** transporte escolar, movilidad urbana y coordinación digital entre familias y prestadores de servicio.
 - **Customer Segments:** padres, madres y tutores de estudiantes que usan movilidad escolar; conductores de movilidad escolar que realizan rutas recurrentes.
 - **Pain Points — Padres/Tutores:** incertidumbre sobre el estado del traslado, falta de avisos oportunos e información dispersa entre chats y llamadas.
 - **Pain Points — Conductores:** consultas repetitivas, necesidad de comunicar el mismo evento a varias familias y ausencia de un registro ordenado de recojos, entregas e incidencias.
 - **Gap:** falta de una solución de uso extendido en Lima y Callao que combine en una sola experiencia el estado del traslado, confirmaciones, incidencias y notificaciones dirigidas a usuarios autorizados. Este supuesto deberá contrastarse con el análisis competitivo.
-- **Vision/Strategy:** consolidar a Rumbo como una solución referente en coordinación digital del transporte escolar, priorizando claridad, privacidad, seguridad y escalabilidad.
-- **Initial Segment:** conductores de movilidad escolar de Lima y Callao y padres o tutores que contratan sus servicios y utilizan dispositivos móviles con acceso a Internet.
+- **Vision/Strategy:** consolidar a AIpaca como una startup referente en coordinación digital de servicios familiares, iniciando con Rumbo como solución para transporte escolar y priorizando claridad, privacidad, seguridad y escalabilidad.
+- **Initial Segment:** conductores de movilidad escolar de Lima y Callao y padres o tutores que utilizan sus servicios y dispositivos móviles con acceso a Internet.
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -228,13 +246,13 @@ Los siguientes supuestos representan las creencias iniciales del equipo sobre el
 
 1. Creemos que los padres y tutores necesitan conocer el estado del traslado escolar de sus hijos para reducir su incertidumbre durante la ruta.
 2. Creemos que una plataforma web responsive con estados, hitos, notificaciones e incidencias puede satisfacer esta necesidad mejor que la mensajería de uso general.
-3. Creemos que nuestros clientes iniciales pueden ser conductores independientes de movilidad escolar en Lima y Callao, junto con las familias que utilizan sus servicios.
+3. Creemos que los usuarios iniciales serán padres/tutores y conductores de movilidad escolar en Lima y Callao, mientras que el cliente pagador inicial puede ser el conductor u operador mediante una suscripción SaaS.
 4. Creemos que el valor más importante para los padres es la tranquilidad de saber qué ocurre en la ruta sin tener que preguntar y, para los conductores, la reducción de mensajes repetitivos.
 5. Creemos que un modelo SaaS con acceso asociado al servicio para padres/tutores y una suscripción mensual para conductores u operadores puede sostener el crecimiento inicial del producto.
-6. Creemos que nuestra ventaja competitiva será una experiencia enfocada en hitos resumidos y eventos comprensibles, en lugar de depender únicamente de un seguimiento continuo de coordenadas.
+6. Creemos que la ventaja competitiva inicial de Rumbo será una experiencia enfocada en hitos resumidos y eventos comprensibles; el seguimiento continuo por GPS podrá evaluarse posteriormente como una capacidad complementaria y no como la única fuente de valor.
 7. Creemos que los conductores adoptarán la plataforma solo si registrar un evento toma pocos segundos y no interfiere con la conducción.
 8. Creemos que los mayores riesgos son la desconfianza sobre el manejo de datos de menores y la resistencia a cambiar hábitos de coordinación, y que estos riesgos pueden reducirse mediante permisos estrictos por rol, políticas claras de privacidad y pilotos controlados.
-9. Creemos que el costo de una eventual suscripción debe representar una fracción pequeña del valor mensual del servicio de movilidad escolar.
+9. Creemos que el costo de una eventual suscripción para conductores u operadores debe ser proporcional al valor que aporta en reducción de coordinación manual y gestión de rutas.
 
 ##### Business Outcome Assumptions
 
@@ -303,7 +321,7 @@ Creemos que lograremos que al menos el 60 % de los conductores del piloto contin
 
 #### 1.2.2.4. Lean UX Canvas
 
-El **Lean UX Canvas** sintetiza el problema de negocio, los segmentos objetivo, las soluciones preliminares, los resultados esperados y los principales aprendizajes que Rumbo necesita validar antes de ampliar el alcance del producto.
+El **Lean UX Canvas** sintetiza el problema de negocio, los segmentos objetivo, las soluciones preliminares, los resultados esperados y los principales aprendizajes que AIpaca necesita validar con Rumbo antes de ampliar el alcance del producto.
 
 <p align="center"><img src="assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
 
@@ -343,7 +361,7 @@ En esta sección se identifican y describen los dos segmentos de usuarios hacia 
 
 **Escalabilidad comercial:** Los dos segmentos anteriores se mantienen como foco de validación de AV1. A medida que Rumbo crezca, asociaciones, cooperativas de transporte escolar e instituciones educativas pueden incorporarse como clientes organizacionales mediante planes que agrupen varias rutas, vehículos y usuarios.
 
-**Evolución tecnológica:** El transporte escolar se plantea como el primer caso de uso de una plataforma más amplia de seguridad y acompañamiento de menores. En etapas posteriores podrían evaluarse zonas seguras y geofencing, integraciones con cámaras inteligentes o dispositivos IoT autorizados, detección automática de eventos y alertas asociadas a entradas, salidas o desvíos. Estas funcionalidades forman parte del roadmap y no son requisito del MVP actual.
+**Evolución tecnológica:** El transporte escolar se plantea como el primer caso de uso de una plataforma más amplia de coordinación y seguridad desarrollada por AIpaca. En etapas posteriores podrían evaluarse zonas seguras y geofencing, integraciones con cámaras inteligentes o dispositivos IoT autorizados, detección automática de eventos y alertas asociadas a entradas, salidas o desvíos. Estas funcionalidades forman parte del roadmap y no son requisito del MVP actual.
 
 ---
 
