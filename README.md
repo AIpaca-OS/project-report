@@ -622,6 +622,82 @@ El tono de comunicación de Rumbo busca generar confianza y tranquilidad. Debido
 
 Los mensajes principales emplean frases breves orientadas al beneficio del usuario, como “Tranquilidad en cada trayecto” y “Empieza a sentirte más tranquilo hoy”. De esta manera, la propuesta de valor se comunica desde la perspectiva de la tranquilidad y seguridad que obtiene el usuario, en lugar de centrarse únicamente en características técnicas.
 
+### 4.1.2. Web Style Guidelines
+Las Web Style Guidelines de Rumbo definen la manera en que las decisiones establecidas en las General Style Guidelines se aplican a las interfaces web del producto. Su propósito es mantener consistencia visual y de interacción entre el Landing Page y la Web Application, considerando distintos tamaños de pantalla y las necesidades particulares de los segmentos objetivo.
+
+La experiencia web se diseña bajo un enfoque responsive, accesible y consistente. Se consideran los idiomas `en_US` y `es_419`, utilizando inglés como idioma predeterminado de la experiencia. Asimismo, los componentes interactivos deberán incorporar atributos semánticos y ARIA cuando sea necesario para facilitar su uso mediante tecnologías asistivas.
+
+#### Responsive Layout
+
+La interfaz utiliza una estructura flexible que permite reorganizar el contenido según el espacio disponible. En pantallas de mayor tamaño se aprovecha la distribución horizontal para presentar información relacionada en múltiples columnas, mientras que en dispositivos de menor tamaño los elementos se reorganizan progresivamente en una disposición vertical.
+
+En el Landing Page, este comportamiento se aplica principalmente a las secciones de beneficios, funcionamiento, indicadores y testimonios. En la Web Application, la misma lógica permitirá adaptar dashboards, listas, tarjetas y formularios sin alterar la jerarquía de la información.
+
+Los márgenes y separaciones utilizan el sistema de spacing definido previamente, evitando valores arbitrarios y manteniendo consistencia entre Desktop y Mobile Web Browser.
+
+#### Visual Hierarchy
+
+La jerarquía visual se establece principalmente mediante tamaño tipográfico, peso, contraste y espaciado.
+
+Los títulos principales utilizan la tipografía Outfit y representan el mayor nivel de jerarquía visual. Los textos descriptivos, botones, formularios y elementos funcionales utilizan Roboto para mantener una lectura clara y consistente.
+
+El color `#0F172A` se utiliza principalmente para títulos y textos de alta relevancia, mientras que `#3EA98A` permite destacar acciones principales y elementos interactivos. Las superficies en `#FBFAF6`, `#F5F4EA` y blanco permiten diferenciar secciones sin generar una interfaz visualmente saturada.
+
+#### Buttons and Call-to-Action
+
+Los botones se organizan según la importancia de la acción que representan.
+
+| Tipo | Aplicación |
+|---|---|
+| Primary Button | Acciones principales como registro, confirmación o acceso a una funcionalidad destacada. Utiliza principalmente el color `#3EA98A`. |
+| Secondary Button | Acciones complementarias que no requieren competir visualmente con la acción principal. |
+| Text Action | Acciones de menor prioridad o navegación contextual. |
+
+Las etiquetas de los botones utilizan verbos o expresiones breves que permiten anticipar claramente el resultado de la acción.
+
+#### Cards
+
+Las tarjetas se utilizan para agrupar contenidos relacionados y facilitar su exploración visual. En Rumbo se aplican principalmente para representar beneficios, pasos del funcionamiento, testimonios, información del trayecto y otros grupos de datos relacionados.
+
+Las tarjetas emplean superficies claras, bordes redondeados, espaciado interno consistente y sombras suaves cuando se requiere separarlas del fondo. Los títulos y acciones de cada tarjeta conservan la jerarquía tipográfica y cromática definida en las General Style Guidelines.
+
+#### Interaction States
+
+Los componentes interactivos deben comunicar visualmente su estado durante la interacción.
+
+Se consideran como mínimo los siguientes estados:
+
+- **Default:** estado inicial del componente.
+- **Hover:** indica que un elemento puede ser seleccionado mediante un dispositivo apuntador.
+- **Focus:** permite identificar el componente activo durante la navegación mediante teclado.
+- **Active:** comunica que el elemento se encuentra siendo seleccionado o ejecutado.
+- **Disabled:** indica que una acción no se encuentra disponible en el contexto actual.
+
+Los estados no deben comunicarse únicamente mediante cambios de color; cuando sea necesario se utilizarán cambios adicionales de borde, forma, iconografía o texto.
+
+#### Accessibility
+
+Las interfaces de Rumbo se diseñan considerando principios de accesibilidad desde las primeras etapas del producto.
+
+Entre las principales decisiones se encuentran:
+
+- mantener suficiente contraste entre texto y fondo;
+- proporcionar indicadores visibles de focus;
+- utilizar HTML semántico;
+- proporcionar texto alternativo para imágenes informativas;
+- permitir navegación mediante teclado;
+- evitar transmitir información exclusivamente mediante color;
+- utilizar atributos ARIA cuando la semántica nativa no sea suficiente;
+- mantener tamaños y áreas de interacción adecuados para dispositivos táctiles.
+
+Estas reglas deberán conservarse tanto en el Landing Page como en las diferentes vistas de la Web Application.
+
+#### Internationalization
+
+Rumbo considera soporte de internacionalización para `en_US` y `es_419`. El idioma predeterminado será inglés y los contenidos deberán conservar equivalencia semántica entre ambas versiones.
+
+Las etiquetas, botones, mensajes, alertas y demás elementos de interfaz deberán evitar textos incrustados directamente en los componentes cuando ello dificulte su posterior localización.
+
 ## 4.2. Information Architecture
 La arquitectura de información de Rumbo define cómo se organizan, etiquetan y conectan los contenidos y funcionalidades del Landing Page y de la Web Application. Su diseño considera las necesidades diferenciadas de los dos principales segmentos objetivo: padres o tutores, quienes principalmente consultan el estado del trayecto, y conductores de movilidad escolar, quienes registran los eventos que ocurren durante la ruta.
 
