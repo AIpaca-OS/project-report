@@ -2,7 +2,7 @@
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-<img src="https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png" alt="Logo UPC" width="260"/>
+<img src="./assets/upc-logo.png" alt="Logo UPC" width="260"/>
 
 ### Ingeniería de Software
 
