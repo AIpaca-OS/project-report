@@ -1,43 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
- <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#666"/></marker></defs>
- <rect width="1600" height="900" fill="#F5F5F3"/>
- <text x="60" y="72" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#242424">Identity and Access Management Bounded Context</text>
- 
-<rect x="55" y="180" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="260" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User</text>
-<rect x="185" y="195" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="245" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Register User</text>
-<line x1="350" y1="240" x2="390" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="195" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="245" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User Account</text>
-<line x1="555" y1="240" x2="595" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="195" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="245" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User Registered</text>
-<line x1="760" y1="240" x2="800" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="195" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="236" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Create profile for</text><text x="895" y="254" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">selected role</text>
-<line x1="990" y1="240" x2="1030" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="195" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="236" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Access &amp; Session</text><text x="1117.5" y="254" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">View</text>
-
-<rect x="55" y="390" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="470" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User</text>
-<rect x="185" y="405" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="455" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Authenticate User</text>
-<line x1="350" y1="450" x2="390" y2="450" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="405" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="455" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User Account</text>
-<line x1="555" y1="450" x2="595" y2="450" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="405" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="455" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User Authenticated</text>
-<line x1="760" y1="450" x2="800" y2="450" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="405" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="446" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Authorize actions by</text><text x="895" y="464" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">role</text>
-<line x1="990" y1="450" x2="1030" y2="450" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="405" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="446" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Role &amp; Permission</text><text x="1117.5" y="464" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">View</text>
-
-<rect x="55" y="600" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="680" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User</text>
-<rect x="185" y="615" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="656" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Request Password</text><text x="267.5" y="674" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Reset</text>
-<line x1="350" y1="660" x2="390" y2="660" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="615" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="665" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">User Account</text>
-<line x1="555" y1="660" x2="595" y2="660" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="615" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="665" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Reset Requested</text>
-<line x1="760" y1="660" x2="800" y2="660" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="615" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="656" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Generate one-time</text><text x="895" y="674" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">recovery token</text>
-<line x1="990" y1="660" x2="1030" y2="660" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="615" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="665" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Recovery Status</text>
-
-<polygon points="1365,325 1460,395 1365,465 1270,395" fill="#DF67CB" stroke="#B14B9F" stroke-width="1.5"/><text x="1365" y="382" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Unauthorized access</text><text x="1365" y="400" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">or wrong role</text><text x="1365" y="418" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">assignment</text>
-
- <rect x="170" y="830" width="26" height="18" fill="#FFF2B2" stroke="#aaa"/><text x="204" y="844" font-family="Arial" font-size="13" fill="#444">Actor</text><rect x="340" y="830" width="26" height="18" fill="#8DBCF0" stroke="#aaa"/><text x="374" y="844" font-family="Arial" font-size="13" fill="#444">Command</text><rect x="510" y="830" width="26" height="18" fill="#BFD7EE" stroke="#aaa"/><text x="544" y="844" font-family="Arial" font-size="13" fill="#444">Aggregate</text><rect x="680" y="830" width="26" height="18" fill="#F7B26A" stroke="#aaa"/><text x="714" y="844" font-family="Arial" font-size="13" fill="#444">Domain Event</text><rect x="850" y="830" width="26" height="18" fill="#B9A7E8" stroke="#aaa"/><text x="884" y="844" font-family="Arial" font-size="13" fill="#444">Policy</text><rect x="1020" y="830" width="26" height="18" fill="#A8D96D" stroke="#aaa"/><text x="1054" y="844" font-family="Arial" font-size="13" fill="#444">Read Model</text><rect x="1190" y="830" width="26" height="18" fill="#DF67CB" stroke="#aaa"/><text x="1224" y="844" font-family="Arial" font-size="13" fill="#444">Hotspot</text>
- <text x="60" y="868" font-family="Arial" font-size="12" fill="#777">Rumbo — Design-Level Event Storming</text>
- </svg>
+<svg viewBox="0 0 5000 1700" xmlns="http://www.w3.org/2000/svg">
+<g id="m3458764684142726010" data-miro-id="3458764684142726010" transform="translate(0,0)" data-frame="BC01 - Identity and Access Management (IAM)">
+<rect data-type="frame" x="0" y="0" width="5000" height="1700" fill="#ffffff" data-title="BC01 - Identity and Access Management (IAM)" />
+<rect id="m3458764684142726017" data-miro-id="3458764684142726017" data-type="sticky" x="100" y="330" width="199" height="228" data-content="Parent / Tutor" data-color="yellow" />
+<rect id="m3458764684142726018" data-miro-id="3458764684142726018" data-type="sticky" x="450" y="330" width="199" height="228" data-content="Register User" data-color="blue" />
+<rect id="m3458764684142726019" data-miro-id="3458764684142726019" data-type="sticky" x="800" y="330" width="199" height="228" data-content="UserAccount" data-color="light_blue" />
+<rect id="m3458764684142726020" data-miro-id="3458764684142726020" data-type="sticky" x="1150" y="330" width="199" height="228" data-content="User Registered" data-color="orange" />
+<rect id="m3458764684142726021" data-miro-id="3458764684142726021" data-type="sticky" x="1500" y="330" width="199" height="228" data-content="Create corresponding profile" data-color="violet" />
+<rect id="m3458764684142726023" data-miro-id="3458764684142726023" data-type="sticky" x="1850" y="330" width="199" height="228" data-content="Access &amp; Session View" data-color="green" />
+<rect id="m3458764684142726024" data-miro-id="3458764684142726024" data-type="sticky" x="100" y="760" width="199" height="228" data-content="Parent / Driver / Assistant" data-color="yellow" />
+<rect id="m3458764684142726025" data-miro-id="3458764684142726025" data-type="sticky" x="450" y="760" width="199" height="228" data-content="Authenticate User" data-color="blue" />
+<rect id="m3458764684142726026" data-miro-id="3458764684142726026" data-type="sticky" x="800" y="760" width="199" height="228" data-content="UserAccount" data-color="light_blue" />
+<rect id="m3458764684142726027" data-miro-id="3458764684142726027" data-type="sticky" x="1150" y="760" width="199" height="228" data-content="User Authenticated" data-color="orange" />
+<rect id="m3458764684142726028" data-miro-id="3458764684142726028" data-type="sticky" x="1500" y="760" width="199" height="228" data-content="Apply role-based permissions" data-color="violet" />
+<rect id="m3458764684142726029" data-miro-id="3458764684142726029" data-type="sticky" x="1850" y="760" width="199" height="228" data-content="&lt;p&gt;Role &amp; Permission View&lt;/p&gt;" data-color="green" />
+<rect id="m3458764684142726030" data-miro-id="3458764684142726030" data-type="sticky" x="100" y="1190" width="199" height="228" data-content="Registered User" data-color="yellow" />
+<rect id="m3458764684142726031" data-miro-id="3458764684142726031" data-type="sticky" x="450" y="1190" width="199" height="228" data-content="Request Password Reset" data-color="blue" />
+<rect id="m3458764684142726032" data-miro-id="3458764684142726032" data-type="sticky" x="800" y="1190" width="199" height="228" data-content="UserAccount" data-color="light_blue" />
+<rect id="m3458764684142726033" data-miro-id="3458764684142726033" data-type="sticky" x="1150" y="1190" width="199" height="228" data-content="Password Reset Requested" data-color="orange" />
+<rect id="m3458764684142726035" data-miro-id="3458764684142726035" data-type="sticky" x="1500" y="1190" width="199" height="228" data-content="Reset Password" data-color="blue" />
+<rect id="m3458764684142726038" data-miro-id="3458764684142726038" data-type="sticky" x="1850" y="1190" width="199" height="228" data-content="Password Reset Completed" data-color="orange" />
+<rect id="m3458764684142726039" data-miro-id="3458764684142726039" data-type="sticky" x="2550" y="180" width="199" height="228" data-content="Unauthorized access or wrong role" data-color="pink" />
+<rect id="m3458764684142726041" data-miro-id="3458764684142726041" data-type="sticky" x="2830" y="180" width="199" height="228" data-content="Compromised credentials" data-color="pink" />
+</g>
+<line id="m3458764684142726140" data-miro-id="3458764684142726140" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726017" data-end="m3458764684142726018" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726141" data-miro-id="3458764684142726141" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726018" data-end="m3458764684142726019" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726142" data-miro-id="3458764684142726142" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726019" data-end="m3458764684142726020" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726143" data-miro-id="3458764684142726143" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726020" data-end="m3458764684142726021" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726144" data-miro-id="3458764684142726144" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726021" data-end="m3458764684142726023" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726145" data-miro-id="3458764684142726145" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726024" data-end="m3458764684142726025" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726146" data-miro-id="3458764684142726146" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726025" data-end="m3458764684142726026" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726147" data-miro-id="3458764684142726147" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726026" data-end="m3458764684142726027" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726148" data-miro-id="3458764684142726148" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726027" data-end="m3458764684142726028" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726149" data-miro-id="3458764684142726149" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726028" data-end="m3458764684142726029" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726151" data-miro-id="3458764684142726151" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726030" data-end="m3458764684142726031" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726153" data-miro-id="3458764684142726153" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726031" data-end="m3458764684142726032" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726154" data-miro-id="3458764684142726154" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726032" data-end="m3458764684142726033" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726155" data-miro-id="3458764684142726155" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726033" data-end="m3458764684142726035" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726156" data-miro-id="3458764684142726156" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726035" data-end="m3458764684142726038" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+</svg>

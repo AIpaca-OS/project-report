@@ -1275,7 +1275,7 @@ flowchart LR
 
 El conductor mantiene como punto central la ruta asignada. Las acciones de recojo, entrega, retraso e incidencia regresan al mismo panel para evitar navegación innecesaria durante la jornada.
 
-### 4.4.2. Web Applications Mock-ups
+### 4.4.3. Web Applications Mock-ups
 
 La propuesta visual de la Web Application reutiliza el lenguaje definido para la Landing Page: fondo claro, tarjetas blancas, verde como color de acción y tonos oscuros para textos y estados principales.
 
@@ -1291,7 +1291,7 @@ La propuesta visual de la Web Application reutiliza el lenguaje definido para la
 
 Los controles del conductor se plantean con botones grandes, mensajes breves y confirmaciones visibles. Para padres se prioriza lectura rápida, estado actual y jerarquía visual de alertas.
 
-### 4.4.3. Web Applications User Flow Diagrams
+### 4.4.4. Web Applications User Flow Diagrams
 
 #### User Flow — Padre/Tutor
 
@@ -1435,7 +1435,7 @@ Este diagrama hace foco en la arquitectura interna de la Single Page Application
 
 ### 4.7.1. Class Diagrams
 
-Los Class Diagrams se presentan por **Bounded Context** para mantener la separación definida en el Design-Level Event Storming. Se utiliza **Mermaid como Diagram-as-Code**, alternativa permitida por el enunciado para UML. Los diagramas incluyen clases, interfaces, enumeraciones, atributos y métodos con visibilidad, además de relaciones y multiplicidades.
+Los Class Diagrams se presentan por **Bounded Context** para mantener la separación definida en el Design-Level Event Storming. Los diagramas incluyen clases, interfaces, enumeraciones, atributos, métodos, visibilidad, relaciones y multiplicidades, de acuerdo con el nivel de detalle solicitado para el diseño orientado a objetos.
 
 #### Profiles and Verification
 
@@ -1468,296 +1468,69 @@ Los Class Diagrams se presentan por **Bounded Context** para mantener la separac
 
 ## 4.8. Database Design
 
-El diseño de persistencia también se divide por **Bounded Context** y se presenta mediante **Mermaid ER Diagram**, alternativa Diagram-as-Code permitida por el enunciado. En cada diagrama se muestran tablas, columnas, claves primarias y foráneas, además de relaciones y cardinalidades.
+El diseño de persistencia se divide por los mismos **Bounded Contexts** definidos en el modelado DDD. Cada diagrama representa las tablas, columnas, claves primarias, claves foráneas y relaciones que permiten persistir la información administrada por su contexto. Los ERD fueron elaborados en **Lucidchart** y se incorporan al informe como imágenes legibles junto con su fuente editable.
 
 ### 4.8.1. Database Diagrams
 
 #### Profiles and Verification
 
-```mermaid
-erDiagram
-  PARENT_PROFILES {
-    uuid id PK
-    uuid user_account_id
-    varchar full_name
-    varchar phone
-  }
-  DRIVER_PROFILES {
-    uuid id PK
-    uuid user_account_id
-    varchar full_name
-    varchar phone
-    varchar status
-  }
-  STUDENT_PROFILES {
-    uuid id PK
-    uuid parent_profile_id FK
-    varchar full_name
-    varchar school_name
-    varchar grade
-  }
-  VEHICLES {
-    uuid id PK
-    uuid driver_profile_id FK
-    varchar plate
-    varchar model
-    int capacity
-  }
-  REGISTERED_DOCUMENTS {
-    uuid id PK
-    varchar owner_type
-    uuid owner_id
-    varchar document_type
-    date declared_expiration_date
-    varchar status
-  }
-  STUDENT_DRIVER_LINKS {
-    uuid id PK
-    uuid student_profile_id FK
-    uuid driver_profile_id FK
-    varchar status
-  }
-  PARENT_PROFILES ||--o{ STUDENT_PROFILES : manages
-  DRIVER_PROFILES ||--o{ VEHICLES : operates
-  STUDENT_PROFILES ||--o{ STUDENT_DRIVER_LINKS : links
-  DRIVER_PROFILES ||--o{ STUDENT_DRIVER_LINKS : authorizes
-```
+Incluye perfiles de padres, conductores y estudiantes, vehículos, documentos registrados y vínculos entre estudiantes y conductores.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/profiles-verification.png" alt="Profiles and Verification Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/c71a5220-bf71-4924-bbd8-cdec37c2f06c/edit
 
 #### Identity and Access Management (IAM)
 
-```mermaid
-erDiagram
-  USER_ACCOUNTS {
-    uuid id PK
-    varchar email
-    varchar status
-    timestamp created_at
-  }
-  CREDENTIALS {
-    uuid id PK
-    uuid user_account_id FK
-    varchar password_hash
-    timestamp updated_at
-  }
-  ROLES {
-    uuid id PK
-    varchar name
-  }
-  PERMISSIONS {
-    uuid id PK
-    varchar code
-    varchar description
-  }
-  USER_ROLES {
-    uuid user_account_id PK,FK
-    uuid role_id PK,FK
-  }
-  ROLE_PERMISSIONS {
-    uuid role_id PK,FK
-    uuid permission_id PK,FK
-  }
-  PASSWORD_RESET_TOKENS {
-    uuid id PK
-    uuid user_account_id FK
-    varchar token_hash
-    timestamp expires_at
-    boolean used
-  }
-  USER_ACCOUNTS ||--|| CREDENTIALS : has
-  USER_ACCOUNTS ||--o{ USER_ROLES : owns
-  ROLES ||--o{ USER_ROLES : groups
-  ROLES ||--o{ ROLE_PERMISSIONS : grants
-  PERMISSIONS ||--o{ ROLE_PERMISSIONS : belongs
-  USER_ACCOUNTS ||--o{ PASSWORD_RESET_TOKENS : requests
-```
+Incluye cuentas, credenciales, roles, permisos, relaciones de autorización y tokens de recuperación de acceso.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/iam.png" alt="Identity and Access Management Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/f8fd5cb8-8ed5-4ac9-ae4f-0127d8369a18/edit
 
 #### Route and Trip Planning
 
-```mermaid
-erDiagram
-  ROUTES {
-    uuid id PK
-    uuid driver_id
-    uuid vehicle_id
-    varchar name
-    varchar shift
-    varchar status
-  }
-  ROUTE_STOPS {
-    uuid id PK
-    uuid route_id FK
-    varchar address
-    int sequence
-    time scheduled_time
-  }
-  STUDENT_ROUTE_ASSIGNMENTS {
-    uuid id PK
-    uuid route_id FK
-    uuid student_id
-    uuid stop_id FK
-    boolean active
-  }
-  TRIP_SCHEDULES {
-    uuid id PK
-    uuid route_id FK
-    date service_date
-    varchar shift
-    varchar status
-  }
-  STUDENT_ABSENCES {
-    uuid id PK
-    uuid trip_schedule_id FK
-    uuid student_id
-    date absence_date
-    varchar reason
-  }
-  ROUTES ||--|{ ROUTE_STOPS : contains
-  ROUTES ||--o{ STUDENT_ROUTE_ASSIGNMENTS : assigns
-  ROUTE_STOPS ||--o{ STUDENT_ROUTE_ASSIGNMENTS : pickup_at
-  ROUTES ||--o{ TRIP_SCHEDULES : schedules
-  TRIP_SCHEDULES ||--o{ STUDENT_ABSENCES : considers
-```
+Incluye rutas, paradas, asignaciones de estudiantes, programación de viajes y ausencias.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/dc535238-b74a-409c-9270-8bfcf4ea11a7/edit
 
 #### Real-Time Tracking and Execution
 
-```mermaid
-erDiagram
-  TRIPS {
-    uuid id PK
-    uuid route_id
-    timestamp started_at
-    timestamp completed_at
-    varchar status
-  }
-  TRIP_STUDENTS {
-    uuid id PK
-    uuid trip_id FK
-    uuid student_id
-    varchar status
-  }
-  TRIP_EVENTS {
-    uuid id PK
-    uuid trip_id FK
-    varchar type
-    timestamp occurred_at
-    varchar notes
-    uuid corrected_event_id
-  }
-  PICKUPS {
-    uuid id PK
-    uuid trip_student_id FK
-    timestamp confirmed_at
-  }
-  DROPOFFS {
-    uuid id PK
-    uuid trip_student_id FK
-    timestamp confirmed_at
-  }
-  SEATBELT_CHECKS {
-    uuid id PK
-    uuid trip_student_id FK
-    boolean verified
-    timestamp checked_at
-  }
-  LOCATION_RECORDS {
-    uuid id PK
-    uuid trip_id FK
-    decimal latitude
-    decimal longitude
-    timestamp recorded_at
-  }
-  TRIPS ||--|{ TRIP_STUDENTS : includes
-  TRIPS ||--o{ TRIP_EVENTS : records
-  TRIP_STUDENTS ||--o| PICKUPS : pickup
-  TRIP_STUDENTS ||--o| DROPOFFS : dropoff
-  TRIP_STUDENTS ||--o{ SEATBELT_CHECKS : verifies
-  TRIPS ||--o{ LOCATION_RECORDS : records
-```
+Incluye viajes, estudiantes del viaje, eventos, recojos, entregas, verificaciones y registros de ubicación previstos para la evolución del producto.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/3fcc7afd-47ae-4293-9ef2-66b0a7c74621/edit
 
 #### Alerting and Incident Management
 
-```mermaid
-erDiagram
-  DELAYS {
-    uuid id PK
-    uuid trip_id
-    varchar reason
-    int estimated_minutes
-    timestamp reported_at
-  }
-  INCIDENTS {
-    uuid id PK
-    uuid trip_id
-    varchar category
-    varchar severity
-    varchar description
-    varchar status
-    timestamp reported_at
-    timestamp resolved_at
-  }
-  NOTIFICATIONS {
-    uuid id PK
-    varchar type
-    varchar source_type
-    uuid source_id
-    varchar title
-    varchar message
-    timestamp created_at
-  }
-  NOTIFICATION_RECIPIENTS {
-    uuid id PK
-    uuid notification_id FK
-    uuid user_id
-    boolean read
-    timestamp read_at
-  }
-  NOTIFICATION_PREFERENCES {
-    uuid id PK
-    uuid user_id
-    boolean pickup_enabled
-    boolean dropoff_enabled
-    boolean delay_enabled
-    boolean incident_enabled
-  }
-  NOTIFICATIONS ||--|{ NOTIFICATION_RECIPIENTS : delivered_to
-```
+Incluye retrasos, incidencias, notificaciones, destinatarios y preferencias de notificación.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/alerting-incident-management.png" alt="Alerting and Incident Management Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/b464254e-0388-492e-862d-b93d5ee3e25f/edit
 
 #### Subscriptions and Billing
 
-```mermaid
-erDiagram
-  PLANS {
-    uuid id PK
-    varchar name
-    decimal reference_price
-    boolean active
-  }
-  SUBSCRIPTIONS {
-    uuid id PK
-    uuid driver_id
-    uuid plan_id FK
-    varchar status
-    date start_date
-    date renewal_date
-  }
-  PAYMENTS {
-    uuid id PK
-    uuid subscription_id FK
-    decimal amount
-    varchar status
-    timestamp processed_at
-    varchar provider_reference
-  }
-  RECEIPTS {
-    uuid id PK
-    uuid payment_id FK
-    varchar number
-    timestamp issued_at
-  }
-  PLANS ||--o{ SUBSCRIPTIONS : selected_by
-  SUBSCRIPTIONS ||--o{ PAYMENTS : generates
-  PAYMENTS ||--o| RECEIPTS : produces
-```
+Incluye planes, suscripciones, pagos y comprobantes asociados al ciclo comercial.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="90%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/178dfc99-92f9-4eef-8699-ecd2085c650a/edit
 
 ---
 
