@@ -153,11 +153,12 @@ Cada perfil resume los conocimientos técnicos y los aportes que cada integrante
       <td>Cuenta con conocimientos en Python y C++ y destaca por su rapidez para aprender, filtrar información relevante y trabajar de manera colaborativa. En Rumbo aporta en investigación, análisis de requerimientos, documentación y conexión de los hallazgos con funcionalidades del producto.</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://avatars.githubusercontent.com/u/207377950?v=4" alt="Diana Pareja Caceres" width="180"></td>\n      <td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td>
+      <td align="center"><img width="893" height="948" alt="foto carnet diana pareja" src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" /></td>\n      <td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td>
       <td>En Rumbo ha participado en análisis competitivo, User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Aporta especialmente en documentación, análisis del producto y estructuración de artefactos de diseño y arquitectura.</td>
     </tr>
   </tbody>
 </table>
+
 
 ## 1.2. Solution Profile
 
