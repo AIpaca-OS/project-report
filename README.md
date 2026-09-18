@@ -1770,7 +1770,7 @@ Los commits del 16 y 17 de septiembre corresponden a estabilización y mejora po
 
 **Landing Page:** https://github.com/AIpaca-OS/landing-page
 
-La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, CTA, formulario de contacto y footer.
+La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, testimonios, FAQ, CTA y footer.
 
 ![Ejecución Desktop de la Landing Page](assets/chapter5/landing-desktop-evidence.webp)
 
