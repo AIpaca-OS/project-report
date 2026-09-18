@@ -1,43 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
- <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#666"/></marker></defs>
- <rect width="1600" height="900" fill="#F5F5F3"/>
- <text x="60" y="72" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#242424">Alerting and Incident Management Bounded Context</text>
- 
-<rect x="55" y="155" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="235" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Driver</text>
-<rect x="185" y="170" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="220" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Report Delay</text>
-<line x1="350" y1="215" x2="390" y2="215" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="170" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="220" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Delay</text>
-<line x1="555" y1="215" x2="595" y2="215" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="170" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="220" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Delay Reported</text>
-<line x1="760" y1="215" x2="800" y2="215" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="170" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="211" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Notify affected</text><text x="895" y="229" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">authorized families</text>
-<line x1="990" y1="215" x2="1030" y2="215" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="170" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="220" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Delay Detail</text>
-
-<rect x="55" y="365" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="445" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Driver</text>
-<rect x="185" y="380" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="430" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Report Incident</text>
-<line x1="350" y1="425" x2="390" y2="425" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="380" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="430" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Incident</text>
-<line x1="555" y1="425" x2="595" y2="425" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="380" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="430" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Incident Reported</text>
-<line x1="760" y1="425" x2="800" y2="425" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="380" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="421" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Create critical</text><text x="895" y="439" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">notification</text>
-<line x1="990" y1="425" x2="1030" y2="425" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="380" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="430" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Incident Detail</text>
-
-<rect x="55" y="575" width="92" height="150" rx="2" fill="#FFF2B2" stroke="#b9b9b9" stroke-width="1"/><text x="101" y="655" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Parent / Tutor</text>
-<rect x="185" y="590" width="165" height="90" rx="2" fill="#8DBCF0" stroke="#b9b9b9" stroke-width="1"/><text x="267.5" y="631" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Update Notification</text><text x="267.5" y="649" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Preferences</text>
-<line x1="350" y1="635" x2="390" y2="635" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="390" y="590" width="165" height="90" rx="2" fill="#BFD7EE" stroke="#b9b9b9" stroke-width="1"/><text x="472.5" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Notification</text>
-<line x1="555" y1="635" x2="595" y2="635" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="595" y="590" width="165" height="90" rx="2" fill="#F7B26A" stroke="#b9b9b9" stroke-width="1"/><text x="677.5" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Preferences Updated</text>
-<line x1="760" y1="635" x2="800" y2="635" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="800" y="590" width="190" height="90" rx="2" fill="#B9A7E8" stroke="#b9b9b9" stroke-width="1"/><text x="895" y="631" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Keep critical alerts</text><text x="895" y="649" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">enabled</text>
-<line x1="990" y1="635" x2="1030" y2="635" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1030" y="590" width="175" height="90" rx="2" fill="#A8D96D" stroke="#b9b9b9" stroke-width="1"/><text x="1117.5" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Notifications View</text>
-
-<polygon points="1360,300 1460,372.5 1360,445 1260,372.5" fill="#DF67CB" stroke="#B14B9F" stroke-width="1.5"/><text x="1360" y="350.5" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">Wrong recipient,</text><text x="1360" y="368.5" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">alert overload or</text><text x="1360" y="386.5" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">incomplete incident</text><text x="1360" y="404.5" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" fill="#272727">data</text>
-
- <rect x="170" y="830" width="26" height="18" fill="#FFF2B2" stroke="#aaa"/><text x="204" y="844" font-family="Arial" font-size="13" fill="#444">Actor</text><rect x="340" y="830" width="26" height="18" fill="#8DBCF0" stroke="#aaa"/><text x="374" y="844" font-family="Arial" font-size="13" fill="#444">Command</text><rect x="510" y="830" width="26" height="18" fill="#BFD7EE" stroke="#aaa"/><text x="544" y="844" font-family="Arial" font-size="13" fill="#444">Aggregate</text><rect x="680" y="830" width="26" height="18" fill="#F7B26A" stroke="#aaa"/><text x="714" y="844" font-family="Arial" font-size="13" fill="#444">Domain Event</text><rect x="850" y="830" width="26" height="18" fill="#B9A7E8" stroke="#aaa"/><text x="884" y="844" font-family="Arial" font-size="13" fill="#444">Policy</text><rect x="1020" y="830" width="26" height="18" fill="#A8D96D" stroke="#aaa"/><text x="1054" y="844" font-family="Arial" font-size="13" fill="#444">Read Model</text><rect x="1190" y="830" width="26" height="18" fill="#DF67CB" stroke="#aaa"/><text x="1224" y="844" font-family="Arial" font-size="13" fill="#444">Hotspot</text>
- <text x="60" y="868" font-family="Arial" font-size="12" fill="#777">Rumbo — Design-Level Event Storming</text>
- </svg>
+<svg viewBox="0 0 5000 1700" xmlns="http://www.w3.org/2000/svg">
+<g id="m3458764684142726013" data-miro-id="3458764684142726013" transform="translate(0,0)" data-frame="BC05 - Alerting and Incident Management">
+<rect data-type="frame" x="0" y="0" width="5000" height="1700" fill="#ffffff" data-title="BC05 - Alerting and Incident Management" />
+<rect id="m3458764684142726089" data-miro-id="3458764684142726089" data-type="sticky" x="100" y="330" width="199" height="228" data-content="Driver" data-color="yellow" />
+<rect id="m3458764684142726090" data-miro-id="3458764684142726090" data-type="sticky" x="450" y="330" width="199" height="228" data-content="Report Delay" data-color="blue" />
+<rect id="m3458764684142726091" data-miro-id="3458764684142726091" data-type="sticky" x="800" y="330" width="199" height="228" data-content="Delay" data-color="light_blue" />
+<rect id="m3458764684142726092" data-miro-id="3458764684142726092" data-type="sticky" x="1150" y="330" width="199" height="228" data-content="Delay Reported" data-color="orange" />
+<rect id="m3458764684142726093" data-miro-id="3458764684142726093" data-type="sticky" x="1500" y="330" width="199" height="228" data-content="Notify affected families" data-color="violet" />
+<rect id="m3458764684142726094" data-miro-id="3458764684142726094" data-type="sticky" x="1850" y="330" width="199" height="228" data-content="Create Notification" data-color="blue" />
+<rect id="m3458764684142726095" data-miro-id="3458764684142726095" data-type="sticky" x="2200" y="330" width="199" height="228" data-content="Notification Created" data-color="orange" />
+<rect id="m3458764684142726096" data-miro-id="3458764684142726096" data-type="sticky" x="2550" y="330" width="199" height="228" data-content="Notifications View" data-color="green" />
+<rect id="m3458764684142726097" data-miro-id="3458764684142726097" data-type="sticky" x="100" y="760" width="199" height="228" data-content="Driver" data-color="yellow" />
+<rect id="m3458764684142726098" data-miro-id="3458764684142726098" data-type="sticky" x="450" y="760" width="199" height="228" data-content="Report Incident" data-color="blue" />
+<rect id="m3458764684142726099" data-miro-id="3458764684142726099" data-type="sticky" x="800" y="760" width="199" height="228" data-content="Incident" data-color="light_blue" />
+<rect id="m3458764684142726100" data-miro-id="3458764684142726100" data-type="sticky" x="1150" y="760" width="199" height="228" data-content="Incident Reported" data-color="orange" />
+<rect id="m3458764684142726101" data-miro-id="3458764684142726101" data-type="sticky" x="1500" y="760" width="199" height="228" data-content="Notify authorized tutors" data-color="violet" />
+<rect id="m3458764684142726102" data-miro-id="3458764684142726102" data-type="sticky" x="1850" y="760" width="199" height="228" data-content="Incident Detail" data-color="green" />
+<rect id="m3458764684142726103" data-miro-id="3458764684142726103" data-type="sticky" x="100" y="1190" width="199" height="228" data-content="Parent / Tutor" data-color="yellow" />
+<rect id="m3458764684142726104" data-miro-id="3458764684142726104" data-type="sticky" x="450" y="1190" width="199" height="228" data-content="Update Notification Preferences" data-color="blue" />
+<rect id="m3458764684142726109" data-miro-id="3458764684142726109" data-type="sticky" x="800" y="1190" width="199" height="228" data-content="Notification" data-color="light_blue" />
+<rect id="m3458764684142726110" data-miro-id="3458764684142726110" data-type="sticky" x="1150" y="1190" width="199" height="228" data-content="Preferences Updated" data-color="orange" />
+<rect id="m3458764684142726111" data-miro-id="3458764684142726111" data-type="sticky" x="1500" y="1190" width="199" height="228" data-content="Keep critical alerts enabled" data-color="violet" />
+<rect id="m3458764684142726112" data-miro-id="3458764684142726112" data-type="sticky" x="1850" y="1190" width="199" height="228" data-content="Notification Preferences View" data-color="green" />
+<rect id="m3458764684142726113" data-miro-id="3458764684142726113" data-type="sticky" x="3100" y="180" width="199" height="228" data-content="Wrong recipients or alert overload" data-color="pink" />
+<rect id="m3458764684142726114" data-miro-id="3458764684142726114" data-type="sticky" x="3380" y="180" width="199" height="228" data-content="Missing critical incident details" data-color="pink" />
+</g>
+<line id="m3458764684142726206" data-miro-id="3458764684142726206" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726089" data-end="m3458764684142726090" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726207" data-miro-id="3458764684142726207" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726090" data-end="m3458764684142726091" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726208" data-miro-id="3458764684142726208" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726091" data-end="m3458764684142726092" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726209" data-miro-id="3458764684142726209" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726092" data-end="m3458764684142726093" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726210" data-miro-id="3458764684142726210" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726093" data-end="m3458764684142726094" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726211" data-miro-id="3458764684142726211" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726094" data-end="m3458764684142726095" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726212" data-miro-id="3458764684142726212" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726095" data-end="m3458764684142726096" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726213" data-miro-id="3458764684142726213" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726097" data-end="m3458764684142726098" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726214" data-miro-id="3458764684142726214" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726098" data-end="m3458764684142726099" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726215" data-miro-id="3458764684142726215" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726099" data-end="m3458764684142726100" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726216" data-miro-id="3458764684142726216" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726100" data-end="m3458764684142726101" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726217" data-miro-id="3458764684142726217" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726101" data-end="m3458764684142726102" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726218" data-miro-id="3458764684142726218" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726103" data-end="m3458764684142726104" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726220" data-miro-id="3458764684142726220" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726104" data-end="m3458764684142726109" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726221" data-miro-id="3458764684142726221" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726109" data-end="m3458764684142726110" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726222" data-miro-id="3458764684142726222" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726110" data-end="m3458764684142726111" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+<line id="m3458764684142726223" data-miro-id="3458764684142726223" x1="0" y1="0" x2="1" y2="1" data-start="m3458764684142726111" data-end="m3458764684142726112" stroke="#313131" stroke-width="2.0" data-arrow="end" data-shape="straight" />
+</svg>
