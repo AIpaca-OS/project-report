@@ -489,8 +489,7 @@ El backlog de requisitos se amplía a **50 historias en total: 42 User Stories f
 | 49 | TS01 | Endpoints REST para ingesta de coordenadas GPS | Soportar seguimiento continuo cuando se incorpore al roadmap. | 5 |
 | 50 | TS03 | Integración con API externa para cálculo de ETA | Calcular estimaciones dinámicas cuando la capacidad avanzada sea implementada. | 5 |
 
-**Product Backlog URL:** [Insertar URL pública del board].  
-**Product Backlog Evidence:** [Insertar captura del Product Backlog].
+
 
 Las historias **US27, US29, TS01 y TS03** permanecen en el Product Backlog como capacidades posteriores al MVP. Esto mantiene coherencia con el Lean UX actual: Rumbo valida primero coordinación mediante estados, hitos, confirmaciones, retrasos, incidencias y notificaciones, y luego puede ampliar la experiencia con seguimiento continuo y geofencing.
 
