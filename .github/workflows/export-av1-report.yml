@@ -1,0 +1,56 @@
+name: Export AV1 Report PDF
+
+on:
+  push:
+    branches:
+      - feature/chapter-5-product-implementation-validation-and-deployment
+    paths:
+      - '.github/workflows/export-av1-report.yml'
+      - '.github/report-export/**'
+      - 'README.md'
+      - 'assets/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc fonts-liberation fonts-dejavu-core             libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libffi-dev             libjpeg-dev libopenjp2-7 librsvg2-bin
+          python -m pip install --upgrade pip
+          python -m pip install "weasyprint>=62,<63" requests
+
+      - name: Prepare report source and media
+        run: |
+          python .github/report-export/prepare_report.py
+
+      - name: Convert Markdown to HTML
+        run: |
+          pandoc report-av1.md             --from=gfm+raw_html+pipe_tables+autolink_bare_uris             --to=html5             --standalone             --metadata lang=es             --metadata title="Informe de Trabajo Final - AIpaca / Rumbo"             --css=.github/report-export/report.css             --output=report-av1.html
+
+      - name: Generate PDF
+        run: |
+          python - <<'PY'
+          from weasyprint import HTML
+          HTML(filename='report-av1.html', base_url='.').write_pdf(
+              'upc-pre-202620-1asi0729-7760-aipaca-report-av1.pdf'
+          )
+          PY
+          ls -lh upc-pre-202620-1asi0729-7760-aipaca-report-av1.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aipaca-av1-final-project-report
+          path: upc-pre-202620-1asi0729-7760-aipaca-report-av1.pdf
+          if-no-files-found: error
+          retention-days: 7
