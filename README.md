@@ -1365,41 +1365,39 @@ Este fue el primer Bounded Context modelado por el equipo. Representa el registr
 Este contexto controla el acceso a Rumbo. Incluye registro de cuenta, autenticación, recuperación de contraseña y aplicación de permisos según el rol del usuario.
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/iam.svg" alt="Identity and Access Management Event Storming" width="100%">
+  <img src="./assets/chapter04/event-storming/iam.png" alt="Identity and Access Management (IAM) Bounded Context" width="95%">
 </div>
 
 #### Route and Trip Planning Bounded Context
 
-Este contexto organiza el servicio antes de iniciar el recorrido. Comprende la creación de rutas, orden de paradas, asignación de estudiantes, programación de viajes y registro de ausencias.
+Este contexto organiza la planificación operativa del servicio. Incluye la creación de rutas, la gestión de paradas, la asignación de estudiantes y la programación diaria de recorridos.
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/route-trip-planning.svg" alt="Route and Trip Planning Event Storming" width="100%">
+  <img src="./assets/chapter04/event-storming/route-trip-planning.png" alt="Route and Trip Planning Bounded Context" width="95%">
 </div>
 
 #### Real-Time Tracking and Execution Bounded Context
 
-Este contexto representa la ejecución del viaje. Incluye el inicio del trayecto, confirmación de recojo, verificación registrada, entrega y finalización, además de la construcción de la línea de tiempo que consulta el padre o tutor.
+Este contexto supervisa la ejecución del trayecto en tiempo real. Incluye el inicio del viaje, registro de ubicación, confirmación de recojo y descenso, verificación de cinturón y cierre del trayecto.
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/realtime-tracking-execution.svg" alt="Real-Time Tracking and Execution Event Storming" width="100%">
+  <img src="./assets/chapter04/event-storming/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Bounded Context" width="95%">
 </div>
-
-Las capacidades de ubicación continua, ETA dinámico y geofencing se mantienen como funcionalidades posteriores al MVP y no se presentan como implementadas en la versión actual.
 
 #### Alerting and Incident Management Bounded Context
 
-Este contexto maneja los eventos excepcionales del viaje. Centraliza retrasos, incidencias y la comunicación dirigida a los padres o tutores autorizados afectados por la ruta.
+Este contexto gestiona retrasos, incidencias y comunicaciones relevantes hacia las familias. Incluye notificaciones, alertas automáticas y el registro de incidentes ocurridos durante el servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/alerting-incident-management.svg" alt="Alerting and Incident Management Event Storming" width="100%">
+  <img src="./assets/chapter04/event-storming/alerting-incident-management.png" alt="Alerting and Incident Management Bounded Context" width="95%">
 </div>
 
 #### Subscriptions and Billing Bounded Context
 
-Este contexto separa las reglas comerciales de las reglas operativas del viaje. Gestiona la elección de plan, estado de suscripción, pagos, renovaciones y comprobantes.
+Este contexto administra la suscripción del conductor a la plataforma. Incluye selección de plan, pagos, comprobantes, renovación, pausa, cancelación y reactivación del servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/subscriptions-billing.svg" alt="Subscriptions and Billing Event Storming" width="100%">
+  <img src="./assets/chapter04/event-storming/subscriptions-billing.png" alt="Subscriptions and Billing Bounded Context" width="95%">
 </div>
 
 En conjunto, los seis Bounded Contexts establecen la base para los Class Diagrams y Database Diagrams de las secciones 4.7 y 4.8. La división evita concentrar toda la lógica en un único modelo y mantiene trazabilidad entre las User Stories, el comportamiento del dominio y el diseño técnico.
