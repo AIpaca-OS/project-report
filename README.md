@@ -153,8 +153,7 @@ Cada perfil resume los conocimientos técnicos y los aportes que cada integrante
       <td>Cuenta con conocimientos en Python y C++ y destaca por su rapidez para aprender, filtrar información relevante y trabajar de manera colaborativa. En Rumbo aporta en investigación, análisis de requerimientos, documentación y conexión de los hallazgos con funcionalidades del producto.</td>
     </tr>
     <tr>
-      <td align="center"><strong>Foto pendiente</strong></td>
-      <td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td>
+      <td align="center"><img src="https://avatars.githubusercontent.com/u/207377950?v=4" alt="Diana Pareja Caceres" width="180"></td>\n      <td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td>
       <td>En Rumbo ha participado en análisis competitivo, User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Aporta especialmente en documentación, análisis del producto y estructuración de artefactos de diseño y arquitectura.</td>
     </tr>
   </tbody>
