@@ -1185,6 +1185,8 @@ Este contexto separa las reglas comerciales de las reglas operativas del viaje. 
 
 En conjunto, los seis Bounded Contexts establecen la base para los Class Diagrams y Database Diagrams de las secciones 4.7 y 4.8. La división evita concentrar toda la lógica en un único modelo y mantiene trazabilidad entre las User Stories, el comportamiento del dominio y el diseño técnico.
 
+**Tablero editable de Design-Level Event Storming:** [Rumbo - Design-Level Event Storming](https://miro.com/app/board/uXjVHl8Ic-k=/)
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
@@ -1213,18 +1215,138 @@ Este diagrama hace foco en la arquitectura interna de la Single Page Application
 
 ### 4.7.1. Class Diagrams
 
-En esta sección se presenta el Diagrama de Clases UML del sistema, estructurado bajo el enfoque Domain-Driven Design (DDD). Su propósito es detallar la estructura interna de los Bounded Contexts identificados en el proyecto (tales como Seguimiento de Viajes y Gestión de Identidad).
+El diseño orientado a objetos se subdivide siguiendo los **seis Bounded Contexts** identificados en el Design-Level Event Storming. Esta separación evita concentrar todo el dominio en un único diagrama y permite representar con mayor claridad clases, atributos, métodos, enumeraciones, relaciones y multiplicidades propias de cada responsabilidad.
 
-El modelo especifica las clases, interfaces y enumeraciones con sus respectivos atributos, métodos y niveles de acceso. Asimismo, define claramente las relaciones, direcciones y multiplicidades entre las entidades, garantizando la trazabilidad del diseño y delimitando las responsabilidades de cada contexto.
-<img width="1124" height="943" alt="Diagrama UML" src="https://github.com/user-attachments/assets/5d4e0ffb-ef0e-4b50-842a-e4432970f5fe" />
+Los diagramas fueron elaborados en **LucidChart**, herramienta indicada para UML en el enunciado del curso. Cada diagrama se mantiene como artefacto editable y su exportación se incorpora al Project Report.
+
+#### Profiles and Verification
+
+Modela los perfiles de padres, conductores y estudiantes, los vehículos, la documentación declarada y los vínculos autorizados entre estudiante y conductor.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/profiles-verification.png" alt="Profiles and Verification Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/64ac958d-1d2b-49ab-9f3a-74a9a0eb4d32/edit
+
+#### Identity and Access Management (IAM)
+
+Modela la cuenta de usuario, credenciales, roles, permisos y tokens de recuperación de contraseña. La información de negocio de padres y conductores permanece fuera de este contexto.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/iam.png" alt="Identity and Access Management Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/fb0f009e-7131-40e3-9f59-bc80d3a05c7a/edit
+
+#### Route and Trip Planning
+
+Modela rutas, paradas, asignaciones de estudiantes, programación de viajes y ausencias registradas antes de la ejecución del recorrido.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/route-trip-planning.png" alt="Route and Trip Planning Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/4ef4de8a-4325-462f-ada5-6c59dd2fc5c2/edit
+
+#### Real-Time Tracking and Execution
+
+Modela el ciclo de vida de un viaje, estudiantes incluidos en el recorrido, eventos del timeline, recojos, entregas y verificaciones registradas. LocationRecord se mantiene como parte del diseño previsto para el seguimiento posterior al MVP.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/36c46be6-4ca4-4dae-b17d-db74b90d543e/edit
+
+#### Alerting and Incident Management
+
+Modela retrasos, incidencias, notificaciones, destinatarios y preferencias de aviso. El contexto mantiene separadas las reglas de comunicación de la ejecución del viaje.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/alerting-incident-management.png" alt="Alerting and Incident Management Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/911eb6e9-ba78-4fc9-abb3-3495fbc7d500/edit
+
+#### Subscriptions and Billing
+
+Modela planes, suscripciones, pagos, comprobantes y los estados asociados al ciclo comercial del servicio. El precio se conserva como valor referencial mientras continúe en validación comercial.
+
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/subscriptions-billing.png" alt="Subscriptions and Billing Class Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/92438aa5-0e4a-4bed-881c-e397a4abe6a3/edit
 
 ## 4.8. Database Design
 
-En esta sección se presenta el diseño de la base de datos relacional utilizada en el sistema. El diagrama entidad-relación (ERD) ilustra las tablas principales, sus atributos y las relaciones entre ellas. Cada tabla representa una entidad del dominio, con sus respectivas columnas que definen los datos almacenados. Las relaciones entre tablas se indican mediante líneas que muestran cómo las entidades están conectadas, incluyendo las cardinalidades (uno a uno, uno a muchos, muchos a muchos) para clarificar la naturaleza de las asociaciones. Este diseño asegura la integridad de los datos y optimiza el rendimiento de las consultas dentro del sistema.
+El diseño de persistencia también se presenta **por Bounded Context**, manteniendo correspondencia con el modelo de dominio de las secciones 4.6 y 4.7. Los identificadores que apuntan a información administrada por otro contexto se conservan como referencias lógicas, evitando mezclar las responsabilidades de los modelos.
 
 ### 4.8.1. Database Diagrams
 
-<img width="943" height="782" alt="database-erd" src="https://github.com/user-attachments/assets/9d547419-a688-4d81-bb47-b310a7de42ec" />
+Los Database Diagrams fueron elaborados como ERD editables en **LucidChart** y exportados como evidencia para el Project Report.
+
+#### Profiles and Verification
+
+Incluye las tablas de perfiles, estudiantes, vehículos, documentación registrada y vínculos entre estudiantes y conductores.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/profiles-verification.png" alt="Profiles and Verification Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/c71a5220-bf71-4924-bbd8-cdec37c2f06c/edit
+
+#### Identity and Access Management (IAM)
+
+Incluye cuentas, credenciales, roles, permisos, relaciones many-to-many y tokens de recuperación.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/iam.png" alt="Identity and Access Management Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/f8fd5cb8-8ed5-4ac9-ae4f-0127d8369a18/edit
+
+#### Route and Trip Planning
+
+Incluye rutas, paradas, asignaciones de estudiantes, programación de viajes y ausencias.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/dc535238-b74a-409c-9270-8bfcf4ea11a7/edit
+
+#### Real-Time Tracking and Execution
+
+Incluye viajes, estudiantes del viaje, eventos, recojos, entregas, verificaciones y registros de ubicación previstos para la evolución del producto.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/3fcc7afd-47ae-4293-9ef2-66b0a7c74621/edit
+
+#### Alerting and Incident Management
+
+Incluye retrasos, incidencias, notificaciones, destinatarios y preferencias de notificación.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/alerting-incident-management.png" alt="Alerting and Incident Management Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/b464254e-0388-492e-862d-b93d5ee3e25f/edit
+
+#### Subscriptions and Billing
+
+Incluye planes, suscripciones, pagos y comprobantes.
+
+<div align="center">
+  <img src="./assets/chapter04/database-diagrams/subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="85%">
+</div>
+
+**Fuente editable:** https://lucid.app/lucidchart/178dfc99-92f9-4eef-8699-ecd2085c650a/edit
+
 
 ---
 
