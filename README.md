@@ -1204,44 +1204,20 @@ Se compararán respuestas por segmento, separando **características objetivas**
 
 ### 4.3.1. Landing Page Wireframe
 
-El wireframe de la Landing Page organiza el contenido de forma secuencial para explicar la propuesta de Rumbo antes de llevar al usuario a una acción. La estructura toma como base el diseño trabajado en Figma y mantiene la misma jerarquía para Desktop y Mobile.
-
-```mermaid
-flowchart TD
-    A[Header y navegación] --> B[Hero: tranquilidad en cada trayecto]
-    B --> C[Beneficios principales]
-    C --> D[Cómo funciona Rumbo]
-    D --> E[Funcionalidades]
-    E --> F[Planes o alternativas de uso]
-    F --> G[Testimonios]
-    G --> H[Preguntas frecuentes]
-    H --> I[CTA final]
-    I --> J[Footer]
-```
-
 <div align="center">
   <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Web Wireframe" width="750">
 </div>
 
 ### 4.3.2. Landing Page Mock-up
 
-El mock-up de alta fidelidad mantiene una estética limpia, con fondos claros, tipografía de alto contraste, tarjetas redondeadas y CTAs destacados. Las referencias trabajadas en Figma muestran como eje visual un hero con la propuesta **“Tranquilidad en cada trayecto”**, acompañado por una vista del seguimiento de la movilidad.
-
-| Sección | Decisión de diseño |
-|---|---|
-| Hero | Mensaje principal, breve descripción, CTA y representación visual del seguimiento. |
-| Beneficios | Tarjetas para monitoreo, alertas y comunicación. |
-| Cómo funciona | Proceso resumido en pasos consecutivos. |
-| Funcionalidades | Bloques visuales para seguimiento, incidencias, notificaciones y control de ruta. |
-| Planes | Tarjetas comparables con CTA diferenciado. |
-| Testimonios | Opiniones breves para reforzar confianza. |
-| FAQ | Acordeones con dudas frecuentes sobre seguridad y funcionamiento. |
-| CTA y footer | Cierre de conversión y accesos informativos. |
-
-El mock-up conserva el sistema visual de Rumbo definido en 4.1: tonos verdes y oscuros para confianza y seguridad, superficies claras para lectura y componentes simples que pueden reutilizarse posteriormente en la Web Application.
-
 <div align="center">
   <img src="./assets/chapter04/landingMockupDsk.png" alt="Landing Page Web Mock-Up" width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/landingMockupMb.png" alt="Landing Page Web Mock-Up" width="750">
 </div>
 
 ## 4.4. Web Applications UX/UI Design
@@ -1301,19 +1277,87 @@ El conductor mantiene como punto central la ruta asignada. Las acciones de recoj
 
 ### 4.4.3. Web Applications Mock-ups
 
-La propuesta visual de la Web Application reutiliza el lenguaje definido para la Landing Page: fondo claro, tarjetas blancas, verde como color de acción y tonos oscuros para textos y estados principales.
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/inicio-sesion.png"width="750">
+</div>
 
-| Vista | Componentes de alta fidelidad |
-|---|---|
-| Dashboard de padre/tutor | Tarjeta de estudiante, estado del viaje, ETA, conductor, vehículo y acceso al timeline. |
-| Trip Detail | Mapa o progreso visual, paradas, estado actual y última actualización. |
-| Timeline | Eventos con hora, tipo y estado mediante una línea cronológica. |
-| Notifications | Tarjetas de aviso con prioridad y fecha. |
-| Assigned Route | Ruta activa, número de estudiantes, próxima parada y acciones rápidas. |
-| Student List | Lista con nombre del estudiante y estado pendiente/recogido/entregado. |
-| Incident Form | Selector de tipo de incidencia, descripción corta y botón de registro. |
+<br>
 
-Los controles del conductor se plantean con botones grandes, mensajes breves y confirmaciones visibles. Para padres se prioriza lectura rápida, estado actual y jerarquía visual de alertas.
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/ruta-asignada.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/lista-estudiantes.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/configurar-ruta.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/facturacion.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/configuracion-conductor.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/panel-tutor.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/viaje-actual.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/historial-viajes.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/perfil-estudiante.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/documentos-conductor.png"width="750">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/configuracion-tutor.png"width="750">
+</div>
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -1355,7 +1399,10 @@ flowchart TD
 Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del conductor. Las operaciones críticas se realizan desde la ruta activa y generan un evento que luego puede ser consultado por los padres.
 
 ## 4.5. Web Applications Prototyping
-[Figma Prototype]
+
+<div align="center">
+  <img src="./assets/chapter04/web-app-mockup/prototype.png"width="750">
+</div>
 
 ## 4.6. Domain-Driven Software Architecture
 
