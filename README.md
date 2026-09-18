@@ -81,6 +81,10 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
 
 **Contributors / Pull Requests**
 
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Team Collaboration Pull Requests" width="95%">
+</div>
+
 Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
 **Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
@@ -1804,6 +1808,10 @@ Para el Project Report se consultaron los **100 commits más recientes de `devel
 
 <div align="center">
   <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Branch and Pull Request Network" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Pull Request Collaboration Evidence" width="95%">
 </div>
 
 En el Project Report existen **13 Pull Requests registrados**, de los cuales **12 fueron merged** y **uno fue cerrado sin merge (#11)**. Entre los PR integrados se encuentran el trabajo de Requirements Elicitation (#1), Product Design inicial (#2, #3 y #5), Chapter V (#4), Requirements Specification (#9), consolidación de AV1 (#10) y las correcciones finales de DDD/Product Design (#12 y #13).
