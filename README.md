@@ -125,40 +125,18 @@ La solución se plantea inicialmente para Lima y Callao. No reemplaza las obliga
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-Cada perfil resume los conocimientos técnicos y los aportes que cada integrante puede realizar dentro del proyecto, tal como solicita la plantilla del curso.
-
 <table>
   <thead>
-    <tr><th>Foto</th><th>Apellidos y nombres</th><th>Código</th><th>Carrera</th><th>Conocimientos técnicos, habilidades y aportes</th></tr>
+    <tr><th>Foto</th><th>Apellidos y nombres</th><th>Código</th><th>Carrera</th><th>Habilidades</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td align="center"><img src="./assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="180"></td>
-      <td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td>
-      <td>Cuenta con conocimientos en Python, C++ y prototipado con React Native. En Rumbo aporta principalmente en UX/UI, estructura visual responsive, lógica del sistema y revisión de la experiencia del producto. También ha trabajado en entornos colaborativos con metodologías ágiles.</td>
-    </tr>
-    <tr>
-      <td align="center"><img width="180" alt="Kevin Geronimo Puma" src="https://github.com/user-attachments/assets/8be17c32-7b22-466c-a91e-daf42a5b31ea"></td>
-      <td>Geronimo Puma, Kevin Joel</td><td>U202423163</td><td>Ingeniería de Software</td>
-      <td>Cuenta con conocimientos en Python y C++, y aporta en desarrollo técnico, arquitectura de software, diseño de bases de datos, estructuración del código y procesamiento de datos. En el proyecto también participa en la implementación y revisión técnica de la solución.</td>
-    </tr>
-    <tr>
-      <td align="center"><img src="./assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="180"></td>
-      <td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td>
-      <td>Cuenta con conocimientos en C++ y Python y experiencia en proyectos académicos de análisis y organización de soluciones tecnológicas. En Rumbo aporta en coordinación del equipo, documentación, integración del Project Report, entrevistas, definición de requerimientos y seguimiento del trabajo técnico.</td>
-    </tr>
-    <tr>
-      <td align="center"><img src="assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="180"></td>
-      <td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td>
-      <td>Cuenta con conocimientos en Python y C++ y destaca por su rapidez para aprender, filtrar información relevante y trabajar de manera colaborativa. En Rumbo aporta en investigación, análisis de requerimientos, documentación y conexión de los hallazgos con funcionalidades del producto.</td>
-    </tr>
-    <tr>
-      <td align="center"><img width="893" height="948" alt="foto carnet diana pareja" src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" /></td>\n      <td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td>
-      <td>En Rumbo ha participado en análisis competitivo, User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Aporta especialmente en documentación, análisis del producto y estructuración de artefactos de diseño y arquitectura.</td>
-    </tr>
+    <tr><td align="center"><img src="./assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="300"></td><td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++, así como experiencia en prototipado rápido con React Native, lo que me permite aportar en el desarrollo técnico del proyecto, especialmente en la lógica del sistema, la estructuración del código y el procesamiento de datos. También agregar que he trabajado en entornos colaborativos bajo metodologías ágiles, gestionando proyectos y equipos con Scrum para asegurar entregas eficientes y de calidad.</td></tr>
+    <tr><td align="center"><img width="300" alt="kevin" src="https://github.com/user-attachments/assets/8be17c32-7b22-466c-a91e-daf42a5b31ea" /></td><td>Geronimo Puma, Kevin Joel</td><td>U202423163</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++. Mi perfil me permite aportar en el desarrollo técnico del proyecto, destacando por mi facilidad para la arquitectura de software y el diseño de bases de datos, además de la lógica del sistema, la estructuración del código y el procesamiento de datos. Asimismo, tengo experiencia trabajando en entornos colaborativos bajo metodologías ágiles, asegurando siempre entregas eficientes y de calidad.</td></tr>
+    <tr><td align="center"><img src="./assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="300"></td><td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 5.º ciclo en la UPC. Tengo conocimientos en programación en C++ y Python, y experiencia desarrollando proyectos académicos donde analizo y organizo soluciones tecnológicas. Me gusta enfocarme en aprender de forma práctica y en construir soluciones que sean claras, funcionales y aplicadas a problemas reales.</td></tr>
+    <tr><td align="center"><img src="assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="300"/></td><td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 6.º ciclo en la UPC. Cuento con conocimientos en el desarrollo de sistemas utilizando los lenguajes Python y C++. Me caracterizo por aprendizaje rápido, criterio para filtrar información relevante y trabajo colaborativo. En el equipo aporto investigación aplicada y prototipos técnicos que conectan los hallazgos con funcionalidades del producto.</td></tr>
+    <tr><td align="center"><img width="300" alt="foto carnet diana pareja" src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" /></td><td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td><td>En Rumbo ha participado en análisis competitivo, User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Aporta especialmente en documentación, análisis del producto y estructuración de artefactos de diseño y arquitectura.</td></tr>
   </tbody>
 </table>
-
 
 ## 1.2. Solution Profile
 
