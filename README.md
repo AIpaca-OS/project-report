@@ -1001,36 +1001,12 @@ Desde el Dashboard puede acceder a:
 
 ### 4.6.1. Design-Level Event Storming
 
-El Design-Level Event Storming organiza los principales comandos, agregados y eventos del dominio. Para Rumbo se identifican cuatro áreas funcionales: acceso de usuarios, gestión de rutas, ejecución del trayecto y comunicación de incidencias/notificaciones.
+El proceso de Design-Level Event Storming permite transicionar desde la visión panorámica del negocio hacia la descomposición táctica de la arquitectura de software bajo los principios de Domain-Driven Design (DDD). En esta etapa, el equipo modeló detalladamente la interacción temporal del sistema mediante comandos en imperativo (Commands), eventos de dominio en pasado (Domain Events), reglas reactivas de negocio (Business Policies), modelos de consulta (Read Models) y la identificación de puntos críticos de fricción (Hotspots) derivados de las entrevistas a usuarios. 
 
-| Actor | Command | Aggregate | Domain Event | Resultado / Policy |
-|---|---|---|---|---|
-| Conductor | `StartTrip` | Trip | `TripStarted` | Habilita el seguimiento del viaje. |
-| Conductor | `ConfirmPickup` | Trip | `PickupConfirmed` | Actualiza el timeline y notifica al padre/tutor. |
-| Conductor | `ReportDelay` | Trip | `DelayReported` | Actualiza estado y ETA; genera notificación. |
-| Conductor | `ReportIncident` | Incident | `IncidentReported` | Registra incidencia y alerta a usuarios vinculados. |
-| Conductor | `ConfirmSchoolArrival` | Trip | `SchoolArrivalConfirmed` | Registra llegada al colegio. |
-| Conductor | `ConfirmDropOff` | Trip | `DropOffConfirmed` | Registra entrega del estudiante. |
-| Conductor | `CompleteTrip` | Trip | `TripCompleted` | Cierra el viaje y conserva su historial. |
-| Sistema | `SendNotification` | Notification | `NotificationSent` | Informa el evento relevante al padre/tutor. |
+Para la plataforma Rumbo, la solución se estructuró a través de 6 Bounded Contexts claramente delimitados: el contexto transversal de Identity and Access Management (IAM), junto con los 5 contextos específicos del modelo de servicio: Profiles and Verification, Route and Trip Planning, Real-Time Tracking and Execution, Alerting and Incident Management, y Subscriptions and Billing.
 
-El flujo principal del dominio queda representado de la siguiente manera:
+<img width="1171" height="853" alt="Bounded context 1- Profiles and verification" src="https://github.com/user-attachments/assets/cc84ce11-880c-4a1b-aac6-9b7f1d9232c8" />
 
-```mermaid
-flowchart LR
-    A[Route Assigned] --> B[Trip Started]
-    B --> C[Pickup Confirmed]
-    C --> D[Trip In Progress]
-    D --> E[Delay Reported]
-    D --> F[Incident Reported]
-    D --> G[School Arrival Confirmed]
-    E --> H[Notification Sent]
-    F --> H
-    G --> I[Drop-off Confirmed]
-    I --> J[Trip Completed]
-```
-
-Los eventos `PickupConfirmed`, `DelayReported`, `IncidentReported`, `SchoolArrivalConfirmed` y `DropOffConfirmed` alimentan el **Trip Timeline**. Las notificaciones se generan como consecuencia de eventos relevantes, mientras que `TripCompleted` marca el cierre del recorrido y permite conservar un historial consultable.
 
 ### 4.6.2. Software Architecture Context Diagram
 Este diagrama muestra la visión general del sistema Rumbo, posicionando la plataforma en el centro y detallando sus interacciones con los usuarios (padres y conductores) y dependencias externas (Auth0, Google Maps, FCM y SendGrid).
