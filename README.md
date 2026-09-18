@@ -57,14 +57,34 @@
 
 ### AV1
 
-**Team Collaboration Commits**  
-[Insertar captura]
+La colaboración se verificó directamente a partir del historial de commits, ramas y Pull Requests de los repositorios de la organización. Las siguientes evidencias consolidan el estado disponible al cierre de esta actualización y mantienen enlaces hacia GitHub para su validación.
 
-**Team Collaboration Network**  
-[Insertar captura]
+**Team Collaboration Commits**
 
-**Contributors / Pull Requests**  
-[Insertar capturas]
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
+</div>
+
+**Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
+**Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
+
+**Team Collaboration Network**
+
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Network" width="95%">
+</div>
+
+**Branches:** https://github.com/AIpaca-OS/project-report/branches  
+**Network:** https://github.com/AIpaca-OS/project-report/network
+
+La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones sucesivas hacia `develop`. Se registran Pull Requests asociados a Requirements Elicitation, Requirements Specification, Product Design, Product Implementation y consolidación de AV1.
+
+**Contributors / Pull Requests**
+
+Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
+
+**Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
+**Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
 
 ---
 
@@ -1669,9 +1689,9 @@ La configuración de despliegue del Frontend Web Application y de los Web Servic
 
 ### 5.2.1. Sprint 1
 
-Durante el Sprint 1 se implementó la primera versión funcional de la Landing Page de Rumbo con HTML5, CSS3 y JavaScript. La página presenta la propuesta de valor, el funcionamiento del servicio, beneficios, funcionalidades para padres/tutores y conductores, un formulario de contacto y llamados a la acción.
+Durante el Sprint 1 se implementó la primera versión funcional de la Landing Page de Rumbo con HTML5, CSS3 y JavaScript. El estado actual del repositorio incluye la propuesta de valor, beneficios, explicación del servicio, FAQ, llamados a la acción, navegación responsive y comportamiento interactivo del menú y acordeones.
 
-La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde su URL pública.
+La Landing Page se encuentra publicada mediante GitHub Pages. Las historias de multilenguaje, documentos legales completos y formulario público de contacto continúan pendientes y se registran con su estado real en el Sprint Backlog.
 
 ### 5.2.1.1. Sprint Planning 1
 
@@ -1700,31 +1720,47 @@ La Landing Page se encuentra publicada mediante GitHub Pages y disponible desde 
 
 ### 5.2.1.3. Sprint Backlog 1
 
-| ID | Tarea | Descripción | Responsable | Estado |
-|---|---|---|---|---|
-| T01 | Research | Sustentar la problemática y segmentos de Rumbo. | Equipo | In Progress |
-| T02 | Interviews | Realizar entrevistas y registrar evidencias. | Equipo | In Progress |
-| T03 | Landing UX/UI | Elaborar el diseño de la Landing Page. | Alejandro Díaz | In Progress |
-| T04 | Landing Structure | Implementar estructura HTML y navegación. | Kevin Geronimo / Alejandro Díaz | Done |
-| T05 | Landing Styles | Implementar estilos y diseño responsive. | Kevin Geronimo / Alejandro Díaz | Done |
-| T06 | Landing Interaction | Implementar menú móvil y formulario de contacto. | Kevin Geronimo / Alejandro Díaz | Done |
-| T07 | Landing Deployment | Configurar la publicación en GitHub Pages y registrar evidencia. | Leonardo Lino / Kevin Geronimo | Done |
-| T08 | Requirements | Completar Requirements Specification. | Equipo | In Progress |
-| T09 | Product Design | Completar los artefactos de Product Design. | Equipo | In Progress |
-| T10 | Chapter V | Documentar implementación, configuración y despliegue. | Leonardo Lino | In Progress |
+El Sprint Backlog se actualiza para relacionar explícitamente cada Work-item/Task con la User Story que lo origina, tal como solicita la plantilla del curso. Los tasks de despliegue, documentación o coordinación que no dependen de una User Story específica se identifican como **N/A**.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-backlog-story-traceability.svg" alt="Sprint Backlog Story Task Traceability" width="95%">
+</div>
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US09 | Presentar propuesta de valor en Landing Page | T01 | Landing structure | Implementar hero, propuesta de valor y estructura principal de navegación. | 4 | Kevin Geronimo / Alejandro Díaz | Done |
+| US10 | Presentar beneficios por segmento | T02 | Benefits & service sections | Implementar beneficios y explicación resumida del funcionamiento de Rumbo. | 3 | Alejandro Díaz | Done |
+| US35 | Sección de preguntas frecuentes por segmento | T03 | FAQ interaction | Implementar sección FAQ y comportamiento de acordeón con JavaScript. | 2 | Alejandro Díaz | Done |
+| US42 | Acceder a Rumbo desde el CTA del segmento | T04 | CTA & navigation | Implementar CTAs y navegación visual hacia registro/acceso; queda pendiente enlazar el frontend funcional. | 2 | Alejandro Díaz / Kevin Geronimo | To-Review |
+| US11 | Soportar inglés y español en Landing Page | T05 | Language support | Implementar selector de idioma y persistencia de preferencia. | 3 | Equipo | To-do |
+| US12 | Acceder a términos y condiciones desde el footer | T06 | Legal links | Crear y enlazar Terms & Conditions y Privacy Policy reales desde el footer. | 2 | Equipo | To-do |
+| US34 | Formulario público de contacto | T07 | Contact form | Implementar formulario público con validación y confirmación de envío. | 3 | Equipo | To-do |
+| N/A | Constraint responsive | T08 | Responsive redesign | Ajustar layout, navegación móvil y estilos para diferentes tamaños de pantalla. | 4 | Alejandro Díaz / Kevin Geronimo | Done |
+| N/A | Deployment | T09 | GitHub Pages | Publicar la Landing Page desde `main` y registrar la evidencia de despliegue. | 2 | Leonardo Lino / Kevin Geronimo | Done |
+| N/A | Requirements documentation | T10 | Requirements expansion | Completar y consolidar User Stories, Technical Stories, Impact Mapping y Product Backlog. | 6 | Diana Pareja / Equipo | Done |
+| N/A | Product Design / DDD | T11 | DDD evidence | Completar Bounded Contexts, Class Diagrams y Database Diagrams. | 6 | Kevin Geronimo / Diana Pareja / Equipo | Done |
+| N/A | Product Design / UX | T12 | Web & Mobile Figma flows | Completar Wireframes, Wireflows, Mock-ups, User Flows y Prototype responsive. | 6 | Alejandro Díaz / Equipo | In-Process |
+| N/A | Chapter V evidence | T13 | Sprint evidence update | Documentar commits, colaboración, ejecución y despliegue con evidencia verificable. | 4 | Leonardo Lino | In-Process |
+
+> **Nota:** la captura corresponde a una vista consolidada del backlog documentado. La plantilla también solicita la URL pública del Board de control. Si el equipo mantiene un Board externo (Trello/GitHub Project), su URL debe añadirse aquí antes de la entrega final.
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-Los principales cambios de implementación del Sprint 1 se encuentran en el repositorio `landing-page`.
+La implementación funcional de AV1 se concentra en la **Landing Page**. El repositorio muestra una primera carga del producto, un rediseño posterior y una implementación adicional de comportamiento JavaScript. Los repositorios de Frontend Web Application y Web Services existen y cuentan con su foundation inicial, pero todavía no presentan features funcionales de negocio; por ello se documentan sin atribuirles implementación que aún no existe.
 
-| Repository | Branch | Commit ID | Commit Message | Fecha |
-|---|---|---|---|---|
-| landing-page | main | `826939d379fd977780cb7b2cb6091e02a50ad95f` | Subir archivos de la landing page | 15/09/2026 |
-| landing-page | main / develop | `6554294b01f0988b5bada89602303ee620594af8` | docs: initialize Rumbo Open Source landing page | 09/09/2026 |
+<div align="center">
+  <img src="./assets/chapter5/development-evidence-commits.svg" alt="Development Evidence Commits" width="95%">
+</div>
 
-El commit principal incorpora `index.html`, estilos CSS, JavaScript y recursos visuales de la Landing Page.
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `AIpaca-OS/landing-page` | `main` | [`826939d`](https://github.com/AIpaca-OS/landing-page/commit/826939d379fd977780cb7b2cb6091e02a50ad95f) | Subir archivos de la landing page | No registra body adicional. El commit incorpora `index.html`, `css/styles.css`, JavaScript y recursos base. | 15/09/2026 |
+| `AIpaca-OS/landing-page` | `main` | [`6efdfc3`](https://github.com/AIpaca-OS/landing-page/commit/6efdfc3) | feat: redesign landing page | No registra body adicional. Modifica `index.html` y más de 1000 líneas de CSS, además de incorporar assets visuales. | 16/09/2026 |
+| `AIpaca-OS/landing-page` | `main` | [`a418118`](https://github.com/AIpaca-OS/landing-page/commit/a41811897fc24576d16c8f0d5b32089e50db7811) | feat: implement javascript | No registra body adicional. Añade `js/app.js` y actualiza HTML/CSS para menú responsive, dropdown, FAQ y navegación. | 17/09/2026 |
+| `AIpaca-OS/frontend-web-application` | `main` | [`e3b251f`](https://github.com/AIpaca-OS/frontend-web-application/commit/e3b251f56778b1fb7cf0edf0f7d0744a8c5b80b3) | docs: initialize Rumbo Open Source frontend repository | Foundation documental del repositorio; aún no constituye una feature funcional de Sprint 1. | 09/09/2026 |
+| `AIpaca-OS/web-services` | `main` | [`70f84df`](https://github.com/AIpaca-OS/web-services/commit/70f84df831634feaacbd25a92933f9edf97edf61) | docs: initialize Rumbo Open Source web services repository | Foundation documental del repositorio; aún no existen endpoints funcionales de negocio para AV1. | 09/09/2026 |
 
-![Historial de commits de la Landing Page](assets/chapter5/landing-commits.webp)
+Los commits del 16 y 17 de septiembre corresponden a estabilización y mejora posterior a la primera revisión de AV1; se incluyen para que la evidencia represente el **estado actual real** del producto.
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -1758,15 +1794,31 @@ La siguiente evidencia muestra la Landing Page cargada desde la URL pública de 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-Durante Sprint 1 el equipo distribuyó el trabajo entre documentación, investigación, UX/UI e implementación de la Landing Page.
+La colaboración del equipo se verificó mediante el historial de `develop`, los commits de la Landing Page y los Pull Requests del Project Report. La evidencia muestra contribuciones distribuidas entre investigación, requirements, Product Design, DDD, implementación de Landing Page, Chapter V y consolidación del informe.
 
-En el repositorio de Landing Page se registra como principal evidencia de implementación el commit:
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
+</div>
 
-`826939d379fd977780cb7b2cb6091e02a50ad95f` — **Subir archivos de la landing page**, realizado el 15/09/2026.
+Para el Project Report se consultaron los **100 commits más recientes de `develop`**. Dentro de esa muestra se identifican contribuciones de `linolw`, `DianaParejaCaceres`, `AlexandraYMS`, `qebim18` y `aleedr`. La Landing Page añade commits de implementación realizados por `qebim`, `aleedr` y `linolw`.
 
-![Historial de commits del Sprint 1](assets/chapter5/landing-commits.webp)
+<div align="center">
+  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Branch and Pull Request Network" width="95%">
+</div>
 
-Las capturas de Contributors, Network Graph y Pull Requests se incorporarán cuando se integren los avances de las ramas de trabajo.
+En el Project Report existen **13 Pull Requests registrados**, de los cuales **12 fueron merged** y **uno fue cerrado sin merge (#11)**. Entre los PR integrados se encuentran el trabajo de Requirements Elicitation (#1), Product Design inicial (#2, #3 y #5), Chapter V (#4), Requirements Specification (#9), consolidación de AV1 (#10) y las correcciones finales de DDD/Product Design (#12 y #13).
+
+| Evidencia verificable | URL |
+|---|---|
+| Commits de `develop` | https://github.com/AIpaca-OS/project-report/commits/develop/ |
+| Branches del Project Report | https://github.com/AIpaca-OS/project-report/branches |
+| Network | https://github.com/AIpaca-OS/project-report/network |
+| Contributors | https://github.com/AIpaca-OS/project-report/graphs/contributors |
+| Pull Requests | https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed |
+| Commits de Landing Page | https://github.com/AIpaca-OS/landing-page/commits/main/ |
+
+La actividad también evidencia una oportunidad de mejora: parte de la implementación de Landing Page llegó directamente a `main`, mientras que en el Project Report se utilizó con mayor frecuencia el flujo `feature → develop`. Para los siguientes sprints se recomienda mantener de forma consistente el GitFlow acordado y usar Pull Requests para las integraciones de código.
+
 
 # Conclusiones
 
