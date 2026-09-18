@@ -1118,249 +1118,72 @@ Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del condu
 
 ### 4.6.1. Design-Level Event Storming
 
-El **Design-Level Event Storming** refina el Big Picture Event Storming del Capítulo II y permite pasar de los eventos generales del negocio a una descomposición táctica del dominio. Para Rumbo se modelan **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**, manteniendo la terminología del Ubiquitous Language y la trazabilidad con las User Stories del Product Backlog.
+El **Design-Level Event Storming** permite detallar el comportamiento interno de cada parte del dominio de Rumbo a partir de **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**. Para esta etapa se mantuvo la división en seis Bounded Contexts, de modo que cada uno concentre reglas y responsabilidades relacionadas y pueda evolucionar sin mezclar lógica de otros contextos.
 
-A diferencia de un diagrama de flujo tradicional, estos artefactos representan decisiones y hechos del dominio. Los Commands expresan una intención de cambio, los Domain Events representan hechos que ya ocurrieron, las Policies describen reacciones del negocio y los Read Models muestran la información que los usuarios necesitan consultar.
+Los seis Bounded Contexts identificados son:
 
-Rumbo se divide en **seis Bounded Contexts**. El contexto de **Identity and Access Management (IAM)** es transversal; los otros cinco concentran capacidades específicas del servicio de movilidad escolar.
+| Bounded Context | Responsabilidad |
+|---|---|
+| **Profiles and Verification** | Gestiona los perfiles de padres, conductores y estudiantes, así como vehículos, documentación registrada y vínculos autorizados. |
+| **Identity and Access Management (IAM)** | Gestiona cuentas, autenticación, recuperación de acceso, roles y permisos. |
+| **Route and Trip Planning** | Gestiona rutas, paradas, asignaciones de estudiantes, turnos, programación y ausencias. |
+| **Real-Time Tracking and Execution** | Gestiona la ejecución del viaje, recojos, entregas, estados y línea de tiempo del trayecto. |
+| **Alerting and Incident Management** | Gestiona retrasos, incidencias, alertas, notificaciones y preferencias de aviso. |
+| **Subscriptions and Billing** | Gestiona planes, suscripciones, pagos, renovaciones y comprobantes. |
 
-| ID | Bounded Context | Responsabilidad principal | User Stories relacionadas |
-|---|---|---|---|
-| **BC01** | **Identity and Access Management (IAM)** | Cuentas, autenticación, recuperación de acceso, roles y autorización. | US13, US15, US16, US22, US42, TS08 |
-| **BC02** | **Profiles and Verification** | Perfiles de padres, conductores y estudiantes; vehículos; documentación registrada y vínculos autorizados. | US14, US17, US18, US19, US41 |
-| **BC03** | **Route and Trip Planning** | Rutas, paradas, asignaciones de estudiantes, turnos, programación y ausencias. | US05, US20, US21, US23, US39, US40 |
-| **BC04** | **Real-Time Tracking and Execution** | Ejecución del viaje, recojos, entregas, controles, estados, timeline e historial. | US01, US02, US06, US24, US25, US26, US27, US28, TS01, TS03, TS04, TS06 |
-| **BC05** | **Alerting and Incident Management** | Retrasos, incidencias, contingencias, alertas, notificaciones y preferencias. | US03, US04, US07, US08, US29, US30, US31, US32, TS02 |
-| **BC06** | **Subscriptions and Billing** | Planes, suscripciones, pagos, renovaciones, cancelaciones y comprobantes. | US36, US37, US38 |
+Para mantener una lectura uniforme de los diagramas se utilizan las siguientes convenciones: **amarillo** para Actors, **azul** para Commands, **azul claro** para Aggregates, **naranja** para Domain Events, **morado** para Business Policies, **verde** para Read Models y **fucsia** para Hotspots.
 
-#### Convenciones del Event Storming
+#### Profiles and Verification Bounded Context
 
-| Elemento | Uso en Rumbo | Convención visual |
-|---|---|---|
-| Actor | Persona o sistema que inicia una acción. | Amarillo |
-| Command | Acción expresada en imperativo. | Azul |
-| Aggregate | Límite transaccional que protege reglas del dominio. | Azul claro |
-| Domain Event | Hecho relevante ya ocurrido, expresado en pasado. | Naranja |
-| Business Policy | Regla que reacciona ante un evento y puede disparar otra acción. | Morado |
-| Read Model | Vista de consulta necesaria para tomar una decisión o mostrar información. | Verde |
-| Hotspot | Riesgo, duda o punto de fricción que requiere validación. | Fucsia |
+Este fue el primer Bounded Context modelado por el equipo. Representa el registro y consulta de información de padres, conductores, estudiantes y vehículos, así como la relación autorizada entre estudiante y conductor.
 
-> **Nota de alcance:** en **Profiles and Verification**, Rumbo administra información y documentos declarados por los usuarios, incluyendo sus fechas de vigencia registradas. El producto no afirma realizar una validación oficial con ATU, Policía u otra entidad pública mientras dicha integración no exista. Del mismo modo, GPS continuo, ETA dinámico y geofencing permanecen identificados como capacidades posteriores al MVP cuando corresponda.
+<img width="1171" height="853" alt="Profiles and Verification Bounded Context" src="https://github.com/user-attachments/assets/cc84ce11-880c-4a1b-aac6-9b7f1d9232c8" />
 
-#### BC01 — Identity and Access Management (IAM)
+> En Rumbo, la verificación se limita a controles internos sobre la información y la vigencia declarada de documentos registrados. No se asume validación oficial con ATU, Policía u otra entidad pública mientras dicha integración no exista.
 
-Este contexto controla la identidad digital y los permisos de acceso a Rumbo. Su Aggregate principal es **UserAccount**, que concentra las reglas de autenticación y autorización. Los perfiles de negocio no se administran aquí; una vez registrada la cuenta, la información específica del padre, conductor o asistente pertenece a **Profiles and Verification**.
+#### Identity and Access Management (IAM) Bounded Context
 
-**Actors:** Parent/Tutor, Driver y Assistant.  
-**Commands:** Register User, Authenticate User, Request Password Reset, Reset Password, Assign Role y Revoke Access.  
-**Domain Events:** User Registered, User Authenticated, Password Reset Requested, Password Reset Completed, Role Assigned y Access Revoked.  
-**Business Policies:** una cuenta registrada debe originar el perfil correspondiente; el acceso a cada recurso se restringe según el rol autorizado.  
-**Read Models:** Access & Session View y Role/Permission View.  
-**Hotspots:** credenciales comprometidas, asignación incorrecta de roles y acceso no autorizado.
+Este contexto controla el acceso a Rumbo. Incluye registro de cuenta, autenticación, recuperación de contraseña y aplicación de permisos según el rol del usuario.
 
-```mermaid
-flowchart LR
-A["Parent / Tutor / Driver / Assistant"] --> C1["Register User"]
-C1 --> AG["UserAccount"] --> E1["User Registered"]
-A --> C2["Authenticate User"] --> AG --> E2["User Authenticated"]
-A --> C3["Request Password Reset"] --> AG --> E3["Password Reset Requested"]
-E1 --> P1["When a user is registered, create the corresponding profile"] --> R1["Access & Session View"]
-E2 --> R1
-H1{"Risk of unauthorized access or incorrect role assignment"}
-AG -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A actor; class C1,C2,C3 command; class AG aggregate; class E1,E2,E3 event; class P1 policy; class R1 readmodel; class H1 hotspot;
-```
+<div align="center">
+  <img src="./assets/chapter04/event-storming/iam.svg" alt="Identity and Access Management Event Storming" width="100%">
+</div>
 
-#### BC02 — Profiles and Verification
+#### Route and Trip Planning Bounded Context
 
-Este contexto administra la información de las personas y vehículos vinculados al servicio. Los Aggregate Roots principales son **ParentProfile, DriverProfile, StudentProfile, Vehicle** y **StudentDriverLink**. La palabra *Verification* se refiere a controles internos de consistencia y vigencia declarada de la documentación registrada; no representa una certificación oficial externa.
+Este contexto organiza el servicio antes de iniciar el recorrido. Comprende la creación de rutas, orden de paradas, asignación de estudiantes, programación de viajes y registro de ausencias.
 
-**Actors:** Parent/Tutor y Driver.  
-**Commands:** Create Parent Profile, Create Driver Profile, Register Student, Update Student, Register Vehicle, Register Document, Request Student Link, Approve Student Link y Revoke Student Link.  
-**Domain Events:** Parent Profile Created, Driver Profile Created, Student Registered, Student Updated, Vehicle Registered, Document Registered, Student Link Requested, Student Link Approved y Student Link Revoked.  
-**Business Policies:** solo el tutor responsable puede aprobar o revocar el vínculo de un estudiante; un documento cuya fecha declarada haya vencido se muestra como expirado; una placa activa no debe duplicarse dentro del registro.  
-**Read Models:** Student Profile View, Driver & Vehicle Information y Registered Documents View.  
-**Hotspots:** información desactualizada, documentación vencida, placa duplicada y vinculación de un estudiante con un conductor no autorizado.
+<div align="center">
+  <img src="./assets/chapter04/event-storming/route-trip-planning.svg" alt="Route and Trip Planning Event Storming" width="100%">
+</div>
 
-```mermaid
-flowchart LR
-A["Parent / Tutor / Driver"] --> C1["Create Profile"] --> AG1["Profile"] --> E1["Profile Created"]
-A --> C2["Register Student"] --> AG2["StudentProfile"] --> E2["Student Registered"]
-A --> C3["Register Vehicle / Document"] --> AG3["Vehicle & Documents"] --> E3["Vehicle / Document Registered"]
-A --> C4["Request Student Link"] --> AG4["StudentDriverLink"] --> E4["Student Link Requested"]
-E4 --> P1["Parent reviews the request"] --> C5["Approve / Revoke Student Link"] --> AG4 --> E5["Student Link Approved / Revoked"]
-E3 --> P2["If declared expiry date is reached, show document as expired"] --> R1["Driver & Vehicle Information"]
-E5 --> R2["Student Profile View"]
-H1{"Outdated documentation or unauthorized student-driver link"}
-AG3 -.-> H1
-AG4 -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A actor; class C1,C2,C3,C4,C5 command; class AG1,AG2,AG3,AG4 aggregate; class E1,E2,E3,E4,E5 event; class P1,P2 policy; class R1,R2 readmodel; class H1 hotspot;
-```
+#### Real-Time Tracking and Execution Bounded Context
 
-#### BC03 — Route and Trip Planning
+Este contexto representa la ejecución del viaje. Incluye el inicio del trayecto, confirmación de recojo, verificación registrada, entrega y finalización, además de la construcción de la línea de tiempo que consulta el padre o tutor.
 
-Este contexto organiza el servicio **antes de iniciar el recorrido**. El Aggregate **Route** mantiene la secuencia de paradas y las asignaciones operativas, mientras que **TripSchedule** representa la programación de un recorrido para una fecha y turno determinados.
+<div align="center">
+  <img src="./assets/chapter04/event-storming/realtime-tracking-execution.svg" alt="Real-Time Tracking and Execution Event Storming" width="100%">
+</div>
 
-**Actors:** Driver y Parent/Tutor.  
-**Commands:** Create Route, Update Route, Add Stop, Edit Stop, Remove Stop, Reorder Stops, Assign Student to Route, Remove Student from Route, Schedule Trip, Register Student Absence y Cancel Student Absence.  
-**Domain Events:** Route Created, Route Updated, Stop Added, Stop Updated, Stop Removed, Stops Reordered, Student Assigned to Route, Student Removed from Route, Trip Scheduled, Student Absence Registered y Student Absence Cancelled.  
-**Business Policies:** una ausencia registrada antes del inicio debe excluir al estudiante del recojo planificado; la cantidad de estudiantes asignados no debe exceder la capacidad registrada del vehículo.  
-**Read Models:** Routes View, Route Detail, Stops List, Assigned Students View y Daily Route View.  
-**Hotspots:** ausencia comunicada tarde, orden incorrecto de paradas, asignación a una ruta equivocada y exceso de capacidad.
+Las capacidades de ubicación continua, ETA dinámico y geofencing se mantienen como funcionalidades posteriores al MVP y no se presentan como implementadas en la versión actual.
 
-```mermaid
-flowchart LR
-A1["Driver"] --> C1["Create Route"] --> AG["Route"] --> E1["Route Created"]
-A1 --> C2["Add / Edit / Remove Stop"] --> AG --> E2["Route Stops Updated"]
-A1 --> C3["Reorder Stops"] --> AG --> E3["Stops Reordered"]
-A1 --> C4["Assign Student to Route"] --> AG --> E4["Student Assigned to Route"]
-A2["Parent / Tutor"] --> C5["Register Student Absence"] --> AG2["TripSchedule"] --> E5["Student Absence Registered"]
-E5 --> P1["Before trip start, exclude absent student from planned pickup"] --> R1["Daily Route & Assigned Students View"]
-E3 --> R1
-E4 --> R1
-H1{"Late absence, wrong stop order or assignment exceeding vehicle capacity"}
-AG -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A1,A2 actor; class C1,C2,C3,C4,C5 command; class AG,AG2 aggregate; class E1,E2,E3,E4,E5 event; class P1 policy; class R1 readmodel; class H1 hotspot;
-```
+#### Alerting and Incident Management Bounded Context
 
-#### BC04 — Real-Time Tracking and Execution
+Este contexto maneja los eventos excepcionales del viaje. Centraliza retrasos, incidencias y la comunicación dirigida a los padres o tutores autorizados afectados por la ruta.
 
-Este contexto representa la ejecución del recorrido y constituye el núcleo operativo del producto. El Aggregate **Trip** mantiene el estado del viaje y su secuencia de eventos, incluyendo recojo, verificación registrada, entrega y finalización.
+<div align="center">
+  <img src="./assets/chapter04/event-storming/alerting-incident-management.svg" alt="Alerting and Incident Management Event Storming" width="100%">
+</div>
 
-**Actors:** Driver, Authorized Assistant y Parent/Tutor como consumidor de información.  
-**Commands:** Start Trip, Confirm Pickup, Confirm Seatbelt Check, Confirm Drop-off, Correct Trip Event, Complete Trip y, como capacidad posterior al MVP, Record Location.  
-**Domain Events:** Trip Started, Student Picked Up, Seatbelt Verified, Student Dropped Off, Trip Event Corrected, Trip Completed y Vehicle Location Recorded.  
-**Business Policies:** cada hito confirmado se incorpora al timeline; una corrección conserva trazabilidad del evento anterior; el viaje solo puede cerrarse cuando se cumplen las condiciones operativas definidas por la ruta.  
-**Read Models:** Active Trip View, Trip Timeline, Trip History y Last Known Location cuando el seguimiento esté habilitado.  
-**Hotspots:** pérdida de conectividad, registro accidental de un hito, sincronización duplicada y ubicación desactualizada.
+#### Subscriptions and Billing Bounded Context
 
-```mermaid
-flowchart LR
-A["Driver / Authorized Assistant"] --> C1["Start Trip"] --> AG["Trip"] --> E1["Trip Started"]
-A --> C2["Confirm Pickup"] --> AG --> E2["Student Picked Up"]
-A --> C3["Confirm Seatbelt Check"] --> AG --> E3["Seatbelt Verified"]
-A --> C4["Confirm Drop-off"] --> AG --> E4["Student Dropped Off"]
-A --> C5["Complete Trip"] --> AG --> E5["Trip Completed"]
-E2 --> P1["Append event to trip timeline"] --> R1["Active Trip & Timeline View"]
-E3 --> P1
-E4 --> P1
-E5 --> R2["Trip History View"]
-C6["Record Location (post-MVP)"] --> AG --> E6["Vehicle Location Recorded"] --> R3["Last Known Location"]
-H1{"Loss of connectivity, stale GPS data or accidental event registration"}
-AG -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A actor; class C1,C2,C3,C4,C5,C6 command; class AG aggregate; class E1,E2,E3,E4,E5,E6 event; class P1 policy; class R1,R2,R3 readmodel; class H1 hotspot;
-```
+Este contexto separa las reglas comerciales de las reglas operativas del viaje. Gestiona la elección de plan, estado de suscripción, pagos, renovaciones y comprobantes.
 
-Las funcionalidades de GPS continuo y cálculo dinámico de ETA se conservan en este contexto por afinidad de dominio, pero permanecen en el roadmap posterior al MVP, en coherencia con US27, TS01 y TS03.
+<div align="center">
+  <img src="./assets/chapter04/event-storming/subscriptions-billing.svg" alt="Subscriptions and Billing Event Storming" width="100%">
+</div>
 
-#### BC05 — Alerting and Incident Management
-
-Este contexto concentra los eventos excepcionales y su comunicación a las familias autorizadas. Los Aggregates principales son **Delay, Incident** y **Notification**. Su responsabilidad es evitar que el conductor tenga que repetir el mismo mensaje a múltiples familias.
-
-**Actors:** Driver, Parent/Tutor y System.  
-**Commands:** Report Delay, Update Delay, Report Incident, Resolve Incident, Report Vehicle Transfer, Create Notification, Mark Notification as Read y Update Notification Preferences.  
-**Domain Events:** Delay Reported, Delay Updated, Incident Reported, Incident Resolved, Vehicle Transfer Reported, Notification Created, Notification Read y Notification Preferences Updated.  
-**Business Policies:** un retraso o incidencia genera avisos únicamente para los tutores autorizados afectados; las notificaciones críticas permanecen disponibles aunque el usuario haya desactivado avisos no críticos.  
-**Read Models:** Notifications View, Delay Detail, Incident Detail y Notification Preferences View.  
-**Hotspots:** exceso de notificaciones, destinatarios incorrectos, falta de información crítica y generación de alertas falsas.
-
-```mermaid
-flowchart LR
-A1["Driver"] --> C1["Report Delay"] --> AG1["Delay"] --> E1["Delay Reported"]
-A1 --> C2["Report Incident"] --> AG2["Incident"] --> E2["Incident Reported"]
-A1 --> C3["Resolve Incident"] --> AG2 --> E3["Incident Resolved"]
-E1 --> P1["Notify only authorized families affected by the route"] --> C4["Create Notification"] --> AG3["Notification"] --> E4["Notification Created"]
-E2 --> P1
-A2["Parent / Tutor"] --> C5["Update Notification Preferences"] --> AG3 --> E5["Notification Preferences Updated"]
-E4 --> R1["Notifications View"]
-E1 --> R2["Delay Detail"]
-E2 --> R3["Incident Detail"]
-H1{"Notification overload, wrong recipients or missing critical information"}
-AG3 -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A1,A2 actor; class C1,C2,C3,C4,C5 command; class AG1,AG2,AG3 aggregate; class E1,E2,E3,E4,E5 event; class P1 policy; class R1,R2,R3 readmodel; class H1 hotspot;
-```
-
-La alerta de proximidad mediante geofencing (US29) se mantiene como una capacidad posterior al MVP y dependerá de que el seguimiento de ubicación esté habilitado.
-
-#### BC06 — Subscriptions and Billing
-
-Este contexto administra el modelo SaaS dirigido a conductores u operadores. Los Aggregates principales son **Subscription** y **Payment**; los precios definitivos no forman parte del modelo de dominio mientras continúen en validación comercial.
-
-**Actors:** Driver / Operator.  
-**Commands:** Select Plan, Create Subscription, Process Payment, Renew Subscription, Pause Subscription, Cancel Subscription, Reactivate Subscription y Generate Receipt.  
-**Domain Events:** Plan Selected, Subscription Created, Payment Approved, Payment Rejected, Subscription Renewed, Subscription Paused, Subscription Cancelled, Subscription Reactivated y Receipt Generated.  
-**Business Policies:** un pago aprobado activa o renueva el periodo correspondiente; un pago rechazado no debe alterar el estado previo de la suscripción; una cancelación detiene la renovación futura según las condiciones vigentes.  
-**Read Models:** Plans View, Billing History y Subscription Settings.  
-**Hotspots:** precios todavía no validados, fallas del proveedor de pagos y discrepancias entre el estado del pago y la suscripción.
-
-```mermaid
-flowchart LR
-A["Driver / Operator"] --> C1["Select Plan"] --> AG1["Subscription"] --> E1["Plan Selected"]
-A --> C2["Process Payment"] --> AG2["Payment"] --> E2["Payment Approved / Rejected"]
-E2 --> P1["If approved, activate or renew subscription; if rejected, keep previous state"] --> AG1
-A --> C3["Pause / Cancel Subscription"] --> AG1 --> E3["Subscription Paused / Cancelled"]
-A --> C4["Reactivate Subscription"] --> AG1 --> E4["Subscription Reactivated"]
-E2 --> C5["Generate Receipt"] --> AG2 --> E5["Receipt Generated"]
-E5 --> R1["Billing History"]
-AG1 --> R2["Subscription Settings"]
-H1{"Commercial price is still a hypothesis and payment provider may fail"}
-AG2 -.-> H1
-classDef actor fill:#FFF2CC,stroke:#B7A448,color:#222;
-classDef command fill:#9FC5E8,stroke:#3D85C6,color:#111;
-classDef aggregate fill:#CFE2F3,stroke:#6FA8DC,color:#111;
-classDef event fill:#F9CB9C,stroke:#E69138,color:#111;
-classDef policy fill:#D9D2E9,stroke:#8E7CC3,color:#111;
-classDef readmodel fill:#B6D7A8,stroke:#6AA84F,color:#111;
-classDef hotspot fill:#E066CC,stroke:#A64D79,color:#111;
-class A actor; class C1,C2,C3,C4,C5 command; class AG1,AG2 aggregate; class E1,E2,E3,E4,E5 event; class P1 policy; class R1,R2 readmodel; class H1 hotspot;
-```
-
-#### Relación entre los Bounded Contexts
-
-Los contextos se mantienen separados para evitar que una misma clase o módulo concentre responsabilidades ajenas a su dominio. Las integraciones relevantes se producen mediante identificadores y eventos de negocio:
-
-- **IAM → Profiles and Verification:** una cuenta registrada habilita la creación del perfil correspondiente.
-- **Profiles and Verification → Route and Trip Planning:** únicamente estudiantes, conductores y vehículos registrados pueden participar en asignaciones operativas.
-- **Route and Trip Planning → Real-Time Tracking and Execution:** una programación válida origina el Trip que será ejecutado.
-- **Real-Time Tracking and Execution → Alerting and Incident Management:** los cambios operativos, retrasos e incidencias alimentan la comunicación hacia tutores autorizados.
-- **Subscriptions and Billing** permanece separado de la ejecución del viaje; determina el estado comercial del servicio sin mezclar reglas de pago con reglas operativas.
-
-Esta delimitación se utilizará como base para subdividir los **Class Diagrams** y los **Database Diagrams** por contexto en las secciones 4.7 y 4.8. De esta manera se mantiene trazabilidad entre User Stories, Event Storming, diseño orientado a objetos y persistencia.
+En conjunto, los seis Bounded Contexts establecen la base para los Class Diagrams y Database Diagrams de las secciones 4.7 y 4.8. La división evita concentrar toda la lógica en un único modelo y mantiene trazabilidad entre las User Stories, el comportamiento del dominio y el diseño técnico.
 
 
 ### 4.6.2. Software Architecture Context Diagram
