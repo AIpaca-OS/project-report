@@ -1208,6 +1208,12 @@ Se compararán respuestas por segmento, separando **características objetivas**
   <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Web Wireframe" width="750">
 </div>
 
+<br>
+
+<div align="center">
+  <img src="./assets/chapter04/landingWireframeMb.png" alt="Landing Page Web Mock-Up" width="750">
+</div>
+
 ### 4.3.2. Landing Page Mock-up
 
 <div align="center">
