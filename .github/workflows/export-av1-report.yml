@@ -1,14 +1,6 @@
 name: Export AV1 Report PDF
 
 on:
-  push:
-    branches:
-      - feature/chapter-5-product-implementation-validation-and-deployment
-    paths:
-      - '.github/workflows/export-av1-report.yml'
-      - '.github/report-export/**'
-      - 'README.md'
-      - 'assets/**'
   workflow_dispatch:
 
 permissions:
