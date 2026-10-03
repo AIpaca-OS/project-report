@@ -1881,19 +1881,31 @@ Las cinco User Stories del Sprint se descomponen en **múltiples tareas**. Cada 
 
 #### Tareas por User Story
 
+El Sprint Backlog se refina para que cada User Story represente trabajo distribuido en varias Tasks técnicas y para que las horas resulten coherentes con los Story Points asignados. Se mantiene como regla que ninguna Task exceda 8 horas.
+
 | Story ID | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---:|---|---|
-| US31 | T01 | Hero & value proposition | Implementar Hero, propuesta de valor y explicación principal del producto. | 5 | Kevin Geronimo / Alejandro Díaz | Done |
-| US31 | T02 | Service explanation | Implementar la sección de funcionamiento, indicadores y contenido que refuerza la propuesta de valor. | 5 | Alejandro Díaz | Done |
-| US31 | T03 | Responsive navigation | Ajustar navegación, menú móvil, accesibilidad básica y comportamiento responsive. | 4 | Kevin Geronimo / Alejandro Díaz | Done |
-| US32 | T04 | Benefits by segment | Adaptar beneficios para diferenciar necesidades de padres/tutores y conductores. | 6 | Alejandro Díaz | In-Process |
-| US32 | T05 | Segment CTAs | Implementar CTA de acceso/registro correspondiente para cada segmento. | 4 | Alejandro Díaz / Kevin Geronimo | To-do |
-| US33 | T06 | Translation content | Preparar el contenido público para `en_US` y `es_419`, manteniendo inglés como idioma predeterminado. | 4 | Kevin Geronimo / Alejandro Díaz | To-do |
-| US33 | T07 | Language selector | Implementar selector de idioma y persistencia de la preferencia durante la sesión. | 4 | Kevin Geronimo / Alejandro Díaz | To-do |
-| US34 | T08 | Terms of Service | Crear el contenido accesible de Terms of Service y enlazarlo desde el footer. | 4 | Equipo | To-do |
-| US34 | T09 | Privacy Policy | Crear Privacy Policy y enlazarla desde el footer. | 4 | Equipo | To-do |
-| US35 | T10 | FAQ interaction | Implementar preguntas frecuentes y comportamiento de acordeón con JavaScript. | 5 | Alejandro Díaz | Done |
-| US35 | T11 | Public contact form | Implementar formulario público con validación y confirmación de envío. | 6 | Kevin Geronimo / Alejandro Díaz | To-do |
+| US31 | T01 | Implement hero section | Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page. | 6 | Kevin Geronimo | Done |
+| US31 | T02 | Implement service explanation | Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio. | 6 | Alejandro Díaz | Done |
+| US31 | T03 | Implement supporting content | Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor. | 5 | Alejandro Díaz | Done |
+| US31 | T04 | Implement responsive navigation | Implementar navegación desktop/mobile, menú responsive, atributos de accesibilidad básicos y ajustes de visualización. | 5 | Kevin Geronimo | Done |
+| US32 | T05 | Structure segment benefits | Organizar el contenido para diferenciar beneficios de padres/tutores y conductores. | 6 | Alejandro Díaz | In-Process |
+| US32 | T06 | Implement segment benefit sections | Implementar visualmente las secciones de beneficios correspondientes a cada segmento. | 5 | Kevin Geronimo | In-Process |
+| US32 | T07 | Implement segment CTAs | Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor. | 5 | Kevin Geronimo | To-do |
+| US32 | T08 | Connect CTAs to Web App | Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible. | 4 | Alejandro Díaz | To-do |
+| US33 | T09 | Prepare English content | Preparar la versión `en_US` del contenido público manteniéndola como idioma predeterminado. | 4 | Kevin Geronimo | To-do |
+| US33 | T10 | Prepare Latin American Spanish content | Preparar la versión `es_419` del contenido equivalente de la Landing Page. | 4 | Alejandro Díaz | To-do |
+| US33 | T11 | Implement language selection | Implementar selector de idioma y persistencia de la preferencia durante la sesión. | 4 | Kevin Geronimo | To-do |
+| US34 | T12 | Implement Terms of Service | Crear la vista o contenido navegable de Terms of Service. | 4 | Kevin Geronimo | To-do |
+| US34 | T13 | Implement Privacy Policy | Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo. | 4 | Alejandro Díaz | To-do |
+| US34 | T14 | Integrate legal navigation | Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page. | 4 | Kevin Geronimo | To-do |
+| US35 | T15 | Implement FAQ content | Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos. | 5 | Alejandro Díaz | Done |
+| US35 | T16 | Implement FAQ interaction | Implementar el comportamiento de acordeón y su interacción mediante JavaScript. | 4 | Alejandro Díaz | Done |
+| US35 | T17 | Implement contact form UI | Construir el formulario público de contacto con sus campos obligatorios. | 4 | Kevin Geronimo | To-do |
+| US35 | T18 | Implement contact validation | Implementar validaciones de campos obligatorios y mensajes de error del formulario. | 4 | Kevin Geronimo | To-do |
+| US35 | T19 | Implement submission feedback | Implementar la confirmación visual del registro de una consulta válida. | 4 | Alejandro Díaz | To-do |
+
+**Comprobación de coherencia:** US31 = 22 h para 2 SP; US32 = 20 h para 2 SP; US33 = 12 h para 1 SP; US34 = 12 h para 1 SP; US35 = 21 h para 2 SP. Estas horas no convierten los Story Points en una equivalencia matemática directa; únicamente verifican que una historia estimada en varios Story Points no quede reducida a una única actividad de pocas horas.
 
 #### Actividades de soporte del Sprint
 
@@ -1906,16 +1918,15 @@ Estas actividades no generan Story Points porque no representan una funcionalida
 
 #### Trazabilidad de la implementación actual
 
-| Implementación observada en Landing Page | User Story asociada |
-|---|---|
-| Hero, explicación de funcionamiento, indicadores y testimonios | US31 |
-| Beneficios y CTA de adopción | US32 |
-| Selector y contenido bilingüe | US33 |
-| Terms of Service y Privacy Policy | US34 |
-| FAQ y formulario de contacto | US35 |
-| Navegación responsive y menú móvil | US31 — criterio de aceptación de consulta Mobile |
+| Alcance funcional | User Story asociada | Estado según Sprint Backlog |
+|---|---|---|
+| Hero, explicación de funcionamiento, indicadores, testimonios y navegación responsive | US31 | Done |
+| Beneficios y CTA diferenciados por segmento | US32 | In-Process |
+| Selector y contenido bilingüe | US33 | To-do |
+| Terms of Service y Privacy Policy | US34 | To-do |
+| FAQ y formulario de contacto | US35 | In-Process |
 
-De este modo, la implementación del Sprint queda cubierta por User Stories explícitas. No se añade una User Story artificial para deployment o documentación porque son actividades de soporte, no valor funcional independiente para el usuario.
+La trazabilidad se registra aunque una historia todavía no esté finalizada. No se añade una User Story artificial para deployment o documentación porque son actividades de soporte, no valor funcional independiente para el usuario.
 
 ##### Trabajo documental del Project Report
 
@@ -1932,6 +1943,8 @@ Las actividades de documentación se mantienen fuera del cálculo de Story Point
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 La implementación funcional de AV1 se concentra en la **Landing Page**. El repositorio muestra una primera carga del producto, un rediseño posterior y una implementación adicional de comportamiento JavaScript. Los repositorios de Frontend Web Application y Web Services existen y cuentan con su foundation inicial, pero todavía no presentan features funcionales de negocio; por ello se documentan sin atribuirles implementación que aún no existe.
+
+**Observación de trazabilidad del Sprint 1:** el historial actual del repositorio muestra que los commits funcionales principales de la Landing Page fueron realizados directamente sobre `main`; las ramas `develop` y `feature/landing-page-v1` permanecieron en el estado de inicialización. Este historial no se modifica retroactivamente. A partir de Sprint 2 se aplicará estrictamente `feature → develop → main`, relacionando cada feature branch con la User Story correspondiente.
 
 <div align="center">
   <img src="./assets/chapter5/development-evidence-commits.svg" alt="Development Evidence Commits" width="95%">
