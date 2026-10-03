@@ -1529,16 +1529,18 @@ En conjunto, los seis Bounded Contexts establecen la base para los Class Diagram
 
 **Tablero editable de Design-Level Event Storming:** [Rumbo - Design-Level Event Storming](https://miro.com/app/board/uXjVHl8Ic-k=/)
 
+El tablero editable contiene actualmente los **seis Bounded Contexts** documentados en esta sección, incluido **Profiles and Verification**, de modo que el artefacto externo y el Project Report mantienen la misma delimitación del dominio.
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
-Este diagrama muestra la visión general del sistema Rumbo, posicionando la plataforma en el centro y detallando sus interacciones con los usuarios (padres y conductores) y dependencias externas (Auth0, Google Maps, FCM y SendGrid).
+Este diagrama muestra la **arquitectura objetivo** de Rumbo, posicionando la plataforma en el centro y detallando sus interacciones previstas con los usuarios y servicios externos. Las dependencias externas y capacidades de back-end representadas se incorporarán progresivamente en los Sprints posteriores y no implican que estén implementadas en Sprint 2.
 
 <img width="775" height="501" alt="Diagrama-Contextos" src="https://github.com/user-attachments/assets/1fa0067c-5228-433b-9755-bacebecd81f8" />
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-Este diagrama expone la arquitectura física y de despliegue. Divide el sistema en contenedores ejecutables: la Landing Page, la aplicación cliente (SPA en Angular), la lógica de negocio (API en Spring Boot)
+Este diagrama expone la **arquitectura objetivo** física y de despliegue. Divide el sistema en la Landing Page, la aplicación cliente (SPA en Angular) y la lógica de negocio prevista mediante API en Spring Boot. En Sprint 2 únicamente se implementa el Frontend Web Application con Angular y JSON Server; la API en Spring Boot corresponde al Sprint 3.
 
 <img width="1069" height="1171" alt="Contenedores-Diagrama" src="https://github.com/user-attachments/assets/022fc782-e64d-481b-a732-9f64e2dcd7a4" />
 
