@@ -1835,81 +1835,115 @@ La implementación actual de la Landing Page se traza contra las User Stories de
 
 ### 5.2.1.1. Sprint Planning 1
 
-| Sprint Planning Registro | Detalle |
-|---|---|
-| **Sprint #** | Sprint 1 |
-| **Sprint Planning Background** | Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo. |
-| **Date** | 09/09/2026 |
-| **Time** | No registrado en la evidencia disponible. |
-| **Location** | No registrado en la evidencia disponible. |
-| **Prepared By** | Lino Quispe, Leonardo Miguel |
-| **Attendees (to planning meeting)** | Díaz Ramírez, Alejandro; Geronimo Puma, Kevin Joel; Lino Quispe, Leonardo Miguel; Meza Soza, Alexandra Yamile; Pareja Caceres, Diana |
-| **Sprint 0 Review Summary** | No aplica. |
-| **Sprint 0 Retrospective Summary** | No aplica. |
-| **Sprint 1 Goal** | Our focus is on presentar y publicar la propuesta de valor de Rumbo mediante una Landing Page responsive. We believe it delivers información clara y accesible to visitantes de los segmentos padre/tutor y conductor. This will be confirmed when el sitio público permita comprender el producto, sus beneficios y las vías de acceso o contacto. |
-| **Sprint 1 Velocity** | 8 Story Points |
-| **Sum of Story Points** | 8 Story Points |
+En esta sección se registran los principales acuerdos del Sprint Planning Meeting de Sprint 1 utilizando la estructura indicada en el Final Project Statement.
+
+<table>
+  <tbody>
+    <tr><th>Sprint #</th><td>Sprint 1</td></tr>
+    <tr><th colspan="2">Sprint Planning Background</th></tr>
+    <tr><td colspan="2">Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo.</td></tr>
+    <tr><th>Date</th><td>2026-09-09</td></tr>
+    <tr><th>Time</th><td>No registrado en la evidencia disponible.</td></tr>
+    <tr><th>Location</th><td>No registrado en la evidencia disponible.</td></tr>
+    <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
+    <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
+    <tr><th>Sprint 0 Review Summary</th><td>No aplica.</td></tr>
+    <tr><th>Sprint 0 Retrospective Summary</th><td>No aplica.</td></tr>
+    <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
+    <tr><th>Sprint 1 Goal</th><td>Our focus is on publishing the first responsive Landing Page that clearly communicates Rumbo's value proposition and guides both target segments to their next action. We believe it delivers clear product understanding and a direct entry point to parents/tutors and school transport drivers. This will be confirmed when the five committed Landing Page User Stories satisfy their Acceptance Criteria and the site is publicly accessible on Desktop and Mobile Web Browser.</td></tr>
+    <tr><th>Sprint 1 Velocity</th><td>8 Story Points</td></tr>
+    <tr><th>Sum of Story Points</th><td>8 Story Points</td></tr>
+  </tbody>
+</table>
 
 La equivalencia usada para la estimación es la indicada por el docente: **1 SP ≈ 1–2 días de trabajo** y **8 SP ≈ un Sprint completo de dos semanas**. Los Story Points no se calculan sumando horas de forma directa; las horas se utilizan para dimensionar las Tasks y comprobar que ninguna supere aproximadamente 8 horas.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-La Leadership-and-Collaboration Matrix (LACX) se presenta con el formato solicitado para identificar, por integrante y GitHub username, quién lidera (L) y quién colabora (C) en cada aspecto del Sprint. Las responsabilidades funcionales deben mantener relación con las tareas consignadas posteriormente en el Sprint Backlog; las actividades documentales o de evidencia se consideran soporte y no generan Story Points.
+La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del alcance del Sprint quién actúa como Leader (L) y quiénes participan como Collaborators (C). La asignación mantiene relación con las Tasks del Sprint Backlog.
 
-| Team Member | GitHub Username | Project Report / Chapter V | Research & Interviews | Landing Page UX/UI | Landing Page Development | Requirements & Product Design | Deployment & Evidence |
-|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Diaz Ramirez, Alejandro | `aleedr` | C | C | L | C | C | — |
-| Geronimo Puma, Kevin Joel | `qebim18` | C | C | C | L | C | C |
-| Lino Quispe, Leonardo Miguel | `linolw` | L | C | — | — | C | L |
-| Meza Soza, Alexandra Yamile | `AlexandraYMS` | C | L | — | — | C | — |
-| Pareja Caceres, Diana | `DianaParejaCaceres` | C | C | — | — | L | — |
+<table>
+  <thead>
+    <tr>
+      <th>Team Member (Last Name, First Name)</th>
+      <th>GitHub Username</th>
+      <th>Project Report / Chapter V<br>Leader (L) / Collaborator (C)</th>
+      <th>Research &amp; Interviews<br>Leader (L) / Collaborator (C)</th>
+      <th>Landing Page UX/UI<br>Leader (L) / Collaborator (C)</th>
+      <th>Landing Page Development<br>Leader (L) / Collaborator (C)</th>
+      <th>Requirements &amp; Product Design<br>Leader (L) / Collaborator (C)</th>
+      <th>Deployment &amp; Evidence<br>Leader (L) / Collaborator (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Díaz Ramírez, Alejandro</td><td>aleedr</td><td>C</td><td>C</td><td>L</td><td>C</td><td>C</td><td>—</td></tr>
+    <tr><td>Geronimo Puma, Kevin Joel</td><td>qebim18</td><td>C</td><td>C</td><td>C</td><td>L</td><td>C</td><td>C</td></tr>
+    <tr><td>Lino Quispe, Leonardo Miguel</td><td>linolw</td><td>L</td><td>C</td><td>—</td><td>—</td><td>C</td><td>L</td></tr>
+    <tr><td>Meza Soza, Alexandra Yamile</td><td>AlexandraYMS</td><td>C</td><td>L</td><td>—</td><td>—</td><td>C</td><td>—</td></tr>
+    <tr><td>Pareja Caceres, Diana</td><td>DianaParejaCaceres</td><td>C</td><td>C</td><td>—</td><td>—</td><td>L</td><td>—</td></tr>
+  </tbody>
+</table>
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. De acuerdo con la retroalimentación del docente, cada User Story se descompone en **un mínimo de dos Tasks**, las User Stories se estiman en Story Points y cada Task se estima en horas, con una duración máxima aproximada de 8 horas.
-
-**Sprint #** Sprint 1
+El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. El Board público del Sprint se encuentra en:
 
 **Sprint Board público:** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
 
-> La captura del Board debe corresponder al estado final del tablero y mostrar las mismas User Stories, Tasks y estados registrados en la siguiente tabla.
+> Antes de la entrega se debe reemplazar esta nota por una captura actualizada del Board que muestre las mismas User Stories, Tasks y estados de la tabla.
 
-| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---:|---|---|
-| US31 | Conocer la propuesta de valor de Rumbo | T01 | Implement hero section | Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page. | 6 | Kevin Geronimo | Done |
-| US31 | Conocer la propuesta de valor de Rumbo | T02 | Implement service explanation | Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio. | 6 | Alejandro Díaz | Done |
-| US31 | Conocer la propuesta de valor de Rumbo | T03 | Implement supporting content | Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor. | 5 | Alejandro Díaz | Done |
-| US31 | Conocer la propuesta de valor de Rumbo | T04 | Implement responsive navigation | Implementar navegación desktop/mobile, menú responsive, accesibilidad básica y ajustes de visualización. | 5 | Kevin Geronimo | Done |
-| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T05 | Structure segment benefits | Organizar el contenido para diferenciar beneficios de padres/tutores y conductores. | 6 | Alejandro Díaz | In-Process |
-| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T06 | Implement segment benefit sections | Implementar visualmente las secciones de beneficios correspondientes a cada segmento. | 5 | Kevin Geronimo | In-Process |
-| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T07 | Implement segment CTAs | Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor. | 5 | Kevin Geronimo | To-do |
-| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T08 | Connect CTAs to Web App | Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible. | 4 | Alejandro Díaz | To-do |
-| US33 | Consultar el contenido en inglés o español | T09 | Prepare English content | Preparar la versión `en_US` del contenido público manteniéndola como idioma predeterminado. | 4 | Kevin Geronimo | To-do |
-| US33 | Consultar el contenido en inglés o español | T10 | Prepare Latin American Spanish content | Preparar la versión `es_419` del contenido equivalente de la Landing Page. | 4 | Alejandro Díaz | To-do |
-| US33 | Consultar el contenido en inglés o español | T11 | Implement language selection | Implementar selector de idioma y persistencia de la preferencia durante la sesión. | 4 | Kevin Geronimo | To-do |
-| US34 | Consultar los documentos legales del servicio | T12 | Implement Terms of Service | Crear la vista o contenido navegable de Terms of Service. | 4 | Kevin Geronimo | To-do |
-| US34 | Consultar los documentos legales del servicio | T13 | Implement Privacy Policy | Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo. | 4 | Alejandro Díaz | To-do |
-| US34 | Consultar los documentos legales del servicio | T14 | Integrate legal navigation | Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page. | 4 | Kevin Geronimo | To-do |
-| US35 | Resolver dudas antes de usar Rumbo | T15 | Implement FAQ content | Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos. | 5 | Alejandro Díaz | Done |
-| US35 | Resolver dudas antes de usar Rumbo | T16 | Implement FAQ interaction | Implementar el comportamiento de acordeón y su interacción mediante JavaScript. | 4 | Alejandro Díaz | Done |
-| US35 | Resolver dudas antes de usar Rumbo | T17 | Implement contact form UI | Construir el formulario público de contacto con sus campos obligatorios. | 4 | Kevin Geronimo | To-do |
-| US35 | Resolver dudas antes de usar Rumbo | T18 | Implement contact validation | Implementar validaciones de campos obligatorios y mensajes de error del formulario. | 4 | Kevin Geronimo | To-do |
-| US35 | Resolver dudas antes de usar Rumbo | T19 | Implement submission feedback | Implementar la confirmación visual del registro de una consulta válida. | 4 | Alejandro Díaz | To-do |
-| N/A | General Sprint Constraint | S01 | Publicar Landing Page | Publicar la Landing Page mediante GitHub Pages y verificar la URL pública. | 3 | Leonardo Lino / Kevin Geronimo | Done |
-| N/A | General Sprint Constraint | S02 | Registrar evidencias de Sprint 1 | Registrar evidencias Desktop/Mobile, commits y deployment correspondientes al Sprint. | 4 | Leonardo Lino | In-Process |
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <th colspan="7">Sprint 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Story Id</th>
+      <th>Story Title</th>
+      <th>Task Id</th>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="4">US31</td><td rowspan="4">Conocer la propuesta de valor de Rumbo</td><td>T01</td><td>Implement hero section</td><td>Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page.</td><td>6</td><td>Kevin Geronimo</td><td>Done</td></tr>
+    <tr><td>T02</td><td>Implement service explanation</td><td>Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio.</td><td>6</td><td>Alejandro Díaz</td><td>Done</td></tr>
+    <tr><td>T03</td><td>Implement supporting content</td><td>Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
+    <tr><td>T04</td><td>Implement responsive navigation</td><td>Implementar navegación desktop/mobile, menú responsive, accesibilidad básica y ajustes de visualización.</td><td>5</td><td>Kevin Geronimo</td><td>Done</td></tr>
 
-**Validación de descomposición de User Stories**
+    <tr><td rowspan="4">US32</td><td rowspan="4">Identificar los beneficios de mi segmento e ingresar a Rumbo</td><td>T05</td><td>Structure segment benefits</td><td>Organizar el contenido para diferenciar beneficios de padres/tutores y conductores.</td><td>6</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+    <tr><td>T06</td><td>Implement segment benefit sections</td><td>Implementar visualmente las secciones de beneficios correspondientes a cada segmento.</td><td>5</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+    <tr><td>T07</td><td>Implement segment CTAs</td><td>Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor.</td><td>5</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+    <tr><td>T08</td><td>Connect CTAs to Web App</td><td>Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
 
-| Story ID | Story Points | Número de Tasks | Horas estimadas |
-|---|---:|---:|---:|
-| US31 | 2 | 4 | 22 |
-| US32 | 2 | 4 | 20 |
-| US33 | 1 | 3 | 12 |
-| US34 | 1 | 3 | 12 |
-| US35 | 2 | 5 | 21 |
-| **Total** | **8** | **19** | **87** |
+    <tr><td rowspan="3">US33</td><td rowspan="3">Consultar el contenido en inglés o español</td><td>T09</td><td>Prepare English content</td><td>Preparar la versión en_US del contenido público manteniéndola como idioma predeterminado.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+    <tr><td>T10</td><td>Prepare Latin American Spanish content</td><td>Preparar la versión es_419 del contenido equivalente de la Landing Page.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+    <tr><td>T11</td><td>Implement language selection</td><td>Implementar selector de idioma y persistencia de la preferencia durante la sesión.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
 
-Todas las User Stories del Sprint cumplen la regla de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las actividades S01 y S02 se registran como Tasks adicionales asociadas a constraints generales del Sprint y no generan Story Points, tal como permite el formato del Final Project Statement.
+    <tr><td rowspan="3">US34</td><td rowspan="3">Consultar los documentos legales del servicio</td><td>T12</td><td>Implement Terms of Service</td><td>Crear la vista o contenido navegable de Terms of Service.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+    <tr><td>T13</td><td>Implement Privacy Policy</td><td>Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+    <tr><td>T14</td><td>Integrate legal navigation</td><td>Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+
+    <tr><td rowspan="5">US35</td><td rowspan="5">Resolver dudas antes de usar Rumbo</td><td>T15</td><td>Implement FAQ content</td><td>Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
+    <tr><td>T16</td><td>Implement FAQ interaction</td><td>Implementar el comportamiento de acordeón y su interacción mediante JavaScript.</td><td>4</td><td>Alejandro Díaz</td><td>Done</td></tr>
+    <tr><td>T17</td><td>Implement contact form UI</td><td>Construir el formulario público de contacto con sus campos obligatorios.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+    <tr><td>T18</td><td>Implement contact validation</td><td>Implementar validaciones de campos obligatorios y mensajes de error del formulario.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+    <tr><td>T19</td><td>Implement submission feedback</td><td>Implementar la confirmación visual del registro de una consulta válida.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+
+    <tr><td>N/A</td><td>General Sprint Constraint</td><td>S01</td><td>Publicar Landing Page</td><td>Publicar la Landing Page mediante GitHub Pages y verificar la URL pública.</td><td>3</td><td>Leonardo Lino / Kevin Geronimo</td><td>Done</td></tr>
+    <tr><td>N/A</td><td>General Sprint Constraint</td><td>S02</td><td>Registrar evidencias de Sprint 1</td><td>Registrar evidencias Desktop/Mobile, commits y deployment correspondientes al Sprint.</td><td>4</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+  </tbody>
+</table>
+
+Todas las User Stories del Sprint cumplen la regla indicada por el docente de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las Tasks S01 y S02 corresponden a constraints generales del Sprint y no generan Story Points.
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -1921,7 +1955,7 @@ La implementación funcional de AV1 se concentra en la **Landing Page**. El repo
   <img src="./assets/chapter5/development-evidence-commits.svg" alt="Development Evidence Commits" width="95%">
 </div>
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
 | `AIpaca-OS/landing-page` | `main` | [`826939d`](https://github.com/AIpaca-OS/landing-page/commit/826939d379fd977780cb7b2cb6091e02a50ad95f) | Subir archivos de la landing page | No registra body adicional. El commit incorpora `index.html`, `css/styles.css`, JavaScript y recursos base. | 15/09/2026 |
 | `AIpaca-OS/landing-page` | `main` | [`6efdfc3`](https://github.com/AIpaca-OS/landing-page/commit/6efdfc3) | feat: redesign landing page | No registra body adicional. Modifica `index.html` y más de 1000 líneas de CSS, además de incorporar assets visuales. | 16/09/2026 |
