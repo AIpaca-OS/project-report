@@ -1503,7 +1503,7 @@ Este contexto organiza la planificación operativa del servicio. Incluye la crea
 
 #### Real-Time Tracking and Execution Bounded Context
 
-Este contexto supervisa la ejecución del trayecto en tiempo real. Incluye el inicio del viaje, registro de ubicación, confirmación de recojo y descenso, verificación de cinturón y cierre del trayecto.
+Este contexto gestiona la **ejecución y el estado operativo del trayecto** mediante eventos registrados durante el viaje. Incluye el inicio del viaje, confirmaciones de recojo y entrega, verificaciones, hitos y cierre del trayecto. El seguimiento continuo por GPS, ETA dinámico y geofencing se mantiene como evolución posterior del producto y no forma parte del alcance actual del Sprint 2.
 
 <div align="center">
   <img src="./assets/chapter04/event-storming/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Bounded Context" width="95%">
@@ -1545,11 +1545,11 @@ Este diagrama expone la arquitectura física y de despliegue. Divide el sistema 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-Este diagrama profundiza en el contenedor lógico del backend (API Application). Muestra la estructura interna basada en el patrón MVC utilizado en Spring Boot, detallando los controladores (REST y WebSockets), los servicios que encapsulan las reglas de negocio, la capa de acceso a datos mediante repositorios y la barrera de seguridad (Security Filter).
+Este diagrama representa la **arquitectura objetivo** del contenedor backend (API Application) para los siguientes Sprints. Muestra la estructura prevista en Spring Boot, detallando controladores, servicios, repositorios y seguridad. Estas capacidades no forman parte del Sprint 2, cuyo alcance se limita al Frontend Web Application con Angular y JSON Server.
 
 <img width="697" height="812" alt="component-diagram-1" src="https://github.com/user-attachments/assets/1d7ca398-5c9f-46e8-b3b9-39fe16430330" />
 
-Este diagrama hace foco en la arquitectura interna de la Single Page Application (SPA) desarrollada en Angular. Detalla la separación de responsabilidades entre el enrutador protegido (AuthGuard), los componentes visuales de las vistas (mapas y paneles de gestión) y los servicios encargados de la conexión persistente (WebSockets) y el consumo de la API.
+Este diagrama representa la **arquitectura objetivo** de la Single Page Application (SPA) en Angular. La separación por componentes y servicios se conserva desde Sprint 2; las capacidades que dependan de AuthGuard, WebSockets o de la RESTful API se incorporarán cuando el backend esté disponible en los Sprints posteriores.
 
 <img width="711" height="799" alt="component-diagram-2" src="https://github.com/user-attachments/assets/04eeb9b7-6dc2-4f13-9553-063b4cec2099" />
 
@@ -1560,31 +1560,45 @@ Este diagrama hace foco en la arquitectura interna de la Single Page Application
 
 Los Class Diagrams se presentan por **Bounded Context** para mantener la separación definida en el Design-Level Event Storming. Los diagramas incluyen clases, interfaces, enumeraciones, atributos, métodos, visibilidad, relaciones y multiplicidades, de acuerdo con el nivel de detalle solicitado para el diseño orientado a objetos.
 
+Para mantener coherencia entre arquitectura y código, cada entidad debe tener un **Bounded Context propietario**. Cuando otro contexto necesite utilizar información externa, debe hacerlo mediante una referencia o modelo de lectura y no duplicando la administración de la misma entidad. Esta regla será utilizada también para separar los módulos del Frontend Web Application.
+
 #### Profiles and Verification
+
+Este diagrama concentra las clases responsables de la información declarada de **padres/tutores, conductores, estudiantes, vehículos, documentos y vínculos autorizados**. Este Bounded Context es propietario de esos perfiles y de sus relaciones directas. Otros contextos pueden utilizar sus identificadores como referencia, pero no deben duplicar la responsabilidad de administrar la información completa del estudiante, conductor o vehículo.
 
 <img width="1360" height="969" alt="profiles-diagram" src="https://github.com/user-attachments/assets/67f6e598-c25e-450b-8523-0df4101e19ae" />
 
 #### Identity and Access Management (IAM)
+
+Este diagrama agrupa las clases asociadas a **cuentas de usuario, credenciales, roles, permisos, sesiones y recuperación de acceso**. Su responsabilidad es decidir quién puede autenticarse y qué acciones puede realizar según su rol. Se mantiene separado de Profiles and Verification para evitar mezclar identidad de acceso con los datos operativos de los perfiles. Para Sprint 2 este contexto no se implementa como backend; permanece como parte del diseño para los Sprints posteriores.
 
 <img width="1872" height="853" alt="iam-diagram" src="https://github.com/user-attachments/assets/a98b37ca-a122-4dfc-81ad-353b91e1ed33" />
 
 
 #### Route and Trip Planning
 
+Este diagrama describe las clases que permiten **configurar rutas, paradas, horarios, asignaciones de estudiantes, programación de jornadas y ausencias**. El contexto administra la planificación previa al recorrido. Cuando requiere información de un estudiante o vehículo utiliza su identificador como referencia, mientras que la información completa continúa perteneciendo a Profiles and Verification.
+
 <img width="2363" height="866" alt="routing-diagram" src="https://github.com/user-attachments/assets/77311cab-5a0d-41ab-802b-6dd7d6159ac8" />
 
 
 #### Real-Time Tracking and Execution
+
+Este diagrama concentra las clases que representan la **ejecución de un viaje**, sus estudiantes participantes, hitos, recojos, entregas, verificaciones y cambios de estado. Su responsabilidad comienza cuando existe un viaje que debe ejecutarse; no redefine la ruta ni el perfil del estudiante. Para el alcance actual, el seguimiento se basa en eventos y estados registrados; GPS continuo, ETA y geofencing permanecen fuera del Sprint 2.
 
 <img width="1636" height="991" alt="tracking-diagram" src="https://github.com/user-attachments/assets/75c02b89-282b-4cbe-8863-71d853d06ea1" />
 
 
 #### Alerting and Incident Management
 
+Este diagrama agrupa las clases relacionadas con **retrasos, incidencias, notificaciones, destinatarios y preferencias de aviso**. El contexto recibe referencias a viajes o usuarios afectados, pero mantiene bajo su responsabilidad el ciclo de vida de la incidencia y la comunicación generada a partir de ella. Esto evita mezclar la lógica de ejecución del viaje con la lógica de comunicación y alertas.
+
 <img width="2623" height="704" alt="alerting-diagram" src="https://github.com/user-attachments/assets/787439f2-e0c7-479e-978f-457677c9febb" />
 
 
 #### Subscriptions and Billing
+
+Este diagrama representa las clases de **planes, suscripciones, pagos y comprobantes**, así como los estados asociados a activación, renovación, pausa, cancelación o reactivación. El contexto administra el ciclo comercial del servicio y se mantiene separado de IAM: una cuenta puede existir independientemente del estado comercial, mientras que la suscripción determina las capacidades habilitadas por el plan.
 
 <img width="1378" height="922" alt="billing-diagram" src="https://github.com/user-attachments/assets/d6818143-09c1-4bbf-b001-2b2df9247f6e" />
 
