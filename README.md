@@ -1866,83 +1866,50 @@ La Leadership-and-Collaboration Matrix (LACX) se presenta con el formato solicit
 
 ### 5.2.1.3. Sprint Backlog 1
 
-**Sprint Board público (Trello):** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
+El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. De acuerdo con la retroalimentación del docente, cada User Story se descompone en **un mínimo de dos Tasks**, las User Stories se estiman en Story Points y cada Task se estima en horas, con una duración máxima aproximada de 8 horas.
 
-El Board se utiliza para validar las User Stories comprometidas, sus Tasks y los estados `To-do`, `In-Process`, `To-Review` y `Done`. La captura del Board debe regenerarse al cierre de la corrección para que refleje exactamente el contenido sincronizado con esta tabla.
+**Sprint #** Sprint 1
 
-Las cinco User Stories del Sprint se descomponen en **múltiples tareas**. Cada tarea tiene una estimación máxima de **8 horas** y ninguna User Story queda representada por una única tarea.
+**Sprint Board público:** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
 
-#### User Stories seleccionadas
+> La captura del Board debe corresponder al estado final del tablero y mostrar las mismas User Stories, Tasks y estados registrados en la siguiente tabla.
 
-| Story ID | User Story | Story Points | Estado actual |
-|---|---|:---:|---|
-| US31 | Conocer la propuesta de valor de Rumbo | 2 | Done |
-| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | 2 | In-Process |
-| US33 | Consultar el contenido en inglés o español | 1 | To-do |
-| US34 | Consultar los documentos legales del servicio | 1 | To-do |
-| US35 | Resolver dudas antes de usar Rumbo | 2 | In-Process |
-|  | **Total** | **8** |  |
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US31 | Conocer la propuesta de valor de Rumbo | T01 | Implement hero section | Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page. | 6 | Kevin Geronimo | Done |
+| US31 | Conocer la propuesta de valor de Rumbo | T02 | Implement service explanation | Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio. | 6 | Alejandro Díaz | Done |
+| US31 | Conocer la propuesta de valor de Rumbo | T03 | Implement supporting content | Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor. | 5 | Alejandro Díaz | Done |
+| US31 | Conocer la propuesta de valor de Rumbo | T04 | Implement responsive navigation | Implementar navegación desktop/mobile, menú responsive, accesibilidad básica y ajustes de visualización. | 5 | Kevin Geronimo | Done |
+| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T05 | Structure segment benefits | Organizar el contenido para diferenciar beneficios de padres/tutores y conductores. | 6 | Alejandro Díaz | In-Process |
+| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T06 | Implement segment benefit sections | Implementar visualmente las secciones de beneficios correspondientes a cada segmento. | 5 | Kevin Geronimo | In-Process |
+| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T07 | Implement segment CTAs | Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor. | 5 | Kevin Geronimo | To-do |
+| US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | T08 | Connect CTAs to Web App | Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible. | 4 | Alejandro Díaz | To-do |
+| US33 | Consultar el contenido en inglés o español | T09 | Prepare English content | Preparar la versión `en_US` del contenido público manteniéndola como idioma predeterminado. | 4 | Kevin Geronimo | To-do |
+| US33 | Consultar el contenido en inglés o español | T10 | Prepare Latin American Spanish content | Preparar la versión `es_419` del contenido equivalente de la Landing Page. | 4 | Alejandro Díaz | To-do |
+| US33 | Consultar el contenido en inglés o español | T11 | Implement language selection | Implementar selector de idioma y persistencia de la preferencia durante la sesión. | 4 | Kevin Geronimo | To-do |
+| US34 | Consultar los documentos legales del servicio | T12 | Implement Terms of Service | Crear la vista o contenido navegable de Terms of Service. | 4 | Kevin Geronimo | To-do |
+| US34 | Consultar los documentos legales del servicio | T13 | Implement Privacy Policy | Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo. | 4 | Alejandro Díaz | To-do |
+| US34 | Consultar los documentos legales del servicio | T14 | Integrate legal navigation | Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page. | 4 | Kevin Geronimo | To-do |
+| US35 | Resolver dudas antes de usar Rumbo | T15 | Implement FAQ content | Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos. | 5 | Alejandro Díaz | Done |
+| US35 | Resolver dudas antes de usar Rumbo | T16 | Implement FAQ interaction | Implementar el comportamiento de acordeón y su interacción mediante JavaScript. | 4 | Alejandro Díaz | Done |
+| US35 | Resolver dudas antes de usar Rumbo | T17 | Implement contact form UI | Construir el formulario público de contacto con sus campos obligatorios. | 4 | Kevin Geronimo | To-do |
+| US35 | Resolver dudas antes de usar Rumbo | T18 | Implement contact validation | Implementar validaciones de campos obligatorios y mensajes de error del formulario. | 4 | Kevin Geronimo | To-do |
+| US35 | Resolver dudas antes de usar Rumbo | T19 | Implement submission feedback | Implementar la confirmación visual del registro de una consulta válida. | 4 | Alejandro Díaz | To-do |
+| N/A | General Sprint Constraint | S01 | Publicar Landing Page | Publicar la Landing Page mediante GitHub Pages y verificar la URL pública. | 3 | Leonardo Lino / Kevin Geronimo | Done |
+| N/A | General Sprint Constraint | S02 | Registrar evidencias de Sprint 1 | Registrar evidencias Desktop/Mobile, commits y deployment correspondientes al Sprint. | 4 | Leonardo Lino | In-Process |
 
-#### Tareas por User Story
+**Validación de descomposición de User Stories**
 
-El Sprint Backlog se refina para que cada User Story represente trabajo distribuido en varias Tasks técnicas y para que las horas resulten coherentes con los Story Points asignados. Se mantiene como regla que ninguna Task exceda 8 horas.
+| Story ID | Story Points | Número de Tasks | Horas estimadas |
+|---|---:|---:|---:|
+| US31 | 2 | 4 | 22 |
+| US32 | 2 | 4 | 20 |
+| US33 | 1 | 3 | 12 |
+| US34 | 1 | 3 | 12 |
+| US35 | 2 | 5 | 21 |
+| **Total** | **8** | **19** | **87** |
 
-| Story ID | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---:|---|---|
-| US31 | T01 | Implement hero section | Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page. | 6 | Kevin Geronimo | Done |
-| US31 | T02 | Implement service explanation | Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio. | 6 | Alejandro Díaz | Done |
-| US31 | T03 | Implement supporting content | Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor. | 5 | Alejandro Díaz | Done |
-| US31 | T04 | Implement responsive navigation | Implementar navegación desktop/mobile, menú responsive, atributos de accesibilidad básicos y ajustes de visualización. | 5 | Kevin Geronimo | Done |
-| US32 | T05 | Structure segment benefits | Organizar el contenido para diferenciar beneficios de padres/tutores y conductores. | 6 | Alejandro Díaz | In-Process |
-| US32 | T06 | Implement segment benefit sections | Implementar visualmente las secciones de beneficios correspondientes a cada segmento. | 5 | Kevin Geronimo | In-Process |
-| US32 | T07 | Implement segment CTAs | Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor. | 5 | Kevin Geronimo | To-do |
-| US32 | T08 | Connect CTAs to Web App | Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible. | 4 | Alejandro Díaz | To-do |
-| US33 | T09 | Prepare English content | Preparar la versión `en_US` del contenido público manteniéndola como idioma predeterminado. | 4 | Kevin Geronimo | To-do |
-| US33 | T10 | Prepare Latin American Spanish content | Preparar la versión `es_419` del contenido equivalente de la Landing Page. | 4 | Alejandro Díaz | To-do |
-| US33 | T11 | Implement language selection | Implementar selector de idioma y persistencia de la preferencia durante la sesión. | 4 | Kevin Geronimo | To-do |
-| US34 | T12 | Implement Terms of Service | Crear la vista o contenido navegable de Terms of Service. | 4 | Kevin Geronimo | To-do |
-| US34 | T13 | Implement Privacy Policy | Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo. | 4 | Alejandro Díaz | To-do |
-| US34 | T14 | Integrate legal navigation | Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page. | 4 | Kevin Geronimo | To-do |
-| US35 | T15 | Implement FAQ content | Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos. | 5 | Alejandro Díaz | Done |
-| US35 | T16 | Implement FAQ interaction | Implementar el comportamiento de acordeón y su interacción mediante JavaScript. | 4 | Alejandro Díaz | Done |
-| US35 | T17 | Implement contact form UI | Construir el formulario público de contacto con sus campos obligatorios. | 4 | Kevin Geronimo | To-do |
-| US35 | T18 | Implement contact validation | Implementar validaciones de campos obligatorios y mensajes de error del formulario. | 4 | Kevin Geronimo | To-do |
-| US35 | T19 | Implement submission feedback | Implementar la confirmación visual del registro de una consulta válida. | 4 | Alejandro Díaz | To-do |
-
-**Comprobación de coherencia:** US31 = 22 h para 2 SP; US32 = 20 h para 2 SP; US33 = 12 h para 1 SP; US34 = 12 h para 1 SP; US35 = 21 h para 2 SP. Estas horas no convierten los Story Points en una equivalencia matemática directa; únicamente verifican que una historia estimada en varios Story Points no quede reducida a una única actividad de pocas horas.
-
-#### Actividades de soporte del Sprint
-
-Estas actividades no generan Story Points porque no representan una funcionalidad independiente para el usuario; soportan la entrega de las User Stories anteriores.
-
-| Task ID | Support Activity | Estimation (Hours) | Assigned To | Status |
-|---|---|---:|---|---|
-| S01 | Publicar Landing Page mediante GitHub Pages y verificar URL pública. | 3 | Leonardo Lino / Kevin Geronimo | Done |
-| S02 | Registrar evidencias de ejecución Desktop/Mobile, commits y deployment. | 4 | Leonardo Lino | In-Process |
-
-#### Trazabilidad de la implementación actual
-
-| Alcance funcional | User Story asociada | Estado según Sprint Backlog |
-|---|---|---|
-| Hero, explicación de funcionamiento, indicadores, testimonios y navegación responsive | US31 | Done |
-| Beneficios y CTA diferenciados por segmento | US32 | In-Process |
-| Selector y contenido bilingüe | US33 | To-do |
-| Terms of Service y Privacy Policy | US34 | To-do |
-| FAQ y formulario de contacto | US35 | In-Process |
-
-La trazabilidad se registra aunque una historia todavía no esté finalizada. No se añade una User Story artificial para deployment o documentación porque son actividades de soporte, no valor funcional independiente para el usuario.
-
-##### Trabajo documental del Project Report
-
-Las actividades de documentación se mantienen fuera del cálculo de Story Points del Sprint funcional.
-
-| Report Scope | Responsible | Status |
-|---|---|---|
-| Capítulo I: Introduction | Equipo | Done |
-| Capítulo II: Requirements Elicitation & Analysis | Alexandra Meza / Equipo | Done |
-| Capítulo III: Requirements Specification | Leonardo Lino / Equipo | Done |
-| Capítulo IV: Product Design | Kevin Geronimo / Alejandro Díaz / Equipo | In-Process |
-| Capítulo V: Product Implementation, Validation & Deployment | Leonardo Lino | In-Process |
+Todas las User Stories del Sprint cumplen la regla de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las actividades S01 y S02 se registran como Tasks adicionales asociadas a constraints generales del Sprint y no generan Story Points, tal como permite el formato del Final Project Statement.
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
