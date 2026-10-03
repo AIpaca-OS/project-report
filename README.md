@@ -1717,6 +1717,18 @@ En el Project Report se emplean ramas como:
 
 La Landing Page dispone de `main`, `develop` y `feature/landing-page-v1`. La primera carga funcional quedó registrada en `main`; los siguientes cambios se integrarán mediante el flujo `feature → develop → main`.
 
+#### Trazabilidad User Story → Feature → Branch → Commit
+
+Para las funcionalidades de los siguientes Sprints se aplicará la relación de trazabilidad indicada por el docente:
+
+**User Story → Feature → Feature Branch → Commits**
+
+Una funcionalidad implementada debe estar respaldada por una User Story del Product Backlog antes de iniciar su desarrollo. Las ramas funcionales se nombrarán utilizando el identificador de la historia y un nombre breve de la funcionalidad, por ejemplo:
+
+`feature/us10-route-management`
+
+Cada feature branch se crea desde `develop`, contiene únicamente cambios relacionados con la historia o feature correspondiente y se integra nuevamente a `develop` después de su revisión. `main` se actualiza únicamente cuando la versión integrada se encuentra lista para la revisión o despliegue. Los commits de la rama se utilizan posteriormente como evidencia en Development Evidence for Sprint Review.
+
 #### Convenciones
 
 Para los commits se utilizará Conventional Commits:
@@ -1765,6 +1777,10 @@ JavaScript se utiliza para el menú móvil y la validación básica del formular
 
 Para Angular y TypeScript se seguirán las convenciones oficiales del framework, utilizando `PascalCase` para clases y componentes y `camelCase` para variables y funciones.
 
+El Frontend Web Application se organizará por **Bounded Context**, no por integrante. Cada carpeta principal utilizará el nombre del dominio correspondiente y cada integrante será responsable del contexto que le sea asignado. Dentro de cada contexto se aplicará **el template proporcionado en el curso**, respetando sus capas y responsabilidades; como mínimo, se conservarán las separaciones de `application` y `domain` indicadas por el docente, junto con las demás carpetas definidas por dicho template. No se crearán carpetas con nombres de integrantes.
+
+Durante Sprint 2, los servicios del Frontend Web Application consumirán **JSON Server** para soportar las operaciones CRUD. La integración con Spring Boot, autenticación de backend y lógica de negocio del RESTful API se reserva para Sprint 3.
+
 #### Web Services
 
 Para Java y Spring Boot se utilizará `PascalCase` para clases, `camelCase` para atributos y métodos y una organización por responsabilidades y bounded contexts. Los endpoints serán documentados con OpenAPI/Swagger.
@@ -1799,6 +1815,8 @@ La planificación de implementación queda organizada de la siguiente manera seg
 - **Sprint 3:** lógica de negocio y Web Services con Spring Boot.
 - **Sprint 4:** integración completa entre Frontend Web Application, RESTful API y persistencia.
 
+Antes de construir el Sprint Backlog 2 se debe cerrar la trazabilidad de cada Bounded Context: **entidades → funcionalidades CRUD → User Stories → Story Points → Tasks → feature branch**. No se incorporarán tareas puramente documentales como sustituto de funcionalidades de desarrollo ni se crearán User Stories para operaciones que no vayan a implementarse.
+
 
 ### 5.2.1. Sprint 1
 
@@ -1827,14 +1845,15 @@ La equivalencia usada para la estimación es la indicada por el docente: **1 SP 
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-| Aspecto | Líder | Colaboradores |
-|---|---|---|
-| Project Report y Capítulo V | Leonardo Lino | Equipo |
-| Investigación y entrevistas | Alexandra Meza | Equipo |
-| Landing Page UX/UI | Alejandro Díaz | Kevin Geronimo |
-| Landing Page Development | Kevin Geronimo | Alejandro Díaz |
-| Requirements & Product Design | Diana Pareja | Equipo |
-| Deployment & Evidence | Leonardo Lino | Kevin Geronimo |
+La Leadership-and-Collaboration Matrix (LACX) se presenta con el formato solicitado para identificar, por integrante y GitHub username, quién lidera (L) y quién colabora (C) en cada aspecto del Sprint. Las responsabilidades funcionales deben mantener relación con las tareas consignadas posteriormente en el Sprint Backlog; las actividades documentales o de evidencia se consideran soporte y no generan Story Points.
+
+| Team Member | GitHub Username | Project Report / Chapter V | Research & Interviews | Landing Page UX/UI | Landing Page Development | Requirements & Product Design | Deployment & Evidence |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Diaz Ramirez, Alejandro | `aleedr` | C | C | L | C | C | — |
+| Geronimo Puma, Kevin Joel | `qebim18` | C | C | C | L | C | C |
+| Lino Quispe, Leonardo Miguel | `linolw` | L | C | — | — | C | L |
+| Meza Soza, Alexandra Yamile | `AlexandraYMS` | C | L | — | — | C | — |
+| Pareja Caceres, Diana | `DianaParejaCaceres` | C | C | — | — | L | — |
 
 ### 5.2.1.3. Sprint Backlog 1
 
