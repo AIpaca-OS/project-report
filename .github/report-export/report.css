@@ -1,0 +1,106 @@
+@page {
+  size: A4;
+  margin: 21mm 18mm 20mm 18mm;
+  @top-left {
+    content: "UPC | Desarrollo de Aplicaciones Open Source | 2026-20";
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: "Página " counter(page) " de " counter(pages);
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8pt;
+    color: #666;
+  }
+}
+@page:first {
+  @top-left { content: none; }
+  @bottom-right { content: none; }
+}
+html {
+  font-family: "Liberation Sans", Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #202124;
+}
+body {
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  color: #1f2937;
+  line-height: 1.2;
+  break-after: avoid;
+}
+h1 { font-size: 21pt; margin-top: 0.4em; margin-bottom: 0.5em; }
+h2 { font-size: 17pt; margin-top: 1.2em; margin-bottom: 0.5em; }
+h3 { font-size: 13.5pt; margin-top: 1em; margin-bottom: 0.4em; }
+h4 { font-size: 11.5pt; margin-top: 0.8em; margin-bottom: 0.3em; }
+p { margin: 0.35em 0 0.6em; text-align: justify; }
+ul, ol { margin-top: 0.3em; margin-bottom: 0.6em; padding-left: 1.6em; }
+li { margin: 0.15em 0; }
+a { color: #1155cc; text-decoration: none; word-break: break-word; }
+hr {
+  border: 0;
+  border-top: 0.6pt solid #d1d5db;
+  margin: 1em 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6em auto;
+  object-fit: contain;
+}
+figure { margin: 0.8em 0; break-inside: avoid; }
+figcaption { font-size: 8.5pt; color: #666; text-align: center; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1em;
+  font-size: 8pt;
+  table-layout: fixed;
+  break-inside: auto;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; break-after: auto; }
+th, td {
+  border: 0.7pt solid #9ca3af;
+  padding: 4px 5px;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+th {
+  background: #e5e7eb;
+  font-weight: 700;
+  text-align: left;
+}
+code {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 8.5pt;
+  background: #f3f4f6;
+  padding: 0.05em 0.2em;
+  border-radius: 2px;
+}
+pre {
+  background: #f6f8fa;
+  border: 0.7pt solid #d1d5db;
+  padding: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 8pt;
+  break-inside: avoid;
+}
+blockquote {
+  margin: 0.7em 0;
+  padding: 0.4em 0.8em;
+  border-left: 3px solid #9ca3af;
+  color: #4b5563;
+  background: #f9fafb;
+}
+.pagebreak { break-before: page; page-break-before: always; height: 0; }
+.cover-break { break-after: page; page-break-after: always; }
+.cover-title { text-align: center; }
+.small-note { font-size: 8.5pt; color: #666; }
