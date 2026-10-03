@@ -812,6 +812,52 @@ El Product Backlog se reordena según la retroalimentación del docente:
 4. **Cuenta, acceso y administración de perfil al final del bloque funcional**: US01, US03, US04, US05, US07 y US08 se desplazan hacia la cola del bloque funcional, tal como indicó el docente.
 5. **Technical Stories / back-end al final**: TS01–TS08 quedan reservadas para Sprint 3.
 
+| # Orden | User Story ID | Título | Descripción | Story Points |
+|---:|---|---|---|---:|
+| 1 | US31 | Conocer la propuesta de valor de Rumbo | Como visitante, quiero comprender qué es Rumbo y qué problema resuelve para decidir si me resulta relevante. | 2 |
+| 2 | US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | Como visitante, quiero conocer los beneficios correspondientes a mi perfil e ingresar a la experiencia que me corresponde para comenzar a utilizar Rumbo según mis necesidades. | 2 |
+| 3 | US33 | Consultar el contenido en inglés o español | Como visitante, quiero consultar el contenido en un idioma disponible para comprenderlo con facilidad. | 1 |
+| 4 | US34 | Consultar los documentos legales del servicio | Como visitante, quiero conocer los términos de servicio y la política de privacidad para entender cómo se trata la información. | 1 |
+| 5 | US35 | Resolver dudas antes de usar Rumbo | Como visitante, quiero resolver mis dudas o comunicarme con el equipo para decidir si utilizo el servicio. | 2 |
+| 6 | US02 | Registrar vehículo y credenciales del servicio | Como conductor, quiero registrar mi vehículo y las credenciales que acreditan mi servicio para que las familias conozcan la información declarada de mi movilidad. | 5 |
+| 7 | US06 | Registrar estudiante y vincularse como tutor | Como padre o tutor, quiero registrar a mi hijo y quedar vinculado como su tutor para poder consultar la información de sus traslados. | 5 |
+| 8 | US10 | Crear una ruta con sus paradas | Como conductor, quiero crear una ruta con sus paradas en el orden en que las recorro para organizar mi servicio. | 8 |
+| 9 | US11 | Definir el horario de la ruta | Como conductor, quiero establecer los días y horarios de una ruta para que sus viajes se programen de forma recurrente. | 3 |
+| 10 | US12 | Asignar estudiantes a una ruta | Como conductor, quiero asignar a los estudiantes autorizados a una ruta y a su parada para incluirlos en los recorridos. | 5 |
+| 11 | US13 | Publicar una ruta | Como conductor, quiero publicar una ruta configurada para habilitar la programación de sus viajes y su visibilidad para los tutores autorizados. | 3 |
+| 12 | US14 | Modificar una ruta publicada | Como conductor, quiero actualizar una ruta publicada para mantenerla alineada con mi operación real. | 5 |
+| 13 | US15 | Programar el viaje de la jornada | Como conductor, quiero contar con el viaje del día y la lista de estudiantes prevista para saber a quiénes debo recoger. | 5 |
+| 14 | US16 | Reportar la ausencia del estudiante | Como padre o tutor, quiero informar que mi hijo no usará la movilidad para evitar una parada innecesaria. | 5 |
+| 15 | US17 | Cancelar un viaje | Como conductor, quiero cancelar un viaje que no se realizará para que las familias no esperen un servicio inexistente. | 3 |
+| 16 | US18 | Iniciar el viaje | Como conductor, quiero iniciar el recorrido para que los tutores sepan que la ruta está en ejecución. | 3 |
+| 17 | US19 | Registrar los hitos de una parada | Como conductor, quiero confirmar los recojos de cada parada en pocos segundos para dejar constancia sin afectar mi recorrido. | 8 |
+| 18 | US20 | Confirmar la llegada al colegio e iniciar el retorno | Como conductor, quiero confirmar la llegada al centro educativo y dar inicio al retorno para diferenciar ambas etapas del servicio. | 3 |
+| 19 | US21 | Confirmar la entrega del estudiante | Como conductor, quiero confirmar la entrega de cada estudiante para cerrar su traslado y avisar a su tutor. | 5 |
+| 20 | US22 | Completar el viaje | Como conductor, quiero cerrar el viaje para consolidar su resultado y dejarlo disponible como historial. | 3 |
+| 21 | US23 | Registrar un retraso | Como conductor, quiero registrar un retraso y su causa para informar con un solo registro a todas las familias afectadas. | 5 |
+| 22 | US24 | Registrar una incidencia | Como conductor, quiero registrar una incidencia para comunicar un imprevisto con contexto suficiente y sin repetir el mensaje a cada familia. | 5 |
+| 23 | US25 | Resolver una incidencia | Como conductor, quiero marcar una incidencia como resuelta para informar que la situación fue normalizada. | 3 |
+| 24 | US26 | Consultar el estado actual del traslado | Como padre o tutor, quiero conocer en pocos segundos la etapa del traslado para evitar preguntarle al conductor. | 5 |
+| 25 | US27 | Consultar la línea de tiempo del trayecto | Como padre o tutor, quiero revisar los hitos ocurridos durante el recorrido para entender qué pasó sin revisar conversaciones. | 5 |
+| 26 | US28 | Recibir avisos de los eventos relevantes | Como padre o tutor, quiero recibir avisos solo cuando ocurre un evento relevante para mantenerme informado sin revisar la plataforma constantemente. | 8 |
+| 27 | US29 | Configurar las preferencias de notificación | Como padre o tutor, quiero elegir qué avisos recibir para no ser saturado con información que no necesito. | 3 |
+| 28 | US30 | Confirmar el conocimiento de una incidencia | Como padre o tutor, quiero confirmar que tomé conocimiento de una incidencia para que el conductor sepa que fui informado. | 2 |
+| 29 | US09 | Activar la suscripción del conductor | Como conductor, quiero activar una suscripción para habilitar las funcionalidades incluidas en mi plan. | 8 |
+| 30 | US01 | Registrar cuenta de conductor | Como conductor, quiero crear mi cuenta para iniciar la configuración de mi servicio en Rumbo. | 3 |
+| 31 | US03 | Registrar cuenta de padre o tutor | Como padre o tutor, quiero crear mi cuenta para acceder a la información autorizada de los traslados de mis hijos. | 3 |
+| 32 | US04 | Iniciar sesión según rol | Como usuario registrado, quiero iniciar sesión con mis credenciales para acceder a las funcionalidades correspondientes a mi rol. | 3 |
+| 33 | US05 | Recuperar acceso a la cuenta | Como usuario registrado, quiero restablecer mi contraseña para recuperar el acceso en caso de olvido. | 3 |
+| 34 | US07 | Autorizar o revocar a otro tutor | Como padre o tutor, quiero autorizar o retirar el acceso de otro tutor sobre mi hijo para controlar quién puede consultar su información. | 5 |
+| 35 | US08 | Solicitar la supresión de datos del estudiante | Como padre o tutor, quiero solicitar la eliminación de los datos personales de mi hijo para ejercer el control sobre su información. | 5 |
+| 36 | TS01 | Endpoints del RESTful API para viajes y hitos | Como Developer, quiero exponer endpoints REST para la gestión de viajes y sus hitos, de modo que la aplicación web pueda registrar y consultar el estado del traslado. | 8 |
+| 37 | TS02 | Autenticación y autorización con JWT y RBAC | Como Developer, quiero proteger el RESTful API mediante tokens y control de acceso por rol para que cada usuario acceda únicamente a los recursos autorizados. | 5 |
+| 38 | TS03 | Integración con el servicio de notificaciones | Como Developer, quiero integrar un proveedor de mensajería para distribuir los avisos generados por los eventos del viaje. | 5 |
+| 39 | TS04 | Integración con servicio de mapas para direcciones de paradas | Como Developer, quiero integrar un servicio externo de mapas para validar y normalizar las direcciones de las paradas de una ruta. | 5 |
+| 40 | TS05 | Integración con el servicio de verificación de credenciales | Como Developer, quiero integrar el servicio público de consulta de habilitación para respaldar la verificación de credenciales del conductor. | 5 |
+| 41 | TS06 | Documentación del RESTful API con OpenAPI | Como Developer, quiero documentar los endpoints mediante OpenAPI para facilitar su comprensión y prueba por parte del equipo. | 2 |
+| 42 | TS07 | Internacionalización del RESTful API | Como Developer, quiero localizar los mensajes del API para en_US y es_419 manteniendo el inglés como idioma predeterminado. | 3 |
+| 43 | TS08 | Persistencia consistente del estado y eventos del viaje | Como Developer, quiero persistir el estado del viaje y sus eventos de forma consistente para evitar información parcial durante las operaciones del RESTful API. | 5 |
+
 **Criterio de refinamiento previo al Sprint 2:** antes de seleccionar una User Story para el Sprint Backlog se debe comprobar que la funcionalidad que realmente se implementará esté cubierta por dicha historia. Si una operación CRUD prevista no tiene una User Story asociada, la historia faltante debe definirse primero en esta sección y luego incorporarse al Product Backlog, evitando crear historias para funcionalidades que no formen parte del alcance real del Sprint.
 
 **Sprint 1 — Landing Page:** US31, US32, US33, US34 y US35 — **8 SP**.  
