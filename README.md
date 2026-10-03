@@ -380,6 +380,106 @@ En esta sección se identifican y describen los dos segmentos de usuarios hacia 
 
 ### 2.1.1. Análisis competitivo
 
+El análisis competitivo se presenta con la estructura de **Competitive Analysis Landscape** indicada en el Final Project Statement. Se comparan Rumbo, dos competidores digitales y un sustituto informal utilizado actualmente por los segmentos objetivo.
+
+<table>
+  <thead>
+    <tr><th colspan="6">Competitive Analysis Landscape</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">¿Por qué llevar a cabo este análisis?</th>
+      <td colspan="4">Identificar cómo puede Rumbo diferenciarse frente a plataformas de seguimiento de transporte escolar y frente a los canales informales que actualmente utilizan padres/tutores y conductores.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Competidores / Startup</th>
+      <th>Rumbo</th>
+      <th>School Bus Tracker</th>
+      <th>Bus esCool</th>
+      <th>Canales Informales (WhatsApp / Waze)</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Perfil</th>
+      <th>Overview</th>
+      <td>Plataforma web responsive para coordinar el transporte escolar entre padres/tutores y conductores, centralizando hitos, retrasos e incidencias.</td>
+      <td>Solución de seguimiento orientada a colegios y flotas, con monitoreo de vehículos y rutas.</td>
+      <td>Solución orientada a colegios privados, conductores y familias, con rastreo de recorridos.</td>
+      <td>Uso combinado de mensajería, llamadas y ubicación compartida para coordinar manualmente el servicio.</td>
+    </tr>
+    <tr>
+      <th>Ventaja competitiva / ¿Qué valor ofrece a los clientes?</th>
+      <td>Reduce consultas repetitivas mediante un estado estructurado del viaje, timeline de hitos y registro de incidencias con una experiencia directa para conductor y familia.</td>
+      <td>Seguimiento continuo y enfoque de gestión de flota.</td>
+      <td>Rastreo en vivo e integración con la operación escolar.</td>
+      <td>Alta adopción, familiaridad de uso y costo directo prácticamente nulo.</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Perfil de Marketing</th>
+      <th>Mercado objetivo</th>
+      <td>Padres/tutores y conductores de movilidad escolar de Lima y Callao.</td>
+      <td>Colegios, operadores de flota y familias.</td>
+      <td>Colegios privados, conductores y familias.</td>
+      <td>Familias y conductores que coordinan de forma independiente.</td>
+    </tr>
+    <tr>
+      <th>Estrategias de marketing</th>
+      <td>Adopción directa entre conductor y familia, onboarding sin hardware propietario y propuesta centrada en reducir coordinación manual.</td>
+      <td>Modelo B2B mediante instituciones o administradores de flota.</td>
+      <td>Modelo B2B mediante acuerdos con instituciones educativas.</td>
+      <td>No corresponde a una estrategia comercial única; su adopción proviene del uso cotidiano de herramientas generalistas.</td>
+    </tr>
+    <tr>
+      <th rowspan="3">Perfil de Producto</th>
+      <th>Productos &amp; Servicios</th>
+      <td>Estado del traslado, hitos de recojo/entrega, retrasos, incidencias, notificaciones y planificación operativa.</td>
+      <td>Seguimiento GPS, gestión de rutas y monitoreo de flota.</td>
+      <td>Rastreo en vivo y comunicación de eventos del transporte escolar.</td>
+      <td>Chats, llamadas y ubicación compartida manualmente.</td>
+    </tr>
+    <tr>
+      <th>Precios &amp; Costos</th>
+      <td>Hipótesis de suscripción accesible para adopción directa; el precio definitivo requiere validación.</td>
+      <td>Licenciamiento orientado a colegio/flota; no se documenta un precio específico en el análisis actual.</td>
+      <td>Convenio institucional; no se documenta un precio específico en el análisis actual.</td>
+      <td>Uso de herramientas gratuitas o ya contratadas por el usuario.</td>
+    </tr>
+    <tr>
+      <th>Canales de distribución (Web y/o Móvil)</th>
+      <td>Landing Page y Web Application responsive.</td>
+      <td>Plataforma de seguimiento y aplicaciones asociadas.</td>
+      <td>Plataforma digital de rastreo.</td>
+      <td>Aplicaciones de mensajería, navegación y llamadas.</td>
+    </tr>
+    <tr>
+      <th rowspan="4">Análisis SWOT</th>
+      <th>Fortalezas</th>
+      <td>Experiencia enfocada en los dos segmentos, estructura de eventos del viaje y menor dependencia de mensajes individuales.</td>
+      <td>Monitoreo continuo y enfoque consolidado de flota.</td>
+      <td>Rastreo en vivo orientado al transporte escolar.</td>
+      <td>Familiaridad, adopción masiva y bajo costo.</td>
+    </tr>
+    <tr>
+      <th>Debilidades</th>
+      <td>Producto nuevo, sin base instalada y con dependencias tecnológicas que deben implementarse progresivamente.</td>
+      <td>Mayor dependencia de modelos institucionales y, según el caso, infraestructura adicional.</td>
+      <td>Dependencia de adopción institucional.</td>
+      <td>Información fragmentada, historial desordenado y comunicación manual.</td>
+    </tr>
+    <tr>
+      <th>Oportunidades</th>
+      <td>Digitalizar la coordinación de conductores independientes y familias frente a congestión, retrasos y necesidad de trazabilidad.</td>
+      <td colspan="3">El contexto del transporte escolar y la necesidad de mayor visibilidad generan oportunidades para soluciones digitales; el análisis actual se concentra en cómo Rumbo puede aprovecharlas.</td>
+    </tr>
+    <tr>
+      <th>Amenazas</th>
+      <td>Resistencia al cambio, conectividad móvil irregular y competencia de hábitos ya establecidos.</td>
+      <td colspan="3">La facilidad de continuar utilizando canales existentes y la presencia de soluciones institucionales pueden limitar la adopción de nuevas alternativas.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Resumen funcional complementario
+
 | Criterio | School Bus Tracker | Bus esCool | Canales Informales (WhatsApp / Waze) | Rumbo |
 |---|---|---|---|---|
 | **Segmento** | Colegios, flotas y padres de familia | Colegios privados, conductores y familias | Familias y conductores independientes | Padres/tutores y conductores de movilidad escolar |
@@ -621,27 +721,37 @@ En esta sección se presentan las User Personas correspondientes a los dos segme
 
 ### 2.3.2. User Task Matrix
 
-En esta sección se presenta la matriz de tareas de usuario (**User Task Matrix**), la cual analiza las actividades esenciales que realizan los dos segmentos objetivos del proyecto (**Padre/Tutor** representado por el arquetipo de Gabriela Morales, y **Conductor de Movilidad Escolar**) para cumplir con sus objetivos cotidianos de traslado escolar. 
+En esta sección se presenta la matriz de tareas de usuario (**User Task Matrix**), considerando al User Persona del segmento **Padre/Tutor (Gabriela Morales)** y al User Persona del segmento **Conductor de Movilidad Escolar**. Las tareas corresponden a actividades que los segmentos realizan para cumplir sus objetivos independientemente de la existencia de Rumbo.
 
-Siguiendo el principio metodológico de Needfinding, las tareas descritas representan actividades humanas y operativas que los usuarios ejecutan en su día a día, independientemente de la existencia de una herramienta digital de software.
-
-| Tareas del Usuario (User Tasks) | User Persona: Padre / Tutor (Gabriela Morales) | | User Persona: Conductor Escolar | |
-|---|:---:|:---:|:---:|:---:|
-| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
-| Alistar y preparar al escolar antes de la salida | Diaria (Alta) | Alta | No aplica | No aplica |
-| Esperar en la acera/puerta al vehículo de movilidad | Diaria (Alta) | Alta | No aplica | No aplica |
-| Consultar el estado y avance del vehículo en ruta | Diaria (Alta) | Alta | No aplica | No aplica |
-| Planificar y organizar la lista de paradas del recorrido | No aplica | No aplica | Diaria (Alta) | Alta |
-| Confirmar la subida del escolar a la unidad | Diaria (Alta) | Alta | Diaria (Alta) | Alta |
-| Verificar el uso del cinturón y medidas de seguridad del menor | Ocasional (Media) | Media | Diaria (Alta) | Alta |
-| Conducir y monitorear el flujo vehicular en horas punta | No aplica | No aplica | Diaria (Alta) | Alta |
-| Comunicar retrasos generados por congestión vehicular | Semanal (Media) | Alta | Semanal (Media) | Alta |
-| Informar incidencias mecánicas o emergencias imprevistas | Ocasional (Baja) | Alta | Ocasional (Baja) | Alta |
-| Confirmar la entrega del escolar en la puerta del colegio | Diaria (Alta) | Alta | Diaria (Alta) | Alta |
-| Coordinar el retorno del menor hacia el hogar | Diaria (Alta) | Media | Diaria (Alta) | Media |
-| Gestionar el pago mensual del servicio de transporte | Mensual (Baja) | Media | Mensual (Baja) | Media |
-
----
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">User Tasks</th>
+      <th colspan="2">User Persona: Padre / Tutor (Gabriela Morales)</th>
+      <th colspan="2">User Persona: Conductor de Movilidad Escolar</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Alistar y preparar al escolar antes de la salida</td><td>Diaria (Alta)</td><td>Alta</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Esperar en la acera/puerta al vehículo de movilidad</td><td>Diaria (Alta)</td><td>Alta</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Consultar el estado y avance del vehículo en ruta</td><td>Diaria (Alta)</td><td>Alta</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Planificar y organizar la lista de paradas del recorrido</td><td>No aplica</td><td>No aplica</td><td>Diaria (Alta)</td><td>Alta</td></tr>
+    <tr><td>Confirmar la subida del escolar a la unidad</td><td>Diaria (Alta)</td><td>Alta</td><td>Diaria (Alta)</td><td>Alta</td></tr>
+    <tr><td>Verificar el uso del cinturón y medidas de seguridad del menor</td><td>Ocasional (Media)</td><td>Media</td><td>Diaria (Alta)</td><td>Alta</td></tr>
+    <tr><td>Conducir y monitorear el flujo vehicular en horas punta</td><td>No aplica</td><td>No aplica</td><td>Diaria (Alta)</td><td>Alta</td></tr>
+    <tr><td>Comunicar retrasos generados por congestión vehicular</td><td>Semanal (Media)</td><td>Alta</td><td>Semanal (Media)</td><td>Alta</td></tr>
+    <tr><td>Informar incidencias mecánicas o emergencias imprevistas</td><td>Ocasional (Baja)</td><td>Alta</td><td>Ocasional (Baja)</td><td>Alta</td></tr>
+    <tr><td>Confirmar la entrega del escolar en la puerta del colegio</td><td>Diaria (Alta)</td><td>Alta</td><td>Diaria (Alta)</td><td>Alta</td></tr>
+    <tr><td>Coordinar el retorno del menor hacia el hogar</td><td>Diaria (Alta)</td><td>Media</td><td>Diaria (Alta)</td><td>Media</td></tr>
+    <tr><td>Gestionar el pago mensual del servicio de transporte</td><td>Mensual (Baja)</td><td>Media</td><td>Mensual (Baja)</td><td>Media</td></tr>
+  </tbody>
+</table>
 
 #### Análisis comparativo de la matriz de tareas
 
@@ -654,7 +764,7 @@ Siguiendo el principio metodológico de Needfinding, las tareas descritas repres
    * **Planificación previa:** El conductor asume la responsabilidad logística de trazar el orden óptimo de recojo y desembarque antes de arrancar el motor, una tarea ajena al padre de familia, quien únicamente se enfoca en el punto de parada correspondiente a su hogar o colegio.
 
 3. **Oportunidad para el diseño de la solución:**
-   El análisis evidencia que las tareas de *confirmar subida/bajada* y *avisar retrasos* son de alta fricción en la actualidad (se realizan mediante llamadas o mensajes manuales mientras se conduce). La solución debe automatizar y simplificar estas tareas al mínimo contacto operativo para proteger la seguridad del menor. 
+   El análisis evidencia que las tareas de *confirmar subida/bajada* y *avisar retrasos* son de alta fricción en la actualidad (se realizan mediante llamadas o mensajes manuales mientras se conduce). La solución debe automatizar y simplificar estas tareas al mínimo contacto operativo para proteger la seguridad del menor.
 
 ### 2.3.3. User Journey Mapping
 
