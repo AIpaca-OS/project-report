@@ -61,18 +61,14 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 
 **Team Collaboration Commits**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
-</div>
+> **Evidencia pendiente:** insertar aquí una **captura real de GitHub** de Commits/Insights del repositorio Project Report. No se utilizarán gráficos generados manualmente.
 
 **Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
 **Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
 
 **Team Collaboration Network**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Network" width="95%">
-</div>
+> **Evidencia pendiente:** insertar aquí una **captura real del Network/Insights de GitHub**. No se utilizarán diagramas reconstruidos o generados.
 
 **Branches:** https://github.com/AIpaca-OS/project-report/branches  
 **Network:** https://github.com/AIpaca-OS/project-report/network
@@ -81,9 +77,7 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
 
 **Contributors / Pull Requests**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Team Collaboration Pull Requests" width="95%">
-</div>
+> **Evidencia pendiente:** insertar aquí una **captura real de Contributors/Pull Requests de GitHub** según corresponda a la evidencia del informe.
 
 Actualmente el Project Report registra **17 Pull Requests**, de los cuales **15 fueron integrados** y **2 fueron cerrados sin merge (#11 y #17)**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
@@ -1893,54 +1887,49 @@ El objetivo del Sprint 1 es implementar y desplegar la primera versión responsi
 > Antes de la entrega se debe reemplazar esta nota por una captura actualizada del Board que muestre las mismas User Stories, Tasks y estados de la tabla.
 
 <table>
-  <thead>
-    <tr>
-      <th>Sprint #</th>
-      <th colspan="7">Sprint 1</th>
-    </tr>
-    <tr>
-      <th colspan="2">User Story</th>
-      <th colspan="6">Work-Item / Task</th>
-    </tr>
-    <tr>
-      <th>Story Id</th>
-      <th>Story Title</th>
-      <th>Task Id</th>
-      <th>Task Title</th>
-      <th>Task Description</th>
-      <th>Estimation (Hours)</th>
-      <th>Assigned To</th>
-      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td rowspan="4">US31</td><td rowspan="4">Conocer la propuesta de valor de Rumbo</td><td>T01</td><td>Implement hero section</td><td>Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page.</td><td>6</td><td>Kevin Geronimo</td><td>Done</td></tr>
-    <tr><td>T02</td><td>Implement service explanation</td><td>Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio.</td><td>6</td><td>Alejandro Díaz</td><td>Done</td></tr>
-    <tr><td>T03</td><td>Implement supporting content</td><td>Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
-    <tr><td>T04</td><td>Implement responsive navigation</td><td>Implementar navegación desktop/mobile, menú responsive, accesibilidad básica y ajustes de visualización.</td><td>5</td><td>Kevin Geronimo</td><td>Done</td></tr>
-
-    <tr><td rowspan="4">US32</td><td rowspan="4">Identificar los beneficios de mi segmento e ingresar a Rumbo</td><td>T05</td><td>Structure segment benefits</td><td>Organizar el contenido para diferenciar beneficios de padres/tutores y conductores.</td><td>6</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
-    <tr><td>T06</td><td>Implement segment benefit sections</td><td>Implementar visualmente las secciones de beneficios correspondientes a cada segmento.</td><td>5</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
-    <tr><td>T07</td><td>Implement segment CTAs</td><td>Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor.</td><td>5</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-    <tr><td>T08</td><td>Connect CTAs to Web App</td><td>Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
-
-    <tr><td rowspan="3">US33</td><td rowspan="3">Consultar el contenido en inglés o español</td><td>T09</td><td>Prepare English content</td><td>Preparar la versión en_US del contenido público manteniéndola como idioma predeterminado.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-    <tr><td>T10</td><td>Prepare Latin American Spanish content</td><td>Preparar la versión es_419 del contenido equivalente de la Landing Page.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
-    <tr><td>T11</td><td>Implement language selection</td><td>Implementar selector de idioma y persistencia de la preferencia durante la sesión.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-
-    <tr><td rowspan="3">US34</td><td rowspan="3">Consultar los documentos legales del servicio</td><td>T12</td><td>Implement Terms of Service</td><td>Crear la vista o contenido navegable de Terms of Service.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-    <tr><td>T13</td><td>Implement Privacy Policy</td><td>Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
-    <tr><td>T14</td><td>Integrate legal navigation</td><td>Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-
-    <tr><td rowspan="5">US35</td><td rowspan="5">Resolver dudas antes de usar Rumbo</td><td>T15</td><td>Implement FAQ content</td><td>Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
-    <tr><td>T16</td><td>Implement FAQ interaction</td><td>Implementar el comportamiento de acordeón y su interacción mediante JavaScript.</td><td>4</td><td>Alejandro Díaz</td><td>Done</td></tr>
-    <tr><td>T17</td><td>Implement contact form UI</td><td>Construir el formulario público de contacto con sus campos obligatorios.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-    <tr><td>T18</td><td>Implement contact validation</td><td>Implementar validaciones de campos obligatorios y mensajes de error del formulario.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
-    <tr><td>T19</td><td>Implement submission feedback</td><td>Implementar la confirmación visual del registro de una consulta válida.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
-
-    <tr><td>N/A</td><td>General Sprint Constraint</td><td>S01</td><td>Publicar Landing Page</td><td>Publicar la Landing Page mediante GitHub Pages y verificar la URL pública.</td><td>3</td><td>Leonardo Lino / Kevin Geronimo</td><td>Done</td></tr>
-    <tr><td>N/A</td><td>General Sprint Constraint</td><td>S02</td><td>Registrar evidencias de Sprint 1</td><td>Registrar evidencias Desktop/Mobile, commits y deployment correspondientes al Sprint.</td><td>4</td><td>Leonardo Lino</td><td>In-Process</td></tr>
-  </tbody>
+<thead>
+<tr>
+<th>Sprint #</th>
+<th colspan="7">Sprint 1</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="6">Work-Item / Task</th>
+</tr>
+<tr>
+<th>Story Id</th>
+<th>Story Title</th>
+<th>Task Id</th>
+<th>Task Title</th>
+<th>Task Description</th>
+<th>Estimation (Hours)</th>
+<th>Assigned To</th>
+<th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td rowspan="4">US31</td><td rowspan="4">Conocer la propuesta de valor de Rumbo</td><td>T01</td><td>Implement hero section</td><td>Construir la sección Hero con propuesta de valor, contenido principal y CTA general de la Landing Page.</td><td>6</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T02</td><td>Implement service explanation</td><td>Construir la sección que explica el funcionamiento de Rumbo y los principales hitos del servicio.</td><td>6</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T03</td><td>Implement supporting content</td><td>Implementar indicadores, testimonios y contenido complementario que refuerza la propuesta de valor.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T04</td><td>Implement responsive navigation</td><td>Implementar navegación desktop/mobile, menú responsive, accesibilidad básica y ajustes de visualización.</td><td>5</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td rowspan="4">US32</td><td rowspan="4">Identificar los beneficios de mi segmento e ingresar a Rumbo</td><td>T05</td><td>Structure segment benefits</td><td>Organizar el contenido para diferenciar beneficios de padres/tutores y conductores.</td><td>6</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+<tr><td>T06</td><td>Implement segment benefit sections</td><td>Implementar visualmente las secciones de beneficios correspondientes a cada segmento.</td><td>5</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T07</td><td>Implement segment CTAs</td><td>Implementar acciones diferenciadas de ingreso o registro para padre/tutor y conductor.</td><td>5</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T08</td><td>Connect CTAs to Web App</td><td>Enlazar los CTA de cada segmento con la vista correspondiente del Frontend Web Application cuando se encuentre disponible.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td rowspan="3">US33</td><td rowspan="3">Consultar el contenido en inglés o español</td><td>T09</td><td>Prepare English content</td><td>Preparar la versión en_US del contenido público manteniéndola como idioma predeterminado.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T10</td><td>Prepare Latin American Spanish content</td><td>Preparar la versión es_419 del contenido equivalente de la Landing Page.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td>T11</td><td>Implement language selection</td><td>Implementar selector de idioma y persistencia de la preferencia durante la sesión.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td rowspan="3">US34</td><td rowspan="3">Consultar los documentos legales del servicio</td><td>T12</td><td>Implement Terms of Service</td><td>Crear la vista o contenido navegable de Terms of Service.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T13</td><td>Implement Privacy Policy</td><td>Crear la vista o contenido navegable de Privacy Policy, incluyendo el tratamiento de datos relevante para Rumbo.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td>T14</td><td>Integrate legal navigation</td><td>Enlazar Terms of Service y Privacy Policy desde el footer y verificar su acceso desde la Landing Page.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td rowspan="5">US35</td><td rowspan="5">Resolver dudas antes de usar Rumbo</td><td>T15</td><td>Implement FAQ content</td><td>Construir la sección de preguntas frecuentes con contenido relacionado con ambos segmentos.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T16</td><td>Implement FAQ interaction</td><td>Implementar el comportamiento de acordeón y su interacción mediante JavaScript.</td><td>4</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T17</td><td>Implement contact form UI</td><td>Construir el formulario público de contacto con sus campos obligatorios.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T18</td><td>Implement contact validation</td><td>Implementar validaciones de campos obligatorios y mensajes de error del formulario.</td><td>4</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T19</td><td>Implement submission feedback</td><td>Implementar la confirmación visual del registro de una consulta válida.</td><td>4</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td>N/A</td><td>General Sprint Constraint</td><td>S01</td><td>Publicar Landing Page</td><td>Publicar la Landing Page mediante GitHub Pages y verificar la URL pública.</td><td>3</td><td>Leonardo Lino / Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>N/A</td><td>General Sprint Constraint</td><td>S02</td><td>Registrar evidencias de Sprint 1</td><td>Registrar evidencias Desktop/Mobile, commits y deployment correspondientes al Sprint.</td><td>4</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+</tbody>
 </table>
 
 Todas las User Stories del Sprint cumplen la regla indicada por el docente de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las Tasks S01 y S02 corresponden a constraints generales del Sprint y no generan Story Points.
@@ -1950,10 +1939,6 @@ Todas las User Stories del Sprint cumplen la regla indicada por el docente de **
 La implementación funcional de AV1 se concentra en la **Landing Page**. El repositorio muestra una primera carga del producto, un rediseño posterior y una implementación adicional de comportamiento JavaScript. Los repositorios de Frontend Web Application y Web Services existen y cuentan con su foundation inicial, pero todavía no presentan features funcionales de negocio; por ello se documentan sin atribuirles implementación que aún no existe.
 
 **Observación de trazabilidad del Sprint 1:** el historial actual del repositorio muestra que los commits funcionales principales de la Landing Page fueron realizados directamente sobre `main`; las ramas `develop` y `feature/landing-page-v1` permanecieron en el estado de inicialización. Este historial no se modifica retroactivamente. A partir de Sprint 2 se aplicará estrictamente `feature → develop → main`, relacionando cada feature branch con la User Story correspondiente.
-
-<div align="center">
-  <img src="./assets/chapter5/development-evidence-commits.svg" alt="Development Evidence Commits" width="95%">
-</div>
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
@@ -1997,35 +1982,28 @@ La siguiente evidencia muestra la Landing Page cargada desde la URL pública de 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-La colaboración del equipo se verificó mediante el historial de `develop`, los commits de la Landing Page y los Pull Requests del Project Report. La evidencia muestra contribuciones distribuidas entre investigación, requirements, Product Design, DDD, implementación de Landing Page, Chapter V y consolidación del informe.
+La sección de Team Collaboration debe evidenciar la participación real del equipo utilizando **capturas obtenidas directamente desde GitHub**, tal como establece el Final Project Statement. No se utilizarán gráficos recreados, SVG generados manualmente ni visualizaciones construidas a partir de los datos.
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
-</div>
+Para Sprint 1 se deben insertar las siguientes evidencias reales:
 
-Para el Project Report se consultaron los **100 commits más recientes de `develop`**. Dentro de esa muestra se identifican contribuciones de `linolw`, `DianaParejaCaceres`, `AlexandraYMS`, `qebim18` y `aleedr`. La Landing Page añade commits de implementación realizados por `qebim`, `aleedr` y `linolw`.
+1. **Captura de Commits / historial del repositorio correspondiente al producto implementado en el Sprint (Landing Page).**
+   - https://github.com/AIpaca-OS/landing-page/commits/main/
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Branch and Pull Request Network" width="95%">
-</div>
+2. **Captura de Contributors / Insights del repositorio.**
+   - https://github.com/AIpaca-OS/landing-page/graphs/contributors
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Pull Request Collaboration Evidence" width="95%">
-</div>
+3. **Captura de Network / ramas y merges cuando exista evidencia útil del flujo de trabajo.**
+   - https://github.com/AIpaca-OS/landing-page/network
 
-En el Project Report existen **17 Pull Requests registrados**, de los cuales **15 fueron merged** y **2 fueron cerrados sin merge (#11 y #17)**. Entre los PR integrados se encuentran el trabajo de Requirements Elicitation (#1), Product Design inicial (#2, #3 y #5), Chapter V (#4), Requirements Specification (#9), consolidación de AV1 (#10) y las correcciones finales de DDD/Product Design (#12 y #13).
+4. **Para Project Report Collaboration Insights**, las capturas deben provenir del repositorio del informe:
+   - Commits: https://github.com/AIpaca-OS/project-report/commits/develop/
+   - Contributors: https://github.com/AIpaca-OS/project-report/graphs/contributors
+   - Network: https://github.com/AIpaca-OS/project-report/network
+   - Pull Requests: https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
 
-| Evidencia verificable | URL |
-|---|---|
-| Commits de `develop` | https://github.com/AIpaca-OS/project-report/commits/develop/ |
-| Branches del Project Report | https://github.com/AIpaca-OS/project-report/branches |
-| Network | https://github.com/AIpaca-OS/project-report/network |
-| Contributors | https://github.com/AIpaca-OS/project-report/graphs/contributors |
-| Pull Requests | https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed |
-| Commits de Landing Page | https://github.com/AIpaca-OS/landing-page/commits/main/ |
+> **Pendiente de evidencia visual:** reemplazar este bloque por las capturas reales tomadas desde las páginas anteriores antes de la entrega. Las imágenes deben mostrar el estado real del repositorio y ser legibles en el PDF.
 
-La actividad también evidencia una oportunidad de mejora: parte de la implementación de Landing Page llegó directamente a `main`, mientras que en el Project Report se utilizó con mayor frecuencia el flujo `feature → develop`. Para los siguientes sprints se recomienda mantener de forma consistente el GitFlow acordado y usar Pull Requests para las integraciones de código.
-
+La actividad registrada hasta el momento muestra una oportunidad de mejora en Sprint 1: parte de la implementación de Landing Page llegó directamente a `main`, por lo que el historial no refleja completamente el GitFlow esperado. Este hecho se documenta sin reconstruir artificialmente la evidencia. A partir de Sprint 2, cada feature debe desarrollarse en su propia rama y luego integrarse mediante el flujo acordado.
 
 # Conclusiones
 
