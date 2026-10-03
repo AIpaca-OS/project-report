@@ -726,7 +726,7 @@ A continuación se presentan por separado los **Epics** y las **User Stories** d
 
 #### Epics
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| Epic / Story Id | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |---|---|---|---|---|
 | EP01 | Identidad, perfiles y autorización | Registro de conductores, padres y estudiantes, acceso al sistema según rol, y control sobre qué tutores pueden consultar la información de cada menor, incluida la solicitud de supresión de sus datos. | — | — |
 | EP02 | Suscripción del conductor | Activación y vigencia del plan que habilita al conductor el uso de las funcionalidades de Rumbo. | — | — |
@@ -738,7 +738,7 @@ A continuación se presentan por separado los **Epics** y las **User Stories** d
 
 #### User Stories
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| Epic / Story Id | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |---|---|---|---|---|
 | US01 | Registrar cuenta de conductor | Como conductor, quiero crear mi cuenta para iniciar la configuración de mi servicio en Rumbo. | **Escenario 1: Registro exitoso**<br>Given que no existe una cuenta asociada al correo indicado<br>When el conductor completa los datos obligatorios y confirma el registro<br>Then el sistema crea la cuenta con rol de conductor y solicita la verificación del correo<br><br>**Escenario 2: Correo ya registrado**<br>Given que existe una cuenta asociada al correo indicado<br>When el conductor intenta registrarse con ese correo<br>Then el sistema rechaza el registro e indica que puede iniciar sesión o recuperar su acceso<br><br>**Escenario 3: Datos obligatorios incompletos**<br>Given un formulario de registro con datos faltantes<br>When el conductor confirma el registro<br>Then el sistema informa qué datos obligatorios debe completar y no crea la cuenta | EP01 |
 | US02 | Registrar vehículo y credenciales del servicio | Como conductor, quiero registrar mi vehículo y las credenciales que acreditan mi servicio para que las familias conozcan la información declarada de mi movilidad. | **Escenario 1: Registro de vehículo y credenciales**<br>Given un conductor con cuenta activa<br>When registra la placa, la capacidad del vehículo y los documentos requeridos<br>Then el sistema asocia el vehículo al conductor y deja las credenciales en estado pendiente de verificación<br><br>**Escenario 2: Placa ya registrada**<br>Given que la placa indicada pertenece a un vehículo activo de otro conductor<br>When el conductor intenta registrarla<br>Then el sistema rechaza el registro e informa que la placa ya se encuentra asociada<br><br>**Escenario 3: Verificación de credenciales**<br>Given credenciales enviadas y un servicio de verificación disponible<br>When el sistema obtiene una respuesta del servicio<br>Then registra el resultado junto con su fuente y fecha de consulta<br><br>**Escenario 4: Servicio de verificación no disponible**<br>Given credenciales enviadas y el servicio de verificación fuera de operación<br>When el sistema intenta la consulta<br>Then mantiene las credenciales como pendientes y no las declara verificadas | EP01 |
@@ -812,7 +812,7 @@ El Product Backlog se reordena según la retroalimentación del docente:
 4. **Cuenta, acceso y administración de perfil al final del bloque funcional**: US01, US03, US04, US05, US07 y US08 se desplazan hacia la cola del bloque funcional, tal como indicó el docente.
 5. **Technical Stories / back-end al final**: TS01–TS08 quedan reservadas para Sprint 3.
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---:|---|---|---|---:|
 | 1 | US31 | Conocer la propuesta de valor de Rumbo | Como visitante, quiero comprender qué es Rumbo y qué problema resuelve para decidir si me resulta relevante. | 2 |
 | 2 | US32 | Identificar los beneficios de mi segmento e ingresar a Rumbo | Como visitante, quiero conocer los beneficios correspondientes a mi perfil e ingresar a la experiencia que me corresponde para comenzar a utilizar Rumbo según mis necesidades. | 2 |
