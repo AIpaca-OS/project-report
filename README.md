@@ -1817,6 +1817,15 @@ La planificación de implementación queda organizada de la siguiente manera seg
 
 Antes de construir el Sprint Backlog 2 se debe cerrar la trazabilidad de cada Bounded Context: **entidades → funcionalidades CRUD → User Stories → Story Points → Tasks → feature branch**. No se incorporarán tareas puramente documentales como sustituto de funcionalidades de desarrollo ni se crearán User Stories para operaciones que no vayan a implementarse.
 
+Para la descomposición del Sprint se aplicarán además estas reglas:
+- una **User Story** se estima en **Story Points**;
+- cada User Story seleccionada para el Sprint debe descomponerse en **mínimo dos Tasks**;
+- una **Task** se estima en horas y no debe superar aproximadamente **8 horas**;
+- las Tasks se redactan como acciones técnicas y concretas, no con la sintaxis `Como... quiero... para...`;
+- la suma y naturaleza de las Tasks debe ser coherente con el esfuerzo representado por los Story Points de la User Story.
+
+Las capturas de **GitHub Insights** se actualizarán únicamente después de integrar el trabajo funcional mediante `feature → develop → main`, de modo que Commits, Contributors y Network reflejen la participación real del equipo.
+
 
 ### 5.2.1. Sprint 1
 
