@@ -1792,9 +1792,17 @@ La configuración de despliegue del Frontend Web Application y de los Web Servic
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
+La planificación de implementación queda organizada de la siguiente manera según la retroalimentación del docente:
+
+- **Sprint 1:** Landing Page.
+- **Sprint 2:** Frontend Web Application con Angular, operaciones CRUD y JSON Server, sin back-end.
+- **Sprint 3:** lógica de negocio y Web Services con Spring Boot.
+- **Sprint 4:** integración completa entre Frontend Web Application, RESTful API y persistencia.
+
+
 ### 5.2.1. Sprint 1
 
-Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint; se reservan para Sprint 2.
+Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y JSON Server, sin back-end.
 
 La implementación actual de la Landing Page se traza contra las User Stories de Aplicaciones Web, cuyos criterios de aceptación fueron adoptados en el Capítulo III. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
@@ -1925,7 +1933,7 @@ También se verificó el comportamiento responsive. En vista Mobile, la navegaci
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante Sprint 1 no se implementaron Web Services. Las Technical Stories TS01–TS08, todas redactadas con el rol Developer, corresponden al alcance de Sprint 2. El repositorio `web-services` se encuentra preparado para su desarrollo con Java, Spring Boot y Spring Data JPA. La documentación OpenAPI/Swagger se incorporará cuando existan endpoints implementados.
+Durante Sprint 1 no se implementaron Web Services. Las Technical Stories TS01–TS08, todas redactadas con el rol Developer, corresponden al alcance de **Sprint 3**. En el **Sprint 2** no se implementará back-end; el desarrollo se limitará al Frontend Web Application con Angular, CRUD y JSON Server. El repositorio `web-services` se mantiene preparado para su desarrollo posterior con Java, Spring Boot y Spring Data JPA. La documentación OpenAPI/Swagger se incorporará cuando existan endpoints implementados.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
