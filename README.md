@@ -85,7 +85,7 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
   <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Team Collaboration Pull Requests" width="95%">
 </div>
 
-Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
+Actualmente el Project Report registra **17 Pull Requests**, de los cuales **15 fueron integrados** y **2 fueron cerrados sin merge (#11 y #17)**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
 **Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
 **Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
@@ -1831,26 +1831,26 @@ Las capturas de **GitHub Insights** se actualizarán únicamente después de int
 
 Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y JSON Server, sin back-end.
 
-La implementación actual de la Landing Page se traza contra las User Stories de Aplicaciones Web, cuyos criterios de aceptación fueron adoptados en el Capítulo III. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
+La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
 ### 5.2.1.1. Sprint Planning 1
 
-| Campo | Detalle |
+| Sprint Planning Registro | Detalle |
 |---|---|
-| **Sprint** | Sprint 1 |
-| **Periodo** | 09/09/2026 - 22/09/2026 |
-| **Duración** | 2 semanas |
+| **Sprint #** | Sprint 1 |
+| **Sprint Planning Background** | Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo. |
+| **Date** | 09/09/2026 |
+| **Time** | No registrado en la evidencia disponible. |
+| **Location** | No registrado en la evidencia disponible. |
 | **Prepared By** | Lino Quispe, Leonardo Miguel |
-| **Attendees** | Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja |
-| **Sprint Goal** | Implementar y desplegar la primera versión responsive de la Landing Page de Rumbo, permitiendo que el visitante comprenda la propuesta de valor, identifique los beneficios de su segmento, consulte información pública y resuelva dudas antes de utilizar el producto. |
-| **Sprint 1 Velocity / Capacity** | 8 Story Points |
-| **Sum of Story Points** | 8 |
+| **Attendees (to planning meeting)** | Díaz Ramírez, Alejandro; Geronimo Puma, Kevin Joel; Lino Quispe, Leonardo Miguel; Meza Soza, Alexandra Yamile; Pareja Caceres, Diana |
+| **Sprint 0 Review Summary** | No aplica. |
+| **Sprint 0 Retrospective Summary** | No aplica. |
+| **Sprint 1 Goal** | Our focus is on presentar y publicar la propuesta de valor de Rumbo mediante una Landing Page responsive. We believe it delivers información clara y accesible to visitantes de los segmentos padre/tutor y conductor. This will be confirmed when el sitio público permita comprender el producto, sus beneficios y las vías de acceso o contacto. |
+| **Sprint 1 Velocity** | 8 Story Points |
+| **Sum of Story Points** | 8 Story Points |
 
-La equivalencia usada para la estimación es la indicada por el docente: **1 SP ≈ 1–2 días de trabajo** y **8 SP ≈ un Sprint completo de dos semanas**. Los Story Points no se calculan sumando horas de forma directa; las horas se utilizan únicamente para dimensionar las tareas internas y comprobar que ninguna tarea exceda las 8 horas.
-
-**Sprint Review:** se obtuvo una primera versión funcional de la Landing Page con Hero, beneficios, explicación del servicio, indicadores, testimonios, FAQ, CTA, navegación responsive y despliegue público.
-
-**Sprint Retrospective:** se identificó como mejora completar las historias todavía parciales —idiomas, documentos legales, contacto y CTA por segmento— y mantener las integraciones mediante `feature → develop → main`.
+La equivalencia usada para la estimación es la indicada por el docente: **1 SP ≈ 1–2 días de trabajo** y **8 SP ≈ un Sprint completo de dos semanas**. Los Story Points no se calculan sumando horas de forma directa; las horas se utilizan para dimensionar las Tasks y comprobar que ninguna supere aproximadamente 8 horas.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -1865,6 +1865,10 @@ La Leadership-and-Collaboration Matrix (LACX) se presenta con el formato solicit
 | Pareja Caceres, Diana | `DianaParejaCaceres` | C | C | — | — | L | — |
 
 ### 5.2.1.3. Sprint Backlog 1
+
+**Sprint Board público (Trello):** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
+
+El Board se utiliza para validar las User Stories comprometidas, sus Tasks y los estados `To-do`, `In-Process`, `To-Review` y `Done`. La captura del Board debe regenerarse al cierre de la corrección para que refleje exactamente el contenido sincronizado con esta tabla.
 
 Las cinco User Stories del Sprint se descomponen en **múltiples tareas**. Cada tarea tiene una estimación máxima de **8 horas** y ninguna User Story queda representada por una única tarea.
 
@@ -2008,7 +2012,7 @@ Para el Project Report se consultaron los **100 commits más recientes de `devel
   <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Pull Request Collaboration Evidence" width="95%">
 </div>
 
-En el Project Report existen **13 Pull Requests registrados**, de los cuales **12 fueron merged** y **uno fue cerrado sin merge (#11)**. Entre los PR integrados se encuentran el trabajo de Requirements Elicitation (#1), Product Design inicial (#2, #3 y #5), Chapter V (#4), Requirements Specification (#9), consolidación de AV1 (#10) y las correcciones finales de DDD/Product Design (#12 y #13).
+En el Project Report existen **17 Pull Requests registrados**, de los cuales **15 fueron merged** y **2 fueron cerrados sin merge (#11 y #17)**. Entre los PR integrados se encuentran el trabajo de Requirements Elicitation (#1), Product Design inicial (#2, #3 y #5), Chapter V (#4), Requirements Specification (#9), consolidación de AV1 (#10) y las correcciones finales de DDD/Product Design (#12 y #13).
 
 | Evidencia verificable | URL |
 |---|---|
