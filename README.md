@@ -382,7 +382,7 @@ En esta sección se identifican y describen los dos segmentos de usuarios hacia 
 
 ### 2.1.1. Análisis competitivo
 
-El análisis competitivo se presenta con la estructura de **Competitive Analysis Landscape** indicada en el Final Project Statement. Se comparan Rumbo, dos competidores digitales y un sustituto informal utilizado actualmente por los segmentos objetivo.
+El análisis competitivo se desarrolla mediante el **Competitive Analysis Landscape** indicado en el Final Project Statement. Se compara a **Rumbo** con dos soluciones especializadas en transporte escolar —**SchoolBusTracker** y **Bus esCool**— y con un sustituto informal compuesto por herramientas de uso general como **WhatsApp y Waze**. El objetivo es reconocer diferencias reales entre las alternativas, identificar fortalezas y debilidades y analizar las oportunidades y amenazas particulares de cada una, evitando asumir funcionalidades o condiciones comerciales que no hayan sido verificadas.
 
 <table>
   <thead>
@@ -391,140 +391,143 @@ El análisis competitivo se presenta con la estructura de **Competitive Analysis
   <tbody>
     <tr>
       <th colspan="2">¿Por qué llevar a cabo este análisis?</th>
-      <td colspan="4">Identificar cómo puede Rumbo diferenciarse frente a plataformas de seguimiento de transporte escolar y frente a los canales informales que actualmente utilizan padres/tutores y conductores.</td>
+      <td colspan="4">Identificar cómo puede Rumbo diferenciarse frente a soluciones especializadas de transporte escolar y frente a los canales informales que actualmente pueden utilizar padres/tutores y conductores, considerando producto, mercado, canales y factores SWOT.</td>
     </tr>
     <tr>
       <th colspan="2">Competidores / Startup</th>
-      <th>Rumbo</th>
-      <th>School Bus Tracker</th>
-      <th>Bus esCool</th>
-      <th>Canales Informales (WhatsApp / Waze)</th>
+      <th>
+        <img src="assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
+        Rumbo
+      </th>
+      <th>
+        <img src="https://raw.githubusercontent.com/Alvfercas/alvfercas.github.io/441e3fa71c296debad96e342a1206f8221cf335a/img/sb-logo.png" alt="Logo de SchoolBusTracker" width="110"/><br>
+        SchoolBusTracker
+      </th>
+      <th>
+        <img src="https://play-lh.googleusercontent.com/lVaPVRV5X_IMeFNq0YCl5W3-SXkk5GM9vPtjtgnKa5iXoOp8wKsBJzgZsVNiUpt0_Rvb4or2LoDYKfzox64V=w240-h480" alt="Logo de Bus esCool" width="100"/><br>
+        Bus esCool
+      </th>
+      <th>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/WhatsApp_Logo_2024.png" alt="Logo de WhatsApp" width="105"/><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Waze_logo_2022.png" alt="Logo de Waze" width="105"/><br>
+        Canales informales (WhatsApp + Waze)
+      </th>
     </tr>
     <tr>
       <th rowspan="2">Perfil</th>
       <th>Overview</th>
-      <td>Plataforma web responsive para coordinar el transporte escolar entre padres/tutores y conductores, centralizando hitos, retrasos e incidencias.</td>
-      <td>Solución de seguimiento orientada a colegios y flotas, con monitoreo de vehículos y rutas.</td>
-      <td>Solución orientada a colegios privados, conductores y familias, con rastreo de recorridos.</td>
-      <td>Uso combinado de mensajería, llamadas y ubicación compartida para coordinar manualmente el servicio.</td>
+      <td>Plataforma web responsive orientada a la coordinación del transporte escolar entre padres/tutores y conductores. El alcance actual prioriza estados e hitos del viaje, rutas, estudiantes, retrasos, incidencias y notificaciones.</td>
+      <td>Suite especializada de transporte escolar dirigida principalmente a instituciones educativas. Incluye aplicaciones para padres y conductores y un panel administrativo para gestionar y supervisar el servicio.</td>
+      <td>Plataforma de monitoreo y control de rutas escolares que conecta a colegios, padres de familia, coordinadores de transporte, monitores y conductores.</td>
+      <td>Combinación de aplicaciones de mensajería, llamadas, navegación y ubicación que pueden utilizarse para coordinar el servicio, pero que no conforman por sí mismas un sistema especializado de transporte escolar.</td>
     </tr>
     <tr>
       <th>Ventaja competitiva / ¿Qué valor ofrece a los clientes?</th>
-      <td>Reduce consultas repetitivas mediante un estado estructurado del viaje, timeline de hitos y registro de incidencias con una experiencia directa para conductor y familia.</td>
-      <td>Seguimiento continuo y enfoque de gestión de flota.</td>
-      <td>Rastreo en vivo e integración con la operación escolar.</td>
-      <td>Alta adopción, familiaridad de uso y costo directo prácticamente nulo.</td>
+      <td>Experiencia enfocada inicialmente en padres/tutores y conductores, con información estructurada del traslado y un historial de eventos que reduce la dependencia de consultas repetitivas.</td>
+      <td>Oferta madura e integrada: seguimiento en tiempo real, registro de subida y bajada, alertas, reservas, pagos, administración y reportes dentro de una misma suite.</td>
+      <td>Seguimiento en tiempo real, avisos sobre imprevistos, control de inasistencias, información de abordaje y herramientas específicas para la operación de rutas escolares.</td>
+      <td>Familiaridad de uso, amplia presencia en los teléfonos de los usuarios y posibilidad de comunicarse o consultar navegación sin adoptar inicialmente una plataforma adicional.</td>
     </tr>
     <tr>
       <th rowspan="2">Perfil de Marketing</th>
       <th>Mercado objetivo</th>
       <td>Padres/tutores y conductores de movilidad escolar de Lima y Callao.</td>
-      <td>Colegios, operadores de flota y familias.</td>
-      <td>Colegios privados, conductores y familias.</td>
-      <td>Familias y conductores que coordinan de forma independiente.</td>
+      <td>Colegios y organizaciones que administran transporte escolar, junto con padres, estudiantes y conductores que utilizan el servicio.</td>
+      <td>Colegios, padres de familia, coordinadores de transporte, monitores y conductores vinculados a rutas escolares.</td>
+      <td>Mercado general de usuarios de mensajería y navegación; dentro del problema de Rumbo actúan como herramientas sustitutas para familias y conductores.</td>
     </tr>
     <tr>
       <th>Estrategias de marketing</th>
-      <td>Adopción directa entre conductor y familia, onboarding sin hardware propietario y propuesta centrada en reducir coordinación manual.</td>
-      <td>Modelo B2B mediante instituciones o administradores de flota.</td>
-      <td>Modelo B2B mediante acuerdos con instituciones educativas.</td>
-      <td>No corresponde a una estrategia comercial única; su adopción proviene del uso cotidiano de herramientas generalistas.</td>
+      <td>Propuesta centrada en simplificar la coordinación entre los dos segmentos iniciales y reducir la comunicación manual mediante una experiencia web responsive.</td>
+      <td>Comercialización orientada a instituciones mediante demostraciones, paquetes de servicio y posibilidades de personalización de la experiencia para cada organización.</td>
+      <td>Adopción vinculada a instituciones y operadores de transporte, con una propuesta multirrol y un plan de prueba piloto comunicado desde su sitio oficial.</td>
+      <td>No existe una estrategia única de transporte escolar: la adopción deriva principalmente de la presencia y utilidad general de cada aplicación.</td>
     </tr>
     <tr>
       <th rowspan="3">Perfil de Producto</th>
       <th>Productos &amp; Servicios</th>
-      <td>Estado del traslado, hitos de recojo/entrega, retrasos, incidencias, notificaciones y planificación operativa.</td>
-      <td>Seguimiento GPS, gestión de rutas y monitoreo de flota.</td>
-      <td>Rastreo en vivo y comunicación de eventos del transporte escolar.</td>
-      <td>Chats, llamadas y ubicación compartida manualmente.</td>
+      <td>Gestión de rutas, paradas y estudiantes; programación del traslado; estados e hitos del viaje; confirmaciones de recojo y entrega; retrasos, incidencias, notificaciones e historial.</td>
+      <td>Parent App, Driver App y Admin Panel; seguimiento de rutas, registro de abordaje y descenso, alertas, reservas, pagos, gestión administrativa y reportes.</td>
+      <td>Ubicación de la ruta en tiempo real, notificaciones de imprevistos y proximidad, gestión de inasistencias, información de abordaje, herramientas para conductor/monitor y panel de coordinación con reportes.</td>
+      <td>Chats, llamadas, envío de mensajes, ubicación compartida y navegación. La información queda repartida entre herramientas y conversaciones diferentes.</td>
     </tr>
     <tr>
       <th>Precios &amp; Costos</th>
-      <td>Hipótesis de suscripción accesible para adopción directa; el precio definitivo requiere validación.</td>
-      <td>Licenciamiento orientado a colegio/flota; no se documenta un precio específico en el análisis actual.</td>
-      <td>Convenio institucional; no se documenta un precio específico en el análisis actual.</td>
-      <td>Uso de herramientas gratuitas o ya contratadas por el usuario.</td>
+      <td>El modelo SaaS constituye una hipótesis del proyecto; el precio y las condiciones comerciales todavía requieren validación.</td>
+      <td>Dispone de paquetes comerciales para instituciones. En este análisis no se asigna un precio concreto porque no se ha verificado uno aplicable de manera general.</td>
+      <td>Servicio comercial para instituciones y usuarios vinculados a la ruta. En las fuentes consultadas no se verificó un precio público general aplicable a todos los clientes.</td>
+      <td>No requieren una licencia específica de transporte escolar; el usuario puede tener costos asociados a conectividad o a las condiciones generales de cada servicio.</td>
     </tr>
     <tr>
       <th>Canales de distribución (Web y/o Móvil)</th>
-      <td>Landing Page y Web Application responsive.</td>
-      <td>Plataforma de seguimiento y aplicaciones asociadas.</td>
-      <td>Plataforma digital de rastreo.</td>
-      <td>Aplicaciones de mensajería, navegación y llamadas.</td>
+      <td>Landing Page y Frontend Web Application responsive.</td>
+      <td>Aplicaciones móviles para usuarios y plataforma/panel de administración.</td>
+      <td>Aplicaciones móviles para los participantes de la ruta y plataforma web para coordinación.</td>
+      <td>Principalmente aplicaciones móviles; algunos servicios también disponen de acceso web.</td>
     </tr>
     <tr>
       <th rowspan="4">Análisis SWOT</th>
       <th>Fortalezas</th>
-      <td>Experiencia enfocada en los dos segmentos, estructura de eventos del viaje y menor dependencia de mensajes individuales.</td>
-      <td>Monitoreo continuo y enfoque consolidado de flota.</td>
-      <td>Rastreo en vivo orientado al transporte escolar.</td>
-      <td>Familiaridad, adopción masiva y bajo costo.</td>
+      <td>Enfoque concreto en los dos segmentos iniciales de Rumbo; estructura de eventos del viaje; experiencia responsive; el valor del MVP no depende de GPS continuo, ETA dinámico o geofencing.</td>
+      <td>Suite especializada consolidada, múltiples aplicaciones por rol, seguimiento en tiempo real, registro de pasajeros, administración, reportes, reservas y pagos.</td>
+      <td>Especialización en rutas escolares, ubicación en tiempo real, notificaciones de eventos, gestión de inasistencias y coordinación entre varios roles.</td>
+      <td>Alta familiaridad, disponibilidad inmediata y flexibilidad para mensajería, llamadas, navegación y ubicación compartida.</td>
     </tr>
     <tr>
       <th>Debilidades</th>
-      <td>Producto nuevo, sin base instalada y con dependencias tecnológicas que deben implementarse progresivamente.</td>
-      <td>Mayor dependencia de modelos institucionales y, según el caso, infraestructura adicional.</td>
-      <td>Dependencia de adopción institucional.</td>
-      <td>Información fragmentada, historial desordenado y comunicación manual.</td>
+      <td>Producto nuevo y sin base instalada; varias capacidades todavía deben implementarse y validarse; el MVP actual no contempla como requisito GPS continuo, ETA dinámico ni geofencing.</td>
+      <td>Su propuesta está orientada principalmente a instituciones y operaciones de transporte organizadas, por lo que puede resultar más amplia que las necesidades iniciales de una relación directa conductor–familia.</td>
+      <td>La propuesta articula colegio, coordinadores, monitores y conductores, por lo que su adopción está fuertemente vinculada a una operación institucional o de ruta ya organizada.</td>
+      <td>Información fragmentada, historial difícil de estructurar, ausencia de un ciclo de vida propio del viaje y necesidad de repetir comunicaciones manualmente.</td>
     </tr>
     <tr>
       <th>Oportunidades</th>
-      <td>Digitalizar la coordinación de conductores independientes y familias frente a congestión, retrasos y necesidad de trazabilidad.</td>
-      <td colspan="3">El contexto del transporte escolar y la necesidad de mayor visibilidad generan oportunidades para soluciones digitales; el análisis actual se concentra en cómo Rumbo puede aprovecharlas.</td>
+      <td>Atender la coordinación digital entre familias y conductores de movilidad escolar en Lima y Callao con una solución enfocada, accesible desde navegador y adaptada al contexto local.</td>
+      <td>Ampliar su presencia a nuevos mercados e instituciones y aprovechar su suite existente para organizaciones que buscan digitalizar integralmente la gestión del transporte escolar.</td>
+      <td>Extender alianzas con colegios y operadores de transporte escolar en más mercados latinoamericanos y aprovechar su experiencia de monitoreo y comunicación multirrol.</td>
+      <td>Mantenerse como alternativa sustituta debido a la baja fricción de adopción y a que los usuarios ya conocen estas herramientas, incorporando además nuevas capacidades generales de comunicación y navegación.</td>
     </tr>
     <tr>
       <th>Amenazas</th>
-      <td>Resistencia al cambio, conectividad móvil irregular y competencia de hábitos ya establecidos.</td>
-      <td colspan="3">La facilidad de continuar utilizando canales existentes y la presencia de soluciones institucionales pueden limitar la adopción de nuevas alternativas.</td>
+      <td>Hábitos arraigados de coordinación mediante mensajería y llamadas; presencia de plataformas especializadas ya operativas; exigencias de confianza y privacidad por tratar información relacionada con menores.</td>
+      <td>Competidores locales más ligeros o adaptados a mercados específicos; barreras de adopción para operadores pequeños; sustitución parcial mediante herramientas generalistas de comunicación y navegación.</td>
+      <td>Entrada de soluciones con onboarding más simple para conductores independientes; competencia de suites internacionales y permanencia de canales informales ya adoptados.</td>
+      <td>Las plataformas especializadas pueden reemplazar parte de su uso en transporte escolar al ofrecer permisos por rol, trazabilidad, estados del viaje, notificaciones estructuradas y reportes.</td>
     </tr>
   </tbody>
 </table>
 
-#### Resumen funcional complementario
-
-| Criterio | School Bus Tracker | Bus esCool | Canales Informales (WhatsApp / Waze) | Rumbo |
-|---|---|---|---|---|
-| **Segmento** | Colegios, flotas y padres de familia | Colegios privados, conductores y familias | Familias y conductores independientes | Padres/tutores y conductores de movilidad escolar |
-| **Seguimiento de ruta** | Sí (GPS continuo con hardware o app) | Sí (Rastreo en vivo) | Parcial (Ubicación en tiempo real compartida manualmente) | Sí (Seguimiento web responsive en tiempo real) |
-| **Confirmación recojo/entrega** | Sí | Sí | Parcial (Mensajes de texto manuales) | Sí (Check-in / Check-out rápido de abordaje y destino) |
-| **Línea de tiempo** | No (Solo mapa y registro tabular) | Parcial (Lista básica de eventos) | No (Historial de chat desordenado) | Sí (Timeline cronológico de hitos del viaje) |
-| **Incidencias** | No (Enfocado en despacho de flota) | Sí (Reporte de imprevistos básicos) | Parcial (Llamadas telefónicas de emergencia) | Sí (Reporte estructurado simultáneo de demoras y averías) |
-| **Modelo** | SaaS B2B (Licenciamiento por colegio/flota) | SaaS B2B (Convenio institucional por escuela) | Gratuito (Herramienta de mensajería general) | SaaS B2C/B2B (Suscripción accesible directa para padres y choferes) |
+**Fuentes consultadas para contrastar las capacidades de los competidores:**  
+- SchoolBusTracker: https://www.schoolbustrackerapp.com/  
+- Bus esCool: https://busescool.com/  
+- WhatsApp Brand Resources: https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/  
+- Waze: https://www.waze.com/
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-#### 1. Estrategia frente a Soluciones Corporativas B2B (School Bus Tracker / Bus esCool)
+#### 1. Estrategia frente a soluciones especializadas (SchoolBusTracker y Bus esCool)
 
-* **Contexto competitivo:** Estas herramientas cuentan con respaldo tecnológico y presencia institucional, pero su debilidad crítica radica en su modelo de venta corporativa cerrada: exigen contratos directos con colegios privados o compra de hardware GPS costoso, dejando desatendidos a los más de 3,700 conductores de movilidad escolar independientes registrados ante la ATU.
-* **Estrategia (Enfoque Bottom-Up & Direct-to-Consumer / D2C):**
-  Democratizar el acceso al servicio permitiendo que el binomio **Conductor Independiente – Padre de Familia** adopte la solución de manera directa y flexible, sin intermediación obligatoria del centro educativo.
-* **Tácticas:**
-  * **Onboarding inmediato sin hardware propietario:** Operar 100% como Web Application responsive utilizando el GPS del smartphone del conductor, eliminando costos de instalación y barreras de entrada.
-  * **Modelo de suscripción accesible:** Fijar tarifas mensuales individuales en el rango de S/ 15 a S/ 25 por familia (validado en el 100% de las entrevistas), muy por debajo de las licencias corporativas por flota.
-  * **Periodo de prueba (Free Trial):** Implementar un periodo de prueba gratuito durante la primera semana escolar para que las familias validen la precisión y confiabilidad antes de la suscripción.
+**Contexto competitivo:** SchoolBusTracker y Bus esCool ya ofrecen capacidades especializadas para transporte escolar. SchoolBusTracker presenta una suite para instituciones con aplicaciones por rol, seguimiento, registro de pasajeros y administración; Bus esCool ofrece monitoreo de rutas, notificaciones y coordinación entre colegios, familias y personal de transporte.
 
----
+**Estrategia de Rumbo:** competir inicialmente mediante una experiencia más acotada al problema identificado por el equipo: coordinación entre padres/tutores y conductores de movilidad escolar de Lima y Callao. El MVP se centra en estados e hitos del traslado, rutas, estudiantes, retrasos, incidencias y notificaciones, sin presentar GPS continuo, ETA dinámico o geofencing como funcionalidades actuales.
 
-#### 2. Estrategia frente a Canales Informales Sustitutos (WhatsApp / Llamadas telefónicas)
+**Tácticas:**
+- Mantener una Web Application responsive que pueda utilizarse desde navegador y no dependa de hardware propietario para las funcionalidades del MVP.
+- Estructurar la información por estados e hitos del viaje para evitar que las familias dependan de conversaciones dispersas.
+- Implementar en Sprint 2 los CRUD y vistas frontend definidos para los Bounded Contexts seleccionados, utilizando JSON Server como fuente de datos simulada.
+- Diseñar el acceso a información de menores bajo criterios de autorización y privacidad definidos por el proyecto.
 
-* **Contexto competitivo:** La gran fortaleza de WhatsApp es el costo cero y el hábito arraigado (100% de uso diario). Sin embargo, su debilidad estructural es la saturación de mensajes, la falta de privacidad y el riesgo crítico de seguridad vial cuando el chofer escribe mientras conduce en horas punta.
-* **Estrategia (Sustitución Silenciosa y Seguridad Operativa):**
-  Posicionar a Rumbo no como un chat, sino como un **panel de visualización pasiva** que reduce a cero la necesidad de llamadas y mensajes manuales en ruta.
-* **Tácticas:**
-  * **Interacción One-Touch (Cero Distracciones):** Proveer al conductor botones táctiles amplios para confirmar eventos clave (`Pickup`, `Drop-off`, `Delay`, `Incident`) con un solo toque, evitando la redacción de texto al volante.
-  * **Notificaciones push de proximidad automatizadas:** Alertar a los padres cuando la movilidad se encuentra a 2 cuadras de distancia mediante geocercas, eliminando los bocinazos y los mensajes manuales de *"ya estoy afuera"*.
-  * **Línea de tiempo cronológica centralizada:** Desplegar una vista de hitos (`Trip Timeline`) donde todos los padres de la ruta ven retrasos o incidencias simultáneamente, acabando con las respuestas individuales repetitivas.
+#### 2. Estrategia frente a canales informales (WhatsApp, llamadas y herramientas de navegación)
 
----
+**Contexto competitivo:** las herramientas de mensajería, llamadas y navegación son familiares y flexibles, pero son de propósito general. Por sí solas no estructuran el ciclo de un traslado escolar ni consolidan en un único registro las confirmaciones, retrasos, incidencias y estados del viaje.
 
-#### 3. Matriz de Oportunidades y Amenazas en relación con la Competencia
+**Estrategia de Rumbo:** reducir la necesidad de coordinación manual repetitiva mediante información estructurada del traslado, sin intentar convertir Rumbo en un servicio de mensajería general.
 
-| Dimensión | Factor Externo | Estrategia / Táctica de Rumbo |
-|---|---|---|
-| **Oportunidad** | **Exigencias regulatorias de ATU:** Los padres exigen garantías de habilitación y unidades autorizadas. | **Validación y confianza:** Integrar en el perfil del conductor el estado de autorización de la unidad y cumplimiento de SOAT escolar, diferenciándose de las coordinaciones informales. |
-| **Oportunidad** | **Congestión vehicular severa en Lima:** La variabilidad de tiempos genera incertidumbre extrema en las mañanas. | **Módulo de reporte rápido de retrasos:** Permitir informar congestión atípica con un clic, recalculando visualmente la línea de tiempo para calmar la ansiedad de las familias. |
-| **Amenaza** | **Resistencia inicial al cambio:** Costumbre arraigada al uso exclusivo de WhatsApp para toda coordinación. | **UX simple y sin curva de aprendizaje:** Diseñar interfaces Web Mobile-First directas, con login rápido y visualización de ruta sin configuraciones complejas. |
-| **Amenaza** | **Intermitencia de conectividad móvil:** Zonas con baja señal de datos o fluctuaciones en la red 4G/5G en Lima. | **Diseño resiliente con WebSockets/Polling:** Sincronización ligera de eventos con marcas de tiempo explícitas (`Event Timestamp`) para informar siempre la hora del último reporte verificado. |
+**Tácticas:**
+- Permitir registrar acciones del viaje mediante interacciones breves y únicamente cuando sea seguro realizarlas.
+- Mostrar a padres/tutores un estado actual y una línea de tiempo de eventos registrados.
+- Centralizar retrasos e incidencias para que la información relevante no dependa de mensajes individuales repetidos.
+- Mantener las notificaciones vinculadas a eventos registrados en Rumbo; las capacidades de proximidad mediante geofencing o ETA dinámico permanecen fuera del alcance actual.
 
 ## 2.2. Entrevistas
 
