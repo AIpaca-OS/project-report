@@ -1073,31 +1073,11 @@ El logotipo se utiliza como identificador principal de la marca y debe conservar
 
 #### Color Palette
 
-La paleta de Rumbo diferencia cuatro funciones: identidad principal, contraste, apoyo visual y superficies neutras. Los verdes se utilizan para marca y acciones relevantes; los tonos crema y arena reducen la carga visual; y el azul oscuro se reserva principalmente para texto de alta jerarquía.
-
-| Token / función | Valor o fuente | Uso principal |
-|---|---|---|
-| **Primary Color I** | **#3EA98A** | Acciones principales, énfasis e identidad visual. |
-| **Primary Color II** | **#12403D** | Fondos de alto contraste, encabezados y elementos de marca. |
-| **Secondary Color I** | **Mint support color — token de Figma / asset oficial** | Fondos secundarios, estados suaves y elementos de apoyo. |
-| **Secondary Color II** | **#F3D9A4** | Acentos cálidos y énfasis secundarios. |
-| **Neutral Color I** | **#FBFAF6** | Superficies principales de contenido. |
-| **Neutral Color II** | **#F5F4EA** | Fondos alternativos y separación de secciones. |
-| **Neutral Color III** | **#0F172A** | Texto principal y elementos de alta legibilidad. |
-
-> **Fuente de verdad visual:** los tokens definidos en Figma y los assets incluidos en el repositorio. Se eliminó la duplicación previa que asignaba incorrectamente **#F3D9A4** tanto a Secondary Color I como a Secondary Color II.
+La paleta de colores de Rumbo organiza los tonos principales, secundarios y neutros que se utilizarán de manera consistente en el Landing Page y la Web Application. Los verdes refuerzan la identidad visual y las acciones relevantes; los tonos crema y arena ayudan a reducir la carga visual y aportar calidez; y el azul oscuro se reserva para texto, contraste y elementos de alta legibilidad.
 
 <div align="center">
-  <img src="./assets/chapter04/primaryColor1.png" alt="Primary Color I" width="150">
-  <img src="./assets/chapter04/primaryColor2.png" alt="Primary Color II" width="150">
-  <img src="./assets/chapter04/secondaryColor1.png" alt="Secondary Color I" width="150">
-  <img src="./assets/chapter04/secondaryColor2.png" alt="Secondary Color II" width="150">
-</div>
-
-<div align="center">
-  <img src="./assets/chapter04/neutralColor1.png" alt="Neutral Color I" width="150">
-  <img src="./assets/chapter04/neutralColor2.png" alt="Neutral Color II" width="150">
-  <img src="./assets/chapter04/neutralColor3.png" alt="Neutral Color III" width="150">
+  <img src="./assets/chapter04/paleta-de-colores.png" alt="Paleta de colores de Rumbo" width="760">
+  <p><em>Paleta de colores de Rumbo.</em></p>
 </div>
 
 #### Typography
