@@ -566,7 +566,7 @@ Se realizaron entrevistas semiestructuradas para comprender hábitos, procesos a
 
 ### 2.2.1. Diseño de entrevistas
 
-### Preguntas dirigidas al primer segmento — Padres y tutores
+#### Preguntas dirigidas al primer segmento — Padres y tutores
 
 1. ¿Podría indicarnos su edad, el distrito donde reside y la edad y grado escolar de su(s) hijo(s) que utilizan el transporte escolar?
 2. Actualmente, ¿cómo se organiza con el recojo y retorno de sus hijos? ¿Sale a esperarlos, confía en el horario del conductor o utiliza alguna aplicación?
@@ -580,7 +580,7 @@ Se realizaron entrevistas semiestructuradas para comprender hábitos, procesos a
 10. ¿Estaría dispuesto a pagar una suscripción mensual por un servicio que le brinde esta tranquilidad y seguridad? ¿Cuánto consideraría justo pagar?
 11. ¿Qué característica de la aplicación sería la más importante para usted para sentirse tranquilo al confiar el transporte de su hijo a un conductor registrado en nuestra plataforma?
 
-### Preguntas dirigidas al segundo segmento — Conductores de movilidad escolar
+#### Preguntas dirigidas al segundo segmento — Conductores de movilidad escolar
 
 1. ¿Cuál es tu nombre completo, edad, ocupación, distrito de residencia y cuántos años de experiencia tienes realizando transporte escolar?
 2. ¿Cuántos estudiantes y rutas manejas normalmente durante una jornada de trabajo?
@@ -608,7 +608,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 |  5 | Brayan Solorzano Pineda | 25 | Pueblo Libre | Conductor | 09:05 | [Entrevista 5](#entrevista-5--brayan-solorzano-pineda) |
 |  6 | Vilma Hoyos Martinez | 56 | San Miguel | Conductor | 18:14 | [Entrevista 6](#entrevista-6--vilma-hoyos-martinez) |
 
-## Entrevista 1 — Gabriela Salazar
+#### Entrevista 1 — Gabriela Salazar
 
 * **Edad:** 32 años.
 * **Ocupación / segmento:** Padre / Tutor.
@@ -622,7 +622,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 **Resumen:** Gabriela Salazar tiene 32 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus experiencias relacionadas con el transporte escolar de su sobrino de 8 años, especialmente los problemas ocasionados por retrasos mecánicos que no son comunicados oportunamente. Asimismo, destacó la importancia de evitar que el conductor manipule el celular mientras conduce, indicando que debería utilizarlo únicamente cuando se encuentre estacionado. Entre las funcionalidades de mayor interés se encuentra el rastreo en vivo de la movilidad. Respecto a la disposición de pago, considera viable un rango de S/ 15 a S/ 25 mensuales, siempre que pueda acceder previamente a un periodo de prueba gratuito.
 
 
-## Entrevista 2 — Alejandro Choquehuanca
+#### Entrevista 2 — Alejandro Choquehuanca
 
 * **Edad:** 34 años.
 * **Ocupación / segmento:** Padre / Tutor.
@@ -635,7 +635,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 
 **Resumen:** Alejandro tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones como padre de un niño de 6 años que utiliza transporte escolar en Surco. Entre sus preocupaciones se encuentra la distracción del conductor ocasionada por las llamadas de otros padres durante el trayecto. También manifestó interés en contar con un mapa en tiempo real que permita conocer la ubicación de la movilidad y reducir el tiempo de espera en la calle. Asimismo, considera importante recibir alertas cuando el estudiante ingresa al colegio y contar con mecanismos de verificación de la situación legal del conductor. Respecto a la disposición de pago, considera viable una suscripción mensual de S/ 15 a S/ 25.
 
-## Entrevista 3 — Eduardo Osorio
+#### Entrevista 3 — Eduardo Osorio
 
 * **Edad:** 34 años.
 * **Ocupación / segmento:** Padre / Tutor.
@@ -649,7 +649,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 **Resumen:** Eduardo tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones respecto al transporte escolar de su hijo de 4 años, quien se encuentra en inicial. Entre sus principales problemas se encuentra la ansiedad generada por la falta de visibilidad del trayecto, especialmente cuando ocurren averías imprevistas durante el recorrido. Manifestó interés en recibir alertas automáticas relacionadas con el abordaje del menor, incluyendo la confirmación de que viaje con el cinturón de seguridad puesto y que sea entregado correctamente a la profesora. Asimismo, considera valioso contar con información que le permita evitar la espera en la vereda. Respecto a la disposición de pago, acepta un rango de S/ 15 a S/ 25 mensuales.
 
 
-## Entrevista 4 — Gabriel Alexandro Sosa Guevara
+#### Entrevista 4 — Gabriel Alexandro Sosa Guevara
 
 - **Edad:** 20 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
@@ -663,7 +663,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 
 **Resumen:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Utiliza diariamente su teléfono para trabajar y principalmente usa WhatsApp para comunicarse con las familias y Google Maps para organizar sus rutas. Comenta que uno de los problemas que presenta es tener la información fragmentada en distintos chats, lo que hace poco práctico buscar entre conversaciones para verificar si un estudiante será recogido o consultar la dirección de un punto de llegada alternativo. Además, menciona que es repetitivo responder diariamente las preguntas de los padres sobre cuánto falta para que llegue su hijo, si la movilidad se encuentra cerca o si el estudiante se encuentra bien, ya que esto puede distraerlo mientras conduce. También considera que, en caso de utilizar una aplicación, esta debería ser fácil y rápida de utilizar para no quitarle tiempo durante la conducción. Entre las funcionalidades que considera útiles se encuentran una lista de alumnos, el orden de recojo y la posibilidad de registrar rápidamente cuándo recoge o entrega a un estudiante. Asimismo, le gustaría que los padres puedan visualizar el estado de la ruta y su ubicación para mantenerse informados sin necesidad de comunicarse constantemente con él.
 
-## Entrevista 5 — Brayan Solorzano Pineda
+#### Entrevista 5 — Brayan Solorzano Pineda
 
 - **Edad:** 25 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
@@ -677,7 +677,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 
 **Resumen:** Brayan cuenta con 5 años de experiencia en el rubro. Comenzó trabajando en transporte personal, pero luego se trasladó al rubro del transporte escolar. Utiliza un grupo de WhatsApp para enviar avisos a los padres; sin embargo, los tutores prefieren escribirle por privado. Además, utiliza Waze para evitar el tráfico y el calendario de su teléfono para recordar horarios especiales. Ha tenido problemas para recordar cambios en las rutas debido a modificaciones en el recojo de un alumno, especialmente porque varios padres le escriben. Diariamente, los padres también le preguntan si ya se encuentra cerca o si los niños ya llegaron a la escuela, lo cual considera repetitivo. Comenta que durante la conducción no utilizaría una aplicación. Sin embargo, le sería útil contar con un registro del inicio del recorrido, la hora de recojo de cada alumno y la hora de llegada a la escuela. También considera útil registrar cuando un alumno no será recogido. En general, considera que una aplicación debería ayudarlo a organizar los cambios y permitir que los padres puedan seguir la ruta sin necesidad de preguntarle constantemente. No utilizaría una aplicación que lo obligue a realizar muchas acciones manualmente o que tenga un costo muy elevado. Como característica adicional, le gustaría que pudiera utilizarse en zonas donde existe poca señal.
 
-## Entrevista 6 — Vilma Hoyos Martinez
+#### Entrevista 6 — Vilma Hoyos Martinez
 
 - **Edad:** 56 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
@@ -750,11 +750,11 @@ Los resultados muestran una coincidencia central: las familias necesitan visibil
 
 En esta sección se presentan las User Personas correspondientes a los dos segmentos objetivo: **Padres/Tutores y Conductores**. Los arquetipos se construyeron a partir de los patrones identificados en las entrevistas y se contrastaron con los hallazgos del análisis competitivo para representar características, necesidades, comportamientos, objetivos, frustraciones, herramientas y barreras relevantes de cada segmento.
 
-## Segmento — Padres y tutores
+#### Segmento — Padres y tutores
 
 <img width="1050" height="1438" alt="Gabriela Morales" src="https://github.com/user-attachments/assets/a1add856-d769-4711-a1ff-2767317ceb7a" />
 
-## Segmento — Conductores
+#### Segmento — Conductores
 
 <img width="1050" height="1228" alt="Carlos Rivas" src="https://github.com/user-attachments/assets/84b05149-9953-4fa3-9ebe-e7d30a1ed526" />
 
@@ -812,13 +812,13 @@ En esta sección se presentan los **User Journey Maps** correspondientes a los d
 
 Se presentan las versiones **As-Is**, que permiten analizar cómo se desarrolla actualmente el proceso sin la intervención de nuestra solución. A través de las diferentes etapas, actividades, puntos de contacto y dificultades identificadas, se busca comprender la experiencia de cada User Persona y detectar oportunidades de mejora.
 
-## Segmento — Padres y tutores
+#### Segmento — Padres y tutores
 
 El journey de los padres de familia durante las mañanas inicia con la preparación en casa, donde alistan al menor con una sensación inicial de serenidad, aunque experimentan la falta de visibilidad sobre el inicio de la ruta. Al pasar a la espera en la acera, se vive un estado de vigilancia mientras aguardan a la intemperie la llegada de la movilidad, lo que da paso a la etapa de retraso e incertidumbre: al cumplirse más de quince minutos de demora sin respuesta del conductor debido a que va manejando, la ansiedad y el miedo a llegar tarde se apoderan del tutor. Posteriormente, durante el abordaje y despacho, la subida se realiza de forma apresurada y sin la certeza de las medidas de seguridad, generando temor. Finalmente, en el trayecto y llegada, los padres experimentan angustia e incertidumbre total hasta recibir la confirmación de que el menor ha ingresado sin novedades al colegio.
 
 <img width="1556" height="1086" alt="USER JOURNEY MAP - PADRE_TUTOR" src="https://github.com/user-attachments/assets/4bb04243-7f62-427a-80b3-590b55748984" />
 
-## Segmento — Conductores
+#### Segmento — Conductores
 
 El recorrido diario del conductor comienza antes del viaje, cuando revisa mensajes de WhatsApp para confirmar asistencias, cambios de horario y puntos de recojo. Durante el trayecto de ida aumenta la tensión, porque las consultas sobre demoras o ubicación llegan mientras debe mantener la atención en la conducción. Al finalizar la ida y preparar el retorno, revisa nuevamente conversaciones fragmentadas para identificar cambios y ausencias. En el colegio verifica a los estudiantes que retornarán y atiende posibles modificaciones de último momento. Durante el viaje de regreso repite el proceso de entrega mientras necesita conservar información suficiente para responder ante incidencias o dudas posteriores. Finalmente, la jornada termina con la confirmación de las entregas y la comunicación con las familias. Este recorrido evidencia una carga de coordinación repetitiva y dispersa que debe reducirse sin introducir nuevas distracciones durante la conducción.
 
@@ -828,11 +828,11 @@ El recorrido diario del conductor comienza antes del viaje, cuando revisa mensaj
 
 En esta sección se presentan los **Empathy Maps** elaborados para cada uno de los User Personas: **Parent/Guardian y Driver**. El equipo partió de los hallazgos de las entrevistas y colocó a cada arquetipo en el centro del análisis para organizar observaciones sobre qué necesita hacer, qué dice, qué ve, qué escucha, qué hace, qué piensa y qué siente. A partir de estas observaciones se identificaron sus principales **Pains** y **Gains**, procurando que cada elemento conserve trazabilidad con la información obtenida de los segmentos y no con supuestos nuevos del equipo.
 
-## Segmento — Padres y tutores
+#### Segmento — Padres y tutores
 
 <img width="1050" height="1318" alt="Empathy map (1)" src="https://github.com/user-attachments/assets/1add7ca8-41b3-40e0-9481-dbf693cb4642" />
 
-## Segmento — Conductores
+#### Segmento — Conductores
 
 <img width="1050" height="1318" alt="CARLOS RIVAS EMPATHY MAP" src="assets/chapter02/user-empathy-map-conductor.png" />
 
