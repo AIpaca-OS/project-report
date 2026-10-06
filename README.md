@@ -918,7 +918,7 @@ En esta sección se mantiene el glosario compartido del dominio de movilidad esc
 
 ## 3.1. User Stories
 
-A continuación se presentan por separado los **Epics** y las **User Stories** de Rumbo, manteniendo sus relaciones mediante el Epic ID correspondiente. Los criterios de aceptación siguen la estructura Gherkin (Given-When-Then), se redactan en tiempo presente y tercera persona. Las Technical Stories corresponden a capacidades del RESTful API y utilizan el rol Developer.
+Por indicación del docente, los **Epics** y las **User Stories** de Rumbo se presentan en cuadros separados, manteniendo sus relaciones mediante el Epic ID correspondiente. Los criterios de aceptación siguen la estructura Gherkin (Given-When-Then), se redactan en tiempo presente y tercera persona. Las Technical Stories corresponden a capacidades del RESTful API y utilizan el rol Developer.
 
 #### Epics
 
