@@ -982,37 +982,21 @@ Por indicación del docente, los **Epics** y las **User Stories** de Rumbo se pr
 
 ## 3.2. Impact Mapping
 
-El Impact Mapping de Rumbo se deriva de los **Business Outcome Assumptions** definidos en el Lean UX Process y de los dos User Personas identificados en Needfinding: **Gabriela Morales (Parent/Guardian)** y **Carlos Rivas (Driver)**. Para cumplir con el criterio SMART, los resultados se plantean para el **primer mes del piloto controlado**. Los impactos describen cambios de comportamiento esperados en los User Personas; los deliverables representan capacidades del producto que pueden provocar esos cambios; y las User Stories mantienen la trazabilidad con los requisitos definidos en la sección 3.1.
+El **Impact Mapping de Rumbo** fue elaborado en UXPressia a partir de los Business Goals definidos en el Lean UX Process y de los dos User Personas identificados en el Needfinding: **Gabriela Morales**, representante del segmento de padres/tutores, y **Carlos Rivas**, representante del segmento de conductores.
 
-> **Nota de actualización del artefacto:** la captura anterior del Impact Mapping debe reemplazarse por una nueva versión elaborada en **UXPressia** a partir de la estructura definida a continuación.
+El mapa relaciona los objetivos de negocio con los cambios de comportamiento esperados en cada persona, los entregables que pueden provocar dichos impactos y las User Stories que permiten implementarlos. Para padres/tutores, el enfoque se centra en reducir la necesidad de contactar al conductor, facilitar la consulta del estado del traslado y mantener notificaciones relevantes. Para conductores, se busca registrar los principales hitos del viaje, comunicar retrasos e incidencias de forma estructurada y organizar la operación diaria del servicio.
 
-| Business Goal (SMART) | Actor / User Persona | Impacto esperado | Deliverables | User Stories relacionadas |
-|---|---|---|---|---|
-| **Reducir en 60 % los mensajes y llamadas de padres/tutores al conductor para consultar el estado de la ruta durante el primer mes del piloto controlado.** | **Gabriela Morales — Parent/Guardian** | Consulta el estado y los hitos del traslado en Rumbo antes de contactar al conductor. | Estado actual del traslado; línea de tiempo del viaje; notificaciones de eventos relevantes. | **US26:** Como padre o tutor, quiero conocer en pocos segundos la etapa del traslado para evitar preguntarle al conductor.<br>**US27:** Como padre o tutor, quiero revisar los hitos ocurridos durante el recorrido para entender qué pasó sin revisar conversaciones.<br>**US28:** Como padre o tutor, quiero recibir avisos solo cuando ocurre un evento relevante para mantenerme informado sin revisar la plataforma constantemente. |
-| **Lograr que al menos 70 % de los padres/tutores activos consulte Rumbo en tres o más días de clases por semana durante el primer mes del piloto controlado.** | **Gabriela Morales — Parent/Guardian** | Incorpora la consulta de Rumbo a su rutina para revisar el traslado sin depender de mensajes dispersos. | Estado actual del traslado; línea de tiempo; historial de eventos; avisos relevantes. | **US26:** Como padre o tutor, quiero conocer en pocos segundos la etapa del traslado para evitar preguntarle al conductor.<br>**US27:** Como padre o tutor, quiero revisar los hitos ocurridos durante el recorrido para entender qué pasó sin revisar conversaciones.<br>**US28:** Como padre o tutor, quiero recibir avisos solo cuando ocurre un evento relevante para mantenerme informado sin revisar la plataforma constantemente. |
-| **Lograr que al menos 80 % de los recojos y entregas de cada ruta quede confirmado dentro de Rumbo durante el primer mes del piloto controlado.** | **Carlos Rivas — Driver** | Registra los principales hitos del traslado de manera consistente cuando es seguro hacerlo. | Inicio del viaje; registro de recojos; llegada al colegio; retorno; registro de entregas; cierre del viaje. | **US18:** Como conductor, quiero iniciar el recorrido para que los tutores sepan que la ruta está en ejecución.<br>**US19:** Como conductor, quiero confirmar los recojos de cada parada en pocos segundos para dejar constancia sin afectar mi recorrido.<br>**US20:** Como conductor, quiero confirmar la llegada al centro educativo y dar inicio al retorno para diferenciar ambas etapas del servicio.<br>**US21:** Como conductor, quiero confirmar la entrega de cada estudiante para cerrar su traslado y avisar a su tutor.<br>**US22:** Como conductor, quiero cerrar el viaje para consolidar su resultado y dejarlo disponible como historial. |
-| **Lograr que al menos 90 % de los retrasos e incidencias del piloto se comunique mediante Rumbo y no mediante mensajes individuales durante el primer mes del piloto controlado.** | **Carlos Rivas — Driver** | Registra retrasos e incidencias una sola vez para informar de forma estructurada a las familias afectadas. | Registro y actualización de retrasos; registro y resolución de incidencias; notificaciones asociadas. | **US23:** Como conductor, quiero registrar un retraso y su causa para informar con un solo registro a todas las familias afectadas.<br>**US24:** Como conductor, quiero registrar una incidencia para comunicar un imprevisto con contexto suficiente y sin repetir el mensaje a cada familia.<br>**US25:** Como conductor, quiero marcar una incidencia como resuelta para informar que la situación fue normalizada. |
-| **Mantener por debajo de 20 % la proporción de padres/tutores que desactiva las notificaciones durante el primer mes del piloto controlado.** | **Gabriela Morales — Parent/Guardian** | Mantiene activadas las notificaciones porque recibe información relevante y puede controlar sus preferencias. | Notificaciones de eventos relevantes; preferencias de notificación; confirmación de conocimiento de incidencias. | **US28:** Como padre o tutor, quiero recibir avisos solo cuando ocurre un evento relevante para mantenerme informado sin revisar la plataforma constantemente.<br>**US29:** Como padre o tutor, quiero elegir qué avisos recibir para no ser saturado con información que no necesito.<br>**US30:** Como padre o tutor, quiero confirmar que tomé conocimiento de una incidencia para que el conductor sepa que fui informado. |
-| **Lograr que al menos 60 % de los conductores que participan en el piloto continúe utilizando Rumbo después del primer mes.** | **Carlos Rivas — Driver** | Organiza rutas, estudiantes y jornadas en Rumbo y reduce la coordinación manual necesaria para operar el servicio. | Gestión de vehículo y credenciales; rutas y paradas; horarios; estudiantes asignados; programación de viajes y ausencias. | **US02:** Como conductor, quiero registrar mi vehículo y las credenciales que acreditan mi servicio para que las familias conozcan la información declarada de mi movilidad.<br>**US10:** Como conductor, quiero crear una ruta con sus paradas en el orden en que las recorro para organizar mi servicio.<br>**US11:** Como conductor, quiero establecer los días y horarios de una ruta para que sus viajes se programen de forma recurrente.<br>**US12:** Como conductor, quiero asignar a los estudiantes autorizados a una ruta y a su parada para incluirlos en los recorridos.<br>**US15:** Como conductor, quiero contar con el viaje del día y la lista de estudiantes prevista para saber a quiénes debo recoger.<br>**US16:** Como padre o tutor, quiero informar que mi hijo no usará la movilidad para evitar una parada innecesaria. |
-
-### Estructura a representar en UXPressia
-
-El artefacto debe mostrar visualmente la secuencia **Business Goal → Actor/User Persona → Impact → Deliverable → User Story**. Cuando un mismo User Persona participa en más de un Business Goal, se reutiliza la misma ficha de Persona en UXPressia y se relaciona con cada objetivo correspondiente. Las User Stories deben conservar su descripción completa en formato **“Como..., quiero..., para...”** y no únicamente el identificador.
-
-Las Technical Stories **TS01–TS08** no se incorporan como impactos de usuario, ya que representan capacidades técnicas del RESTful API. Se mantienen en la sección 3.1 y en el Product Backlog, pero el Impact Mapping se concentra en los cambios de comportamiento de los User Personas y en los deliverables que los provocan.
+<p align="center">
+  <img src="impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
+</p>
 
 ## 3.3. Product Backlog
 
+El **Product Backlog de Rumbo** organiza y prioriza las User Stories según su valor para el negocio y el orden de implementación definido por el equipo. Las historias de la Landing Page se mantienen al inicio porque corresponden al primer Sprint. A continuación se ubican las funcionalidades de negocio y los CRUD del Frontend Web Application; las historias de cuenta, acceso y autorización se mantienen hacia la parte final del bloque funcional, mientras que las Technical Stories del RESTful API se reservan para etapas posteriores del proyecto.
+
+Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8**, conforme al Statement. El Sprint 1 reúne las historias US31–US35 y suma **8 Story Points**. La selección definitiva de historias para Sprint 2 se realizará desde este backlog según los CRUD que se implementen en Angular con JSON Server y la capacidad acordada por el equipo.
+
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
-
-
-El Product Backlog se reordena según la retroalimentación del docente:
-
-1. **Landing Page primero**: US31–US35, porque corresponde al producto implementado en Sprint 1.
-2. **CRUD y gestión de datos después**: se priorizan las historias que permiten administrar información del dominio. Por ello US02 (vehículo/credenciales) y US06 (estudiante) se adelantan respecto de las historias de cuenta y autenticación, junto con las historias operativas de rutas, viajes, incidencias y comunicación.
-3. **Suscripción después del núcleo operativo**: US09 permanece antes del bloque de identidad/acceso porque habilita capacidades comerciales pero no constituye autenticación.
-4. **Cuenta, acceso y administración de perfil al final del bloque funcional**: US01, US03, US04, US05, US07 y US08 se desplazan hacia la cola del bloque funcional, tal como indicó el docente.
-5. **Technical Stories / back-end al final**: TS01–TS08 quedan reservadas para Sprint 3.
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---:|---|---|---|---:|
@@ -1060,14 +1044,7 @@ El Product Backlog se reordena según la retroalimentación del docente:
 | 42 | TS07 | Internacionalización del RESTful API | Como Developer, quiero localizar los mensajes del API para en_US y es_419 manteniendo el inglés como idioma predeterminado. | 3 |
 | 43 | TS08 | Persistencia consistente del estado y eventos del viaje | Como Developer, quiero persistir el estado del viaje y sus eventos de forma consistente para evitar información parcial durante las operaciones del RESTful API. | 5 |
 
-**Criterio de refinamiento previo al Sprint 2:** antes de seleccionar una User Story para el Sprint Backlog se debe comprobar que la funcionalidad que realmente se implementará esté cubierta por dicha historia. Si una operación CRUD prevista no tiene una User Story asociada, la historia faltante debe definirse primero en esta sección y luego incorporarse al Product Backlog, evitando crear historias para funcionalidades que no formen parte del alcance real del Sprint.
-
-**Sprint 1 — Landing Page:** US31, US32, US33, US34 y US35 — **8 SP**.  
-**Sprint 2 — Frontend Web Application:** se seleccionan únicamente User Stories funcionales asociadas a los CRUD que serán implementados en Angular con JSON Server. No se implementa back-end en este Sprint.  
-**Sprint 3 — Back-end y lógica de negocio:** TS01–TS08 y las funcionalidades que requieran Spring Boot, persistencia e integraciones.  
-**Sprint 4 — Integración completa:** Frontend Web Application, RESTful API, persistencia e integraciones funcionando de manera conjunta.
-
-Para Sprint 2, cada implementación CRUD debe contar con una User Story que la represente. Si una operación implementada no está cubierta por las historias actuales, se deberá incorporar la User Story correspondiente antes de agregarla al Sprint Backlog. Cada User Story seleccionada debe dividirse en un mínimo de dos tareas, cada tarea debe tener una estimación máxima de 8 horas y los Story Points deben mantener coherencia con el esfuerzo de las tareas.
+---
 
 # Capítulo IV: Product Design
 
