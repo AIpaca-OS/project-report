@@ -836,7 +836,7 @@ En esta sección se presentan los **Empathy Maps** elaborados para cada uno de l
 
 En esta sección se presenta una aproximación inicial al **Event Storming** del dominio de movilidad escolar, identificando los principales eventos y procesos que ocurren durante el traslado de los estudiantes. Esta representación permitirá establecer una base para comprender el funcionamiento del dominio y continuar refinándolo en futuras iteraciones del proyecto.
 
-<img width="1050" height="1318" alt="EVENT-STORMING" src="assets/chapter02/big-picture-event-storming.jpg" />
+<img width="1050" height="1318" alt="EVENT-STORMING" src="assets/chapter02/big-picture-event-storming" />
 
 ## 2.5. Ubiquitous Language
 
