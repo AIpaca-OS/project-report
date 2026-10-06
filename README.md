@@ -998,6 +998,10 @@ Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8
 
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
 
+<p align="center">
+  <img src="assets/chapter03/product-backlog.png" alt="Product Backlog de Rumbo en Trello" width="100%"/>
+</p>
+
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---:|---|---|---|---:|
 | 1 | US31 | Conocer la propuesta de valor de Rumbo | Como visitante, quiero comprender qué es Rumbo y qué problema resuelve para decidir si me resulta relevante. | 2 |
