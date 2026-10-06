@@ -505,29 +505,60 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-#### 1. Estrategia frente a soluciones especializadas (SchoolBusTracker y Bus esCool)
+Para organizar las estrategias y tácticas preliminares de **Rumbo** frente a la competencia, se emplean las matrices **FODA** y **CAME**. La matriz FODA resume la situación interna de la startup y el contexto externo identificado en el Competitive Analysis Landscape. A partir de ello, la matriz CAME plantea acciones para **Corregir debilidades, Afrontar amenazas, Mantener fortalezas y Explotar oportunidades**.
 
-**Contexto competitivo:** SchoolBusTracker y Bus esCool ya ofrecen capacidades especializadas para transporte escolar. SchoolBusTracker presenta una suite para instituciones con aplicaciones por rol, seguimiento, registro de pasajeros y administración; Bus esCool ofrece monitoreo de rutas, notificaciones y coordinación entre colegios, familias y personal de transporte.
+#### Matriz FODA
 
-**Estrategia de Rumbo:** competir inicialmente mediante una experiencia más acotada al problema identificado por el equipo: coordinación entre padres/tutores y conductores de movilidad escolar de Lima y Callao. El MVP se centra en estados e hitos del traslado, rutas, estudiantes, retrasos, incidencias y notificaciones, sin presentar GPS continuo, ETA dinámico o geofencing como funcionalidades actuales.
+<table>
+  <thead>
+    <tr>
+      <th>Interno / Externo</th>
+      <th>Positivo</th>
+      <th>Negativo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Interno</th>
+      <td>
+        <strong>Fortalezas (F)</strong><br><br>
+        • Enfoque específico en los dos segmentos objetivo del proyecto: padres/tutores y conductores de movilidad escolar.<br><br>
+        • Centralización de estados del traslado, hitos, retrasos, incidencias y notificaciones dentro de un mismo flujo de información.<br><br>
+        • Web Application responsive planteada para funcionar con los dispositivos de los usuarios y sin requerir hardware propietario para las funcionalidades del MVP.
+      </td>
+      <td>
+        <strong>Debilidades (D)</strong><br><br>
+        • Producto nuevo, sin una base instalada ni confianza consolidada frente a soluciones que ya operan en el mercado.<br><br>
+        • El alcance actual no contempla todavía GPS continuo, ETA dinámico ni geofencing, mientras que competidores especializados ya ofrecen capacidades de seguimiento en tiempo real.<br><br>
+        • El valor de la coordinación depende de que conductores y familias adopten y utilicen de manera consistente la plataforma.
+      </td>
+    </tr>
+    <tr>
+      <th>Externo</th>
+      <td>
+        <strong>Oportunidades (O)</strong><br><br>
+        • Los canales informales como mensajería, llamadas y ubicación compartida no estructuran el ciclo del traslado escolar ni consolidan un historial único de eventos.<br><br>
+        • Las soluciones especializadas analizadas presentan una fuerte orientación a colegios, administradores y operaciones de transporte, lo que permite a Rumbo enfocarse en una experiencia directa para padres/tutores y conductores.<br><br>
+        • La necesidad de reducir incertidumbre, mensajes repetitivos y falta de trazabilidad durante el traslado abre espacio para una solución centrada en estados e hitos claramente registrados.
+      </td>
+      <td>
+        <strong>Amenazas (A)</strong><br><br>
+        • SchoolBusTracker y Bus esCool ya ofrecen funciones especializadas de seguimiento, notificaciones y gestión del transporte escolar.<br><br>
+        • WhatsApp, llamadas y herramientas de navegación cuentan con alta familiaridad y pueden seguir siendo suficientes para usuarios que no perciban un beneficio adicional al cambiar de herramienta.<br><br>
+        • Las expectativas de los usuarios pueden estar influenciadas por competidores que ya ofrecen localización en tiempo real y otras capacidades que Rumbo ha dejado fuera del alcance actual.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-**Tácticas:**
-- Mantener una Web Application responsive que pueda utilizarse desde navegador y no dependa de hardware propietario para las funcionalidades del MVP.
-- Estructurar la información por estados e hitos del viaje para evitar que las familias dependan de conversaciones dispersas.
-- Priorizar funcionalidades de gestión de rutas, estudiantes, estados del traslado, retrasos e incidencias que aporten directamente a la coordinación entre los segmentos objetivo.
-- Diseñar el acceso a información de menores bajo criterios de autorización y privacidad definidos por el proyecto.
+#### Matriz CAME
 
-#### 2. Estrategia frente a canales informales (WhatsApp, llamadas y herramientas de navegación)
-
-**Contexto competitivo:** las herramientas de mensajería, llamadas y navegación son familiares y flexibles, pero son de propósito general. Por sí solas no estructuran el ciclo de un traslado escolar ni consolidan en un único registro las confirmaciones, retrasos, incidencias y estados del viaje.
-
-**Estrategia de Rumbo:** reducir la necesidad de coordinación manual repetitiva mediante información estructurada del traslado, sin intentar convertir Rumbo en un servicio de mensajería general.
-
-**Tácticas:**
-- Permitir registrar acciones del viaje mediante interacciones breves y únicamente cuando sea seguro realizarlas.
-- Mostrar a padres/tutores un estado actual y una línea de tiempo de eventos registrados.
-- Centralizar retrasos e incidencias para que la información relevante no dependa de mensajes individuales repetidos.
-- Mantener las notificaciones vinculadas a eventos registrados en Rumbo; las capacidades de proximidad mediante geofencing o ETA dinámico permanecen fuera del alcance actual.
+| Estrategia | Tácticas preliminares de Rumbo |
+|---|---|
+| **C — Corregir Debilidades** | Validar progresivamente el MVP con ambos segmentos objetivo para mejorar usabilidad y confianza. Mantener claramente delimitado el alcance actual y evaluar GPS continuo, ETA dinámico y geofencing únicamente como evolución posterior si la validación demuestra su necesidad. Reforzar onboarding, autorizaciones y manejo de información de menores para reducir barreras de adopción. |
+| **A — Afrontar Amenazas** | Diferenciarse de las soluciones especializadas mediante una experiencia más acotada a la coordinación directa entre conductor y familia. Frente a WhatsApp, llamadas y navegación, demostrar el valor de disponer de estados, hitos, retrasos e incidencias en un registro estructurado. Evitar competir mediante funcionalidades que todavía no están implementadas y sostener la propuesta sobre capacidades verificables del producto. |
+| **M — Mantener Fortalezas** | Conservar el enfoque en los dos segmentos definidos, la estructura cronológica de eventos del viaje y la centralización de información relevante. Mantener una experiencia responsive y consistente entre las vistas destinadas a conductores y padres/tutores. Preservar las reglas de autorización y privacidad previstas por el proyecto. |
+| **E — Explotar Oportunidades** | Orientar la adopción hacia casos donde la coordinación actual depende de mensajes o llamadas repetitivas. Posicionar a Rumbo como una alternativa estructurada para registrar y consultar el estado del traslado sin requerir una plataforma completa de administración de flotas. Priorizar en la experiencia las funcionalidades que cubren directamente los vacíos detectados: hitos del viaje, retrasos, incidencias, notificaciones y trazabilidad. |
 
 ## 2.2. Entrevistas
 
