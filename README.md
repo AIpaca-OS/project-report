@@ -397,7 +397,7 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
       <th colspan="2">Competidores / Startup</th>
       <th>
         <img src="assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
-        Rumbo
+        AIpaca / Rumbo
       </th>
       <th>
         <img src="https://raw.githubusercontent.com/Alvfercas/alvfercas.github.io/441e3fa71c296debad96e342a1206f8221cf335a/img/sb-logo.png" alt="Logo de SchoolBusTracker" width="110"/><br>
@@ -416,7 +416,7 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
     <tr>
       <th rowspan="2">Perfil</th>
       <th>Overview</th>
-      <td>Plataforma web responsive orientada a la coordinación del transporte escolar entre padres/tutores y conductores. El alcance actual prioriza estados e hitos del viaje, rutas, estudiantes, retrasos, incidencias y notificaciones.</td>
+      <td><strong>Rumbo</strong>, producto de la startup <strong>AIpaca</strong>, es una plataforma web responsive orientada a la coordinación del transporte escolar entre padres/tutores y conductores. El alcance actual prioriza estados e hitos del viaje, rutas, estudiantes, retrasos, incidencias y notificaciones.</td>
       <td>Suite especializada de transporte escolar dirigida principalmente a instituciones educativas. Incluye aplicaciones para padres y conductores y un panel administrativo para gestionar y supervisar el servicio.</td>
       <td>Plataforma de monitoreo y control de rutas escolares que conecta a colegios, padres de familia, coordinadores de transporte, monitores y conductores.</td>
       <td>Combinación de aplicaciones de mensajería, llamadas, navegación y ubicación que pueden utilizarse para coordinar el servicio, pero que no conforman por sí mismas un sistema especializado de transporte escolar.</td>
@@ -514,7 +514,7 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
 **Tácticas:**
 - Mantener una Web Application responsive que pueda utilizarse desde navegador y no dependa de hardware propietario para las funcionalidades del MVP.
 - Estructurar la información por estados e hitos del viaje para evitar que las familias dependan de conversaciones dispersas.
-- Implementar en Sprint 2 los CRUD y vistas frontend definidos para los Bounded Contexts seleccionados, utilizando JSON Server como fuente de datos simulada.
+- Priorizar funcionalidades de gestión de rutas, estudiantes, estados del traslado, retrasos e incidencias que aporten directamente a la coordinación entre los segmentos objetivo.
 - Diseñar el acceso a información de menores bajo criterios de autorización y privacidad definidos por el proyecto.
 
 #### 2. Estrategia frente a canales informales (WhatsApp, llamadas y herramientas de navegación)
