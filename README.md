@@ -987,7 +987,7 @@ El **Impact Mapping de Rumbo** fue elaborado en UXPressia a partir de los Busine
 El mapa relaciona los objetivos de negocio con los cambios de comportamiento esperados en cada persona, los entregables que pueden provocar dichos impactos y las User Stories que permiten implementarlos. Para padres/tutores, el enfoque se centra en reducir la necesidad de contactar al conductor, facilitar la consulta del estado del traslado y mantener notificaciones relevantes. Para conductores, se busca registrar los principales hitos del viaje, comunicar retrasos e incidencias de forma estructurada y organizar la operación diaria del servicio.
 
 <p align="center">
-  <img src="impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
+  <img src="assets/chapter03/impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
 </p>
 
 ## 3.3. Product Backlog
