@@ -2137,12 +2137,23 @@ Durante TB1 se integró además la mejora **`feat: add product showcase to landi
 
 #### Frontend Web Application
 
-La primera versión integrada del Frontend se encuentra en la rama `develop` del repositorio `AIpaca-OS/frontend-web-application`, con sus Bounded Contexts integrados y workflow de CI para verificar la compilación.
+La primera versión integrada del Frontend de TB1 fue consolidada desde `develop` hacia `main` en el repositorio `AIpaca-OS/frontend-web-application`. La aplicación se compila mediante GitHub Actions y se publica con GitHub Pages.
 
-Al cierre de esta corrección documental, el repositorio todavía mantiene `main` en una revisión anterior a la integración de TB1 y **no se ha verificado una URL pública de despliegue del Frontend**. Por ello este informe no declara un despliegue público inexistente. Antes de la entrega TB1 debe completarse `develop → main`, realizar el despliegue y sustituir esta nota por la URL pública y su evidencia.
+| Configuración | Valor |
+|---|---|
+| Repository | `AIpaca-OS/frontend-web-application` |
+| Branch publicada | `main` |
+| Framework | Angular 21.2 |
+| Deployment | GitHub Actions + GitHub Pages |
+| URL pública | https://aipaca-os.github.io/frontend-web-application/ |
 
-<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso del Frontend cuando exista. -->
-<!-- PENDIENTE IMAGEN C5-04: Captura del Frontend funcionando desde su URL pública, no localhost. -->
+El workflow de deployment ejecuta la instalación de dependencias, la compilación de Angular con el `base-href` correspondiente al repositorio y la publicación del artefacto generado en GitHub Pages.
+
+<!-- PENDIENTE IMAGEN C5-03: Captura de GitHub Actions mostrando build y deploy exitosos. -->
+
+<div align="center">
+  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada públicamente en GitHub Pages" width="95%">
+</div>
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2508,19 +2519,27 @@ La configuración actual del código todavía mantiene Alerting/Incident en `loc
 
 **Landing Page:** se encuentra publicada en GitHub Pages y fue actualizada para TB1.
 
-**Frontend Web Application:** el código de Sprint 2 fue integrado en `develop` y cuenta con verificación de compilación mediante GitHub Actions. Sin embargo, al cierre de esta actualización documental no existe una URL pública verificable del Frontend y `main` todavía no contiene la integración completa de TB1.
+**Frontend Web Application:** la versión integrada de Sprint 2 fue fusionada a `main` y desplegada públicamente mediante **GitHub Actions + GitHub Pages**.
 
-Por tanto, para cerrar este requisito de TB1 falta:
+| Elemento | Evidencia |
+|---|---|
+| Repository | `AIpaca-OS/frontend-web-application` |
+| Branch desplegada | `main` |
+| Build | Angular production build |
+| Hosting | GitHub Pages |
+| URL pública | https://aipaca-os.github.io/frontend-web-application/ |
+| Estado | Deploy completado correctamente |
 
-1. Integrar la revisión estable de `develop` hacia `main`.
-2. Configurar el hosting del Frontend.
-3. Resolver el consumo de recursos que aún apuntan a `localhost:3000`.
-4. Registrar la URL pública.
-5. Insertar capturas del deployment y de la aplicación pública.
+El workflow de deployment completó satisfactoriamente las etapas de **build** y **deploy**, publicando la aplicación bajo la ruta configurada para el repositorio.
 
-<!-- PENDIENTE IMAGEN C5-S2-13: GitHub Actions con build exitoso del Frontend. -->
-<!-- PENDIENTE IMAGEN C5-S2-14: Configuración del proveedor de deployment. -->
-<!-- PENDIENTE IMAGEN C5-S2-15: Frontend abierto desde URL pública. -->
+<!-- PENDIENTE IMAGEN C5-S2-13: GitHub Actions con build y deploy exitosos del Frontend. -->
+<!-- PENDIENTE IMAGEN C5-S2-14: Settings > Pages mostrando la URL pública. -->
+
+**Frontend publicado**
+
+<div align="center">
+  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada en GitHub Pages" width="95%">
+</div>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
