@@ -1402,35 +1402,79 @@ La prioridad del wireframe es que la vista principal responda rápidamente a dos
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-#### Wireflow — Padre/Tutor
+Los Wireflow Diagrams de Rumbo representan los principales recorridos de interacción de la Web Application a partir de los **User Goals** de los segmentos **Parent** y **Driver**. Cada flujo conecta estados de interfaz consecutivos para evidenciar cómo una persona avanza desde una vista inicial hasta completar una meta concreta.
 
-```mermaid
-flowchart LR
-    A[Sign In] --> B[Dashboard]
-    B --> C[Trip Detail]
-    C --> D[Trip Timeline]
-    B --> E[Notifications]
-    D --> C
-    E --> B
-```
+Los wireflows mantienen trazabilidad con los User Stories, la Information Architecture y los mock-ups definidos para la aplicación. Para evitar diagramas redundantes, se agrupan las acciones relacionadas bajo siete User Goals representativos del alcance funcional.
 
-El padre ingresa al Dashboard y desde allí puede revisar el estado actual, abrir el detalle del viaje, consultar el historial de eventos o revisar las notificaciones asociadas.
+#### User Goal 1 — Access parent dashboard
 
-#### Wireflow — Conductor
+**User Persona:** Parent  
+**User Goal:** Acceder al panel principal y visualizar la información del traslado escolar actual.  
+**Explicación del flujo:** El Parent selecciona su experiencia en la pantalla de acceso, ingresa sus credenciales y, después de autenticarse correctamente, accede al Panel principal con la información más reciente del viaje activo.
 
-```mermaid
-flowchart LR
-    A[Sign In] --> B[Assigned Route]
-    B --> C[Student List]
-    C --> D[Register Pickup or Drop-off]
-    B --> E[Report Delay]
-    B --> F[Report Incident]
-    D --> B
-    E --> B
-    F --> B
-```
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-access-parent.png" alt="Wireflow - Access parent dashboard" width="95%">
+</div>
 
-El conductor mantiene como punto central la ruta asignada. Las acciones de recojo, entrega, retraso e incidencia regresan al mismo panel para evitar navegación innecesaria durante la jornada.
+#### User Goal 2 — Consult current trip status
+
+**User Persona:** Parent  
+**User Goal:** Consultar el estado actual del traslado y revisar la secuencia de eventos del viaje.  
+**Explicación del flujo:** Desde el Panel principal, el Parent abre el detalle del viaje activo y puede profundizar en la línea de tiempo para comprender los eventos registrados durante el recorrido.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-consult-trip.png" alt="Wireflow - Consult current trip status" width="95%">
+</div>
+
+#### User Goal 3 — Review important notifications
+
+**User Persona:** Parent  
+**User Goal:** Revisar avisos relevantes asociados al traslado escolar.  
+**Explicación del flujo:** El Parent accede desde el Panel principal al centro de notificaciones, revisa las actualizaciones recientes y abre el detalle de un aviso relevante para conocer su contexto y estado.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-review-notifications.png" alt="Wireflow - Review important notifications" width="95%">
+</div>
+
+#### User Goal 4 — Start and execute a route
+
+**User Persona:** Driver  
+**User Goal:** Iniciar la ruta asignada y continuar con la ejecución del recorrido.  
+**Explicación del flujo:** El Driver abre su ruta asignada, inicia el recorrido y accede a la lista de estudiantes para continuar registrando los hitos operativos de recojo y entrega.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-start-route.png" alt="Wireflow - Start and execute a route" width="95%">
+</div>
+
+#### User Goal 5 — Configure route and stops
+
+**User Persona:** Driver  
+**User Goal:** Configurar la ruta, el orden de las paradas y las vinculaciones necesarias para el servicio.  
+**Explicación del flujo:** El Driver parte de la ruta asignada, ingresa a la configuración, ajusta el orden de paradas y guarda los cambios para que la planificación quede disponible en los siguientes recorridos.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-configure-route.png" alt="Wireflow - Configure route and stops" width="95%">
+</div>
+
+#### User Goal 6 — Monitor operational notifications
+
+**User Persona:** Driver  
+**User Goal:** Revisar notificaciones operativas relacionadas con la ruta.  
+**Explicación del flujo:** Desde la ruta asignada, el Driver accede al centro de notificaciones, consulta las actualizaciones recientes y marca los avisos revisados para mantener control sobre los eventos informados.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-monitor-notifications.png" alt="Wireflow - Monitor operational notifications" width="95%">
+</div>
+
+#### User Goal 7 — Manage account and billing
+
+**User Persona:** Driver  
+**User Goal:** Consultar la configuración de la cuenta y el estado de la suscripción.  
+**Explicación del flujo:** El Driver accede a Configuración para revisar su información de perfil y vehículo y, desde las opciones de cuenta, consulta el resumen de Plan y facturación correspondiente al servicio.
+
+<div align="center">
+  <img src="./assets/chapter04/wireflows/wireflow-manage-account.png" alt="Wireflow - Manage account and billing" width="95%">
+</div>
 
 ### 4.4.3. Web Applications Mock-ups
 
