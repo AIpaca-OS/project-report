@@ -1881,52 +1881,79 @@ Este diagrama representa la gestión del plan y de la suscripción del Driver de
 
 ## 4.7. Software Object-Oriented Design
 
+Esta sección presenta el diseño orientado a objetos de **Rumbo** a partir de los Bounded Contexts refinados en la sección 4.6. El objetivo es describir con mayor detalle las clases principales, sus atributos y operaciones, así como las relaciones y multiplicidades que permiten representar las responsabilidades de cada parte del dominio.
+
+Los diagramas UML se organizan según los **ocho Bounded Contexts** definidos para la arquitectura objetivo. Cuando una clase perteneciente a otro contexto aparece dentro de un diagrama, se utiliza únicamente como **referencia para expresar una asociación** y no implica que el contexto que la consume sea propietario de dicha entidad.
+
 ### 4.7.1. Class Diagrams
 
-Los Class Diagrams se presentan por **Bounded Context** para mantener la separación definida en el Design-Level Event Storming. Los diagramas incluyen clases, interfaces, enumeraciones, atributos, métodos, visibilidad, relaciones y multiplicidades, de acuerdo con el nivel de detalle solicitado para el diseño orientado a objetos.
+Los Class Diagrams incluyen clases y enumeraciones relevantes, atributos, métodos, visibilidad, asociaciones y multiplicidades. Esta separación mantiene trazabilidad con el Design-Level Event Storming y con los Component Diagrams de la sección 4.6.4.
 
-Para mantener coherencia entre arquitectura y código, cada entidad debe tener un **Bounded Context propietario**. Cuando otro contexto necesite utilizar información externa, debe hacerlo mediante una referencia o modelo de lectura y no duplicando la administración de la misma entidad. Esta regla será utilizada también para separar los módulos del Frontend Web Application.
+#### Identity & Access Management
 
-#### Profiles and Verification
+El diagrama modela las responsabilidades relacionadas con cuentas, sesiones, tokens, recuperación de acceso, roles y permisos. De esta forma, la autenticación y autorización permanecen separadas de los datos operativos de perfiles, rutas y viajes.
 
-Este diagrama concentra las clases responsables de la información declarada de **padres/tutores, conductores, estudiantes, vehículos, documentos y vínculos autorizados**. Este Bounded Context es propietario de esos perfiles y de sus relaciones directas. Otros contextos pueden utilizar sus identificadores como referencia, pero no deben duplicar la responsabilidad de administrar la información completa del estudiante, conductor o vehículo.
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-iam.png" alt="Identity and Access Management Class Diagram" width="95%">
+</div>
 
-<img width="1360" height="969" alt="profiles-diagram" src="https://github.com/user-attachments/assets/67f6e598-c25e-450b-8523-0df4101e19ae" />
+#### Profiles & Relationship Management
 
-#### Identity and Access Management (IAM)
+Este contexto representa los perfiles utilizados por Rumbo y las relaciones de autorización vinculadas al estudiante. Su responsabilidad principal es mantener la información de Parent, Driver y Student y determinar qué relaciones permiten consultar la información del estudiante. Las referencias a credenciales o vehículos se interpretan como vínculos hacia sus contextos propietarios.
 
-Este diagrama agrupa las clases asociadas a **cuentas de usuario, credenciales, roles, permisos, sesiones y recuperación de acceso**. Su responsabilidad es decidir quién puede autenticarse y qué acciones puede realizar según su rol. Se mantiene separado de Profiles and Verification para evitar mezclar identidad de acceso con los datos operativos de los perfiles. Para Sprint 2 este contexto no se implementa como backend; permanece como parte del diseño para los Sprints posteriores.
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Class Diagram" width="95%">
+</div>
 
-<img width="1872" height="853" alt="iam-diagram" src="https://github.com/user-attachments/assets/a98b37ca-a122-4dfc-81ad-353b91e1ed33" />
+#### Vehicle & Credential Management
 
+El diagrama representa la información del vehículo y los registros asociados a su operación y documentación. Este contexto concentra la responsabilidad de los datos del vehículo y de las credenciales declaradas por el Driver, evitando que Route & Trip Planning administre directamente dicha información.
 
-#### Route and Trip Planning
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Class Diagram" width="95%">
+</div>
 
-Este diagrama describe las clases que permiten **configurar rutas, paradas, horarios, asignaciones de estudiantes, programación de jornadas y ausencias**. El contexto administra la planificación previa al recorrido. Cuando requiere información de un estudiante o vehículo utiliza su identificador como referencia, mientras que la información completa continúa perteneciendo a Profiles and Verification.
+#### Route & Trip Planning
 
-<img width="2363" height="866" alt="routing-diagram" src="https://github.com/user-attachments/assets/77311cab-5a0d-41ab-802b-6dd7d6159ac8" />
+Este contexto modela rutas, paradas, horarios y asignaciones necesarias antes de iniciar un traslado. Las asociaciones con Student y Driver permiten expresar qué participantes intervienen en la planificación, mientras que sus perfiles completos continúan perteneciendo a sus respectivos Bounded Contexts.
 
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-route-trip-planning.png" alt="Route and Trip Planning Class Diagram" width="95%">
+</div>
 
-#### Real-Time Tracking and Execution
+#### Trip Execution & Monitoring
 
-Este diagrama concentra las clases que representan la **ejecución de un viaje**, sus estudiantes participantes, hitos, recojos, entregas, verificaciones y cambios de estado. Su responsabilidad comienza cuando existe un viaje que debe ejecutarse; no redefine la ruta ni el perfil del estudiante. Para el alcance actual, el seguimiento se basa en eventos y estados registrados; GPS continuo, ETA y geofencing permanecen fuera del Sprint 2.
+El diagrama describe el viaje en ejecución y los registros que permiten conocer su evolución: eventos, hitos, recojos, entregas y línea de tiempo. La arquitectura de Rumbo prioriza el seguimiento mediante estados y eventos del recorrido; cualquier dato de ubicación representado se considera complementario y no modifica la separación de responsabilidades definida para el dominio.
 
-<img width="1636" height="991" alt="tracking-diagram" src="https://github.com/user-attachments/assets/75c02b89-282b-4cbe-8863-71d853d06ea1" />
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-trip-execution.png" alt="Trip Execution and Monitoring Class Diagram" width="95%">
+</div>
 
+#### Incident & Delay Management
 
-#### Alerting and Incident Management
+Este contexto concentra el registro y seguimiento de retrasos e incidencias vinculados a un viaje. Las clases relacionadas con evidencias, notas o elementos afectados permiten conservar el contexto del evento y su evolución hasta su resolución sin mezclar esta responsabilidad con la distribución de notificaciones.
 
-Este diagrama agrupa las clases relacionadas con **retrasos, incidencias, notificaciones, destinatarios y preferencias de aviso**. El contexto recibe referencias a viajes o usuarios afectados, pero mantiene bajo su responsabilidad el ciclo de vida de la incidencia y la comunicación generada a partir de ella. Esto evita mezclar la lógica de ejecución del viaje con la lógica de comunicación y alertas.
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-incident-delay.png" alt="Incident and Delay Management Class Diagram" width="95%">
+</div>
 
-<img width="2623" height="704" alt="alerting-diagram" src="https://github.com/user-attachments/assets/787439f2-e0c7-479e-978f-457677c9febb" />
+#### Notification Management
 
+El diagrama representa la creación y entrega de avisos, las preferencias del usuario y los canales utilizados para distribuirlos. Los eventos de retraso, incidencia, recojo o entrega funcionan como información de entrada, mientras que este contexto se responsabiliza únicamente de convertirlos en comunicaciones hacia los destinatarios correspondientes.
 
-#### Subscriptions and Billing
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-notification.png" alt="Notification Management Class Diagram" width="95%">
+</div>
 
-Este diagrama representa las clases de **planes, suscripciones, pagos y comprobantes**, así como los estados asociados a activación, renovación, pausa, cancelación o reactivación. El contexto administra el ciclo comercial del servicio y se mantiene separado de IAM: una cuenta puede existir independientemente del estado comercial, mientras que la suscripción determina las capacidades habilitadas por el plan.
+#### Subscriptions & Billing
 
-<img width="1378" height="922" alt="billing-diagram" src="https://github.com/user-attachments/assets/d6818143-09c1-4bbf-b001-2b2df9247f6e" />
+Este contexto representa la relación entre el Driver, el plan y el estado de su suscripción. Los elementos comerciales incluidos en el modelo se consideran parte de la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción definida en los requisitos.
 
+<div align="center">
+  <img src="./assets/chapter04/class-diagrams/class-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Class Diagram" width="95%">
+</div>
+
+En conjunto, los ocho Class Diagrams mantienen la separación establecida en el diseño de dominio y sirven como referencia para los Database Diagrams de la siguiente sección. El modelado se utiliza como diseño de la arquitectura objetivo y no implica que todos los componentes de backend se encuentren implementados durante Sprint 2.
 
 ## 4.8. Database Design
 
