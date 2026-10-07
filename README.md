@@ -1750,27 +1750,87 @@ El tablero editable contiene actualmente los **seis Bounded Contexts** documenta
 
 ### 4.6.2. Software Architecture Context Diagram
 
-Este diagrama muestra la **arquitectura objetivo** de Rumbo, posicionando la plataforma en el centro y detallando sus interacciones previstas con los usuarios y servicios externos. Las dependencias externas y capacidades de back-end representadas se incorporarán progresivamente en los Sprints posteriores y no implican que estén implementadas en Sprint 2.
+El **Software Architecture Context Diagram** presenta a Rumbo como un único sistema de software y resume sus relaciones principales con las personas y servicios externos que participan en la solución. Esta vista permite comprender el límite general de la plataforma antes de detallar sus unidades de despliegue e implementación.
 
-<img width="775" height="501" alt="Diagrama-Contextos" src="https://github.com/user-attachments/assets/1fa0067c-5228-433b-9755-bacebecd81f8" />
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-system-context.png" alt="Rumbo - Software Architecture Context Diagram" width="95%">
+</div>
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-Este diagrama expone la **arquitectura objetivo** física y de despliegue. Divide el sistema en la Landing Page, la aplicación cliente (SPA en Angular) y la lógica de negocio prevista mediante API en Spring Boot. En Sprint 2 únicamente se implementa el Frontend Web Application con Angular y JSON Server; la API en Spring Boot corresponde al Sprint 3.
+El **Container Diagram** describe la arquitectura objetivo de Rumbo a nivel de unidades de despliegue. Se distinguen el Landing Page, la Web Application desarrollada con Angular, el RESTful API previsto en Spring Boot y la capa de persistencia, además de las dependencias externas requeridas por la solución. Para Sprint 2, el Frontend Web Application trabaja con Angular y una fuente de datos simulada; la integración completa con el backend corresponde a los siguientes Sprints.
 
-<img width="1069" height="1171" alt="Contenedores-Diagrama" src="https://github.com/user-attachments/assets/022fc782-e64d-481b-a732-9f64e2dcd7a4" />
-
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-container.png" alt="Rumbo - Software Architecture Container Diagram" width="95%">
+</div>
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-Este diagrama representa la **arquitectura objetivo** del contenedor backend (API Application) para los siguientes Sprints. Muestra la estructura prevista en Spring Boot, detallando controladores, servicios, repositorios y seguridad. Estas capacidades no forman parte del Sprint 2, cuyo alcance se limita al Frontend Web Application con Angular y JSON Server.
+Los **Component Diagrams** descomponen el contenedor de aplicación en componentes asociados a los Bounded Contexts identificados para Rumbo. Cada diagrama muestra responsabilidades, servicios, controladores, repositorios y dependencias necesarias para mantener separadas las capacidades del dominio.
 
-<img width="697" height="812" alt="component-diagram-1" src="https://github.com/user-attachments/assets/1d7ca398-5c9f-46e8-b3b9-39fe16430330" />
+#### Identity & Access Management
 
-Este diagrama representa la **arquitectura objetivo** de la Single Page Application (SPA) en Angular. La separación por componentes y servicios se conserva desde Sprint 2; las capacidades que dependan de AuthGuard, WebSockets o de la RESTful API se incorporarán cuando el backend esté disponible en los Sprints posteriores.
+Este diagrama representa los componentes responsables de cuentas, autenticación, autorización y recuperación de acceso. El contexto mantiene separadas las responsabilidades de identidad respecto de perfiles, vehículos y operaciones del servicio.
 
-<img width="711" height="799" alt="component-diagram-2" src="https://github.com/user-attachments/assets/04eeb9b7-6dc2-4f13-9553-063b4cec2099" />
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-iam.png" alt="Identity and Access Management Component Diagram" width="95%">
+</div>
 
+#### Profiles & Relationship Management
+
+Este contexto concentra la gestión de perfiles de Parent, Driver y Student, junto con las relaciones de autorización que determinan quién puede consultar la información de cada estudiante.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-profiles.png" alt="Profiles and Relationship Management Component Diagram" width="95%">
+</div>
+
+#### Vehicle & Credential Management
+
+El diagrama separa el registro y mantenimiento del vehículo de la gestión de credenciales declaradas por el Driver. Los componentes permiten conservar la información del vehículo y el estado de los documentos asociados sin mezclarla con la planificación de rutas.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-vehicle.png" alt="Vehicle and Credential Management Component Diagram" width="95%">
+</div>
+
+#### Route & Trip Planning
+
+Este diagrama representa los componentes encargados de rutas, paradas, secuencia de recorrido, asignaciones de estudiantes y planificación de viajes. El contexto prepara la información que posteriormente utiliza la ejecución del traslado.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-route-planning.png" alt="Route and Trip Planning Component Diagram" width="95%">
+</div>
+
+#### Trip Execution & Monitoring
+
+El contexto de ejecución coordina el inicio y desarrollo de un viaje, los eventos operativos y los estados de recojo y entrega. La información registrada alimenta la vista del viaje y su línea de tiempo.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-trip.png" alt="Trip Execution and Monitoring Component Diagram" width="95%">
+</div>
+
+#### Incident & Delay Management
+
+Este diagrama concentra el registro y actualización de retrasos e incidencias ocurridos durante el servicio. Sus componentes mantienen el estado de cada evento y permiten comunicar los cambios relevantes al contexto de notificaciones.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-incident.png" alt="Incident and Delay Management Component Diagram" width="95%">
+</div>
+
+#### Notification Management
+
+El contexto de notificaciones administra la generación, persistencia, preferencias y distribución de avisos relacionados con eventos relevantes del traslado. Se mantiene separado de Incident & Delay Management para evitar mezclar el evento de negocio con su mecanismo de comunicación.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-notifications.png" alt="Notification Management Component Diagram" width="95%">
+</div>
+
+#### Subscriptions & Billing
+
+Este diagrama representa la gestión del plan y de la suscripción del Driver dentro de la arquitectura objetivo. El contexto encapsula la información comercial para que no interfiera con las responsabilidades operativas de rutas y viajes.
+
+<div align="center">
+  <img src="./assets/chapter04/software-architecture/diagram-subscription.png" alt="Subscriptions and Billing Component Diagram" width="95%">
+</div>
 
 ## 4.7. Software Object-Oriented Design
 
