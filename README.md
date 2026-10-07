@@ -1691,7 +1691,7 @@ El prototipo de la Web Application de **Rumbo** integra los principales mock-ups
 
 El **Design-Level Event Storming** de Rumbo refina el Big Picture Event Storming desarrollado previamente y organiza el dominio con mayor nivel de detalle. En esta etapa se identifican **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**, manteniendo trazabilidad con los User Stories y con el Ubiquitous Language del proyecto.
 
-El artefacto colaborativo de **Design-Level Event Storming** se mantiene en **Miro**, donde el equipo organiza visualmente los elementos del dominio y su relación por Bounded Context. Como respaldo dentro del Project Report se incorporan exportaciones de los contextos trabajados y, adicionalmente, un diagrama Mermaid consolidado para conservar una representación legible y versionable en Markdown. El refinamiento mantiene los **ocho Bounded Contexts** definidos en el Capítulo II como alcance objetivo del producto.
+El artefacto colaborativo de **Design-Level Event Storming** se mantiene en **Miro**, donde el equipo organiza visualmente los elementos del dominio y su relación por Bounded Context. Como respaldo dentro del Project Report se incorporan las exportaciones de los **ocho Bounded Contexts** definidos para Rumbo.
 
 **Miro — Design-Level Event Storming:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
 
@@ -1707,10 +1707,6 @@ El artefacto colaborativo de **Design-Level Event Storming** se mantiene en **Mi
 | **Subscriptions & Billing** | Gestionar la activación y el estado de la suscripción del Driver y la información del plan asociada. |
 
 #### Evidencia visual del Design-Level Event Storming
-
-El tablero colaborativo de **Design-Level Event Storming** se mantiene en Miro y constituye la evidencia principal del refinamiento del dominio por Bounded Context.
-
-**Miro — Design-Level Event Storming:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
 
 A continuación se presentan las exportaciones visuales correspondientes a los **ocho Bounded Contexts** definidos para Rumbo.
 
