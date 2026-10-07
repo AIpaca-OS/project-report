@@ -1478,86 +1478,118 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 
 ### 4.4.3. Web Applications Mock-ups
 
+Los mock-ups de la Web Application de **Rumbo** aplican el Design System definido previamente y muestran cómo se materializan las principales funcionalidades para los segmentos **Parent** y **Driver**. Las vistas mantienen una estructura consistente de navegación lateral, tarjetas, estados, acciones principales, tipografía y paleta visual. A continuación se presenta cada pantalla junto con una breve descripción de su propósito dentro de la experiencia.
+
+#### Sign In
+
+La pantalla de inicio de sesión funciona como punto de acceso común a la Web Application. Permite seleccionar la experiencia correspondiente, ingresar las credenciales y acceder a las funcionalidades asociadas al rol del usuario.
+
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/inicio-sesion.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/inicio-sesion.png" alt="Mock-up - Sign In" width="750">
 </div>
 
-<br>
+#### Driver — Assigned Route
+
+La vista **Ruta asignada** concentra la información operativa principal del Driver. Presenta el estado del recorrido, los estudiantes asociados y accesos rápidos para reportar retrasos, incidencias o continuar con las acciones de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/ruta-asignada.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/ruta-asignada.png" alt="Mock-up - Driver Assigned Route" width="750">
 </div>
 
-<br>
+#### Driver — Student List
+
+La **Lista de estudiantes** permite al Driver revisar los estudiantes asociados a la ruta y registrar acciones breves como confirmar recojo o entrega. Los estados visuales permiten distinguir rápidamente estudiantes recogidos, pendientes o ausentes.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/lista-estudiantes.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/lista-estudiantes.png" alt="Mock-up - Driver Student List" width="750">
 </div>
 
-<br>
+#### Driver — Route Configuration
+
+La pantalla **Configurar ruta** permite administrar el orden de las paradas y las vinculaciones relacionadas con el servicio. La organización en bloques mantiene separadas las tareas de planificación de las acciones propias de la ejecución del viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configurar-ruta.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/configurar-ruta.png" alt="Mock-up - Driver Route Configuration" width="750">
 </div>
 
-<br>
+#### Driver — Notifications
+
+El centro de **Notificaciones** reúne los principales eventos operativos asociados a la ruta. La vista prioriza retrasos, confirmaciones y actualizaciones recientes para que el Driver pueda revisar información relevante sin depender de mensajes dispersos.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png" alt="Mock-up - Driver Notifications" width="750">
 </div>
 
-<br>
+#### Driver — Plan and Billing
+
+La vista **Plan y facturación** presenta el estado de la suscripción, el periodo actual, los comprobantes disponibles y las acciones relacionadas con la gestión del plan. Esta pantalla concentra la información comercial sin mezclarla con las tareas operativas de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/facturacion.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/facturacion.png" alt="Mock-up - Driver Plan and Billing" width="750">
 </div>
 
-<br>
+#### Driver — Settings
+
+La sección **Configuración** permite al Driver revisar su información personal, los datos del vehículo y las preferencias de idioma. La vista utiliza la misma jerarquía de tarjetas que el resto de la aplicación para mantener consistencia visual.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configuracion-conductor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/configuracion-conductor.png" alt="Mock-up - Driver Settings" width="750">
 </div>
 
-<br>
+#### Parent — Dashboard
+
+El **Panel principal** del Parent resume la información más reciente del traslado escolar. Presenta el estado del viaje activo, los últimos eventos registrados, el Driver asociado y accesos directos al detalle del viaje y a las notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/panel-tutor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/panel-tutor.png" alt="Mock-up - Parent Dashboard" width="750">
 </div>
 
-<br>
+#### Parent — Current Trip
+
+La vista **Viaje actual** amplía el estado del recorrido y organiza los principales eventos en una línea de tiempo. Su objetivo es permitir que el Parent comprenda rápidamente qué ha ocurrido durante el viaje y cuál es el estado registrado más reciente.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/viaje-actual.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/viaje-actual.png" alt="Mock-up - Parent Current Trip" width="750">
 </div>
 
-<br>
+#### Parent — Trip History
+
+El **Historial de viajes** permite consultar recorridos anteriores y revisar información resumida como fecha, conductor, número de eventos y estado del viaje. La presentación tabular facilita comparar registros sin sobrecargar la vista principal.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/historial-viajes.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/historial-viajes.png" alt="Mock-up - Parent Trip History" width="750">
 </div>
 
-<br>
+#### Parent — Notifications
+
+La sección **Notificaciones** centraliza los avisos relacionados con el traslado del estudiante. Los eventos recientes se presentan de forma cronológica y con indicadores visuales para diferenciar confirmaciones, retrasos y actualizaciones operativas.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/notificaciones-tutor.png" alt="Mock-up - Parent Notifications" width="750">
 </div>
 
-<br>
+#### Parent — Student Profile
+
+El **Perfil del estudiante** presenta los datos principales del estudiante y la información necesaria para comprender su asociación con el servicio. La vista también permite acceder a información complementaria relacionada con el traslado.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/perfil-estudiante.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/perfil-estudiante.png" alt="Mock-up - Parent Student Profile" width="750">
 </div>
 
-<br>
+#### Parent — Driver and Vehicle Documents
+
+La vista **Documentos del conductor y vehículo** permite al Parent consultar la información declarada del servicio, como licencia, registro del vehículo y seguro. Esta información se presenta como referencia dentro de la experiencia y evita mezclar documentos con el seguimiento operativo del viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/documentos-conductor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/documentos-conductor.png" alt="Mock-up - Driver and Vehicle Documents" width="750">
 </div>
 
-<br>
+#### Parent — Settings
+
+La sección **Configuración** del Parent reúne preferencias de notificaciones e información de la cuenta. Los controles permiten activar o desactivar avisos sin alterar el resto de la experiencia y mantienen visible la configuración de idioma del producto.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configuracion-tutor.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/configuracion-tutor.png" alt="Mock-up - Parent Settings" width="750">
 </div>
 
 ### 4.4.4. Web Applications User Flow Diagrams
