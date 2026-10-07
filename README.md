@@ -2,7 +2,7 @@
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-![Logo UPC](./assets/upc-logo.png)
+![Logo UPC](https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/upc-logo.png)
 
 ### Ingeniería de Software
 
@@ -76,7 +76,7 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 La siguiente evidencia corresponde al resumen de actividad disponible en GitHub Pulse para el Project Report.
 
 <div align="center">
-  <img src="./assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
 </div>
 
 **Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
@@ -87,12 +87,12 @@ La siguiente evidencia corresponde al resumen de actividad disponible en GitHub 
 Las siguientes capturas corresponden al Network Graph y permiten revisar visualmente la evolución e integración de las ramas del trabajo colaborativo.
 
 <div align="center">
-  <img src="./assets/chapter5/network-1.png" alt="Team Collaboration Network - Evidence 1" width="95%"><br><br>
-  <img src="./assets/chapter5/network-2.png" alt="Team Collaboration Network - Evidence 2" width="95%"><br><br>
-  <img src="./assets/chapter5/network-3.png" alt="Team Collaboration Network - Evidence 3" width="95%"><br><br>
-  <img src="./assets/chapter5/network-4.png" alt="Team Collaboration Network - Evidence 4" width="95%"><br><br>
-  <img src="./assets/chapter5/network-5.png" alt="Team Collaboration Network - Evidence 5" width="95%"><br><br>
-  <img src="./assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-1.png" alt="Team Collaboration Network - Evidence 1" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-2.png" alt="Team Collaboration Network - Evidence 2" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-3.png" alt="Team Collaboration Network - Evidence 3" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-4.png" alt="Team Collaboration Network - Evidence 4" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-5.png" alt="Team Collaboration Network - Evidence 5" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
 </div>
 
 **Branches:** https://github.com/AIpaca-OS/project-report/branches  
@@ -175,10 +175,10 @@ La solución se plantea inicialmente para Lima y Callao. No reemplaza las obliga
     <tr><th>Foto</th><th>Apellidos y nombres</th><th>Código</th><th>Carrera</th><th>Habilidades</th></tr>
   </thead>
   <tbody>
-    <tr><td align="center"><img src="./assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="220"></td><td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++, así como experiencia en prototipado rápido con React Native, lo que me permite aportar en el desarrollo técnico del proyecto, especialmente en la lógica del sistema, la estructuración del código y el procesamiento de datos. También agregar que he trabajado en entornos colaborativos bajo marcos de trabajo ágiles, gestionando proyectos y equipos con Scrum para asegurar entregas eficientes y de calidad.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="220"></td><td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++, así como experiencia en prototipado rápido con React Native, lo que me permite aportar en el desarrollo técnico del proyecto, especialmente en la lógica del sistema, la estructuración del código y el procesamiento de datos. También agregar que he trabajado en entornos colaborativos bajo marcos de trabajo ágiles, gestionando proyectos y equipos con Scrum para asegurar entregas eficientes y de calidad.</td></tr>
     <tr><td align="center"><img src="https://github.com/user-attachments/assets/8be17c32-7b22-466c-a91e-daf42a5b31ea" alt="Kevin Joel Geronimo Puma" width="220"></td><td>Geronimo Puma, Kevin Joel</td><td>U202423163</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++. Mi perfil me permite aportar en el desarrollo técnico del proyecto, destacando por mi facilidad para la arquitectura de software y el diseño de bases de datos, además de la lógica del sistema, la estructuración del código y el procesamiento de datos. Asimismo, tengo experiencia trabajando en entornos colaborativos bajo marcos de trabajo ágiles, asegurando siempre entregas eficientes y de calidad.</td></tr>
-    <tr><td align="center"><img src="./assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="220"></td><td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 5.º ciclo en la UPC. Tengo conocimientos en programación en C++ y Python, y experiencia desarrollando proyectos académicos donde analizo y organizo soluciones tecnológicas. Me gusta enfocarme en aprender de forma práctica y en construir soluciones que sean claras, funcionales y aplicadas a problemas reales.</td></tr>
-    <tr><td align="center"><img src="./assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="220"></td><td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 6.º ciclo en la UPC. Cuento con conocimientos en el desarrollo de sistemas utilizando los lenguajes Python y C++. Me caracterizo por aprendizaje rápido, criterio para filtrar información relevante y trabajo colaborativo. En el equipo aporto investigación aplicada y prototipos técnicos que conectan los hallazgos con funcionalidades del producto.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="220"></td><td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 5.º ciclo en la UPC. Tengo conocimientos en programación en C++ y Python, y experiencia desarrollando proyectos académicos donde analizo y organizo soluciones tecnológicas. Me gusta enfocarme en aprender de forma práctica y en construir soluciones que sean claras, funcionales y aplicadas a problemas reales.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="220"></td><td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 6.º ciclo en la UPC. Cuento con conocimientos en el desarrollo de sistemas utilizando los lenguajes Python y C++. Me caracterizo por aprendizaje rápido, criterio para filtrar información relevante y trabajo colaborativo. En el equipo aporto investigación aplicada y prototipos técnicos que conectan los hallazgos con funcionalidades del producto.</td></tr>
     <tr><td align="center"><img src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" alt="Diana Pareja Caceres" width="220"></td><td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software en la UPC. He trabajado en análisis competitivo, elaboración de User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Estos conocimientos me permiten aportar al equipo en la documentación, el análisis del producto y la estructuración de artefactos de diseño y arquitectura.</td></tr>
   </tbody>
 </table>
@@ -353,7 +353,7 @@ Creemos que lograremos que al menos el 60 % de los conductores del piloto contin
 
 El **Lean UX Canvas** sintetiza el problema de negocio, los segmentos objetivo, las soluciones preliminares, los resultados esperados y los principales aprendizajes que AIpaca necesita validar con Rumbo antes de ampliar el alcance del producto.
 
-<p align="center"><img src="assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
 
 ## 1.3. Segmentos objetivo
 
@@ -417,20 +417,20 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
     <tr>
       <th colspan="2">Competidores / Startup</th>
       <th>
-        <img src="assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
         AIpaca / Rumbo
       </th>
       <th>
-        <img src="assets/chapter02/bustracker.png" alt="Logo de SchoolBusTracker" width="110"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/bustracker.png" alt="Logo de SchoolBusTracker" width="110"/><br>
         SchoolBusTracker
       </th>
       <th>
-        <img src="assets/chapter02/busschool.png" alt="Logo de Bus esCool" width="100"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/busschool.png" alt="Logo de Bus esCool" width="100"/><br>
         Bus esCool
       </th>
       <th>
-        <img src="assets/chapter02/whatsapp.png" alt="Logo de WhatsApp" width="105"/><br>
-        <img src="assets/chapter02/waze.png" alt="Logo de Waze" width="105"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/whatsapp.png" alt="Logo de WhatsApp" width="105"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/waze.png" alt="Logo de Waze" width="105"/><br>
         Canales informales (WhatsApp + Waze)
       </th>
     </tr>
@@ -680,7 +680,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
 
-<p align="center"><img src="assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
 
 **Resumen:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Utiliza diariamente su teléfono para trabajar y principalmente usa WhatsApp para comunicarse con las familias y Google Maps para organizar sus rutas. Comenta que uno de los problemas que presenta es tener la información fragmentada en distintos chats, lo que hace poco práctico buscar entre conversaciones para verificar si un estudiante será recogido o consultar la dirección de un punto de llegada alternativo. Además, menciona que es repetitivo responder diariamente las preguntas de los padres sobre cuánto falta para que llegue su hijo, si la movilidad se encuentra cerca o si el estudiante se encuentra bien, ya que esto puede distraerlo mientras conduce. También considera que, en caso de utilizar una aplicación, esta debería ser fácil y rápida de utilizar para no quitarle tiempo durante la conducción. Entre las funcionalidades que considera útiles se encuentran una lista de alumnos, el orden de recojo y la posibilidad de registrar rápidamente cuándo recoge o entrega a un estudiante. Asimismo, le gustaría que los padres puedan visualizar el estado de la ruta y su ubicación para mantenerse informados sin necesidad de comunicarse constantemente con él.
 
@@ -694,7 +694,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m).
 
-<p align="center"><img src="assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
 
 **Resumen:** Brayan cuenta con 5 años de experiencia en el rubro. Comenzó trabajando en transporte personal, pero luego se trasladó al rubro del transporte escolar. Utiliza un grupo de WhatsApp para enviar avisos a los padres; sin embargo, los tutores prefieren escribirle por privado. Además, utiliza Waze para evitar el tráfico y el calendario de su teléfono para recordar horarios especiales. Ha tenido problemas para recordar cambios en las rutas debido a modificaciones en el recojo de un alumno, especialmente porque varios padres le escriben. Diariamente, los padres también le preguntan si ya se encuentra cerca o si los niños ya llegaron a la escuela, lo cual considera repetitivo. Comenta que durante la conducción no utilizaría una aplicación. Sin embargo, le sería útil contar con un registro del inicio del recorrido, la hora de recojo de cada alumno y la hora de llegada a la escuela. También considera útil registrar cuando un alumno no será recogido. En general, considera que una aplicación debería ayudarlo a organizar los cambios y permitir que los padres puedan seguir la ruta sin necesidad de preguntarle constantemente. No utilizaría una aplicación que lo obligue a realizar muchas acciones manualmente o que tenga un costo muy elevado. Como característica adicional, le gustaría que pudiera utilizarse en zonas donde existe poca señal.
 
@@ -708,7 +708,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:06.
 - **Video:** [Conductor 3.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b451_upc_edu_pe/IQAarNiMmGEZT73ZVhSkpNMNAVFqyptTBINEQvTJU6AW7BY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=asjxgo).
 
-<p align="center"><img src="assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
 
 **Resumen:** Vilma cuenta con 25 años de experiencia en el rubro de la movilidad escolar. Empezó llevando a estudiantes del colegio San Toribio, en el Rímac, hace 10 años y actualmente está a cargo de 26 niños en San Miguel, a quienes lleva a los colegios Claretiano y Los Rosales. La señora Vilma cuenta con un ayudante, quien utiliza la aplicación WhatsApp para comunicarse con las familias, coordinar horarios, llamar para avisar que deben bajar, informar si el niño asistirá, si necesita esperar y compartir su ubicación en tiempo real. Ha presentado problemas con la puntualidad de los niños y con la coordinación con los padres respecto a si los niños serán recogidos o no. Comenta que tiene conocimientos casi nulos en tecnología. Los padres le han recomendado utilizar algunas aplicaciones para poder realizar un mejor seguimiento del recorrido de sus hijos, pero menciona que no sabe cómo utilizarlas y, por ese motivo, no las implementa.
 
@@ -843,7 +843,7 @@ El journey de los padres de familia durante las mañanas inicia con la preparaci
 
 El recorrido diario del conductor comienza antes del viaje, cuando revisa mensajes de WhatsApp para confirmar asistencias, cambios de horario y puntos de recojo. Durante el trayecto de ida aumenta la tensión, porque las consultas sobre demoras o ubicación llegan mientras debe mantener la atención en la conducción. Al finalizar la ida y preparar el retorno, revisa nuevamente conversaciones fragmentadas para identificar cambios y ausencias. En el colegio verifica a los estudiantes que retornarán y atiende posibles modificaciones de último momento. Durante el viaje de regreso repite el proceso de entrega mientras necesita conservar información suficiente para responder ante incidencias o dudas posteriores. Finalmente, la jornada termina con la confirmación de las entregas y la comunicación con las familias. Este recorrido evidencia una carga de coordinación repetitiva y dispersa que debe reducirse sin introducir nuevas distracciones durante la conducción.
 
-<img width="1556" height="1086" alt="USER JOURNEY MAP - CONDUCTOR" src="assets/chapter02/user-journey-map-conductor.png" />
+<img width="1556" height="1086" alt="USER JOURNEY MAP - CONDUCTOR" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/user-journey-map-conductor.png" />
 
 ### 2.3.4. Empathy Mapping
 
@@ -855,7 +855,7 @@ En esta sección se presentan los **Empathy Maps** elaborados para cada uno de l
 
 #### Segmento — Conductores
 
-<img width="1050" height="1318" alt="CARLOS RIVAS EMPATHY MAP" src="assets/chapter02/user-empathy-map-conductor.png" />
+<img width="1050" height="1318" alt="CARLOS RIVAS EMPATHY MAP" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/user-empathy-map-conductor.png" />
 
 ## 2.4. Big Picture Event Storming
 
@@ -893,7 +893,7 @@ El análisis permitió organizar el dominio objetivo de Rumbo en ocho contextos 
 
 La siguiente captura reúne el resultado del proceso. Los elementos están expresados en inglés para mantener consistencia con el lenguaje utilizado en los artefactos de dominio y con el Ubiquitous Language del proyecto.
 
-<img width="1050" alt="Rumbo Big Picture Event Storming" src="assets/chapter02/big-picture-event-storming.jpg" />
+<img width="1050" alt="Rumbo Big Picture Event Storming" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/big-picture-event-storming.jpg" />
 
 El Big Picture muestra que el núcleo operativo de Rumbo se concentra en la planificación y ejecución del traslado, mientras que identidad, perfiles, vehículos, incidencias, notificaciones y suscripción aportan capacidades relacionadas. Los hotspots registrados permiten anticipar riesgos que deberán considerarse en los siguientes artefactos de diseño y en las decisiones de implementación.
 
@@ -1008,7 +1008,7 @@ El **Impact Mapping de Rumbo** fue elaborado en UXPressia a partir de los Busine
 El mapa relaciona los objetivos de negocio con los cambios de comportamiento esperados en cada persona, los entregables que pueden provocar dichos impactos y las User Stories que permiten implementarlos. Para padres/tutores, el enfoque se centra en reducir la necesidad de contactar al conductor, facilitar la consulta del estado del traslado y mantener notificaciones relevantes. Para conductores, se busca registrar los principales hitos del viaje, comunicar retrasos e incidencias de forma estructurada y organizar la operación diaria del servicio.
 
 <p align="center">
-  <img src="assets/chapter03/impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter03/impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
 </p>
 
 ## 3.3. Product Backlog
@@ -1020,7 +1020,7 @@ Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
 
 <p align="center">
-  <img src="assets/chapter03/product-backlog.png" alt="Product Backlog de Rumbo en Trello" width="100%"/>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter03/product-backlog.png" alt="Product Backlog de Rumbo en Trello" width="100%"/>
 </p>
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
@@ -1086,7 +1086,7 @@ La propuesta toma como referencia principios de **Material Design** y los adapta
 La identidad visual de **Rumbo** busca proyectar una imagen cercana, segura y confiable. Se evita una apariencia excesivamente tecnológica o alarmista y se priorizan superficies claras, jerarquías simples y una paleta basada en verdes, tonos crema y colores de apoyo suaves.
 
 <div align="center">
-  <img src="./assets/chapter04/logotipoRumbo.png" alt="Logotipo de Rumbo" width="280">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/logotipoRumbo.png" alt="Logotipo de Rumbo" width="280">
   <p><em>Logotipo principal de Rumbo.</em></p>
 </div>
 
@@ -1097,7 +1097,7 @@ El logotipo se utiliza como identificador principal de la marca y debe conservar
 La paleta de colores de Rumbo organiza los tonos principales, secundarios y neutros que se utilizarán de manera consistente en el Landing Page y la Web Application. Los verdes refuerzan la identidad visual y las acciones relevantes; los tonos crema y arena ayudan a reducir la carga visual y aportar calidez; y el azul oscuro se reserva para texto, contraste y elementos de alta legibilidad.
 
 <div align="center">
-  <img src="./assets/chapter04/paleta-de-colores.png" alt="Paleta de colores de Rumbo" width="760">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/paleta-de-colores.png" alt="Paleta de colores de Rumbo" width="760">
   <p><em>Paleta de colores de Rumbo.</em></p>
 </div>
 
@@ -1187,7 +1187,7 @@ Rumbo adopta un enfoque de diseño inclusivo mediante:
 La experiencia contempla **English (en_US)** y **Latin American Spanish (es_419)**, con **English como idioma predeterminado**, de acuerdo con los lineamientos del proyecto. La estructura de los componentes debe tolerar variaciones de longitud entre traducciones sin romper el layout.
 
 <div align="center">
-  <img src="./assets/chapter04/landingMockupDsk.png" alt="Referencia visual de las Web Style Guidelines en Desktop" width="760">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingMockupDsk.png" alt="Referencia visual de las Web Style Guidelines en Desktop" width="760">
   <p><em>Aplicación de las Web Style Guidelines en el Landing Page para Desktop Web Browser.</em></p>
 </div>
 
@@ -1209,7 +1209,7 @@ Las principales decisiones son:
 Cuando un componente cambia de disposición entre Desktop y Mobile, debe conservar la misma función, etiqueta y prioridad. La adaptación responsive no debe introducir una ruta de navegación diferente para realizar la misma tarea.
 
 <div align="center">
-  <img src="./assets/chapter04/landingMockupMb.png" alt="Referencia visual de las Mobile Style Guidelines" width="360">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingMockupMb.png" alt="Referencia visual de las Mobile Style Guidelines" width="360">
   <p><em>Aplicación de las Mobile Style Guidelines en el Landing Page para Mobile Web Browser.</em></p>
 </div>
 
@@ -1369,12 +1369,12 @@ Los wireframes fueron elaborados para **Desktop Web Browser** y **Mobile Web Bro
 En Desktop, la distribución aprovecha el ancho disponible para organizar contenidos relacionados y facilitar la exploración progresiva. En Mobile, los mismos bloques se reorganizan verticalmente y preservan el orden lógico de lectura. En ambos casos, la ubicación de las acciones principales responde a la arquitectura de información descrita previamente.
 
 <div align="center">
-  <img src="./assets/chapter04/landingWireframeDsk.png" alt="Landing Page Wireframe - Desktop Web Browser" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingWireframeDsk.png" alt="Landing Page Wireframe - Desktop Web Browser" width="750">
   <p><em>Wireframe del Landing Page para Desktop Web Browser.</em></p>
 </div>
 
 <div align="center">
-  <img src="./assets/chapter04/landingWireframeMb.png" alt="Landing Page Wireframe - Mobile Web Browser" width="360">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingWireframeMb.png" alt="Landing Page Wireframe - Mobile Web Browser" width="360">
   <p><em>Wireframe del Landing Page para Mobile Web Browser.</em></p>
 </div>
 
@@ -1387,12 +1387,12 @@ Los mock-ups aplican el Design System definido en 4.1 sobre la estructura valida
 El Desktop Mock-up conserva una jerarquía amplia y permite presentar agrupaciones de contenido en más de una columna cuando existe espacio suficiente. El Mobile Mock-up transforma esas agrupaciones en bloques verticales, manteniendo las mismas asociaciones, etiquetas y prioridad de acciones.
 
 <div align="center">
-  <img src="./assets/chapter04/landingMockupDsk.png" alt="Landing Page Mock-up - Desktop Web Browser" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingMockupDsk.png" alt="Landing Page Mock-up - Desktop Web Browser" width="750">
   <p><em>Mock-up del Landing Page para Desktop Web Browser.</em></p>
 </div>
 
 <div align="center">
-  <img src="./assets/chapter04/landingMockupMb.png" alt="Landing Page Mock-up - Mobile Web Browser" width="360">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/landingMockupMb.png" alt="Landing Page Mock-up - Mobile Web Browser" width="360">
   <p><em>Mock-up del Landing Page para Mobile Web Browser.</em></p>
 </div>
 
@@ -1434,7 +1434,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** El Parent selecciona su experiencia en la pantalla de acceso, ingresa sus credenciales y, después de autenticarse correctamente, accede al Panel principal con la información más reciente del viaje activo.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-access-parent.png" alt="Wireflow - Access parent dashboard" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-access-parent.png" alt="Wireflow - Access parent dashboard" width="95%">
 </div>
 
 #### User Goal 2 — Consult current trip status
@@ -1444,7 +1444,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** Desde el Panel principal, el Parent abre el detalle del viaje activo y puede profundizar en la línea de tiempo para comprender los eventos registrados durante el recorrido.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-consult-trip.png" alt="Wireflow - Consult current trip status" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-consult-trip.png" alt="Wireflow - Consult current trip status" width="95%">
 </div>
 
 #### User Goal 3 — Review important notifications
@@ -1454,7 +1454,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** El Parent accede desde el Panel principal al centro de notificaciones, revisa las actualizaciones recientes y abre el detalle de un aviso relevante para conocer su contexto y estado.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-review-notifications.png" alt="Wireflow - Review important notifications" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-review-notifications.png" alt="Wireflow - Review important notifications" width="95%">
 </div>
 
 #### User Goal 4 — Start and execute a route
@@ -1464,7 +1464,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** El Driver abre su ruta asignada, inicia el recorrido y accede a la lista de estudiantes para continuar registrando los hitos operativos de recojo y entrega.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-start-route.png" alt="Wireflow - Start and execute a route" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-start-route.png" alt="Wireflow - Start and execute a route" width="95%">
 </div>
 
 #### User Goal 5 — Configure route and stops
@@ -1474,7 +1474,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** El Driver parte de la ruta asignada, ingresa a la configuración, ajusta el orden de paradas y guarda los cambios para que la planificación quede disponible en los siguientes recorridos.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-configure-route.png" alt="Wireflow - Configure route and stops" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-configure-route.png" alt="Wireflow - Configure route and stops" width="95%">
 </div>
 
 #### User Goal 6 — Monitor operational notifications
@@ -1484,7 +1484,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** Desde la ruta asignada, el Driver accede al centro de notificaciones, consulta las actualizaciones recientes y marca los avisos revisados para mantener control sobre los eventos informados.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-monitor-notifications.png" alt="Wireflow - Monitor operational notifications" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-monitor-notifications.png" alt="Wireflow - Monitor operational notifications" width="95%">
 </div>
 
 #### User Goal 7 — Manage account and billing
@@ -1494,7 +1494,7 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 **Explicación del flujo:** El Driver accede a Configuración para revisar su información de perfil y vehículo y, desde las opciones de cuenta, consulta el resumen de Plan y facturación correspondiente al servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/wireflows/wireflow-manage-account.png" alt="Wireflow - Manage account and billing" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/wireflows/wireflow-manage-account.png" alt="Wireflow - Manage account and billing" width="95%">
 </div>
 
 ### 4.4.3. Web Applications Mock-ups
@@ -1506,7 +1506,7 @@ Los mock-ups de la Web Application de **Rumbo** aplican el Design System definid
 La pantalla de inicio de sesión funciona como punto de acceso común a la Web Application. Permite seleccionar la experiencia correspondiente, ingresar las credenciales y acceder a las funcionalidades asociadas al rol del usuario.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/inicio-sesion.png" alt="Mock-up - Sign In" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/inicio-sesion.png" alt="Mock-up - Sign In" width="750">
 </div>
 
 #### Driver — Assigned Route
@@ -1514,7 +1514,7 @@ La pantalla de inicio de sesión funciona como punto de acceso común a la Web A
 La vista **Ruta asignada** concentra la información operativa principal del Driver. Presenta el estado del recorrido, los estudiantes asociados y accesos rápidos para reportar retrasos, incidencias o continuar con las acciones de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/ruta-asignada.png" alt="Mock-up - Driver Assigned Route" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/ruta-asignada.png" alt="Mock-up - Driver Assigned Route" width="750">
 </div>
 
 #### Driver — Student List
@@ -1522,7 +1522,7 @@ La vista **Ruta asignada** concentra la información operativa principal del Dri
 La **Lista de estudiantes** permite al Driver revisar los estudiantes asociados a la ruta y registrar acciones breves como confirmar recojo o entrega. Los estados visuales permiten distinguir rápidamente estudiantes recogidos, pendientes o ausentes.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/lista-estudiantes.png" alt="Mock-up - Driver Student List" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/lista-estudiantes.png" alt="Mock-up - Driver Student List" width="750">
 </div>
 
 #### Driver — Route Configuration
@@ -1530,7 +1530,7 @@ La **Lista de estudiantes** permite al Driver revisar los estudiantes asociados 
 La pantalla **Configurar ruta** permite administrar el orden de las paradas y las vinculaciones relacionadas con el servicio. La organización en bloques mantiene separadas las tareas de planificación de las acciones propias de la ejecución del viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configurar-ruta.png" alt="Mock-up - Driver Route Configuration" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/configurar-ruta.png" alt="Mock-up - Driver Route Configuration" width="750">
 </div>
 
 #### Driver — Notifications
@@ -1538,7 +1538,7 @@ La pantalla **Configurar ruta** permite administrar el orden de las paradas y la
 El centro de **Notificaciones** reúne los principales eventos operativos asociados a la ruta. La vista prioriza retrasos, confirmaciones y actualizaciones recientes para que el Driver pueda revisar información relevante sin depender de mensajes dispersos.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/notificaciones-conductor.png" alt="Mock-up - Driver Notifications" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/notificaciones-conductor.png" alt="Mock-up - Driver Notifications" width="750">
 </div>
 
 #### Driver — Plan and Billing
@@ -1546,7 +1546,7 @@ El centro de **Notificaciones** reúne los principales eventos operativos asocia
 La vista **Plan y facturación** presenta el estado de la suscripción, el periodo actual, los comprobantes disponibles y las acciones relacionadas con la gestión del plan. Esta pantalla concentra la información comercial sin mezclarla con las tareas operativas de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/facturacion.png" alt="Mock-up - Driver Plan and Billing" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/facturacion.png" alt="Mock-up - Driver Plan and Billing" width="750">
 </div>
 
 #### Driver — Settings
@@ -1554,7 +1554,7 @@ La vista **Plan y facturación** presenta el estado de la suscripción, el perio
 La sección **Configuración** permite al Driver revisar su información personal, los datos del vehículo y las preferencias de idioma. La vista utiliza la misma jerarquía de tarjetas que el resto de la aplicación para mantener consistencia visual.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configuracion-conductor.png" alt="Mock-up - Driver Settings" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/configuracion-conductor.png" alt="Mock-up - Driver Settings" width="750">
 </div>
 
 #### Parent — Dashboard
@@ -1562,7 +1562,7 @@ La sección **Configuración** permite al Driver revisar su información persona
 El **Panel principal** del Parent resume la información más reciente del traslado escolar. Presenta el estado del viaje activo, los últimos eventos registrados, el Driver asociado y accesos directos al detalle del viaje y a las notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/panel-tutor.png" alt="Mock-up - Parent Dashboard" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/panel-tutor.png" alt="Mock-up - Parent Dashboard" width="750">
 </div>
 
 #### Parent — Current Trip
@@ -1570,7 +1570,7 @@ El **Panel principal** del Parent resume la información más reciente del trasl
 La vista **Viaje actual** amplía el estado del recorrido y organiza los principales eventos en una línea de tiempo. Su objetivo es permitir que el Parent comprenda rápidamente qué ha ocurrido durante el viaje y cuál es el estado registrado más reciente.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/viaje-actual.png" alt="Mock-up - Parent Current Trip" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/viaje-actual.png" alt="Mock-up - Parent Current Trip" width="750">
 </div>
 
 #### Parent — Trip History
@@ -1578,7 +1578,7 @@ La vista **Viaje actual** amplía el estado del recorrido y organiza los princip
 El **Historial de viajes** permite consultar recorridos anteriores y revisar información resumida como fecha, conductor, número de eventos y estado del viaje. La presentación tabular facilita comparar registros sin sobrecargar la vista principal.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/historial-viajes.png" alt="Mock-up - Parent Trip History" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/historial-viajes.png" alt="Mock-up - Parent Trip History" width="750">
 </div>
 
 #### Parent — Notifications
@@ -1586,7 +1586,7 @@ El **Historial de viajes** permite consultar recorridos anteriores y revisar inf
 La sección **Notificaciones** centraliza los avisos relacionados con el traslado del estudiante. Los eventos recientes se presentan de forma cronológica y con indicadores visuales para diferenciar confirmaciones, retrasos y actualizaciones operativas.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/notificaciones-tutor.png" alt="Mock-up - Parent Notifications" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/notificaciones-tutor.png" alt="Mock-up - Parent Notifications" width="750">
 </div>
 
 #### Parent — Student Profile
@@ -1594,7 +1594,7 @@ La sección **Notificaciones** centraliza los avisos relacionados con el traslad
 El **Perfil del estudiante** presenta los datos principales del estudiante y la información necesaria para comprender su asociación con el servicio. La vista también permite acceder a información complementaria relacionada con el traslado.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/perfil-estudiante.png" alt="Mock-up - Parent Student Profile" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/perfil-estudiante.png" alt="Mock-up - Parent Student Profile" width="750">
 </div>
 
 #### Parent — Driver and Vehicle Documents
@@ -1602,7 +1602,7 @@ El **Perfil del estudiante** presenta los datos principales del estudiante y la 
 La vista **Documentos del conductor y vehículo** permite al Parent consultar la información declarada del servicio, como licencia, registro del vehículo y seguro. Esta información se presenta como referencia dentro de la experiencia y evita mezclar documentos con el seguimiento operativo del viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/documentos-conductor.png" alt="Mock-up - Driver and Vehicle Documents" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/documentos-conductor.png" alt="Mock-up - Driver and Vehicle Documents" width="750">
 </div>
 
 #### Parent — Settings
@@ -1610,7 +1610,7 @@ La vista **Documentos del conductor y vehículo** permite al Parent consultar la
 La sección **Configuración** del Parent reúne preferencias de notificaciones e información de la cuenta. Los controles permiten activar o desactivar avisos sin alterar el resto de la experiencia y mantienen visible la configuración de idioma del producto.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/configuracion-tutor.png" alt="Mock-up - Parent Settings" width="750">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/configuracion-tutor.png" alt="Mock-up - Parent Settings" width="750">
 </div>
 
 ### 4.4.4. Web Applications User Flow Diagrams
@@ -1624,7 +1624,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Parent selects the Parent experience, signs in successfully, and reaches the main dashboard with the active trip overview. If the credentials are invalid, the system shows an error and allows a new attempt.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-access-parent.png" alt="User Flow 1 - Access Parent Dashboard" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-access-parent.png" alt="User Flow 1 - Access Parent Dashboard" width="95%">
 </div>
 
 #### User Flow 2 — Consult Current Trip Status
@@ -1634,7 +1634,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Parent opens the dashboard, accesses the current trip detail, and reviews the chronological sequence of route events. The alternative path represents the case in which the trip has already been completed.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-consult.png" alt="User Flow 2 - Consult Current Trip Status" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-consult.png" alt="User Flow 2 - Consult Current Trip Status" width="95%">
 </div>
 
 #### User Flow 3 — Review Important Notifications
@@ -1644,7 +1644,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Parent accesses the notification center, reviews recent alerts, and opens the detail of a relevant event. When there are no unread notifications, the interface displays an informative empty state.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-review.png" alt="User Flow 3 - Review Important Notifications" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-review.png" alt="User Flow 3 - Review Important Notifications" width="95%">
 </div>
 
 #### User Flow 4 — Start and Execute a Route
@@ -1654,7 +1654,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Driver opens the assigned route, starts the trip, and continues the route through the student list to register operational milestones. The alternative path covers the reporting of a delay while the route remains active.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-start-route.png" alt="User Flow 4 - Start and Execute a Route" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-start-route.png" alt="User Flow 4 - Start and Execute a Route" width="95%">
 </div>
 
 #### User Flow 5 — Configure Route and Stops
@@ -1664,7 +1664,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Driver accesses the route configuration, adjusts the stop order and student links, and saves the updated configuration. If required information is missing or invalid, the system shows a validation error before allowing the operation to continue.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-configure-route.png" alt="User Flow 5 - Configure Route and Stops" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-configure-route.png" alt="User Flow 5 - Configure Route and Stops" width="95%">
 </div>
 
 #### User Flow 6 — Monitor Operational Notifications
@@ -1674,7 +1674,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Driver opens the notification center, reviews the latest operational updates, opens an alert and marks it as reviewed when appropriate. If there are no recent updates, the system presents an empty state instead of an unnecessary list.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-monitor.png" alt="User Flow 6 - Monitor Operational Notifications" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-monitor.png" alt="User Flow 6 - Monitor Operational Notifications" width="95%">
 </div>
 
 #### User Flow 7 — Manage Account and Billing
@@ -1684,7 +1684,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 **Flow Description:** The Driver accesses the account settings, reviews profile and vehicle information, and then checks the subscription and billing overview. The alternative path illustrates a paused subscription state that can later be reactivated.
 
 <div align="center">
-  <img src="./assets/chapter04/userflows/userflow-manage-account.png" alt="User Flow 7 - Manage Account and Billing" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/userflows/userflow-manage-account.png" alt="User Flow 7 - Manage Account and Billing" width="95%">
 </div>
 
 ## 4.5. Web Applications Prototyping
@@ -1692,7 +1692,7 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 El prototipo de la Web Application de **Rumbo** integra los principales mock-ups de los segmentos **Parent** y **Driver** en una navegación coherente con los Wireflows y User Flow Diagrams definidos previamente. La propuesta permite validar la continuidad entre pantallas, la ubicación de las acciones principales y la consistencia del sistema de navegación antes de la implementación final.
 
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/prototype.png" width="750" alt="Web Applications Prototype">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/web-app-mockup/prototype.png" width="750" alt="Web Applications Prototype">
 </div>
 
 ## 4.6. Domain-Driven Software Architecture
@@ -1723,49 +1723,49 @@ A continuación se presentan las exportaciones visuales correspondientes a los *
 **Identity & Access Management**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-identity.jpeg" alt="Design-Level Event Storming - Identity and Access Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-identity.jpeg" alt="Design-Level Event Storming - Identity and Access Management" width="95%">
 </div>
 
 **Profiles & Relationship Management**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-profile.png" alt="Design-Level Event Storming - Profiles and Relationship Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-profile.png" alt="Design-Level Event Storming - Profiles and Relationship Management" width="95%">
 </div>
 
 **Vehicle & Credential Management**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
 </div>
 
 **Route & Trip Planning**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-route.jpeg" alt="Design-Level Event Storming - Route and Trip Planning" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-route.jpeg" alt="Design-Level Event Storming - Route and Trip Planning" width="95%">
 </div>
 
 **Trip Execution & Monitoring**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-trip.jpeg" alt="Design-Level Event Storming - Trip Execution and Monitoring" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-trip.jpeg" alt="Design-Level Event Storming - Trip Execution and Monitoring" width="95%">
 </div>
 
 **Incident & Delay Management**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-incident.jpeg" alt="Design-Level Event Storming - Incident and Delay Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-incident.jpeg" alt="Design-Level Event Storming - Incident and Delay Management" width="95%">
 </div>
 
 **Notification Management**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-notification.jpeg" alt="Design-Level Event Storming - Notification Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-notification.jpeg" alt="Design-Level Event Storming - Notification Management" width="95%">
 </div>
 
 **Subscriptions & Billing**
 
 <div align="center">
-  <img src="./assets/chapter04/event-storming/ddd-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/event-storming/ddd-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
 </div>
 
 ### 4.6.2. Software Architecture Context Diagram
@@ -1773,7 +1773,7 @@ A continuación se presentan las exportaciones visuales correspondientes a los *
 El **Software Architecture Context Diagram** presenta a Rumbo como un único sistema de software y resume sus relaciones principales con las personas y servicios externos que participan en la solución. Esta vista permite comprender el límite general de la plataforma antes de detallar sus unidades de despliegue e implementación.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-system-context.png" alt="Rumbo - Software Architecture Context Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-system-context.png" alt="Rumbo - Software Architecture Context Diagram" width="95%">
 </div>
 
 ### 4.6.3. Software Architecture Container Diagrams
@@ -1781,7 +1781,7 @@ El **Software Architecture Context Diagram** presenta a Rumbo como un único sis
 El **Container Diagram** describe la arquitectura objetivo de Rumbo a nivel de unidades de despliegue. Se distinguen el Landing Page, la Web Application desarrollada con Angular, el RESTful API previsto en Spring Boot y la capa de persistencia, además de las dependencias externas requeridas por la solución. Para Sprint 2, el Frontend Web Application trabaja con Angular y una fuente de datos simulada; la integración completa con el backend corresponde a los siguientes Sprints.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-container.png" alt="Rumbo - Software Architecture Container Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-container.png" alt="Rumbo - Software Architecture Container Diagram" width="95%">
 </div>
 
 ### 4.6.4. Software Architecture Components Diagrams
@@ -1793,7 +1793,7 @@ Los **Component Diagrams** descomponen el contenedor de aplicación en component
 Este diagrama representa los componentes responsables de cuentas, autenticación, autorización y recuperación de acceso. El contexto mantiene separadas las responsabilidades de identidad respecto de perfiles, vehículos y operaciones del servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-iam.png" alt="Identity and Access Management Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-iam.png" alt="Identity and Access Management Component Diagram" width="95%">
 </div>
 
 #### Profiles & Relationship Management
@@ -1801,7 +1801,7 @@ Este diagrama representa los componentes responsables de cuentas, autenticación
 Este contexto concentra la gestión de perfiles de Parent, Driver y Student, junto con las relaciones de autorización que determinan quién puede consultar la información de cada estudiante.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-profiles.png" alt="Profiles and Relationship Management Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-profiles.png" alt="Profiles and Relationship Management Component Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
@@ -1809,7 +1809,7 @@ Este contexto concentra la gestión de perfiles de Parent, Driver y Student, jun
 El diagrama separa el registro y mantenimiento del vehículo de la gestión de credenciales declaradas por el Driver. Los componentes permiten conservar la información del vehículo y el estado de los documentos asociados sin mezclarla con la planificación de rutas.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-vehicle.png" alt="Vehicle and Credential Management Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-vehicle.png" alt="Vehicle and Credential Management Component Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
@@ -1817,7 +1817,7 @@ El diagrama separa el registro y mantenimiento del vehículo de la gestión de c
 Este diagrama representa los componentes encargados de rutas, paradas, secuencia de recorrido, asignaciones de estudiantes y planificación de viajes. El contexto prepara la información que posteriormente utiliza la ejecución del traslado.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-route-planning.png" alt="Route and Trip Planning Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-route-planning.png" alt="Route and Trip Planning Component Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
@@ -1825,7 +1825,7 @@ Este diagrama representa los componentes encargados de rutas, paradas, secuencia
 El contexto de ejecución coordina el inicio y desarrollo de un viaje, los eventos operativos y los estados de recojo y entrega. La información registrada alimenta la vista del viaje y su línea de tiempo.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-trip.png" alt="Trip Execution and Monitoring Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-trip.png" alt="Trip Execution and Monitoring Component Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
@@ -1833,7 +1833,7 @@ El contexto de ejecución coordina el inicio y desarrollo de un viaje, los event
 Este diagrama concentra el registro y actualización de retrasos e incidencias ocurridos durante el servicio. Sus componentes mantienen el estado de cada evento y permiten comunicar los cambios relevantes al contexto de notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-incident.png" alt="Incident and Delay Management Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-incident.png" alt="Incident and Delay Management Component Diagram" width="95%">
 </div>
 
 #### Notification Management
@@ -1841,7 +1841,7 @@ Este diagrama concentra el registro y actualización de retrasos e incidencias o
 El contexto de notificaciones administra la generación, persistencia, preferencias y distribución de avisos relacionados con eventos relevantes del traslado. Se mantiene separado de Incident & Delay Management para evitar mezclar el evento de negocio con su mecanismo de comunicación.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-notifications.png" alt="Notification Management Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-notifications.png" alt="Notification Management Component Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
@@ -1849,7 +1849,7 @@ El contexto de notificaciones administra la generación, persistencia, preferenc
 Este diagrama representa la gestión del plan y de la suscripción del Driver dentro de la arquitectura objetivo. El contexto encapsula la información comercial para que no interfiera con las responsabilidades operativas de rutas y viajes.
 
 <div align="center">
-  <img src="./assets/chapter04/software-architecture/diagram-subscription.png" alt="Subscriptions and Billing Component Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/software-architecture/diagram-subscription.png" alt="Subscriptions and Billing Component Diagram" width="95%">
 </div>
 
 ## 4.7. Software Object-Oriented Design
@@ -1867,7 +1867,7 @@ Los Class Diagrams incluyen clases y enumeraciones relevantes, atributos, métod
 El diagrama modela las responsabilidades relacionadas con cuentas, sesiones, tokens, recuperación de acceso, roles y permisos. De esta forma, la autenticación y autorización permanecen separadas de los datos operativos de perfiles, rutas y viajes.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-iam.png" alt="Identity and Access Management Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-iam.png" alt="Identity and Access Management Class Diagram" width="95%">
 </div>
 
 #### Profiles & Relationship Management
@@ -1875,7 +1875,7 @@ El diagrama modela las responsabilidades relacionadas con cuentas, sesiones, tok
 Este contexto representa los perfiles utilizados por Rumbo y las relaciones de autorización vinculadas al estudiante. Su responsabilidad principal es mantener la información de Parent, Driver y Student y determinar qué relaciones permiten consultar la información del estudiante. Las referencias a credenciales o vehículos se interpretan como vínculos hacia sus contextos propietarios.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Class Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
@@ -1883,7 +1883,7 @@ Este contexto representa los perfiles utilizados por Rumbo y las relaciones de a
 El diagrama representa la información del vehículo y los registros asociados a su operación y documentación. Este contexto concentra la responsabilidad de los datos del vehículo y de las credenciales declaradas por el Driver, evitando que Route & Trip Planning administre directamente dicha información.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Class Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
@@ -1891,7 +1891,7 @@ El diagrama representa la información del vehículo y los registros asociados a
 Este contexto modela rutas, paradas, horarios y asignaciones necesarias antes de iniciar un traslado. Las asociaciones con Student y Driver permiten expresar qué participantes intervienen en la planificación, mientras que sus perfiles completos continúan perteneciendo a sus respectivos Bounded Contexts.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-route-trip-planning.png" alt="Route and Trip Planning Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-route-trip-planning.png" alt="Route and Trip Planning Class Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
@@ -1899,7 +1899,7 @@ Este contexto modela rutas, paradas, horarios y asignaciones necesarias antes de
 El diagrama describe el viaje en ejecución y los registros que permiten conocer su evolución: eventos, hitos, recojos, entregas y línea de tiempo. La arquitectura de Rumbo prioriza el seguimiento mediante estados y eventos del recorrido; cualquier dato de ubicación representado se considera complementario y no modifica la separación de responsabilidades definida para el dominio.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-trip-execution.png" alt="Trip Execution and Monitoring Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-trip-execution.png" alt="Trip Execution and Monitoring Class Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
@@ -1907,7 +1907,7 @@ El diagrama describe el viaje en ejecución y los registros que permiten conocer
 Este contexto concentra el registro y seguimiento de retrasos e incidencias vinculados a un viaje. Las clases relacionadas con evidencias, notas o elementos afectados permiten conservar el contexto del evento y su evolución hasta su resolución sin mezclar esta responsabilidad con la distribución de notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-incident-delay.png" alt="Incident and Delay Management Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-incident-delay.png" alt="Incident and Delay Management Class Diagram" width="95%">
 </div>
 
 #### Notification Management
@@ -1915,7 +1915,7 @@ Este contexto concentra el registro y seguimiento de retrasos e incidencias vinc
 El diagrama representa la creación y entrega de avisos, las preferencias del usuario y los canales utilizados para distribuirlos. Los eventos de retraso, incidencia, recojo o entrega funcionan como información de entrada, mientras que este contexto se responsabiliza únicamente de convertirlos en comunicaciones hacia los destinatarios correspondientes.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-notification.png" alt="Notification Management Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-notification.png" alt="Notification Management Class Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
@@ -1923,7 +1923,7 @@ El diagrama representa la creación y entrega de avisos, las preferencias del us
 Este contexto representa la relación entre el Driver, el plan y el estado de su suscripción. Los elementos comerciales incluidos en el modelo se consideran parte de la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción definida en los requisitos.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Class Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/class-diagrams/class-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Class Diagram" width="95%">
 </div>
 
 En conjunto, los ocho Class Diagrams mantienen la separación establecida en el diseño de dominio y sirven como referencia para los Database Diagrams de la siguiente sección. El modelado se utiliza como diseño de la arquitectura objetivo y no implica que todos los componentes de backend se encuentren implementados durante Sprint 2.
@@ -1941,7 +1941,7 @@ Los diagramas corresponden a la **arquitectura objetivo** del producto. Por ello
 Este esquema concentra la persistencia de cuentas, sesiones, recuperación de acceso, roles y permisos. Las tablas de relación permiten separar la identidad del usuario de las capacidades que puede ejecutar dentro de la plataforma.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-iam.png" alt="Identity and Access Management Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-iam.png" alt="Identity and Access Management Database Diagram" width="95%">
 </div>
 
 #### Profiles & Relationship Management
@@ -1949,7 +1949,7 @@ Este esquema concentra la persistencia de cuentas, sesiones, recuperación de ac
 El esquema almacena los perfiles de Parent, Driver y Student, junto con las relaciones de autorización y datos complementarios necesarios para representar quién puede consultar la información de cada estudiante.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
@@ -1957,7 +1957,7 @@ El esquema almacena los perfiles de Parent, Driver y Student, junto con las rela
 Este diagrama representa la persistencia de vehículos, asignaciones, documentos y credenciales asociadas al Driver. Las claves foráneas permiten mantener la relación con el conductor sin trasladar la responsabilidad del vehículo a otros Bounded Contexts.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
@@ -1965,7 +1965,7 @@ Este diagrama representa la persistencia de vehículos, asignaciones, documentos
 El modelo de datos de planificación mantiene rutas, paradas, estudiantes asignados y programación de viajes. Estas relaciones permiten conservar el orden de recorrido y preparar la información que utilizará posteriormente la ejecución del traslado.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
@@ -1973,7 +1973,7 @@ El modelo de datos de planificación mantiene rutas, paradas, estudiantes asigna
 Este esquema persiste los viajes ejecutados y los principales eventos generados durante el recorrido, incluyendo estados de estudiantes, recojos, entregas, entradas de línea de tiempo y registros complementarios de ubicación cuando correspondan.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-trip-execution.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-trip-execution.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
@@ -1981,7 +1981,7 @@ Este esquema persiste los viajes ejecutados y los principales eventos generados 
 El diagrama separa la persistencia de retrasos e incidencias de la lógica de notificaciones. Incluye información del evento, estudiantes afectados, evidencia y acciones de resolución necesarias para conservar la trazabilidad de cada situación reportada.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-incident-delay.png" alt="Incident and Delay Management Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-incident-delay.png" alt="Incident and Delay Management Database Diagram" width="95%">
 </div>
 
 #### Notification Management
@@ -1989,7 +1989,7 @@ El diagrama separa la persistencia de retrasos e incidencias de la lógica de no
 Este esquema administra notificaciones, destinatarios, preferencias, reglas de alerta y registros de entrega. Su propósito es persistir el ciclo de comunicación generado a partir de eventos del dominio sin duplicar los datos propios de rutas, viajes o incidencias.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-notification.png" alt="Notification Management Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-notification.png" alt="Notification Management Database Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
@@ -1997,7 +1997,7 @@ Este esquema administra notificaciones, destinatarios, preferencias, reglas de a
 El esquema comercial relaciona al Driver con un plan y con el estado de su suscripción. También representa entidades de facturación previstas por la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/database-diagrams/database-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="95%">
 </div>
 
 En conjunto, los ocho Database Diagrams mantienen correspondencia con los Bounded Contexts definidos en 4.6 y con los Class Diagrams de 4.7, conservando la separación de responsabilidades entre identidad, perfiles, vehículos, planificación, ejecución, incidencias, notificaciones y suscripciones.
@@ -2159,7 +2159,7 @@ El workflow de deployment ejecuta la instalación de dependencias, la compilaci�
 <!-- PENDIENTE IMAGEN C5-03: Captura de GitHub Actions mostrando build y deploy exitosos. -->
 
 <div align="center">
-  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada públicamente en GitHub Pages" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada públicamente en GitHub Pages" width="95%">
 </div>
 
 ## 5.2. Landing Page, Services & Applications Implementation
@@ -2317,7 +2317,7 @@ La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue i
 
 <!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
 <div align="center">
-  <img src="./assets/chapter5/landing-public-deploy.jpg" alt="Landing Page desplegada públicamente en GitHub Pages" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/landing-public-deploy.jpg" alt="Landing Page desplegada públicamente en GitHub Pages" width="95%">
 </div>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
@@ -2389,7 +2389,7 @@ El Final Project Statement exige que la captura del Board y el URL público sean
 La siguiente captura corresponde al Board de Trello utilizado para el seguimiento del **Sprint 2**, donde se visualizan los work-items y su estado durante el Sprint.
 
 <div align="center">
-  <img src="./assets/chapter5/Sprint-2.png" alt="Sprint 2 Backlog Board en Trello" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/Sprint-2.png" alt="Sprint 2 Backlog Board en Trello" width="95%">
 </div>
 
 | Story Id | Story Title | SP | Task Id | Task Title / Description | Estimation (Hours) | Assigned To | Status |
@@ -2459,28 +2459,28 @@ La aplicación se ejecuta desde el código integrado de `develop`. A continuaci�
 La siguiente evidencia muestra la vista implementada para la gestión de vehículos dentro del Frontend.
 
 <div align="center">
-  <img src="./assets/chapter5/execution-vehicles.png" alt="Execution Evidence - Vehicle Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/execution-vehicles.png" alt="Execution Evidence - Vehicle Management" width="95%">
 </div>
 **Profiles & Relationship Management**
 
 La siguiente evidencia muestra la vista implementada para la gestión de estudiantes dentro del Frontend.
 
 <div align="center">
-  <img src="./assets/chapter5/execution-students.png" alt="Execution Evidence - Student Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/execution-students.png" alt="Execution Evidence - Student Management" width="95%">
 </div>
 **Route & Trip Planning**
 
 La siguiente evidencia muestra la vista implementada para la gestión de rutas dentro del Frontend.
 
 <div align="center">
-  <img src="./assets/chapter5/execution-routes.png" alt="Execution Evidence - Route Management" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/execution-routes.png" alt="Execution Evidence - Route Management" width="95%">
 </div>
 **Alerting & Incident Management**
 
 La siguiente evidencia corresponde a una vista operativa del contexto de alertas e incidencias implementado en el Frontend.
 
 <div align="center">
-  <img src="./assets/chapter5/execution-operations.png" alt="Execution Evidence - Alerting and Incident Operations" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/execution-operations.png" alt="Execution Evidence - Alerting and Incident Operations" width="95%">
 </div>
 
 **Subscriptions & Billing**
@@ -2488,7 +2488,7 @@ La siguiente evidencia corresponde a una vista operativa del contexto de alertas
 La siguiente evidencia muestra la vista implementada para la gestión de suscripciones dentro del Frontend.
 
 <div align="center">
-  <img src="./assets/chapter5/execution-subscriptions.png" alt="Execution Evidence - Subscriptions and Billing" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/execution-subscriptions.png" alt="Execution Evidence - Subscriptions and Billing" width="95%">
 </div>
 <!-- PENDIENTE IMAGEN C5-S2-08: Una vista representativa en Mobile. -->
 
@@ -2545,7 +2545,7 @@ El workflow de deployment completó satisfactoriamente las etapas de **build** y
 **Frontend publicado**
 
 <div align="center">
-  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada en GitHub Pages" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/web-application.png" alt="Frontend Web Application de Rumbo desplegada en GitHub Pages" width="95%">
 </div>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
@@ -2564,7 +2564,7 @@ La evidencia del repositorio permite identificar contribuciones de los cinco int
 La siguiente captura muestra el resumen de actividad reciente del repositorio durante el periodo de trabajo del Sprint.
 
 <div align="center">
-  <img src="./assets/chapter5/collaboration-pulse.png" alt="Team Collaboration Insights - GitHub Pulse" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/collaboration-pulse.png" alt="Team Collaboration Insights - GitHub Pulse" width="95%">
 </div>
 <!-- PENDIENTE IMAGEN C5-S2-17: Contributors del Frontend. -->
 **Network Graph — trazabilidad de ramas e integración**
@@ -2572,12 +2572,12 @@ La siguiente captura muestra el resumen de actividad reciente del repositorio du
 Las siguientes capturas muestran el Network Graph utilizado como evidencia de la creación de ramas, evolución de commits e integración del trabajo del equipo durante el Sprint.
 
 <div align="center">
-  <img src="./assets/chapter5/network-1.png" alt="Frontend Network Graph - Evidence 1" width="95%"><br><br>
-  <img src="./assets/chapter5/network-2.png" alt="Frontend Network Graph - Evidence 2" width="95%"><br><br>
-  <img src="./assets/chapter5/network-3.png" alt="Frontend Network Graph - Evidence 3" width="95%"><br><br>
-  <img src="./assets/chapter5/network-4.png" alt="Frontend Network Graph - Evidence 4" width="95%"><br><br>
-  <img src="./assets/chapter5/network-5.png" alt="Frontend Network Graph - Evidence 5" width="95%"><br><br>
-  <img src="./assets/chapter5/network-6.png" alt="Frontend Network Graph - Evidence 6" width="95%">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-1.png" alt="Frontend Network Graph - Evidence 1" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-2.png" alt="Frontend Network Graph - Evidence 2" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-3.png" alt="Frontend Network Graph - Evidence 3" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-4.png" alt="Frontend Network Graph - Evidence 4" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-5.png" alt="Frontend Network Graph - Evidence 5" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-6.png" alt="Frontend Network Graph - Evidence 6" width="95%">
 </div>
 <!-- PENDIENTE IMAGEN C5-S2-19: Pull Requests #5, #6, #7 y #8 cerrados/merged. -->
 
