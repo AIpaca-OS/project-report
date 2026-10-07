@@ -1668,8 +1668,10 @@ Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para complet
 
 ## 4.5. Web Applications Prototyping
 
+El prototipo de la Web Application de **Rumbo** integra los principales mock-ups de los segmentos **Parent** y **Driver** en una navegación coherente con los Wireflows y User Flow Diagrams definidos previamente. La propuesta permite validar la continuidad entre pantallas, la ubicación de las acciones principales y la consistencia del sistema de navegación antes de la implementación final.
+
 <div align="center">
-  <img src="./assets/chapter04/web-app-mockup/prototype.png"width="750">
+  <img src="./assets/chapter04/web-app-mockup/prototype.png" width="750" alt="Web Applications Prototype">
 </div>
 
 ## 4.6. Domain-Driven Software Architecture
