@@ -1950,7 +1950,7 @@ La configuración quedó activa y el sitio fue publicado correctamente.
 
 La siguiente evidencia muestra la Landing Page cargada desde la URL pública de GitHub Pages.
 
-![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-depoly.jpg)
+![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-deploy.jpg)
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
