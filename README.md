@@ -2564,7 +2564,12 @@ Las siguientes capturas muestran el Network Graph utilizado como evidencia de la
 - Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
 
 - Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
+- 
+- Para el hito TB1 se refinó integralmente el modelo de dominio mediante la especificación de ocho Bounded Contexts en el Design-Level Event Storming, subsanando las observaciones del docente al delimitar con rigor los Aggregates, Commands, Domain Events, Policies y Hotspots. Este modelado permitió alinear el lenguaje ubicuo del transporte escolar formal con la arquitectura de componentes y base de datos antes de pasar a la fase de construcción de software.
 
+- Se completó exitosamente el Sprint 2 con el desarrollo de la Frontend Web Application en Angular 21 y Angular Material, implementando operaciones CRUD funcionales distribuidas equitativamente entre los cinco integrantes (un Bounded Context por estudiante: Vehicle & Credential Management, Profiles & Relationship Management, Route & Trip Planning, Alerting & Incident Management y Subscriptions & Billing). La adopción de servicios emulados en MockAPI y JSON Server permitió validar la reactividad, los formularios y la experiencia de usuario de manera desacoplada de la futura capa de backend.
+
+- Se fortaleció la presencia pública del producto mediante el rediseño y despliegue continuo de la Landing Page en GitHub Pages, incorporando una sección de showcase interactivo con las vistas operativas de Rumbo. Asimismo, el equipo consolidó la trazabilidad técnica mediante GitFlow, Conventional Commits y Pull Requests integrados, garantizando un flujo de trabajo ágil y verificable en GitHub como base sólida para la integración de Web Services con Spring Boot en los siguientes Sprints.
 
 # Bibliografía
 
