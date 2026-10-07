@@ -2365,7 +2365,11 @@ La colaboración marcada con **C** se limita a integraciones o correcciones que 
 
 El Final Project Statement exige que la captura del Board y el URL público sean coherentes con la tabla. El enlace disponible actualmente es un enlace de invitación; antes de la entrega debe reemplazarse por el URL público del Board si Trello dispone de uno.
 
-<!-- PENDIENTE IMAGEN C5-S2-01: Captura completa y legible del Board de Trello de Sprint 2. -->
+La siguiente captura corresponde al Board de Trello utilizado para el seguimiento del **Sprint 2**, donde se visualizan los work-items y su estado durante el Sprint.
+
+<div align="center">
+  <img src="./assets/chapter5/Sprint-2.png" alt="Sprint 2 Backlog Board en Trello" width="95%">
+</div>
 
 | Story Id | Story Title | SP | Task Id | Task Title / Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---:|---|---|---:|---|---|
