@@ -41,18 +41,21 @@
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor(es) | Descripción de cambios |
-|---|---|---|---|
+| :---: | :---: | :--- | :--- |
 | 0.1 | 09/09/2026 | Lino Quispe, Leonardo Miguel | Creación de la estructura base del informe en Markdown y configuración inicial del repositorio. |
-| 0.2 | 11/09/2026 | Equipo Rumbo | Actualización de integrantes y desarrollo preliminar de los capítulos I y II para AV1. |
-| 0.3 | 15/09/2026 | Equipo Rumbo | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
-| 0.4 | 17/09/2026 | Equipo Rumbo | Sincronización del Capítulo I a partir de retroalimentación recibida y consolidación de Lean UX. |
-| 0.5 | 17/09/2026 | Equipo AIpaca | Alineación de la identidad Startup AIpaca / Producto Rumbo y refinamiento de alcance y restricciones. |
-| 1.0 | 18/09/2026 | Equipo AIpaca | Consolidación y entrega oficial del hito AV1 (Landing Page pública, Capítulos I al IV y Sprint 1). |
-| 1.1 | 24/09/2026 | Díaz Ramírez, Alejandro / Pareja Caceres, Diana | Especificación de Bounded Contexts, entidades y diseño de contratos RESTful para el Sprint 2. |
-| 1.2 | 29/09/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Estructuración del proyecto Frontend Web Application en Angular 18 con arquitectura DDD y Angular Material. |
-| 1.3 | 02/10/2026 | Geronimo Puma, Kevin Joel / Pareja Caceres, Diana | Integración de endpoints emulados mediante MockAPI en la nube y configuración de pruebas locales. |
-| 2.0 | 06/10/2026 | Equipo AIpaca | Consolidación formal de la entrega TB1: actualización de Student Outcome, registro de evidencias de desarrollo y ejecución del Sprint 2. |
-
+| 0.2 | 11/09/2026 | Díaz Ramírez, Alejandro / Meza Soza, Alexandra Yamile | Actualización de integrantes y desarrollo preliminar de los capítulos I y II para AV1. |
+| 0.3 | 15/09/2026 | Geronimo Puma, Kevin Joel / Pareja Caceres, Diana | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
+| 0.4 | 17/09/2026 | Lino Quispe, Leonardo Miguel / Díaz Ramírez, Alejandro | Sincronización del Capítulo I a partir de retroalimentación recibida y consolidación de Lean UX. |
+| 0.5 | 17/09/2026 | Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Alineación de la identidad Startup / Producto Rumbo y refinamiento de alcance y restricciones según feedback docente. |
+| 1.0 | 18/09/2026 | Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel | Consolidación y entrega oficial del hito AV1 (Landing Page pública, Capítulos I al IV y Sprint 1). |
+| 1.1 | 24/09/2026 | Díaz Ramírez, Alejandro / Pareja Caceres, Diana | Rediseño y refinamiento de Bounded Contexts y modelo de dominio atendiendo correcciones del profesor para la planificación del Sprint 2. |
+| 1.2 | 29/09/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Configuración base de la aplicación web en Angular con estructura DDD y Angular Material para soportar los módulos de cada contexto. |
+| 1.3 | 01/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel | Rediseño y optimización de la Landing Page pública (mejoras visuales, responsive design y llamada a la acción) según feedback docente. |
+| 1.4 | 02/10/2026 | Pareja Caceres, Diana / Lino Quispe, Leonardo Miguel | Definición y reparto del alcance individual del Sprint 2 (1 Bounded Context con CRUD por integrante) e integración de endpoints en MockAPI. |
+| 1.5 | 03/10/2026 | Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Implementación de vistas y lógica de formularios reactivos para las operaciones CRUD en los módulos de vehículos y perfiles asignados. |
+| 1.6 | 04/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel | Desarrollo de componentes y servicios CRUD para los módulos de rutas y subscripciones; resolución de validaciones y estados de error. |
+| 1.7 | 05/10/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Integración y pruebas de flujo completo de los 5 Bounded Contexts desarrollados, configuración de entorno y despliegue del frontend en producción. |
+| 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 
 ---
 
