@@ -1562,42 +1562,77 @@ Los wireflows mantienen trazabilidad con los User Stories, la Information Archit
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-#### User Flow — Padre/Tutor
+Los **User Flow Diagrams** de Rumbo representan las rutas esperadas para completar los principales objetivos de los segmentos **Parent** y **Driver**. A diferencia de los Wireflows, estos diagramas incorporan los mock-ups finales de las vistas y muestran tanto el **happy path** como rutas alternativas relevantes, manteniendo consistencia con los User Goals definidos previamente.
 
-```mermaid
-flowchart TD
-    A[Iniciar sesión] --> B{¿Credenciales válidas?}
-    B -- No --> C[Mostrar error y reintentar]
-    C --> A
-    B -- Sí --> D[Dashboard]
-    D --> E[Consultar estado actual]
-    E --> F{¿Necesita más detalle?}
-    F -- Sí --> G[Ver Trip Detail / Timeline]
-    F -- No --> H[Continuar monitoreando]
-    G --> I[Revisar retrasos, incidencias o llegada]
-    I --> H
-```
+#### User Flow 1 — Access Parent Dashboard
 
-#### User Flow — Conductor
+**User Persona:** Parent  
+**User Goal:** Access the main dashboard and review the latest school trip information.  
+**Flow Description:** The Parent selects the Parent experience, signs in successfully, and reaches the main dashboard with the active trip overview. If the credentials are invalid, the system shows an error and allows a new attempt.
 
-```mermaid
-flowchart TD
-    A[Iniciar sesión] --> B[Ruta asignada]
-    B --> C[Iniciar trayecto]
-    C --> D[Ver próxima parada]
-    D --> E{¿Qué ocurrió?}
-    E -- Recojo --> F[Confirmar Pickup]
-    E -- Retraso --> G[Registrar Delay]
-    E -- Incidencia --> H[Registrar Incident]
-    F --> I{¿Quedan paradas?}
-    G --> I
-    H --> I
-    I -- Sí --> D
-    I -- No --> J[Confirmar llegada / Drop-off]
-    J --> K[Finalizar Trip]
-```
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-access-parent.png" alt="User Flow 1 - Access Parent Dashboard" width="95%">
+</div>
 
-Los flujos reducen bifurcaciones y evitan acciones largas en el perfil del conductor. Las operaciones críticas se realizan desde la ruta activa y generan un evento que luego puede ser consultado por los padres.
+#### User Flow 2 — Consult Current Trip Status
+
+**User Persona:** Parent  
+**User Goal:** Consult the current trip status and review the trip timeline.  
+**Flow Description:** The Parent opens the dashboard, accesses the current trip detail, and reviews the chronological sequence of route events. The alternative path represents the case in which the trip has already been completed.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-consult.png" alt="User Flow 2 - Consult Current Trip Status" width="95%">
+</div>
+
+#### User Flow 3 — Review Important Notifications
+
+**User Persona:** Parent  
+**User Goal:** Review relevant notifications related to the school trip.  
+**Flow Description:** The Parent accesses the notification center, reviews recent alerts, and opens the detail of a relevant event. When there are no unread notifications, the interface displays an informative empty state.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-review.png" alt="User Flow 3 - Review Important Notifications" width="95%">
+</div>
+
+#### User Flow 4 — Start and Execute a Route
+
+**User Persona:** Driver  
+**User Goal:** Start the assigned route and continue the execution of the trip.  
+**Flow Description:** The Driver opens the assigned route, starts the trip, and continues the route through the student list to register operational milestones. The alternative path covers the reporting of a delay while the route remains active.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-start-route.png" alt="User Flow 4 - Start and Execute a Route" width="95%">
+</div>
+
+#### User Flow 5 — Configure Route and Stops
+
+**User Persona:** Driver  
+**User Goal:** Configure the assigned route, its stops, and the main service settings.  
+**Flow Description:** The Driver accesses the route configuration, adjusts the stop order and student links, and saves the updated configuration. If required information is missing or invalid, the system shows a validation error before allowing the operation to continue.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-configure-route.png" alt="User Flow 5 - Configure Route and Stops" width="95%">
+</div>
+
+#### User Flow 6 — Monitor Operational Notifications
+
+**User Persona:** Driver  
+**User Goal:** Review operational notifications associated with the route.  
+**Flow Description:** The Driver opens the notification center, reviews the latest operational updates, opens an alert and marks it as reviewed when appropriate. If there are no recent updates, the system presents an empty state instead of an unnecessary list.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-monitor.png" alt="User Flow 6 - Monitor Operational Notifications" width="95%">
+</div>
+
+#### User Flow 7 — Manage Account and Billing
+
+**User Persona:** Driver  
+**User Goal:** Review profile settings and subscription information.  
+**Flow Description:** The Driver accesses the account settings, reviews profile and vehicle information, and then checks the subscription and billing overview. The alternative path illustrates a paused subscription state that can later be reactivated.
+
+<div align="center">
+  <img src="./assets/chapter04/userflows/userflow-manage-account.png" alt="User Flow 7 - Manage Account and Billing" width="95%">
+</div>
 
 ## 4.5. Web Applications Prototyping
 
