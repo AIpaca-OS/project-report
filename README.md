@@ -2427,7 +2427,7 @@ Pull Requests relevantes:
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-La aplicación se ejecuta desde el código integrado de `develop`. Las siguientes vistas deben documentarse mediante capturas reales del producto ejecutándose:
+La aplicación se ejecuta desde el código integrado de `develop`. A continuación se presentan capturas reales de las principales vistas implementadas durante Sprint 2:
 
 1. **Vehicle & Credential Management:** listado, creación y edición de vehículos.
 2. **Profiles & Relationship Management:** listado y formulario de estudiantes.
@@ -2436,12 +2436,42 @@ La aplicación se ejecuta desde el código integrado de `develop`. Las siguiente
 5. **Subscriptions & Billing:** planes, formulario de suscripción y listado de suscripciones.
 6. **Responsive Web Design:** al menos una vista representativa en Mobile.
 
-<!-- PENDIENTE IMAGEN C5-S2-02: Vehicle List + Vehicle Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-03: Student List + Student Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-04: Route List + Route Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-05: Notification Dashboard / Settings. -->
-<!-- PENDIENTE IMAGEN C5-S2-06: Incident o Delay Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-07: Plans / Subscriptions CRUD. -->
+**Vehicle & Credential Management**
+
+La siguiente evidencia muestra la vista implementada para la gestión de vehículos dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-vehicles.png" alt="Execution Evidence - Vehicle Management" width="95%">
+</div>
+**Profiles & Relationship Management**
+
+La siguiente evidencia muestra la vista implementada para la gestión de estudiantes dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-students.png" alt="Execution Evidence - Student Management" width="95%">
+</div>
+**Route & Trip Planning**
+
+La siguiente evidencia muestra la vista implementada para la gestión de rutas dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-routes.png" alt="Execution Evidence - Route Management" width="95%">
+</div>
+**Alerting & Incident Management**
+
+La siguiente evidencia corresponde a una vista operativa del contexto de alertas e incidencias implementado en el Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-operations.png" alt="Execution Evidence - Alerting and Incident Operations" width="95%">
+</div>
+
+**Subscriptions & Billing**
+
+La siguiente evidencia muestra la vista implementada para la gestión de suscripciones dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-subscriptions.png" alt="Execution Evidence - Subscriptions and Billing" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-08: Una vista representativa en Mobile. -->
 
 **Video de navegación del Sprint 2:** debe mostrar las principales rutas del Frontend y operaciones CRUD incluidas en el Sprint.
@@ -2494,7 +2524,7 @@ Por tanto, para cerrar este requisito de TB1 falta:
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 2 debe evidenciarse con capturas reales de GitHub:
+La colaboración del Sprint 2 se evidencia con analíticos reales de GitHub. Se incorporan el resumen de actividad de Pulse y el Network Graph del repositorio; las evidencias adicionales de Contributors y Pull Requests se mantienen referenciadas para completar la revisión visual del Sprint:
 
 - Commits: https://github.com/AIpaca-OS/frontend-web-application/commits/develop
 - Contributors: https://github.com/AIpaca-OS/frontend-web-application/graphs/contributors
@@ -2503,9 +2533,26 @@ La colaboración del Sprint 2 debe evidenciarse con capturas reales de GitHub:
 
 La evidencia del repositorio permite identificar contribuciones de los cinco integrantes en las ramas y commits del Sprint, además de los merges de integración mediante Pull Requests.
 
-<!-- PENDIENTE IMAGEN C5-S2-16: Commits de develop mostrando autores del equipo. -->
+**Pulse — resumen de colaboración**
+
+La siguiente captura muestra el resumen de actividad reciente del repositorio durante el periodo de trabajo del Sprint.
+
+<div align="center">
+  <img src="./assets/chapter5/collaboration-pulse.png" alt="Team Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-17: Contributors del Frontend. -->
-<!-- PENDIENTE IMAGEN C5-S2-18: Network del Frontend. -->
+**Network Graph — trazabilidad de ramas e integración**
+
+Las siguientes capturas muestran el Network Graph utilizado como evidencia de la creación de ramas, evolución de commits e integración del trabajo del equipo durante el Sprint.
+
+<div align="center">
+  <img src="./assets/chapter5/network-1.png" alt="Frontend Network Graph - Evidence 1" width="95%"><br><br>
+  <img src="./assets/chapter5/network-2.png" alt="Frontend Network Graph - Evidence 2" width="95%"><br><br>
+  <img src="./assets/chapter5/network-3.png" alt="Frontend Network Graph - Evidence 3" width="95%"><br><br>
+  <img src="./assets/chapter5/network-4.png" alt="Frontend Network Graph - Evidence 4" width="95%"><br><br>
+  <img src="./assets/chapter5/network-5.png" alt="Frontend Network Graph - Evidence 5" width="95%"><br><br>
+  <img src="./assets/chapter5/network-6.png" alt="Frontend Network Graph - Evidence 6" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-19: Pull Requests #5, #6, #7 y #8 cerrados/merged. -->
 
 
