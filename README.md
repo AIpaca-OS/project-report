@@ -73,8 +73,10 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 
 **Team Collaboration Commits**
 
+La siguiente evidencia corresponde al resumen de actividad disponible en GitHub Pulse para el Project Report.
+
 <div align="center">
-  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
+  <img src="./assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
 </div>
 
 **Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
@@ -82,8 +84,15 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 
 **Team Collaboration Network**
 
+Las siguientes capturas corresponden al Network Graph y permiten revisar visualmente la evolución e integración de las ramas del trabajo colaborativo.
+
 <div align="center">
-  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Network" width="95%">
+  <img src="./assets/chapter5/network-1.png" alt="Team Collaboration Network - Evidence 1" width="95%"><br><br>
+  <img src="./assets/chapter5/network-2.png" alt="Team Collaboration Network - Evidence 2" width="95%"><br><br>
+  <img src="./assets/chapter5/network-3.png" alt="Team Collaboration Network - Evidence 3" width="95%"><br><br>
+  <img src="./assets/chapter5/network-4.png" alt="Team Collaboration Network - Evidence 4" width="95%"><br><br>
+  <img src="./assets/chapter5/network-5.png" alt="Team Collaboration Network - Evidence 5" width="95%"><br><br>
+  <img src="./assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
 </div>
 
 **Branches:** https://github.com/AIpaca-OS/project-report/branches  
@@ -93,11 +102,9 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
 
 **Contributors / Pull Requests**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Team Collaboration Pull Requests" width="95%">
-</div>
+La evidencia de Pull Requests se mantiene mediante los enlaces verificables de GitHub, evitando referencias a archivos de imagen que ya no existen en el repositorio.
 
-Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
+A la fecha de esta actualización, el Project Report registra **24 Pull Requests cerrados**, de los cuales **21 fueron integrados** y **3 fueron cerrados sin merge**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
 **Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
 **Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
