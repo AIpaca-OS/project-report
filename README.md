@@ -1715,7 +1715,7 @@ Las siguientes exportaciones corresponden a dos Bounded Contexts modelados en el
 Este artefacto resume el modelado DDD del contexto encargado de registrar vehículos y credenciales del servicio escolar, manteniendo separados los conceptos y responsabilidades propios del contexto.
 
 <div align="center">
-  <img src="./assets/chapter5/DDD-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
+  <img src="./assets/chapter04/event-storming/ddd-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
 </div>
 
 **Subscriptions & Billing**
@@ -1723,7 +1723,7 @@ Este artefacto resume el modelado DDD del contexto encargado de registrar vehíc
 Este artefacto resume el modelado DDD del contexto encargado de planes y suscripciones, manteniendo la responsabilidad comercial separada del resto de capacidades operativas de Rumbo.
 
 <div align="center">
-  <img src="./assets/chapter5/DDD-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
+  <img src="./assets/chapter04/event-storming/ddd-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
 </div>
 
 **Tablero completo:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
@@ -2367,7 +2367,9 @@ Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript
 La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue integrado en `main`, por lo que la evidencia debe mostrar la versión actual y no capturas antiguas de AV1.
 
 <!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
-<!-- PENDIENTE IMAGEN C5-S1-04: Navegador mostrando la URL pública y la versión actual. -->
+<div align="center">
+  <img src="./assets/chapter5/landing-public-deploy.jpg" alt="Landing Page desplegada públicamente en GitHub Pages" width="95%">
+</div>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
