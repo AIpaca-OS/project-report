@@ -1691,7 +1691,9 @@ El prototipo de la Web Application de **Rumbo** integra los principales mock-ups
 
 El **Design-Level Event Storming** de Rumbo refina el Big Picture Event Storming desarrollado previamente y organiza el dominio con mayor nivel de detalle. En esta etapa se identifican **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**, manteniendo trazabilidad con los User Stories y con el Ubiquitous Language del proyecto.
 
-Para evitar depender de un tablero externo adicional, esta versión se documenta mediante **Diagram-as-Code con Mermaid**, opción permitida para artefactos de EventStorming. El refinamiento mantiene los **ocho Bounded Contexts** definidos en el Capítulo II como alcance objetivo del producto.
+El artefacto colaborativo de **Design-Level Event Storming** se mantiene en **Miro**, donde el equipo organiza visualmente los elementos del dominio y su relación por Bounded Context. Como respaldo dentro del Project Report se incorporan exportaciones de los contextos trabajados y, adicionalmente, un diagrama Mermaid consolidado para conservar una representación legible y versionable en Markdown. El refinamiento mantiene los **ocho Bounded Contexts** definidos en el Capítulo II como alcance objetivo del producto.
+
+**Miro — Design-Level Event Storming:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
 
 | Bounded Context | Responsabilidad principal |
 |---|---|
@@ -1703,6 +1705,28 @@ Para evitar depender de un tablero externo adicional, esta versión se documenta
 | **Incident & Delay Management** | Gestionar retrasos, incidencias, actualizaciones, resolución y confirmación de conocimiento. |
 | **Notification Management** | Gestionar generación, distribución, lectura, fallos de entrega y preferencias de notificación. |
 | **Subscriptions & Billing** | Gestionar la activación y el estado de la suscripción del Driver y la información del plan asociada. |
+
+#### Evidencia visual del Design-Level Event Storming
+
+Las siguientes exportaciones corresponden a dos Bounded Contexts modelados en el tablero colaborativo de Miro y se incorporan como evidencia dentro del informe.
+
+**Vehicle & Credential Management**
+
+Este artefacto resume el modelado DDD del contexto encargado de registrar vehículos y credenciales del servicio escolar, manteniendo separados los conceptos y responsabilidades propios del contexto.
+
+<div align="center">
+  <img src="./assets/chapter5/DDD-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
+</div>
+
+**Subscriptions & Billing**
+
+Este artefacto resume el modelado DDD del contexto encargado de planes y suscripciones, manteniendo la responsabilidad comercial separada del resto de capacidades operativas de Rumbo.
+
+<div align="center">
+  <img src="./assets/chapter5/DDD-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
+</div>
+
+**Tablero completo:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
 
 #### Refinamiento por Bounded Context
 
@@ -2059,6 +2083,7 @@ Las herramientas utilizadas o previstas para el ciclo de vida de Rumbo son las s
 | Project Management | Trello | Sprint Backlog, Tasks, estados y seguimiento del Sprint 2. | SaaS | https://trello.com |
 | Requirements Management | GitHub Issues / Markdown | User Stories, criterios de aceptación y trazabilidad en el Project Report. | SaaS | https://github.com/AIpaca-OS |
 | Product UX/UI Design | Figma | Wireframes, mock-ups y prototipos de la experiencia web. | SaaS | https://www.figma.com |
+| Domain Modeling / Event Storming | Miro | Elaboración colaborativa del Design-Level Event Storming y refinamiento visual de Bounded Contexts. | SaaS | https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097 |
 | Source Code Management | Git / GitHub | Repositorios, ramas, commits, Pull Requests, revisión e integración. | Local / SaaS | https://git-scm.com / https://github.com/AIpaca-OS |
 | Frontend IDE | WebStorm / Visual Studio Code | Desarrollo y revisión de Angular, TypeScript, HTML y CSS. | Local | https://www.jetbrains.com/webstorm/ / https://code.visualstudio.com |
 | Frontend Framework | Angular 21.2 / Angular CLI 21.2 | Single Page Application y routing por Bounded Context. | Open Source | https://angular.dev |
@@ -2360,6 +2385,8 @@ Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreado
 ### 5.2.2. Sprint 2
 
 Sprint 2 corresponde a la primera versión integrada de la **Frontend Web Application**. El producto se implementa como SPA Angular, organizado por Bounded Contexts y con persistencia emulada. El Sprint no incorpora Web Services reales con Spring Boot.
+
+Los Bounded Contexts implementados en este Sprint mantienen trazabilidad con el **Design-Level Event Storming de la sección 4.6.1**, cuyo tablero colaborativo se encuentra en Miro. Las exportaciones incorporadas para **Vehicle & Credential Management** y **Subscriptions & Billing** sirven como evidencia visual del diseño que precede a su implementación.
 
 Los aspectos implementados y visibles en el repositorio son:
 
