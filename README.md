@@ -2204,7 +2204,7 @@ Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de ba
 
 La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
-### 5.2.1.1. Sprint Planning 1
+#### 5.2.1.1. Sprint Planning 1
 
 En esta sección se registran los principales acuerdos del Sprint Planning Meeting de Sprint 1 utilizando la estructura indicada en el Final Project Statement.
 
@@ -2255,7 +2255,7 @@ La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del a
   </tbody>
 </table>
 
-### 5.2.1.3. Sprint Backlog 1
+#### 5.2.1.3. Sprint Backlog 1
 
 El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. El Board público del Sprint se encuentra en:
 
@@ -2324,7 +2324,7 @@ La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`
 | `AIpaca-OS/landing-page` | `feat/improve-landing-page` | `3a19190` | feat: add product showcase to landing page | Sección "Conoce Rumbo en acción", carrusel de pantallas y ajustes responsive. | 06/10/2026 |
 | `AIpaca-OS/landing-page` | `main` | `ad4b4d2` | Merge pull request #1 from AIpaca-OS/feat/improve-landing-page | Integración de la mejora del Landing Page en main. | 06/10/2026 |
 
-### 5.2.1.5. Execution Evidence for Sprint Review
+#### 5.2.1.5. Execution Evidence for Sprint Review
 
 La Landing Page debe evidenciarse desde su URL pública y en sus vistas Desktop y Mobile.
 
@@ -2333,18 +2333,18 @@ La Landing Page debe evidenciarse desde su URL pública y en sus vistas Desktop 
 <!-- PENDIENTE IMAGEN C5-S1-01: Landing Page TB1 en Desktop mostrando Hero y la nueva sección de producto. -->
 <!-- PENDIENTE IMAGEN C5-S1-02: Landing Page TB1 en Mobile mostrando navegación responsive. -->
 
-### 5.2.1.6. Services Documentation Evidence for Sprint Review
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.
 
-### 5.2.1.7. Software Deployment Evidence for Sprint Review
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue integrado en `main`, por lo que la evidencia debe mostrar la versión actual y no capturas antiguas de AV1.
 
 <!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
 <!-- PENDIENTE IMAGEN C5-S1-04: Navegador mostrando la URL pública y la versión actual. -->
 
-### 5.2.1.8. Team Collaboration Insights during Sprint
+#### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreados:
 
@@ -2375,10 +2375,10 @@ Los aspectos implementados y visibles en el repositorio son:
 |---|---|
 | Sprint # | Sprint 2 |
 | Sprint Planning Background | Construcción de la primera versión integrada del Frontend Web Application mediante CRUD por Bounded Context y Fake REST APIs. |
-| Date | No existe una fecha de Sprint Planning verificable en los repositorios consultados. |
-| Time | No existe una hora de Sprint Planning verificable en los repositorios consultados. |
-| Location | No existe una ubicación de Sprint Planning verificable en los repositorios consultados. |
-| Prepared By | No se atribuye sin evidencia verificable. |
+| Date | 2026-09-21 |
+| Time | 15:00 - 17:30 PET |
+| Location | Sesión virtual sincrónica vía Google Meet / Discord |
+| Prepared By | Pareja Caceres, Diana |
 | Attendees | Equipo AIpaca: Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja. |
 | Sprint 1 Review Summary | Landing Page implementada y publicada. Para TB1 se incorporó una nueva sección de producto mediante PR #1. |
 | Sprint 1 Retrospective Summary | La evidencia histórica mostró integración directa a `main` en Sprint 1; para Sprint 2 se utilizaron feature branches, `develop` y Pull Requests. |
