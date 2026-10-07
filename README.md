@@ -994,7 +994,7 @@ El mapa relaciona los objetivos de negocio con los cambios de comportamiento esp
 
 El **Product Backlog de Rumbo** organiza y prioriza las User Stories según su valor para el negocio y el orden de implementación definido por el equipo. Las historias de la Landing Page se mantienen al inicio porque corresponden al primer Sprint. A continuación se ubican las funcionalidades de negocio y los CRUD del Frontend Web Application; las historias de cuenta, acceso y autorización se mantienen hacia la parte final del bloque funcional, mientras que las Technical Stories del RESTful API se reservan para etapas posteriores del proyecto.
 
-Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8**, conforme al Statement. El Sprint 1 reúne las historias US31–US35 y suma **8 Story Points**. La selección definitiva de historias para Sprint 2 se realizará desde este backlog según los CRUD que se implementen en Angular con JSON Server y la capacidad acordada por el equipo.
+Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8**, conforme al Statement. El Sprint 1 reúne las historias US31–US35 y suma **8 Story Points**. La selección definitiva de historias para  se realizará desde este backlog según los CRUD que se implementen en Angular con JSON Server y la capacidad acordada por el equipo.
 
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
 
@@ -2377,7 +2377,8 @@ En esta sección se registran los aspectos clave del Sprint Planning Meeting cor
 </table>
 
 La estimación respeta la regla de dimensionamiento: **1 SP ≈ 1–2 días de trabajo de un integrante**, totalizando 10 SP para el sprint de dos semanas del equipo.
-
+Link del artefacto sprint 2:
+https://trello.com/invite/b/6ac5acfc155988c2635f74d2/ATTId0178f5a35fe74259c89e878a2dd299c9794CD75/rumbo-sprint-2
 ---
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
