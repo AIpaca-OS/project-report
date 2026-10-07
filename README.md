@@ -1708,25 +1708,59 @@ El artefacto colaborativo de **Design-Level Event Storming** se mantiene en **Mi
 
 #### Evidencia visual del Design-Level Event Storming
 
-Las siguientes exportaciones corresponden a dos Bounded Contexts modelados en el tablero colaborativo de Miro y se incorporan como evidencia dentro del informe.
+El tablero colaborativo de **Design-Level Event Storming** se mantiene en Miro y constituye la evidencia principal del refinamiento del dominio por Bounded Context.
+
+**Miro — Design-Level Event Storming:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
+
+A continuación se presentan las exportaciones visuales correspondientes a los **ocho Bounded Contexts** definidos para Rumbo.
+
+**Identity & Access Management**
+
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-identity.jpeg" alt="Design-Level Event Storming - Identity and Access Management" width="95%">
+</div>
+
+**Profiles & Relationship Management**
+
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-profile.png" alt="Design-Level Event Storming - Profiles and Relationship Management" width="95%">
+</div>
 
 **Vehicle & Credential Management**
-
-Este artefacto resume el modelado DDD del contexto encargado de registrar vehículos y credenciales del servicio escolar, manteniendo separados los conceptos y responsabilidades propios del contexto.
 
 <div align="center">
   <img src="./assets/chapter04/event-storming/ddd-vehicle-credential.jpeg" alt="Design-Level Event Storming - Vehicle and Credential Management" width="95%">
 </div>
 
-**Subscriptions & Billing**
+**Route & Trip Planning**
 
-Este artefacto resume el modelado DDD del contexto encargado de planes y suscripciones, manteniendo la responsabilidad comercial separada del resto de capacidades operativas de Rumbo.
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-route.jpeg" alt="Design-Level Event Storming - Route and Trip Planning" width="95%">
+</div>
+
+**Trip Execution & Monitoring**
+
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-trip.jpeg" alt="Design-Level Event Storming - Trip Execution and Monitoring" width="95%">
+</div>
+
+**Incident & Delay Management**
+
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-incident.jpeg" alt="Design-Level Event Storming - Incident and Delay Management" width="95%">
+</div>
+
+**Notification Management**
+
+<div align="center">
+  <img src="./assets/chapter04/event-storming/ddd-notification.jpeg" alt="Design-Level Event Storming - Notification Management" width="95%">
+</div>
+
+**Subscriptions & Billing**
 
 <div align="center">
   <img src="./assets/chapter04/event-storming/ddd-subscriptions-billing.jpeg" alt="Design-Level Event Storming - Subscriptions and Billing" width="95%">
 </div>
-
-**Tablero completo:** https://miro.com/app/board/uXjVHr48KA8=/?share_link_id=942564800097
 
 #### Refinamiento por Bounded Context
 
@@ -2388,7 +2422,7 @@ Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreado
 
 Sprint 2 corresponde a la primera versión integrada de la **Frontend Web Application**. El producto se implementa como SPA Angular, organizado por Bounded Contexts y con persistencia emulada. El Sprint no incorpora Web Services reales con Spring Boot.
 
-Los Bounded Contexts implementados en este Sprint mantienen trazabilidad con el **Design-Level Event Storming de la sección 4.6.1**, cuyo tablero colaborativo se encuentra en Miro. Las exportaciones incorporadas para **Vehicle & Credential Management** y **Subscriptions & Billing** sirven como evidencia visual del diseño que precede a su implementación.
+Los Bounded Contexts implementados en este Sprint mantienen trazabilidad con el **Design-Level Event Storming documentado en la sección 4.6.1**, cuyo tablero colaborativo se encuentra en Miro y cuyas exportaciones visuales evidencian el refinamiento del dominio previo a la implementación.
 
 Los aspectos implementados y visibles en el repositorio son:
 
