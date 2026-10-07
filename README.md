@@ -1678,75 +1678,122 @@ El prototipo de la Web Application de **Rumbo** integra los principales mock-ups
 
 ### 4.6.1. Design-Level Event Storming
 
-El **Design-Level Event Storming** permite detallar el comportamiento interno de cada parte del dominio de Rumbo a partir de **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**. Para esta etapa se mantuvo la división en seis Bounded Contexts, de modo que cada uno concentre reglas y responsabilidades relacionadas y pueda evolucionar sin mezclar lógica de otros contextos.
+El **Design-Level Event Storming** de Rumbo refina el Big Picture Event Storming desarrollado previamente y organiza el dominio con mayor nivel de detalle. En esta etapa se identifican **Actors, Commands, Aggregates, Domain Events, Business Policies, Read Models y Hotspots**, manteniendo trazabilidad con los User Stories y con el Ubiquitous Language del proyecto.
 
-Los seis Bounded Contexts identificados son:
+Para evitar depender de un tablero externo adicional, esta versión se documenta mediante **Diagram-as-Code con Mermaid**, opción permitida para artefactos de EventStorming. El refinamiento mantiene los **ocho Bounded Contexts** definidos en el Capítulo II como alcance objetivo del producto.
 
-| Bounded Context | Responsabilidad |
+| Bounded Context | Responsabilidad principal |
 |---|---|
-| **Profiles and Verification** | Gestiona los perfiles de padres, conductores y estudiantes, así como vehículos, documentación registrada y vínculos autorizados. |
-| **Identity and Access Management (IAM)** | Gestiona cuentas, autenticación, recuperación de acceso, roles y permisos. |
-| **Route and Trip Planning** | Gestiona rutas, paradas, asignaciones de estudiantes, turnos, programación y ausencias. |
-| **Real-Time Tracking and Execution** | Gestiona la ejecución del viaje, recojos, entregas, estados y línea de tiempo del trayecto. |
-| **Alerting and Incident Management** | Gestiona retrasos, incidencias, alertas, notificaciones y preferencias de aviso. |
-| **Subscriptions and Billing** | Gestiona planes, suscripciones, pagos, renovaciones y comprobantes. |
+| **Identity & Access Management** | Gestionar cuentas, autenticación, verificación de correo y recuperación de acceso. |
+| **Profiles & Relationship Management** | Gestionar perfiles de Parent, Driver y Student, además de las relaciones de autorización sobre cada estudiante. |
+| **Vehicle & Credential Management** | Gestionar vehículos, credenciales declaradas y el estado registrado de su verificación. |
+| **Route & Trip Planning** | Gestionar rutas, paradas, horarios, asignaciones, ausencias, publicación y programación de viajes. |
+| **Trip Execution & Monitoring** | Registrar el inicio y desarrollo del viaje, recojos, entregas, etapas, estado y línea de tiempo. |
+| **Incident & Delay Management** | Gestionar retrasos, incidencias, actualizaciones, resolución y confirmación de conocimiento. |
+| **Notification Management** | Gestionar generación, distribución, lectura, fallos de entrega y preferencias de notificación. |
+| **Subscriptions & Billing** | Gestionar la activación y el estado de la suscripción del Driver y la información del plan asociada. |
 
-Para mantener una lectura uniforme de los diagramas se utilizan las siguientes convenciones: **amarillo** para Actors, **azul** para Commands, **azul claro** para Aggregates, **naranja** para Domain Events, **morado** para Business Policies, **verde** para Read Models y **fucsia** para Hotspots.
+#### Refinamiento por Bounded Context
 
-#### Profiles and Verification Bounded Context
+| Bounded Context | Actors | Commands principales | Aggregates | Domain Events principales | Policies / reglas | Read Models | Hotspots |
+|---|---|---|---|---|---|---|---|
+| **Identity & Access Management** | Parent, Driver | Register Account, Verify Email, Sign In, Recover Access | Account | Account Registered, Email Verified, Session Started, Access Recovery Requested | El acceso funcional requiere una cuenta válida y, cuando corresponda, correo verificado. | Account Access Status | Correo duplicado, token expirado, credenciales inválidas. |
+| **Profiles & Relationship Management** | Parent, Driver | Create Profile, Register Student, Update Profile, Authorize Parent, Revoke Parent | Profile, Student Relationship | Profile Created, Student Registered, Profile Updated, Parent Authorized, Parent Revoked | Solo un Parent autorizado puede consultar información del Student. | Student Profile, Authorized Parents | Acceso sin autorización, relación duplicada, solicitud de supresión con viaje activo. |
+| **Vehicle & Credential Management** | Driver | Register Vehicle, Update Vehicle, Register Credential, Update Credential Status | Vehicle, Credential Record | Vehicle Registered, Vehicle Updated, Credential Submitted, Credential Status Updated | Una placa activa no puede quedar asociada a dos Drivers; una credencial no se declara verificada sin una fuente válida. | Vehicle & Credential Status | Placa duplicada, servicio externo de verificación no disponible, credencial vencida. |
+| **Route & Trip Planning** | Driver, Parent | Create Route, Add Stop, Reorder Stops, Define Schedule, Assign Student, Publish Route, Update Route, Report Absence, Schedule Trip, Cancel Trip | Route, Trip Schedule | Route Created, Stop Added, Stops Reordered, Schedule Defined, Student Assigned, Route Published, Absence Reported, Trip Scheduled, Trip Cancelled | Una ruta no se publica sin paradas y horario; las ausencias se excluyen del roster del día; los cambios posteriores no alteran un viaje ya iniciado. | Route Detail, Daily Trip Roster | Dirección no localizable, capacidad insuficiente, asignación duplicada. |
+| **Trip Execution & Monitoring** | Driver, Parent | Start Trip, Confirm Pickup, Confirm School Arrival, Start Return, Confirm Drop-off, Complete Trip, View Current Status, View Timeline | Active Trip | Trip Started, Student Picked Up, School Arrival Confirmed, Return Started, Student Dropped Off, Trip Completed | Los hitos se registran sobre un viaje activo y deben conservar una secuencia temporal consistente. | Current Trip Status, Trip Timeline | Evento duplicado, pérdida de conectividad, evento fuera de secuencia. |
+| **Incident & Delay Management** | Driver, Parent | Report Delay, Update Delay, Report Incident, Resolve Incident, Acknowledge Incident | Operational Issue | Delay Reported, Delay Updated, Incident Reported, Incident Resolved, Incident Acknowledged | Una incidencia mantiene su historial; el conocimiento del Parent se registra sin modificar el evento original. | Open Issues, Incident Acknowledgement Status | Incidente duplicado, resolución prematura, Parent no autorizado. |
+| **Notification Management** | Parent, Driver, System | Generate Notification, Dispatch Notification, Mark Notification as Read, Update Preferences | Notification, Notification Preference | Notification Created, Notification Sent, Notification Delivery Failed, Notification Read, Preferences Updated | Solo se notifican destinatarios autorizados; los reintentos no deben duplicar el mismo aviso. | Notification Inbox, Delivery Status | Proveedor no disponible, aviso duplicado, preferencia incompatible con evento crítico. |
+| **Subscriptions & Billing** | Driver | Activate Subscription | Subscription | Subscription Activated, Subscription Activation Rejected | Un Driver no debe generar una activación duplicada para el mismo plan vigente. | Subscription Status, Available Plan | El detalle de pagos, renovaciones y comprobantes queda sujeto a futuras User Stories si se amplía el alcance comercial. |
 
-Este fue el primer Bounded Context modelado por el equipo. Representa el registro y consulta de información de padres, conductores, estudiantes y vehículos, así como la relación autorizada entre estudiante y conductor.
+#### Flujo consolidado de eventos del dominio
 
-<img width="1171" height="853" alt="Profiles and Verification Bounded Context" src="https://github.com/user-attachments/assets/cc84ce11-880c-4a1b-aac6-9b7f1d9232c8" />
+El siguiente diagrama resume cómo los eventos relevantes atraviesan los Bounded Contexts sin mezclar sus responsabilidades. Cada contexto conserva sus propios Aggregates y reglas, pero publica información que otros contextos pueden utilizar.
 
-> En Rumbo, la verificación se limita a controles internos sobre la información y la vigencia declarada de documentos registrados. No se asume validación oficial con ATU, Policía u otra entidad pública mientras dicha integración no exista.
+```mermaid
+flowchart LR
+    classDef actor fill:#F7D774,stroke:#7A5B00,color:#111;
+    classDef command fill:#6FA8FF,stroke:#1D4E89,color:#111;
+    classDef aggregate fill:#A7D8F0,stroke:#2D6E8B,color:#111;
+    classDef event fill:#F4A261,stroke:#8A4B08,color:#111;
+    classDef policy fill:#B388EB,stroke:#5B2C83,color:#111;
+    classDef readmodel fill:#8FD694,stroke:#2D6A34,color:#111;
+    classDef hotspot fill:#F284C4,stroke:#8A235E,color:#111;
 
-#### Identity and Access Management (IAM) Bounded Context
+    P[Parent]:::actor
+    D[Driver]:::actor
 
-Este contexto controla el acceso a Rumbo. Incluye registro de cuenta, autenticación, recuperación de contraseña y aplicación de permisos según el rol del usuario.
+    subgraph IAM["Identity & Access Management"]
+      C1[Register / Sign In]:::command --> A1[Account]:::aggregate --> E1[Account Registered / Session Started]:::event
+    end
 
-<div align="center">
-  <img src="./assets/chapter04/event-storming/iam.png" alt="Identity and Access Management (IAM) Bounded Context" width="95%">
-</div>
+    subgraph PRM["Profiles & Relationship Management"]
+      C2[Register Student / Authorize Parent]:::command --> A2[Profile & Relationship]:::aggregate --> E2[Student Registered / Parent Authorized]:::event
+      R2[Authorized Parents]:::readmodel
+      A2 --> R2
+    end
 
-#### Route and Trip Planning Bounded Context
+    subgraph VCM["Vehicle & Credential Management"]
+      C3[Register Vehicle / Credential]:::command --> A3[Vehicle & Credential Record]:::aggregate --> E3[Vehicle Registered / Credential Submitted]:::event
+      H3[External verification unavailable]:::hotspot
+      A3 -.-> H3
+    end
 
-Este contexto organiza la planificación operativa del servicio. Incluye la creación de rutas, la gestión de paradas, la asignación de estudiantes y la programación diaria de recorridos.
+    subgraph RTP["Route & Trip Planning"]
+      C4[Create / Publish Route / Schedule Trip]:::command --> A4[Route & Trip Schedule]:::aggregate --> E4[Route Published / Trip Scheduled]:::event
+      P4[Exclude reported absences]:::policy
+      R4[Daily Trip Roster]:::readmodel
+      P4 --> A4 --> R4
+    end
 
-<div align="center">
-  <img src="./assets/chapter04/event-storming/route-trip-planning.png" alt="Route and Trip Planning Bounded Context" width="95%">
-</div>
+    subgraph TEM["Trip Execution & Monitoring"]
+      C5[Start Trip / Confirm Pickup / Drop-off]:::command --> A5[Active Trip]:::aggregate --> E5[Trip Started / Pickup / Drop-off / Completed]:::event
+      R5[Current Trip Status / Timeline]:::readmodel
+      A5 --> R5
+    end
 
-#### Real-Time Tracking and Execution Bounded Context
+    subgraph IDM["Incident & Delay Management"]
+      C6[Report Delay / Incident / Resolve]:::command --> A6[Operational Issue]:::aggregate --> E6[Delay Reported / Incident Reported / Resolved]:::event
+      R6[Open Issues / Acknowledgement Status]:::readmodel
+      A6 --> R6
+    end
 
-Este contexto gestiona la **ejecución y el estado operativo del trayecto** mediante eventos registrados durante el viaje. Incluye el inicio del viaje, confirmaciones de recojo y entrega, verificaciones, hitos y cierre del trayecto. El seguimiento continuo por GPS, ETA dinámico y geofencing se mantiene como evolución posterior del producto y no forma parte del alcance actual del Sprint 2.
+    subgraph NM["Notification Management"]
+      C7[Generate / Dispatch Notification]:::command --> A7[Notification]:::aggregate --> E7[Notification Sent / Delivery Failed]:::event
+      P7[Only authorized recipients]:::policy
+      R7[Notification Inbox]:::readmodel
+      P7 --> A7 --> R7
+    end
 
-<div align="center">
-  <img src="./assets/chapter04/event-storming/realtime-tracking-execution.png" alt="Real-Time Tracking and Execution Bounded Context" width="95%">
-</div>
+    subgraph SB["Subscriptions & Billing"]
+      C8[Activate Subscription]:::command --> A8[Subscription]:::aggregate --> E8[Subscription Activated]:::event
+      H8[Commercial scope beyond US09]:::hotspot
+      A8 -.-> H8
+    end
 
-#### Alerting and Incident Management Bounded Context
+    P --> C1
+    D --> C1
+    P --> C2
+    D --> C3
+    D --> C4
+    P --> C4
+    D --> C5
+    P --> R5
+    D --> C6
+    P --> C6
+    P --> C7
+    D --> C7
+    D --> C8
 
-Este contexto gestiona retrasos, incidencias y comunicaciones relevantes hacia las familias. Incluye notificaciones, alertas automáticas y el registro de incidentes ocurridos durante el servicio.
+    E1 --> C2
+    E3 --> C4
+    E4 --> C5
+    E5 --> C7
+    E6 --> C7
+    E8 --> C4
+```
 
-<div align="center">
-  <img src="./assets/chapter04/event-storming/alerting-incident-management.png" alt="Alerting and Incident Management Bounded Context" width="95%">
-</div>
-
-#### Subscriptions and Billing Bounded Context
-
-Este contexto administra la suscripción del conductor a la plataforma. Incluye selección de plan, pagos, comprobantes, renovación, pausa, cancelación y reactivación del servicio.
-
-<div align="center">
-  <img src="./assets/chapter04/event-storming/subscriptions-billing.png" alt="Subscriptions and Billing Bounded Context" width="95%">
-</div>
-
-En conjunto, los seis Bounded Contexts establecen la base para los Class Diagrams y Database Diagrams de las secciones 4.7 y 4.8. La división evita concentrar toda la lógica en un único modelo y mantiene trazabilidad entre las User Stories, el comportamiento del dominio y el diseño técnico.
-
-**Tablero editable de Design-Level Event Storming:** [Rumbo - Design-Level Event Storming](https://miro.com/app/board/uXjVHl8Ic-k=/)
-
-El tablero editable contiene actualmente los **seis Bounded Contexts** documentados en esta sección, incluido **Profiles and Verification**, de modo que el artefacto externo y el Project Report mantienen la misma delimitación del dominio.
-
+El refinamiento evidencia que el núcleo operativo de Rumbo se concentra en **Route & Trip Planning** y **Trip Execution & Monitoring**, mientras que identidad, perfiles, vehículos, incidencias, notificaciones y suscripciones actúan como capacidades de soporte o habilitación. Esta delimitación mantiene las responsabilidades separadas y sirve como base para los diagramas C4, los Class Diagrams y los Database Diagrams de las siguientes secciones.
 
 ### 4.6.2. Software Architecture Context Diagram
 
