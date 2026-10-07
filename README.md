@@ -2044,142 +2044,163 @@ En conjunto, los ocho Database Diagrams mantienen correspondencia con los Bounde
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
+En este capítulo se describe y evidencia el proceso de implementación, comprobación y despliegue de **Rumbo** para el alcance de TB1. La entrega consolida una nueva versión de la Landing Page y la primera versión integrada de la Frontend Web Application. El Frontend se encuentra construido con **Angular 21.2**, TypeScript 5.9 y Angular Material 21.2, organizado por Bounded Contexts y consumiendo Fake REST APIs. La lógica de negocio de servidor y los Web Services reales con Spring Boot quedan fuera del alcance de este Sprint.
 
-En este capítulo se describe y evidencia el proceso de implementación, comprobación, despliegue y validación de la solución tecnológica Rumbo. Para la presente entrega (TB1), el alcance comprende la consolidación de la Landing Page desplegada en el Sprint 1 y la primera versión ejecutable de la Frontend Web Application en el Sprint 2, estructurada mediante arquitectura orientada al dominio (Domain-Driven Design), organizada por Bounded Contexts y conectada a un Fake RESTful API soportado con MockAPI y json-server. Asimismo, se formalizan las decisiones de configuración y control de versiones que garantizan la trazabilidad y colaboración del equipo.
+Para mantener trazabilidad con el estado real de los repositorios, este capítulo distingue entre: (1) funcionalidades implementadas y fusionadas en GitHub, (2) servicios emulados con MockAPI o JSON Server local y (3) evidencias de despliegue que requieren una URL pública verificable. No se atribuyen como completadas actividades que todavía no cuentan con evidencia en los repositorios.
 
 ## 5.1. Software Configuration Management
 
 ### 5.1.1. Software Development Environment Configuration
 
-Para el desarrollo de Rumbo se definieron las siguientes herramientas:
+Las herramientas utilizadas o previstas para el ciclo de vida de Rumbo son las siguientes:
 
-| Tipo de Actividad | Herramienta | Propósito en el Proyecto | Tipo / Licencia | Enlace de Referencia / Descarga |
+| Tipo de actividad | Producto / herramienta | Uso en Rumbo | Tipo | Referencia |
 |---|---|---|---|---|
-| **Project Management & Agile Tracking** | GitHub Projects | Gestión integral del Product Backlog y Sprint Backlog mediante tableros Kanban, seguimiento de Engineering Tasks por estados (*To Do, In Process, To Review, Done*) y asignación a integrantes. | SaaS (Cloud) | [https://github.com/orgs/AIpaca-OS/projects](https://github.com/orgs/AIpaca-OS/projects) |
-| **Requirements Management** | GitHub Issues & Markdown | Documentación formal de User Stories con criterios de aceptación Gherkin y trazabilidad con tareas de ingeniería. | SaaS (Cloud) | [https://github.com/AIpaca-OS](https://github.com/AIpaca-OS) |
-| **Product UX/UI Design** | Figma | Creación de Wireframes (baja fidelidad), Mock-ups responsivos (Desktop y Mobile), User Flows y Prototipo navegable de la solución. | SaaS (Cloud) | [https://www.figma.com](https://www.figma.com) |
-| **Source Code & Version Control** | Git | Sistema de control de versiones distribuido local para registro atómico de cambios y gestión de ramas. | Software Local | [https://git-scm.com/downloads](https://git-scm.com/downloads) |
-| **Code Hosting & Collaboration** | GitHub | Plataforma remota para alojamiento de repositorios bajo la organización `AIpaca-OS`, gestión de Pull Requests, revisiones y ramas protegidas. | SaaS (Cloud) | [https://github.com/AIpaca-OS](https://github.com/AIpaca-OS) |
-| **Frontend Development (IDE)** | WebStorm / Visual Studio Code | Entornos de desarrollo integrados (IDE) para el Frontend Web Application y Landing Page, con soporte de TypeScript, Angular CLI y extensiones de formato. | Software Local | [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) / [https://code.visualstudio.com/](https://code.visualstudio.com/) |
-| **Backend Development (IDE)** | IntelliJ IDEA Ultimate | IDE para el diseño y construcción de los Web Services basados en Java y Spring Boot. | Software Local | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
-| **Landing Page Technologies** | HTML5, CSS3 y JavaScript | Construcción de la Landing Page pública responsive con soporte multidispositivo y accesibilidad. | Estándar W3C | [https://developer.mozilla.org](https://developer.mozilla.org) |
-| **Frontend Framework & Tooling** | Angular 18+, TypeScript, Angular Material | Desarrollo de la Single Page Application (SPA) para la Web App, utilizando Standalone Components, gestión reactiva de estado con Signals y UI con Material Design. | Framework Open Source | [https://angular.dev](https://angular.dev) / [https://material.angular.io](https://material.angular.io) |
-| **Mock Backend / Fake RESTful API** | MockAPI & json-server | Emulación de servicios RESTful y persistencia simulada de recursos (`vehicles`, `credentials`, etc.). Se utiliza `json-server` para desarrollo local y `MockAPI` para integración remota sin dependencias de red local. | SaaS (Cloud) / Paquete npm | [https://mockapi.io/](https://mockapi.io/) / [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server) |
-| **Backend Framework** | Java, Spring Boot, Spring Data JPA | Construcción de microservicios y RESTful APIs para la persistencia y lógica de negocio. | Framework Open Source | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
-| **API Documentation** | OpenAPI / Swagger | Especificación y documentación interactiva de endpoints y contratos de datos. | Especificación / Open Source | [https://swagger.io](https://swagger.io) |
-| **Software Deployment** | GitHub Pages | Plataforma de alojamiento estático y despliegue continuo (Continuous Deployment) para la Landing Page pública. | SaaS (Cloud) | [https://pages.github.com](https://pages.github.com) |
-| **Software Documentation** | Markdown | Estructuración técnica y redacción colaborativa del Project Report en GitHub. | Estándar Abierto | [https://www.markdownguide.org](https://www.markdownguide.org) |
+| Project Management | Trello | Sprint Backlog, Tasks, estados y seguimiento del Sprint 2. | SaaS | https://trello.com |
+| Requirements Management | GitHub Issues / Markdown | User Stories, criterios de aceptación y trazabilidad en el Project Report. | SaaS | https://github.com/AIpaca-OS |
+| Product UX/UI Design | Figma | Wireframes, mock-ups y prototipos de la experiencia web. | SaaS | https://www.figma.com |
+| Source Code Management | Git / GitHub | Repositorios, ramas, commits, Pull Requests, revisión e integración. | Local / SaaS | https://git-scm.com / https://github.com/AIpaca-OS |
+| Frontend IDE | WebStorm / Visual Studio Code | Desarrollo y revisión de Angular, TypeScript, HTML y CSS. | Local | https://www.jetbrains.com/webstorm/ / https://code.visualstudio.com |
+| Frontend Framework | Angular 21.2 / Angular CLI 21.2 | Single Page Application y routing por Bounded Context. | Open Source | https://angular.dev |
+| UI Components | Angular Material 21.2 | Componentes de interfaz basados en Material Design. | Open Source | https://material.angular.dev |
+| Language / Tooling | TypeScript 5.9 / npm 11.19 | Programación, tipado y gestión de dependencias. | Open Source | https://www.typescriptlang.org / https://www.npmjs.com |
+| i18n | ngx-translate 18 | Recursos de internacionalización del Frontend. | Open Source | https://github.com/ngx-translate/core |
+| Fake REST API | MockAPI | Persistencia emulada remota para vehículos, rutas, perfiles y suscripciones. | SaaS | https://mockapi.io |
+| Fake REST API local | json-server 0.17.4 | Persistencia emulada local actualmente utilizada por alertas, notificaciones, incidencias y retrasos. | Open Source | https://www.npmjs.com/package/json-server |
+| Frontend CI | GitHub Actions | Verificación automatizada de compilación del Frontend integrado. | SaaS | https://github.com/features/actions |
+| Landing Deployment | GitHub Pages | Publicación de la Landing Page. | SaaS | https://pages.github.com |
+| Backend (Sprint posterior) | IntelliJ IDEA / Java / Spring Boot / Spring Data JPA | Construcción futura de RESTful Web Services. No forma parte de TB1. | Local / Open Source | https://spring.io/projects/spring-boot |
+| API Documentation (Sprint posterior) | OpenAPI / Swagger | Documentación futura de Web Services reales. | Open Standard / Open Source | https://www.openapis.org |
+| Software Documentation | Markdown | Elaboración colaborativa del Project Report. | Open Standard | https://www.markdownguide.org |
+
+El repositorio del Frontend confirma actualmente Angular 21.2.x, Angular Material 21.2.x, TypeScript 5.9.2, npm 11.19.0 y json-server 0.17.4. Por ello se elimina del Capítulo V la referencia anterior a Angular 18 como versión utilizada en TB1.
 
 ### 5.1.2. Source Code Management
 
-GitHub es la plataforma utilizada para administrar el código y la documentación de Rumbo bajo la organización **AIpaca-OS**.
-
-#### Repositorios
+La organización GitHub del equipo es **AIpaca-OS**. Los repositorios del producto son:
 
 - **Project Report:** https://github.com/AIpaca-OS/project-report
 - **Landing Page:** https://github.com/AIpaca-OS/landing-page
 - **Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
 - **Web Services:** https://github.com/AIpaca-OS/web-services
 
-#### GitFlow
+#### GitFlow aplicado
 
-El proyecto utiliza el modelo de ramificación GitFlow basado en *"A successful Git branching model"* de Vincent Driessen:
+El flujo de integración adoptado es:
 
-- `main`: versión estable en producción y entregas oficiales (releases).
-- `develop`: integración del trabajo continuo del equipo.
-- `feature/*`: trabajo de una funcionalidad o sección específica creada a partir de `develop`.
-- `release/*`: preparación y estabilización de una versión formal (ej. `release/v1.0.0`, `release/v2.0.0`).
-- `hotfix/*`: correcciones urgentes originadas desde `main` (ej. `hotfix/v1.0.1`).
+`feature/* → develop → main`
 
-En el Project Report se emplean ramas como:
+- `main`: rama estable destinada a versiones publicables.
+- `develop`: rama de integración del trabajo del Sprint.
+- `feature/*`: ramas de implementación por aspecto o Bounded Context.
+- `fix/*`: ramas de integración/corrección cuando es necesario estabilizar el conjunto antes del merge.
+- `release/*`: reservada para preparación de una release.
+- `hotfix/*`: reservada para correcciones urgentes sobre una versión estable.
 
-- `feature/chapter-1-introduction`
-- `feature/chapter-2-requirements-elicitation-and-analysis`
-- `feature/chapter-3-requirements-specification`
-- `feature/chapter-4-product-design`
-- `feature/chapter-5-product-implementation-validation-and-deployment`
+En el Frontend, la implementación real de TB1 se organizó en las siguientes ramas:
 
-La Landing Page dispone de `main`, `develop` y `feature/landing-page-v1`. La primera carga funcional quedó registrada en `main`; los siguientes cambios se integrarán mediante el flujo `feature → develop → main`.
+| Aspecto / Bounded Context | Feature branch | Responsable principal evidenciado |
+|---|---|---|
+| Vehicle & Credential Management | `feature/vehicle-credential-management` | Diana Pareja Caceres |
+| Profiles & Relationship Management | `feature/profiles-and-relationship-management` | Alejandro Díaz Ramírez |
+| Route & Trip Planning | `feature/route-trip-planning` | Leonardo Lino Quispe |
+| Alerting & Incident Management | `feature/alerting-and-incident-management` | Alexandra Meza Soza |
+| Subscriptions & Billing | `feature/subscriptions-and-billing` | Kevin Geronimo Puma |
+| Integración TB1 | `fix/tb1-integration-complete` | Leonardo Lino Quispe |
 
-#### Trazabilidad User Story → Feature → Branch → Commit
+Los Pull Requests #5, #6, #7 y #8 del repositorio Frontend fueron integrados en `develop`. El PR #7 consolidó los Bounded Contexts y correcciones compartidas sobre la línea de integración, mientras que el PR #8 preservó la trazabilidad de Route & Trip Planning.
 
-Para las funcionalidades desarrolladas en el proyecto se aplica la relación de trazabilidad indicada por el docente:
+#### Trazabilidad
 
-**User Story → Feature → Feature Branch → Commits**
+La trazabilidad usada en este Sprint se documenta como:
 
-Una funcionalidad implementada debe estar respaldada por una User Story del Product Backlog antes de iniciar su desarrollo. Las ramas funcionales se nombrarán utilizando el identificador de la historia y un nombre breve de la funcionalidad, por ejemplo:
+**User Story → Work-items / Tasks → Feature Branch → Commits → Pull Request → develop**
 
-- `feature/us02-vehicle-credential-management`
-- `feature/us10-route-management`
+No se crea una User Story para documentación. Las User Stories seleccionadas corresponden a funcionalidades de producto ya existentes en el Product Backlog y las Tasks representan trabajo técnico concreto.
 
-Cada feature branch se crea desde `develop`, contiene únicamente cambios relacionados con la historia o feature correspondiente y se integra nuevamente a `develop` mediante Pull Request después de su revisión. `main` se actualiza únicamente cuando la versión integrada se encuentra lista para el cierre de release. Los commits de la rama se utilizan posteriormente como evidencia en Development Evidence for Sprint Review.
+#### Conventional Commits y Semantic Versioning
 
-#### Convenciones
-
-Para los commits se utiliza Conventional Commits:
-
-- `feat`: nueva funcionalidad.
-- `fix`: corrección.
-- `docs`: documentación.
-- `style`: cambios de formato.
-- `refactor`: reorganización de código.
-- `test`: pruebas.
-- `chore`: mantenimiento.
-
-Las versiones siguen Semantic Versioning 2.0.0 con el formato `MAJOR.MINOR.PATCH` (ej. `v1.0.0` para Landing Page y `v2.0.0` para la versión con Frontend Web Application).
+Los mensajes de commit utilizan, cuando corresponde, los prefijos `feat`, `fix`, `docs`, `refactor`, `test`, `style` y `chore`. Para releases se adopta Semantic Versioning con el formato `MAJOR.MINOR.PATCH`.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Las convenciones se aplican con nomenclatura técnica en inglés.
+
 #### HTML
 
-La Landing Page utiliza HTML5 semántico, navegación mediante identificadores, atributos `alt` en imágenes y atributos ARIA cuando corresponde. Los nombres de clases se mantienen en `kebab-case`.
+- Uso de HTML semántico.
+- Atributos `alt` para imágenes informativas.
+- Atributos ARIA cuando el componente requiere información adicional de accesibilidad.
+- Estructura y contenido separados de los estilos.
+- Nombres de clases CSS en `kebab-case`.
 
+#### CSS
+
+- Selectores y clases descriptivos en inglés.
+- Diseño responsive mediante breakpoints coherentes con la experiencia Desktop y Mobile.
+- Evitar duplicación innecesaria de reglas.
+- Mantener los estilos de cada vista dentro de su componente cuando corresponde al Frontend Angular.
+
+#### TypeScript y Angular
+
+- Clases y tipos en `PascalCase`.
+- Variables, propiedades, funciones y métodos en `camelCase`.
+- Constantes descriptivas y nombres en inglés.
+- Bounded Contexts separados por responsabilidades de `domain`, `application`, `infrastructure` y `presentation`.
+- Acceso HTTP encapsulado en clases de infraestructura y endpoints.
+- Componentes y rutas organizados dentro del Bounded Context al que pertenecen.
+- Uso de tipado explícito para entidades y respuestas relevantes.
+- Uso de Angular Signals donde el contexto implementado requiere estado reactivo.
+- Rutas de aplicación registradas mediante Angular Router y lazy loading cuando corresponde.
+
+#### Gherkin
+
+Los criterios de aceptación se redactan con escenarios comprobables usando la estructura **Given – When – Then**, sin introducir detalles de implementación en el requisito.
+
+#### Java / Spring Boot
+
+Para el Sprint en el que se implemente Web Services se utilizará Java con las convenciones indicadas por Google Java Style Guide y las prácticas de Spring Boot. Esta convención queda documentada desde TB1, pero no se presenta como implementación realizada en Sprint 2.
 
 ### 5.1.4. Software Deployment Configuration
 
-Para la primera versión de la Landing Page se utilizó **GitHub Pages** como plataforma de publicación.
+#### Landing Page
+
+La Landing Page se publica mediante GitHub Pages desde el repositorio `AIpaca-OS/landing-page`.
 
 | Configuración | Valor |
 |---|---|
-| **Repository** | `AIpaca-OS/landing-page` |
-| **Source** | Deploy from a branch |
-| **Branch** | `main` |
-| **Folder** | `/(root)` |
-| **Entry point** | `index.html` |
+| Repository | `AIpaca-OS/landing-page` |
+| Branch publicada | `main` |
+| Entry point | `index.html` |
+| URL pública | https://aipaca-os.github.io/landing-page/ |
 
-**Repositorio:** https://github.com/AIpaca-OS/landing-page  
-**URL pública:** https://aipaca-os.github.io/landing-page/
+Durante TB1 se integró además la mejora **`feat: add product showcase to landing page`** mediante el PR #1 del Landing Page, incorporando una sección de producto, pantallas reales y ajustes responsive.
 
-La configuración quedó activa y GitHub Pages reporta el sitio como publicado.
+<!-- PENDIENTE IMAGEN C5-01: Captura de GitHub Pages mostrando la Landing Page publicada. -->
+<!-- PENDIENTE IMAGEN C5-02: Captura de la Landing Page pública con la sección "Conoce Rumbo en acción". -->
 
-![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
+#### Frontend Web Application
 
-La configuración de despliegue del Frontend Web Application y de los Web Services se realizará en los siguientes Sprints.
+La primera versión integrada del Frontend se encuentra en la rama `develop` del repositorio `AIpaca-OS/frontend-web-application`, con sus Bounded Contexts integrados y workflow de CI para verificar la compilación.
+
+Al cierre de esta corrección documental, el repositorio todavía mantiene `main` en una revisión anterior a la integración de TB1 y **no se ha verificado una URL pública de despliegue del Frontend**. Por ello este informe no declara un despliegue público inexistente. Antes de la entrega TB1 debe completarse `develop → main`, realizar el despliegue y sustituir esta nota por la URL pública y su evidencia.
+
+<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso del Frontend cuando exista. -->
+<!-- PENDIENTE IMAGEN C5-04: Captura del Frontend funcionando desde su URL pública, no localhost. -->
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-La planificación de implementación queda organizada de la siguiente manera según la retroalimentación del docente:
+Para TB1 el trabajo implementado se divide en:
 
-- **Sprint 1:** Landing Page.
-- **Sprint 2:** Frontend Web Application con Angular, operaciones CRUD y JSON Server, sin back-end.
-- **Sprint 3:** lógica de negocio y Web Services con Spring Boot.
-- **Sprint 4:** integración completa entre Frontend Web Application, RESTful API y persistencia.
+- **Sprint 1:** Landing Page pública.
+- **Sprint 2:** primera versión de la Frontend Web Application con CRUD por Bounded Context y Fake REST APIs.
+- **Sprint posterior:** lógica de negocio de servidor y RESTful Web Services con Spring Boot.
 
-Antes de construir el Sprint Backlog 2 se debe cerrar la trazabilidad de cada Bounded Context: **entidades → funcionalidades CRUD → User Stories → Story Points → Tasks → feature branch**. No se incorporarán tareas puramente documentales como sustituto de funcionalidades de desarrollo ni se crearán User Stories para operaciones que no vayan a implementarse.
-
-Para la descomposición del Sprint se aplicarán además estas reglas:
-- una **User Story** se estima en **Story Points**;
-- cada User Story seleccionada para el Sprint debe descomponerse en **mínimo dos Tasks**;
-- una **Task** se estima en horas y no debe superar aproximadamente **8 horas**;
-- las Tasks se redactan como acciones técnicas y concretas, no con la sintaxis `Como... quiero... para...`;
-- la suma y naturaleza de las Tasks debe ser coherente con el esfuerzo representado por los Story Points de la User Story.
-
-Las capturas de **GitHub Insights** se actualizarán únicamente después de integrar el trabajo funcional mediante `feature → develop → main`, de modo que Commits, Contributors y Network reflejen la participación real del equipo.
-
+No se atribuye a Sprint 2 lógica de negocio compleja ni un backend Spring Boot. Los recursos MockAPI y JSON Server utilizados en TB1 son mecanismos de persistencia emulada para el Frontend.
 
 ### 5.2.1. Sprint 1
 
-Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y JSON Server, sin back-end.
+Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y Fake REST APIs. La integración con Spring Boot queda fuera del alcance de TB1.
 
 La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
@@ -2290,271 +2311,238 @@ El objetivo del Sprint 1 es implementar y desplegar la primera versión responsi
 
 Todas las User Stories del Sprint cumplen la regla indicada por el docente de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las Tasks S01 y S02 corresponden a constraints generales del Sprint y no generan Story Points.
 
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-La implementación funcional de AV1 se concentra en la **Landing Page**. El repositorio muestra una primera carga del producto, un rediseño posterior y una implementación adicional de comportamiento JavaScript. Los repositorios de Frontend Web Application y Web Services existen y cuentan con su foundation inicial, pero todavía no presentan features funcionales de negocio; por ello se documentan sin atribuirles implementación que aún no existe.
+La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`. Para TB1 se agregó una nueva mejora al Landing Page, integrada mediante Pull Request.
 
-**Observación de trazabilidad del Sprint 1:** el historial actual del repositorio muestra que los commits funcionales principales de la Landing Page fueron realizados directamente sobre `main`; las ramas `develop` y `feature/landing-page-v1` permanecieron en el estado de inicialización. Este historial no se modifica retroactivamente. A partir de Sprint 2 se aplicará estrictamente `feature → develop → main`, relacionando cada feature branch con la User Story correspondiente.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| `AIpaca-OS/landing-page` | `main` | [`826939d`](https://github.com/AIpaca-OS/landing-page/commit/826939d379fd977780cb7b2cb6091e02a50ad95f) | Subir archivos de la landing page | No registra body adicional. El commit incorpora `index.html`, `css/styles.css`, JavaScript y recursos base. | 15/09/2026 |
-| `AIpaca-OS/landing-page` | `main` | [`6efdfc3`](https://github.com/AIpaca-OS/landing-page/commit/6efdfc3) | feat: redesign landing page | No registra body adicional. Modifica `index.html` y más de 1000 líneas de CSS, además de incorporar assets visuales. | 16/09/2026 |
-| `AIpaca-OS/landing-page` | `main` | [`a418118`](https://github.com/AIpaca-OS/landing-page/commit/a41811897fc24576d16c8f0d5b32089e50db7811) | feat: implement javascript | No registra body adicional. Añade `js/app.js` y actualiza HTML/CSS para menú responsive, dropdown, FAQ y navegación. | 17/09/2026 |
-| `AIpaca-OS/frontend-web-application` | `main` | [`e3b251f`](https://github.com/AIpaca-OS/frontend-web-application/commit/e3b251f56778b1fb7cf0edf0f7d0744a8c5b80b3) | docs: initialize Rumbo Open Source frontend repository | Foundation documental del repositorio; aún no constituye una feature funcional de Sprint 1. | 09/09/2026 |
-| `AIpaca-OS/web-services` | `main` | [`70f84df`](https://github.com/AIpaca-OS/web-services/commit/70f84df831634feaacbd25a92933f9edf97edf61) | docs: initialize Rumbo Open Source web services repository | Foundation documental del repositorio; aún no existen endpoints funcionales de negocio para AV1. | 09/09/2026 |
+| `AIpaca-OS/landing-page` | `main` | `826939d` | Subir archivos de la landing page | Primera carga funcional de la Landing Page. | 15/09/2026 |
+| `AIpaca-OS/landing-page` | `main` | `6efdfc3` | feat: redesign landing page | Rediseño de la experiencia visual. | 16/09/2026 |
+| `AIpaca-OS/landing-page` | `main` | `a418118` | feat: implement javascript | Interacciones de navegación y comportamiento JavaScript. | 17/09/2026 |
+| `AIpaca-OS/landing-page` | `feat/improve-landing-page` | `3a19190` | feat: add product showcase to landing page | Sección "Conoce Rumbo en acción", carrusel de pantallas y ajustes responsive. | 06/10/2026 |
+| `AIpaca-OS/landing-page` | `main` | `ad4b4d2` | Merge pull request #1 from AIpaca-OS/feat/improve-landing-page | Integración de la mejora del Landing Page en main. | 06/10/2026 |
 
-Los commits del 16 y 17 de septiembre corresponden a estabilización y mejora posterior a la primera revisión de AV1; se incluyen para que la evidencia represente el **estado actual real** del producto.
+### 5.2.1.5. Execution Evidence for Sprint Review
 
-#### 5.2.1.5. Execution Evidence for Sprint Review
-
-**Landing Page:** https://github.com/AIpaca-OS/landing-page
-
-La Landing Page fue ejecutada en vista Desktop y se verificaron sus principales secciones: Hero, indicadores, funcionamiento del trayecto, beneficios, funcionalidades, testimonios, FAQ, CTA y footer.
-
-![Ejecución Desktop de la Landing Page](assets/chapter5/landing-desktop-evidence.webp)
-
-También se verificó el comportamiento responsive. En vista Mobile, la navegación se reorganiza en un menú desplegable y mantiene acceso a las principales secciones de la página.
-
-![Ejecución Mobile de la Landing Page](assets/chapter5/landing-mobile-evidence.webp)
-
-#### 5.2.1.6. Services Documentation Evidence for Sprint Review
-
-Durante Sprint 1 no se implementaron Web Services. Las Technical Stories TS01–TS08, todas redactadas con el rol Developer, corresponden al alcance de **Sprint 3**. En el **Sprint 2** no se implementará back-end; el desarrollo se limitará al Frontend Web Application con Angular, CRUD y JSON Server. El repositorio `web-services` se mantiene preparado para su desarrollo posterior con Java, Spring Boot y Spring Data JPA. La documentación OpenAPI/Swagger se incorporará cuando existan endpoints implementados.
-
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
-
-Para el despliegue se utilizó GitHub Pages con la opción **Deploy from a branch**, utilizando `main` y `/(root)` como origen.
-
-La configuración quedó activa y el sitio fue publicado correctamente.
-
-![Configuración activa de GitHub Pages](assets/chapter5/github-pages-live.webp)
+La Landing Page debe evidenciarse desde su URL pública y en sus vistas Desktop y Mobile.
 
 **URL pública:** https://aipaca-os.github.io/landing-page/
 
-La siguiente evidencia muestra la Landing Page cargada desde la URL pública de GitHub Pages.
+<!-- PENDIENTE IMAGEN C5-S1-01: Landing Page TB1 en Desktop mostrando Hero y la nueva sección de producto. -->
+<!-- PENDIENTE IMAGEN C5-S1-02: Landing Page TB1 en Mobile mostrando navegación responsive. -->
 
-![Landing Page desplegada en GitHub Pages](assets/chapter5/landing-public-deployment.webp)
+### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-#### 5.2.1.8. Team Collaboration Insights during Sprint
+Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.
 
-La sección de Team Collaboration debe evidenciar la participación real del equipo utilizando **capturas obtenidas directamente desde GitHub**, tal como establece el Final Project Statement. No se utilizarán gráficos recreados, SVG generados manualmente ni visualizaciones construidas a partir de los datos.
+### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Para Sprint 1 se deben insertar las siguientes evidencias reales:
+La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue integrado en `main`, por lo que la evidencia debe mostrar la versión actual y no capturas antiguas de AV1.
 
-1. **Captura de Commits / historial del repositorio correspondiente al producto implementado en el Sprint (Landing Page).**
-   - https://github.com/AIpaca-OS/landing-page/commits/main/
+<!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
+<!-- PENDIENTE IMAGEN C5-S1-04: Navegador mostrando la URL pública y la versión actual. -->
 
-2. **Captura de Contributors / Insights del repositorio.**
-   - https://github.com/AIpaca-OS/landing-page/graphs/contributors
+### 5.2.1.8. Team Collaboration Insights during Sprint
 
-3. **Captura de Network / ramas y merges cuando exista evidencia útil del flujo de trabajo.**
-   - https://github.com/AIpaca-OS/landing-page/network
+Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreados:
 
-4. **Para Project Report Collaboration Insights**, las capturas deben provenir del repositorio del informe:
-   - Commits: https://github.com/AIpaca-OS/project-report/commits/develop/
-   - Contributors: https://github.com/AIpaca-OS/project-report/graphs/contributors
-   - Network: https://github.com/AIpaca-OS/project-report/network
-   - Pull Requests: https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
+- Commits: https://github.com/AIpaca-OS/landing-page/commits/main/
+- Contributors: https://github.com/AIpaca-OS/landing-page/graphs/contributors
+- Network: https://github.com/AIpaca-OS/landing-page/network
+- Pull Request TB1 de mejora: https://github.com/AIpaca-OS/landing-page/pull/1
 
-> **Pendiente de evidencia visual:** reemplazar este bloque por las capturas reales tomadas desde las páginas anteriores antes de la entrega. Las imágenes deben mostrar el estado real del repositorio y ser legibles en el PDF.
+<!-- PENDIENTE IMAGEN C5-S1-05: Commits de landing-page. -->
+<!-- PENDIENTE IMAGEN C5-S1-06: Contributors de landing-page. -->
+<!-- PENDIENTE IMAGEN C5-S1-07: Network o PR #1 mostrando la integración de la mejora. -->
 
-La actividad registrada hasta el momento muestra una oportunidad de mejora en Sprint 1: parte de la implementación de Landing Page llegó directamente a `main`, por lo que el historial no refleja completamente el GitFlow esperado. Este hecho se documenta sin reconstruir artificialmente la evidencia. A partir de Sprint 2, cada feature debe desarrollarse en su propia rama y luego integrarse mediante el flujo acordado.
 ### 5.2.2. Sprint 2
 
-En el Sprint 2 el equipo se enfoca en el desarrollo y comprobación de la primera versión ejecutable de la **Frontend Web Application** de Rumbo. Conforme a las directrices de la entrega TB1, se implementan operaciones CRUD sobre entidades de negocio clave organizadas en Bounded Contexts, aplicando la arquitectura multicapa (Domain, Infrastructure, Application y Presentation) sobre Angular 18 con Standalone Components, gestión de estado reactivo mediante Signals y persistencia emulada mediante Fake RESTful APIs (MockAPI y json-server), sin integración de back-end Spring Boot en esta iteración.
+Sprint 2 corresponde a la primera versión integrada de la **Frontend Web Application**. El producto se implementa como SPA Angular, organizado por Bounded Contexts y con persistencia emulada. El Sprint no incorpora Web Services reales con Spring Boot.
+
+Los aspectos implementados y visibles en el repositorio son:
+
+- Vehicle & Credential Management.
+- Profiles & Relationship Management.
+- Route & Trip Planning.
+- Alerting & Incident Management.
+- Subscriptions & Billing.
 
 #### 5.2.2.1. Sprint Planning 2
 
-En esta sección se registran los aspectos clave del Sprint Planning Meeting correspondientes a la iteración del Frontend Web Application, siguiendo el estándar de Scrum.org y las pautas de la guía docente.
+| Campo | Información |
+|---|---|
+| Sprint # | Sprint 2 |
+| Sprint Planning Background | Construcción de la primera versión integrada del Frontend Web Application mediante CRUD por Bounded Context y Fake REST APIs. |
+| Date | No existe una fecha de Sprint Planning verificable en los repositorios consultados. |
+| Time | No existe una hora de Sprint Planning verificable en los repositorios consultados. |
+| Location | No existe una ubicación de Sprint Planning verificable en los repositorios consultados. |
+| Prepared By | No se atribuye sin evidencia verificable. |
+| Attendees | Equipo AIpaca: Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja. |
+| Sprint 1 Review Summary | Landing Page implementada y publicada. Para TB1 se incorporó una nueva sección de producto mediante PR #1. |
+| Sprint 1 Retrospective Summary | La evidencia histórica mostró integración directa a `main` en Sprint 1; para Sprint 2 se utilizaron feature branches, `develop` y Pull Requests. |
+| Sprint 2 Goal | **Our focus is on delivering the first integrated CRUD-based Frontend Web Application for Rumbo. We believe it delivers a usable operational workspace for the target users while validating the frontend architecture by Bounded Context. This will be confirmed when the committed CRUD views build successfully, navigate from the Angular application and persist data through the configured Fake REST APIs.** |
+| Sprint 2 Velocity | No existe un valor de Velocity previo verificable en las evidencias consultadas; no se inventa retrospectivamente. |
+| Sum of Story Points | **34 Story Points**, correspondientes a US02 (5), US06 (5), US09 (8), US10 (8), US24 (5) y US29 (3). |
 
-<table>
-  <tbody>
-    <tr><th>Sprint #</th><td>Sprint 2</td></tr>
-    <tr><th colspan="2">Sprint Planning Background</th></tr>
-    <tr><td colspan="2">Segunda iteración de implementación del producto. El alcance comprende la construcción de la SPA en Angular 18 estructurada por Bounded Contexts, la implementación de interfaces reactivas con Angular Material y la persistencia de datos mediante Fake RESTful APIs (MockAPI / json-server).</td></tr>
-    <tr><th>Date</th><td>2026-09-21</td></tr>
-    <tr><th>Time</th><td>15:00 - 17:30 PET</td></tr>
-    <tr><th>Location</th><td>Sesión virtual sincrónica vía Google Meet / Discord</td></tr>
-    <tr><th>Prepared By</th><td>Pareja Caceres, Diana</td></tr>
-    <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
-    <tr><th>Sprint n – 1 Review Summary</th><td>Se completó y desplegó la Landing Page pública en GitHub Pages satisfaciendo las historias US31–US35. Se evidenció un diseño responsive óptimo y validaciones iniciales de contacto. El Product Owner aprobó el release v1.0.0.</td></tr>
-    <tr><th>Sprint n – 1 Retrospective Summary</th><td>Se identificó que en Sprint 1 hubo commits que ingresaron directamente a main sin pasar por ramas intermedias. Se estableció como acción de mejora la obligatoriedad estricta del flujo GitFlow (feature → develop → main), Pull Requests con revisión de código y mensajes bajo Conventional Commits.</td></tr>
-    <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
-    <tr><th>Sprint 2 Goal</th><td>Our focus is on delivering a functional Angular Single Page Application with responsive CRUD capabilities for vehicle management, incident reporting, notification preferences, and student routes. We believe it delivers an intuitive and reliable digital workspace for school mobility drivers and parents. This will be confirmed when committed User Stories satisfy their Acceptance Criteria via remote MockAPI endpoints and responsive Angular Material views on Desktop and Mobile viewports.</td></tr>
-    <tr><th>Sprint 2 Velocity</th><td>10 Story Points</td></tr>
-    <tr><th>Sum of Story Points</th><td>10 Story Points</td></tr>
-  </tbody>
-</table>
-
-La estimación respeta la regla de dimensionamiento: **1 SP ≈ 1–2 días de trabajo de un integrante**, totalizando 10 SP para el sprint de dos semanas del equipo.
-Link del artefacto sprint 2:
-https://trello.com/invite/b/6ac5acfc155988c2635f74d2/ATTId0178f5a35fe74259c89e878a2dd299c9794CD75/rumbo-sprint-2
----
+Las User Stories anteriores son historias ya existentes en el Product Backlog. Se seleccionan aquí porque cuentan con evidencia directa en las vistas e infraestructura implementadas durante Sprint 2.
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-La Leadership-and-Collaboration Matrix (LACX) distribuye la responsabilidad técnica entre los 5 integrantes según los Bounded Contexts asignados para el Frontend Web Application:
+La matriz LACX se alinea con las ramas y contribuciones observables del repositorio.
 
-<table>
-  <thead>
-    <tr>
-      <th>Team Member (Last Name, First Name)</th>
-      <th>GitHub Username</th>
-      <th>Vehicle &amp; Credential Context<br>Leader (L) / Collaborator (C)</th>
-      <th>Alerting &amp; Notifications Context<br>Leader (L) / Collaborator (C)</th>
-      <th>Incident Management Context<br>Leader (L) / Collaborator (C)</th>
-      <th>Student &amp; Route Context<br>Leader (L) / Collaborator (C)</th>
-      <th>Architecture &amp; Shared Tooling<br>Leader (L) / Collaborator (C)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Díaz Ramírez, Alejandro</td><td>aleedr</td><td>—</td><td>C</td><td>—</td><td>L</td><td>C</td></tr>
-    <tr><td>Geronimo Puma, Kevin Joel</td><td>qebim18</td><td>—</td><td>C</td><td>L</td><td>—</td><td>C</td></tr>
-    <tr><td>Lino Quispe, Leonardo Miguel</td><td>linolw</td><td>C</td><td>—</td><td>C</td><td>C</td><td>L</td></tr>
-    <tr><td>Meza Soza, Alexandra Yamile</td><td>AlexandraYMS</td><td>C</td><td>L</td><td>C</td><td>—</td><td>C</td></tr>
-    <tr><td>Pareja Caceres, Diana</td><td>DianaParejaCaceres</td><td>L</td><td>—</td><td>C</td><td>—</td><td>C</td></tr>
-  </tbody>
-</table>
+| Team Member | GitHub Username evidenciado | Vehicle & Credential | Profiles & Relationship | Route & Trip Planning | Alerting & Incident | Subscriptions & Billing | Integration / Shared |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Díaz Ramírez, Alejandro | `aleedr` | — | **L** | — | — | — | — |
+| Geronimo Puma, Kevin Joel | `qebim` / `qebim18` | — | — | — | — | **L** | — |
+| Lino Quispe, Leonardo Miguel | `linolw` | — | C | **L** | C | C | **L** |
+| Meza Soza, Alexandra Yamile | `AlexandraYMS` | C | — | — | **L** | — | C |
+| Pareja Caceres, Diana | `DianaParejaCaceres` | **L** | — | — | — | — | — |
 
----
+La colaboración marcada con **C** se limita a integraciones o correcciones que sí aparecen en el historial; no se atribuyen participaciones no evidenciadas.
 
 #### 5.2.2.3. Sprint Backlog 2
 
-A continuación se detalla la descomposición de las User Stories del Sprint 2 en tareas de ingeniería concretas (mínimo 2 tareas por historia, ninguna superior a 8 horas).
+**Artefacto Sprint 2:** https://trello.com/invite/b/6ac5acfc155988c2635f74d2/ATTId0178f5a35fe74259c89e878a2dd299c9794CD75/rumbo-sprint-2
 
-**Sprint Board público:** https://github.com/orgs/AIpaca-OS/projects/1
+El Final Project Statement exige que la captura del Board y el URL público sean coherentes con la tabla. El enlace disponible actualmente es un enlace de invitación; antes de la entrega debe reemplazarse por el URL público del Board si Trello dispone de uno.
 
-<table>
-<thead>
-<tr>
-<th>Sprint #</th>
-<th colspan="7">Sprint 2</th>
-</tr>
-<tr>
-<th colspan="2">User Story</th>
-<th colspan="6">Work-Item / Task</th>
-</tr>
-<tr>
-<th>Story Id</th>
-<th>Story Title</th>
-<th>Task Id</th>
-<th>Task Title</th>
-<th>Task Description</th>
-<th>Estimation (Hours)</th>
-<th>Assigned To</th>
-<th>Status<br>(To-do / In-Process / To-Review / Done)</th>
-</tr>
-</thead>
-<tbody>
-<!-- US02 -->
-<tr><td rowspan="4">US02</td><td rowspan="4">Registrar vehículo y credenciales del servicio escolar</td><td>T20</td><td>Define Vehicle domain and schemas</td><td>Crear la entidad Vehicle con atributos tipados, getters, setters y esquema de datos en db.json y MockAPI.</td><td>5</td><td>Diana Pareja</td><td>Done</td></tr>
-<tr><td>T21</td><td>Implement Vehicle infrastructure &amp; endpoints</td><td>Construir VehiclesApiEndpoint consumiendo MockAPI remoto, VehicleAssembler y contratos de respuesta.</td><td>6</td><td>Diana Pareja</td><td>Done</td></tr>
-<tr><td>T22</td><td>Implement Vehicle reactive store</td><td>Diseñar VehicleCredentialStore con Angular Signals para estado reactivo (loading, entities, error).</td><td>5</td><td>Diana Pareja</td><td>Done</td></tr>
-<tr><td>T23</td><td>Build Vehicle Material UI and forms</td><td>Implementar VehicleListComponent y VehicleFormComponent con Angular Material, validaciones y rutas hijas.</td><td>7</td><td>Diana Pareja</td><td>Done</td></tr>
-<!-- US24 -->
-<tr><td rowspan="3">US24</td><td rowspan="3">Gestionar alertas tempranas de ruta y notificaciones</td><td>T24</td><td>Define Alerting models &amp; mock contracts</td><td>Modelar recursos de configuración de alertas en db.json y MockAPI con esquemas tipados.</td><td>4</td><td>Alexandra Meza</td><td>Done</td></tr>
-<tr><td>T25</td><td>Implement Alerting store and services</td><td>Implementar servicios HTTP y estado reactivo para consulta y conmutación de notificaciones.</td><td>6</td><td>Alexandra Meza</td><td>Done</td></tr>
-<tr><td>T26</td><td>Build Alerting views and toggles UI</td><td>Construir interfaz de usuario con controles Angular Material (mat-slide-toggle) y mensajes de confirmación.</td><td>6</td><td>Alexandra Meza</td><td>Done</td></tr>
-<!-- US15 -->
-<tr><td rowspan="3">US15</td><td rowspan="3">Reportar incidentes mecánicos o de tráfico durante el trayecto</td><td>T27</td><td>Define Incident domain and mock dataset</td><td>Definir entidad Incident con severidad, motivo y marcas de tiempo en el repositorio de datos emulados.</td><td>5</td><td>Kevin Geronimo</td><td>Done</td></tr>
-<tr><td>T28</td><td>Implement Incident API integration</td><td>Configurar endpoints REST para creación y consulta de reportes de incidencia en MockAPI.</td><td>5</td><td>Kevin Geronimo</td><td>Done</td></tr>
-<tr><td>T29</td><td>Build Incident reporting form and log list</td><td>Desarrollar vistas de formulario reactivo para emisión de incidentes y tabla de seguimiento histórico.</td><td>6</td><td>Kevin Geronimo</td><td>Done</td></tr>
-<!-- US10 -->
-<tr><td rowspan="3">US10</td><td rowspan="3">Visualizar lista y detalle de paradas de alumnos en ruta</td><td>T30</td><td>Define Route and Student Stop models</td><td>Modelar estructuras de datos para alumnos asignados, paradas de recogida y orden de ruta.</td><td>5</td><td>Alejandro Díaz</td><td>Done</td></tr>
-<tr><td>T31</td><td>Implement Route data access and store</td><td>Crear servicios de acceso a datos emulados para sincronizar paradas y estado del recorrido.</td><td>6</td><td>Alejandro Díaz</td><td>Done</td></tr>
-<tr><td>T32</td><td>Build Route summary view</td><td>Diseñar la interfaz de paradas con Angular Material y navegación de detalle.</td><td>6</td><td>Alejandro Díaz</td><td>Done</td></tr>
-<!-- Constraints -->
-<tr><td>N/A</td><td>General Sprint Constraint</td><td>S03</td><td>Setup Angular project architecture</td><td>Configurar Angular 18 CLI, enrutamiento base, temas Material y estructura DDD compartida.</td><td>6</td><td>Leonardo Lino</td><td>Done</td></tr>
-<tr><td>N/A</td><td>General Sprint Constraint</td><td>S04</td><td>Configure MockAPI environments</td><td>Centralizar variables de entorno de endpoints cloud y emulación RESTful para el equipo.</td><td>4</td><td>Leonardo Lino</td><td>Done</td></tr>
-</tbody>
-</table>
+<!-- PENDIENTE IMAGEN C5-S2-01: Captura completa y legible del Board de Trello de Sprint 2. -->
 
----
+| Story Id | Story Title | SP | Task Id | Task Title / Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---:|---|---|---:|---|---|
+| US02 | Registrar vehículo y credenciales del servicio | 5 | T20 | Definir entidad y contratos de Vehicle. | 5 | Diana Pareja | Done |
+| US02 | Registrar vehículo y credenciales del servicio | 5 | T21 | Implementar infraestructura HTTP, assembler y endpoints. | 6 | Diana Pareja | Done |
+| US02 | Registrar vehículo y credenciales del servicio | 5 | T22 | Implementar store reactivo con Angular Signals. | 5 | Diana Pareja | Done |
+| US02 | Registrar vehículo y credenciales del servicio | 5 | T23 | Implementar lista, formulario y routing de Vehicle. | 7 | Diana Pareja | Done |
+| US06 | Registrar estudiante y vincularse como tutor | 5 | T24 | Implementar dominio y endpoints de estudiantes/perfiles. | N/R | Alejandro Díaz | Done |
+| US06 | Registrar estudiante y vincularse como tutor | 5 | T25 | Implementar lista y formulario de estudiantes e integración del contexto. | N/R | Alejandro Díaz | Done |
+| US09 | Activar la suscripción del conductor | 8 | T26 | Implementar modelos y endpoints de Plans y Subscriptions en MockAPI. | N/R | Kevin Geronimo | Done |
+| US09 | Activar la suscripción del conductor | 8 | T27 | Implementar store, listado de planes, formulario y listado de suscripciones. | N/R | Kevin Geronimo | Done |
+| US10 | Crear una ruta con sus paradas | 8 | T28 | Definir modelo Route e infraestructura MockAPI. | 5 | Leonardo Lino | Done |
+| US10 | Crear una ruta con sus paradas | 8 | T29 | Implementar store reactivo y acceso a datos de rutas. | 6 | Leonardo Lino | Done |
+| US10 | Crear una ruta con sus paradas | 8 | T30 | Implementar Route List, Route Form y routing. | 6 | Leonardo Lino | Done |
+| US24 | Registrar una incidencia | 5 | T31 | Definir entidades y contratos de Incident / Delay. | 5 | Alexandra Meza | Done |
+| US24 | Registrar una incidencia | 5 | T32 | Implementar API/store para incidencias y retrasos. | 5 | Alexandra Meza | Done |
+| US24 | Registrar una incidencia | 5 | T33 | Implementar formularios y Quick Actions. | 6 | Alexandra Meza | Done |
+| US29 | Configurar las preferencias de notificación | 3 | T34 | Implementar modelos y API de Notifications / Settings. | 4 | Alexandra Meza | Done |
+| US29 | Configurar las preferencias de notificación | 3 | T35 | Implementar store y dashboard de notificaciones. | 6 | Alexandra Meza | Done |
+| N/A | Integración general del Sprint | — | T36 | Integrar Bounded Contexts, corregir routing/i18n/HttpClient y agregar CI de build. | N/R | Leonardo Lino | Done |
+
+**N/R = no registrado en la evidencia disponible.** Las horas de T24, T25, T26, T27 y T36 deben copiarse desde el Sprint Board o registro real del equipo; no se estiman retrospectivamente en el informe.
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-La implementación de la Frontend Web Application se evidencia a través del registro de commits en el repositorio oficial, cumpliendo con la convención de ramas y la trazabilidad hacia las tareas de ingeniería:
+El repositorio `frontend-web-application` conserva evidencia de implementación por ramas, autores y merges.
 
-#### 5.2.2.6. Services Documentation Evidence for Sprint Review
-
-En el Sprint 2 no se implementaron Web Services de backend con Spring Boot; la arquitectura del cliente web interactúa exclusivamente con Fake RESTful APIs (MockAPI / json-server). 
-
-A continuación se documentan los contratos de datos y endpoints remotos consumidos por cada Bounded Context:
-
-| Bounded Context | Responsable | Método HTTP | Endpoint en Nube (MockAPI) | Parámetros / Body | Descripción de Respuesta |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body / alcance | Committed on |
 |---|---|---|---|---|---|
-| **Vehicle & Credential Management** | Diana Pareja | `GET` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | Ninguno | Arreglo JSON con lista de vehículos registrados (`id, brand, model, licensePlate, capacity, year, status`). |
-| **Vehicle & Credential Management** | Diana Pareja | `POST` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | Objeto JSON del vehículo sin ID | Retorna el objeto creado con su ID generado por MockAPI y código `201 Created`. |
-| **Vehicle & Credential Management** | Diana Pareja | `PUT` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles/:id` | ID en URL + campos actualizados | Retorna el registro actualizado y código `200 OK`. |
-| **Vehicle & Credential Management** | Diana Pareja | `DELETE` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles/:id` | ID en URL | Retorna el recurso eliminado y código `200 OK`. |
-| **Profiles & Relationship Management** | Alejandro Díaz | `GET` / `POST` | `[Completar URL de MockAPI de Alejandro]` | Esquema de estudiante/tutor | Colección y registros de perfiles y vínculos tutor-estudiante. |
-| **Route & Trip Planning** | Leonardo Lino | `GET` / `POST` | `[Completar URL de MockAPI de Leonardo]` | Esquema de rutas y paradas | Colección de rutas asignadas, itinerarios y paradas. |
-| **Alerting & Notifications** | Alexandra Meza | `GET` / `PUT` | `[Completar URL de MockAPI de Alexandra]` | Esquema de preferencias de alerta | Configuración y estado de notificaciones activas. |
-| **Subscriptions & Billing** | Kevin Geronimo | `GET` / `POST` | `[Completar URL de MockAPI de Kevin]` | Esquema de planes y registros | Catálogo de planes y registros de suscripción. |
----
+| `frontend-web-application` | `feature/vehicle-credential-management` | `2363ba3` | feat(vehicles): add vehicle domain entity with getters and setters | Entidad de dominio Vehicle. | 06/10/2026 |
+| `frontend-web-application` | `feature/vehicle-credential-management` | `9377ef3` | feat(vehicles): implement vehicles infrastructure with endpoint, assembler and response types | Infraestructura REST emulada. | 06/10/2026 |
+| `frontend-web-application` | `feature/vehicle-credential-management` | `838a86d` | feat(vehicles): add vehicle list, form components and child routing | CRUD UI y rutas del contexto. | 06/10/2026 |
+| `frontend-web-application` | `feature/vehicle-credential-management` | `8f7def8` | feat(vehicles): point vehicles endpoint to mockapi cloud service | Conexión del recurso Vehicles a MockAPI. | 06/10/2026 |
+| `frontend-web-application` | `feature/profiles-and-relationship-management` | `504e9f1` | feat: add profiles and relationship management endpoints | Endpoints del contexto. | 06/10/2026 |
+| `frontend-web-application` | `feature/profiles-and-relationship-management` | `8131857` | feat: add profiles and relationship management application | Integración de la aplicación del contexto. | 06/10/2026 |
+| `frontend-web-application` | `feature/subscriptions-and-billing` | `9d6dd7c` | feat: add subscriptions and billing CRUD with MockAPI | CRUD de planes y suscripciones conectado a MockAPI. | 06/10/2026 |
+| `frontend-web-application` | `feature/route-trip-planning` | `082e0cd` | feat(route-trip-planning): add domain and MockAPI infrastructure | Dominio e infraestructura de rutas. | 06/10/2026 |
+| `frontend-web-application` | `feature/route-trip-planning` | `c98c377` | feat(route-trip-planning): add reactive route store | Estado reactivo para rutas. | 06/10/2026 |
+| `frontend-web-application` | `feature/route-trip-planning` | `e9e46b8` | feat(route-trip-planning): add route CRUD views | Vistas CRUD de rutas. | 06/10/2026 |
+| `frontend-web-application` | `feature/alerting-and-incident-management` | `6b4e4f3` | feat(alerting): add alerting store and related components | Store y componentes de alertas. | 05/10/2026 |
+| `frontend-web-application` | `feature/alerting-and-incident-management` | `e14be45` | feat(incidents): add incidents and delays registration components | Formularios de incidencias y retrasos. | 06/10/2026 |
+| `frontend-web-application` | `develop` | `2522fe3` | merge: preserve feature branch history for TB1 integration | Preserva historial de Route & Trip Planning durante la integración. | 06/10/2026 |
+| `frontend-web-application` | `develop` | `fca70db` | merge: integrate TB1 frontend CRUD bounded contexts | Integración de CRUDs y correcciones compartidas. | 06/10/2026 |
+| `frontend-web-application` | `develop` | `27ce0a3` | feat(alerting): implement notification settings endpoint | Completa el endpoint de settings utilizado por Alerting. | 06/10/2026 |
+
+Pull Requests relevantes:
+
+- PR #5: `feature/alerting-and-incident-management → develop`.
+- PR #6: `feature/vehicle-credential-management → develop`.
+- PR #7: integración de CRUDs TB1 mediante `fix/tb1-integration-complete → develop`.
+- PR #8: integración de Route & Trip Planning preservando la historia de la feature.
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-**Repositorio del Frontend:** https://github.com/AIpaca-OS/frontend-web-application
+La aplicación se ejecuta desde el código integrado de `develop`. Las siguientes vistas deben documentarse mediante capturas reales del producto ejecutándose:
 
-La Frontend Web Application fue desplegada localmente en `http://localhost:4200/` y comprobada en resolución de escritorio y dispositivos móviles:
+1. **Vehicle & Credential Management:** listado, creación y edición de vehículos.
+2. **Profiles & Relationship Management:** listado y formulario de estudiantes.
+3. **Route & Trip Planning:** listado y formulario CRUD de rutas.
+4. **Alerting & Incident Management:** dashboard de notificaciones, configuración y formularios de incidentes/retrasos.
+5. **Subscriptions & Billing:** planes, formulario de suscripción y listado de suscripciones.
+6. **Responsive Web Design:** al menos una vista representativa en Mobile.
 
-1. **Gestión de Vehículos (Vehicle & Credential Management):**
-   * Visualización del listado completo con columnas para ID, Placa, Marca, Modelo, Capacidad, Año y Estado.
-   * Apertura del diálogo o formulario `New Vehicle` con validaciones de campos requeridos y tipos de datos numéricos.
-   * Registro y actualización reactiva inmediata en la tabla tras consumir el servicio en la nube de MockAPI (`https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles`).
+<!-- PENDIENTE IMAGEN C5-S2-02: Vehicle List + Vehicle Form. -->
+<!-- PENDIENTE IMAGEN C5-S2-03: Student List + Student Form. -->
+<!-- PENDIENTE IMAGEN C5-S2-04: Route List + Route Form. -->
+<!-- PENDIENTE IMAGEN C5-S2-05: Notification Dashboard / Settings. -->
+<!-- PENDIENTE IMAGEN C5-S2-06: Incident o Delay Form. -->
+<!-- PENDIENTE IMAGEN C5-S2-07: Plans / Subscriptions CRUD. -->
+<!-- PENDIENTE IMAGEN C5-S2-08: Una vista representativa en Mobile. -->
 
-![Ejecución de la Gestión de Vehículos](assets/chapter5/vehicles-list-crud.webp)
-
-2. **Gestión de Alertas e Incidentes:**
-   * Navegación a las vistas de alertas y configuración de notificaciones mediante componentes Angular Material.
-
-![Ejecución de Alertas y Navegación de la SPA](assets/chapter5/alerting-views.webp)
-
----
+**Video de navegación del Sprint 2:** debe mostrar las principales rutas del Frontend y operaciones CRUD incluidas en el Sprint.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-En el Sprint 2 no se implementaron Web Services de backend con Spring Boot; la arquitectura del cliente web interactúa exclusivamente con Fake RESTful APIs. 
+Sprint 2 no implementa Web Services reales con Spring Boot ni documentación Swagger/OpenAPI. La evidencia de esta sección corresponde a los **Fake REST APIs consumidos por el Frontend**, que permiten comprobar las operaciones CRUD antes de la implementación del backend.
 
-A continuación se documentan los contratos de datos y endpoints remotos consumidos por la aplicación:
+| Aspecto / recurso | Base URL / Endpoint | Operaciones soportadas en el cliente | Estado |
+|---|---|---|---|
+| Vehicles | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Routes | `https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Plans | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Subscriptions | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Students | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Profiles | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Tutor-student relationships | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Data-deletion requests | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
+| Notifications | `http://localhost:3000/api/v1/notifications` | GET collection/item, POST, PUT, DELETE | JSON Server local |
+| Notification settings | `http://localhost:3000/api/v1/notificationSettings` | GET, PUT | JSON Server local |
+| Incidents | `http://localhost:3000/api/v1/incidents` | GET collection/item, POST, PUT, DELETE | JSON Server local |
+| Delays | `http://localhost:3000/api/v1/delays` | GET collection/item, POST, PUT, DELETE | JSON Server local |
 
-| Bounded Context | Método HTTP | Endpoint en Nube (MockAPI) | Parámetros / Body | Descripción de Respuesta |
-|---|---|---|---|---|
-| **Vehicles** | `GET` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | Ninguno | Arreglo JSON con lista de vehículos registrados (`id, brand, model, licensePlate, capacity, year, status`). |
-| **Vehicles** | `POST` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | Objeto JSON del vehículo sin ID | Retorna el objeto creado con su ID generado por MockAPI y código `201 Created`. |
-| **Vehicles** | `PUT` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles/:id` | ID en URL + campos actualizados | Retorna el registro actualizado y código `200 OK`. |
-| **Vehicles** | `DELETE` | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles/:id` | ID en URL | Retorna el recurso eliminado y código `200 OK`. |
+La URL de Route & Trip Planning utilizada en este capítulo es la indicada para el proyecto: **https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/**.
 
-*Nota:* La especificación formal mediante OpenAPI 3.0 / Swagger UI se construirá e incorporará en el Sprint 3 cuando se desplieguen los controladores RESTful en el repositorio `web-services`.
+La configuración actual del código todavía mantiene Alerting/Incident en `localhost:3000`. Esto debe considerarse al desplegar el Frontend: una aplicación pública no podrá consumir el JSON Server local del equipo. La migración de esos cuatro recursos a una URL accesible públicamente o la sustitución por el backend real deberá realizarse fuera de esta corrección documental.
 
----
+<!-- PENDIENTE IMAGEN C5-S2-09: MockAPI de Vehicles mostrando registros. -->
+<!-- PENDIENTE IMAGEN C5-S2-10: MockAPI de Routes mostrando el recurso routes. -->
+<!-- PENDIENTE IMAGEN C5-S2-11: MockAPI de Profiles/Students o Billing mostrando datos de ejemplo. -->
+<!-- PENDIENTE IMAGEN C5-S2-12: JSON Server local mostrando Notifications/Incidents, solo como evidencia de Sprint 2. -->
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-* **Landing Page:** Continúa operando de manera estable y pública en GitHub Pages (`https://aipaca-os.github.io/landing-page/`).
-* **Frontend Web Application:** Para el Sprint 2, la comprobación funcional se realiza mediante el servidor local de desarrollo (`ng serve` en `http://localhost:4200/`), alimentándose de endpoints en la nube de MockAPI para asegurar disponibilidad de datos. La automatización del Continuous Deployment para el frontend compilado hacia hosting cloud (Vercel / Firebase) se encuentra planificada para la fase de cierre del release v2.0.0.
+**Landing Page:** se encuentra publicada en GitHub Pages y fue actualizada para TB1.
 
----
+**Frontend Web Application:** el código de Sprint 2 fue integrado en `develop` y cuenta con verificación de compilación mediante GitHub Actions. Sin embargo, al cierre de esta actualización documental no existe una URL pública verificable del Frontend y `main` todavía no contiene la integración completa de TB1.
+
+Por tanto, para cerrar este requisito de TB1 falta:
+
+1. Integrar la revisión estable de `develop` hacia `main`.
+2. Configurar el hosting del Frontend.
+3. Resolver el consumo de recursos que aún apuntan a `localhost:3000`.
+4. Registrar la URL pública.
+5. Insertar capturas del deployment y de la aplicación pública.
+
+<!-- PENDIENTE IMAGEN C5-S2-13: GitHub Actions con build exitoso del Frontend. -->
+<!-- PENDIENTE IMAGEN C5-S2-14: Configuración del proveedor de deployment. -->
+<!-- PENDIENTE IMAGEN C5-S2-15: Frontend abierto desde URL pública. -->
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La colaboración del equipo para el Sprint 2 se respalda mediante las métricas y registros del repositorio `frontend-web-application`:
+La colaboración del Sprint 2 debe evidenciarse con capturas reales de GitHub:
 
-1. **Historial de Commits en rama de integración:**  
-   https://github.com/AIpaca-OS/frontend-web-application/commits/develop
+- Commits: https://github.com/AIpaca-OS/frontend-web-application/commits/develop
+- Contributors: https://github.com/AIpaca-OS/frontend-web-application/graphs/contributors
+- Network: https://github.com/AIpaca-OS/frontend-web-application/network
+- Pull Requests: https://github.com/AIpaca-OS/frontend-web-application/pulls?q=is%3Apr+is%3Aclosed
 
-2. **Registro de Contribuidores e Insights:**  
-   https://github.com/AIpaca-OS/frontend-web-application/graphs/contributors
+La evidencia del repositorio permite identificar contribuciones de los cinco integrantes en las ramas y commits del Sprint, además de los merges de integración mediante Pull Requests.
 
-3. **Grafo de Red y Merges (GitFlow):**  
-   https://github.com/AIpaca-OS/frontend-web-application/network
-
-4. **Pull Requests integrados:**  
-   https://github.com/AIpaca-OS/frontend-web-application/pulls?q=is%3Apr+is%3Aclosed
-
-> **Pendiente de evidencia visual:** insertar capturas reales de pantalla de las URLs anteriores tomadas directamente de GitHub antes del cierre del documento, mostrando las contribuciones sobre la rama `develop` y los Pull Requests aprobados.
+<!-- PENDIENTE IMAGEN C5-S2-16: Commits de develop mostrando autores del equipo. -->
+<!-- PENDIENTE IMAGEN C5-S2-17: Contributors del Frontend. -->
+<!-- PENDIENTE IMAGEN C5-S2-18: Network del Frontend. -->
+<!-- PENDIENTE IMAGEN C5-S2-19: Pull Requests #5, #6, #7 y #8 cerrados/merged. -->
 
 
 
