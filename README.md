@@ -2480,30 +2480,30 @@ La siguiente evidencia muestra la vista implementada para la gestión de suscrip
 
 Sprint 2 utilizó **Fake REST APIs** para probar los formularios y las operaciones CRUD del Frontend. Esta evidencia corresponde al consumo de servicios simulados, no a un backend desarrollado en Spring Boot.
 
-La configuración de producción revisada en el repositorio \`frontend-web-application\` (archivo \`src/environments/environment.ts\`, integrado en \`main\` el 07/10/2026) registra las siguientes rutas:
+La configuración de producción revisada en el repositorio `frontend-web-application` (archivo `src/environments/environment.ts`, integrado en `main` el 07/10/2026) registra las siguientes rutas:
 
 | Recurso | Endpoint configurado en el Frontend | Tipo |
 |---|---|---|
-| Vehicles | \`https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles\` | MockAPI |
-| Routes | \`https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes\` | MockAPI |
-| Plans | \`https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans\` | MockAPI |
-| Subscriptions | \`https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions\` | MockAPI |
-| Students | \`https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students\` | MockAPI |
-| Profiles | \`https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles\` | MockAPI |
-| Tutor-student relationships | \`https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships\` | MockAPI |
-| Data-deletion requests | \`https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests\` | MockAPI |
-| Notifications | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notifications\` | MockAPI |
-| Notification settings | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notificationSettings\` | MockAPI |
-| Incidents | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/incidents\` | MockAPI |
-| Delays | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/delays\` | MockAPI |
+| Vehicles | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | MockAPI |
+| Routes | `https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes` | MockAPI |
+| Plans | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans` | MockAPI |
+| Subscriptions | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions` | MockAPI |
+| Students | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students` | MockAPI |
+| Profiles | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles` | MockAPI |
+| Tutor-student relationships | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships` | MockAPI |
+| Data-deletion requests | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests` | MockAPI |
+| Notifications | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notifications` | MockAPI |
+| Notification settings | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notificationSettings` | MockAPI |
+| Incidents | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/incidents` | MockAPI |
+| Delays | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/delays` | MockAPI |
 
-El repositorio conserva además \`server/db.json\` y \`server/routes.json\` para ejecutar JSON Server local durante el desarrollo. La tabla anterior documenta la configuración integrada en \`main\`; no acredita, por sí sola, que cada recurso esté disponible o que todas las operaciones hayan superado pruebas funcionales.
+El repositorio conserva además `server/db.json` y `server/routes.json` para ejecutar JSON Server local durante el desarrollo. La tabla anterior documenta la configuración integrada en `main`; no acredita, por sí sola, que cada recurso esté disponible o que todas las operaciones hayan superado pruebas funcionales.
 
 **Pendiente para cerrar la evidencia:** incorporar capturas reales de las operaciones HTTP que se probaron, con método, recurso, código de respuesta y resultado visible en el Frontend. La documentación de la API propia que se construya en AV2 se registrará en la sección 5.2.3.6, sin reescribir retrospectivamente Sprint 2 como un Sprint con Web Services propios.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-La Landing Page cuenta con un historial de publicación en GitHub Pages. En el caso del Frontend, el repositorio registra el merge de \`develop\` hacia \`main\` mediante el PR #16 y un workflow de despliegue completado correctamente el **07/10/2026**. Esto corrige la anotación anterior, que indicaba que no se había integrado el Frontend a \`main\`.
+La Landing Page cuenta con un historial de publicación en GitHub Pages. En el caso del Frontend, el repositorio registra el merge de `develop` hacia `main` mediante el PR #16 y un workflow de despliegue completado correctamente el **07/10/2026**. Esto corrige la anotación anterior, que indicaba que no se había integrado el Frontend a `main`.
 
 - Pull Request de integración: https://github.com/AIpaca-OS/frontend-web-application/pull/16
 - Ejecución del workflow de despliegue: https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104
@@ -2610,14 +2610,14 @@ Las historias de esta sección deben coincidir con el Product Backlog y el Sprin
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-Aquí se registrarán las contribuciones efectivas en \`web-services\`, \`frontend-web-application\`, \`landing-page\` y \`project-report\`, con vínculos a commits y Pull Requests. El reporte debe diferenciar trabajo individual, revisión e integración.
+Aquí se registrarán las contribuciones efectivas en `web-services`, `frontend-web-application`, `landing-page` y `project-report`, con vínculos a commits y Pull Requests. El reporte debe diferenciar trabajo individual, revisión e integración.
 
 | Repository | Branch existente | Commit ID / PR | Cambio realizado | Responsable | Fecha |
 |---|---|---|---|---|---|
-| \`web-services\` | **[Rama de trabajo existente]** | **[Enlace]** | **[Describir archivo o funcionalidad]** | **[Nombre]** | **[Fecha]** |
-| \`frontend-web-application\` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
-| \`landing-page\` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
-| \`project-report\` | **[Rama existente]** | **[Enlace]** | **[Describir artefacto actualizado]** | **[Nombre]** | **[Fecha]** |
+| `web-services` | **[Rama de trabajo existente]** | **[Enlace]** | **[Describir archivo o funcionalidad]** | **[Nombre]** | **[Fecha]** |
+| `frontend-web-application` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
+| `landing-page` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
+| `project-report` | **[Rama existente]** | **[Enlace]** | **[Describir artefacto actualizado]** | **[Nombre]** | **[Fecha]** |
 
 **Evidencias pendientes:** capturas de archivos implementados, historial de PRs revisados y confirmación de que el código publicado corresponde al alcance del Sprint. No se crearán ramas nuevas solo para producir capturas de evidencia.
 
@@ -2639,7 +2639,7 @@ La primera versión del RESTful API se desarrollará de acuerdo con los diagrama
 
 **Repositorio:** https://github.com/AIpaca-OS/web-services
 
-**Estado al preparar esta plantilla:** las ramas \`main\`, \`develop\` y \`feature/service-foundation\` no contienen todavía código Spring Boot visible; únicamente se encontró el README inicial. Esto deberá actualizarse cuando se publiquen los avances.
+**Estado al preparar esta plantilla:** las ramas `main`, `develop` y `feature/service-foundation` no contienen todavía código Spring Boot visible; únicamente se encontró el README inicial. Esto deberá actualizarse cuando se publiquen los avances.
 
 | Recurso / operación | Método HTTP | Ruta | Descripción y ejemplo de request | Response / códigos HTTP | Estado / evidencia |
 |---|---|---|---|---|---|
@@ -2670,7 +2670,7 @@ Se incorporarán las nuevas versiones desplegadas y la primera publicación de l
 | RESTful API propia | **[Completar URL pública]** | **[Commit Sprint 3]** | **[Petición y respuesta comprobada]** |
 | Swagger / OpenAPI | **[Completar URL]** | **[Versión]** | **[Captura de operaciones documentadas]** |
 
-**Evidencias adicionales:** resultado del workflow, configuración de variables de entorno sin secretos, prueba de acceso desde un dispositivo o red distinta a la de desarrollo y captura de la aplicación con la respuesta del servicio. Las URLs locales como \`localhost\` no acreditan despliegue público.
+**Evidencias adicionales:** resultado del workflow, configuración de variables de entorno sin secretos, prueba de acceso desde un dispositivo o red distinta a la de desarrollo y captura de la aplicación con la respuesta del servicio. Las URLs locales como `localhost` no acreditan despliegue público.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
