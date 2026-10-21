@@ -1957,78 +1957,62 @@ En conjunto, los ocho Class Diagrams mantienen la separación establecida en el 
 
 ## 4.8. Database Design
 
-El diseño de persistencia de **Rumbo** mantiene la misma separación establecida en el modelado DDD y en los Class Diagrams. Cada Database Diagram representa las principales tablas, columnas, claves primarias, claves foráneas y relaciones necesarias para persistir la información administrada por su Bounded Context.
+El diseño de persistencia de **Rumbo** se organiza de acuerdo con los ocho Bounded Contexts definidos en la sección 4.6. Los diagramas de esta sección se utilizan para revisar qué información debe almacenarse, cómo se relacionan los registros y cuáles son las restricciones que debe respetar la aplicación. Se consideran junto con los Class Diagrams de la sección 4.7 y con las User Stories del Product Backlog.
 
-Los diagramas corresponden a la **arquitectura objetivo** del producto. Por ello, algunas tablas representan capacidades previstas para etapas posteriores y no implican que todo el backend se encuentre implementado durante Sprint 2.
+Para AV2, el equipo está sustituyendo los diagramas anteriores por versiones revisadas. Los ocho archivos nuevos están identificados, pero **su integración gráfica está pendiente de adjuntar los PNG originales y comprobar sus tablas, columnas, claves y relaciones**. Por ese motivo, aquí no se presentan las imágenes antiguas como si fueran el diseño actualizado. Las descripciones y operaciones propuestas a continuación son una guía de implementación que deberá contrastarse con los diagramas definitivos.
 
 ### 4.8.1. Database Diagrams
 
-#### Identity & Access Management
+Los diagramas se mantendrán en \`assets/chapter04/database-diagrams/\`. Cada archivo corresponde a un contexto del dominio:
 
-Este esquema concentra la persistencia de cuentas, sesiones, recuperación de acceso, roles y permisos. Las tablas de relación permiten separar la identidad del usuario de las capacidades que puede ejecutar dentro de la plataforma.
+| Bounded Context | Diagrama actualizado que debe incorporarse | Propósito de la revisión |
+|---|---|---|
+| Identity & Access Management | \`iam-data-diagram.png\` | Revisar cuentas, autenticación y autorizaciones de acceso. |
+| Profiles & Relationship Management | \`profile-data-diagram.png\` | Revisar perfiles y relaciones entre tutores, estudiantes y conductores. |
+| Vehicle & Credential Management | \`vehicle-data-diagram.png\` | Revisar vehículos, documentos y credenciales relacionadas. |
+| Route & Trip Planning | \`route-data-diagram.png\` | Revisar rutas, paradas, asignaciones y programación. |
+| Trip Execution & Monitoring | \`trip-data-diagram.png\` | Revisar el registro de viajes, estados y eventos durante el traslado. |
+| Incident & Delay Management | \`incident-data-diagram.png\` | Revisar incidencias, retrasos y seguimiento de su resolución. |
+| Notification Management | \`notification-data-diagram.png\` | Revisar notificaciones, destinatarios y preferencias de comunicación. |
+| Subscriptions & Billing | \`subscription-data-diagram.png\` | Revisar planes, suscripciones y datos de facturación del alcance definido. |
 
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-iam.png" alt="Identity and Access Management Database Diagram" width="95%">
-</div>
+**Estado de los recursos gráficos de esta revisión:** pendientes de carga. Antes de cerrar el apartado se deben incorporar los ocho PNG, visualizar cada uno debajo del contexto correspondiente y eliminar de la carpeta las versiones sustituidas. No se deben incluir diagramas que no hayan sido contrastados con las reglas del dominio.
 
-#### Profiles & Relationship Management
+La revisión debe comprobar, como mínimo, que las claves primarias identifican cada registro, las claves foráneas corresponden a relaciones realmente necesarias, las restricciones evitan estados inconsistentes y los nombres se mantienen uniformes. También se revisará que no se dupliquen datos pertenecientes a otro contexto sin una razón de negocio. Si un contexto necesita información de otro, esa integración debe definirse explícitamente; una relación entre diagramas no implica por sí sola compartir todas las entidades o una única base de datos.
 
-El esquema almacena los perfiles de Parent, Driver y Student, junto con las relaciones de autorización y datos complementarios necesarios para representar quién puede consultar la información de cada estudiante.
+### 4.8.2. Del modelo de datos a los Web Services
 
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
-</div>
+Los diagramas orientan el diseño del backend, pero **no determinan automáticamente los endpoints**. Una tabla describe información persistente; un endpoint representa una operación que necesita el usuario o el sistema. Por ello, antes de implementar un controlador REST, se debe relacionar cada recurso con una User Story y con las acciones que el producto necesita ofrecer.
 
-#### Vehicle & Credential Management
+El trabajo técnico partirá de las entidades y relaciones verificadas en los diagramas. Con Spring Boot y Spring Data JPA se podrán definir las entidades persistentes, sus repositorios y los servicios que aplican las reglas del dominio. Los controladores expondrán las operaciones necesarias mediante DTOs, de modo que los detalles internos de la base de datos no tengan que coincidir con los contratos públicos de la API.
 
-Este diagrama representa la persistencia de vehículos, asignaciones, documentos y credenciales asociadas al Driver. Las claves foráneas permiten mantener la relación con el conductor sin trasladar la responsabilidad del vehículo a otros Bounded Contexts.
+La siguiente tabla contiene **recursos y rutas sugeridos para la planificación del backend**. Son ejemplos de contratos de API, no endpoints implementados ni aprobados todavía. Sus nombres, permisos y métodos deben ajustarse una vez revisados los diagramas y seleccionado el alcance del Sprint 3.
 
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
-</div>
+| Bounded Context | Recursos candidatos | Operaciones REST de referencia |
+|---|---|---|
+| Identity & Access Management | Usuarios, sesiones y roles | \`POST /api/v1/auth/login\`, \`GET /api/v1/users/me\` |
+| Profiles & Relationship Management | Estudiantes, perfiles y relaciones | \`GET /api/v1/students\`, \`POST /api/v1/students\`, \`GET /api/v1/tutor-student-relationships\` |
+| Vehicle & Credential Management | Vehículos y credenciales | \`GET /api/v1/vehicles\`, \`POST /api/v1/vehicles\`, \`GET /api/v1/vehicles/{id}/credentials\` |
+| Route & Trip Planning | Rutas y paradas | \`GET /api/v1/routes\`, \`POST /api/v1/routes\`, \`PUT /api/v1/routes/{id}\` |
+| Trip Execution & Monitoring | Viajes y eventos | \`GET /api/v1/trips\`, \`POST /api/v1/trips\`, \`GET /api/v1/trips/{id}/events\` |
+| Incident & Delay Management | Incidencias y retrasos | \`GET /api/v1/incidents\`, \`POST /api/v1/incidents\`, \`GET /api/v1/delays\` |
+| Notification Management | Notificaciones y preferencias | \`GET /api/v1/notifications\`, \`PATCH /api/v1/notifications/{id}/read\` |
+| Subscriptions & Billing | Planes y suscripciones | \`GET /api/v1/plans\`, \`GET /api/v1/subscriptions\`, \`POST /api/v1/subscriptions\` |
 
-#### Route & Trip Planning
+Para cada operación priorizada se definirá el método HTTP, la ruta, los parámetros, el cuerpo de solicitud, la respuesta esperada, los posibles errores y las condiciones de autorización. La documentación se publicará con OpenAPI/Swagger y se contrastará con pruebas de ejecución. Las operaciones CRUD solo se incorporarán cuando respondan al comportamiento solicitado por el producto; por ejemplo, el cambio de estado de un viaje puede requerir reglas específicas y no un \`PUT\` genérico sobre una tabla.
 
-El modelo de datos de planificación mantiene rutas, paradas, estudiantes asignados y programación de viajes. Estas relaciones permiten conservar el orden de recorrido y preparar la información que utilizará posteriormente la ejecución del traslado.
+### 4.8.3. Verificación previa a la implementación
 
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="95%">
-</div>
+Antes de desarrollar los Web Services del Sprint 3, el equipo deberá:
 
-#### Trip Execution & Monitoring
+1. Validar los ocho diagramas actualizados y acordar sus nombres de tablas y campos.
+2. Identificar claves primarias, foráneas, cardinalidades, restricciones y datos obligatorios.
+3. Relacionar las User Stories seleccionadas con sus entidades y operaciones de negocio.
+4. Establecer el inventario total de endpoints del alcance y marcar cuáles se implementarán en Sprint 3.
+5. Definir contratos de API, validaciones, respuestas de error, políticas de acceso y migraciones de base de datos.
+6. Registrar en el Capítulo V las implementaciones reales, sus pruebas, documentación y despliegue.
 
-Este esquema persiste los viajes ejecutados y los principales eventos generados durante el recorrido, incluyendo estados de estudiantes, recojos, entregas, entradas de línea de tiempo y registros complementarios de ubicación cuando correspondan.
-
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-trip-execution.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
-</div>
-
-#### Incident & Delay Management
-
-El diagrama separa la persistencia de retrasos e incidencias de la lógica de notificaciones. Incluye información del evento, estudiantes afectados, evidencia y acciones de resolución necesarias para conservar la trazabilidad de cada situación reportada.
-
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-incident-delay.png" alt="Incident and Delay Management Database Diagram" width="95%">
-</div>
-
-#### Notification Management
-
-Este esquema administra notificaciones, destinatarios, preferencias, reglas de alerta y registros de entrega. Su propósito es persistir el ciclo de comunicación generado a partir de eventos del dominio sin duplicar los datos propios de rutas, viajes o incidencias.
-
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-notification.png" alt="Notification Management Database Diagram" width="95%">
-</div>
-
-#### Subscriptions & Billing
-
-El esquema comercial relaciona al Driver con un plan y con el estado de su suscripción. También representa entidades de facturación previstas por la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción.
-
-<div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="95%">
-</div>
-
-En conjunto, los ocho Database Diagrams mantienen correspondencia con los Bounded Contexts definidos en 4.6 y con los Class Diagrams de 4.7, conservando la separación de responsabilidades entre identidad, perfiles, vehículos, planificación, ejecución, incidencias, notificaciones y suscripciones.
-
+La trazabilidad entre estas decisiones y la implementación se documentará en **5.2.3.6 Services Documentation Evidence for Sprint Review**. Este apartado 4.8 describe el diseño; el estado de desarrollo y sus evidencias corresponden al Sprint 3 del Capítulo V.
 ---
 
 # Capítulo V: Product Implementation, Validation & Deployment
