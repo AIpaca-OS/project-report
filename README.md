@@ -74,18 +74,14 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 
 **Team Collaboration Commits**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-commits.svg" alt="Team Collaboration Commits" width="95%">
-</div>
+<!-- AV2: insertar captura real de Team Collaboration Commits desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
 
 **Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
 **Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
 
 **Team Collaboration Network**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-network.svg" alt="Team Collaboration Network" width="95%">
-</div>
+<!-- AV2: insertar captura real de Team Collaboration Network desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
 
 **Branches:** https://github.com/AIpaca-OS/project-report/branches  
 **Network:** https://github.com/AIpaca-OS/project-report/network
@@ -94,9 +90,7 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
 
 **Contributors / Pull Requests**
 
-<div align="center">
-  <img src="./assets/chapter5/team-collaboration-prs.svg" alt="Team Collaboration Pull Requests" width="95%">
-</div>
+<!-- AV2: insertar captura real de Team Collaboration Pull Requests desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
 
 Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
