@@ -41,18 +41,21 @@
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor(es) | Descripción de cambios |
-|---|---|---|---|
+| :---: | :---: | :--- | :--- |
 | 0.1 | 09/09/2026 | Lino Quispe, Leonardo Miguel | Creación de la estructura base del informe en Markdown y configuración inicial del repositorio. |
-| 0.2 | 11/09/2026 | Equipo Rumbo | Actualización de integrantes y desarrollo preliminar de los capítulos I y II para AV1. |
-| 0.3 | 15/09/2026 | Equipo Rumbo | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
-| 0.4 | 17/09/2026 | Equipo Rumbo | Sincronización del Capítulo I a partir de retroalimentación recibida y consolidación de Lean UX. |
-| 0.5 | 17/09/2026 | Equipo AIpaca | Alineación de la identidad Startup AIpaca / Producto Rumbo y refinamiento de alcance y restricciones. |
-| 1.0 | 18/09/2026 | Equipo AIpaca | Consolidación y entrega oficial del hito AV1 (Landing Page pública, Capítulos I al IV y Sprint 1). |
-| 1.1 | 24/09/2026 | Díaz Ramírez, Alejandro / Pareja Caceres, Diana | Especificación de Bounded Contexts, entidades y diseño de contratos RESTful para el Sprint 2. |
-| 1.2 | 29/09/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Estructuración del proyecto Frontend Web Application en Angular 18 con arquitectura DDD y Angular Material. |
-| 1.3 | 02/10/2026 | Geronimo Puma, Kevin Joel / Pareja Caceres, Diana | Integración de endpoints emulados mediante MockAPI en la nube y configuración de pruebas locales. |
-| 2.0 | 06/10/2026 | Equipo AIpaca | Consolidación formal de la entrega TB1: actualización de Student Outcome, registro de evidencias de desarrollo y ejecución del Sprint 2. |
-
+| 0.2 | 11/09/2026 | Díaz Ramírez, Alejandro / Meza Soza, Alexandra Yamile | Actualización de integrantes y desarrollo preliminar de los capítulos I y II para AV1. |
+| 0.3 | 15/09/2026 | Geronimo Puma, Kevin Joel / Pareja Caceres, Diana | Ajuste del Capítulo I para reforzar propuesta de valor, modelo de negocio y escalabilidad. |
+| 0.4 | 17/09/2026 | Lino Quispe, Leonardo Miguel / Díaz Ramírez, Alejandro | Sincronización del Capítulo I a partir de retroalimentación recibida y consolidación de Lean UX. |
+| 0.5 | 17/09/2026 | Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Alineación de la identidad Startup / Producto Rumbo y refinamiento de alcance y restricciones según feedback docente. |
+| 1.0 | 18/09/2026 | Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel | Consolidación y entrega oficial del hito AV1 (Landing Page pública, Capítulos I al IV y Sprint 1). |
+| 1.1 | 24/09/2026 | Díaz Ramírez, Alejandro / Pareja Caceres, Diana | Rediseño y refinamiento de Bounded Contexts y modelo de dominio atendiendo correcciones del profesor para la planificación del Sprint 2. |
+| 1.2 | 29/09/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Configuración base de la aplicación web en Angular con estructura DDD y Angular Material para soportar los módulos de cada contexto. |
+| 1.3 | 01/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel | Rediseño y optimización de la Landing Page pública (mejoras visuales, responsive design y llamada a la acción) según feedback docente. |
+| 1.4 | 02/10/2026 | Pareja Caceres, Diana / Lino Quispe, Leonardo Miguel | Definición y reparto del alcance individual del Sprint 2 (1 Bounded Context con CRUD por integrante) e integración de endpoints en MockAPI. |
+| 1.5 | 03/10/2026 | Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Implementación de vistas y lógica de formularios reactivos para las operaciones CRUD en los módulos de vehículos y perfiles asignados. |
+| 1.6 | 04/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel | Desarrollo de componentes y servicios CRUD para los módulos de rutas y subscripciones; resolución de validaciones y estados de error. |
+| 1.7 | 05/10/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Integración y pruebas de flujo completo de los 5 Bounded Contexts desarrollados, configuración de entorno y despliegue del frontend en producción. |
+| 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 
 ---
 
@@ -2424,7 +2427,7 @@ Pull Requests relevantes:
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-La aplicación se ejecuta desde el código integrado de `develop`. Las siguientes vistas deben documentarse mediante capturas reales del producto ejecutándose:
+La aplicación se ejecuta desde el código integrado de `develop`. A continuación se presentan capturas reales de las principales vistas implementadas durante Sprint 2:
 
 1. **Vehicle & Credential Management:** listado, creación y edición de vehículos.
 2. **Profiles & Relationship Management:** listado y formulario de estudiantes.
@@ -2433,12 +2436,42 @@ La aplicación se ejecuta desde el código integrado de `develop`. Las siguiente
 5. **Subscriptions & Billing:** planes, formulario de suscripción y listado de suscripciones.
 6. **Responsive Web Design:** al menos una vista representativa en Mobile.
 
-<!-- PENDIENTE IMAGEN C5-S2-02: Vehicle List + Vehicle Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-03: Student List + Student Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-04: Route List + Route Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-05: Notification Dashboard / Settings. -->
-<!-- PENDIENTE IMAGEN C5-S2-06: Incident o Delay Form. -->
-<!-- PENDIENTE IMAGEN C5-S2-07: Plans / Subscriptions CRUD. -->
+**Vehicle & Credential Management**
+
+La siguiente evidencia muestra la vista implementada para la gestión de vehículos dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-vehicles.png" alt="Execution Evidence - Vehicle Management" width="95%">
+</div>
+**Profiles & Relationship Management**
+
+La siguiente evidencia muestra la vista implementada para la gestión de estudiantes dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-students.png" alt="Execution Evidence - Student Management" width="95%">
+</div>
+**Route & Trip Planning**
+
+La siguiente evidencia muestra la vista implementada para la gestión de rutas dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-routes.png" alt="Execution Evidence - Route Management" width="95%">
+</div>
+**Alerting & Incident Management**
+
+La siguiente evidencia corresponde a una vista operativa del contexto de alertas e incidencias implementado en el Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-operations.png" alt="Execution Evidence - Alerting and Incident Operations" width="95%">
+</div>
+
+**Subscriptions & Billing**
+
+La siguiente evidencia muestra la vista implementada para la gestión de suscripciones dentro del Frontend.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-subscriptions.png" alt="Execution Evidence - Subscriptions and Billing" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-08: Una vista representativa en Mobile. -->
 
 **Video de navegación del Sprint 2:** debe mostrar las principales rutas del Frontend y operaciones CRUD incluidas en el Sprint.
@@ -2491,7 +2524,7 @@ Por tanto, para cerrar este requisito de TB1 falta:
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 2 debe evidenciarse con capturas reales de GitHub:
+La colaboración del Sprint 2 se evidencia con analíticos reales de GitHub. Se incorporan el resumen de actividad de Pulse y el Network Graph del repositorio; las evidencias adicionales de Contributors y Pull Requests se mantienen referenciadas para completar la revisión visual del Sprint:
 
 - Commits: https://github.com/AIpaca-OS/frontend-web-application/commits/develop
 - Contributors: https://github.com/AIpaca-OS/frontend-web-application/graphs/contributors
@@ -2500,9 +2533,26 @@ La colaboración del Sprint 2 debe evidenciarse con capturas reales de GitHub:
 
 La evidencia del repositorio permite identificar contribuciones de los cinco integrantes en las ramas y commits del Sprint, además de los merges de integración mediante Pull Requests.
 
-<!-- PENDIENTE IMAGEN C5-S2-16: Commits de develop mostrando autores del equipo. -->
+**Pulse — resumen de colaboración**
+
+La siguiente captura muestra el resumen de actividad reciente del repositorio durante el periodo de trabajo del Sprint.
+
+<div align="center">
+  <img src="./assets/chapter5/collaboration-pulse.png" alt="Team Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-17: Contributors del Frontend. -->
-<!-- PENDIENTE IMAGEN C5-S2-18: Network del Frontend. -->
+**Network Graph — trazabilidad de ramas e integración**
+
+Las siguientes capturas muestran el Network Graph utilizado como evidencia de la creación de ramas, evolución de commits e integración del trabajo del equipo durante el Sprint.
+
+<div align="center">
+  <img src="./assets/chapter5/network-1.png" alt="Frontend Network Graph - Evidence 1" width="95%"><br><br>
+  <img src="./assets/chapter5/network-2.png" alt="Frontend Network Graph - Evidence 2" width="95%"><br><br>
+  <img src="./assets/chapter5/network-3.png" alt="Frontend Network Graph - Evidence 3" width="95%"><br><br>
+  <img src="./assets/chapter5/network-4.png" alt="Frontend Network Graph - Evidence 4" width="95%"><br><br>
+  <img src="./assets/chapter5/network-5.png" alt="Frontend Network Graph - Evidence 5" width="95%"><br><br>
+  <img src="./assets/chapter5/network-6.png" alt="Frontend Network Graph - Evidence 6" width="95%">
+</div>
 <!-- PENDIENTE IMAGEN C5-S2-19: Pull Requests #5, #6, #7 y #8 cerrados/merged. -->
 
 
