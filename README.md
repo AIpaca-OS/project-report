@@ -56,6 +56,7 @@
 | 1.6 | 04/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel | Desarrollo de componentes y servicios CRUD para los módulos de rutas y subscripciones; resolución de validaciones y estados de error. |
 | 1.7 | 05/10/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Integración y pruebas de flujo completo de los 5 Bounded Contexts desarrollados, configuración de entorno y despliegue del frontend en producción. |
 | 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
+| 2.1 | 20/10/2026 | Equipo AIpaca — actualización documental | Revisión de los ocho Database Diagrams del Capítulo IV; sincronización de assets y estructura de documentación de Sprint 3, Validation Interviews y videos de AV2 conforme al Final Project Statement. |
 
 ---
 
@@ -102,6 +103,22 @@ Hasta esta actualización el Project Report registra **13 Pull Requests**, de lo
 **Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
 **Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
 
+
+### AV2
+
+Para AV2, el informe incorpora la revisión del diseño de persistencia y la organización de la documentación correspondiente al Sprint 3. Los ocho diagramas nuevos fueron integrados en el apartado 4.8, se actualizaron sus explicaciones y se sustituyeron los assets anteriores. En paralelo, el Capítulo V fue alineado con la estructura y los formatos del Final Project Statement, manteniendo separados los registros del trabajo realizado y las evidencias que corresponden a nuevas implementaciones.
+
+La colaboración documental puede revisarse directamente en las ramas del informe y en los siguientes commits:
+
+- [Actualización de los ocho diagramas y su redacción](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a).
+- [Eliminación de versiones gráficas sustituidas en Chapter 4](https://github.com/AIpaca-OS/project-report/commit/06d0970db2e320cbdf165f73f1a3f31e460acf2b).
+- [Sincronización de recursos en la rama de Chapter 5](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222).
+- [Documentación de Sprint 3, entrevistas y About-the-Product](https://github.com/AIpaca-OS/project-report/commit/0d77f42d9c134269c60fad8dfc9509d1cb39a5d5).
+
+Los analíticos de Contributors, Network y Pull Requests sirven para verificar la participación individual y el proceso de integración. Las capturas de AV2 se incorporan a esta sección con el periodo de consulta identificado.
+
+<!-- AV2: incorporar imágenes de los analíticos y verificar la participación de cada integrante en el Project Report. -->
+
 ---
 
 # Contenido
@@ -129,8 +146,27 @@ Hasta esta actualización el Project Report registra **13 Pull Requests**, de lo
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
+  - [4.8. Database Design](#48-database-design)
+    - [4.8.1. Database Diagrams](#481-database-diagrams)
 - [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
+  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -2756,13 +2792,31 @@ Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres
 
 # Conclusiones
 
-- La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
+## Conclusiones y recomendaciones
 
-- Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
+La primera etapa de Rumbo permitió delimitar dos segmentos de usuarios con necesidades distintas pero conectadas: los padres y tutores requieren información comprensible sobre el traslado escolar, mientras que los conductores necesitan organizar sus rutas y comunicar eventos relevantes del servicio. La propuesta del producto se articula alrededor de esa comunicación y de la trazabilidad del recorrido.
 
-- Sprint 1 dejó publicada la primera Landing Page y Sprint 2 incorporó el Frontend Angular con integración a Fake REST APIs. Estos avances permiten iniciar la implementación de servicios propios sin confundir las simulaciones utilizadas en TB1 con un backend operativo.
+El Frontend Angular de Sprint 2 consolidó módulos de gestión por Bounded Context y su integración con Fake REST APIs. Para AV2, el diseño de persistencia de la plataforma se precisó mediante ocho Database Diagrams que separan información de identidad, perfiles, vehículos, planificación, ejecución, incidencias, notificaciones y facturación. Esa separación sirve como referencia para el backend propio y ayuda a evitar que las operaciones de un contexto dependan innecesariamente de las tablas de otro.
 
-- Para AV2, el trabajo pendiente más importante es validar los diagramas de persistencia actualizados, implementar y publicar los endpoints seleccionados y documentar sus pruebas. Las entrevistas y los videos deben reflejar interacciones y testimonios reales; la plantilla de Sprint 3 se completará conforme se obtengan esas evidencias.
+La implementación de Web Services se contrasta con los contratos y las operaciones HTTP documentadas en Sprint 3. Las validaciones con usuarios aportan una segunda fuente de evaluación, centrada en la comprensión de las tareas y la facilidad de uso, complementaria a las pruebas técnicas. Las recomendaciones de evolución del producto deberán sustentarse en las observaciones recogidas y en el funcionamiento de las versiones publicadas, de acuerdo con los objetivos e hipótesis de Lean UX definidos para Rumbo.
+
+## Video About-the-Team
+
+El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
+
+La pauta de edición considera una secuencia inicial de presentación de AIpaca y Rumbo, un resumen del proceso colaborativo, una retrospectiva del Sprint y las intervenciones ante cámara de cada uno de los cinco integrantes. Conforme al Anexo C, la retrospectiva se organiza tomando como referencia cinco minutos y cada testimonio individual alrededor de un minuto. El video utiliza el branding de la startup, música de fondo y escenas identificables; para AV2 se acredita el avance de al menos el 50 % de edición mediante la versión publicada.
+
+| Secuencia | Contenido | Inicio (hh:mm:ss) |
+|---|---|---|
+| Apertura | Startup, producto y presentación del equipo | <!-- AV2: timestamp --> |
+| Trabajo colaborativo | Sesiones reales, organización y principales artefactos | <!-- AV2: timestamp --> |
+| Retrospectiva | Aciertos, dificultades y mejoras aplicadas al proceso | <!-- AV2: timestamp --> |
+| Testimonios | Participación y autoevaluación de cada integrante | <!-- AV2: timestamps individuales --> |
+| Cierre | Resultados de la iteración y aprendizajes del equipo | <!-- AV2: timestamp --> |
+
+**Microsoft Stream:** <!-- AV2: enlace del video -->
+**YouTube:** <!-- AV2: enlace integrado en Landing Page -->
+**Duración y cuadro representativo:** <!-- AV2: duración exacta, captura y registro de edición -->
 
 
 # Bibliografía
