@@ -1923,78 +1923,79 @@ En conjunto, los ocho Class Diagrams mantienen la separación establecida en el 
 
 ## 4.8. Database Design
 
-El diseño de persistencia de **Rumbo** mantiene la misma separación establecida en el modelado DDD y en los Class Diagrams. Cada Database Diagram representa las principales tablas, columnas, claves primarias, claves foráneas y relaciones necesarias para persistir la información administrada por su Bounded Context.
+El diseño de base de datos de Rumbo se presenta por Bounded Context, de acuerdo con la división del dominio descrita en la sección 4.6 y los Class Diagrams de la sección 4.7. En esta revisión se incorporaron ocho diagramas relacionales que detallan las tablas, sus atributos, los tipos de datos y las relaciones utilizadas para conservar la información de la plataforma.
 
-Los diagramas corresponden a la **arquitectura objetivo** del producto. Por ello, algunas tablas representan capacidades previstas para etapas posteriores y no implican que todo el backend se encuentre implementado durante Sprint 2.
+El modelo emplea identificadores de tipo `UUID` y campos temporales para registrar cambios relevantes durante la operación. Las relaciones internas se representan mediante claves primarias y foráneas; cuando un registro hace referencia a información administrada por otro contexto, esa referencia también deberá respetar los límites de responsabilidad definidos en el diseño del dominio. Los diagramas orientan la persistencia de la solución, pero no sustituyen la definición de reglas de negocio ni de contratos REST.
 
 ### 4.8.1. Database Diagrams
 
 #### Identity & Access Management
 
-Este esquema concentra la persistencia de cuentas, sesiones, recuperación de acceso, roles y permisos. Las tablas de relación permiten separar la identidad del usuario de las capacidades que puede ejecutar dentro de la plataforma.
+El modelo de identidad se concentra en `accounts` y `account_tokens`. La cuenta conserva el correo, el hash de la contraseña, el rol y el estado de verificación. Los tokens se relacionan con una cuenta y registran su tipo, vencimiento y utilización. Esta separación permite administrar los mecanismos de acceso sin mezclar sus datos con los perfiles de padres o conductores.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-iam.png" alt="Identity and Access Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/iam-data-diagram.png" alt="Identity and Access Management Database Diagram: accounts y account_tokens" width="95%">
 </div>
 
 #### Profiles & Relationship Management
 
-El esquema almacena los perfiles de Parent, Driver y Student, junto con las relaciones de autorización y datos complementarios necesarios para representar quién puede consultar la información de cada estudiante.
+Este contexto reúne `profiles`, `students`, `schools`, `tutor_student_relationships`, `service_enrollments` y `data_deletion_requests`. Las relaciones entre tutores y estudiantes registran autorizaciones; las inscripciones vinculan al estudiante con el conductor y el servicio. La solicitud de eliminación de datos mantiene su propio estado de atención. Los perfiles se identifican de forma independiente de la información de autenticación.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/profile-data-diagram.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
 
-Este diagrama representa la persistencia de vehículos, asignaciones, documentos y credenciales asociadas al Driver. Las claves foráneas permiten mantener la relación con el conductor sin trasladar la responsabilidad del vehículo a otros Bounded Contexts.
+La persistencia de vehículos se organiza en `vehicles`, `vehicle_documents` y `driver_credentials`. Los vehículos contienen datos de identificación, capacidad y estado; sus documentos registran tipo, vencimiento y verificación. Las credenciales del conductor se administran por separado, lo que permite comprobar tanto la documentación del vehículo como la habilitación de quien presta el servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/vehicle-data-diagram.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
 
-El modelo de datos de planificación mantiene rutas, paradas, estudiantes asignados y programación de viajes. Estas relaciones permiten conservar el orden de recorrido y preparar la información que utilizará posteriormente la ejecución del traslado.
+La planificación se apoya en `routes`, `route_stops`, `route_schedules` y `route_assignments`. Cada ruta identifica al conductor y al vehículo asociados, junto con su turno, dirección y estado. Las paradas conservan un orden y datos de ubicación; los horarios especifican los días y horas del servicio. Las asignaciones permiten relacionar estudiantes con paradas de una ruta determinada, separando el diseño del recorrido de la ejecución de un viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-route-trip-planning.png" alt="Route and Trip Planning Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/route-data-diagram.png" alt="Route and Trip Planning Database Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
 
-Este esquema persiste los viajes ejecutados y los principales eventos generados durante el recorrido, incluyendo estados de estudiantes, recojos, entregas, entradas de línea de tiempo y registros complementarios de ubicación cuando correspondan.
+Este diagrama desarrolla la operación de los recorridos mediante `trips`, `trip_stops`, `trip_passengers`, `trip_events` y `student_absences`. El viaje conserva la fecha del servicio, los estados y los tiempos relevantes; las paradas y pasajeros permiten registrar recojos, entregas y ausencias. Los eventos dejan constancia de lo ocurrido durante el trayecto y de la persona que realizó el registro. De este modo, la información de ejecución queda diferenciada de la programación original de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-trip-execution.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/trip-data-diagram.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
 
-El diagrama separa la persistencia de retrasos e incidencias de la lógica de notificaciones. Incluye información del evento, estudiantes afectados, evidencia y acciones de resolución necesarias para conservar la trazabilidad de cada situación reportada.
+Las incidencias se registran en `incidents` con su categoría, descripción, estado y resolución. La tabla `incident_acknowledgements` conserva la confirmación de recepción por parte del tutor. Los retrasos se representan en `delays`, incluyendo su causa, tiempo estimado y la referencia a un retraso anterior cuando existe una actualización. Este modelo permite conservar el historial de situaciones operativas sin confundirlas con el envío de notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-incident-delay.png" alt="Incident and Delay Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/incident-data-diagram.png" alt="Incident and Delay Management Database Diagram" width="95%">
 </div>
 
 #### Notification Management
 
-Este esquema administra notificaciones, destinatarios, preferencias, reglas de alerta y registros de entrega. Su propósito es persistir el ciclo de comunicación generado a partir de eventos del dominio sin duplicar los datos propios de rutas, viajes o incidencias.
+El contexto de notificaciones incorpora `notifications`, `notification_settings`, `recipient_authorizations` y `recipient_contacts`. Cada notificación conserva su destinatario, origen, prioridad, contenido y estado de entrega o lectura. La configuración de preferencias permite distinguir los tipos de aviso que recibe el tutor, mientras que las autorizaciones y los datos de contacto contribuyen a dirigir las comunicaciones a sus destinatarios.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-notification.png" alt="Notification Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/notification-data-diagram.png" alt="Notification Management Database Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
 
-El esquema comercial relaciona al Driver con un plan y con el estado de su suscripción. También representa entidades de facturación previstas por la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción.
+El modelo comercial utiliza `plans`, `subscriptions` y `subscription_payments`. Los planes especifican precio, moneda, periodo de facturación y límite de vehículos. Cada suscripción vincula un conductor con un plan y conserva su estado y periodo vigente. Los pagos se registran por suscripción y periodo, con importe, estado y referencia de comprobante, lo que permite mantener separado el catálogo comercial del historial de cobros.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/database-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/subscription-data-diagram.png" alt="Subscriptions and Billing Database Diagram" width="95%">
 </div>
 
-En conjunto, los ocho Database Diagrams mantienen correspondencia con los Bounded Contexts definidos en 4.6 y con los Class Diagrams de 4.7, conservando la separación de responsabilidades entre identidad, perfiles, vehículos, planificación, ejecución, incidencias, notificaciones y suscripciones.
+En conjunto, los ocho diagramas proporcionan una representación más concreta de la información que administra Rumbo y de las relaciones necesarias dentro de cada contexto. La implementación de Web Services toma estos modelos como referencia para sus entidades persistentes y repositorios, pero define las operaciones REST a partir de las User Stories y las reglas del dominio. La correspondencia entre recursos, operaciones, pruebas y endpoints se documenta en la sección 5.2.3.6 del Capítulo V.
 
+Como criterio de implementación, las referencias entre contextos —por ejemplo, los identificadores de conductor, estudiante, vehículo o viaje— deberán revisarse al definir las restricciones de integridad y la forma de integración de los servicios. También se comprobarán las claves compuestas indicadas en algunos diagramas, los tipos temporales y las restricciones de unicidad antes de elaborar las migraciones de base de datos.
 ---
 
 # Capítulo V: Product Implementation, Validation & Deployment
