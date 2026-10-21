@@ -1999,9 +1999,9 @@ En conjunto, los ocho Database Diagrams mantienen correspondencia con los Bounde
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
-En este capítulo se describe y evidencia el proceso de implementación, comprobación y despliegue de **Rumbo** para el alcance de TB1. La entrega consolida una nueva versión de la Landing Page y la primera versión integrada de la Frontend Web Application. El Frontend se encuentra construido con **Angular 21.2**, TypeScript 5.9 y Angular Material 21.2, organizado por Bounded Contexts y consumiendo Fake REST APIs. La lógica de negocio de servidor y los Web Services reales con Spring Boot quedan fuera del alcance de este Sprint.
+Este capítulo reúne la implementación, las pruebas y los despliegues de **Rumbo** por Sprint. En Sprint 2 se integró la primera versión de la Frontend Web Application con Angular 21.2, TypeScript y Angular Material, consumiendo Fake REST APIs. Para AV2 se prepara el Sprint 3, que debe incorporar el avance de Web Services propios, las nuevas versiones desplegadas y la validación con usuarios.
 
-Para mantener trazabilidad con el estado real de los repositorios, este capítulo distingue entre: (1) funcionalidades implementadas y fusionadas en GitHub, (2) servicios emulados con MockAPI o JSON Server local y (3) evidencias de despliegue que requieren una URL pública verificable. No se atribuyen como completadas actividades que todavía no cuentan con evidencia en los repositorios.
+Se separan las decisiones de diseño, el trabajo realizado y las evidencias pendientes. El uso de MockAPI o JSON Server durante Sprint 2 no equivale a contar con servicios propios desarrollados con Spring Boot. Del mismo modo, una compilación o un workflow de publicación correcto no sustituye las pruebas de funcionamiento de la aplicación desde su URL pública. Los datos aún no confirmados quedan indicados como pendientes.
 
 ## 5.1. Software Configuration Management
 
@@ -2022,11 +2022,11 @@ Las herramientas utilizadas o previstas para el ciclo de vida de Rumbo son las s
 | Language / Tooling | TypeScript 5.9 / npm 11.19 | Programación, tipado y gestión de dependencias. | Open Source | https://www.typescriptlang.org / https://www.npmjs.com |
 | i18n | ngx-translate 18 | Recursos de internacionalización del Frontend. | Open Source | https://github.com/ngx-translate/core |
 | Fake REST API | MockAPI | Persistencia emulada remota para vehículos, rutas, perfiles y suscripciones. | SaaS | https://mockapi.io |
-| Fake REST API local | json-server 0.17.4 | Persistencia emulada local actualmente utilizada por alertas, notificaciones, incidencias y retrasos. | Open Source | https://www.npmjs.com/package/json-server |
+| Fake REST API local | json-server 0.17.4 | Datos locales de apoyo en `server/db.json`; la configuración publicada del Frontend consultada para esta revisión utiliza MockAPI para alertas e incidencias. | Open Source | https://www.npmjs.com/package/json-server |
 | Frontend CI | GitHub Actions | Verificación automatizada de compilación del Frontend integrado. | SaaS | https://github.com/features/actions |
 | Landing Deployment | GitHub Pages | Publicación de la Landing Page. | SaaS | https://pages.github.com |
-| Backend (Sprint posterior) | IntelliJ IDEA / Java / Spring Boot / Spring Data JPA | Construcción futura de RESTful Web Services. No forma parte de TB1. | Local / Open Source | https://spring.io/projects/spring-boot |
-| API Documentation (Sprint posterior) | OpenAPI / Swagger | Documentación futura de Web Services reales. | Open Standard / Open Source | https://www.openapis.org |
+| Backend (Sprint 3, previsto) | IntelliJ IDEA / Java / Spring Boot / Spring Data JPA | Implementación prevista de Web Services propios para AV2; aún no hay código del backend en las ramas revisadas. | Local / Open Source | https://spring.io/projects/spring-boot |
+| API Documentation (Sprint 3, prevista) | OpenAPI / Swagger | Contratos y ejemplos HTTP de los Web Services que se desarrollen y prueben. | Open Standard / Open Source | https://www.openapis.org |
 | Software Documentation | Markdown | Elaboración colaborativa del Project Report. | Open Standard | https://www.markdownguide.org |
 
 El repositorio del Frontend confirma actualmente Angular 21.2.x, Angular Material 21.2.x, TypeScript 5.9.2, npm 11.19.0 y json-server 0.17.4. Por ello se elimina del Capítulo V la referencia anterior a Angular 18 como versión utilizada en TB1.
@@ -2478,50 +2478,41 @@ La siguiente evidencia muestra la vista implementada para la gestión de suscrip
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Sprint 2 no implementa Web Services reales con Spring Boot ni documentación Swagger/OpenAPI. La evidencia de esta sección corresponde a los **Fake REST APIs consumidos por el Frontend**, que permiten comprobar las operaciones CRUD antes de la implementación del backend.
+Sprint 2 utilizó **Fake REST APIs** para probar los formularios y las operaciones CRUD del Frontend. Esta evidencia corresponde al consumo de servicios simulados, no a un backend desarrollado en Spring Boot.
 
-| Aspecto / recurso | Base URL / Endpoint | Operaciones soportadas en el cliente | Estado |
-|---|---|---|---|
-| Vehicles | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Routes | `https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Plans | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Subscriptions | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Students | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Profiles | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Tutor-student relationships | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Data-deletion requests | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests` | GET collection/item, POST, PUT, DELETE | MockAPI remoto |
-| Notifications | `http://localhost:3000/api/v1/notifications` | GET collection/item, POST, PUT, DELETE | JSON Server local |
-| Notification settings | `http://localhost:3000/api/v1/notificationSettings` | GET, PUT | JSON Server local |
-| Incidents | `http://localhost:3000/api/v1/incidents` | GET collection/item, POST, PUT, DELETE | JSON Server local |
-| Delays | `http://localhost:3000/api/v1/delays` | GET collection/item, POST, PUT, DELETE | JSON Server local |
+La configuración de producción revisada en el repositorio \`frontend-web-application\` (archivo \`src/environments/environment.ts\`, integrado en \`main\` el 07/10/2026) registra las siguientes rutas:
 
-La URL de Route & Trip Planning utilizada en este capítulo es la indicada para el proyecto: **https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/**.
+| Recurso | Endpoint configurado en el Frontend | Tipo |
+|---|---|---|
+| Vehicles | \`https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles\` | MockAPI |
+| Routes | \`https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes\` | MockAPI |
+| Plans | \`https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans\` | MockAPI |
+| Subscriptions | \`https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions\` | MockAPI |
+| Students | \`https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students\` | MockAPI |
+| Profiles | \`https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles\` | MockAPI |
+| Tutor-student relationships | \`https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships\` | MockAPI |
+| Data-deletion requests | \`https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests\` | MockAPI |
+| Notifications | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notifications\` | MockAPI |
+| Notification settings | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notificationSettings\` | MockAPI |
+| Incidents | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/incidents\` | MockAPI |
+| Delays | \`https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/delays\` | MockAPI |
 
-La configuración actual del código todavía mantiene Alerting/Incident en `localhost:3000`. Esto debe considerarse al desplegar el Frontend: una aplicación pública no podrá consumir el JSON Server local del equipo. La migración de esos cuatro recursos a una URL accesible públicamente o la sustitución por el backend real deberá realizarse fuera de esta corrección documental.
+El repositorio conserva además \`server/db.json\` y \`server/routes.json\` para ejecutar JSON Server local durante el desarrollo. La tabla anterior documenta la configuración integrada en \`main\`; no acredita, por sí sola, que cada recurso esté disponible o que todas las operaciones hayan superado pruebas funcionales.
 
-<!-- PENDIENTE IMAGEN C5-S2-09: MockAPI de Vehicles mostrando registros. -->
-<!-- PENDIENTE IMAGEN C5-S2-10: MockAPI de Routes mostrando el recurso routes. -->
-<!-- PENDIENTE IMAGEN C5-S2-11: MockAPI de Profiles/Students o Billing mostrando datos de ejemplo. -->
-<!-- PENDIENTE IMAGEN C5-S2-12: JSON Server local mostrando Notifications/Incidents, solo como evidencia de Sprint 2. -->
+**Pendiente para cerrar la evidencia:** incorporar capturas reales de las operaciones HTTP que se probaron, con método, recurso, código de respuesta y resultado visible en el Frontend. La documentación de la API propia que se construya en AV2 se registrará en la sección 5.2.3.6, sin reescribir retrospectivamente Sprint 2 como un Sprint con Web Services propios.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-**Landing Page:** se encuentra publicada en GitHub Pages y fue actualizada para TB1.
+La Landing Page cuenta con un historial de publicación en GitHub Pages. En el caso del Frontend, el repositorio registra el merge de \`develop\` hacia \`main\` mediante el PR #16 y un workflow de despliegue completado correctamente el **07/10/2026**. Esto corrige la anotación anterior, que indicaba que no se había integrado el Frontend a \`main\`.
 
-**Frontend Web Application:** el código de Sprint 2 fue integrado en `develop` y cuenta con verificación de compilación mediante GitHub Actions. Sin embargo, al cierre de esta actualización documental no existe una URL pública verificable del Frontend y `main` todavía no contiene la integración completa de TB1.
+- Pull Request de integración: https://github.com/AIpaca-OS/frontend-web-application/pull/16
+- Ejecución del workflow de despliegue: https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104
+- Ruta pública prevista del Frontend en GitHub Pages: https://aipaca-os.github.io/frontend-web-application/
+- Repositorio de la Landing Page: https://github.com/AIpaca-OS/landing-page
 
-Por tanto, para cerrar este requisito de TB1 falta:
+El workflow exitoso permite acreditar la generación y publicación de los archivos estáticos. Para completar la evidencia de ejecución deben comprobarse la apertura de la URL pública, la navegación entre módulos, el comportamiento responsive y las llamadas HTTP reales. Estas comprobaciones necesitan capturas o video de ejecución; no se dan por realizadas únicamente por el resultado del workflow.
 
-1. Integrar la revisión estable de `develop` hacia `main`.
-2. Configurar el hosting del Frontend.
-3. Resolver el consumo de recursos que aún apuntan a `localhost:3000`.
-4. Registrar la URL pública.
-5. Insertar capturas del deployment y de la aplicación pública.
-
-<!-- PENDIENTE IMAGEN C5-S2-13: GitHub Actions con build exitoso del Frontend. -->
-<!-- PENDIENTE IMAGEN C5-S2-14: Configuración del proveedor de deployment. -->
-<!-- PENDIENTE IMAGEN C5-S2-15: Frontend abierto desde URL pública. -->
-
+<!-- PENDIENTE S2-DEPLOY: captura del workflow exitoso, URL pública y prueba visual de rutas y CRUD. -->
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
 La colaboración del Sprint 2 se evidencia con analíticos reales de GitHub. Se incorporan el resumen de actividad de Pulse y el Network Graph del repositorio; las evidencias adicionales de Contributors y Pull Requests se mantienen referenciadas para completar la revisión visual del Sprint:
