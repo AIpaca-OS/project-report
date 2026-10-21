@@ -2548,6 +2548,207 @@ Las siguientes capturas muestran el Network Graph utilizado como evidencia de la
 
 
 
+
+### 5.2.3. Sprint 3
+
+Sprint 3 corresponde al avance de AV2. El trabajo previsto se concentra en mejorar la Landing Page y el Frontend, iniciar los **Web Services propios** y reunir las evidencias de desarrollo, ejecución y despliegue. El diseño de persistencia de los ocho Bounded Contexts se está revisando en el apartado 4.8; antes de programar se deben confirmar los diagramas actualizados y el alcance de la API.
+
+Esta sección funciona como **plantilla de trabajo**. Solo se completará con acuerdos del equipo, archivos y enlaces verificables. No se consignan fechas, avances, responsables o porcentajes de implementación que todavía no estén confirmados.
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Campo | Información |
+|---|---|
+| Sprint # | Sprint 3 |
+| Sprint Planning Background | Continuar el producto Rumbo a partir del frontend integrado en Sprint 2, incorporar los primeros Web Services propios y preparar la validación para AV2. |
+| Date / Time | **[Completar después de la reunión]** |
+| Location | **[Completar plataforma o lugar]** |
+| Prepared By | **[Completar responsable real]** |
+| Attendees | **[Completar asistencia comprobada]** |
+| Sprint 2 Review Summary | Frontend Angular y Fake REST APIs integrados; revisar pendientes funcionales y de documentación a partir de la demostración de TB1. |
+| Sprint 2 Retrospective Summary | **[Registrar acuerdos, dificultades y acciones de mejora efectivamente discutidas]** |
+| Sprint 3 Goal | Avanzar una versión ejecutable de Rumbo con mejoras visibles en el frontend y un primer conjunto de Web Services desarrollados a medida, documentados y publicados para su prueba. |
+| Selected User Stories | **[Copiar IDs y títulos exactos del Product Backlog]** |
+| Sum of Story Points | **[Sumar solo las historias seleccionadas]** |
+| Sprint Velocity | **[Registrar valor calculado a partir de la evidencia disponible, o indicar que aún no se dispone de él]** |
+| Periodo / Sprint Review | **[Completar fechas reales]** |
+
+**Acuerdos que deben salir del Planning:** identificar las historias seleccionadas, descomponerlas en Engineering Tasks de **4 a 8 horas**, decidir responsables y estimar qué endpoints forman el alcance del Sprint. El objetivo técnico de la rúbrica es que **más del 40 %** de los endpoints de ese alcance estén funcionales, no que exista únicamente un proyecto vacío o Swagger con operaciones sin implementar.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+La asignación debe reflejar quién lidera cada aspecto y quién colabora. No se reutilizan automáticamente los responsables de Sprint 2, porque la distribución de tareas puede cambiar.
+
+| Aspecto | Leader (L) | Collaborators (C) | Evidencia de colaboración |
+|---|---|---|---|
+| Database Design / Persistence | **[Definir]** | **[Definir]** | Commits, revisión de diagramas y PRs |
+| Web Services / API | **[Definir]** | **[Definir]** | Controllers, services, tests y PRs |
+| Frontend Integration | **[Definir]** | **[Definir]** | Commits, PRs y pruebas de las vistas |
+| Landing Page / Responsive | **[Definir]** | **[Definir]** | Commits y publicación de cambios |
+| Validation Interviews | **[Definir]** | **[Definir]** | Grabaciones, fichas y hallazgos |
+| Documentation / Deployment | **[Definir]** | **[Definir]** | Commits del reporte y workflows |
+| About-the-Product / About-the-Team | **[Definir]** | **[Definir]** | Guiones, grabaciones y edición |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+**Board / herramienta de seguimiento:** **[Insertar enlace público o accesible para revisión]**.
+
+**Evidencia del tablero:** **[Añadir captura con historias, tareas, responsables y estados visibles; indicar fecha de captura]**.
+
+Las historias de esta sección deben coincidir con el Product Backlog y el Sprint Planning 3. El siguiente cuadro sirve para organizar la información; **no acredita actividades realizadas**.
+
+| Story Id | Story Title | SP | Task Id | Engineering Task | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Revisar esquema de datos y reglas de integridad del recurso elegido. | **[4–8]** | **[Asignar]** | To Do |
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Implementar entidad, repositorio y servicio del primer recurso. | **[4–8]** | **[Asignar]** | To Do |
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Implementar controller, DTOs y validaciones del recurso. | **[4–8]** | **[Asignar]** | To Do |
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Documentar solicitudes y respuestas en OpenAPI/Swagger. | **[4–8]** | **[Asignar]** | To Do |
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Probar endpoints y registrar respuestas HTTP. | **[4–8]** | **[Asignar]** | To Do |
+| **[US real]** | **[Historia priorizada]** | **[SP]** | **[T]** | Integrar una vista del Frontend con el servicio priorizado. | **[4–8]** | **[Asignar]** | To Do |
+
+**Estados de seguimiento:** To Do, In Process, To Review y Done. Se debe mantener evidencia de su evolución en la herramienta del equipo; no basta con una tabla final en estado Done. Si una actividad necesita más de ocho horas, deberá dividirse en tareas más pequeñas.
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Aquí se registrarán las contribuciones efectivas en \`web-services\`, \`frontend-web-application\`, \`landing-page\` y \`project-report\`, con vínculos a commits y Pull Requests. El reporte debe diferenciar trabajo individual, revisión e integración.
+
+| Repository | Branch existente | Commit ID / PR | Cambio realizado | Responsable | Fecha |
+|---|---|---|---|---|---|
+| \`web-services\` | **[Rama de trabajo existente]** | **[Enlace]** | **[Describir archivo o funcionalidad]** | **[Nombre]** | **[Fecha]** |
+| \`frontend-web-application\` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
+| \`landing-page\` | **[Rama existente]** | **[Enlace]** | **[Describir cambio]** | **[Nombre]** | **[Fecha]** |
+| \`project-report\` | **[Rama existente]** | **[Enlace]** | **[Describir artefacto actualizado]** | **[Nombre]** | **[Fecha]** |
+
+**Evidencias pendientes:** capturas de archivos implementados, historial de PRs revisados y confirmación de que el código publicado corresponde al alcance del Sprint. No se crearán ramas nuevas solo para producir capturas de evidencia.
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Esta sección mostrará el comportamiento del software ejecutándose, no solo código fuente o pantallas estáticas. Para cada historia implementada se deberá registrar:
+
+| Prueba | Entrada o acción | Resultado esperado | Resultado observado | Evidencia |
+|---|---|---|---|---|
+| **[Historia / módulo]** | **[Acción realizada]** | **[Comportamiento esperado]** | **[Completar tras ejecutar]** | **[Captura o video]** |
+| **[Historia / módulo]** | **[Validación o caso de error]** | **[Código/mensaje esperado]** | **[Completar tras ejecutar]** | **[Captura o video]** |
+| **[Navegación responsive]** | **[Vista y tamaño de pantalla]** | **[Comportamiento esperado]** | **[Completar tras ejecutar]** | **[Captura o video]** |
+
+Se deben demostrar las operaciones implementadas, las validaciones, el estado de la interfaz después de una solicitud y, cuando corresponda, la persistencia de la información. La grabación de la ejecución debe coincidir con la versión desplegada que se documente en 5.2.3.7.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+La primera versión del RESTful API se desarrollará de acuerdo con los diagramas de persistencia revisados en el **Capítulo 4** y con las User Stories seleccionadas en Sprint 3. El contrato público se definirá por operación de negocio, sin asumir que cada tabla necesita un CRUD completo.
+
+**Repositorio:** https://github.com/AIpaca-OS/web-services
+
+**Estado al preparar esta plantilla:** las ramas \`main\`, \`develop\` y \`feature/service-foundation\` no contienen todavía código Spring Boot visible; únicamente se encontró el README inicial. Esto deberá actualizarse cuando se publiquen los avances.
+
+| Recurso / operación | Método HTTP | Ruta | Descripción y ejemplo de request | Response / códigos HTTP | Estado / evidencia |
+|---|---|---|---|---|---|
+| **[Definir recurso]** | **[GET/POST/PUT/PATCH/DELETE]** | **[/api/v1/...]** | **[Campos y ejemplo JSON]** | **[Ejemplo JSON y códigos]** | Pendiente |
+| **[Definir recurso]** | **[Método]** | **[Ruta]** | **[Campos y ejemplo JSON]** | **[Ejemplo JSON y códigos]** | Pendiente |
+
+**Inventario para comprobar la cobertura del Sprint:**
+
+| Dato | Valor |
+|---|---|
+| Total de endpoints aprobados para el alcance del Sprint (N) | **[Completar]** |
+| Endpoints implementados y probados correctamente (F) | **[Completar]** |
+| Porcentaje funcional (F / N × 100) | **[Calcular con evidencia]** |
+| Condición solicitada en la rúbrica | **Mayor de 40 %**, no igual a 40 % |
+| Swagger/OpenAPI publicado | **[URL pública verificable]** |
+| Pruebas por dispositivo / cliente HTTP | **[Equipo o herramienta, resultado y captura]** |
+
+No se cuentan como funcionales las rutas declaradas que todavía no procesen solicitudes correctamente. Adjuntar ejemplos de los distintos métodos HTTP incluidos en el Sprint y documentar respuestas válidas y errores.
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Se incorporarán las nuevas versiones desplegadas y la primera publicación de los Web Services. Cada recurso debe tener una referencia pública y una prueba de acceso.
+
+| Artefacto | URL pública | Versión / commit | Prueba y evidencia |
+|---|---|---|---|
+| Landing Page actualizada | **[Verificar URL publicada]** | **[Commit AV2]** | **[Captura responsive y CTA]** |
+| Frontend Web Application actualizada | **[Verificar URL publicada]** | **[Commit AV2]** | **[Captura de módulos y HTTP]** |
+| RESTful API propia | **[Completar URL pública]** | **[Commit Sprint 3]** | **[Petición y respuesta comprobada]** |
+| Swagger / OpenAPI | **[Completar URL]** | **[Versión]** | **[Captura de operaciones documentadas]** |
+
+**Evidencias adicionales:** resultado del workflow, configuración de variables de entorno sin secretos, prueba de acceso desde un dispositivo o red distinta a la de desarrollo y captura de la aplicación con la respuesta del servicio. Las URLs locales como \`localhost\` no acreditan despliegue público.
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+El equipo registrará el trabajo del Sprint 3 mediante los tableros de tareas, commits, Pull Requests y sesiones de coordinación. Se deberán indicar tanto las tareas integradas como las revisiones y correcciones surgidas durante el trabajo.
+
+- Commits y Pull Requests: **[Enlazar filtros de GitHub correspondientes a Sprint 3]**.
+- Contributors, Pulse y Network: **[Adjuntar capturas reales y fechas de consulta]**.
+- Acuerdos y bloqueos: **[Resumir decisiones y cambios de alcance con sus responsables]**.
+- Evidencias de trabajo en equipo: **[Enlazar reuniones o fragmentos grabados]**.
+- Video **About-the-Team**: **[Enlace de la primera versión publicada]**; incluir intervención de cada integrante, descripción de sus actividades, autoevaluación y retrospectiva, además de registro de edición de al menos el 50 %, música y branding.
+
+La retrospectiva debe identificar qué funcionó, qué causó retrasos y qué cambio concreto se aplicará al siguiente Sprint. Los hallazgos deben relacionarse con mejoras observables, sin atribuir al equipo acuerdos que no haya tomado.
+
+## 5.3. Validation Interviews
+
+Para AV2 se realizarán entrevistas de validación con usuarios de los segmentos definidos para Rumbo: **padres/tutores** y **conductores de movilidad escolar**, con un mínimo de **tres participantes por segmento**. Se probarán la Landing Page y las vistas del producto correspondientes a los objetivos de cada User Persona.
+
+### 5.3.1. Diseño de Entrevistas
+
+**Objetivo de la validación:** observar si los participantes comprenden la propuesta de Rumbo y consiguen completar tareas relacionadas con sus necesidades sin recibir instrucciones paso a paso sobre la interfaz.
+
+| Elemento | Preparación |
+|---|---|
+| Segmento | **[Padres/tutores o conductores]** |
+| User Persona / User Goal | **[Referenciar persona y objetivo del Capítulo II]** |
+| Participantes | **[Mínimo 3 por segmento, identificados con códigos]** |
+| Entorno y dispositivo | **[Registrar navegador, equipo y URL de la versión probada]** |
+| Introducción | Explicar el propósito, pedir consentimiento para grabar y aclarar que se evalúa el producto, no a la persona. |
+| Tareas | **[Plantear escenarios basados en User Goals, sin señalar qué botones usar]** |
+| Preguntas finales | **[Registrar dudas, dificultades y recomendaciones del usuario]** |
+| Evidencia | **[Guion, consentimiento cuando corresponda y enlace del video]** |
+
+Ejemplos de tareas por validar, sujetos al alcance disponible: identificar cómo se consulta el estado de una ruta, localizar información de un estudiante o interpretar una notificación; para conductores, encontrar cómo se registra un incidente o se consulta una ruta asignada. Solo se utilizarán tareas compatibles con las funciones implementadas.
+
+### 5.3.2. Registro de Entrevistas
+
+| Sesión | Segmento | User Persona | Fecha | Tareas realizadas | Video y observaciones |
+|---|---|---|---|---|---|
+| V01 | Padre/tutor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+| V02 | Padre/tutor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+| V03 | Padre/tutor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+| V04 | Conductor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+| V05 | Conductor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+| V06 | Conductor | **[Definir]** | **[Fecha]** | **[Tareas]** | **[Enlace]** |
+
+Al registrar las sesiones, conservar el código del participante, el objetivo, las acciones observadas y las dificultades sin presentar opiniones supuestas como testimonios reales. Publicar los videos conforme a los permisos obtenidos.
+
+### 5.3.3. Evaluaciones según heurísticas
+
+Cada hallazgo debe estar respaldado por una sesión identificable. Para describir la dificultad, registrar lo que ocurrió, la heurística de usabilidad aplicable, un nivel de severidad justificado y una propuesta de solución concreta.
+
+| Hallazgo | Sesión y tarea | Descripción observada | Heurística | Severidad / justificación | Alternativa de solución |
+|---|---|---|---|---|---|
+| H01 | **[Vxx / tarea]** | **[Qué sucedió realmente]** | **[Heurística aplicable]** | **[Nivel y motivo]** | **[Propuesta]** |
+| H02 | **[Vxx / tarea]** | **[Qué sucedió realmente]** | **[Heurística aplicable]** | **[Nivel y motivo]** | **[Propuesta]** |
+
+**Cierre de la validación:** **[Resumir coincidencias entre sesiones, cambios priorizados y decisiones para la siguiente versión]**.
+
+## 5.4. Video About-the-Product
+
+El primer corte del video presentará el problema que aborda Rumbo, el propósito de la plataforma y sus beneficios para padres/tutores y conductores. Las explicaciones deben acompañarse con demostraciones reales de las funciones disponibles; no se presentarán capacidades previstas como si ya estuvieran implementadas.
+
+**Estructura de producción:**
+
+| Secuencia | Contenido | Estado / evidencia |
+|---|---|---|
+| Presentación | Nombre, identidad visual y problema abordado | **[Guion y escena]** |
+| Propósito y beneficios | Propuesta de valor para cada User Persona | **[Guion y escena]** |
+| Demostración | Interacción grabada con las principales funciones del producto | **[Capturas o clip real]** |
+| Testimonios | Al menos un usuario por cada User Persona describiendo beneficios percibidos | **[Video autorizado y referencia]** |
+| Cierre | Mensaje final, branding e invitación a conocer la plataforma | **[Escena]** |
+| Edición | Secuencia coherente, descripción de escenas y participantes, música de fondo y al menos el 50 % de edición | **[Proyecto de edición y avance real]** |
+
+**Enlace de la primera versión publicada:** **[Completar]**.
+
+**Estado del montaje y revisión:** **[Registrar fecha, responsable, porcentaje de edición verificable y observaciones del equipo]**.
+
+
 # Conclusiones
 
 - La problemática de Rumbo se sustenta en un contexto real de transporte escolar formal, alta congestión urbana y elevada conectividad móvil en Lima Metropolitana.
