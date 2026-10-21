@@ -2137,22 +2137,25 @@ Durante TB1 se integró además la mejora **`feat: add product showcase to landi
 
 #### Frontend Web Application
 
-La primera versión integrada del Frontend se encuentra en la rama `develop` del repositorio `AIpaca-OS/frontend-web-application`, con sus Bounded Contexts integrados y workflow de CI para verificar la compilación.
+La versión integrada del Frontend se incorporó a `main` desde `develop` mediante el [PR #16](https://github.com/AIpaca-OS/frontend-web-application/pull/16), el 07/10/2026. La aplicación cuenta con un workflow de compilación y despliegue a GitHub Pages; su última ejecución revisada terminó correctamente.
 
-Al cierre de esta corrección documental, el repositorio todavía mantiene `main` en una revisión anterior a la integración de TB1 y **no se ha verificado una URL pública de despliegue del Frontend**. Por ello este informe no declara un despliegue público inexistente. Antes de la entrega TB1 debe completarse `develop → main`, realizar el despliegue y sustituir esta nota por la URL pública y su evidencia.
+| Configuración | Valor |
+|---|---|
+| Repository | `AIpaca-OS/frontend-web-application` |
+| Branch publicada | `main` |
+| Workflow | [Deploy Frontend to GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104) |
+| URL de GitHub Pages | https://aipaca-os.github.io/frontend-web-application/ |
 
-<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso del Frontend cuando exista. -->
-<!-- PENDIENTE IMAGEN C5-04: Captura del Frontend funcionando desde su URL pública, no localhost. -->
+Este registro comprueba la publicación automatizada, pero la demostración de la aplicación y de cada CRUD en la URL pública necesita capturas o video de ejecución. Para AV2 también deberá registrarse el despliegue del backend propio, cuando se implemente.
+
+<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso de GitHub Actions. -->
+<!-- PENDIENTE IMAGEN C5-04: Captura de la aplicación pública funcionando en distintas rutas y tamaños de pantalla. -->
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-Para TB1 el trabajo implementado se divide en:
+El avance se organiza por Sprint. **Sprint 1** presenta la Landing Page; **Sprint 2**, el Frontend Angular integrado con Fake REST APIs; y **Sprint 3**, el trabajo previsto para AV2: nuevas versiones desplegadas, servicios REST propios y su documentación. Las evidencias de los dos primeros Sprints permanecen como registro histórico. Las secciones de Sprint 3 se completarán conforme se implementen y prueben sus entregables.
 
-- **Sprint 1:** Landing Page pública.
-- **Sprint 2:** primera versión de la Frontend Web Application con CRUD por Bounded Context y Fake REST APIs.
-- **Sprint posterior:** lógica de negocio de servidor y RESTful Web Services con Spring Boot.
-
-No se atribuye a Sprint 2 lógica de negocio compleja ni un backend Spring Boot. Los recursos MockAPI y JSON Server utilizados en TB1 son mecanismos de persistencia emulada para el Frontend.
+No se atribuye a Sprint 2 un backend Spring Boot. MockAPI y JSON Server fueron mecanismos de persistencia emulada utilizados en el desarrollo del Frontend.
 
 ### 5.2.1. Sprint 1
 
@@ -2427,7 +2430,7 @@ Pull Requests relevantes:
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-La aplicación se ejecuta desde el código integrado de `develop`. A continuación se presentan capturas reales de las principales vistas implementadas durante Sprint 2:
+La primera integración se realizó en `develop` y después se fusionó a `main` para su publicación. A continuación se presentan capturas de las principales vistas implementadas durante Sprint 2:
 
 1. **Vehicle & Credential Management:** listado, creación y edición de vehículos.
 2. **Profiles & Relationship Management:** listado y formulario de estudiantes.
@@ -2755,7 +2758,9 @@ El primer corte del video presentará el problema que aborda Rumbo, el propósit
 
 - Los dos segmentos iniciales del proyecto son padres/tutores y conductores de movilidad escolar; las entrevistas de AV1 permitirán validar o corregir los supuestos planteados.
 
-- Para AV1, la implementación se concentra en la primera versión de la Landing Page, que ya se encuentra implementada y desplegada mediante GitHub Pages. Angular y Spring Boot quedan definidos para los productos que se desarrollarán progresivamente en los siguientes Sprints.
+- Sprint 1 dejó publicada la primera Landing Page y Sprint 2 incorporó el Frontend Angular con integración a Fake REST APIs. Estos avances permiten iniciar la implementación de servicios propios sin confundir las simulaciones utilizadas en TB1 con un backend operativo.
+
+- Para AV2, el trabajo pendiente más importante es validar los diagramas de persistencia actualizados, implementar y publicar los endpoints seleccionados y documentar sus pruebas. Las entrevistas y los videos deben reflejar interacciones y testimonios reales; la plantilla de Sprint 3 se completará conforme se obtengan esas evidencias.
 
 
 # Bibliografía
@@ -2792,6 +2797,17 @@ El primer corte del video presentará el problema que aborda Rumbo, el propósit
 ---
 
 # Anexos
+
+
+## Evidencias previstas de AV2
+
+- **Grabaciones de Validation Interviews (V01–V06):** [Incorporar enlaces con autorización de los participantes].
+- **About-the-Product:** [Incorporar video publicado y evidencia de la edición].
+- **About-the-Team / Process Retrospective:** [Incorporar video publicado, intervenciones de los integrantes y evidencia de la edición].
+- **Sprint 3:** [Incorporar capturas de backlog, PRs, Swagger, tests y despliegue].
+- **Nueva versión de Landing Page y Frontend:** [Incorporar URLs y capturas de navegación].
+
+Los enlaces y evidencias se completarán con los recursos finales, sin sustituirlos por capturas de maquetas o resultados no verificados.
 
 ## Videos de Exposición
 **Microsoft Stream:** [Completar]
