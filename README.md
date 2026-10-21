@@ -32,7 +32,7 @@
 | Meza Soza, Alexandra Yamile | U20241b451 |
 | Pareja Caceres, Diana | U202422589 |
 
-### SEPTIEMBRE - 2026
+### OCTUBRE - 2026
 
 </div>
 
