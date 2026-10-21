@@ -1963,18 +1963,18 @@ Para AV2, el equipo está sustituyendo los diagramas anteriores por versiones re
 
 ### 4.8.1. Database Diagrams
 
-Los diagramas se mantendrán en \`assets/chapter04/database-diagrams/\`. Cada archivo corresponde a un contexto del dominio:
+Los diagramas se mantendrán en `assets/chapter04/database-diagrams/`. Cada archivo corresponde a un contexto del dominio:
 
 | Bounded Context | Diagrama actualizado que debe incorporarse | Propósito de la revisión |
 |---|---|---|
-| Identity & Access Management | \`iam-data-diagram.png\` | Revisar cuentas, autenticación y autorizaciones de acceso. |
-| Profiles & Relationship Management | \`profile-data-diagram.png\` | Revisar perfiles y relaciones entre tutores, estudiantes y conductores. |
-| Vehicle & Credential Management | \`vehicle-data-diagram.png\` | Revisar vehículos, documentos y credenciales relacionadas. |
-| Route & Trip Planning | \`route-data-diagram.png\` | Revisar rutas, paradas, asignaciones y programación. |
-| Trip Execution & Monitoring | \`trip-data-diagram.png\` | Revisar el registro de viajes, estados y eventos durante el traslado. |
-| Incident & Delay Management | \`incident-data-diagram.png\` | Revisar incidencias, retrasos y seguimiento de su resolución. |
-| Notification Management | \`notification-data-diagram.png\` | Revisar notificaciones, destinatarios y preferencias de comunicación. |
-| Subscriptions & Billing | \`subscription-data-diagram.png\` | Revisar planes, suscripciones y datos de facturación del alcance definido. |
+| Identity & Access Management | `iam-data-diagram.png` | Revisar cuentas, autenticación y autorizaciones de acceso. |
+| Profiles & Relationship Management | `profile-data-diagram.png` | Revisar perfiles y relaciones entre tutores, estudiantes y conductores. |
+| Vehicle & Credential Management | `vehicle-data-diagram.png` | Revisar vehículos, documentos y credenciales relacionadas. |
+| Route & Trip Planning | `route-data-diagram.png` | Revisar rutas, paradas, asignaciones y programación. |
+| Trip Execution & Monitoring | `trip-data-diagram.png` | Revisar el registro de viajes, estados y eventos durante el traslado. |
+| Incident & Delay Management | `incident-data-diagram.png` | Revisar incidencias, retrasos y seguimiento de su resolución. |
+| Notification Management | `notification-data-diagram.png` | Revisar notificaciones, destinatarios y preferencias de comunicación. |
+| Subscriptions & Billing | `subscription-data-diagram.png` | Revisar planes, suscripciones y datos de facturación del alcance definido. |
 
 **Estado de los recursos gráficos de esta revisión:** pendientes de carga. Antes de cerrar el apartado se deben incorporar los ocho PNG, visualizar cada uno debajo del contexto correspondiente y eliminar de la carpeta las versiones sustituidas. No se deben incluir diagramas que no hayan sido contrastados con las reglas del dominio.
 
@@ -1990,16 +1990,16 @@ La siguiente tabla contiene **recursos y rutas sugeridos para la planificación 
 
 | Bounded Context | Recursos candidatos | Operaciones REST de referencia |
 |---|---|---|
-| Identity & Access Management | Usuarios, sesiones y roles | \`POST /api/v1/auth/login\`, \`GET /api/v1/users/me\` |
-| Profiles & Relationship Management | Estudiantes, perfiles y relaciones | \`GET /api/v1/students\`, \`POST /api/v1/students\`, \`GET /api/v1/tutor-student-relationships\` |
-| Vehicle & Credential Management | Vehículos y credenciales | \`GET /api/v1/vehicles\`, \`POST /api/v1/vehicles\`, \`GET /api/v1/vehicles/{id}/credentials\` |
-| Route & Trip Planning | Rutas y paradas | \`GET /api/v1/routes\`, \`POST /api/v1/routes\`, \`PUT /api/v1/routes/{id}\` |
-| Trip Execution & Monitoring | Viajes y eventos | \`GET /api/v1/trips\`, \`POST /api/v1/trips\`, \`GET /api/v1/trips/{id}/events\` |
-| Incident & Delay Management | Incidencias y retrasos | \`GET /api/v1/incidents\`, \`POST /api/v1/incidents\`, \`GET /api/v1/delays\` |
-| Notification Management | Notificaciones y preferencias | \`GET /api/v1/notifications\`, \`PATCH /api/v1/notifications/{id}/read\` |
-| Subscriptions & Billing | Planes y suscripciones | \`GET /api/v1/plans\`, \`GET /api/v1/subscriptions\`, \`POST /api/v1/subscriptions\` |
+| Identity & Access Management | Usuarios, sesiones y roles | `POST /api/v1/auth/login`, `GET /api/v1/users/me` |
+| Profiles & Relationship Management | Estudiantes, perfiles y relaciones | `GET /api/v1/students`, `POST /api/v1/students`, `GET /api/v1/tutor-student-relationships` |
+| Vehicle & Credential Management | Vehículos y credenciales | `GET /api/v1/vehicles`, `POST /api/v1/vehicles`, `GET /api/v1/vehicles/{id}/credentials` |
+| Route & Trip Planning | Rutas y paradas | `GET /api/v1/routes`, `POST /api/v1/routes`, `PUT /api/v1/routes/{id}` |
+| Trip Execution & Monitoring | Viajes y eventos | `GET /api/v1/trips`, `POST /api/v1/trips`, `GET /api/v1/trips/{id}/events` |
+| Incident & Delay Management | Incidencias y retrasos | `GET /api/v1/incidents`, `POST /api/v1/incidents`, `GET /api/v1/delays` |
+| Notification Management | Notificaciones y preferencias | `GET /api/v1/notifications`, `PATCH /api/v1/notifications/{id}/read` |
+| Subscriptions & Billing | Planes y suscripciones | `GET /api/v1/plans`, `GET /api/v1/subscriptions`, `POST /api/v1/subscriptions` |
 
-Para cada operación priorizada se definirá el método HTTP, la ruta, los parámetros, el cuerpo de solicitud, la respuesta esperada, los posibles errores y las condiciones de autorización. La documentación se publicará con OpenAPI/Swagger y se contrastará con pruebas de ejecución. Las operaciones CRUD solo se incorporarán cuando respondan al comportamiento solicitado por el producto; por ejemplo, el cambio de estado de un viaje puede requerir reglas específicas y no un \`PUT\` genérico sobre una tabla.
+Para cada operación priorizada se definirá el método HTTP, la ruta, los parámetros, el cuerpo de solicitud, la respuesta esperada, los posibles errores y las condiciones de autorización. La documentación se publicará con OpenAPI/Swagger y se contrastará con pruebas de ejecución. Las operaciones CRUD solo se incorporarán cuando respondan al comportamiento solicitado por el producto; por ejemplo, el cambio de estado de un viaje puede requerir reglas específicas y no un `PUT` genérico sobre una tabla.
 
 ### 4.8.3. Verificación previa a la implementación
 
