@@ -1877,79 +1877,79 @@ Este diagrama representa la gestión del plan y de la suscripción del Driver de
 
 ## 4.7. Software Object-Oriented Design
 
-Esta sección presenta el diseño orientado a objetos de **Rumbo** a partir de los Bounded Contexts refinados en la sección 4.6. El objetivo es describir con mayor detalle las clases principales, sus atributos y operaciones, así como las relaciones y multiplicidades que permiten representar las responsabilidades de cada parte del dominio.
+El diseño orientado a objetos de Rumbo se organiza según los ocho Bounded Contexts establecidos en la sección 4.6. Los diagramas muestran las clases del dominio, sus atributos y operaciones, así como las asociaciones y multiplicidades que permiten modelar los requisitos del producto.
 
-Los diagramas UML se organizan según los **ocho Bounded Contexts** definidos para la arquitectura objetivo. Cuando una clase perteneciente a otro contexto aparece dentro de un diagrama, se utiliza únicamente como **referencia para expresar una asociación** y no implica que el contexto que la consume sea propietario de dicha entidad.
+Cada Aggregate Root protege las reglas del agregado que administra; las entidades internas tienen identidad propia, mientras que los Value Objects expresan valores del dominio. Para referenciar una entidad administrada por otro Bounded Context se utilizan identificadores tipados como `DriverProfileId` o `StudentId`, sin duplicar las clases del contexto propietario. Las entidades pertenecientes al mismo contexto se relacionan mediante asociaciones UML directas.
 
 ### 4.7.1. Class Diagrams
 
-Los Class Diagrams incluyen clases y enumeraciones relevantes, atributos, métodos, visibilidad, asociaciones y multiplicidades. Esta separación mantiene trazabilidad con el Design-Level Event Storming y con los Component Diagrams de la sección 4.6.4.
+Los siguientes diagramas siguen el orden de los ocho Bounded Contexts definidos para Rumbo. El modelo de clases sirve como referencia para los Database Diagrams de 4.8 y para el diseño de los Web Services; un aggregate no implica una única tabla ni requiere exponer un CRUD por cada entidad.
 
 #### Identity & Access Management
 
-El diagrama modela las responsabilidades relacionadas con cuentas, sesiones, tokens, recuperación de acceso, roles y permisos. De esta forma, la autenticación y autorización permanecen separadas de los datos operativos de perfiles, rutas y viajes.
+En Identity & Access Management, `Account` actúa como Aggregate Root y agrupa sus `AccountToken`. Las credenciales de acceso se representan mediante los Value Objects `EmailAddress` y `PasswordHash`; la identidad y sus tokens se administran sin incorporar perfiles o información de rutas.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-iam.png" alt="Identity and Access Management Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-iam-class-diagram.png" alt="Identity & Access Management Class Diagram" width="95%">
 </div>
 
 #### Profiles & Relationship Management
 
-Este contexto representa los perfiles utilizados por Rumbo y las relaciones de autorización vinculadas al estudiante. Su responsabilidad principal es mantener la información de Parent, Driver y Student y determinar qué relaciones permiten consultar la información del estudiante. Las referencias a credenciales o vehículos se interpretan como vínculos hacia sus contextos propietarios.
+Profiles & Relationship Management distingue los agregados `Profile`, `Student`, `School`, `TutorStudentRelationship`, `ServiceEnrollment` y `DataDeletionRequest`. `PersonName` representa nombres y apellidos, mientras que `AccountId` conserva la referencia a la cuenta del contexto IAM. Las asociaciones internas expresan las relaciones y autorizaciones sobre estudiantes, sin duplicar las entidades del propio contexto como Value Objects de identificación.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-profiles-relationship.png" alt="Profiles and Relationship Management Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-profiles-class-diagram.png" alt="Profiles & Relationship Management Class Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
 
-El diagrama representa la información del vehículo y los registros asociados a su operación y documentación. Este contexto concentra la responsabilidad de los datos del vehículo y de las credenciales declaradas por el Driver, evitando que Route & Trip Planning administre directamente dicha información.
+Vehicle & Credential Management presenta `Vehicle` como Aggregate Root de sus `VehicleDocument`. `DriverCredential` mantiene su propio ciclo de vida y no pertenece al agregado del vehículo. `LicensePlate` encapsula la placa y `DriverProfileId` permite referirse al conductor administrado en otro contexto.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-vehicle-credential.png" alt="Vehicle and Credential Management Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-vehicles-class-diagram.png" alt="Vehicle & Credential Management Class Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
 
-Este contexto modela rutas, paradas, horarios y asignaciones necesarias antes de iniciar un traslado. Las asociaciones con Student y Driver permiten expresar qué participantes intervienen en la planificación, mientras que sus perfiles completos continúan perteneciendo a sus respectivos Bounded Contexts.
+En Route & Trip Planning, `Route` es la raíz del agregado y contiene `RouteStop`, `RouteSchedule` y `RouteAssignment`. Sus operaciones permiten organizar las paradas y horarios, asignar estudiantes y publicar rutas. Los identificadores `DriverProfileId`, `VehicleId`, `StudentId` y `SchoolId` refieren a entidades externas; `GeoPoint` representa la ubicación de las paradas.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-route-trip-planning.png" alt="Route and Trip Planning Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-route-class-diagram.png" alt="Route & Trip Planning Class Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
 
-El diagrama describe el viaje en ejecución y los registros que permiten conocer su evolución: eventos, hitos, recojos, entregas y línea de tiempo. La arquitectura de Rumbo prioriza el seguimiento mediante estados y eventos del recorrido; cualquier dato de ubicación representado se considera complementario y no modifica la separación de responsabilidades definida para el dominio.
+El contexto Trip Execution & Monitoring modela `Trip` como Aggregate Root de `TripStop`, `TripPassenger`, `TripEvent` y `StudentAbsence`. El viaje conserva una instantánea de la ruta programada y registra hitos, pasajeros y ausencias. Las referencias a rutas, perfiles, estudiantes, colegios y vehículos se representan mediante identificadores tipados de otros contextos.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-trip-execution.png" alt="Trip Execution and Monitoring Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-trip-execution-class-diagram.png" alt="Trip Execution & Monitoring Class Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
 
-Este contexto concentra el registro y seguimiento de retrasos e incidencias vinculados a un viaje. Las clases relacionadas con evidencias, notas o elementos afectados permiten conservar el contexto del evento y su evolución hasta su resolución sin mezclar esta responsabilidad con la distribución de notificaciones.
+Incident & Delay Management separa los agregados `Incident` y `Delay`. Las confirmaciones de conocimiento (`IncidentAcknowledgement`) son entidades controladas por `Incident`; los retrasos conservan sus actualizaciones mediante una autorreferencia interna. Los Value Objects `TripId`, `StudentId` y `ProfileId` identifican recursos de otros contextos.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-incident-delay.png" alt="Incident and Delay Management Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-incident-class-diagram.png" alt="Incident & Delay Management Class Diagram" width="95%">
 </div>
 
 #### Notification Management
 
-El diagrama representa la creación y entrega de avisos, las preferencias del usuario y los canales utilizados para distribuirlos. Los eventos de retraso, incidencia, recojo o entrega funcionan como información de entrada, mientras que este contexto se responsabiliza únicamente de convertirlos en comunicaciones hacia los destinatarios correspondientes.
+Notification Management administra los agregados `Notification`, `NotificationSettings`, `RecipientAuthorization` y `RecipientContact`. `SourceReference` expresa el origen polimórfico de un aviso, y los identificadores `TripId`, `StudentId` y `ProfileId` mantienen las referencias hacia otros contextos sin importar sus entidades.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-notification.png" alt="Notification Management Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-notification-class-diagram.png" alt="Notification Management Class Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
 
-Este contexto representa la relación entre el Driver, el plan y el estado de su suscripción. Los elementos comerciales incluidos en el modelo se consideran parte de la arquitectura objetivo; para el alcance actual, la funcionalidad prioritaria continúa siendo la activación y consulta del estado de la suscripción definida en los requisitos.
+Subscriptions & Billing distingue el agregado `Plan` y el agregado `Subscription`, que contiene sus `SubscriptionPayment`. `Money` encapsula importe y moneda; `BillingPeriod` el periodo de cobro. `DriverProfileId` referencia el perfil del conductor desde el contexto correspondiente.
 
 <div align="center">
-  <img src="./assets/chapter04/class-diagrams/class-diagram-subscriptions-billing.png" alt="Subscriptions and Billing Class Diagram" width="95%">
+  <img src="./assets/chapter04/class-diagrams/new-subscription-class-diagram.png" alt="Subscriptions & Billing Class Diagram" width="95%">
 </div>
 
-En conjunto, los ocho Class Diagrams mantienen la separación establecida en el diseño de dominio y sirven como referencia para los Database Diagrams de la siguiente sección. El modelado se utiliza como diseño de la arquitectura objetivo y no implica que todos los componentes de backend se encuentren implementados durante Sprint 2.
+Este diseño distingue los límites de consistencia entre agregados y mantiene las referencias a otros contextos mediante Value Objects de identidad. La sección 4.8 presenta la persistencia relacional correspondiente; los contratos y las evidencias de ejecución de los servicios se documentan en el Capítulo V.
 
 ## 4.8. Database Design
 
