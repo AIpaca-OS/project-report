@@ -1,0 +1,5 @@
+Tests: 5
+Failures: 0
+Errors: 0
+Skipped: 0
+Source: web-services/target/surefire-reports/TEST-com.aipaca.rumbo.routeplanning.domain.RouteTest.xml

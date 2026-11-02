@@ -30,9 +30,8 @@
 | Geronimo Puma, Kevin Joel | U202423163 |
 | Lino Quispe, Leonardo Miguel | U202422298 |
 | Meza Soza, Alexandra Yamile | U20241b451 |
-| Pareja Caceres, Diana | U202422589 |
 
-### OCTUBRE - 2026
+### NOVIEMBRE - 2026
 
 </div>
 
@@ -57,6 +56,7 @@
 | 1.7 | 05/10/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Integración y pruebas de flujo completo de los 5 Bounded Contexts desarrollados, configuración de entorno y despliegue del frontend en producción. |
 | 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 | 2.1 | 20/10/2026 | Equipo AIpaca — actualización documental | Revisión de los ocho Database Diagrams del Capítulo IV; sincronización de assets y estructura de documentación de Sprint 3, Validation Interviews y videos de AV2 conforme al Final Project Statement. |
+| 2.2 — borrador | 02/11/2026 | Actualización asistida, pendiente de revisión del equipo | Ajuste del Sprint 3 a la distribución actual de cuatro integrantes; registro de backlog Jira, contratos Routes y estado de evidencias técnicas disponibles. |
 
 ---
 
@@ -1341,7 +1341,7 @@ Las principales páginas incluyen como mínimo **Title, Description, Keywords y 
 
 ### 4.2.4. Searching Systems
 
-El alcance actual no incorpora un buscador global porque los User Stories priorizados presentan información contextual y acotada para cada usuario. Incluir búsqueda sin un requerimiento que la sustente agregaría complejidad sin valor validado.
+El alcance actual no incorpora un buscador global porque las User Stories priorizadas presentan información contextual y acotada para cada usuario. Incluir búsqueda sin un requisito que la sustente agregaría complejidad sin valor validado.
 
 | Vista / contenido | Búsqueda o filtro actual | Presentación |
 |---|---|---|
@@ -2608,51 +2608,64 @@ El diseño de datos y las operaciones HTTP se presentan a continuación como ref
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint Planning relaciona las prioridades del Product Backlog con las funciones que aportan valor al conductor y al padre o tutor. La gestión de rutas, el registro de eventos del traslado y las comunicaciones del servicio constituyen el marco funcional de referencia. Para convertirlo en un compromiso de Sprint se utiliza una selección explícita de User Stories, Story Points y criterios de aceptación.
+La planificación de Sprint 3 considera el tablero Jira RMO y la distribución actual de cuatro integrantes. Su alcance prioriza la planificación de rutas, la gestión de estudiantes, la facturación y las notificaciones. Las funciones del dominio de vehículos se limitan a las referencias esenciales que necesita la planificación de rutas; no se incorpora un CRUD de vehículos como compromiso de este Sprint.
 
 | Campo | Registro del Sprint 3 |
 |---|---|
 | Sprint # | Sprint 3 |
 | Sprint Planning Background | Integración progresiva de la aplicación web con Web Services propios, nuevas versiones de los productos públicos y validación del uso de Rumbo. |
-| Date | <!-- AV2: fecha real YYYY-MM-DD --> |
+| Sprint period | 2026-10-25 – 2026-11-12 (fechas del Sprint activo en Jira) |
+| Date | <!-- AV2: fecha real de la reunión de planificación --> |
 | Time | <!-- AV2: horario real --> |
 | Location | <!-- AV2: enlace o lugar de reunión --> |
 | Prepared By | <!-- AV2: responsable del acta --> |
 | Attendees | <!-- AV2: asistentes confirmados --> |
 | Sprint 2 Review Summary | Primera integración de módulos CRUD del Frontend Angular con Fake REST APIs, documentada en 5.2.2. |
 | Sprint 2 Retrospective Summary | <!-- AV2: acuerdos reales de la retrospectiva --> |
-| Sprint 3 Goal | Proporcionar una experiencia de Rumbo verificable en la que las funciones seleccionadas cuenten con persistencia y operaciones de servicio documentadas, mientras las interfaces públicas mantienen una navegación clara y responsive. |
-| Sprint 3 Velocity | <!-- AV2: capacidad acordada en puntos --> |
-| Sum of Story Points | <!-- AV2: suma de las historias seleccionadas --> |
+| Sprint 3 Goal — Outcome | Permitir que el conductor configure rutas con paradas ordenadas, horarios y asignaciones de estudiantes mediante la aplicación y el RESTful API. |
+| Sprint 3 Goal — Impact | Mantener la configuración de rutas de forma persistente y facilitar su verificación mediante contratos de servicio documentados y escenarios de aceptación. |
+| Sprint 3 Goal — Customer | Conductores y operadores de movilidad escolar que organizan los traslados. |
+| Sprint 3 Goal — Event | Resultado esperado para la Sprint Review 3 del hito AV2. |
+| Sprint 3 Velocity | Pendiente de cálculo al cierre; el Sprint sigue en curso. Al corte 2026-11-02: 0/52 Story Points en Done. |
+| Sum of Story Points | 52 Story Points en las 11 historias del Sprint activo consultadas en Jira. |
 
-La comprobación del Sprint Goal se realizará sobre escenarios funcionales que permitan operar recursos del negocio desde la aplicación y consultar sus respuestas a través del RESTful API. Las Technical Stories del Product Backlog también se consideran para seguridad, integridad de datos y documentación OpenAPI cuando formen parte del alcance seleccionado.
+La comprobación del Sprint Goal se realizará sobre escenarios funcionales que permitan operar los recursos del negocio desde la aplicación y consultar sus respuestas a través del RESTful API. La fecha y el acta de la reunión de planificación, la capacidad acordada y la retrospectiva deben completarse con la evidencia del equipo; el tablero consultado al 2026-11-02 muestra 4 historias En curso, 7 Por hacer y ninguna Done.
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
-La matriz LACX vincula la responsabilidad técnica de cada aspecto con la colaboración observada en repositorios y actividades del Sprint. Se conserva la identificación de los cinco integrantes, mientras que la asignación L/C se sostiene en el reparto efectivo del trabajo.
+La matriz LACX refleja la distribución de responsabilidades comunicada para el Sprint 3. El liderazgo identifica al responsable de cada dominio; la colaboración específica se consignará cuando existan registros de revisión, Pull Requests o acuerdos del equipo.
 
-| Team Member | GitHub Username | Database Design | Web Services | Frontend / Landing | Validation / Documentation |
-|---|---|---|---|---|---|
-| Díaz Ramírez, Alejandro | `aleedr` | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> |
-| Geronimo Puma, Kevin Joel | `qebim18` | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> |
-| Lino Quispe, Leonardo Miguel | `linolw` | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> |
-| Meza Soza, Alexandra Yamile | `AlexandraYMS` | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> |
-| Pareja Caceres, Diana | `DianaParejaCaceres` | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> | <!-- AV2 L/C --> |
+| Aspect / Bounded Context | Aspect Leader | Collaborators |
+|---|---|---|
+| Routes & Trip Planning | Lino Quispe, Leonardo Miguel (`linolw`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
+| Students | Díaz Ramírez, Alejandro (`aleedr`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
+| Billing | Geronimo Puma, Kevin Joel (`qebim18`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
+| Notifications | Meza Soza, Alexandra Yamile (`AlexandraYMS`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
 
-Los roles de líder y colaborador corresponden a decisiones de coordinación del equipo y se relacionan con las Engineering Tasks y las evidencias del desarrollo. No equivalen automáticamente a la autoría de los apartados del informe.
+Los roles de liderazgo corresponden a la distribución comunicada por el equipo. La columna de colaboración queda pendiente de evidencia y no atribuye trabajo que todavía no figure en los registros del Sprint. La gestión de vehículos queda reducida a referencias esenciales para Routes.
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog organiza las User Stories elegidas para Sprint 3 y las Engineering Tasks asociadas. Cada tarea se estima en **4 a 8 horas** y conserva su identificación, responsable y evolución entre **To Do, In Process, To Review y Done**. La tabla documental complementa el tablero ágil; no lo sustituye.
+El Sprint Backlog siguiente transcribe las historias, puntos, estados y responsables observados en Jira el 2026-11-02. La descomposición y las horas por tarea son una **propuesta para validación del equipo**; no representan horas registradas ni tareas ya creadas en Jira. Cada estimación propuesta se mantiene entre 4 y 8 horas.
 
-**Sprint Board:** <!-- AV2: URL pública del tablero de Sprint 3 -->
-**Evidencia visual:** <!-- AV2: captura y fecha de los estados del tablero -->
+**Sprint Board:** [Jira RMO, Backlog del tablero 2](https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog)
+**Corte consultado:** 2026-11-02. La captura del tablero y el registro de horas aún deben incorporarse.
 
-| Story Id | Story Title | SP | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---:|---|---|---|---:|---|---|
-| <!-- AV2: copiar historias y tareas reales del Sprint Board. Conservar 4–8 horas por tarea. --> | | | | | | | | |
+| Story Id | Story Title | SP | Engineering Tasks — propuesta (horas) | Jira assignee | Jira status |
+|---|---|---:|---|---|---|
+| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | Crear una ruta con sus paradas | 8 | API y persistencia de ruta/paradas (8 h); formulario Angular e integración (8 h); reglas y pruebas de aceptación (4 h). | Leonardo Lino | En curso |
+| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | Definir el horario de la ruta | 3 | Contrato y persistencia del horario (4 h); formulario reactivo y confirmación (4 h). | Leonardo Lino | En curso |
+| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | Asignar estudiantes a una ruta | 5 | Operación de asignación y restricciones (8 h); selección e integración con la interfaz (8 h). | Leonardo Lino | En curso |
+| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Publicar una ruta | 3 | Transición de estado y validación de completitud (4 h); acción de publicación y mensajes accesibles (4 h). | Leonardo Lino | Por hacer |
+| [RMO-24](https://aipaca.atlassian.net/browse/RMO-24) | Modificar una ruta publicada | 5 | Política de modificación y respuesta de conflicto (4 h); flujo de edición y regresión (4 h). | Leonardo Lino | Por hacer |
+| [RMO-25](https://aipaca.atlassian.net/browse/RMO-25) | Integración con servicio de mapas para direcciones de paradas | 5 | Adaptador de geocodificación y configuración (8 h); tratamiento de fallos y validación de cobertura (4 h). | Leonardo Lino | Por hacer |
+| [RMO-26](https://aipaca.atlassian.net/browse/RMO-26) | Programar el viaje de la jornada | 5 | Caso de uso y contrato de programación (8 h); persistencia y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
+| [RMO-27](https://aipaca.atlassian.net/browse/RMO-27) | Cancelar un viaje | 3 | Regla de transición de cancelación (4 h); respuestas de API y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
+| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | Endpoints del RESTful API para Route & Trip Planning | 5 | Contratos OpenAPI, errores y seguridad (8 h); colección Postman y validación de integración (8 h). | Leonardo Lino | En curso |
+| [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Sin asignar en Jira | Por hacer |
+| [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Sin asignar en Jira | Por hacer |
 
-El seguimiento conserva tanto el estado final como el cambio de estado de las tareas en la herramienta de trabajo, para que el cierre del Sprint sea consistente con las contribuciones publicadas.
+Antes de presentar el backlog como compromiso, el equipo debe validar las horas propuestas y registrar las Engineering Tasks en Jira. Los estados y responsables mostrados corresponden a las historias y no se atribuyen a tareas todavía no creadas.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -2664,7 +2677,8 @@ La revisión del diseño incorporó ocho archivos de Database Diagrams y actuali
 |---|---|---|---|---|---|
 | `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | <!-- AV2: fecha de GitHub --> |
 | `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | <!-- AV2: fecha de GitHub --> |
-| <!-- AV2: commits reales de landing-page, frontend-web-application y web-services, con fecha y descripción. --> | | | | | |
+| `web-services` | `feature/service-foundation` | `1f4e828` (local) | `feat(routes): implement route planning API` | API Routes con persistencia PostgreSQL, validación, seguridad por perfil, OpenAPI y colección Postman. Commit local, todavía no publicado. | 2026-11-02 |
+| `frontend-web-application` | `feature/route-trip-planning` | `b4f6d32` (local) | `feat(routes): connect route planning frontend` | Integración Angular, formulario y listado de rutas, proxy de desarrollo, i18n y pruebas. Commit local, todavía no publicado. | 2026-11-02 |
 
 Para la sustentación, cada cambio de código debe acompañarse con una demostración breve de la función que incorpora, no solo con la vista del repositorio.
 
@@ -2674,9 +2688,16 @@ La evaluación de ejecución se enfoca en los User Flows definidos en el Capítu
 
 | Función / User Story | Escenario y datos de prueba | Resultado de la aplicación | Evidencia de ejecución |
 |---|---|---|---|
-| <!-- AV2: escenarios reales de navegación, creación, actualización y/o consulta de los módulos seleccionados. --> | | | |
+| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — agregado Route | 5 pruebas unitarias Java: horario, publicación, duplicidad, modificación de publicada y días duplicados. | 5 aprobadas; son pruebas del dominio, no sustituyen autorización o persistencia. | [JUnit/Surefire](./assets/chapter5/routes-av2-evidence/backend-surefire-summary.txt). |
+| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — API / PostgreSQL | Script de integración local con datos ficticios: preflight, autenticación, CRUD, horario, asignaciones, duplicados, no autorizado, publicación incompleta, errores 404 y estado de ruta publicada. | 21/21 aserciones HTTP con estado esperado. Las 10 operaciones documentadas tuvieron al menos una respuesta exitosa. Incluyó 401, 400, 403, 404 y 409 negativos, además de 200, 201 y 204 positivos. | [Resultados JSON de 21 comprobaciones](./assets/chapter5/routes-av2-evidence/http-results.json); [detalle Problem Details RFC 9457](./assets/chapter5/routes-av2-evidence/problem-detail-check.json); [script reproducible](https://github.com/AIpaca-OS/web-services/blob/feature/service-foundation/scripts/verify-local-routes.ps1). |
+| Persistencia y recuperación tras reinicio | Ruta de prueba ficticia publicada, con dos paradas, dos días de servicio y una asignación. | PostgreSQL 17 contiene los cuatro tipos de recursos; después de reiniciar Spring Boot se recuperaron la ruta, paradas y horario. | [Consulta PostgreSQL](./assets/chapter5/routes-av2-evidence/postgres-route-check.json); [recuperación tras reinicio](./assets/chapter5/routes-av2-evidence/restart-persistence.json). |
+| Documentación OpenAPI / Swagger | Solicitud local a `/v3/api-docs` y `/swagger-ui.html`. | OpenAPI 3.1, diez operaciones; ambas direcciones respondieron HTTP 200. La documentación es local, no pública. | [Comprobación Swagger](./assets/chapter5/routes-av2-evidence/swagger-check.json). |
+| Integración local Angular → Routes | Solicitud sin encabezado de autorización del cliente a `/api/v1/routes` en el servidor Angular de desarrollo. | El proxy local incorporó Basic en el servidor y obtuvo HTTP 200 con dos rutas de PostgreSQL. La credencial permanece en el entorno del proceso Node; no está en el bundle Angular. | [Comprobación del proxy](./assets/chapter5/routes-av2-evidence/angular-proxy-check.json); [configuración de desarrollo](https://github.com/AIpaca-OS/frontend-web-application/blob/feature/route-trip-planning/src/proxy.conf.cjs). |
+| Pruebas Angular y compilación TypeScript | `npm test -- --watch=false`; `ngc -p tsconfig.app.json --noEmit`; GitHub Actions. | 3/3 pruebas Angular y compilación TypeScript/plantillas aprobadas localmente. La CI Ubuntu/Node 22 del PR #17 también pasó instalación, pruebas y build. Las pruebas actuales no son pruebas integrales de interfaz. | [Pruebas Angular](./assets/chapter5/routes-av2-evidence/angular-tests.log); [Angular Compiler](./assets/chapter5/routes-av2-evidence/angular-typescript-templates.log); [ejecución CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
+| Build Angular de producción | `ng build --configuration production` con Node 24.19.0 y Angular 21.2.25; repetido con Node 22.22.3 tras los cambios finales. También se intentó Node 22 con `--optimization=false`. | Los tres intentos locales en Windows terminaron con salida nativa `0xC0000005` y no produjeron `dist/`. En GitHub Actions, Ubuntu/Node 22 ejecutó correctamente `npm ci`, las pruebas y el build de producción (run #25). La causa del fallo específico de Windows continúa sin localizarse; no se atribuye a una incompatibilidad de versión. No hubo despliegue público. | [Registro final Node 24](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node24.log); [Node 22](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node22.log); [Node 22 sin optimización](./assets/chapter5/routes-av2-evidence/angular-build-no-optimization-node22.log); [run CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
+| Verificación visual y accesibilidad | Listado, asistente de cuatro pasos, validaciones, persistencia tras recarga, cambio de idioma, navegación por teclado y asignación/publicación. | No ejecutada: el controlador de Brave no pudo confirmar la URL de la ventana y detuvo la automatización. No se declara resultado visual ni se adjuntan capturas inexistentes. | [Protocolo manual y capturas requeridas](./assets/chapter5/routes-av2-evidence/manual-ui-validation.md). |
 
-El material de ejecución incluye capturas de las principales vistas en Desktop y Mobile y un video de navegación, con atención a las validaciones, mensajes de error y persistencia de los datos. Las capturas deben corresponder a la misma versión del código identificada en las evidencias de desarrollo y despliegue.
+La evidencia visual y el video de navegación siguen pendientes. Los escenarios del protocolo manual requieren datos ficticios y capturas Desktop/Mobile de la misma versión que se integre en GitHub.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -2692,7 +2713,7 @@ La correspondencia entre los ocho diagramas y los recursos del backend se resume
 |---|---|---|
 | Identity & Access Management | `accounts`, `account_tokens` | `/api/v1/auth`, `/api/v1/accounts` |
 | Profiles & Relationship Management | `profiles`, `students`, `tutor_student_relationships` | `/api/v1/profiles`, `/api/v1/students` |
-| Vehicle & Credential Management | `vehicles`, `vehicle_documents`, `driver_credentials` | `/api/v1/vehicles` |
+| Vehicle & Credential Management | Referencia opcional `vehicleId`; sin CRUD de vehículos en el alcance actual | No se publica un recurso de vehículos en el MVP de Routes |
 | Route & Trip Planning | `routes`, `route_stops`, `route_schedules`, `route_assignments` | `/api/v1/routes` |
 | Trip Execution & Monitoring | `trips`, `trip_passengers`, `trip_events` | `/api/v1/trips` |
 | Incident & Delay Management | `incidents`, `incident_acknowledgements`, `delays` | `/api/v1/incidents`, `/api/v1/delays` |
@@ -2701,30 +2722,51 @@ La correspondencia entre los ocho diagramas y los recursos del backend se resume
 
 **Relación de operaciones y documentación OpenAPI**
 
-| HTTP Method | Endpoint | Parámetros / request de ejemplo | Response y códigos HTTP | Swagger URL / Evidence |
+| HTTP Method | Endpoint | Parámetros / solicitud de ejemplo | Respuesta y códigos HTTP | Swagger URL / Evidence |
 |---|---|---|---|---|
-| <!-- AV2: una fila por acción realmente implementada y documentada: GET, POST, PUT, DELETE, PATCH según el alcance. --> | | | | |
+| GET | `/api/v1/routes` | Sin parámetros; obtiene rutas del conductor autenticado. | `200 RouteView[]`; `401`, `403`, `503` con ProblemDetail. | Local: `http://127.0.0.1:8080/swagger-ui.html`; comprobado HTTP 200. |
+| POST | `/api/v1/routes` | Cuerpo `RouteWrite`: nombre, turno, hora, paradas, horario; `vehicleId` opcional. | `201 RouteView`; `400`, `401`, `403`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
+| GET | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `200 RouteView`; `400`, `401`, `403`, `404`, `503`. | Esquemas y contrato en OpenAPI local. |
+| PUT | `/api/v1/routes/{id}` | `id`: UUID; cuerpo `RouteWrite`. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
+| PUT | `/api/v1/routes/{id}/schedule` | `id`: UUID; cuerpo `ScheduleWrite` con días, horas y confirmación. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
+| GET | `/api/v1/routes/{id}/assignments` | `id`: UUID de ruta. | `200 AssignmentView[]`; `401`, `403`, `404`. | Esquemas y contrato en OpenAPI local. |
+| POST | `/api/v1/routes/{id}/assignments` | `id`: UUID; cuerpo `AssignmentWrite` (`studentId`, `stopId`). | `201 AssignmentView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
+| DELETE | `/api/v1/routes/{id}/assignments/{assignmentId}` | `id` y `assignmentId`: UUID. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
+| PATCH | `/api/v1/routes/{id}/status` | `id`: UUID; cuerpo `StatusPatch` (`status: PUBLISHED`). | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
+| DELETE | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
 
-La cobertura se calcula sobre el total de endpoints fijados para el Sprint: `functionalEndpoints / sprintEndpoints × 100`. La rúbrica de AV2 exige **más del 40 %** del alcance funcional. Se consideran funcionales las operaciones que tienen respuesta comprobada con datos de prueba; la sola aparición en Swagger no acredita su implementación.
+El Final Project Statement (p. 27) solicita documentar cada endpoint relacionado con el alcance del Sprint, sus acciones implementadas, verbo HTTP, sintaxis, parámetros, respuesta, enlace a OpenAPI y capturas con datos de muestra. Esa sección no establece un umbral porcentual de endpoints. Las cifras siguientes se limitan al bounded context Routes y no representan el porcentaje de cobertura de todo el Sprint.
 
-**Alcance total (N):** <!-- AV2: número de endpoints definido para Sprint 3 -->
-**Operaciones funcionales (F):** <!-- AV2: número comprobado -->
-**Cobertura (F/N):** <!-- AV2: porcentaje calculado -->
-**Swagger / OpenAPI URL:** <!-- AV2: URL accesible -->
-**Dispositivo / cliente de prueba:** <!-- AV2: evidencias y capturas -->
+**Operaciones documentadas en OpenAPI:** 10 para Routes.
+**Operaciones con respuesta HTTP positiva comprobada:** 10 de las 10 operaciones documentadas; las pruebas incluyen también escenarios negativos. Se registraron 21 aserciones, no 21 endpoints.
+**Swagger / OpenAPI URL:** `http://127.0.0.1:8080/swagger-ui.html` y `/v3/api-docs`; comprobados localmente con HTTP 200. No son direcciones públicas.
+**Cliente de verificación ejecutado:** `scripts/verify-local-routes.ps1` con datos ficticios. La colección Postman está incluida en `web-services/postman`, pero no se usó para generar estos resultados.
+
+**Estado de historias y criterios Jira al 2026-11-02**
+
+| Historia | Estado actual en Jira | Resultado local contrastado con criterios Given/When/Then | Pendiente / clasificación |
+|---|---|---|---|
+| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | En curso | Crear ruta configurable, mantener paradas ordenadas y guardar datos en PostgreSQL. | Dirección no localizable y la relación real de conductor/vehículo no están integradas. Parcial, con verificación visual pendiente. |
+| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | En curso | Guardar y recuperar horario; rechazar horario confirmado vacío con HTTP 400. | La CI de frontend pasó; siguen pendientes la verificación visual y el recorrido completo de la interfaz. Implementada localmente, pendiente de cierre. |
+| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | En curso | Las identidades ficticias permitidas pasan; estudiante no autorizado recibe 403; duplicado recibe 409. | El perfil productivo devuelve 503 porque la integración real con Students/Profiles no está implementada. Parcial y bloqueada por ese bounded context. No satisface la historia completa. |
+| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Por hacer | Publicación completa devuelve `PUBLISHED`; una ruta incompleta recibe HTTP 409. | La generación de viajes y la visibilidad para tutores pertenecen a integraciones aún pendientes. Implementada parcialmente en local; Jira sigue Por hacer. |
+| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | En curso | Diez operaciones OpenAPI cubiertas por 21 aserciones HTTP; datos verificados en PostgreSQL y tras reinicio. | Build de Angular verde en CI; siguen pendientes la verificación visual y la publicación remota. El backend no tiene workflow CI configurado y sus pruebas citadas son locales. |
+
+El tablero Jira del Sprint 3 conserva 4 historias En curso y 7 Por hacer (52 SP; ninguna en Done) en la consulta del 2026-11-02. Se añadieron comentarios con commits, PRs, pruebas y bloqueos reales en RMO-15, RMO-21, RMO-22, RMO-23 y RMO-28; los estados no se cambiaron.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-La configuración de despliegue abarca los tres productos de Rumbo. Los workflows registrados en GitHub Pages permiten rastrear las publicaciones estáticas del Landing Page y del Frontend. La implementación del API debe contar además con alojamiento del lado servidor, acceso a la base de datos y una dirección pública para su documentación Swagger.
+La configuración de despliegue abarca los tres productos de Rumbo. La compilación local confirma que el frontend de Routes consume la API a través del proxy de desarrollo. La aplicación requiere integrar autenticación OIDC/JWT y un proxy inverso de mismo origen para la publicación productiva; las credenciales locales no se guardan en el paquete Angular.
 
 | Producto | Repositorio | Dirección / evidencia de despliegue |
 |---|---|---|
 | Landing Page | [AIpaca-OS/landing-page](https://github.com/AIpaca-OS/landing-page) | https://aipaca-os.github.io/landing-page/ |
-| Frontend Web Application | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | [Workflow de despliegue del 07/10/2026](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104) |
-| RESTful Web Services | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | <!-- AV2: URL del servidor, versión y prueba pública --> |
-| Swagger / OpenAPI | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | <!-- AV2: URL de Swagger UI y ejemplo de solicitud --> |
+| Frontend Web Application | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | [Workflow de despliegue histórico del 07/10/2026](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104). La versión de Routes de Sprint 3 no está publicada; GitHub Pages tampoco aloja el proxy `/api/v1`. |
+| RESTful Web Services | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | Spring Boot local con PostgreSQL 17 en `127.0.0.1:8080`; no se ha desplegado en un servidor público. |
+| Swagger / OpenAPI | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | `http://127.0.0.1:8080/swagger-ui.html` local, comprobado HTTP 200; no tiene dirección pública. |
+| Build de producción Angular | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | El build local Windows no generó `dist/`; el run [CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985) en Ubuntu + Node 22 pasó instalación, pruebas y build. No se desplegó la aplicación ni se publicó un artefacto de producción. |
 
-La documentación del Sprint relaciona cada despliegue con su commit, la configuración aplicada y la comprobación del acceso desde un navegador o cliente HTTP externo. En el caso del Frontend también se verifica que los Call-To-Action del Landing Page lleven a las vistas adecuadas de la aplicación.
+El workflow de frontend ejecutó las pruebas Angular y el build en Ubuntu al abrir el PR #17 hacia `develop` (run #25, resultado exitoso). La validación visual de Routes permanece pendiente. Las pruebas de las páginas del Landing Page y los enlaces Call-To-Action mantienen su evidencia previa y no forman parte de la integración local Routes.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -2772,6 +2814,8 @@ Cada sesión incluye nombres y apellidos, edad, distrito, User Persona, fecha, c
 
 **Video de Validation Interviews:** <!-- AV2: Microsoft Stream, nombre validation-sprint-3.mp4 conforme al Anexo C y captura del video -->
 
+Este borrador conserva únicamente la estructura de registro. Los datos de participantes, autorizaciones, fechas, grabaciones y resultados deben incorporarse a partir de sesiones realizadas; no se registran entrevistas ni hallazgos sin evidencia.
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation** del Anexo D, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
@@ -2817,7 +2861,7 @@ La implementación de Web Services se contrasta con los contratos y las operacio
 
 El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
 
-La pauta de edición considera una secuencia inicial de presentación de AIpaca y Rumbo, un resumen del proceso colaborativo, una retrospectiva del Sprint y las intervenciones ante cámara de cada uno de los cinco integrantes. Conforme al Anexo C, la retrospectiva se organiza tomando como referencia cinco minutos y cada testimonio individual alrededor de un minuto. El video utiliza el branding de la startup, música de fondo y escenas identificables; para AV2 se acredita el avance de al menos el 50 % de edición mediante la versión publicada.
+La pauta de edición considera una secuencia inicial de presentación de AIpaca y Rumbo, un resumen del proceso colaborativo, una retrospectiva del Sprint y las intervenciones ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C, la retrospectiva se organiza tomando como referencia cinco minutos y cada testimonio individual alrededor de un minuto. El video utiliza la identidad visual de la startup, música de fondo y escenas identificables; para AV2 se acredita el avance de al menos el 50 % de edición mediante la versión publicada.
 
 | Secuencia | Contenido | Inicio (hh:mm:ss) |
 |---|---|---|
