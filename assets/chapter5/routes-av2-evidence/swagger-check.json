@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-02T13:54:59.4266370-05:00",
+  "openApiStatus": 200,
+  "swaggerUiStatus": 200,
+  "openApiVersion": "3.1.0",
+  "operationCount": 10,
+  "operations": [
+    {
+      "method": "GET",
+      "path": "/api/v1/routes/{id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/routes/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/routes/{id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/routes/{id}/schedule"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/routes"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/routes"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/routes/{id}/assignments"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/routes/{id}/assignments"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/routes/{id}/status"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/routes/{id}/assignments/{assignmentId}"
+    }
+  ]
+}
