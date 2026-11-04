@@ -2,7 +2,7 @@
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-<img src="./assets/upc-logo.png" alt="Logo UPC" width="260"/>
+<img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/upc-logo.png" alt="Logo UPC" width="260"/>
 
 ### Ingeniería de Software
 
@@ -74,14 +74,27 @@ La colaboración se verificó directamente a partir del historial de commits, ra
 
 **Team Collaboration Commits**
 
-<!-- AV2: insertar captura real de Team Collaboration Commits desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
+La siguiente evidencia corresponde al resumen de actividad disponible en GitHub Pulse para el Project Report.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 
 **Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
 **Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
 
 **Team Collaboration Network**
 
-<!-- AV2: insertar captura real de Team Collaboration Network desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
+Las siguientes capturas corresponden al Network Graph y permiten revisar visualmente la evolución e integración de las ramas del trabajo colaborativo.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-1.png" alt="Team Collaboration Network - Evidence 1" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-2.png" alt="Team Collaboration Network - Evidence 2" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-3.png" alt="Team Collaboration Network - Evidence 3" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-4.png" alt="Team Collaboration Network - Evidence 4" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-5.png" alt="Team Collaboration Network - Evidence 5" width="95%"><br><br>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
+</div>
 
 **Branches:** https://github.com/AIpaca-OS/project-report/branches  
 **Network:** https://github.com/AIpaca-OS/project-report/network
@@ -90,9 +103,9 @@ La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones suce
 
 **Contributors / Pull Requests**
 
-<!-- AV2: insertar captura real de Team Collaboration Pull Requests desde GitHub Insights; el SVG anterior no existe en el repositorio. -->
+La evidencia de Pull Requests se mantiene mediante los enlaces verificables de GitHub, evitando referencias a archivos de imagen que ya no existen en el repositorio.
 
-Hasta esta actualización el Project Report registra **13 Pull Requests**, de los cuales **12 fueron integrados** y uno fue cerrado sin merge. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
+A la fecha de esta actualización, el Project Report registra **25 Pull Requests cerrados**, de los cuales **22 fueron integrados** y **3 fueron cerrados sin merge**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
 **Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
 **Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
@@ -198,11 +211,11 @@ La solución se plantea inicialmente para Lima y Callao. No reemplaza las obliga
     <tr><th>Foto</th><th>Apellidos y nombres</th><th>Código</th><th>Carrera</th><th>Habilidades</th></tr>
   </thead>
   <tbody>
-    <tr><td align="center"><img src="./assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="300"></td><td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++, así como experiencia en prototipado rápido con React Native, lo que me permite aportar en el desarrollo técnico del proyecto, especialmente en la lógica del sistema, la estructuración del código y el procesamiento de datos. También agregar que he trabajado en entornos colaborativos bajo marcos de trabajo ágiles, gestionando proyectos y equipos con Scrum para asegurar entregas eficientes y de calidad.</td></tr>
-    <tr><td align="center"><img width="300" alt="kevin" src="https://github.com/user-attachments/assets/8be17c32-7b22-466c-a91e-daf42a5b31ea" /></td><td>Geronimo Puma, Kevin Joel</td><td>U202423163</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++. Mi perfil me permite aportar en el desarrollo técnico del proyecto, destacando por mi facilidad para la arquitectura de software y el diseño de bases de datos, además de la lógica del sistema, la estructuración del código y el procesamiento de datos. Asimismo, tengo experiencia trabajando en entornos colaborativos bajo marcos de trabajo ágiles, asegurando siempre entregas eficientes y de calidad.</td></tr>
-    <tr><td align="center"><img src="./assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="300"></td><td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 5.º ciclo en la UPC. Tengo conocimientos en programación en C++ y Python, y experiencia desarrollando proyectos académicos donde analizo y organizo soluciones tecnológicas. Me gusta enfocarme en aprender de forma práctica y en construir soluciones que sean claras, funcionales y aplicadas a problemas reales.</td></tr>
-    <tr><td align="center"><img src="assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="300"/></td><td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 6.º ciclo en la UPC. Cuento con conocimientos en el desarrollo de sistemas utilizando los lenguajes Python y C++. Me caracterizo por aprendizaje rápido, criterio para filtrar información relevante y trabajo colaborativo. En el equipo aporto investigación aplicada y prototipos técnicos que conectan los hallazgos con funcionalidades del producto.</td></tr>
-    <tr><td align="center"><img width="300" alt="foto carnet diana pareja" src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" /></td><td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software en la UPC. He trabajado en análisis competitivo, elaboración de User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Estos conocimientos me permiten aportar al equipo en la documentación, el análisis del producto y la estructuración de artefactos de diseño y arquitectura.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/alejandro-diaz.png" alt="Alejandro Diaz Ramirez" width="220"></td><td>Diaz Ramirez, Alejandro</td><td>U202423084</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++, así como experiencia en prototipado rápido con React Native, lo que me permite aportar en el desarrollo técnico del proyecto, especialmente en la lógica del sistema, la estructuración del código y el procesamiento de datos. También agregar que he trabajado en entornos colaborativos bajo marcos de trabajo ágiles, gestionando proyectos y equipos con Scrum para asegurar entregas eficientes y de calidad.</td></tr>
+    <tr><td align="center"><img src="https://github.com/user-attachments/assets/8be17c32-7b22-466c-a91e-daf42a5b31ea" alt="Kevin Joel Geronimo Puma" width="220"></td><td>Geronimo Puma, Kevin Joel</td><td>U202423163</td><td>Ingeniería de Software</td><td>Estudiante de Ingeniería de Software de 5.º ciclo, con una base sólida en Python y C++. Mi perfil me permite aportar en el desarrollo técnico del proyecto, destacando por mi facilidad para la arquitectura de software y el diseño de bases de datos, además de la lógica del sistema, la estructuración del código y el procesamiento de datos. Asimismo, tengo experiencia trabajando en entornos colaborativos bajo marcos de trabajo ágiles, asegurando siempre entregas eficientes y de calidad.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/leonardo-lino.jpg" alt="Leonardo Miguel Lino Quispe" width="220"></td><td>Lino Quispe, Leonardo Miguel</td><td>U202422298</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 5.º ciclo en la UPC. Tengo conocimientos en programación en C++ y Python, y experiencia desarrollando proyectos académicos donde analizo y organizo soluciones tecnológicas. Me gusta enfocarme en aprender de forma práctica y en construir soluciones que sean claras, funcionales y aplicadas a problemas reales.</td></tr>
+    <tr><td align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter01/alexandra-meza.png" alt="Alexandra Yamile Meza Soza" width="220"></td><td>Meza Soza, Alexandra Yamile</td><td>U20241b451</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software del 6.º ciclo en la UPC. Cuento con conocimientos en el desarrollo de sistemas utilizando los lenguajes Python y C++. Me caracterizo por aprendizaje rápido, criterio para filtrar información relevante y trabajo colaborativo. En el equipo aporto investigación aplicada y prototipos técnicos que conectan los hallazgos con funcionalidades del producto.</td></tr>
+    <tr><td align="center"><img src="https://github.com/user-attachments/assets/6b4fcdb2-7bab-4440-8ca5-f47804e20184" alt="Diana Pareja Caceres" width="220"></td><td>Pareja Caceres, Diana</td><td>U202422589</td><td>Ingeniería de Software</td><td>Soy estudiante de Ingeniería de Software en la UPC. He trabajado en análisis competitivo, elaboración de User Personas, organización de información, lineamientos visuales, diagramas de arquitectura C4 y modelado DDD. Estos conocimientos me permiten aportar al equipo en la documentación, el análisis del producto y la estructuración de artefactos de diseño y arquitectura.</td></tr>
   </tbody>
 </table>
 
@@ -376,7 +389,7 @@ Creemos que lograremos que al menos el 60 % de los conductores del piloto contin
 
 El **Lean UX Canvas** sintetiza el problema de negocio, los segmentos objetivo, las soluciones preliminares, los resultados esperados y los principales aprendizajes que AIpaca necesita validar con Rumbo antes de ampliar el alcance del producto.
 
-<p align="center"><img src="assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/lean-ux-canvas.svg" alt="Lean UX Canvas de Rumbo" width="100%"/></p>
 
 ## 1.3. Segmentos objetivo
 
@@ -440,20 +453,20 @@ El análisis competitivo se desarrolla mediante el **Competitive Analysis Landsc
     <tr>
       <th colspan="2">Competidores / Startup</th>
       <th>
-        <img src="assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter04/logotipoRumbo.png" alt="Logo de Rumbo" width="120"/><br>
         AIpaca / Rumbo
       </th>
       <th>
-        <img src="assets/chapter02/bustracker.png" alt="Logo de SchoolBusTracker" width="110"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/bustracker.png" alt="Logo de SchoolBusTracker" width="110"/><br>
         SchoolBusTracker
       </th>
       <th>
-        <img src="assets/chapter02/busschool.png" alt="Logo de Bus esCool" width="100"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/busschool.png" alt="Logo de Bus esCool" width="100"/><br>
         Bus esCool
       </th>
       <th>
-        <img src="assets/chapter02/whatsapp.png" alt="Logo de WhatsApp" width="105"/><br>
-        <img src="assets/chapter02/waze.png" alt="Logo de Waze" width="105"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/whatsapp.png" alt="Logo de WhatsApp" width="105"/><br>
+        <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/waze.png" alt="Logo de Waze" width="105"/><br>
         Canales informales (WhatsApp + Waze)
       </th>
     </tr>
@@ -703,7 +716,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
 
-<p align="center"><img src="assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
 
 **Resumen:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Utiliza diariamente su teléfono para trabajar y principalmente usa WhatsApp para comunicarse con las familias y Google Maps para organizar sus rutas. Comenta que uno de los problemas que presenta es tener la información fragmentada en distintos chats, lo que hace poco práctico buscar entre conversaciones para verificar si un estudiante será recogido o consultar la dirección de un punto de llegada alternativo. Además, menciona que es repetitivo responder diariamente las preguntas de los padres sobre cuánto falta para que llegue su hijo, si la movilidad se encuentra cerca o si el estudiante se encuentra bien, ya que esto puede distraerlo mientras conduce. También considera que, en caso de utilizar una aplicación, esta debería ser fácil y rápida de utilizar para no quitarle tiempo durante la conducción. Entre las funcionalidades que considera útiles se encuentran una lista de alumnos, el orden de recojo y la posibilidad de registrar rápidamente cuándo recoge o entrega a un estudiante. Asimismo, le gustaría que los padres puedan visualizar el estado de la ruta y su ubicación para mantenerse informados sin necesidad de comunicarse constantemente con él.
 
@@ -717,7 +730,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:00.
 - **Video:** [Conductor 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m).
 
-<p align="center"><img src="assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
 
 **Resumen:** Brayan cuenta con 5 años de experiencia en el rubro. Comenzó trabajando en transporte personal, pero luego se trasladó al rubro del transporte escolar. Utiliza un grupo de WhatsApp para enviar avisos a los padres; sin embargo, los tutores prefieren escribirle por privado. Además, utiliza Waze para evitar el tráfico y el calendario de su teléfono para recordar horarios especiales. Ha tenido problemas para recordar cambios en las rutas debido a modificaciones en el recojo de un alumno, especialmente porque varios padres le escriben. Diariamente, los padres también le preguntan si ya se encuentra cerca o si los niños ya llegaron a la escuela, lo cual considera repetitivo. Comenta que durante la conducción no utilizaría una aplicación. Sin embargo, le sería útil contar con un registro del inicio del recorrido, la hora de recojo de cada alumno y la hora de llegada a la escuela. También considera útil registrar cuando un alumno no será recogido. En general, considera que una aplicación debería ayudarlo a organizar los cambios y permitir que los padres puedan seguir la ruta sin necesidad de preguntarle constantemente. No utilizaría una aplicación que lo obligue a realizar muchas acciones manualmente o que tenga un costo muy elevado. Como característica adicional, le gustaría que pudiera utilizarse en zonas donde existe poca señal.
 
@@ -731,7 +744,7 @@ Para cada entrevista se registra el nombre completo, edad, distrito, segmento, c
 - **Timing de inicio:** 00:06.
 - **Video:** [Conductor 3.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b451_upc_edu_pe/IQAarNiMmGEZT73ZVhSkpNMNAVFqyptTBINEQvTJU6AW7BY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=asjxgo).
 
-<p align="center"><img src="assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
 
 **Resumen:** Vilma cuenta con 25 años de experiencia en el rubro de la movilidad escolar. Empezó llevando a estudiantes del colegio San Toribio, en el Rímac, hace 10 años y actualmente está a cargo de 26 niños en San Miguel, a quienes lleva a los colegios Claretiano y Los Rosales. La señora Vilma cuenta con un ayudante, quien utiliza la aplicación WhatsApp para comunicarse con las familias, coordinar horarios, llamar para avisar que deben bajar, informar si el niño asistirá, si necesita esperar y compartir su ubicación en tiempo real. Ha presentado problemas con la puntualidad de los niños y con la coordinación con los padres respecto a si los niños serán recogidos o no. Comenta que tiene conocimientos casi nulos en tecnología. Los padres le han recomendado utilizar algunas aplicaciones para poder realizar un mejor seguimiento del recorrido de sus hijos, pero menciona que no sabe cómo utilizarlas y, por ese motivo, no las implementa.
 
@@ -866,7 +879,7 @@ El journey de los padres de familia durante las mañanas inicia con la preparaci
 
 El recorrido diario del conductor comienza antes del viaje, cuando revisa mensajes de WhatsApp para confirmar asistencias, cambios de horario y puntos de recojo. Durante el trayecto de ida aumenta la tensión, porque las consultas sobre demoras o ubicación llegan mientras debe mantener la atención en la conducción. Al finalizar la ida y preparar el retorno, revisa nuevamente conversaciones fragmentadas para identificar cambios y ausencias. En el colegio verifica a los estudiantes que retornarán y atiende posibles modificaciones de último momento. Durante el viaje de regreso repite el proceso de entrega mientras necesita conservar información suficiente para responder ante incidencias o dudas posteriores. Finalmente, la jornada termina con la confirmación de las entregas y la comunicación con las familias. Este recorrido evidencia una carga de coordinación repetitiva y dispersa que debe reducirse sin introducir nuevas distracciones durante la conducción.
 
-<img width="1556" height="1086" alt="USER JOURNEY MAP - CONDUCTOR" src="assets/chapter02/user-journey-map-conductor.png" />
+<img width="1556" height="1086" alt="USER JOURNEY MAP - CONDUCTOR" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/user-journey-map-conductor.png" />
 
 ### 2.3.4. Empathy Mapping
 
@@ -878,7 +891,7 @@ En esta sección se presentan los **Empathy Maps** elaborados para cada uno de l
 
 #### Segmento — Conductores
 
-<img width="1050" height="1318" alt="CARLOS RIVAS EMPATHY MAP" src="assets/chapter02/user-empathy-map-conductor.png" />
+<img width="1050" height="1318" alt="CARLOS RIVAS EMPATHY MAP" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/user-empathy-map-conductor.png" />
 
 ## 2.4. Big Picture Event Storming
 
@@ -916,7 +929,7 @@ El análisis permitió organizar el dominio objetivo de Rumbo en ocho contextos 
 
 La siguiente captura reúne el resultado del proceso. Los elementos están expresados en inglés para mantener consistencia con el lenguaje utilizado en los artefactos de dominio y con el Ubiquitous Language del proyecto.
 
-<img width="1050" alt="Rumbo Big Picture Event Storming" src="assets/chapter02/big-picture-event-storming.jpg" />
+<img width="1050" alt="Rumbo Big Picture Event Storming" src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter02/big-picture-event-storming.jpg" />
 
 El Big Picture muestra que el núcleo operativo de Rumbo se concentra en la planificación y ejecución del traslado, mientras que identidad, perfiles, vehículos, incidencias, notificaciones y suscripción aportan capacidades relacionadas. Los hotspots registrados permiten anticipar riesgos que deberán considerarse en los siguientes artefactos de diseño y en las decisiones de implementación.
 
@@ -1031,7 +1044,7 @@ El **Impact Mapping de Rumbo** fue elaborado en UXPressia a partir de los Busine
 El mapa relaciona los objetivos de negocio con los cambios de comportamiento esperados en cada persona, los entregables que pueden provocar dichos impactos y las User Stories que permiten implementarlos. Para padres/tutores, el enfoque se centra en reducir la necesidad de contactar al conductor, facilitar la consulta del estado del traslado y mantener notificaciones relevantes. Para conductores, se busca registrar los principales hitos del viaje, comunicar retrasos e incidencias de forma estructurada y organizar la operación diaria del servicio.
 
 <p align="center">
-  <img src="assets/chapter03/impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter03/impact-mapping.png" alt="Impact Mapping de Rumbo elaborado en UXPressia" width="100%"/>
 </p>
 
 ## 3.3. Product Backlog
@@ -1043,7 +1056,7 @@ Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
 
 <p align="center">
-  <img src="assets/chapter03/product-backlog.png" alt="Product Backlog de Rumbo en Trello" width="100%"/>
+  <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter03/product-backlog.png" alt="Product Backlog de Rumbo en Trello" width="100%"/>
 </p>
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
@@ -2180,23 +2193,23 @@ La versión integrada del Frontend se incorporó a `main` desde `develop` median
 Este registro comprueba la publicación automatizada, pero la demostración de la aplicación y de cada CRUD en la URL pública necesita capturas o video de ejecución. Para AV2 también deberá registrarse el despliegue del backend propio, cuando se implemente.
 
 <!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso de GitHub Actions. -->
+<div align="center">
+  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application desplegada en GitHub Pages durante TB1" width="95%">
+</div>
+
 <!-- PENDIENTE IMAGEN C5-04: Captura de la aplicación pública funcionando en distintas rutas y tamaños de pantalla. -->
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-El avance se organiza por Sprint. **Sprint 1** presenta la Landing Page; **Sprint 2**, el Frontend Angular integrado con Fake REST APIs; y **Sprint 3**, el trabajo previsto para AV2: nuevas versiones desplegadas, servicios REST propios y su documentación. Las evidencias de los dos primeros Sprints permanecen como registro histórico. Las secciones de Sprint 3 se completarán conforme se implementen y prueben sus entregables.
-
-No se atribuye a Sprint 2 un backend Spring Boot. MockAPI y JSON Server fueron mecanismos de persistencia emulada utilizados en el desarrollo del Frontend.
+El avance se organiza por Sprints. El **Sprint 1** presenta el desarrollo de la Landing Page; **Sprint 2**, el Frontend Angular integrado con Fake REST APIs; y **Sprint 3**, el desarrollo completo del Frontend y parte del backend de la aplicación. 
 
 ### 5.2.1. Sprint 1
 
-Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y Fake REST APIs. La integración con Spring Boot queda fuera del alcance de TB1.
-
-La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
+Sprint 1 se concentra únicamente en la **Landing Page**. La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
 #### 5.2.1.1. Sprint Planning 1
 
-En esta sección se registran los principales acuerdos del Sprint Planning Meeting de Sprint 1 utilizando la estructura indicada en el Final Project Statement.
+En esta sección se registran los principales acuerdos establecidos durante la reunión de Sprint Planning correspondiente al Sprint 1. En ella, se definió como objetivo del sprint desarrollar y publicar la primera versión de la Landing Page de la plataforma Rumbo, con la finalidad de presentar el producto de manera atractiva y clara a los tutores, padres de familia y conductores.
 
 <table>
   <tbody>
@@ -2204,12 +2217,12 @@ En esta sección se registran los principales acuerdos del Sprint Planning Meeti
     <tr><th colspan="2">Sprint Planning Background</th></tr>
     <tr><td colspan="2">Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo.</td></tr>
     <tr><th>Date</th><td>2026-09-09</td></tr>
-    <tr><th>Time</th><td>No registrado en la evidencia disponible.</td></tr>
-    <tr><th>Location</th><td>No registrado en la evidencia disponible.</td></tr>
+    <tr><th>Time</th><td>17:00</td></tr>
+    <tr><th>Location</th><td>Virtual, Google Meet</td></tr>
     <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
     <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
-    <tr><th>Sprint 0 Review Summary</th><td>No aplica.</td></tr>
-    <tr><th>Sprint 0 Retrospective Summary</th><td>No aplica.</td></tr>
+    <tr><th>Sprint 0 Review Summary</th><td><i>Siendo el primer sprint, este campo no es aplicable</i></td></tr>
+    <tr><th>Sprint 0 Retrospective Summary</th><td><i>Siendo el primer sprint, este campo no es aplicable</i></td></tr>
     <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
     <tr><th>Sprint 1 Goal</th><td>Our focus is on publishing the first responsive Landing Page that clearly communicates Rumbo's value proposition and guides both target segments to their next action. We believe it delivers clear product understanding and a direct entry point to parents/tutors and school transport drivers. This will be confirmed when the five committed Landing Page User Stories satisfy their Acceptance Criteria and the site is publicly accessible on Desktop and Mobile Web Browser.</td></tr>
     <tr><th>Sprint 1 Velocity</th><td>8 Story Points</td></tr>
@@ -2217,11 +2230,18 @@ En esta sección se registran los principales acuerdos del Sprint Planning Meeti
   </tbody>
 </table>
 
-La equivalencia usada para la estimación es la indicada por el docente: **1 SP ≈ 1–2 días de trabajo** y **8 SP ≈ un Sprint completo de dos semanas**. Los Story Points no se calculan sumando horas de forma directa; las horas se utilizan para dimensionar las Tasks y comprobar que ninguna supere aproximadamente 8 horas.
-
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del alcance del Sprint quién actúa como Leader (L) y quiénes participan como Collaborators (C). La asignación mantiene relación con las Tasks del Sprint Backlog.
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), la cual permite identificar, para cada aspecto del alcance del sprint, al integrante que asume el rol de Leader (L) y a aquellos que participan como Collaborators (C). Para el Sprint 1, se han definido los siguientes aspectos de trabajo:
+
+- Project Report & Chapter V
+- Research & Interviews
+- Landing Page UX/UI
+- Landing Page Development
+- Requirements & Product Design
+- Deployment & Evidence
+
+<br>
 
 <table>
   <thead>
@@ -2247,11 +2267,15 @@ La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del a
 
 #### 5.2.1.3. Sprint Backlog 1
 
-El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. El Board público del Sprint se encuentra en:
+El Sprint Backlog 1 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
 **Sprint Board público:** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
 
-> Antes de la entrega se debe reemplazar esta nota por una captura actualizada del Board que muestre las mismas User Stories, Tasks y estados de la tabla.
+<div align="center">
+  <img src="./assets/chapter5/sprint-1.png" alt="Sprint 1 Backlog Board en Trello" width="95%">
+</div>
+
+<br>
 
 <table>
 <thead>
@@ -2299,14 +2323,11 @@ El objetivo del Sprint 1 es implementar y desplegar la primera versión responsi
 </tbody>
 </table>
 
-Todas las User Stories del Sprint cumplen la regla indicada por el docente de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las Tasks S01 y S02 corresponden a constraints generales del Sprint y no generan Story Points.
-
-
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`. Para TB1 se agregó una nueva mejora al Landing Page, integrada mediante Pull Request.
+En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 1, destacando los principales avances en la implementación de la Landing Page de Rumbo. Asimismo, se documentan los commits asociados al repositorio de la Landing Page, permitiendo identificar y verificar los cambios realizados en función del alcance establecido para el sprint.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
 | `AIpaca-OS/landing-page` | `main` | `826939d` | Subir archivos de la landing page | Primera carga funcional de la Landing Page. | 15/09/2026 |
 | `AIpaca-OS/landing-page` | `main` | `6efdfc3` | feat: redesign landing page | Rediseño de la experiencia visual. | 16/09/2026 |
@@ -2316,38 +2337,92 @@ La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-La Landing Page debe evidenciarse desde su URL pública y en sus vistas Desktop y Mobile.
+A continuación, se presenta la URL pública de la Landing Page desplegada, junto con capturas de pantalla que evidencian las secciones implementadas durante el Sprint 1. Estas evidencias permiten verificar el resultado de la ejecución y el cumplimiento del alcance establecido para el sprint.
 
-**URL pública:** https://aipaca-os.github.io/landing-page/
+**URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page/
+**URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
 
-<!-- PENDIENTE IMAGEN C5-S1-01: Landing Page TB1 en Desktop mostrando Hero y la nueva sección de producto. -->
-<!-- PENDIENTE IMAGEN C5-S1-02: Landing Page TB1 en Mobile mostrando navegación responsive. -->
+### Hero Section
+
+<div align="center">
+  <img src="./assets/chapter5/landing-hero.png" alt="Hero section de la Landing Page" width="95%">
+</div>
+
+### Sección de beneficios de Rumbo
+
+<div align="center">
+  <img src="./assets/chapter5/landing-benefits.png" alt="Sección de beneficios de Rumbo de la Landing Page" width="95%">
+</div>
+
+### Sección de funciones de Rumbo
+
+<div align="center">
+  <img src="./assets/chapter5/landing-functions.png" alt="Sección de funciones de Rumbo de la Landing Page" width="95%">
+</div>
+
+### Sección de opiniones de usuarios
+
+<div align="center">
+  <img src="./assets/chapter5/landing-opinions.png" alt="Sección de opiniones de usuarios de la Landing Page" width="95%">
+</div>
+
+### Sección de Preguntas y Respuesta frecuentes
+
+<div align="center">
+  <img src="./assets/chapter5/landing-faq.png" alt="Sección de Preguntas y Respuesta frecuentes de la Landing Page" width="95%">
+</div>
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.
+**El Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.**
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue integrado en `main`, por lo que la evidencia debe mostrar la versión actual y no capturas antiguas de AV1.
+La Landing Page de Rumbo fue desplegada mediante el servicio GitHub Pages. Para ello, primero se desarrolló la página utilizando HTML, CSS y JavaScript, y posteriormente se publicó el código fuente en la rama principal (main) del repositorio de la Landing Page en la organización de AIpaca-OS.
 
-<!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
+<div align="center">
+  <img src="./assets/chapter5/landing-repository.png" alt="Código fuente de la Landing Page publicada en la rama principal(main) del Repositorio" width="95%">
+</div>
+
+Posteriormente, desde la sección Settings > Pages del repositorio, se configuró GitHub Pages para utilizar la opción Deploy from a branch, seleccionando la rama principal (main) y el directorio raíz (/root) como fuente de publicación. De esta manera, GitHub Pages pudo generar y publicar el sitio web a partir de los archivos almacenados en dicha rama.
+
+<div align="center">
+  <img src="./assets/chapter5/githubpages-configuration.png" alt="Configuración de Github Pages en el Repositorio de la Landing Page" width="95%">
+</div>  
+
+### Landing Page desplegada públicamente en GitHub Pages
+
 <div align="center">
   <img src="./assets/chapter5/landing-public-deploy.jpg" alt="Landing Page desplegada públicamente en GitHub Pages" width="95%">
 </div>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreados:
+La participación de cada integrante en las actividades de implementación del Sprint 1 se evidencia mediante las métricas de colaboración registradas en el repositorio de GitHub de la Landing Page. Para ello, se presentan los gráficos de Pulse, Contributors y Commits, los cuales permiten visualizar la actividad de desarrollo y los aportes realizados por cada miembro del equipo a lo largo del sprint.
 
 - Commits: https://github.com/AIpaca-OS/landing-page/commits/main/
 - Contributors: https://github.com/AIpaca-OS/landing-page/graphs/contributors
 - Network: https://github.com/AIpaca-OS/landing-page/network
 - Pull Request TB1 de mejora: https://github.com/AIpaca-OS/landing-page/pull/1
 
-<!-- PENDIENTE IMAGEN C5-S1-05: Commits de landing-page. -->
-<!-- PENDIENTE IMAGEN C5-S1-06: Contributors de landing-page. -->
-<!-- PENDIENTE IMAGEN C5-S1-07: Network o PR #1 mostrando la integración de la mejora. -->
+### Pulse Overview
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-pulse.png" alt="Pulse Overview del Repositorio de la Landing Page" width="95%">
+</div>
+
+### Contributors
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-contributors.png" alt="Grafica de contribuidores del Repositorio de la Landing Page" width="95%">
+</div>
+
+### Commits
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-commits.png" alt="Grafica de cantidad de commits realizados en el Repositorio de la Landing Page" width="95%">
+</div>
+
 
 ### 5.2.2. Sprint 2
 
@@ -2831,6 +2906,8 @@ Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres
 # Conclusiones
 
 ## Conclusiones y recomendaciones
+
+El cierre de TB1 documentó la integración del Frontend en Angular, el rediseño de la Landing Page y el refinamiento del modelo de dominio en ocho Bounded Contexts. Estas evidencias se mantienen como antecedentes del trabajo de AV2, sin confundir el consumo de Fake REST APIs con la implementación del backend propio.
 
 La primera etapa de Rumbo permitió delimitar dos segmentos de usuarios con necesidades distintas pero conectadas: los padres y tutores requieren información comprensible sobre el traslado escolar, mientras que los conductores necesitan organizar sus rutas y comunicar eventos relevantes del servicio. La propuesta del producto se articula alrededor de esa comunicación y de la trazabilidad del recorrido.
 
