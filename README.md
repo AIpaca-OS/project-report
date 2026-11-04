@@ -2201,19 +2201,15 @@ Este registro comprueba la publicación automatizada, pero la demostración de l
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-El avance se organiza por Sprint. **Sprint 1** presenta la Landing Page; **Sprint 2**, el Frontend Angular integrado con Fake REST APIs; y **Sprint 3**, el trabajo previsto para AV2: nuevas versiones desplegadas, servicios REST propios y su documentación. Las evidencias de los dos primeros Sprints permanecen como registro histórico. Las secciones de Sprint 3 se completarán conforme se implementen y prueben sus entregables.
-
-No se atribuye a Sprint 2 un backend Spring Boot. MockAPI y JSON Server fueron mecanismos de persistencia emulada utilizados en el desarrollo del Frontend.
+El avance se organiza por Sprints. El **Sprint 1** presenta el desarrollo de la Landing Page; **Sprint 2**, el Frontend Angular integrado con Fake REST APIs; y **Sprint 3**, el desarrollo completo del Frontend y parte del backend de la aplicación. 
 
 ### 5.2.1. Sprint 1
 
-Sprint 1 se concentra únicamente en la **Landing Page**. Las User Stories de back-end etiquetadas como **Developer (TS01–TS08)** no pertenecen a este Sprint ni al Sprint 2; se reservan para **Sprint 3**. El **Sprint 2** se concentra en el Frontend Web Application, implementando CRUD con Angular y Fake REST APIs. La integración con Spring Boot queda fuera del alcance de TB1.
-
-La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
+Sprint 1 se concentra únicamente en la **Landing Page**. La implementación actual de la Landing Page se traza contra las User Stories definidas en el Capítulo III del proyecto. De esta forma, cada bloque implementado queda asociado a una historia y se evita mantener funcionalidades sin trazabilidad.
 
 #### 5.2.1.1. Sprint Planning 1
 
-En esta sección se registran los principales acuerdos del Sprint Planning Meeting de Sprint 1 utilizando la estructura indicada en el Final Project Statement.
+En esta sección se registran los principales acuerdos establecidos durante la reunión de Sprint Planning correspondiente al Sprint 1. En ella, se definió como objetivo del sprint desarrollar y publicar la primera versión de la Landing Page de la plataforma Rumbo, con la finalidad de presentar el producto de manera atractiva y clara a los tutores, padres de familia y conductores.
 
 <table>
   <tbody>
@@ -2221,12 +2217,12 @@ En esta sección se registran los principales acuerdos del Sprint Planning Meeti
     <tr><th colspan="2">Sprint Planning Background</th></tr>
     <tr><td colspan="2">Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo.</td></tr>
     <tr><th>Date</th><td>2026-09-09</td></tr>
-    <tr><th>Time</th><td>No registrado en la evidencia disponible.</td></tr>
-    <tr><th>Location</th><td>No registrado en la evidencia disponible.</td></tr>
+    <tr><th>Time</th><td>17:00</td></tr>
+    <tr><th>Location</th><td>Virtual, Google Meet</td></tr>
     <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
     <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
-    <tr><th>Sprint 0 Review Summary</th><td>No aplica.</td></tr>
-    <tr><th>Sprint 0 Retrospective Summary</th><td>No aplica.</td></tr>
+    <tr><th>Sprint 0 Review Summary</th><td><i>Siendo el primer sprint, este campo no es aplicable</i></td></tr>
+    <tr><th>Sprint 0 Retrospective Summary</th><td><i>Siendo el primer sprint, este campo no es aplicable</i></td></tr>
     <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
     <tr><th>Sprint 1 Goal</th><td>Our focus is on publishing the first responsive Landing Page that clearly communicates Rumbo's value proposition and guides both target segments to their next action. We believe it delivers clear product understanding and a direct entry point to parents/tutors and school transport drivers. This will be confirmed when the five committed Landing Page User Stories satisfy their Acceptance Criteria and the site is publicly accessible on Desktop and Mobile Web Browser.</td></tr>
     <tr><th>Sprint 1 Velocity</th><td>8 Story Points</td></tr>
@@ -2234,11 +2230,18 @@ En esta sección se registran los principales acuerdos del Sprint Planning Meeti
   </tbody>
 </table>
 
-La equivalencia usada para la estimación es la indicada por el docente: **1 SP ≈ 1–2 días de trabajo** y **8 SP ≈ un Sprint completo de dos semanas**. Los Story Points no se calculan sumando horas de forma directa; las horas se utilizan para dimensionar las Tasks y comprobar que ninguna supere aproximadamente 8 horas.
-
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del alcance del Sprint quién actúa como Leader (L) y quiénes participan como Collaborators (C). La asignación mantiene relación con las Tasks del Sprint Backlog.
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), la cual permite identificar, para cada aspecto del alcance del sprint, al integrante que asume el rol de Leader (L) y a aquellos que participan como Collaborators (C). Para el Sprint 1, se han definido los siguientes aspectos de trabajo:
+
+- Project Report & Chapter V
+- Research & Interviews
+- Landing Page UX/UI
+- Landing Page Development
+- Requirements & Product Design
+- Deployment & Evidence
+
+<br>
 
 <table>
   <thead>
@@ -2264,11 +2267,15 @@ La Leadership-and-Collaboration Matrix (LACX) identifica para cada aspecto del a
 
 #### 5.2.1.3. Sprint Backlog 1
 
-El objetivo del Sprint 1 es implementar y desplegar la primera versión responsive de la Landing Page de Rumbo. El Board público del Sprint se encuentra en:
+El Sprint Backlog 1 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
 **Sprint Board público:** https://trello.com/b/pZTeSjRE/rumbo-sprint-1
 
-> Antes de la entrega se debe reemplazar esta nota por una captura actualizada del Board que muestre las mismas User Stories, Tasks y estados de la tabla.
+<div align="center">
+  <img src="./assets/chapter5/sprint-1.png" alt="Sprint 1 Backlog Board en Trello" width="95%">
+</div>
+
+<br>
 
 <table>
 <thead>
@@ -2316,14 +2323,11 @@ El objetivo del Sprint 1 es implementar y desplegar la primera versión responsi
 </tbody>
 </table>
 
-Todas las User Stories del Sprint cumplen la regla indicada por el docente de **mínimo dos Tasks por User Story**. Ninguna Task supera las 8 horas. Las Tasks S01 y S02 corresponden a constraints generales del Sprint y no generan Story Points.
-
-
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`. Para TB1 se agregó una nueva mejora al Landing Page, integrada mediante Pull Request.
+En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 1, destacando los principales avances en la implementación de la Landing Page de Rumbo. Asimismo, se documentan los commits asociados al repositorio de la Landing Page, permitiendo identificar y verificar los cambios realizados en función del alcance establecido para el sprint.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
 | `AIpaca-OS/landing-page` | `main` | `826939d` | Subir archivos de la landing page | Primera carga funcional de la Landing Page. | 15/09/2026 |
 | `AIpaca-OS/landing-page` | `main` | `6efdfc3` | feat: redesign landing page | Rediseño de la experiencia visual. | 16/09/2026 |
@@ -2333,38 +2337,92 @@ La evidencia histórica de Sprint 1 se mantiene en el repositorio `landing-page`
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-La Landing Page debe evidenciarse desde su URL pública y en sus vistas Desktop y Mobile.
+A continuación, se presenta la URL pública de la Landing Page desplegada, junto con capturas de pantalla que evidencian las secciones implementadas durante el Sprint 1. Estas evidencias permiten verificar el resultado de la ejecución y el cumplimiento del alcance establecido para el sprint.
 
-**URL pública:** https://aipaca-os.github.io/landing-page/
+**URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page/
+**URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
 
-<!-- PENDIENTE IMAGEN C5-S1-01: Landing Page TB1 en Desktop mostrando Hero y la nueva sección de producto. -->
-<!-- PENDIENTE IMAGEN C5-S1-02: Landing Page TB1 en Mobile mostrando navegación responsive. -->
+### Hero Section
+
+<div align="center">
+  <img src="./assets/chapter5/landing-hero.png" alt="Hero section de la Landing Page" width="95%">
+</div>
+
+### Sección de beneficios de Rumbo
+
+<div align="center">
+  <img src="./assets/chapter5/landing-benefits.png" alt="Sección de beneficios de Rumbo de la Landing Page" width="95%">
+</div>
+
+### Sección de funciones de Rumbo
+
+<div align="center">
+  <img src="./assets/chapter5/landing-functions.png" alt="Sección de funciones de Rumbo de la Landing Page" width="95%">
+</div>
+
+### Sección de opiniones de usuarios
+
+<div align="center">
+  <img src="./assets/chapter5/landing-opinions.png" alt="Sección de opiniones de usuarios de la Landing Page" width="95%">
+</div>
+
+### Sección de Preguntas y Respuesta frecuentes
+
+<div align="center">
+  <img src="./assets/chapter5/landing-faq.png" alt="Sección de Preguntas y Respuesta frecuentes de la Landing Page" width="95%">
+</div>
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.
+**El Sprint 1 no incluye Web Services. La Landing Page utiliza HTML, CSS y JavaScript y no requiere documentación OpenAPI para este alcance.**
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-La Landing Page continúa publicada mediante GitHub Pages. El PR #1 de TB1 fue integrado en `main`, por lo que la evidencia debe mostrar la versión actual y no capturas antiguas de AV1.
+La Landing Page de Rumbo fue desplegada mediante el servicio GitHub Pages. Para ello, primero se desarrolló la página utilizando HTML, CSS y JavaScript, y posteriormente se publicó el código fuente en la rama principal (main) del repositorio de la Landing Page en la organización de AIpaca-OS.
 
-<!-- PENDIENTE IMAGEN C5-S1-03: GitHub Pages / Actions o Settings mostrando el deployment vigente. -->
+<div align="center">
+  <img src="./assets/chapter5/landing-repository.png" alt="Código fuente de la Landing Page publicada en la rama principal(main) del Repositorio" width="95%">
+</div>
+
+Posteriormente, desde la sección Settings > Pages del repositorio, se configuró GitHub Pages para utilizar la opción Deploy from a branch, seleccionando la rama principal (main) y el directorio raíz (/root) como fuente de publicación. De esta manera, GitHub Pages pudo generar y publicar el sitio web a partir de los archivos almacenados en dicha rama.
+
+<div align="center">
+  <img src="./assets/chapter5/githubpages-configuration.png" alt="Configuración de Github Pages en el Repositorio de la Landing Page" width="95%">
+</div>  
+
+### Landing Page desplegada públicamente en GitHub Pages
+
 <div align="center">
   <img src="./assets/chapter5/landing-public-deploy.jpg" alt="Landing Page desplegada públicamente en GitHub Pages" width="95%">
 </div>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-Para Sprint 1 deben insertarse capturas reales de GitHub y no gráficos recreados:
+La participación de cada integrante en las actividades de implementación del Sprint 1 se evidencia mediante las métricas de colaboración registradas en el repositorio de GitHub de la Landing Page. Para ello, se presentan los gráficos de Pulse, Contributors y Commits, los cuales permiten visualizar la actividad de desarrollo y los aportes realizados por cada miembro del equipo a lo largo del sprint.
 
 - Commits: https://github.com/AIpaca-OS/landing-page/commits/main/
 - Contributors: https://github.com/AIpaca-OS/landing-page/graphs/contributors
 - Network: https://github.com/AIpaca-OS/landing-page/network
 - Pull Request TB1 de mejora: https://github.com/AIpaca-OS/landing-page/pull/1
 
-<!-- PENDIENTE IMAGEN C5-S1-05: Commits de landing-page. -->
-<!-- PENDIENTE IMAGEN C5-S1-06: Contributors de landing-page. -->
-<!-- PENDIENTE IMAGEN C5-S1-07: Network o PR #1 mostrando la integración de la mejora. -->
+### Pulse Overview
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-pulse.png" alt="Pulse Overview del Repositorio de la Landing Page" width="95%">
+</div>
+
+### Contributors
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-contributors.png" alt="Grafica de contribuidores del Repositorio de la Landing Page" width="95%">
+</div>
+
+### Commits
+
+<div align="center">
+  <img src="./assets/chapter5/sprint1-commits.png" alt="Grafica de cantidad de commits realizados en el Repositorio de la Landing Page" width="95%">
+</div>
+
 
 ### 5.2.2. Sprint 2
 
