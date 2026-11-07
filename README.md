@@ -2471,7 +2471,7 @@ En este sprint, los aspectos considerados en la Leadership-and-Collaboration Mat
 <th>GitHub Username</th>
 <th>Vehicle &amp; Credential<br>Leader (L) / Collaborator (C)</th>
 <th>Profiles &amp; Relationship<br>Leader (L) / Collaborator (C)</th>
-<th>Route &amp; Trip Planning<br>Leader (L) / Collaborator (C)</th>
+<th>Routes &amp; Trip Planning<br>Leader (L) / Collaborator (C)</th>
 <th>Alerting &amp; Incident / Notification Management<br>Leader (L) / Collaborator (C)</th>
 <th>Subscriptions &amp; Billing<br>Leader (L) / Collaborator (C)</th>
 <th>Integration / Shared<br>Leader (L) / Collaborator (C)</th>
@@ -3019,54 +3019,64 @@ Además, se presentan las métricas de GitHub correspondientes a la implementaci
 
 ### 5.2.3. Sprint 3
 
-La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de AV2 articula tres productos: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. Las decisiones técnicas se sustentan en el dominio del transporte escolar y en las User Stories, no únicamente en la cantidad de tablas del modelo relacional.
-
-El diseño de datos y las operaciones HTTP se presentan a continuación como referencia técnica del Sprint. El registro de ejecución distingue el trabajo documentado en GitHub de las pruebas y publicaciones que deben tener su propia evidencia. Esta distinción permite conservar un informe coherente sin atribuir al equipo resultados que aún no estén sustentados.
+La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
 
 #### 5.2.3.1. Sprint Planning 3
 
-La planificación de Sprint 3 considera el tablero Jira RMO y la distribución actual de cuatro integrantes. Su alcance prioriza la planificación de rutas, la gestión de estudiantes, la facturación y las notificaciones. Las funciones del dominio de vehículos se limitan a las referencias esenciales que necesita la planificación de rutas; no se incorpora un CRUD de vehículos como compromiso de este Sprint.
+En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, facturación y notificaciones, así como avanzar en la implementación de una parte del backend.Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
 
-| Campo | Registro del Sprint 3 |
-|---|---|
-| Sprint # | Sprint 3 |
-| Sprint Planning Background | Integración progresiva de la aplicación web con Web Services propios, nuevas versiones de los productos públicos y validación del uso de Rumbo. |
-| Sprint period | 2026-10-25 – 2026-11-12 (fechas del Sprint activo en Jira) |
-| Date | <!-- AV2: fecha real de la reunión de planificación --> |
-| Time | <!-- AV2: horario real --> |
-| Location | <!-- AV2: enlace o lugar de reunión --> |
-| Prepared By | <!-- AV2: responsable del acta --> |
-| Attendees | <!-- AV2: asistentes confirmados --> |
-| Sprint 2 Review Summary | Primera integración de módulos CRUD del Frontend Angular con Fake REST APIs, documentada en 5.2.2. |
-| Sprint 2 Retrospective Summary | <!-- AV2: acuerdos reales de la retrospectiva --> |
-| Sprint 3 Goal — Outcome | Permitir que el conductor configure rutas con paradas ordenadas, horarios y asignaciones de estudiantes mediante la aplicación y el RESTful API. |
-| Sprint 3 Goal — Impact | Mantener la configuración de rutas de forma persistente y facilitar su verificación mediante contratos de servicio documentados y escenarios de aceptación. |
-| Sprint 3 Goal — Customer | Conductores y operadores de movilidad escolar que organizan los traslados. |
-| Sprint 3 Goal — Event | Resultado esperado para la Sprint Review 3 del hito AV2. |
-| Sprint 3 Velocity | Pendiente de cálculo al cierre; el Sprint sigue en curso. Al corte 2026-11-02: 0/52 Story Points en Done. |
-| Sum of Story Points | 52 Story Points en las 11 historias del Sprint activo consultadas en Jira. |
-
-La comprobación del Sprint Goal se realizará sobre escenarios funcionales que permitan operar los recursos del negocio desde la aplicación y consultar sus respuestas a través del RESTful API. La fecha y el acta de la reunión de planificación, la capacidad acordada y la retrospectiva deben completarse con la evidencia del equipo; el tablero consultado al 2026-11-02 muestra 4 historias En curso, 7 Por hacer y ninguna Done.
+<table>
+  <tbody>
+    <tr><th>Sprint #</th><td>Sprint 3</td></tr>
+    <tr><th colspan="2">Sprint Planning Background</th></tr>
+    <tr><td colspan="2">Integración progresiva de la aplicación web con Web Services propios, incorporación de nuevas versiones de los productos públicos y validación del uso de Rumbo.</td></tr>
+    <tr><th>Date</th><td>4/11/2026</td></tr>
+    <tr><th>Time</th><td>15:00 - 17:00</td></tr>
+    <tr><th>Location</th><td>Virtual, Google Meet</td></tr>
+    <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
+    <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile</td></tr>
+    <tr><th>Sprint 2 Review Summary</th><td>Durante el Sprint 2 se realizó la primera integración de los módulos CRUD del Frontend Angular con las Fake REST APIs, permitiendo gestionar los recursos de los distintos Bounded Contexts. Además, se desplegó la primera versión de la aplicación web de Rumbo.</td></tr>
+    <tr><th>Sprint 2 Retrospective Summary</th><td>Después del desarrollo del Sprint 2 se identificó la necesidad de mejorar la organización del equipo y la planificación del desarrollo del proyecto. Debido a que algunas actividades se realizaron con poco margen de tiempo, fue necesario optimizar los recursos disponibles, lo que llevó a reducir el alcance de ciertos aspectos, como la documentación, el diseño visual de la plataforma y algunas funcionalidades. Como medida de mejora, se propuso iniciar las actividades con mayor anticipación y distribuir la carga de trabajo de manera más eficiente, asegurando que todos los aspectos planificados reciban la atención necesaria.</td></tr>
+    <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
+    <tr><th>Sprint 3 Goal</th><td>Our focus is on enabling school transport drivers to configure routes with ordered stops, schedules, and student assignments through the web application and RESTful services. We believe this will provide persistent route configuration and facilitate its verification through documented service contracts and acceptance scenarios. This will be confirmed when the committed User Stories satisfy their Acceptance Criteria and the expected functionality is demonstrated during Sprint Review 3 for milestone.</td></tr>
+    <tr><th>Sprint 3 Velocity</th><td>35 Story Points</td></tr>
+    <tr><th>Sum of Story Points</th><td>52 Story Points</td></tr>
+  </tbody>
+</table>
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
-La matriz LACX refleja la distribución de responsabilidades comunicada para el Sprint 3. El liderazgo identifica al responsable de cada dominio; la colaboración específica se consignará cuando existan registros de revisión, Pull Requests o acuerdos del equipo.
+La matriz LACX refleja la distribución de responsabilidades establecida para el Sprint 3. En esta iteración, los aspectos considerados corresponden principalmente a los Bounded Context definidos para la plataforma Rumbo, con excepción de **Vehicle & Credential**, cuya gestión quedó reducida a referencias esenciales de **Routes &amp; Trip Planning** debido a la salida de uno de los integrantes del equipo. Asimismo, se incorporan otros aspectos complementarios necesarios para el cumplimiento de los objetivos del Sprint. A continuación, se presentan los aspectos considerados y los responsables asignados a cada uno.
 
-| Aspect / Bounded Context | Aspect Leader | Collaborators |
-|---|---|---|
-| Routes & Trip Planning | Lino Quispe, Leonardo Miguel (`linolw`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Students | Díaz Ramírez, Alejandro (`aleedr`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Billing | Geronimo Puma, Kevin Joel (`qebim18`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Notifications | Meza Soza, Alexandra Yamile (`AlexandraYMS`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-
-Los roles de liderazgo corresponden a la distribución comunicada por el equipo. La columna de colaboración queda pendiente de evidencia y no atribuye trabajo que todavía no figure en los registros del Sprint. La gestión de vehículos queda reducida a referencias esenciales para Routes.
+<table>
+<thead>
+<tr>
+<th>Team Member (Last Name, First Name)</th>
+<th>GitHub Username</th>
+<th>Routes &amp; Trip Planning<br>Leader (L) / Collaborator (C)</th>
+<th>Students<br>Leader (L) / Collaborator (C)</th>
+<th>Billing<br>Leader (L) / Collaborator (C)</th>
+<th>Notifications<br>Leader (L) / Collaborator (C)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Díaz Ramírez, Alejandro</td><td>aleedr</td><td>—</td><td>L</td><td>—</td><td>—</td></tr>
+<tr><td>Geronimo Puma, Kevin Joel</td><td>qebim18</td><td>—</td><td>—</td><td>L</td><td>—</td></tr>
+<tr><td>Lino Quispe, Leonardo Miguel</td><td>linolw</td><td>L</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Meza Soza, Alexandra Yamile</td><td>AlexandraYMS</td><td>—</td><td>—</td><td>—</td><td>L</td></tr>
+</tbody>
+</table>
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog siguiente transcribe las historias, puntos, estados y responsables observados en Jira el 2026-11-02. La descomposición y las horas por tarea son una **propuesta para validación del equipo**; no representan horas registradas ni tareas ya creadas en Jira. Cada estimación propuesta se mantiene entre 4 y 8 horas.
+El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
-**Sprint Board:** [Jira RMO, Backlog del tablero 2](https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog)
-**Corte consultado:** 2026-11-02. La captura del tablero y el registro de horas aún deben incorporarse.
+**Sprint Board público:** https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
 
 | Story Id | Story Title | SP | Engineering Tasks — propuesta (horas) | Jira assignee | Jira status |
 |---|---|---:|---|---|---|
@@ -3082,7 +3092,6 @@ El Sprint Backlog siguiente transcribe las historias, puntos, estados y responsa
 | [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Sin asignar en Jira | Por hacer |
 | [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Sin asignar en Jira | Por hacer |
 
-Antes de presentar el backlog como compromiso, el equipo debe validar las horas propuestas y registrar las Engineering Tasks en Jira. Los estados y responsables mostrados corresponden a las historias y no se atribuyen a tareas todavía no creadas.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
