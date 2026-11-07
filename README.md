@@ -2174,10 +2174,17 @@ La Landing Page se publica mediante GitHub Pages desde el repositorio `AIpaca-OS
 | Entry point | `index.html` |
 | URL pública | https://aipaca-os.github.io/landing-page/ |
 
-Durante TB1 se integró además la mejora **`feat: add product showcase to landing page`** mediante el PR #1 del Landing Page, incorporando una sección de producto, pantallas reales y ajustes responsive.
+La Landing Page de Rumbo fue desplegada mediante el servicio GitHub Pages. Para ello, primero se desarrolló la página utilizando HTML, CSS y JavaScript, y posteriormente se publicó el código fuente en la rama principal (main) del repositorio de la Landing Page en la organización de AIpaca-OS.
 
-<!-- PENDIENTE IMAGEN C5-01: Captura de GitHub Pages mostrando la Landing Page publicada. -->
-<!-- PENDIENTE IMAGEN C5-02: Captura de la Landing Page pública con la sección "Conoce Rumbo en acción". -->
+<div align="center">
+  <img src="./assets/chapter5/landing-repository.png" alt="Código fuente de la Landing Page publicada en la rama principal(main) del Repositorio" width="95%">
+</div>
+
+Posteriormente, desde la sección Settings > Pages del repositorio, se configuró GitHub Pages para utilizar la opción Deploy from a branch, seleccionando la rama principal (main) y el directorio raíz (/root) como fuente de publicación. De esta manera, GitHub Pages pudo generar y publicar el sitio web a partir de los archivos almacenados en dicha rama.
+
+<div align="center">
+  <img src="./assets/chapter5/githubpages-configuration.png" alt="Configuración de Github Pages en el Repositorio de la Landing Page" width="95%">
+</div> 
 
 #### Frontend Web Application
 
@@ -2190,14 +2197,24 @@ La versión integrada del Frontend se incorporó a `main` desde `develop` median
 | Workflow | [Deploy Frontend to GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104) |
 | URL de GitHub Pages | https://aipaca-os.github.io/frontend-web-application/ |
 
-Este registro comprueba la publicación automatizada, pero la demostración de la aplicación y de cada CRUD en la URL pública necesita capturas o video de ejecución. Para AV2 también deberá registrarse el despliegue del backend propio, cuando se implemente.
+Al igual que la Landing Page, el Frontend Web Application de Rumbo fue desplegado mediante el servicio GitHub Pages. Para ello, primero se desarrolló el código fuente utilizando IntelliJ IDEA y se integraron los cambios realizados por los integrantes del equipo en el repositorio del Frontend Web Application, perteneciente a la organización AIpaca-OS. Una vez finalizada la implementación, los cambios fueron integrados en la rama principal (`main`) mediante un Pull Request desde la rama `develop`.
 
-<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso de GitHub Actions. -->
 <div align="center">
-  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application desplegada en GitHub Pages durante TB1" width="95%">
+  <img src="./assets/chapter5/deploy-fronted-main.png" alt="Rama principal del Repositorio de Web Frontend Application" width="95%">
 </div>
 
-<!-- PENDIENTE IMAGEN C5-04: Captura de la aplicación pública funcionando en distintas rutas y tamaños de pantalla. -->
+
+Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages del repositorio, seleccionando GitHub Actions como fuente de publicación. Para ello, se utilizó un flujo de trabajo automatizado (*workflow*) denominado `Deploy Frontend to GitHub Pages`, encargado de ejecutar el proceso de despliegue de la aplicación. De esta manera, GitHub Actions permitió automatizar la publicación del Frontend Web Application en GitHub Pages, dejándolo disponible mediante una URL pública para su acceso.
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-actions.png" alt="Sección actions del Repositorio de Web Frontend Application" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
+</div>
+
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
