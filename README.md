@@ -2174,10 +2174,17 @@ La Landing Page se publica mediante GitHub Pages desde el repositorio `AIpaca-OS
 | Entry point | `index.html` |
 | URL pública | https://aipaca-os.github.io/landing-page/ |
 
-Durante TB1 se integró además la mejora **`feat: add product showcase to landing page`** mediante el PR #1 del Landing Page, incorporando una sección de producto, pantallas reales y ajustes responsive.
+La Landing Page de Rumbo fue desplegada mediante el servicio GitHub Pages. Para ello, primero se desarrolló la página utilizando HTML, CSS y JavaScript, y posteriormente se publicó el código fuente en la rama principal (main) del repositorio de la Landing Page en la organización de AIpaca-OS.
 
-<!-- PENDIENTE IMAGEN C5-01: Captura de GitHub Pages mostrando la Landing Page publicada. -->
-<!-- PENDIENTE IMAGEN C5-02: Captura de la Landing Page pública con la sección "Conoce Rumbo en acción". -->
+<div align="center">
+  <img src="./assets/chapter5/landing-repository.png" alt="Código fuente de la Landing Page publicada en la rama principal(main) del Repositorio" width="95%">
+</div>
+
+Posteriormente, desde la sección Settings > Pages del repositorio, se configuró GitHub Pages para utilizar la opción Deploy from a branch, seleccionando la rama principal (main) y el directorio raíz (/root) como fuente de publicación. De esta manera, GitHub Pages pudo generar y publicar el sitio web a partir de los archivos almacenados en dicha rama.
+
+<div align="center">
+  <img src="./assets/chapter5/githubpages-configuration.png" alt="Configuración de Github Pages en el Repositorio de la Landing Page" width="95%">
+</div> 
 
 #### Frontend Web Application
 
@@ -2190,14 +2197,24 @@ La versión integrada del Frontend se incorporó a `main` desde `develop` median
 | Workflow | [Deploy Frontend to GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104) |
 | URL de GitHub Pages | https://aipaca-os.github.io/frontend-web-application/ |
 
-Este registro comprueba la publicación automatizada, pero la demostración de la aplicación y de cada CRUD en la URL pública necesita capturas o video de ejecución. Para AV2 también deberá registrarse el despliegue del backend propio, cuando se implemente.
+Al igual que la Landing Page, el Frontend Web Application de Rumbo fue desplegado mediante el servicio GitHub Pages. Para ello, primero se desarrolló el código fuente utilizando IntelliJ IDEA y se integraron los cambios realizados por los integrantes del equipo en el repositorio del Frontend Web Application, perteneciente a la organización AIpaca-OS. Una vez finalizada la implementación, los cambios fueron integrados en la rama principal (`main`) mediante un Pull Request desde la rama `develop`.
 
-<!-- PENDIENTE IMAGEN C5-03: Captura del deployment exitoso de GitHub Actions. -->
 <div align="center">
-  <img src="./assets/chapter5/web-application.png" alt="Frontend Web Application desplegada en GitHub Pages durante TB1" width="95%">
+  <img src="./assets/chapter5/deploy-fronted-main.png" alt="Rama principal del Repositorio de Web Frontend Application" width="95%">
 </div>
 
-<!-- PENDIENTE IMAGEN C5-04: Captura de la aplicación pública funcionando en distintas rutas y tamaños de pantalla. -->
+
+Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages del repositorio, seleccionando GitHub Actions como fuente de publicación. Para ello, se utilizó un flujo de trabajo automatizado (*workflow*) denominado `Deploy Frontend to GitHub Pages`, encargado de ejecutar el proceso de despliegue de la aplicación. De esta manera, GitHub Actions permitió automatizar la publicación del Frontend Web Application en GitHub Pages, dejándolo disponible mediante una URL pública para su acceso.
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-actions.png" alt="Sección actions del Repositorio de Web Frontend Application" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
+</div>
+
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2216,8 +2233,8 @@ En esta sección se registran los principales acuerdos establecidos durante la r
     <tr><th>Sprint #</th><td>Sprint 1</td></tr>
     <tr><th colspan="2">Sprint Planning Background</th></tr>
     <tr><td colspan="2">Primera iteración de implementación del producto. El alcance se concentra en la Landing Page pública de Rumbo.</td></tr>
-    <tr><th>Date</th><td>2026-09-09</td></tr>
-    <tr><th>Time</th><td>17:00</td></tr>
+    <tr><th>Date</th><td>09/09/2026</td></tr>
+    <tr><th>Time</th><td>15:00 - 17:30</td></tr>
     <tr><th>Location</th><td>Virtual, Google Meet</td></tr>
     <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
     <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
@@ -2340,6 +2357,7 @@ En esta sección se presentan las evidencias del desarrollo realizado durante el
 A continuación, se presenta la URL pública de la Landing Page desplegada, junto con capturas de pantalla que evidencian las secciones implementadas durante el Sprint 1. Estas evidencias permiten verificar el resultado de la ejecución y el cumplimiento del alcance establecido para el sprint.
 
 **URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page/
+
 **URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
 
 ### Hero Section
@@ -2426,222 +2444,569 @@ La participación de cada integrante en las actividades de implementación del S
 
 ### 5.2.2. Sprint 2
 
-Sprint 2 corresponde a la primera versión integrada de la **Frontend Web Application**. El producto se implementa como SPA Angular, organizado por Bounded Contexts y con persistencia emulada. El Sprint no incorpora Web Services reales con Spring Boot.
-
-Los Bounded Contexts implementados en este Sprint mantienen trazabilidad con el **Design-Level Event Storming documentado en la sección 4.6.1**, cuyo tablero colaborativo se encuentra en Miro y cuyas exportaciones visuales evidencian el refinamiento del dominio previo a la implementación.
-
-Los aspectos implementados y visibles en el repositorio son:
-
-- Vehicle & Credential Management.
-- Profiles & Relationship Management.
-- Route & Trip Planning.
-- Alerting & Incident Management.
-- Subscriptions & Billing.
+El Sprint 2 corresponde a la primera versión integrada de la **Frontend Web Application**. El producto se implementa como SPA Angular, organizado por Bounded Contexts y con persistencia emulada. El Sprint no incorpora Web Services reales con Spring Boot.
 
 #### 5.2.2.1. Sprint Planning 2
 
-| Campo | Información |
-|---|---|
-| Sprint # | Sprint 2 |
-| Sprint Planning Background | Construcción de la primera versión integrada del Frontend Web Application mediante CRUD por Bounded Context y Fake REST APIs. |
-| Date | 2026-09-21 |
-| Time | 15:00 - 17:30 PET |
-| Location | Sesión virtual sincrónica vía Google Meet / Discord |
-| Prepared By | Pareja Caceres, Diana |
-| Attendees | Equipo AIpaca: Alejandro Díaz, Kevin Geronimo, Leonardo Lino, Alexandra Meza y Diana Pareja. |
-| Sprint 1 Review Summary | Landing Page implementada y publicada. Para TB1 se incorporó una nueva sección de producto mediante PR #1. |
-| Sprint 1 Retrospective Summary | La evidencia histórica mostró integración directa a `main` en Sprint 1; para Sprint 2 se utilizaron feature branches, `develop` y Pull Requests. |
-| Sprint 2 Goal | **Our focus is on delivering the first integrated CRUD-based Frontend Web Application for Rumbo. We believe it delivers a usable operational workspace for the target users while validating the frontend architecture by Bounded Context. This will be confirmed when the committed CRUD views build successfully, navigate from the Angular application and persist data through the configured Fake REST APIs.** |
-| Sprint 2 Velocity | No existe un valor de Velocity previo verificable en las evidencias consultadas; no se inventa retrospectivamente. |
-| Sum of Story Points | **34 Story Points**, correspondientes a US02 (5), US06 (5), US09 (8), US10 (8), US24 (5) y US29 (3). |
+En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 2. En ella, se definió como objetivo del sprint desarrollar la primera versión integrada del Frontend Web Application mediante operaciones CRUD organizadas por Bounded Context y Fake REST APIs. Asimismo, se acordó ampliar la Landing Page mediante la incorporación de una nueva sección que permita presentar las funcionalidades de la aplicación web desarrollada y ofrecer a tutores, padres de familia y conductores una vista previa del producto.
 
-Las User Stories anteriores son historias ya existentes en el Product Backlog. Se seleccionan aquí porque cuentan con evidencia directa en las vistas e infraestructura implementadas durante Sprint 2.
+<table>
+<tbody>
+<tr><th>Sprint #</th><td>Sprint 2</td></tr>
+<tr><th colspan="2">Sprint Planning Background</th></tr>
+<tr><td colspan="2">Construcción de la primera versión integrada del Frontend Web Application mediante operaciones CRUD por Bounded Context y Fake REST APIs.</td></tr>
+<tr><th>Date</th><td>21/09/2026</td></tr>
+<tr><th>Time</th><td>15:00 - 17:30</td></tr>
+<tr><th>Location</th><td>Virtual, Google Meet</td></tr>
+<tr><th>Prepared By</th><td>Pareja Caceres, Diana</td></tr>
+<tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana</td></tr>
+<tr><th>Sprint 1 Review Summary</th><td>Durante el Sprint 1 se completó la implementación y publicación de la primera versión de la Landing Page de Rumbo, cumpliendo con el objetivo de presentar la propuesta de valor del producto y sus principales funcionalidades.</td></tr>
+<tr><th>Sprint 1 Retrospective Summary</th><td>A partir de la experiencia del Sprint 1, se identificaron oportunidades de mejora relacionadas con la optimización de los tiempos de desarrollo y el fortalecimiento de la documentación del proyecto. Asimismo, se reconoció la necesidad de establecer un flujo de trabajo más organizado para la integración de cambios. Por ello, durante el Sprint 2 se adoptó el uso de ramas independientes (feature branches), la rama develop y Pull Requests, con el propósito de mejorar la colaboración, facilitar la revisión del código y mantener un mejor registro de los avances.</td></tr>
+<tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
+<tr><th>Sprint 2 Goal</th><td>Our focus is on delivering the first integrated CRUD-based Frontend Web Application for Rumbo. We believe it delivers a usable operational workspace for the target users while validating the frontend architecture by Bounded Context. This will be confirmed when the committed CRUD views build successfully, navigate from the Angular application and persist data through the configured Fake REST APIs.</td></tr>
+<tr><th>Sprint 2 Velocity</th><td>35 Story Points</td></tr>
+<tr><th>Sum of Story Points</th><td>34 Story Points</td></tr>
+</tbody>
+</table>
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-La matriz LACX se alinea con las ramas y contribuciones observables del repositorio.
+En este sprint, los aspectos considerados en la Leadership-and-Collaboration Matrix (LACX) corresponden a los Bounded Contexts definidos con el **Design-Level Event Storming documentado en la sección 4.6.1** para el desarrollo de la plataforma Rumbo. De esta manera, cada integrante asumió la responsabilidad de liderar uno o más Bounded Contexts, considerando su complejidad y relevancia dentro de la solución. A continuación, se presentan los aspectos considerados para este sprint:
 
-| Team Member | GitHub Username evidenciado | Vehicle & Credential | Profiles & Relationship | Route & Trip Planning | Alerting & Incident | Subscriptions & Billing | Integration / Shared |
-|---|---|---:|---:|---:|---:|---:|---:|
-| Díaz Ramírez, Alejandro | `aleedr` | — | **L** | — | — | — | — |
-| Geronimo Puma, Kevin Joel | `qebim` / `qebim18` | — | — | — | — | **L** | — |
-| Lino Quispe, Leonardo Miguel | `linolw` | — | C | **L** | C | C | **L** |
-| Meza Soza, Alexandra Yamile | `AlexandraYMS` | C | — | — | **L** | — | C |
-| Pareja Caceres, Diana | `DianaParejaCaceres` | **L** | — | — | — | — | — |
+- Vehicle & Credential Management
+- Profiles & Relationship Management
+- Route & Trip Planning
+- Alerting & Incident Management
+- Subscriptions & Billing
+- Notification Management
+- Shared
 
-La colaboración marcada con **C** se limita a integraciones o correcciones que sí aparecen en el historial; no se atribuyen participaciones no evidenciadas.
+<table>
+<thead>
+<tr>
+<th>Team Member (Last Name, First Name)</th>
+<th>GitHub Username</th>
+<th>Vehicle &amp; Credential<br>Leader (L) / Collaborator (C)</th>
+<th>Profiles &amp; Relationship<br>Leader (L) / Collaborator (C)</th>
+<th>Routes &amp; Trip Planning<br>Leader (L) / Collaborator (C)</th>
+<th>Alerting &amp; Incident / Notification Management<br>Leader (L) / Collaborator (C)</th>
+<th>Subscriptions &amp; Billing<br>Leader (L) / Collaborator (C)</th>
+<th>Integration / Shared<br>Leader (L) / Collaborator (C)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Díaz Ramírez, Alejandro</td><td>aleedr</td><td>—</td><td>L</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Geronimo Puma, Kevin Joel</td><td>qebim18</td><td>—</td><td>—</td><td>—</td><td>—</td><td>L</td><td>—</td></tr>
+<tr><td>Lino Quispe, Leonardo Miguel</td><td>linolw</td><td>—</td><td>C</td><td>L</td><td>C</td><td>C</td><td>L</td></tr>
+<tr><td>Meza Soza, Alexandra Yamile</td><td>AlexandraYMS</td><td>C</td><td>—</td><td>—</td><td>L</td><td>—</td><td>C</td></tr>
+<tr><td>Pareja Caceres, Diana</td><td>DianaParejaCaceres</td><td>L</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+
 
 #### 5.2.2.3. Sprint Backlog 2
 
-**Artefacto Sprint 2:** https://trello.com/invite/b/6ac5acfc155988c2635f74d2/ATTId0178f5a35fe74259c89e878a2dd299c9794CD75/rumbo-sprint-2
+El Sprint Backlog 2 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
-El Final Project Statement exige que la captura del Board y el URL público sean coherentes con la tabla. El enlace disponible actualmente es un enlace de invitación; antes de la entrega debe reemplazarse por el URL público del Board si Trello dispone de uno.
-
-La siguiente captura corresponde al Board de Trello utilizado para el seguimiento del **Sprint 2**, donde se visualizan los work-items y su estado durante el Sprint.
+**Sprint Board público:** https://trello.com/invite/b/6ac5acfc155988c2635f74d2/ATTI6e8a04c283a5e1798ad70c4374f9d214F5E58F46/rumbo-sprint-2
 
 <div align="center">
   <img src="./assets/chapter5/Sprint-2.png" alt="Sprint 2 Backlog Board en Trello" width="95%">
 </div>
 
-| Story Id | Story Title | SP | Task Id | Task Title / Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---:|---|---|---:|---|---|
-| US02 | Registrar vehículo y credenciales del servicio | 5 | T20 | Definir entidad y contratos de Vehicle. | 5 | Diana Pareja | Done |
-| US02 | Registrar vehículo y credenciales del servicio | 5 | T21 | Implementar infraestructura HTTP, assembler y endpoints. | 6 | Diana Pareja | Done |
-| US02 | Registrar vehículo y credenciales del servicio | 5 | T22 | Implementar store reactivo con Angular Signals. | 5 | Diana Pareja | Done |
-| US02 | Registrar vehículo y credenciales del servicio | 5 | T23 | Implementar lista, formulario y routing de Vehicle. | 7 | Diana Pareja | Done |
-| US06 | Registrar estudiante y vincularse como tutor | 5 | T24 | Implementar dominio y endpoints de estudiantes/perfiles. | N/R | Alejandro Díaz | Done |
-| US06 | Registrar estudiante y vincularse como tutor | 5 | T25 | Implementar lista y formulario de estudiantes e integración del contexto. | N/R | Alejandro Díaz | Done |
-| US09 | Activar la suscripción del conductor | 8 | T26 | Implementar modelos y endpoints de Plans y Subscriptions en MockAPI. | N/R | Kevin Geronimo | Done |
-| US09 | Activar la suscripción del conductor | 8 | T27 | Implementar store, listado de planes, formulario y listado de suscripciones. | N/R | Kevin Geronimo | Done |
-| US10 | Crear una ruta con sus paradas | 8 | T28 | Definir modelo Route e infraestructura MockAPI. | 5 | Leonardo Lino | Done |
-| US10 | Crear una ruta con sus paradas | 8 | T29 | Implementar store reactivo y acceso a datos de rutas. | 6 | Leonardo Lino | Done |
-| US10 | Crear una ruta con sus paradas | 8 | T30 | Implementar Route List, Route Form y routing. | 6 | Leonardo Lino | Done |
-| US24 | Registrar una incidencia | 5 | T31 | Definir entidades y contratos de Incident / Delay. | 5 | Alexandra Meza | Done |
-| US24 | Registrar una incidencia | 5 | T32 | Implementar API/store para incidencias y retrasos. | 5 | Alexandra Meza | Done |
-| US24 | Registrar una incidencia | 5 | T33 | Implementar formularios y Quick Actions. | 6 | Alexandra Meza | Done |
-| US29 | Configurar las preferencias de notificación | 3 | T34 | Implementar modelos y API de Notifications / Settings. | 4 | Alexandra Meza | Done |
-| US29 | Configurar las preferencias de notificación | 3 | T35 | Implementar store y dashboard de notificaciones. | 6 | Alexandra Meza | Done |
-| N/A | Integración general del Sprint | — | T36 | Integrar Bounded Contexts, corregir routing/i18n/HttpClient y agregar CI de build. | N/R | Leonardo Lino | Done |
+<br>
 
-**N/R = no registrado en la evidencia disponible.** Las horas de T24, T25, T26, T27 y T36 deben copiarse desde el Sprint Board o registro real del equipo; no se estiman retrospectivamente en el informe.
+<table>
+<thead>
+<tr>
+<th>Sprint #</th>
+<th colspan="7">Sprint 2</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="6">Work-Item / Task</th>
+</tr>
+<tr>
+<th>Story Id</th>
+<th>Story Title</th>
+<th>Task Id</th>
+<th>Task Title</th>
+<th>Task Description</th>
+<th>Estimation (Hours)</th>
+<th>Assigned To</th>
+<th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+</tr>
+</thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">US02</td>
+      <td rowspan="4">Registrar vehículo y credenciales del servicio</td>
+      <td>T20</td>
+      <td>Define Vehicle Domain and Schemas</td>
+      <td>Definir entidad y contratos de Vehicle.</td>
+      <td>5</td>
+      <td>Diana Pareja</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T21</td>
+      <td>Implement Vehicle HTTP Infrastructure</td>
+      <td>Implementar infraestructura HTTP, assembler y endpoints.</td>
+      <td>6</td>
+      <td>Diana Pareja</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T22</td>
+      <td>Implement Vehicle Reactive Store</td>
+      <td>Implementar store reactivo con Angular Signals.</td>
+      <td>5</td>
+      <td>Diana Pareja</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T23</td>
+      <td>Implement Vehicle List, Form and Routing</td>
+      <td>Implementar lista, formulario y routing de Vehicle.</td>
+      <td>7</td>
+      <td>Diana Pareja</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US06</td>
+      <td rowspan="2">Registrar estudiante y vincularse como tutor</td>
+      <td>T24</td>
+      <td>Implement Student and Profile Domain</td>
+      <td>Implementar dominio y endpoints de estudiantes/perfiles.</td>
+      <td>N/R</td>
+      <td>Alejandro Díaz</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T25</td>
+      <td>Implement Student List and Form</td>
+      <td>Implementar lista y formulario de estudiantes e integración del contexto.</td>
+      <td>N/R</td>
+      <td>Alejandro Díaz</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US09</td>
+      <td rowspan="2">Activar la suscripción del conductor</td>
+      <td>T26</td>
+      <td>Implement Plans and Subscriptions Models</td>
+      <td>Implementar modelos y endpoints de Plans y Subscriptions en MockAPI.</td>
+      <td>N/R</td>
+      <td>Kevin Geronimo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T27</td>
+      <td>Implement Subscription Store and Views</td>
+      <td>Implementar store, listado de planes, formulario y listado de suscripciones.</td>
+      <td>N/R</td>
+      <td>Kevin Geronimo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US10</td>
+      <td rowspan="3">Crear una ruta con sus paradas</td>
+      <td>T28</td>
+      <td>Define Route Model and MockAPI Infrastructure</td>
+      <td>Definir modelo Route e infraestructura MockAPI.</td>
+      <td>5</td>
+      <td>Leonardo Lino</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T29</td>
+      <td>Implement Route Reactive Store</td>
+      <td>Implementar store reactivo y acceso a datos de rutas.</td>
+      <td>6</td>
+      <td>Leonardo Lino</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T30</td>
+      <td>Implement Route List, Form and Routing</td>
+      <td>Implementar Route List, Route Form y routing.</td>
+      <td>6</td>
+      <td>Leonardo Lino</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US24</td>
+      <td rowspan="3">Registrar una incidencia</td>
+      <td>T31</td>
+      <td>Define Incident and Delay Entities</td>
+      <td>Definir entidades y contratos de Incident / Delay.</td>
+      <td>5</td>
+      <td>Alexandra Meza</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T32</td>
+      <td>Implement Incident API and Store</td>
+      <td>Implementar API/store para incidencias y retrasos.</td>
+      <td>5</td>
+      <td>Alexandra Meza</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T33</td>
+      <td>Implement Incident Forms and Quick Actions</td>
+      <td>Implementar formularios y Quick Actions.</td>
+      <td>6</td>
+      <td>Alexandra Meza</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US29</td>
+      <td rowspan="2">Configurar las preferencias de notificación</td>
+      <td>T34</td>
+      <td>Implement Notification Models and API</td>
+      <td>Implementar modelos y API de Notifications / Settings.</td>
+      <td>4</td>
+      <td>Alexandra Meza</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T35</td>
+      <td>Implement Notification Store and Dashboard</td>
+      <td>Implementar store y dashboard de notificaciones.</td>
+      <td>6</td>
+      <td>Alexandra Meza</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Integración general del Sprint</td>
+      <td>T36</td>
+      <td>Integrate Bounded Contexts and Configure CI</td>
+      <td>Integrar Bounded Contexts, corregir routing/i18n/HttpClient y agregar CI de build.</td>
+      <td>N/R</td>
+      <td>Leonardo Lino</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-El repositorio `frontend-web-application` conserva evidencia de implementación por ramas, autores y merges.
+En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 2, orientado principalmente a la implementación de la primera versión integrada del Frontend Web Application de la plataforma Rumbo. Asimismo, se documenta mediante commits el desarrollo de las Fake REST APIs, que permiten al frontend consumir y gestionar datos simulados mediante operaciones HTTP, mientras se encuentra pendiente la implementación del backend.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body / alcance | Committed on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body / alcance | Committed on (Date) |
 |---|---|---|---|---|---|
-| `frontend-web-application` | `feature/vehicle-credential-management` | `2363ba3` | feat(vehicles): add vehicle domain entity with getters and setters | Entidad de dominio Vehicle. | 06/10/2026 |
-| `frontend-web-application` | `feature/vehicle-credential-management` | `9377ef3` | feat(vehicles): implement vehicles infrastructure with endpoint, assembler and response types | Infraestructura REST emulada. | 06/10/2026 |
-| `frontend-web-application` | `feature/vehicle-credential-management` | `838a86d` | feat(vehicles): add vehicle list, form components and child routing | CRUD UI y rutas del contexto. | 06/10/2026 |
-| `frontend-web-application` | `feature/vehicle-credential-management` | `8f7def8` | feat(vehicles): point vehicles endpoint to mockapi cloud service | Conexión del recurso Vehicles a MockAPI. | 06/10/2026 |
-| `frontend-web-application` | `feature/profiles-and-relationship-management` | `504e9f1` | feat: add profiles and relationship management endpoints | Endpoints del contexto. | 06/10/2026 |
-| `frontend-web-application` | `feature/profiles-and-relationship-management` | `8131857` | feat: add profiles and relationship management application | Integración de la aplicación del contexto. | 06/10/2026 |
-| `frontend-web-application` | `feature/subscriptions-and-billing` | `9d6dd7c` | feat: add subscriptions and billing CRUD with MockAPI | CRUD de planes y suscripciones conectado a MockAPI. | 06/10/2026 |
-| `frontend-web-application` | `feature/route-trip-planning` | `082e0cd` | feat(route-trip-planning): add domain and MockAPI infrastructure | Dominio e infraestructura de rutas. | 06/10/2026 |
-| `frontend-web-application` | `feature/route-trip-planning` | `c98c377` | feat(route-trip-planning): add reactive route store | Estado reactivo para rutas. | 06/10/2026 |
-| `frontend-web-application` | `feature/route-trip-planning` | `e9e46b8` | feat(route-trip-planning): add route CRUD views | Vistas CRUD de rutas. | 06/10/2026 |
-| `frontend-web-application` | `feature/alerting-and-incident-management` | `6b4e4f3` | feat(alerting): add alerting store and related components | Store y componentes de alertas. | 05/10/2026 |
-| `frontend-web-application` | `feature/alerting-and-incident-management` | `e14be45` | feat(incidents): add incidents and delays registration components | Formularios de incidencias y retrasos. | 06/10/2026 |
-| `frontend-web-application` | `develop` | `2522fe3` | merge: preserve feature branch history for TB1 integration | Preserva historial de Route & Trip Planning durante la integración. | 06/10/2026 |
-| `frontend-web-application` | `develop` | `fca70db` | merge: integrate TB1 frontend CRUD bounded contexts | Integración de CRUDs y correcciones compartidas. | 06/10/2026 |
-| `frontend-web-application` | `develop` | `27ce0a3` | feat(alerting): implement notification settings endpoint | Completa el endpoint de settings utilizado por Alerting. | 06/10/2026 |
-
-Pull Requests relevantes:
-
-- PR #5: `feature/alerting-and-incident-management → develop`.
-- PR #6: `feature/vehicle-credential-management → develop`.
-- PR #7: integración de CRUDs TB1 mediante `fix/tb1-integration-complete → develop`.
-- PR #8: integración de Route & Trip Planning preservando la historia de la feature.
+| `AIpaca-OS/frontend-web-application` | `feature/vehicle-credential-management` | `2363ba3` | feat(vehicles): add vehicle domain entity with getters and setters | Entidad de dominio Vehicle. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/vehicle-credential-management` | `9377ef3` | feat(vehicles): implement vehicles infrastructure with endpoint, assembler and response types | Infraestructura REST emulada. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/vehicle-credential-management` | `838a86d` | feat(vehicles): add vehicle list, form components and child routing | CRUD UI y rutas del contexto. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/vehicle-credential-management` | `8f7def8` | feat(vehicles): point vehicles endpoint to mockapi cloud service | Conexión del recurso Vehicles a MockAPI. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/profiles-and-relationship-management` | `504e9f1` | feat: add profiles and relationship management endpoints | Endpoints del contexto. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/profiles-and-relationship-management` | `8131857` | feat: add profiles and relationship management application | Integración de la aplicación del contexto. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/subscriptions-and-billing` | `9d6dd7c` | feat: add subscriptions and billing CRUD with MockAPI | CRUD de planes y suscripciones conectado a MockAPI. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/route-trip-planning` | `082e0cd` | feat(route-trip-planning): add domain and MockAPI infrastructure | Dominio e infraestructura de rutas. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/route-trip-planning` | `c98c377` | feat(route-trip-planning): add reactive route store | Estado reactivo para rutas. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/route-trip-planning` | `e9e46b8` | feat(route-trip-planning): add route CRUD views | Vistas CRUD de rutas. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/alerting-and-incident-management` | `6b4e4f3` | feat(alerting): add alerting store and related components | Store y componentes de alertas. | 05/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `feature/alerting-and-incident-management` | `e14be45` | feat(incidents): add incidents and delays registration components | Formularios de incidencias y retrasos. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `develop` | `2522fe3` | merge: preserve feature branch history for TB1 integration | Preserva historial de Route & Trip Planning durante la integración. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `develop` | `fca70db` | merge: integrate TB1 frontend CRUD bounded contexts | Integración de CRUDs y correcciones compartidas. | 06/10/2026 |
+| `AIpaca-OS/frontend-web-application` | `develop` | `27ce0a3` | feat(alerting): implement notification settings endpoint | Completa el endpoint de settings utilizado por Alerting. | 06/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-La primera integración se realizó en `develop` y después se fusionó a `main` para su publicación. A continuación se presentan capturas de las principales vistas implementadas durante Sprint 2:
+A continuación, se presenta la URL pública del Frontend Web Application desplegado, junto con capturas de pantalla que evidencian las principales vistas implementadas durante el Sprint 2, organizadas según los Bounded Contexts de la plataforma Rumbo. Estas evidencias permiten visualizar la primera versión funcional de la aplicación y verificar los avances alcanzados durante el sprint.
 
-1. **Vehicle & Credential Management:** listado, creación y edición de vehículos.
-2. **Profiles & Relationship Management:** listado y formulario de estudiantes.
-3. **Route & Trip Planning:** listado y formulario CRUD de rutas.
-4. **Alerting & Incident Management:** dashboard de notificaciones, configuración y formularios de incidentes/retrasos.
-5. **Subscriptions & Billing:** planes, formulario de suscripción y listado de suscripciones.
-6. **Responsive Web Design:** al menos una vista representativa en Mobile.
+**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application/home
 
-**Vehicle & Credential Management**
+**URL pública del Repositorio del Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
 
-La siguiente evidencia muestra la vista implementada para la gestión de vehículos dentro del Frontend.
+
+### Vehicle & Credential Management
+
+La siguiente evidencia muestra la vista implementada para la gestión de vehículos dentro del Frontend el cual incluye la visualización, creación y edición de vehículos.
 
 <div align="center">
   <img src="./assets/chapter5/execution-vehicles.png" alt="Execution Evidence - Vehicle Management" width="95%">
 </div>
-**Profiles & Relationship Management**
 
-La siguiente evidencia muestra la vista implementada para la gestión de estudiantes dentro del Frontend.
+<div align="center">
+  <img src="./assets/chapter5/execution-vehicles-new.png" alt="Execution Evidence - Add new vehicle" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-vehicles-edit.png" alt="Execution Evidence - Edit vehicle information" width="95%">
+</div>
+
+### Profiles & Relationship Management
+
+La siguiente evidencia muestra la vista implementada para la gestión de estudiantes dentro del Frontend el cual incluye el listado y el formulario de registro de estudiantes.
 
 <div align="center">
   <img src="./assets/chapter5/execution-students.png" alt="Execution Evidence - Student Management" width="95%">
 </div>
-**Route & Trip Planning**
 
-La siguiente evidencia muestra la vista implementada para la gestión de rutas dentro del Frontend.
+<div align="center">
+  <img src="./assets/chapter5/execution-students-new.png" alt="Execution Evidence - Add new student" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-students-edit.png" alt="Execution Evidence - Edit student information" width="95%">
+</div>
+
+### Route & Trip Planning
+
+La siguiente evidencia muestra la vista implementada para la gestión de rutas dentro del Frontend el cual incluye el listado y el formulario CRUD de rutas.
 
 <div align="center">
   <img src="./assets/chapter5/execution-routes.png" alt="Execution Evidence - Route Management" width="95%">
 </div>
-**Alerting & Incident Management**
 
-La siguiente evidencia corresponde a una vista operativa del contexto de alertas e incidencias implementado en el Frontend.
+<div align="center">
+  <img src="./assets/chapter5/execution-routes-new.png" alt="Execution Evidence - Add new student route" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-routes-edit.png" alt="Execution Evidence - Edit route information" width="95%">
+</div>
+
+### Alerting & Incident Management
+
+La siguiente evidencia corresponde a una vista operativa del contexto de alertas e incidencias implementado en el Frontend el cual incluye los formularios de registro de incidentes y retrasos.
 
 <div align="center">
   <img src="./assets/chapter5/execution-operations.png" alt="Execution Evidence - Alerting and Incident Operations" width="95%">
 </div>
 
-**Subscriptions & Billing**
+<div align="center">
+  <img src="./assets/chapter5/execution-operations-delay.png" alt="Execution Evidence - Registro de un retraso" width="95%">
+</div>
 
-La siguiente evidencia muestra la vista implementada para la gestión de suscripciones dentro del Frontend.
+<div align="center">
+  <img src="./assets/chapter5/execution-operations-incident.png" alt="Execution Evidence - Registro de un incidente" width="95%">
+</div>
+
+### Notifications Management
+
+La siguiente evidencia corresponde a una vista operativa para la gestión de notificaciones implementado en el Frontend el cual incluye dashboard de notificaciones y configuración.
+
+<div align="center">
+  <img src="./assets/chapter5/execution-notifications.png" alt="Execution Evidence - Notifications" width="95%">
+</div>
+
+### Subscriptions & Billing
+
+La siguiente evidencia muestra la vista implementada para la gestión de suscripciones dentro del Frontend el cual incluye el formulario de suscripción y el listado de suscripciones.
 
 <div align="center">
   <img src="./assets/chapter5/execution-subscriptions.png" alt="Execution Evidence - Subscriptions and Billing" width="95%">
 </div>
-<!-- PENDIENTE IMAGEN C5-S2-08: Una vista representativa en Mobile. -->
 
-**Video de navegación del Sprint 2:** debe mostrar las principales rutas del Frontend y operaciones CRUD incluidas en el Sprint.
+<div align="center">
+  <img src="./assets/chapter5/execution-subscriptions-plan.png" alt="Execution Evidence - Plan de suscripción actual" width="95%">
+</div>
+
+Adicionalmente, se presenta la evidencia de la nueva sección incorporada en la Landing Page, cuya finalidad es mostrar una vista previa de las principales funcionalidades del Frontend Web Application.
+
+**URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page/
+
+**URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
+
+
+<div align="center">
+  <img src="./assets/chapter5/execution-landing-presentation1.png" alt="Execution Evidence - Nueva sección de presentación de la aplicación en la Landing Page" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-landing-presentation2.png" alt="Execution Evidence - Nueva sección de presentación de la aplicación en la Landing Page" width="95%">
+</div>
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Sprint 2 utilizó **Fake REST APIs** para probar los formularios y las operaciones CRUD del Frontend. Esta evidencia corresponde al consumo de servicios simulados, no a un backend desarrollado en Spring Boot.
+Durante el Sprint 2 se implementaron **Fake REST APIs** utilizando **MockAPI** como herramienta para simular la persistencia de datos y los servicios del backend. Esta solución permitió publicar los diferentes endpoints REST y facilitar su consumo desde la aplicación web de Rumbo, posibilitando la integración y prueba de las operaciones de gestión de datos.
 
-La configuración de producción revisada en el repositorio `frontend-web-application` (archivo `src/environments/environment.ts`, integrado en `main` el 07/10/2026) registra las siguientes rutas:
+A continuación, se presenta la documentación de los endpoints implementados, detallando sus métodos HTTP, sintaxis de llamada, parámetros, ejemplos de solicitudes y respuestas, así como la descripción de las operaciones disponibles.
 
-| Recurso | Endpoint configurado en el Frontend | Tipo |
-|---|---|---|
-| Vehicles | `https://6ac59b2c54a61668c5f745e7.mockapi.io/api/v1/vehicles` | MockAPI |
-| Routes | `https://6ac5a99754a61668c5f74d74.mockapi.io/api/v1/routes` | MockAPI |
-| Plans | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/plans` | MockAPI |
-| Subscriptions | `https://6ac54a6d54a61668c5f7141c.mockapi.io/api/v1/subscriptions` | MockAPI |
-| Students | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/students` | MockAPI |
-| Profiles | `https://6ac53c3d54a61668c5f700f2.mockapi.io/api/v1/profiles` | MockAPI |
-| Tutor-student relationships | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/tutor-student-relationships` | MockAPI |
-| Data-deletion requests | `https://6ac54f4854a61668c5f718ab.mockapi.io/api/v1/data-deletion-requests` | MockAPI |
-| Notifications | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notifications` | MockAPI |
-| Notification settings | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/notificationSettings` | MockAPI |
-| Incidents | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/incidents` | MockAPI |
-| Delays | `https://6a4ec144e785c9ef536d1e99.mockapi.io/api/v1/delays` | MockAPI |
+### Notifications
 
-El repositorio conserva además `server/db.json` y `server/routes.json` para ejecutar JSON Server local durante el desarrollo. La tabla anterior documenta la configuración integrada en `main`; no acredita, por sí sola, que cada recurso esté disponible o que todas las operaciones hayan superado pruebas funcionales.
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|--|--|---|
+| `/api/v1/notifications` | POST | Crear una nueva notificación | `POST /api/v1/notifications` | Ninguno | `json {"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"","read":false,"routeId":10,"studentId":25}` | `json {"id":1,"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"","read":false,"routeId":10,"studentId":25}` | Crea una nueva notificación y devuelve la información registrada, incluyendo el identificador asignado. |
+| `/api/v1/notifications/{id}` | GET | Obtener una notificación por ID | `GET /api/v1/notifications/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"","read":false,"routeId":10,"studentId":25}` | Devuelve la información detallada de una notificación específica. |
+| `/api/v1/notifications` | GET | Obtener todas las notificaciones | `GET /api/v1/notifications` | Ninguno | N/A (No requiere body) | `json [{"id":1,"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"","read":false,"routeId":10,"studentId":25}]` | Devuelve una colección con las notificaciones registradas en el servicio. |
+| `/api/v1/notifications/{id}` | PUT | Actualizar una notificación existente | `PUT /api/v1/notifications/{id}` | `id` | `json {"id":1,"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"2026-09-22T08:45:00.000Z","read":true,"routeId":10,"studentId":25}` | `json {"id":1,"type":"delay","priority":"high","title":"Route delay","message":"The vehicle is running late.","createdAt":"2026-09-22T08:30:00.000Z","readAt":"2026-09-22T08:45:00.000Z","read":true,"routeId":10,"studentId":25}` | Actualiza la información de una notificación específica y devuelve los datos modificados. |
+| `/api/v1/notifications/{id}` | DELETE | Eliminar una notificación | `DELETE /api/v1/notifications/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la notificación asociada al identificador especificado. |
 
-**Pendiente para cerrar la evidencia:** incorporar capturas reales de las operaciones HTTP que se probaron, con método, recurso, código de respuesta y resultado visible en el Frontend. La documentación de la API propia que se construya en AV2 se registrará en la sección 5.2.3.6, sin reescribir retrospectivamente Sprint 2 como un Sprint con Web Services propios.
+
+
+### Delays
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/delays` | POST | Crear un nuevo retraso | `POST /api/v1/delays` | Ninguno | `json {"cause":"Traffic congestion","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}` | `json {"id":1,"cause":"Traffic congestion","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}` | Registra un nuevo retraso y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/delays/{id}` | GET | Obtener un retraso por ID | `GET /api/v1/delays/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"cause":"Traffic congestion","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}` | Devuelve la información detallada de un retraso específico. |
+| `/api/v1/delays` | GET | Obtener todos los retrasos | `GET /api/v1/delays` | Ninguno | N/A (No requiere body) | `json [{"id":1,"cause":"Traffic congestion","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}]` | Devuelve una colección de los retrasos registrados en el servicio. |
+| `/api/v1/delays/{id}` | PUT | Actualizar un retraso existente | `PUT /api/v1/delays/{id}` | `id` | `json {"id":1,"cause":"Road accident","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}` | `json {"id":1,"cause":"Road accident","priority":"high","magnitude":"major","studentIds":[10,11],"createdAt":"2026-09-22T08:30:00.000Z"}` | Actualiza la información del retraso y devuelve los datos modificados. |
+| `/api/v1/delays/{id}` | DELETE | Eliminar un retraso | `DELETE /api/v1/delays/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina el retraso asociado al identificador especificado. |
+
+
+
+### Incidents
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/incidents` | POST | Crear una nueva incidencia | `POST /api/v1/incidents` | Ninguno | `json {"title":"Vehicle breakdown","message":"The vehicle stopped during the route.","priority":"high","studentIds":[10,11],"resolved":false,"resolvedAt":"","createdAt":"2026-09-22T08:30:00.000Z"}` | `json {"id":1,"title":"Vehicle breakdown","message":"The vehicle stopped during the route.","priority":"high","studentIds":[10,11],"resolved":false,"resolvedAt":"","createdAt":"2026-09-22T08:30:00.000Z"}` | Registra una nueva incidencia y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/incidents/{id}` | GET | Obtener una incidencia por ID | `GET /api/v1/incidents/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"title":"Vehicle breakdown","message":"The vehicle stopped during the route.","priority":"high","studentIds":[10,11],"resolved":false,"resolvedAt":"","createdAt":"2026-09-22T08:30:00.000Z"}` | Devuelve la información detallada de una incidencia específica. |
+| `/api/v1/incidents` | GET | Obtener todas las incidencias | `GET /api/v1/incidents` | Ninguno | N/A (No requiere body) | `json [{"id":1,"title":"Vehicle breakdown","message":"The vehicle stopped during the route.","priority":"high","studentIds":[10,11],"resolved":false,"resolvedAt":"","createdAt":"2026-09-22T08:30:00.000Z"}]` | Devuelve una colección de las incidencias registradas en el servicio. |
+| `/api/v1/incidents/{id}` | PUT | Actualizar una incidencia existente | `PUT /api/v1/incidents/{id}` | `id` | `json {"id":1,"title":"Vehicle breakdown","message":"The vehicle has been repaired.","priority":"high","studentIds":[10,11],"resolved":true,"resolvedAt":"2026-09-22T09:30:00.000Z","createdAt":"2026-09-22T08:30:00.000Z"}` | `json {"id":1,"title":"Vehicle breakdown","message":"The vehicle has been repaired.","priority":"high","studentIds":[10,11],"resolved":true,"resolvedAt":"2026-09-22T09:30:00.000Z","createdAt":"2026-09-22T08:30:00.000Z"}` | Actualiza la información de una incidencia y devuelve los datos modificados, incluyendo su estado de resolución. |
+| `/api/v1/incidents/{id}` | DELETE | Eliminar una incidencia | `DELETE /api/v1/incidents/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la incidencia asociada al identificador especificado. |
+
+
+
+### Vehicles
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/vehicles` | POST | Registrar un vehículo | `POST /api/v1/vehicles` | Ninguno | `json {"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"active"}` | `json {"id":1,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"active"}` | Registra un vehículo y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/vehicles/{id}` | GET | Obtener un vehículo por ID | `GET /api/v1/vehicles/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"active"}` | Devuelve la información detallada del vehículo solicitado. |
+| `/api/v1/vehicles` | GET | Obtener todos los vehículos | `GET /api/v1/vehicles` | Ninguno | N/A (No requiere body) | `json [{"id":1,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"active"}]` | Devuelve una colección de los vehículos registrados en el servicio. |
+| `/api/v1/vehicles/{id}` | PUT | Actualizar un vehículo existente | `PUT /api/v1/vehicles/{id}` | `id` | `json {"id":1,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":18,"year":2023,"status":"active"}` | `json {"id":1,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":18,"year":2023,"status":"active"}` | Actualiza la información del vehículo y devuelve los datos modificados. |
+| `/api/v1/vehicles/{id}` | DELETE | Eliminar un vehículo | `DELETE /api/v1/vehicles/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina el vehículo asociado al identificador especificado. |
+
+
+
+### Plans
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/plans` | POST | Crear un nuevo plan | `POST /api/v1/plans` | Ninguno | `json {"name":"Premium","description":"Full access to platform services.","referencePrice":150,"active":true}` | `json {"id":1,"name":"Premium","description":"Full access to platform services.","referencePrice":150,"active":true}` | Registra un nuevo plan y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/plans/{id}` | GET | Obtener un plan por ID | `GET /api/v1/plans/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"name":"Premium","description":"Full access to platform services.","referencePrice":150,"active":true}` | Devuelve la información detallada de un plan específico. |
+| `/api/v1/plans` | GET | Obtener todos los planes | `GET /api/v1/plans` | Ninguno | N/A (No requiere body) | `json [{"id":1,"name":"Premium","description":"Full access to platform services.","referencePrice":150,"active":true}]` | Devuelve una colección con los planes registrados en el servicio. |
+| `/api/v1/plans/{id}` | PUT | Actualizar un plan existente | `PUT /api/v1/plans/{id}` | `id` | `json {"id":1,"name":"Basic","description":"Access to basic platform services.","referencePrice":100,"active":true}` | `json {"id":1,"name":"Basic","description":"Access to basic platform services.","referencePrice":100,"active":true}` | Actualiza la información de un plan específico y devuelve los datos modificados. |
+| `/api/v1/plans/{id}` | DELETE | Eliminar un plan | `DELETE /api/v1/plans/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina el plan asociado al identificador especificado. |
+
+
+
+### Suscriptions
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/subscriptions` | POST | Crear una nueva suscripción | `POST /api/v1/subscriptions` | Ninguno | `json {"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"paid","paymentAmount":150}` | `json {"id":1,"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"paid","paymentAmount":150}` | Registra una nueva suscripción y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/subscriptions/{id}` | GET | Obtener una suscripción por ID | `GET /api/v1/subscriptions/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"paid","paymentAmount":150}` | Devuelve la información detallada de una suscripción específica. |
+| `/api/v1/subscriptions` | GET | Obtener todas las suscripciones | `GET /api/v1/subscriptions` | Ninguno | N/A (No requiere body) | `json [{"id":1,"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"paid","paymentAmount":150}]` | Devuelve una colección con las suscripciones registradas en el servicio. |
+| `/api/v1/subscriptions/{id}` | PUT | Actualizar una suscripción existente | `PUT /api/v1/subscriptions/{id}` | `id` | `json {"id":1,"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"pending","paymentAmount":150}` | `json {"id":1,"driverId":"DRV-001","planId":"1","status":"active","startDate":"2026-09-22","paymentStatus":"pending","paymentAmount":150}` | Actualiza la información de una suscripción específica y devuelve los datos modificados. |
+| `/api/v1/subscriptions/{id}` | DELETE | Eliminar una suscripción | `DELETE /api/v1/subscriptions/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la suscripción asociada al identificador especificado. |
+
+
+
+### Routes
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/routes` | POST | Crear una nueva ruta | `POST /api/v1/routes` | Ninguno | `json {"name":"Morning Route","code":"R-001","departureTime":"07:00","status":"active","stopsCount":12}` | `json {"id":1,"name":"Morning Route","code":"R-001","departureTime":"07:00","status":"active","stopsCount":12}` | Registra una nueva ruta y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/routes/{id}` | GET | Obtener una ruta por ID | `GET /api/v1/routes/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"name":"Morning Route","code":"R-001","departureTime":"07:00","status":"active","stopsCount":12}` | Devuelve la información detallada de una ruta específica. |
+| `/api/v1/routes` | GET | Obtener todas las rutas | `GET /api/v1/routes` | Ninguno | N/A (No requiere body) | `json [{"id":1,"name":"Morning Route","code":"R-001","departureTime":"07:00","status":"active","stopsCount":12}]` | Devuelve una colección con las rutas registradas en el servicio. |
+| `/api/v1/routes/{id}` | PUT | Actualizar una ruta existente | `PUT /api/v1/routes/{id}` | `id` | `json {"id":1,"name":"Updated Morning Route","code":"R-001","departureTime":"07:15","status":"active","stopsCount":14}` | `json {"id":1,"name":"Updated Morning Route","code":"R-001","departureTime":"07:15","status":"active","stopsCount":14}` | Actualiza la información de una ruta específica y devuelve los datos modificados. |
+| `/api/v1/routes/{id}` | DELETE | Eliminar una ruta | `DELETE /api/v1/routes/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la ruta asociada al identificador especificado. |
+
+
+
+### Deletion Requests
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/data-deletion-requests` | POST | Crear una solicitud de eliminación de datos | `POST /api/v1/data-deletion-requests` | Ninguno | `json {"studentId":25,"requestedByTutorId":10,"status":"PENDING","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":null}` | `json {"id":1,"studentId":25,"requestedByTutorId":10,"status":"PENDING","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":null}` | Registra una nueva solicitud de eliminación de datos personales de un estudiante y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/data-deletion-requests/{id}` | GET | Obtener una solicitud por ID | `GET /api/v1/data-deletion-requests/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"studentId":25,"requestedByTutorId":10,"status":"PENDING","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":null}` | Devuelve la información detallada de una solicitud de eliminación específica. |
+| `/api/v1/data-deletion-requests` | GET | Obtener todas las solicitudes de eliminación | `GET /api/v1/data-deletion-requests` | Ninguno | N/A (No requiere body) | `json [{"id":1,"studentId":25,"requestedByTutorId":10,"status":"PENDING","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":null}]` | Devuelve una colección de las solicitudes de eliminación registradas en el servicio. |
+| `/api/v1/data-deletion-requests/{id}` | PUT | Actualizar una solicitud de eliminación | `PUT /api/v1/data-deletion-requests/{id}` | `id` | `json {"id":1,"studentId":25,"requestedByTutorId":10,"status":"APPROVED","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":"2026-09-23T10:00:00.000Z"}` | `json {"id":1,"studentId":25,"requestedByTutorId":10,"status":"APPROVED","requestedAt":"2026-09-22T08:30:00.000Z","resolvedAt":"2026-09-23T10:00:00.000Z"}` | Actualiza el estado de una solicitud y devuelve los datos modificados, incluyendo la fecha de resolución. |
+| `/api/v1/data-deletion-requests/{id}` | DELETE | Eliminar una solicitud de eliminación | `DELETE /api/v1/data-deletion-requests/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la solicitud de eliminación asociada al identificador especificado. |
+
+
+
+### Profiles
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/profiles` | POST | Crear un perfil de tutor o conductor | `POST /api/v1/profiles` | Ninguno | `json {"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"987654321","profileType":"DRIVER"}` | `json {"id":1,"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"987654321","profileType":"DRIVER"}` | Registra un nuevo perfil y devuelve la información creada, incluyendo su identificador y tipo de perfil. |
+| `/api/v1/profiles/{id}` | GET | Obtener un perfil por ID | `GET /api/v1/profiles/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"987654321","profileType":"DRIVER"}` | Devuelve la información detallada del perfil solicitado, que puede corresponder a un tutor o conductor. |
+| `/api/v1/profiles` | GET | Obtener todos los perfiles | `GET /api/v1/profiles` | Ninguno | N/A (No requiere body) | `json [{"id":1,"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"987654321","profileType":"DRIVER"},{"id":2,"accountId":102,"firstName":"Ana","lastName":"Torres","phoneNumber":"987654321","profileType":"TUTOR"}]` | Devuelve una colección de perfiles registrados, incluyendo tutores y conductores. |
+| `/api/v1/profiles/{id}` | PUT | Actualizar un perfil existente | `PUT /api/v1/profiles/{id}` | `id` | `json {"id":1,"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"999888777","profileType":"DRIVER"}` | `json {"id":1,"accountId":101,"firstName":"Carlos","lastName":"Ramirez","phoneNumber":"999888777","profileType":"DRIVER"}` | Actualiza la información del perfil y devuelve los datos modificados. |
+| `/api/v1/profiles/{id}` | DELETE | Eliminar un perfil | `DELETE /api/v1/profiles/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina el perfil asociado al identificador especificado. |
+
+
+
+### Students
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/students` | POST | Registrar un estudiante | `POST /api/v1/students` | Ninguno | `json {"firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"ACTIVE"}` | `json {"id":"1","firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"ACTIVE"}` | Registra un nuevo estudiante y devuelve la información creada, incluyendo su identificador. |
+| `/api/v1/students/{id}` | GET | Obtener un estudiante por ID | `GET /api/v1/students/{id}` | `id` | N/A (No requiere body) | `json {"id":"1","firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"ACTIVE"}` | Devuelve la información detallada del estudiante solicitado. |
+| `/api/v1/students` | GET | Obtener todos los estudiantes | `GET /api/v1/students` | Ninguno | N/A (No requiere body) | `json [{"id":"1","firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"ACTIVE"}]` | Devuelve una colección con los estudiantes registrados en el servicio. |
+| `/api/v1/students/{id}` | PUT | Actualizar un estudiante existente | `PUT /api/v1/students/{id}` | `id` | `json {"id":"1","firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"INACTIVE"}` | `json {"id":"1","firstName":"Lucia","lastName":"Perez","birthDate":"2015-04-12","schoolName":"Colegio San Martin","status":"INACTIVE"}` | Actualiza la información del estudiante y devuelve los datos modificados, incluyendo su estado. |
+| `/api/v1/students/{id}` | DELETE | Eliminar un estudiante | `DELETE /api/v1/students/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina el estudiante asociado al identificador especificado. |
+
+
+
+### Relationships
+
+| Endpoint | Método HTTP | Acción implementada | Sintaxis de llamada | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+|---|---|---|---|---|---|---|---|
+| `/api/v1/tutor-student-relationships` | POST | Crear una relación entre tutor y estudiante | `POST /api/v1/tutor-student-relationships` | Ninguno | `json {"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":null}` | `json {"id":1,"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":null}` | Registra una nueva relación entre un tutor y un estudiante, incluyendo el tipo de parentesco y el estado de autorización. |
+| `/api/v1/tutor-student-relationships/{id}` | GET | Obtener una relación por ID | `GET /api/v1/tutor-student-relationships/{id}` | `id` | N/A (No requiere body) | `json {"id":1,"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":null}` | Devuelve la información detallada de una relación específica entre tutor y estudiante. |
+| `/api/v1/tutor-student-relationships` | GET | Obtener todas las relaciones | `GET /api/v1/tutor-student-relationships` | Ninguno | N/A (No requiere body) | `json [{"id":1,"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":null}]` | Devuelve una colección con las relaciones entre tutores y estudiantes registradas en el servicio. |
+| `/api/v1/tutor-student-relationships/{id}` | PUT | Actualizar una relación existente | `PUT /api/v1/tutor-student-relationships/{id}` | `id` | `json {"id":1,"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"REVOKED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":"2026-09-23T10:00:00.000Z"}` | `json {"id":1,"tutorId":10,"studentId":25,"relationshipType":"MOTHER","authorizationStatus":"REVOKED","authorizedAt":"2026-09-22T08:30:00.000Z","revokedAt":"2026-09-23T10:00:00.000Z"}` | Actualiza la información de la relación y devuelve los datos modificados, incluyendo el estado de autorización y la fecha de revocación. |
+| `/api/v1/tutor-student-relationships/{id}` | DELETE | Eliminar una relación | `DELETE /api/v1/tutor-student-relationships/{id}` | `id` | N/A (No requiere body) | N/A (No devuelve body) | Elimina la relación asociada al identificador especificado. |
+
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-La Landing Page cuenta con un historial de publicación en GitHub Pages. En el caso del Frontend, el repositorio registra el merge de `develop` hacia `main` mediante el PR #16 y un workflow de despliegue completado correctamente el **07/10/2026**. Esto corrige la anotación anterior, que indicaba que no se había integrado el Frontend a `main`.
+Al igual que la Landing Page, el Frontend Web Application de Rumbo fue desplegado mediante el servicio GitHub Pages. Para ello, primero se desarrolló el código fuente utilizando IntelliJ IDEA y se integraron los cambios realizados por los integrantes del equipo en el repositorio del Frontend Web Application, perteneciente a la organización AIpaca-OS. Una vez finalizada la implementación, los cambios fueron integrados en la rama principal (`main`) mediante un Pull Request desde la rama `develop`.
 
-- Pull Request de integración: https://github.com/AIpaca-OS/frontend-web-application/pull/16
-- Ejecución del workflow de despliegue: https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104
-- Ruta pública prevista del Frontend en GitHub Pages: https://aipaca-os.github.io/frontend-web-application/
-- Repositorio de la Landing Page: https://github.com/AIpaca-OS/landing-page
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-main.png" alt="Rama principal del Repositorio de Web Frontend Application" width="95%">
+</div>
 
-El workflow exitoso permite acreditar la generación y publicación de los archivos estáticos. Para completar la evidencia de ejecución deben comprobarse la apertura de la URL pública, la navegación entre módulos, el comportamiento responsive y las llamadas HTTP reales. Estas comprobaciones necesitan capturas o video de ejecución; no se dan por realizadas únicamente por el resultado del workflow.
 
-<!-- PENDIENTE S2-DEPLOY: captura del workflow exitoso, URL pública y prueba visual de rutas y CRUD. -->
+Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages del repositorio, seleccionando GitHub Actions como fuente de publicación. Para ello, se utilizó un flujo de trabajo automatizado (*workflow*) denominado `Deploy Frontend to GitHub Pages`, encargado de ejecutar el proceso de despliegue de la aplicación. De esta manera, GitHub Actions permitió automatizar la publicación del Frontend Web Application en GitHub Pages, dejándolo disponible mediante una URL pública para su acceso.
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-actions.png" alt="Sección actions del Repositorio de Web Frontend Application" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
+</div>
+
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 2 se evidencia con analíticos reales de GitHub. Se incorporan el resumen de actividad de Pulse y el Network Graph del repositorio; las evidencias adicionales de Contributors y Pull Requests se mantienen referenciadas para completar la revisión visual del Sprint:
+La colaboración durante el Sprint 2 se evidencia mediante las métricas de actividad registradas en el repositorio de GitHub del Frontend Web Application de Rumbo. Estas permiten identificar las contribuciones realizadas por cada integrante del equipo y visualizar el desarrollo de los distintos Bounded Contexts a través de los commits asociados a los cambios implementados. Para ello, se presentan el resumen de actividad de Pulse, Contributors y el Network Graph del repositorio.
 
 - Commits: https://github.com/AIpaca-OS/frontend-web-application/commits/develop
 - Contributors: https://github.com/AIpaca-OS/frontend-web-application/graphs/contributors
 - Network: https://github.com/AIpaca-OS/frontend-web-application/network
 - Pull Requests: https://github.com/AIpaca-OS/frontend-web-application/pulls?q=is%3Apr+is%3Aclosed
 
-La evidencia del repositorio permite identificar contribuciones de los cinco integrantes en las ramas y commits del Sprint, además de los merges de integración mediante Pull Requests.
-
-**Pulse — resumen de colaboración**
+### Pulse Overview
 
 La siguiente captura muestra el resumen de actividad reciente del repositorio durante el periodo de trabajo del Sprint.
 
 <div align="center">
   <img src="./assets/chapter5/collaboration-pulse.png" alt="Team Collaboration Insights - GitHub Pulse" width="95%">
 </div>
-<!-- PENDIENTE IMAGEN C5-S2-17: Contributors del Frontend. -->
-**Network Graph — trazabilidad de ramas e integración**
+
+### Contributors
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2-contributors2.png" alt="Team Collaboration Insights - Github Contributors 1" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2-contributors1.png" alt="Team Collaboration Insights - Github Contributors 2" width="95%">
+</div>
+
+### Network Graph
 
 Las siguientes capturas muestran el Network Graph utilizado como evidencia de la creación de ramas, evolución de commits e integración del trabajo del equipo durante el Sprint.
 
@@ -2653,61 +3018,82 @@ Las siguientes capturas muestran el Network Graph utilizado como evidencia de la
   <img src="./assets/chapter5/network-5.png" alt="Frontend Network Graph - Evidence 5" width="95%"><br><br>
   <img src="./assets/chapter5/network-6.png" alt="Frontend Network Graph - Evidence 6" width="95%">
 </div>
-<!-- PENDIENTE IMAGEN C5-S2-19: Pull Requests #5, #6, #7 y #8 cerrados/merged. -->
 
+Además, se presentan las métricas de GitHub correspondientes a la implementación de la nueva sección de la Landing Page. En este caso, los registros de actividad muestran únicamente las contribuciones del usuario `qebim`, debido a que la implementación de esta sección, destinada a presentar visualmente las principales vistas del Frontend Web Application, tuvo un alcance reducido y requirió una cantidad limitada de cambios en el código.
 
+### Pulse Overview
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2-landing-pulse.png" alt="Team Collaboration Insights - GitHub Landing Pulse" width="95%">
+</div>
+
+### Contributors
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2-landing-contributors.png" alt="Team Collaboration Insights - Github Landing Contributors" width="95%">
+</div>
 
 
 ### 5.2.3. Sprint 3
 
-La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de AV2 articula tres productos: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. Las decisiones técnicas se sustentan en el dominio del transporte escolar y en las User Stories, no únicamente en la cantidad de tablas del modelo relacional.
-
-El diseño de datos y las operaciones HTTP se presentan a continuación como referencia técnica del Sprint. El registro de ejecución distingue el trabajo documentado en GitHub de las pruebas y publicaciones que deben tener su propia evidencia. Esta distinción permite conservar un informe coherente sin atribuir al equipo resultados que aún no estén sustentados.
+La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
 
 #### 5.2.3.1. Sprint Planning 3
 
-La planificación de Sprint 3 considera el tablero Jira RMO y la distribución actual de cuatro integrantes. Su alcance prioriza la planificación de rutas, la gestión de estudiantes, la facturación y las notificaciones. Las funciones del dominio de vehículos se limitan a las referencias esenciales que necesita la planificación de rutas; no se incorpora un CRUD de vehículos como compromiso de este Sprint.
+En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, facturación y notificaciones, así como avanzar en la implementación de una parte del backend.Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
 
-| Campo | Registro del Sprint 3 |
-|---|---|
-| Sprint # | Sprint 3 |
-| Sprint Planning Background | Integración progresiva de la aplicación web con Web Services propios, nuevas versiones de los productos públicos y validación del uso de Rumbo. |
-| Sprint period | 2026-10-25 – 2026-11-12 (fechas del Sprint activo en Jira) |
-| Date | <!-- AV2: fecha real de la reunión de planificación --> |
-| Time | <!-- AV2: horario real --> |
-| Location | <!-- AV2: enlace o lugar de reunión --> |
-| Prepared By | <!-- AV2: responsable del acta --> |
-| Attendees | <!-- AV2: asistentes confirmados --> |
-| Sprint 2 Review Summary | Primera integración de módulos CRUD del Frontend Angular con Fake REST APIs, documentada en 5.2.2. |
-| Sprint 2 Retrospective Summary | <!-- AV2: acuerdos reales de la retrospectiva --> |
-| Sprint 3 Goal — Outcome | Permitir que el conductor configure rutas con paradas ordenadas, horarios y asignaciones de estudiantes mediante la aplicación y el RESTful API. |
-| Sprint 3 Goal — Impact | Mantener la configuración de rutas de forma persistente y facilitar su verificación mediante contratos de servicio documentados y escenarios de aceptación. |
-| Sprint 3 Goal — Customer | Conductores y operadores de movilidad escolar que organizan los traslados. |
-| Sprint 3 Goal — Event | Resultado esperado para la Sprint Review 3 del hito AV2. |
-| Sprint 3 Velocity | Pendiente de cálculo al cierre; el Sprint sigue en curso. Al corte 2026-11-02: 0/52 Story Points en Done. |
-| Sum of Story Points | 52 Story Points en las 11 historias del Sprint activo consultadas en Jira. |
-
-La comprobación del Sprint Goal se realizará sobre escenarios funcionales que permitan operar los recursos del negocio desde la aplicación y consultar sus respuestas a través del RESTful API. La fecha y el acta de la reunión de planificación, la capacidad acordada y la retrospectiva deben completarse con la evidencia del equipo; el tablero consultado al 2026-11-02 muestra 4 historias En curso, 7 Por hacer y ninguna Done.
+<table>
+  <tbody>
+    <tr><th>Sprint #</th><td>Sprint 3</td></tr>
+    <tr><th colspan="2">Sprint Planning Background</th></tr>
+    <tr><td colspan="2">Integración progresiva de la aplicación web con Web Services propios, incorporación de nuevas versiones de los productos públicos y validación del uso de Rumbo.</td></tr>
+    <tr><th>Date</th><td>4/11/2026</td></tr>
+    <tr><th>Time</th><td>15:00 - 17:00</td></tr>
+    <tr><th>Location</th><td>Virtual, Google Meet</td></tr>
+    <tr><th>Prepared By</th><td>Lino Quispe, Leonardo Miguel</td></tr>
+    <tr><th>Attendees (to planning meeting)</th><td>Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile</td></tr>
+    <tr><th>Sprint 2 Review Summary</th><td>Durante el Sprint 2 se realizó la primera integración de los módulos CRUD del Frontend Angular con las Fake REST APIs, permitiendo gestionar los recursos de los distintos Bounded Contexts. Además, se desplegó la primera versión de la aplicación web de Rumbo.</td></tr>
+    <tr><th>Sprint 2 Retrospective Summary</th><td>Después del desarrollo del Sprint 2 se identificó la necesidad de mejorar la organización del equipo y la planificación del desarrollo del proyecto. Debido a que algunas actividades se realizaron con poco margen de tiempo, fue necesario optimizar los recursos disponibles, lo que llevó a reducir el alcance de ciertos aspectos, como la documentación, el diseño visual de la plataforma y algunas funcionalidades. Como medida de mejora, se propuso iniciar las actividades con mayor anticipación y distribuir la carga de trabajo de manera más eficiente, asegurando que todos los aspectos planificados reciban la atención necesaria.</td></tr>
+    <tr><th colspan="2">Sprint Goal &amp; User Stories</th></tr>
+    <tr><th>Sprint 3 Goal</th><td>Our focus is on enabling school transport drivers to configure routes with ordered stops, schedules, and student assignments through the web application and RESTful services. We believe this will provide persistent route configuration and facilitate its verification through documented service contracts and acceptance scenarios. This will be confirmed when the committed User Stories satisfy their Acceptance Criteria and the expected functionality is demonstrated during Sprint Review 3 for milestone.</td></tr>
+    <tr><th>Sprint 3 Velocity</th><td>35 Story Points</td></tr>
+    <tr><th>Sum of Story Points</th><td>52 Story Points</td></tr>
+  </tbody>
+</table>
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
-La matriz LACX refleja la distribución de responsabilidades comunicada para el Sprint 3. El liderazgo identifica al responsable de cada dominio; la colaboración específica se consignará cuando existan registros de revisión, Pull Requests o acuerdos del equipo.
+La matriz LACX refleja la distribución de responsabilidades establecida para el Sprint 3. En esta iteración, los aspectos considerados corresponden principalmente a los Bounded Context definidos para la plataforma Rumbo, con excepción de **Vehicle & Credential**, cuya gestión quedó reducida a referencias esenciales de **Routes &amp; Trip Planning** debido a la salida de uno de los integrantes del equipo. Asimismo, se incorporan otros aspectos complementarios necesarios para el cumplimiento de los objetivos del Sprint. A continuación, se presentan los aspectos considerados y los responsables asignados a cada uno.
 
-| Aspect / Bounded Context | Aspect Leader | Collaborators |
-|---|---|---|
-| Routes & Trip Planning | Lino Quispe, Leonardo Miguel (`linolw`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Students | Díaz Ramírez, Alejandro (`aleedr`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Billing | Geronimo Puma, Kevin Joel (`qebim18`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-| Notifications | Meza Soza, Alexandra Yamile (`AlexandraYMS`) | Por registrar con base en revisiones y Pull Requests del Sprint. |
-
-Los roles de liderazgo corresponden a la distribución comunicada por el equipo. La columna de colaboración queda pendiente de evidencia y no atribuye trabajo que todavía no figure en los registros del Sprint. La gestión de vehículos queda reducida a referencias esenciales para Routes.
+<table>
+<thead>
+<tr>
+<th>Team Member (Last Name, First Name)</th>
+<th>GitHub Username</th>
+<th>Routes &amp; Trip Planning<br>Leader (L) / Collaborator (C)</th>
+<th>Students<br>Leader (L) / Collaborator (C)</th>
+<th>Billing<br>Leader (L) / Collaborator (C)</th>
+<th>Notifications<br>Leader (L) / Collaborator (C)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Díaz Ramírez, Alejandro</td><td>aleedr</td><td>—</td><td>L</td><td>—</td><td>—</td></tr>
+<tr><td>Geronimo Puma, Kevin Joel</td><td>qebim18</td><td>—</td><td>—</td><td>L</td><td>—</td></tr>
+<tr><td>Lino Quispe, Leonardo Miguel</td><td>linolw</td><td>L</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Meza Soza, Alexandra Yamile</td><td>AlexandraYMS</td><td>—</td><td>—</td><td>—</td><td>L</td></tr>
+</tbody>
+</table>
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog siguiente transcribe las historias, puntos, estados y responsables observados en Jira el 2026-11-02. La descomposición y las horas por tarea son una **propuesta para validación del equipo**; no representan horas registradas ni tareas ya creadas en Jira. Cada estimación propuesta se mantiene entre 4 y 8 horas.
+El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
-**Sprint Board:** [Jira RMO, Backlog del tablero 2](https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog)
-**Corte consultado:** 2026-11-02. La captura del tablero y el registro de horas aún deben incorporarse.
+**Sprint Board público:** https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
 
 | Story Id | Story Title | SP | Engineering Tasks — propuesta (horas) | Jira assignee | Jira status |
 |---|---|---:|---|---|---|
@@ -2723,7 +3109,6 @@ El Sprint Backlog siguiente transcribe las historias, puntos, estados y responsa
 | [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Sin asignar en Jira | Por hacer |
 | [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Sin asignar en Jira | Por hacer |
 
-Antes de presentar el backlog como compromiso, el equipo debe validar las horas propuestas y registrar las Engineering Tasks en Jira. Los estados y responsables mostrados corresponden a las historias y no se atribuyen a tareas todavía no creadas.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
