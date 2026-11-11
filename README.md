@@ -3272,12 +3272,11 @@ La correspondencia entre los ocho diagramas y los recursos del backend se resume
 
 El Final Project Statement (p. 27) solicita documentar cada endpoint relacionado con el alcance del Sprint, sus acciones implementadas, verbo HTTP, sintaxis, parámetros, respuesta, enlace a OpenAPI y capturas con datos de muestra. Esa sección no establece un umbral porcentual de endpoints. Las cifras siguientes se limitan al bounded context Routes y no representan el porcentaje de cobertura de todo el Sprint.
 
-**Operaciones documentadas en OpenAPI:** 10 para Routes.
-**Operaciones con respuesta HTTP positiva comprobada:** 10 de las 10 operaciones documentadas; las pruebas incluyen también escenarios negativos. Se registraron 21 aserciones, no 21 endpoints.
-**Swagger / OpenAPI URL:** `http://127.0.0.1:8080/swagger-ui.html` y `/v3/api-docs`; comprobados localmente con HTTP 200. No son direcciones públicas.
-**Cliente de verificación ejecutado:** `scripts/verify-local-routes.ps1` con datos ficticios. La colección Postman está incluida en `web-services/postman`, pero no se usó para generar estos resultados.
+**Corte de pruebas de Routes — 02/11/2026 (versión anterior a la integración actual):** se documentaron **10 operaciones** y **21 aserciones HTTP** ejecutadas con el script local. Estas cifras no se extienden automáticamente a los controladores adicionales que actualmente existen en `develop`.
+**Swagger histórico:** `http://127.0.0.1:8080/swagger-ui.html` y `/v3/api-docs`; comprobados localmente con HTTP 200 en el corte previo, no en un despliegue público.
+**Cliente de verificación histórico:** [script de verificación de Routes](./assets/chapter5/routes-av2-evidence/verify-local-routes.ps1) con datos ficticios y registros anexados al informe; la colección Postman puede servir para repetir pruebas, pero no fue la fuente de aquellas 21 aserciones.
 
-**Estado de historias y criterios Jira al 2026-11-02**
+**Corte histórico de historias y pruebas al 02/11/2026 — no corresponde al estado actual de Jira**
 
 | Historia | Estado actual en Jira | Resultado local contrastado con criterios Given/When/Then | Pendiente / clasificación |
 |---|---|---|---|
@@ -3287,7 +3286,34 @@ El Final Project Statement (p. 27) solicita documentar cada endpoint relacionado
 | [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Por hacer | Publicación completa devuelve `PUBLISHED`; una ruta incompleta recibe HTTP 409. | La generación de viajes y la visibilidad para tutores pertenecen a integraciones aún pendientes. Implementada parcialmente en local; Jira sigue Por hacer. |
 | [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | En curso | Diez operaciones OpenAPI cubiertas por 21 aserciones HTTP; datos verificados en PostgreSQL y tras reinicio. | Build de Angular verde en CI; siguen pendientes la verificación visual y la publicación remota. El backend no tiene workflow CI configurado y sus pruebas citadas son locales. |
 
-El tablero Jira del Sprint 3 conserva 4 historias En curso y 7 Por hacer (52 SP; ninguna en Done) en la consulta del 2026-11-02. Se añadieron comentarios con commits, PRs, pruebas y bloqueos reales en RMO-15, RMO-21, RMO-22, RMO-23 y RMO-28; los estados no se cambiaron.
+En el corte histórico del 02/11/2026, el Sprint 3 registraba 4 historias En curso y 7 Por hacer (52 SP). Esa consulta quedó superada por la **actualización de Jira del 10/11/2026**, documentada en 5.2.3.3: 76 incidencias del proyecto con responsable (8 Listo, 13 En curso y 55 Por hacer); RMO-23 y RMO-24 se encuentran En curso. Se mantienen las observaciones técnicas de este corte sin presentar sus estados como actuales.
+
+
+**Inventario actual del backend integrado (`develop`, 10/11/2026).** El inventario histórico anterior corresponde a una versión de Routes; los siguientes controladores y rutas se comprobaron leyendo el código del repositorio, no mediante solicitudes HTTP ejecutadas sobre la versión fusionada.
+
+| Bounded context / recurso | API REST declarada en Spring Boot | Estado de integración para AV2 |
+|---|---|---|
+| **Routes** | `GET, POST /api/v1/routes`; `GET, PUT, DELETE /api/v1/routes/{id}`; `PUT /api/v1/routes/{id}/schedule`; `GET, POST, PUT /api/v1/routes/{id}/assignments`; `GET /api/v1/routes/eligible-students`; `PATCH /api/v1/routes/{id}/status`; `POST, GET /api/v1/routes/{id}/trips`. | Código de ruta y persistencia presentes; validación real de estudiantes y seguridad de conductor requieren integración final. |
+| **Trips** | `GET /api/v1/trips/{id}`; `POST /api/v1/trips/{id}/absences`; `PATCH /api/v1/trips/{id}/start`, `/stops/{stopId}/served`, `/cancel`, `/complete`. | Operaciones declaradas; demostrar transiciones y notificaciones con estado real del viaje. |
+| **Profiles / Students** | `/api/v1/profiles`, `/api/v1/students`, `/api/v1/service-enrollments`, relaciones de tutores y consulta de estudiantes del conductor. | Controladores y dominio fusionados; permisos entre tutores, estudiantes y conductores no se acreditan como IAM productivo. |
+| **Billing** | `GET, POST /api/v1/plans`; `GET /api/v1/plans/{planId}`; `GET, POST /api/v1/subscriptions`. | Controladores integrados en el backend; frontend en `develop` todavía conserva consumo de MockAPI para planes y suscripciones. |
+| **Vehicles** | `GET, POST /api/v1/vehicles`, `GET, PUT, DELETE /api/v1/vehicles/{id}`. | Disponible en código solo cuando `app.demo.enabled=true`; no se considera API productiva. |
+| **Notifications / tutor** | `/api/v1/notifications`, `/api/v1/routes/{routeId}/notices`, `/api/v1/tutor/journeys`, `/api/v1/tutor/notifications`. | Funciones restringidas por flags de demostración; la generación y recepción integral de avisos debe verificarse. |
+| **Incident & Delay Management** | Modelos/MockAPI de frontend y funcionalidades relacionadas con avisos. | No se verifica una API Spring Boot completa de incidentes y retrasos mediante el controlador de Notifications. |
+
+**Dependencia concreta de autorización pendiente:** el adaptador `ProfilesStudentAuthorization` de Routes consulta `/api/v1/profiles/driver/eligible-students` y `/api/v1/profiles/driver/vehicles/{vehicleId}/access`, mientras que el módulo integrado de Profiles expone, entre otros, `/api/v1/service-enrollments/drivers/me/students`. Los contratos no coinciden todavía. Además, `PROFILES_AUTHORIZATION_ENABLED` está deshabilitado por defecto. Deben unificar los contratos y validar credenciales antes de afirmar que un estudiante autorizado puede publicarse y ser consultado por su tutor.
+
+**Conexión de APIs frontend:** en el entorno Angular `develop`, Routes y Vehicles se configuran con base `/api/v1`. Billing, Profiles y Alerting conservan URLs MockAPI en `environment.development.ts`; JSON Server constituye una alternativa de simulación local. En la entrega se distinguirá explícitamente **API propia Spring Boot, servicio simulado y datos de demostración**. Postman es el cliente de pruebas, Swagger/OpenAPI es el contrato navegable y PostgreSQL es el almacenamiento del backend.
+
+**Plan de verificación de contratos del Sprint 3:** registrar por operación método, endpoint, parámetro, body de ejemplo con datos no sensibles, respuesta HTTP real, URL de Swagger, fecha, commit y resultado. Los endpoints condicionales deben comprobarse solo bajo el perfil documentado; no se habilitan por defecto en Render.
+
+> **[CAPTURA PENDIENTE — AV2-API-01]** Swagger UI con los grupos Routes, Trips y Profiles de la rama `develop`; indicar fecha, puerto y perfil activo. Destino: `assets/chapter5/av2/swagger-integrated-endpoints.png`.
+
+> **[CAPTURA PENDIENTE — AV2-API-02]** Postman: creación de ruta, edición, horario, asignación rechazada sin autorización y publicación, con códigos y respuestas reales. Destino: `assets/chapter5/av2/postman-routes-requests.png`.
+
+> **[CAPTURA PENDIENTE — AV2-API-03]** Swagger o Postman: planes/suscripciones de Billing y registro/consulta de Students de Profiles. Destino: `assets/chapter5/av2/swagger-billing-profiles.png`.
+
+> **[CAPTURA PENDIENTE — AV2-API-04]** Evidencia de contratos API entre Routes, Profiles y Notifications, incluyendo un resultado real de autorización y respuesta al tutor. Destino: `assets/chapter5/av2/routes-profiles-notifications.png`.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
@@ -3303,6 +3329,19 @@ La configuración de despliegue abarca los tres productos de Rumbo. La compilaci
 
 El workflow de frontend ejecutó las pruebas Angular y el build en Ubuntu al abrir el PR #17 hacia `develop` (run #25, resultado exitoso). La validación visual de Routes permanece pendiente. Las pruebas de las páginas del Landing Page y los enlaces Call-To-Action mantienen su evidencia previa y no forman parte de la integración local Routes.
 
+
+**Situación del despliegue para AV2 al 10/11/2026:** la última URL del Landing Page consignada en el informe es la de GitHub Pages. Los endpoints de Spring Boot comprobados en el reporte previo respondían en una máquina local; no se dispone aquí de una URL de Render verificada para el backend integrado. El frontend Angular de Sprint 3 está fusionado en `develop`, pero ello no demuestra que esa revisión se encuentre publicada.
+
+En la versión actual, el backend `develop` configura **Java 27** en Maven. El despliegue requiere una imagen o servicio compatible, PostgreSQL disponible y variables de entorno `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`, `PORT`, `CORS_ALLOWED_ORIGINS` y `SPRING_PROFILES_ACTIVE=prod`. Para producción, los flags `app.demo.enabled` y `app.profiles.demo.enabled` deben quedar deshabilitados. Angular necesita una URL de API pública o un proxy inverso real: `proxy.conf.json` solo sirve para el servidor de desarrollo y no se publica con el build.
+
+**Criterio de cierre del despliegue:** comprobar URL accesible fuera de la máquina local, endpoint real de Swagger, conexión a PostgreSQL y frontend consumiendo el backend público. Hasta tener esos resultados no se reemplazarán las referencias de entorno local por enlaces inventados.
+
+> **[CAPTURA PENDIENTE — AV2-DEP-01]** Panel de Render: servicio Web Services desplegado, estado, build Java 27, commit y URL pública. Destino: `assets/chapter5/av2/render-backend-service.png`.
+
+> **[CAPTURA PENDIENTE — AV2-DEP-02]** Swagger público y respuesta de un endpoint REST en la URL final del backend. Destino: `assets/chapter5/av2/swagger-public-deploy.png`.
+
+> **[CAPTURA PENDIENTE — AV2-DEP-03]** Frontend y Landing Page públicos: páginas de rutas, planes y vistas de tutor; URL, versión y fecha visibles. Destino: `assets/chapter5/av2/web-frontend-landing-deploy.png`.
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
 La colaboración del Sprint se evidencia mediante la secuencia de commits, los Pull Requests, el Network Graph y los analíticos de Contributors y Pulse. La explicación relaciona las tareas del Sprint Backlog con el código integrado y con las revisiones efectuadas por otros miembros del equipo.
@@ -3316,6 +3355,21 @@ La colaboración del Sprint se evidencia mediante la secuencia de commits, los P
 <!-- AV2: incorporar capturas reales de Contributors, Pulse, Network y PRs vinculados a Sprint 3, con fecha de consulta y explicación de los aportes. -->
 
 La retrospectiva del equipo se vincula con el video About-the-Team, que complementa estos registros con sesiones de trabajo y testimonios de los integrantes sobre sus responsabilidades, dificultades y aprendizajes.
+
+
+**Resumen verificable de colaboración, 10/11/2026:** Jira registra **76 incidencias asignadas a los cuatro integrantes activos**: Leonardo (33), Kevin (16), Alejandro (16) y Alexandra (11). Los estados consultados son 8 Listo, 13 En curso y 55 Por hacer. Las cifras describen la distribución y el avance de tickets, **no** horas trabajadas ni número de commits por autor.
+
+El equipo utilizó ramas por funcionalidad y revisiones mediante GitHub. El backend integró Routes mediante [PR #3](https://github.com/AIpaca-OS/web-services/pull/3), Billing mediante [PR #4](https://github.com/AIpaca-OS/web-services/pull/4), un primer conjunto de Profiles mediante [PR #5](https://github.com/AIpaca-OS/web-services/pull/5), Notifications mediante [PR #6](https://github.com/AIpaca-OS/web-services/pull/6) y ampliaciones REST de Profiles mediante [PR #8](https://github.com/AIpaca-OS/web-services/pull/8). El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) no estaba fusionado en la consulta. El frontend de Routes había ingresado a `develop` mediante [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17).
+
+Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y dependencias entre contextos, especialmente del contrato Routes–Profiles y de la relación entre vehículos, estudiantes y rutas. El trabajo colaborativo se debe sustentar con la autoría real de cada commit y las interacciones efectivamente registradas en Jira/PRs; no se atribuirán cambios que no puedan verificarse a integrantes distintos.
+
+**Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
+
+> **[CAPTURA PENDIENTE — AV2-COL-01]** Jira: incidencias asignadas a los cuatro miembros, estado por etapa y filtros del Sprint. Destino: `assets/chapter5/av2/jira-team-board.png`.
+
+> **[CAPTURA PENDIENTE — AV2-COL-02]** GitHub: historial Network/Pulse/Contributors y PRs realmente fusionados, sin modificar la autoría. Destino: `assets/chapter5/av2/github-contributors-prs.png`.
+
+> **[CAPTURA PENDIENTE — AV2-COL-03]** Captura de una reunión o revisión real de código; se incorporará con autorización de los participantes. Destino: `assets/chapter5/av2/real-team-session.png`.
 
 ## 5.3. Validation Interviews
 
