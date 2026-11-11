@@ -3417,11 +3417,20 @@ La escala de severidad indicada por el enunciado comprende cuatro niveles: **1, 
 
 La comparación entre sesiones aporta criterios para priorizar cambios sobre las experiencias web. Los hallazgos se relacionan con modificaciones identificables y con su registro en la evolución del producto.
 
+
+**Estado de recopilación AV2:** la tabla V01–V06 anterior es una **plantilla** de sesiones; no contiene resultados ni participantes confirmados. La validación deberá realizarse con los dos segmentos objetivo y registrarse con autorizaciones, fechas, URL de video, tareas, observaciones y evaluación de heurísticas. No se sustituirá la entrevista real con capturas del prototipo, respuestas creadas para la demostración ni testimonio de un integrante del equipo.
+
+Para conectar la investigación con las funciones desarrolladas, se propone que los **conductores** intenten configurar una ruta, añadir paradas, asociar vehículo y entender cuándo es posible publicar; los **tutores**, registrar o identificar a un estudiante y consultar la información disponible sobre un traslado y sus avisos. Las tareas que aún dependan de autorización o APIs no integradas deberán informarse como prototipo o flujo parcial.
+
+> **[CAPTURA PENDIENTE — AV2-VAL-01]** Registro de entrevistas con participantes reales (3–5 por segmento según enunciado), consentimiento, capturas con autorización y URL/tiempos del video consolidado. Destino: `assets/chapter5/av2/validation-interviews.png`.
+
+> **[CAPTURA PENDIENTE — AV2-VAL-02]** Tabla de evaluación según heurísticas del Anexo D y resultados observados por sesión, sin inventar severidad ni hallazgos. Destino: `assets/chapter5/av2/heuristics-validation.png`.
+
 ## 5.4. Video About-the-Product
 
 El video About-the-Product presenta la propuesta de Rumbo a los visitantes y usuarios de la plataforma. Su narrativa parte de la necesidad de comunicación durante el traslado escolar, explica los beneficios para padres y conductores y muestra escenas de interacción con las principales funciones del producto. El mensaje, la identidad visual y el tono se mantienen alineados con el Landing Page.
 
-Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres minutos**, incluye **al menos una opinión por segmento objetivo** y se publica en **Microsoft Stream y YouTube**. La versión de YouTube se integra en una sección del Landing Page. Para AV2, la rúbrica solicita al menos el **50 % del proceso de edición**, con una secuencia coherente, participantes identificables, música de fondo y branding.
+Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres minutos**, incluye **al menos una opinión por segmento objetivo** y se publica en **Microsoft Stream y YouTube**. La versión de YouTube se integra en una sección del Landing Page. Para AV2, el enunciado solicita la **primera versión publicada** del video. El porcentaje concreto de edición y la publicación deberán acreditarse únicamente con la versión y el enlace efectivamente disponibles; no se declarará una publicación por contar con el guion.
 
 | Secuencia | Contenido |
 |---|---|
@@ -3433,6 +3442,11 @@ Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres
 
 **Registro de publicación:** <!-- AV2: URL de Microsoft Stream; URL de YouTube; duración; screenshot; porcentaje real de edición; timestamp de las secuencias. -->
 
+
+
+> **[CAPTURA PENDIENTE — AV2-VID-01]** Fotograma identificable del About-the-Product, duración efectiva (1–3 minutos), fecha de publicación y URLs reales de Microsoft Stream y YouTube. Destino: `assets/chapter5/av2/about-the-product.png`.
+
+**Entregables de video por completar:** vínculo de Microsoft Stream, vínculo público de YouTube, inserción en el Landing Page y transcripción de la secuencia con tiempos reales. Las opiniones de usuarios deben proceder de participantes de entrevistas de validación realizadas; no se reemplazan por un testimonio ficticio.
 
 # Conclusiones
 
@@ -3446,11 +3460,20 @@ El Frontend Angular de Sprint 2 consolidó módulos de gestión por Bounded Cont
 
 La implementación de Web Services se contrasta con los contratos y las operaciones HTTP documentadas en Sprint 3. Las validaciones con usuarios aportan una segunda fuente de evaluación, centrada en la comprensión de las tareas y la facilidad de uso, complementaria a las pruebas técnicas. Las recomendaciones de evolución del producto deberán sustentarse en las observaciones recogidas y en el funcionamiento de las versiones publicadas, de acuerdo con los objetivos e hipótesis de Lean UX definidos para Rumbo.
 
+
+**Avances adicionales del Sprint 3, corte del 10/11/2026.** El equipo logró incorporar a la rama de desarrollo del backend los contextos de Routes, Billing, Profiles y Notifications mediante PRs públicos. La implementación de Routes incluye configuración de rutas, horarios, paradas ordenadas y contratos para asignar estudiantes y publicar recorridos; el frontend de Angular de Routes también se fusionó a `develop`. Billing ya presenta servicios de planes y suscripciones, mientras Profiles ofrece controladores de estudiantes y relaciones, y el backend dispone de recursos condicionados para vehículos y notificaciones en demostración local.
+
+**Limitaciones y decisiones de mejora.** La integración exige homogeneizar contratos entre Routes y Profiles, ejecutar pruebas sobre la versión conjunta con Java 27, distinguir los recursos simulados de los productivos y sustituir las fuentes MockAPI por REST cuando la seguridad y los contratos estén listos. El login visual por rol de Angular no equivale a autenticación IAM; de momento no se acredita la consulta segura de datos privados de estudiantes en producción. Tampoco existen evidencias verificadas del backend desplegado en Render ni de los videos y las entrevistas definitivas. Estos son compromisos pendientes, no logros atribuidos.
+
+Desde la coordinación del equipo, se ha mantenido el registro de responsables en Jira y se han documentado dependencias técnicas en PRs. Para el siguiente ciclo se recomienda cerrar primero el escenario completo **tutor registra estudiante → conductor autorizado selecciona vehículo y estudiante → publica ruta → se ejecuta viaje → tutor consulta estado y notificación**, y usarlo como prueba de aceptación trazable entre frontend, API y PostgreSQL.
+
+> **[CAPTURA PENDIENTE — AV2-CONC-01]** Evidencia de un flujo extremo a extremo finalmente verificado y de la mejora derivada de validación (antes/después). Destino: `assets/chapter5/av2/end-to-end-validation.png`.
+
 ## Video About-the-Team
 
 El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
 
-La pauta de edición considera una secuencia inicial de presentación de AIpaca y Rumbo, un resumen del proceso colaborativo, una retrospectiva del Sprint y las intervenciones ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C, la retrospectiva se organiza tomando como referencia cinco minutos y cada testimonio individual alrededor de un minuto. El video utiliza la identidad visual de la startup, música de fondo y escenas identificables; para AV2 se acredita el avance de al menos el 50 % de edición mediante la versión publicada.
+La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de sesiones de trabajo reales, explicación de la coordinación y una retrospectiva del Sprint, seguidas de testimonios ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C del enunciado, la **referencia** es de cinco minutos de retrospectiva grupal más un minuto por integrante (aproximadamente nueve minutos en total). El equipo ha preparado una versión abreviada como borrador de edición; si utiliza una duración inferior, corresponde confirmar su aceptación con el docente. La duración, los timestamps y el nivel de edición solo se documentarán como hechos una vez grabado y publicado el video. La identidad visual, voz en off y escenas de reuniones deben corresponder a material real.
 
 | Secuencia | Contenido | Inicio (hh:mm:ss) |
 |---|---|---|
@@ -3464,6 +3487,29 @@ La pauta de edición considera una secuencia inicial de presentación de AIpaca 
 **YouTube:** <!-- AV2: enlace integrado en Landing Page -->
 **Duración y cuadro representativo:** <!-- AV2: duración exacta, captura y registro de edición -->
 
+
+
+**Pauta de edición preliminar para un video abreviado** (no es la duración oficial sugerida en el enunciado; los tiempos definitivos se anotarán tras montar el video):
+
+| Tramo propuesto | Narración / cuadro | Evidencia que debe insertarse |
+|---|---|---|
+| `00:00–00:20` | Presentación de AIpaca, Rumbo y del objetivo del transporte escolar. | Logo, Landing Page y presentación de participantes. |
+| `00:20–01:30` | Trabajo colaborativo y retrospectiva: Jira, GitHub, organización por contextos, problemas de integración y mejoras. | Sesiones reales del equipo, tableros, PRs y código, con voz en off. |
+| `01:30–02:15` | Leonardo: Routes & Trip Planning y coordinación de avances. | Frente a cámara; formulario Angular, paradas, horarios, API Spring Boot y Jira. |
+| `02:15–02:55` | Kevin: Subscriptions & Billing. | Frente a cámara; funcionalidad y pruebas que pueda acreditar. |
+| `02:55–03:35` | Alejandro: Profiles, estudiantes y relaciones. | Frente a cámara; formularios y relaciones con rutas, sin mostrar datos privados reales. |
+| `03:35–04:15` | Alexandra: Alerting, incidencias y notificaciones. | Frente a cámara; funcionalidades comprobables y decisiones de comunicación. |
+| `04:15–04:30` | Cierre: competencias aprendidas y objetivos pendientes. | Plano de equipo o identidad de Rumbo. |
+
+**Síntesis del testimonio de Leonardo (guion orientativo):** presentación personal y responsabilidad en Routes & Trip Planning; creación/edición de recorridos, paradas ordenadas, horarios y asignaciones; uso de Angular, Spring Boot, PostgreSQL y OpenAPI; dificultad de conectar los componentes y resolver la validación intercontexto de Profiles; seguimiento de tareas en Jira y coordinación de las dependencias del equipo; aprendizajes en arquitectura, APIs REST, resolución de problemas y comunicación. Evitar afirmar que la seguridad, los avisos productivos o el despliegue están completados sin evidencia.
+
+**Vinculación con ABET Student Outcome 3:** cada testimonio describe acciones personales verificables y comunica ante una audiencia no especializada qué problema se intentó resolver, qué metodología se aplicó, qué se aprendió y qué falta mejorar. El reporte se completa con el guion y los tiempos reales después de la edición.
+
+**Nombre de archivo requerido (Sprint 3):** `upc-pre-202620-1asi0729-7760-aipaca-about-the-team-sprint-3.mp4`.
+
+> **[CAPTURA PENDIENTE — AV2-VID-02]** Fotograma real de los testimonios ante cámara, duración total y pauta definitiva `hh:mm:ss`. Destino: `assets/chapter5/av2/about-the-team-testimonies.png`.
+
+> **[CAPTURA PENDIENTE — AV2-VID-03]** Video publicado en Microsoft Stream y YouTube y su inserción real en el Landing Page. Destino: `assets/chapter5/av2/about-the-team-published.png`.
 
 # Bibliografía
 
@@ -3510,6 +3556,25 @@ La pauta de edición considera una secuencia inicial de presentación de AIpaca 
 - **Nueva versión de Landing Page y Frontend:** [Incorporar URLs y capturas de navegación].
 
 Los enlaces y evidencias se completarán con los recursos finales, sin sustituirlos por capturas de maquetas o resultados no verificados.
+
+
+### Registro de capturas y recursos pendientes para la entrega AV2
+
+Esta matriz funciona como **esqueleto** para completar la documentación. No se han creado archivos PNG vacíos ni imágenes ilustrativas que puedan confundirse con capturas de ejecución. Tras tomar cada captura, subir el archivo al directorio indicado y sustituir la nota `[CAPTURA PENDIENTE]` en la sección correspondiente por Markdown, por ejemplo `![Swagger de Routes](./assets/chapter5/av2/swagger-integrated-endpoints.png)`, junto con descripción, fecha y versión.
+
+| Sección del informe | Evidencia prevista | Estado |
+|---|---|---|
+| Student Outcome / Sprint Planning | Roles, coordinación, sesión real y trazabilidad Jira | Captura pendiente |
+| Sprint Backlog | Tablero y estado actualizado de historias con responsable | Captura pendiente |
+| Development | PRs #3, #4, #5, #6, #8, frontend #17; estructura de archivos | Captura pendiente |
+| Execution | Maven y Angular, formulario de rutas, solicitudes Postman y PostgreSQL | Captura pendiente |
+| Services Documentation | Swagger/OpenAPI de Routes, Profiles, Billing y avisos | Captura pendiente |
+| Software Deployment | Render, URL pública de Swagger, Landing Page y Web Apps publicadas | Captura pendiente |
+| Collaboration | Network, Contributors, Pulse y sesión de trabajo real | Captura pendiente |
+| Validation Interviews | Grabaciones y capturas autorizadas, observaciones y heurísticas | Captura pendiente |
+| About-the-Product / About-the-Team | Videos publicados, fotos de testimonios, Stream, YouTube y tiempos | Captura pendiente |
+
+**Indicaciones de consistencia:** respetar la fecha y el commit de la versión demostrada, no mezclar datos de MockAPI con PostgreSQL, evitar credenciales o información privada de menores en las imágenes y usar los estados reales del tablero para describir el cumplimiento de historias. La evidencia histórica de Routes que ya está en `assets/chapter5/routes-av2-evidence/` se conserva sin sobrescribirla, indicando el corte al que corresponde.
 
 ## Videos de Exposición
 **Microsoft Stream:** [Completar]
