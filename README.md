@@ -57,7 +57,8 @@
 | 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 | 2.1 | 20/10/2026 | Equipo AIpaca — actualización documental | Revisión de los ocho Database Diagrams del Capítulo IV; sincronización de assets y estructura de documentación de Sprint 3, Validation Interviews y videos de AV2 conforme al Final Project Statement. |
 | 2.2 — borrador | 02/11/2026 | Actualización asistida, pendiente de revisión del equipo | Ajuste del Sprint 3 a la distribución actual de cuatro integrantes; registro de backlog Jira, contratos Routes y estado de evidencias técnicas disponibles. |
-| 2.3 — actualización AV2 | 10/11/2026 | Lino Quispe, Leonardo Miguel — consolidación documental para revisión grupal | Actualización de Sprint 3 con estados verificados de Jira, integración de Routes, Billing, Profiles y Notifications en backend, alcance de las APIs locales, riesgos de despliegue y pauta de capturas pendientes. No se reportan pruebas ni videos no realizados. |
+| 2.3 — actualización AV2 | 10/11/2026 | Lino Quispe, Leonardo Miguel — consolidación documental para revisión grupal | Actualización del Sprint 3, Jira, Routes, Billing, Profiles, Notifications, APIs y riesgos de integración. |
+| 2.4 — evidencias disponibles | 10/11/2026 | Equipo AIpaca — integración documental | Incorporación de cinco capturas reales de Swagger UI y una de pgAdmin/PostgreSQL; supresión de marcadores sin imagen, tablas vacías y enlaces no proporcionados. Registro de liberación de frontend y backend a main. |
 
 ---
 
@@ -205,7 +206,6 @@ El equipo mantiene las dos dimensiones del Student Outcome 3 establecidas en la 
 
 **Reflexión grupal para AV2:** la separación del sistema en bounded contexts permitió distribuir el desarrollo, pero reveló dependencias de integración entre las rutas, los perfiles autorizados, los vehículos y las notificaciones. El equipo debió comunicar contratos de API, discutir incompatibilidades de configuración y revisar los cambios en GitHub antes de incorporarlos al producto común. Estas experiencias sustentan el desarrollo de la comunicación técnica escrita y oral; los testimonios audiovisuales y las validaciones de usuarios se incorporarán únicamente cuando estén disponibles.
 
-> **[CAPTURA PENDIENTE — AV2-SO-01]** Extracto del registro de coordinación del equipo y evidencias de comunicación (Jira/PRs). Guardar captura real en `assets/chapter5/av2/student-outcome-collaboration.png` y reemplazar esta indicación por su imagen, fuente y fecha.
 
 ---
 
@@ -3082,7 +3082,6 @@ En esta sección se registra el objetivo establecido durante la reunión de Spri
 
 El objetivo documentado del Sprint 3 sigue siendo completar la experiencia frontend y entregar una primera versión comprobable de servicios backend. La integración alcanzada comprende código consolidado en `develop` y servicios adicionales para pruebas locales. La autenticación real, la autorización entre contextos, la ejecución integral, las evidencias visuales y el despliegue público requieren comprobación adicional.
 
-> **[CAPTURA PENDIENTE — AV2-SP-01]** Acta o evidencia real del Sprint Planning / reunión de coordinación del Sprint 3, con fecha y participantes. Destino: `assets/chapter5/av2/sprint-planning-3.png`.
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -3109,7 +3108,6 @@ La matriz LACX refleja la distribución de responsabilidades establecida para el
 
 **Responsabilidades de coordinación e integración.** Leonardo efectuó seguimiento del avance en Jira y del proceso de integración de Routes; los demás integrantes mantienen liderazgo funcional en sus contextos y colaboran en pruebas y revisión. Para no confundir la matriz LACX con estados de terminación, se registran también las dependencias activas: Vehicles (apoyo de Alejandro, sujeto a verificación de su interfaz y backend); Profiles ↔ Routes (permisos de estudiante y conductor); Billing ↔ frontend (planes y suscripciones); Notifications ↔ Routes/Tutor (avisos visibles). El criterio de «Listo» se aplica solo a entregables comprobados; la asignación de un líder no implica un endpoint desplegado.
 
-> **[CAPTURA PENDIENTE — AV2-LACX-01]** Evidencia de distribución y coordinación de responsabilidades con los cuatro integrantes activos. Destino: `assets/chapter5/av2/lacx-team.png`.
 
 #### 5.2.3.3. Sprint Backlog 3
 
@@ -3156,7 +3154,6 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
 
 Las filas RMO-20, RMO-32, RMO-36, RMO-58 y RMO-76 documentan **dependencias y aportes de otros contextos**; no se añaden artificialmente al alcance ni al total de Story Points comprometidos originalmente en la tabla de Sprint 3. El tablero público se conserva como fuente de estados vigente.
 
-> **[CAPTURA PENDIENTE — AV2-SB-01]** Sprint Backlog 3 actualizado de Jira con estados, asignaciones y fecha. Destino: `assets/chapter5/av2/sprint-3-jira-current.png`.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -3166,8 +3163,8 @@ La revisión del diseño incorporó ocho archivos de Database Diagrams y actuali
 
 | Repository | Branch | Commit Id | Commit Message / alcance | Commit Message Body / descripción | Committed on |
 |---|---|---|---|---|---|
-| `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | <!-- AV2: fecha de GitHub --> |
-| `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | <!-- AV2: fecha de GitHub --> |
+| `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | — |
+| `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | — |
 | `web-services` | `develop` (desde `feature/routes`) | [PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [b6b07a5](https://github.com/AIpaca-OS/web-services/commit/b6b07a599a6f7ed366c69cde2900a24a56f8c763) | Integración de Routes y edición controlada | Se fusionó el backend de Routes con las reglas de asignación, publicación y edición de ruta publicada. La seguridad intercontexto sigue sujeta a la autenticación real. | 10/11/2026 (hora Perú) |
 | `frontend-web-application` | `develop` (desde `feature/route-trip-planning`) | [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | `feat(routes): connect Angular route planning frontend` | Formulario de rutas, paradas, horarios, catálogo autorizado, integración REST y pruebas del módulo; PR fusionado a develop. | 08/11/2026 |
 
@@ -3188,11 +3185,8 @@ Para la sustentación, cada cambio de código debe acompañarse con una demostra
 
 **Evidencia histórica frente a versión actual:** los resultados locales y scripts citados más adelante corresponden a una versión de Routes probada el **02/11/2026**. Las referencias antiguas a commits «locales» o `feature/service-foundation` no se usan como prueba de la integración vigente; se sustituyeron por los PRs públicos. Toda evidencia nueva de código/ejecución debe asociarse a un commit o rama verificable.
 
-> **[CAPTURA PENDIENTE — AV2-DEV-01]** GitHub PR #3 fusionado y árbol de código de Routes en `develop`. Destino: `assets/chapter5/av2/routes-pr-merge.png`.
 
-> **[CAPTURA PENDIENTE — AV2-DEV-02]** Comparación de PRs backend #4, #5, #6 y #8 y sus archivos; mostrar contribuciones reales de cada integrante. Destino: `assets/chapter5/av2/backend-team-prs.png`.
 
-> **[CAPTURA PENDIENTE — AV2-DEV-03]** Estructura de controladores / entidades de Routes, Profiles y Billing desde IntelliJ IDEA, con versión de JDK visible. Destino: `assets/chapter5/av2/backend-architecture.png`.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -3226,13 +3220,14 @@ La evidencia visual y el video de navegación siguen pendientes. Los escenarios 
 
 **Nota de perfiles de ejecución:** `application.properties` del backend establece perfiles `dev` y `local`. Las APIs de `VehiclesController`, `NotificationsController` y algunos recursos de consulta de tutores solo están disponibles cuando las propiedades `app.demo.enabled` o `app.profiles.demo.enabled` permiten su carga. El archivo `application-local.properties` fija `127.0.0.1` y advierte no usar esa modalidad en un despliegue público. El frontend de `develop` todavía consume MockAPI en Billing, Profiles y Alerting, mientras Routes y Vehicles apuntan a `/api/v1` en el entorno de desarrollo.
 
-> **[CAPTURA PENDIENTE — AV2-EXE-01]** Terminal de IntelliJ con backend integrado arrancado y resultado Maven (fecha, rama y commit visibles). Destino: `assets/chapter5/av2/backend-test-run.png`.
 
-> **[CAPTURA PENDIENTE — AV2-EXE-02]** Angular: creación/edición de rutas, selección de vehículo, paradas y horario (con datos de prueba). Destino: `assets/chapter5/av2/frontend-route-flow.png`.
 
-> **[CAPTURA PENDIENTE — AV2-EXE-03]** Postman y pgAdmin 4 mostrando una petición real y la fila correspondiente en PostgreSQL. Destino: `assets/chapter5/av2/postman-postgresql.png`.
+**Evidencia visual de persistencia local — pgAdmin 4 (PostgreSQL 17).** La captura existente registra una consulta SQL ejecutada en la base `rumbo_demo` sobre `rp_routes`. El resultado presenta dos registros con estado `PUBLISHED`. Este resultado respalda que había rutas almacenadas al momento de la consulta, pero **no demuestra** por sí solo cómo se crearon, la autorización de estudiantes, un reinicio del servidor ni su publicación en Render.
 
-> **[CAPTURA PENDIENTE — AV2-EXE-04]** Flujo conductor → ruta publicada → estado del estudiante → notificación al tutor (solo cuando sea reproducible). Destino: `assets/chapter5/av2/driver-tutor-journey.png`.
+![Resultado de consulta SQL de rutas en pgAdmin 4](./assets/chapter5/pgAdmin-1.png)
+
+*Figura AV2-DB-01. Consulta `SELECT id, name, code, status FROM rp_routes ORDER BY name;` y resultado de dos rutas en estado PUBLISHED en `rumbo_demo`. Fuente: captura del entorno local del equipo.*
+
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -3307,15 +3302,38 @@ En el corte histórico del 02/11/2026, el Sprint 3 registraba 4 historias En cur
 
 **Plan de verificación de contratos del Sprint 3:** registrar por operación método, endpoint, parámetro, body de ejemplo con datos no sensibles, respuesta HTTP real, URL de Swagger, fecha, commit y resultado. Los endpoints condicionales deben comprobarse solo bajo el perfil documentado; no se habilitan por defecto en Render.
 
-> **[CAPTURA PENDIENTE — AV2-API-01]** Swagger UI con los grupos Routes, Trips y Profiles de la rama `develop`; indicar fecha, puerto y perfil activo. Destino: `assets/chapter5/av2/swagger-integrated-endpoints.png`.
+**Evidencia visual de la documentación OpenAPI del backend.** Las cinco capturas existentes muestran la interfaz Swagger de `Rumbo Web Services API` servida desde el entorno local `localhost:8080`. Permiten identificar los recursos y verbos HTTP declarados; **no acreditan por sí solas** que todas las operaciones hayan sido ejecutadas satisfactoriamente ni que estén publicadas en Render.
 
-> **[CAPTURA PENDIENTE — AV2-API-02]** Postman: creación de ruta, edición, horario, asignación rechazada sin autorización y publicación, con códigos y respuestas reales. Destino: `assets/chapter5/av2/postman-routes-requests.png`.
+![Swagger UI: API Rumbo y Service Enrollments](./assets/chapter5/Swagger-1.png)
 
-> **[CAPTURA PENDIENTE — AV2-API-03]** Swagger o Postman: planes/suscripciones de Billing y registro/consulta de Students de Profiles. Destino: `assets/chapter5/av2/swagger-billing-profiles.png`.
+*Figura AV2-SW-01. Presentación de Rumbo Web Services API y recursos de Service Enrollments; sección de conductores de demostración local.*
 
-> **[CAPTURA PENDIENTE — AV2-API-04]** Evidencia de contratos API entre Routes, Profiles y Notifications, incluyendo un resultado real de autorización y respuesta al tutor. Destino: `assets/chapter5/av2/routes-profiles-notifications.png`.
+![Swagger UI: Routes, suscripciones, avisos del conductor y viajes](./assets/chapter5/Swagger-2.png)
+
+*Figura AV2-SW-02. Contratos de Routes para crear, consultar, editar, programar horarios y asignar estudiantes, además de recursos de suscripciones y avisos locales.*
+
+![Swagger UI: Vehicles, Students, Tutor Journeys y Plans](./assets/chapter5/Swagger-3.png)
+
+*Figura AV2-SW-03. Endpoints de vehículos (marcados como demostración local), estudiantes, consultas del tutor y planes de suscripción.*
+
+![Swagger UI: Profiles, Notifications, Data Deletion Requests y Trips](./assets/chapter5/Swagger-4.png)
+
+*Figura AV2-SW-04. Contratos de perfiles, notificaciones de demostración local, solicitudes de eliminación de datos personales y operaciones de ejecución de viajes.*
+
+![Swagger UI: Schools y esquemas de recursos](./assets/chapter5/Swagger-5.png)
+
+*Figura AV2-SW-05. Recursos de consulta de centros educativos y modelos de entrada/salida definidos en OpenAPI.*
+
+**Alcance de estas seis capturas:** cinco prueban la **presencia de documentación Swagger UI local** y una evidencia registros consultados en **PostgreSQL local**. No se adjuntaron capturas de Postman, integración frontend-backend ni de despliegue; no se atribuyen resultados no mostrados.
+
+
+
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+**Publicación de código en rama principal.** El backend se integró a [`web-services/main`](https://github.com/AIpaca-OS/web-services/tree/main) mediante [PR #9](https://github.com/AIpaca-OS/web-services/pull/9), commit `569b520`, y el frontend se integró a [`frontend-web-application/main`](https://github.com/AIpaca-OS/frontend-web-application/tree/main) mediante [PR #19](https://github.com/AIpaca-OS/frontend-web-application/pull/19), commit `18ff617`. La integración GitHub Actions del frontend [completó exitosamente el despliegue de GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/42960952622). Estos resultados no sustituyen la validación del frontend publicado ni confirman un despliegue de backend en Render.
+
+
 
 La configuración de despliegue abarca los tres productos de Rumbo. La compilación local confirma que el frontend de Routes consume la API a través del proxy de desarrollo. La aplicación requiere integrar autenticación OIDC/JWT y un proxy inverso de mismo origen para la publicación productiva; las credenciales locales no se guardan en el paquete Angular.
 
@@ -3330,17 +3348,14 @@ La configuración de despliegue abarca los tres productos de Rumbo. La compilaci
 El workflow de frontend ejecutó las pruebas Angular y el build en Ubuntu al abrir el PR #17 hacia `develop` (run #25, resultado exitoso). La validación visual de Routes permanece pendiente. Las pruebas de las páginas del Landing Page y los enlaces Call-To-Action mantienen su evidencia previa y no forman parte de la integración local Routes.
 
 
-**Situación del despliegue para AV2 al 10/11/2026:** la última URL del Landing Page consignada en el informe es la de GitHub Pages. Los endpoints de Spring Boot comprobados en el reporte previo respondían en una máquina local; no se dispone aquí de una URL de Render verificada para el backend integrado. El frontend Angular de Sprint 3 está fusionado en `develop`, pero ello no demuestra que esa revisión se encuentre publicada.
+**Situación del despliegue para AV2 al 10/11/2026:** la Landing Page mantiene la URL de GitHub Pages consignada anteriormente y el frontend dispone de un workflow de despliegue ejecutado con éxito tras el merge a `main`. No se aporta en estas capturas una comprobación visual de la página ya desplegada. Los endpoints Spring Boot observados en Swagger se sirvieron en `localhost:8080`; no se dispone de una URL de Render verificada para el backend integrado.
 
 En la versión actual, el backend `develop` configura **Java 27** en Maven. El despliegue requiere una imagen o servicio compatible, PostgreSQL disponible y variables de entorno `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`, `PORT`, `CORS_ALLOWED_ORIGINS` y `SPRING_PROFILES_ACTIVE=prod`. Para producción, los flags `app.demo.enabled` y `app.profiles.demo.enabled` deben quedar deshabilitados. Angular necesita una URL de API pública o un proxy inverso real: `proxy.conf.json` solo sirve para el servidor de desarrollo y no se publica con el build.
 
 **Criterio de cierre del despliegue:** comprobar URL accesible fuera de la máquina local, endpoint real de Swagger, conexión a PostgreSQL y frontend consumiendo el backend público. Hasta tener esos resultados no se reemplazarán las referencias de entorno local por enlaces inventados.
 
-> **[CAPTURA PENDIENTE — AV2-DEP-01]** Panel de Render: servicio Web Services desplegado, estado, build Java 27, commit y URL pública. Destino: `assets/chapter5/av2/render-backend-service.png`.
 
-> **[CAPTURA PENDIENTE — AV2-DEP-02]** Swagger público y respuesta de un endpoint REST en la URL final del backend. Destino: `assets/chapter5/av2/swagger-public-deploy.png`.
 
-> **[CAPTURA PENDIENTE — AV2-DEP-03]** Frontend y Landing Page públicos: páginas de rutas, planes y vistas de tutor; URL, versión y fecha visibles. Destino: `assets/chapter5/av2/web-frontend-landing-deploy.png`.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -3352,7 +3367,6 @@ La colaboración del Sprint se evidencia mediante la secuencia de commits, los P
 - [Pull Requests del Frontend](https://github.com/AIpaca-OS/frontend-web-application/pulls)
 - [Repositorio de Web Services](https://github.com/AIpaca-OS/web-services)
 
-<!-- AV2: incorporar capturas reales de Contributors, Pulse, Network y PRs vinculados a Sprint 3, con fecha de consulta y explicación de los aportes. -->
 
 La retrospectiva del equipo se vincula con el video About-the-Team, que complementa estos registros con sesiones de trabajo y testimonios de los integrantes sobre sus responsabilidades, dificultades y aprendizajes.
 
@@ -3365,11 +3379,8 @@ Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y depende
 
 **Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
 
-> **[CAPTURA PENDIENTE — AV2-COL-01]** Jira: incidencias asignadas a los cuatro miembros, estado por etapa y filtros del Sprint. Destino: `assets/chapter5/av2/jira-team-board.png`.
 
-> **[CAPTURA PENDIENTE — AV2-COL-02]** GitHub: historial Network/Pulse/Contributors y PRs realmente fusionados, sin modificar la autoría. Destino: `assets/chapter5/av2/github-contributors-prs.png`.
 
-> **[CAPTURA PENDIENTE — AV2-COL-03]** Captura de una reunión o revisión real de código; se incorporará con autorización de los participantes. Destino: `assets/chapter5/av2/real-team-session.png`.
 
 ## 5.3. Validation Interviews
 
@@ -3392,18 +3403,9 @@ Se registran el dispositivo, el navegador, la versión examinada y las observaci
 
 Cada sesión incluye nombres y apellidos, edad, distrito, User Persona, fecha, captura representativa del video, el enlace a Microsoft Stream y el tiempo de inicio y duración dentro del video consolidado. El registro descriptivo recoge las apreciaciones del participante frente a las tareas realizadas.
 
-| Sesión | Segmento | Participante, edad y distrito | Fecha | Resumen de interacción | Stream (inicio y duración) |
-|---|---|---|---|---|---|
-| V01 | Padre / tutor | <!-- AV2: datos reales con autorización --> | | | |
-| V02 | Padre / tutor | <!-- AV2: datos reales con autorización --> | | | |
-| V03 | Padre / tutor | <!-- AV2: datos reales con autorización --> | | | |
-| V04 | Conductor | <!-- AV2: datos reales con autorización --> | | | |
-| V05 | Conductor | <!-- AV2: datos reales con autorización --> | | | |
-| V06 | Conductor | <!-- AV2: datos reales con autorización --> | | | |
+**Registro AV2:** no se presentan fichas de Validation Interviews porque no se adjuntaron grabaciones, participantes ni resultados verificables. Se conserva la metodología de registro descrita arriba, sin agregar filas vacías.
 
-**Video de Validation Interviews:** <!-- AV2: Microsoft Stream, nombre validation-sprint-3.mp4 conforme al Anexo C y captura del video -->
 
-Este borrador conserva únicamente la estructura de registro. Los datos de participantes, autorizaciones, fechas, grabaciones y resultados deben incorporarse a partir de sesiones realizadas; no se registran entrevistas ni hallazgos sin evidencia.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
@@ -3411,9 +3413,7 @@ Los resultados de cada sesión se examinan con el formato **UX Heuristics & Prin
 
 La escala de severidad indicada por el enunciado comprende cuatro niveles: **1, superficial; 2, menor; 3, mayor; 4, muy grave**. La calificación se sustenta en la frecuencia y el impacto de la dificultad para el usuario.
 
-| # | Sesión / tarea | Problema observado | Severidad (1–4) | Heurística o principio vulnerado | Recomendación |
-|---|---|---|---|---|---|
-| <!-- AV2: registrar únicamente hallazgos observados; añadir descripción detallada y captura por problema. --> | | | | | |
+**Resultados AV2:** no se aportaron fichas de evaluación heurística con observaciones verificadas; por tanto, no se incluyen tablas de hallazgos vacías.
 
 La comparación entre sesiones aporta criterios para priorizar cambios sobre las experiencias web. Los hallazgos se relacionan con modificaciones identificables y con su registro en la evolución del producto.
 
@@ -3422,9 +3422,7 @@ La comparación entre sesiones aporta criterios para priorizar cambios sobre las
 
 Para conectar la investigación con las funciones desarrolladas, se propone que los **conductores** intenten configurar una ruta, añadir paradas, asociar vehículo y entender cuándo es posible publicar; los **tutores**, registrar o identificar a un estudiante y consultar la información disponible sobre un traslado y sus avisos. Las tareas que aún dependan de autorización o APIs no integradas deberán informarse como prototipo o flujo parcial.
 
-> **[CAPTURA PENDIENTE — AV2-VAL-01]** Registro de entrevistas con participantes reales (3–5 por segmento según enunciado), consentimiento, capturas con autorización y URL/tiempos del video consolidado. Destino: `assets/chapter5/av2/validation-interviews.png`.
 
-> **[CAPTURA PENDIENTE — AV2-VAL-02]** Tabla de evaluación según heurísticas del Anexo D y resultados observados por sesión, sin inventar severidad ni hallazgos. Destino: `assets/chapter5/av2/heuristics-validation.png`.
 
 ## 5.4. Video About-the-Product
 
@@ -3440,13 +3438,10 @@ Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres
 | Testimonios | Opiniones de participantes reales de las entrevistas de validación, al menos una por segmento. |
 | Cierre | Identidad de AIpaca/Rumbo e invitación a conocer la plataforma. |
 
-**Registro de publicación:** <!-- AV2: URL de Microsoft Stream; URL de YouTube; duración; screenshot; porcentaje real de edición; timestamp de las secuencias. -->
 
 
 
-> **[CAPTURA PENDIENTE — AV2-VID-01]** Fotograma identificable del About-the-Product, duración efectiva (1–3 minutos), fecha de publicación y URLs reales de Microsoft Stream y YouTube. Destino: `assets/chapter5/av2/about-the-product.png`.
 
-**Entregables de video por completar:** vínculo de Microsoft Stream, vínculo público de YouTube, inserción en el Landing Page y transcripción de la secuencia con tiempos reales. Las opiniones de usuarios deben proceder de participantes de entrevistas de validación realizadas; no se reemplazan por un testimonio ficticio.
 
 # Conclusiones
 
@@ -3467,7 +3462,6 @@ La implementación de Web Services se contrasta con los contratos y las operacio
 
 Desde la coordinación del equipo, se ha mantenido el registro de responsables en Jira y se han documentado dependencias técnicas en PRs. Para el siguiente ciclo se recomienda cerrar primero el escenario completo **tutor registra estudiante → conductor autorizado selecciona vehículo y estudiante → publica ruta → se ejecuta viaje → tutor consulta estado y notificación**, y usarlo como prueba de aceptación trazable entre frontend, API y PostgreSQL.
 
-> **[CAPTURA PENDIENTE — AV2-CONC-01]** Evidencia de un flujo extremo a extremo finalmente verificado y de la mejora derivada de validación (antes/después). Destino: `assets/chapter5/av2/end-to-end-validation.png`.
 
 ## Video About-the-Team
 
@@ -3475,19 +3469,7 @@ El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspe
 
 La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de sesiones de trabajo reales, explicación de la coordinación y una retrospectiva del Sprint, seguidas de testimonios ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C del enunciado, la **referencia** es de cinco minutos de retrospectiva grupal más un minuto por integrante (aproximadamente nueve minutos en total). El equipo ha preparado una versión abreviada como borrador de edición; si utiliza una duración inferior, corresponde confirmar su aceptación con el docente. La duración, los timestamps y el nivel de edición solo se documentarán como hechos una vez grabado y publicado el video. La identidad visual, voz en off y escenas de reuniones deben corresponder a material real.
 
-| Secuencia | Contenido | Inicio (hh:mm:ss) |
-|---|---|---|
-| Apertura | Startup, producto y presentación del equipo | <!-- AV2: timestamp --> |
-| Trabajo colaborativo | Sesiones reales, organización y principales artefactos | <!-- AV2: timestamp --> |
-| Retrospectiva | Aciertos, dificultades y mejoras aplicadas al proceso | <!-- AV2: timestamp --> |
-| Testimonios | Participación y autoevaluación de cada integrante | <!-- AV2: timestamps individuales --> |
-| Cierre | Resultados de la iteración y aprendizajes del equipo | <!-- AV2: timestamp --> |
-
-**Microsoft Stream:** <!-- AV2: enlace del video -->
-**YouTube:** <!-- AV2: enlace integrado en Landing Page -->
-**Duración y cuadro representativo:** <!-- AV2: duración exacta, captura y registro de edición -->
-
-
+**Estado de publicación AV2:** no se adjuntaron archivos de video ni enlaces verificables de Microsoft Stream o YouTube. Se conserva a continuación una pauta de grabación como propuesta, no como evidencia publicada.
 
 **Pauta de edición preliminar para un video abreviado** (no es la duración oficial sugerida en el enunciado; los tiempos definitivos se anotarán tras montar el video):
 
@@ -3507,9 +3489,7 @@ La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de se
 
 **Nombre de archivo requerido (Sprint 3):** `upc-pre-202620-1asi0729-7760-aipaca-about-the-team-sprint-3.mp4`.
 
-> **[CAPTURA PENDIENTE — AV2-VID-02]** Fotograma real de los testimonios ante cámara, duración total y pauta definitiva `hh:mm:ss`. Destino: `assets/chapter5/av2/about-the-team-testimonies.png`.
 
-> **[CAPTURA PENDIENTE — AV2-VID-03]** Video publicado en Microsoft Stream y YouTube y su inserción real en el Landing Page. Destino: `assets/chapter5/av2/about-the-team-published.png`.
 
 # Bibliografía
 
@@ -3547,43 +3527,20 @@ La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de se
 # Anexos
 
 
-## Evidencias previstas de AV2
+## Evidencias visuales incorporadas para Sprint 3
 
-- **Grabaciones de Validation Interviews (V01–V06):** [Incorporar enlaces con autorización de los participantes].
-- **About-the-Product:** [Incorporar video publicado y evidencia de la edición].
-- **About-the-Team / Process Retrospective:** [Incorporar video publicado, intervenciones de los integrantes y evidencia de la edición].
-- **Sprint 3:** [Incorporar capturas de backlog, PRs, Swagger, tests y despliegue].
-- **Nueva versión de Landing Page y Frontend:** [Incorporar URLs y capturas de navegación].
+Los siguientes archivos **ya están en este repositorio** y se incorporaron como figuras en las secciones 5.2.3.5 y 5.2.3.6. Se preservan los registros locales históricos de pruebas de Routes en `assets/chapter5/routes-av2-evidence/` y las capturas aportadas por los integrantes de entregas anteriores.
 
-Los enlaces y evidencias se completarán con los recursos finales, sin sustituirlos por capturas de maquetas o resultados no verificados.
-
-
-### Registro de capturas y recursos pendientes para la entrega AV2
-
-Esta matriz funciona como **esqueleto** para completar la documentación. No se han creado archivos PNG vacíos ni imágenes ilustrativas que puedan confundirse con capturas de ejecución. Tras tomar cada captura, subir el archivo al directorio indicado y sustituir la nota `[CAPTURA PENDIENTE]` en la sección correspondiente por Markdown, por ejemplo `![Swagger de Routes](./assets/chapter5/av2/swagger-integrated-endpoints.png)`, junto con descripción, fecha y versión.
-
-| Sección del informe | Evidencia prevista | Estado |
+| Archivo de evidencia | Contenido observado | Sección |
 |---|---|---|
-| Student Outcome / Sprint Planning | Roles, coordinación, sesión real y trazabilidad Jira | Captura pendiente |
-| Sprint Backlog | Tablero y estado actualizado de historias con responsable | Captura pendiente |
-| Development | PRs #3, #4, #5, #6, #8, frontend #17; estructura de archivos | Captura pendiente |
-| Execution | Maven y Angular, formulario de rutas, solicitudes Postman y PostgreSQL | Captura pendiente |
-| Services Documentation | Swagger/OpenAPI de Routes, Profiles, Billing y avisos | Captura pendiente |
-| Software Deployment | Render, URL pública de Swagger, Landing Page y Web Apps publicadas | Captura pendiente |
-| Collaboration | Network, Contributors, Pulse y sesión de trabajo real | Captura pendiente |
-| Validation Interviews | Grabaciones y capturas autorizadas, observaciones y heurísticas | Captura pendiente |
-| About-the-Product / About-the-Team | Videos publicados, fotos de testimonios, Stream, YouTube y tiempos | Captura pendiente |
+| [Swagger-1.png](./assets/chapter5/Swagger-1.png) | Descripción de Rumbo API y Service Enrollments | 5.2.3.6 |
+| [Swagger-2.png](./assets/chapter5/Swagger-2.png) | Rutas, horarios, asignaciones, suscripciones y avisos del conductor | 5.2.3.6 |
+| [Swagger-3.png](./assets/chapter5/Swagger-3.png) | Vehículos, estudiantes, consultas de tutor y planes | 5.2.3.6 |
+| [Swagger-4.png](./assets/chapter5/Swagger-4.png) | Profiles, Notifications, Data Deletion Requests y Trips | 5.2.3.6 |
+| [Swagger-5.png](./assets/chapter5/Swagger-5.png) | Schools y esquemas de recursos REST | 5.2.3.6 |
+| [pgAdmin-1.png](./assets/chapter5/pgAdmin-1.png) | Consulta de la tabla `rp_routes` en PostgreSQL 17 local | 5.2.3.5 |
 
-**Indicaciones de consistencia:** respetar la fecha y el commit de la versión demostrada, no mezclar datos de MockAPI con PostgreSQL, evitar credenciales o información privada de menores en las imágenes y usar los estados reales del tablero para describir el cumplimiento de historias. La evidencia histórica de Routes que ya está en `assets/chapter5/routes-av2-evidence/` se conserva sin sobrescribirla, indicando el corte al que corresponde.
-
-## Videos de Exposición
-**Microsoft Stream:** [Completar]
-
-## Entrevistas de Needfinding
-**Microsoft Stream:** [Completar]
-
-## Navegación del Prototipo
-**Microsoft Stream:** [Completar]
+**Límite de evidencia:** no se incluyen capturas de Render, Postman, validaciones de usuarios o videos porque no forman parte de los archivos entregados para esta actualización. Los enlaces de los repositorios y los PRs de GitHub conservan su valor como evidencia trazable de desarrollo, pero no sustituyen pruebas de ejecución.
 
 ## Enlaces del proyecto
 - https://github.com/AIpaca-OS/project-report
