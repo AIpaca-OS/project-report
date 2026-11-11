@@ -1994,7 +1994,7 @@ El modelo emplea identificadores de tipo `UUID` y campos temporales para registr
 El modelo de identidad se concentra en `accounts` y `account_tokens`. La cuenta conserva el correo, el hash de la contraseña, el rol y el estado de verificación. Los tokens se relacionan con una cuenta y registran su tipo, vencimiento y utilización. Esta separación permite administrar los mecanismos de acceso sin mezclar sus datos con los perfiles de padres o conductores.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/iam-data-diagram.png" alt="Identity and Access Management Database Diagram: accounts y account_tokens" width="95%">
+  <img src="./assets/chapter04/database-diagrams/iam_db.png" alt="Identity and Access Management Database Diagram: accounts y account_tokens" width="95%">
 </div>
 
 #### Profiles & Relationship Management
@@ -2002,7 +2002,7 @@ El modelo de identidad se concentra en `accounts` y `account_tokens`. La cuenta 
 Este contexto reúne `profiles`, `students`, `schools`, `tutor_student_relationships`, `service_enrollments` y `data_deletion_requests`. Las relaciones entre tutores y estudiantes registran autorizaciones; las inscripciones vinculan al estudiante con el conductor y el servicio. La solicitud de eliminación de datos mantiene su propio estado de atención. Los perfiles se identifican de forma independiente de la información de autenticación.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/profile-data-diagram.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/profiles_db.png" alt="Profiles and Relationship Management Database Diagram" width="95%">
 </div>
 
 #### Vehicle & Credential Management
@@ -2010,7 +2010,7 @@ Este contexto reúne `profiles`, `students`, `schools`, `tutor_student_relations
 La persistencia de vehículos se organiza en `vehicles`, `vehicle_documents` y `driver_credentials`. Los vehículos contienen datos de identificación, capacidad y estado; sus documentos registran tipo, vencimiento y verificación. Las credenciales del conductor se administran por separado, lo que permite comprobar tanto la documentación del vehículo como la habilitación de quien presta el servicio.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/vehicle-data-diagram.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/vehicles_db.png" alt="Vehicle and Credential Management Database Diagram" width="95%">
 </div>
 
 #### Route & Trip Planning
@@ -2018,7 +2018,7 @@ La persistencia de vehículos se organiza en `vehicles`, `vehicle_documents` y `
 La planificación se apoya en `routes`, `route_stops`, `route_schedules` y `route_assignments`. Cada ruta identifica al conductor y al vehículo asociados, junto con su turno, dirección y estado. Las paradas conservan un orden y datos de ubicación; los horarios especifican los días y horas del servicio. Las asignaciones permiten relacionar estudiantes con paradas de una ruta determinada, separando el diseño del recorrido de la ejecución de un viaje.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/route-data-diagram.png" alt="Route and Trip Planning Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/routes_db.png" alt="Route and Trip Planning Database Diagram" width="95%">
 </div>
 
 #### Trip Execution & Monitoring
@@ -2026,7 +2026,7 @@ La planificación se apoya en `routes`, `route_stops`, `route_schedules` y `rout
 Este diagrama desarrolla la operación de los recorridos mediante `trips`, `trip_stops`, `trip_passengers`, `trip_events` y `student_absences`. El viaje conserva la fecha del servicio, los estados y los tiempos relevantes; las paradas y pasajeros permiten registrar recojos, entregas y ausencias. Los eventos dejan constancia de lo ocurrido durante el trayecto y de la persona que realizó el registro. De este modo, la información de ejecución queda diferenciada de la programación original de la ruta.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/trip-data-diagram.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/trips_db.png" alt="Trip Execution and Monitoring Database Diagram" width="95%">
 </div>
 
 #### Incident & Delay Management
@@ -2034,7 +2034,7 @@ Este diagrama desarrolla la operación de los recorridos mediante `trips`, `trip
 Las incidencias se registran en `incidents` con su categoría, descripción, estado y resolución. La tabla `incident_acknowledgements` conserva la confirmación de recepción por parte del tutor. Los retrasos se representan en `delays`, incluyendo su causa, tiempo estimado y la referencia a un retraso anterior cuando existe una actualización. Este modelo permite conservar el historial de situaciones operativas sin confundirlas con el envío de notificaciones.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/incident-data-diagram.png" alt="Incident and Delay Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/incidents_db.png" alt="Incident and Delay Management Database Diagram" width="95%">
 </div>
 
 #### Notification Management
@@ -2042,7 +2042,7 @@ Las incidencias se registran en `incidents` con su categoría, descripción, est
 El contexto de notificaciones incorpora `notifications`, `notification_settings`, `recipient_authorizations` y `recipient_contacts`. Cada notificación conserva su destinatario, origen, prioridad, contenido y estado de entrega o lectura. La configuración de preferencias permite distinguir los tipos de aviso que recibe el tutor, mientras que las autorizaciones y los datos de contacto contribuyen a dirigir las comunicaciones a sus destinatarios.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/notification-data-diagram.png" alt="Notification Management Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/notifications_db.png" alt="Notification Management Database Diagram" width="95%">
 </div>
 
 #### Subscriptions & Billing
@@ -2050,7 +2050,7 @@ El contexto de notificaciones incorpora `notifications`, `notification_settings`
 El modelo comercial utiliza `plans`, `subscriptions` y `subscription_payments`. Los planes especifican precio, moneda, periodo de facturación y límite de vehículos. Cada suscripción vincula un conductor con un plan y conserva su estado y periodo vigente. Los pagos se registran por suscripción y periodo, con importe, estado y referencia de comprobante, lo que permite mantener separado el catálogo comercial del historial de cobros.
 
 <div align="center">
-  <img src="./assets/chapter04/database-diagrams/subscription-data-diagram.png" alt="Subscriptions and Billing Database Diagram" width="95%">
+  <img src="./assets/chapter04/database-diagrams/billing_db.png" alt="Subscriptions and Billing Database Diagram" width="95%">
 </div>
 
 En conjunto, los ocho diagramas proporcionan una representación más concreta de la información que administra Rumbo y de las relaciones necesarias dentro de cada contexto. La implementación de Web Services toma estos modelos como referencia para sus entidades persistentes y repositorios, pero define las operaciones REST a partir de las User Stories y las reglas del dominio. La correspondencia entre recursos, operaciones, pruebas y endpoints se documenta en la sección 5.2.3.6 del Capítulo V.
