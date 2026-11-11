@@ -57,6 +57,7 @@
 | 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 | 2.1 | 20/10/2026 | Equipo AIpaca — actualización documental | Revisión de los ocho Database Diagrams del Capítulo IV; sincronización de assets y estructura de documentación de Sprint 3, Validation Interviews y videos de AV2 conforme al Final Project Statement. |
 | 2.2 — borrador | 02/11/2026 | Actualización asistida, pendiente de revisión del equipo | Ajuste del Sprint 3 a la distribución actual de cuatro integrantes; registro de backlog Jira, contratos Routes y estado de evidencias técnicas disponibles. |
+| 2.3 — actualización AV2 | 10/11/2026 | Lino Quispe, Leonardo Miguel — consolidación documental para revisión grupal | Actualización de Sprint 3 con estados verificados de Jira, integración de Routes, Billing, Profiles y Notifications en backend, alcance de las APIs locales, riesgos de despliegue y pauta de capturas pendientes. No se reportan pruebas ni videos no realizados. |
 
 ---
 
@@ -189,6 +190,22 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
 |---|---|---|
 | **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• AV1: Realizó entrevistas de Needfinding dirigidas a conductores de movilidad escolar, adaptando el lenguaje técnico hacia términos coloquiales de transporte diario.<br>• TB1: Expuso en video la navegación de la interfaz de usuario de perfiles y sustentó las decisiones de diseño tomadas para la interacción entre tutores y estudiantes.<br><br>**Geronimo Puma, Kevin Joel**<br>• AV1: Condujo entrevistas con padres de familia, enfocándose en la empatía y la resolución de preocupaciones sobre la seguridad en el traslado escolar.<br>• TB1: Sustentó ante cámara la lógica del flujo de suscripciones y facturación emulada en la Frontend Web Application.<br><br>**Lino Quispe, Leonardo Miguel**<br>• AV1: Lideró la exposición de la propuesta de valor y arquitectura de información de la Landing Page ante el docente y el equipo.<br>• TB1: Explicó de manera estructurada en la sustentación síncrona el flujo de trabajo colaborativo en GitFlow y la organización de rutas escolares.<br><br>**Meza Soza, Alexandra Yamile**<br>• AV1: Participó activamente en la exposición de requisitos del usuario y arquetipos User Persona durante las revisiones internas del equipo.<br>• TB1: Realizó la demostración guiada del módulo de alertas y configuración de notificaciones durante la grabación de la entrega.<br><br>**Pareja Caceres, Diana**<br>• AV1: Presentó la síntesis de competidores directos e indirectos y sustentó las ventajas diferenciales del producto durante la retrospectiva del Sprint 1.<br>• TB1: Expuso la demostración funcional del Bounded Context de gestión de vehículos y credenciales, explicando el consumo de servicios REST en la nube y el uso de Signals para la reactividad. | **Conclusión grupal AV1:** El equipo demostró adaptabilidad comunicativa al interactuar con perfiles contrastantes (padres de familia y transportistas escolares), logrando extraer necesidades críticas sin inducir respuestas técnicas complejas.<br><br>**Conclusión grupal TB1:** Durante la sustentación y demostración de software, el equipo articuló con claridad técnica el funcionamiento de la aplicación ante el docente, relacionando cada vista con los objetivos de negocio y demostrando fluidez en la argumentación de la arquitectura elegida. |
 | **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• AV1: Redactó la caracterización del segmento objetivo y el análisis competitivo en el Capítulo II.<br>• TB1: Documentó los contratos de datos y especificaciones funcionales para el Bounded Context de Profiles & Relationship Management.<br><br>**Geronimo Puma, Kevin Joel**<br>• AV1: Elaboró los artefactos de Needfinding (User Personas y Empathy Maps) empleando redacción centrada en el usuario.<br>• TB1: Redactó la documentación de tareas y casos de uso emulados para el Bounded Context de Subscriptions & Billing en el Capítulo V.<br><br>**Lino Quispe, Leonardo Miguel**<br>• AV1: Estructuró y redactó las directrices de configuración de software, políticas de ramas en GitFlow y la introducción formal del informe.<br>• TB1: Consolidó la trazabilidad de tareas en el Sprint Backlog 2 y documentó la configuración general del entorno Angular CLI y temas Material.<br><br>**Meza Soza, Alexandra Yamile**<br>• AV1: Redactó los escenarios de aceptación en formato Gherkin (Given-When-Then) para las User Stories del Sprint 1.<br>• TB1: Elaboró la documentación técnica de las interfaces de alerta, detallando las reglas de validación en el informe colaborativo.<br><br>**Pareja Caceres, Diana**<br>• AV1: Documentó el análisis del entorno y los antecedentes de la problemática del transporte escolar en Lima en la sección Solution Profile.<br>• TB1: Redactó íntegramente la documentación de infraestructura para Vehicle & Credential Management, detallando las llamadas HTTP a MockAPI, los modelos de dominio y las convenciones de Conventional Commits en el informe. | **Conclusión grupal AV1:** Se logró una especificación técnica rigurosa en Markdown, manteniendo uniformidad estilística y precisión en la definición de criterios de aceptación comprobables mediante Gherkin.<br><br>**Conclusión grupal TB1:** El equipo consolidó una redacción técnica clara y trazable en el Capítulo V, alineando sin ambigüedades los términos del negocio (Ubiquitous Language) con los artefactos de código fuente, endpoints REST y commits en GitHub. |
+
+
+### Avance del Student Outcome 3 — AV2 (registro a contrastar con las evidencias)
+
+El equipo mantiene las dos dimensiones del Student Outcome 3 establecidas en la rúbrica: **3.c1, comunicación oral**, y **3.c2, comunicación escrita**. La evidencia presentada para AV2 debe distinguir la documentación técnica ya redactada de los testimonios audiovisuales que todavía deben grabarse y publicarse.
+
+| Integrante | Evidencia de comunicación técnica preparada durante Sprint 3 | Testimonio oral y validación pendientes |
+|---|---|---|
+| **Lino Quispe, Leonardo Miguel** | Coordinación del seguimiento de Jira y revisión de integración entre módulos; especificación y explicación del flujo de creación de rutas, paradas ordenadas, horarios, asignaciones y publicación; organización de contratos REST y sus dependencias con Profiles. | Presentar ante cámara las decisiones implementadas, la integración Angular–Spring Boot y las dificultades de autorización; adjuntar captura y URL del video. |
+| **Geronimo Puma, Kevin Joel** | Trabajo en el contexto Subscriptions & Billing: estructura de planes y suscripciones, servicios del backend y sus contratos REST, con integración progresiva entre capas. | Mostrar y explicar el resultado comprobable de Billing, las decisiones de negocio y sus aprendizajes; adjuntar evidencia personal. |
+| **Díaz Ramírez, Alejandro** | Diseño e implementación progresiva de Profiles & Relationship Management, estudiantes y sus relaciones con tutores; revisión de dependencias de autorización y coordinación de la gestión básica de vehículos. | Explicar los flujos realmente ejecutados, el tratamiento responsable de datos de menores y la integración pendiente con IAM; adjuntar evidencia. |
+| **Meza Soza, Alexandra Yamile** | Desarrollo de interfaces de alertas e incidencias y seguimiento de la integración de servicios de notificaciones de la versión local. | Explicar el flujo de comunicación de incidencias/retrasos, los resultados verificables y las mejoras pendientes; adjuntar evidencia. |
+
+**Reflexión grupal para AV2:** la separación del sistema en bounded contexts permitió distribuir el desarrollo, pero reveló dependencias de integración entre las rutas, los perfiles autorizados, los vehículos y las notificaciones. El equipo debió comunicar contratos de API, discutir incompatibilidades de configuración y revisar los cambios en GitHub antes de incorporarlos al producto común. Estas experiencias sustentan el desarrollo de la comunicación técnica escrita y oral; los testimonios audiovisuales y las validaciones de usuarios se incorporarán únicamente cuando estén disponibles.
+
+> **[CAPTURA PENDIENTE — AV2-SO-01]** Extracto del registro de coordinación del equipo y evidencias de comunicación (Jira/PRs). Guardar captura real en `assets/chapter5/av2/student-outcome-collaboration.png` y reemplazar esta indicación por su imagen, fuente y fecha.
 
 ---
 
@@ -3063,6 +3080,14 @@ En esta sección se registra el objetivo establecido durante la reunión de Spri
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
+**Actualización de avance (10/11/2026).** Tras la revisión del repositorio y el tablero RMO, el equipo mantuvo cuatro integrantes activos y distribuyó los ámbitos principales de la siguiente forma: Leonardo coordinó el seguimiento e implementación de Routes & Trip Planning; Kevin desarrolló Billing; Alejandro asumió Profiles & Relationship Management y el apoyo mínimo requerido para Vehicles; Alexandra trabajó Alerting, Incidents y Notifications. Esta distribución no significa que todas las historias estén terminadas. En Jira, 76 incidencias tienen responsable, con **8 Listo, 13 En curso y 55 Por hacer** en la consulta realizada. Las historias no completadas conservan su estado y deben contrastarse con los criterios de aceptación del Sprint.
+
+El objetivo documentado del Sprint 3 sigue siendo completar la experiencia frontend y entregar una primera versión comprobable de servicios backend. La integración alcanzada comprende código consolidado en `develop` y servicios adicionales para pruebas locales. La autenticación real, la autorización entre contextos, la ejecución integral, las evidencias visuales y el despliegue público requieren comprobación adicional.
+
+> **[CAPTURA PENDIENTE — AV2-SP-01]** Acta o evidencia real del Sprint Planning / reunión de coordinación del Sprint 3, con fecha y participantes. Destino: `assets/chapter5/av2/sprint-planning-3.png`.
+
+
+
 La matriz LACX refleja la distribución de responsabilidades establecida para el Sprint 3. En esta iteración, los aspectos considerados corresponden principalmente a los Bounded Context definidos para la plataforma Rumbo, con excepción de **Vehicle & Credential**, cuya gestión quedó reducida a referencias esenciales de **Routes &amp; Trip Planning** debido a la salida de uno de los integrantes del equipo. Asimismo, se incorporan otros aspectos complementarios necesarios para el cumplimiento de los objetivos del Sprint. A continuación, se presentan los aspectos considerados y los responsables asignados a cada uno.
 
 <table>
@@ -3086,6 +3111,12 @@ La matriz LACX refleja la distribución de responsabilidades establecida para el
 
 #### 5.2.3.3. Sprint Backlog 3
 
+**Responsabilidades de coordinación e integración.** Leonardo efectuó seguimiento del avance en Jira y del proceso de integración de Routes; los demás integrantes mantienen liderazgo funcional en sus contextos y colaboran en pruebas y revisión. Para no confundir la matriz LACX con estados de terminación, se registran también las dependencias activas: Vehicles (apoyo de Alejandro, sujeto a verificación de su interfaz y backend); Profiles ↔ Routes (permisos de estudiante y conductor); Billing ↔ frontend (planes y suscripciones); Notifications ↔ Routes/Tutor (avisos visibles). El criterio de «Listo» se aplica solo a entregables comprobados; la asignación de un líder no implica un endpoint desplegado.
+
+> **[CAPTURA PENDIENTE — AV2-LACX-01]** Evidencia de distribución y coordinación de responsabilidades con los cuatro integrantes activos. Destino: `assets/chapter5/av2/lacx-team.png`.
+
+
+
 El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
 **Sprint Board público:** https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog
@@ -3100,17 +3131,40 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
 | [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | Crear una ruta con sus paradas | 8 | API y persistencia de ruta/paradas (8 h); formulario Angular e integración (8 h); reglas y pruebas de aceptación (4 h). | Leonardo Lino | En curso |
 | [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | Definir el horario de la ruta | 3 | Contrato y persistencia del horario (4 h); formulario reactivo y confirmación (4 h). | Leonardo Lino | En curso |
 | [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | Asignar estudiantes a una ruta | 5 | Operación de asignación y restricciones (8 h); selección e integración con la interfaz (8 h). | Leonardo Lino | En curso |
-| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Publicar una ruta | 3 | Transición de estado y validación de completitud (4 h); acción de publicación y mensajes accesibles (4 h). | Leonardo Lino | Por hacer |
-| [RMO-24](https://aipaca.atlassian.net/browse/RMO-24) | Modificar una ruta publicada | 5 | Política de modificación y respuesta de conflicto (4 h); flujo de edición y regresión (4 h). | Leonardo Lino | Por hacer |
+| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Publicar una ruta | 3 | Transición de estado y validación de completitud (4 h); acción de publicación y mensajes accesibles (4 h). | Leonardo Lino | En curso |
+| [RMO-24](https://aipaca.atlassian.net/browse/RMO-24) | Modificar una ruta publicada | 5 | Política de modificación y respuesta de conflicto (4 h); flujo de edición y regresión (4 h). | Leonardo Lino | En curso |
 | [RMO-25](https://aipaca.atlassian.net/browse/RMO-25) | Integración con servicio de mapas para direcciones de paradas | 5 | Adaptador de geocodificación y configuración (8 h); tratamiento de fallos y validación de cobertura (4 h). | Leonardo Lino | Por hacer |
 | [RMO-26](https://aipaca.atlassian.net/browse/RMO-26) | Programar el viaje de la jornada | 5 | Caso de uso y contrato de programación (8 h); persistencia y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
 | [RMO-27](https://aipaca.atlassian.net/browse/RMO-27) | Cancelar un viaje | 3 | Regla de transición de cancelación (4 h); respuestas de API y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
 | [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | Endpoints del RESTful API para Route & Trip Planning | 5 | Contratos OpenAPI, errores y seguridad (8 h); colección Postman y validación de integración (8 h). | Leonardo Lino | En curso |
-| [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Sin asignar en Jira | Por hacer |
-| [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Sin asignar en Jira | Por hacer |
+| [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Leonardo Lino | Por hacer |
+| [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Alejandro Diaz Ramirez | Por hacer |
 
 
 #### 5.2.3.4. Development Evidence for Sprint Review
+
+**Seguimiento transversal de historias y tareas técnicas del Sprint 3 (consulta Jira del 10/11/2026).** Se conservaron la estimación y los títulos planificados; las asignaciones y estados anteriores se actualizaron sin afirmar cierre de historias que aún dependen de integración o evidencia.
+
+| Elemento de Jira | Responsable | Estado verificado | Alcance y dependencia actual |
+|---|---|---|---|
+| [RMO-59](https://aipaca.atlassian.net/browse/RMO-59) — Formulario, código y paradas | Leonardo | Listo | Frontend de configuración de rutas y paradas ordenadas. |
+| [RMO-60](https://aipaca.atlassian.net/browse/RMO-60) — Verificación de rutas | Leonardo | En curso | Faltan direcciones verificadas y pruebas visuales. |
+| [RMO-62](https://aipaca.atlassian.net/browse/RMO-62) — Persistencia de horario | Leonardo | Listo | Evidencia previa registrada de RouteSchedule. |
+| [RMO-63](https://aipaca.atlassian.net/browse/RMO-63) — Pruebas de horario | Leonardo | Listo | Casos de horario completo e incompleto documentados. |
+| [RMO-65](https://aipaca.atlassian.net/browse/RMO-65) — Duplicados | Leonardo | Listo | Validación de duplicidad registrada; no equivale a autorización integral. |
+| [RMO-66](https://aipaca.atlassian.net/browse/RMO-66) — Asignación autorizada | Leonardo | En curso | Verificación intercontexto con Profiles/IAM pendiente. |
+| [RMO-68](https://aipaca.atlassian.net/browse/RMO-68) — Contrato REST | Leonardo | En curso | Controladores disponibles; falta comprobar contrato integrado y despliegue. |
+| [RMO-36](https://aipaca.atlassian.net/browse/RMO-36) — Profiles REST | Alejandro | En curso | Controladores de perfiles, estudiantes y relaciones en backend integrado; falta validar permisos y flujo completo. |
+| [RMO-58](https://aipaca.atlassian.net/browse/RMO-58) — Billing REST | Kevin | En curso | Planes y suscripciones añadidos al backend; faltan pruebas de integración y conexión final con Angular. |
+| [RMO-76](https://aipaca.atlassian.net/browse/RMO-76) — Catálogo de planes | Kevin | En curso | Código de planes y persistencia presente; ejecución integrada por comprobar. |
+| [RMO-32](https://aipaca.atlassian.net/browse/RMO-32) — Alerting API | Alexandra | Por hacer | El backend contiene notificaciones de demostración local; no se considera completada toda la API de incidencias. |
+| [RMO-20](https://aipaca.atlassian.net/browse/RMO-20) — Vehicles API | Alejandro | Por hacer | Controlador básico disponible únicamente bajo configuración de demostración, sujeto a integración definitiva. |
+
+Las filas RMO-20, RMO-32, RMO-36, RMO-58 y RMO-76 documentan **dependencias y aportes de otros contextos**; no se añaden artificialmente al alcance ni al total de Story Points comprometidos originalmente en la tabla de Sprint 3. El tablero público se conserva como fuente de estados vigente.
+
+> **[CAPTURA PENDIENTE — AV2-SB-01]** Sprint Backlog 3 actualizado de Jira con estados, asignaciones y fecha. Destino: `assets/chapter5/av2/sprint-3-jira-current.png`.
+
+
 
 La evidencia de desarrollo se organiza por producto y por commit: documentación de diseño y contrato de datos, backend Spring Boot, componentes del Frontend y mejoras del Landing Page. El historial de GitHub permite identificar autor, rama, fecha, mensaje y alcance del cambio, además de las revisiones realizadas a través de Pull Requests.
 
