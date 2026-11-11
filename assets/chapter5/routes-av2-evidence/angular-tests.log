@@ -1,0 +1,32 @@
+
+> rumbo-frontend@0.0.0 test
+> ng test --watch=false
+
+> Building...
+√ Building...
+Initial chunk files                                                | Names                                                           |  Raw size
+chunk-2MVF6FGZ.js                                                  | -                                                               |  31.82 kB |
+spec-app-route-trip-planning-infrastructure-routes-api-endpoint.js | spec-app-route-trip-planning-infrastructure-routes-api-endpoint |  12.69 kB |
+styles.css                                                         | styles                                                          |   8.78 kB |
+chunk-JBI4KQTL.js                                                  | -                                                               |   5.62 kB |
+spec-app-app.js                                                    | spec-app-app                                                    |   2.67 kB |
+spec-app-shared-presentation-components-layout-layout.js           | spec-app-shared-presentation-components-layout-layout           |   1.39 kB |
+init-testbed.js                                                    | init-testbed                                                    |   1.27 kB |
+vitest-mock-patch.js                                               | vitest-mock-patch                                               | 974 bytes |
+polyfills.js                                                       | polyfills                                                       | 121 bytes |
+
+                                                                   | Initial total                                                   |  65.33 kB
+
+Application bundle generation complete. [3.363 seconds] - 2026-11-02T19:02:08.375Z
+
+
+ RUN  v4.1.11 C:/Users/Victus/Documents/ChatGPT/Leo/.tmp/frontend-web-application
+
+
+ Test Files  3 passed (3)
+      Tests  3 passed (3)
+   Start at  14:02:09
+   Duration  5.84s (transform 530ms, setup 3.29s, import 1.56s, tests 602ms, environment 9.02s)
+
+
+PROCESS_EXIT_CODE=0

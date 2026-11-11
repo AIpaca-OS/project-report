@@ -1,0 +1,7 @@
+
+> rumbo-frontend@0.0.0 build
+> ng build --configuration production
+
+> Building...
+
+PROCESS_EXIT_CODE=-1073741819

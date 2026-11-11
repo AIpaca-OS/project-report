@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-11-02T13:31:53.3356184-05:00",
+  "baseUrl": "http://127.0.0.1:8080",
+  "persistentRouteId": "a7893fe2-7695-4146-8f3e-09d5d96a8dd3",
+  "checks": [
+    {
+      "name": "CORS preflight",
+      "method": "OPTIONS",
+      "path": "/api/v1/routes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Authentication required",
+      "method": "GET",
+      "path": "/api/v1/routes",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Route list",
+      "method": "GET",
+      "path": "/api/v1/routes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "RUT-DF5DC36C",
+      "passed": true
+    },
+    {
+      "name": "Create route",
+      "method": "POST",
+      "path": "/api/v1/routes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "problemCode": "RUT-6BB7B7AF",
+      "passed": true
+    },
+    {
+      "name": "Read route by UUID",
+      "method": "GET",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "RUT-6BB7B7AF",
+      "passed": true
+    },
+    {
+      "name": "Update configurable route",
+      "method": "PUT",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "RUT-6BB7B7AF",
+      "passed": true
+    },
+    {
+      "name": "Replace schedule",
+      "method": "PUT",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/schedule",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "RUT-6BB7B7AF",
+      "passed": true
+    },
+    {
+      "name": "Reject empty confirmed schedule",
+      "method": "PUT",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/schedule",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "problemCode": "validation.failed",
+      "passed": true
+    },
+    {
+      "name": "List assignments",
+      "method": "GET",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/assignments",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Assign eligible student",
+      "method": "POST",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/assignments",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Reject duplicate student",
+      "method": "POST",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/assignments",
+      "expectedStatus": 409,
+      "actualStatus": 409,
+      "problemCode": "assignment.duplicate",
+      "passed": true
+    },
+    {
+      "name": "Reject unauthorized student",
+      "method": "POST",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/assignments",
+      "expectedStatus": 403,
+      "actualStatus": 403,
+      "problemCode": "student.not.eligible",
+      "passed": true
+    },
+    {
+      "name": "Remove assignment",
+      "method": "DELETE",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/assignments/46c511fd-5911-47f0-9d7b-e5d8c944c71a",
+      "expectedStatus": 204,
+      "actualStatus": 204,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Create incomplete draft",
+      "method": "POST",
+      "path": "/api/v1/routes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "problemCode": "RUT-97EFECAE",
+      "passed": true
+    },
+    {
+      "name": "Reject incomplete publication",
+      "method": "PATCH",
+      "path": "/api/v1/routes/2e6a8733-af89-4e01-b5e6-9af4d592e792/status",
+      "expectedStatus": 409,
+      "actualStatus": 409,
+      "problemCode": "route.publish.incomplete",
+      "passed": true
+    },
+    {
+      "name": "Delete configurable route",
+      "method": "DELETE",
+      "path": "/api/v1/routes/2e6a8733-af89-4e01-b5e6-9af4d592e792",
+      "expectedStatus": 204,
+      "actualStatus": 204,
+      "problemCode": "",
+      "passed": true
+    },
+    {
+      "name": "Deleted route not found",
+      "method": "GET",
+      "path": "/api/v1/routes/2e6a8733-af89-4e01-b5e6-9af4d592e792",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "problemCode": "route.not.found",
+      "passed": true
+    },
+    {
+      "name": "Unknown route not found",
+      "method": "GET",
+      "path": "/api/v1/routes/1ef1a009-a5f0-4ab6-b465-8441f6bfaec6",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "problemCode": "route.not.found",
+      "passed": true
+    },
+    {
+      "name": "Publish complete route",
+      "method": "PATCH",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3/status",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "problemCode": "RUT-6BB7B7AF",
+      "passed": true
+    },
+    {
+      "name": "Reject update after publication",
+      "method": "PUT",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3",
+      "expectedStatus": 409,
+      "actualStatus": 409,
+      "problemCode": "route.published.read.only",
+      "passed": true
+    },
+    {
+      "name": "Reject delete after publication",
+      "method": "DELETE",
+      "path": "/api/v1/routes/a7893fe2-7695-4146-8f3e-09d5d96a8dd3",
+      "expectedStatus": 409,
+      "actualStatus": 409,
+      "problemCode": "route.published.read.only",
+      "passed": true
+    }
+  ]
+}
