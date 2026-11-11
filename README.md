@@ -3078,15 +3078,13 @@ En esta sección se registra el objetivo establecido durante la reunión de Spri
   </tbody>
 </table>
 
-#### 5.2.3.2. Aspect Leaders and Collaborators
-
 **Actualización de avance (10/11/2026).** Tras la revisión del repositorio y el tablero RMO, el equipo mantuvo cuatro integrantes activos y distribuyó los ámbitos principales de la siguiente forma: Leonardo coordinó el seguimiento e implementación de Routes & Trip Planning; Kevin desarrolló Billing; Alejandro asumió Profiles & Relationship Management y el apoyo mínimo requerido para Vehicles; Alexandra trabajó Alerting, Incidents y Notifications. Esta distribución no significa que todas las historias estén terminadas. En Jira, 76 incidencias tienen responsable, con **8 Listo, 13 En curso y 55 Por hacer** en la consulta realizada. Las historias no completadas conservan su estado y deben contrastarse con los criterios de aceptación del Sprint.
 
 El objetivo documentado del Sprint 3 sigue siendo completar la experiencia frontend y entregar una primera versión comprobable de servicios backend. La integración alcanzada comprende código consolidado en `develop` y servicios adicionales para pruebas locales. La autenticación real, la autorización entre contextos, la ejecución integral, las evidencias visuales y el despliegue público requieren comprobación adicional.
 
 > **[CAPTURA PENDIENTE — AV2-SP-01]** Acta o evidencia real del Sprint Planning / reunión de coordinación del Sprint 3, con fecha y participantes. Destino: `assets/chapter5/av2/sprint-planning-3.png`.
 
-
+#### 5.2.3.2. Aspect Leaders and Collaborators
 
 La matriz LACX refleja la distribución de responsabilidades establecida para el Sprint 3. En esta iteración, los aspectos considerados corresponden principalmente a los Bounded Context definidos para la plataforma Rumbo, con excepción de **Vehicle & Credential**, cuya gestión quedó reducida a referencias esenciales de **Routes &amp; Trip Planning** debido a la salida de uno de los integrantes del equipo. Asimismo, se incorporan otros aspectos complementarios necesarios para el cumplimiento de los objetivos del Sprint. A continuación, se presentan los aspectos considerados y los responsables asignados a cada uno.
 
@@ -3109,13 +3107,11 @@ La matriz LACX refleja la distribución de responsabilidades establecida para el
 </tbody>
 </table>
 
-#### 5.2.3.3. Sprint Backlog 3
-
 **Responsabilidades de coordinación e integración.** Leonardo efectuó seguimiento del avance en Jira y del proceso de integración de Routes; los demás integrantes mantienen liderazgo funcional en sus contextos y colaboran en pruebas y revisión. Para no confundir la matriz LACX con estados de terminación, se registran también las dependencias activas: Vehicles (apoyo de Alejandro, sujeto a verificación de su interfaz y backend); Profiles ↔ Routes (permisos de estudiante y conductor); Billing ↔ frontend (planes y suscripciones); Notifications ↔ Routes/Tutor (avisos visibles). El criterio de «Listo» se aplica solo a entregables comprobados; la asignación de un líder no implica un endpoint desplegado.
 
 > **[CAPTURA PENDIENTE — AV2-LACX-01]** Evidencia de distribución y coordinación de responsabilidades con los cuatro integrantes activos. Destino: `assets/chapter5/av2/lacx-team.png`.
 
-
+#### 5.2.3.3. Sprint Backlog 3
 
 El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
 
@@ -3141,8 +3137,6 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
 | [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Alejandro Diaz Ramirez | Por hacer |
 
 
-#### 5.2.3.4. Development Evidence for Sprint Review
-
 **Seguimiento transversal de historias y tareas técnicas del Sprint 3 (consulta Jira del 10/11/2026).** Se conservaron la estimación y los títulos planificados; las asignaciones y estados anteriores se actualizaron sin afirmar cierre de historias que aún dependen de integración o evidencia.
 
 | Elemento de Jira | Responsable | Estado verificado | Alcance y dependencia actual |
@@ -3164,7 +3158,7 @@ Las filas RMO-20, RMO-32, RMO-36, RMO-58 y RMO-76 documentan **dependencias y ap
 
 > **[CAPTURA PENDIENTE — AV2-SB-01]** Sprint Backlog 3 actualizado de Jira con estados, asignaciones y fecha. Destino: `assets/chapter5/av2/sprint-3-jira-current.png`.
 
-
+#### 5.2.3.4. Development Evidence for Sprint Review
 
 La evidencia de desarrollo se organiza por producto y por commit: documentación de diseño y contrato de datos, backend Spring Boot, componentes del Frontend y mejoras del Landing Page. El historial de GitHub permite identificar autor, rama, fecha, mensaje y alcance del cambio, además de las revisiones realizadas a través de Pull Requests.
 
@@ -3174,10 +3168,31 @@ La revisión del diseño incorporó ocho archivos de Database Diagrams y actuali
 |---|---|---|---|---|---|
 | `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | <!-- AV2: fecha de GitHub --> |
 | `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | <!-- AV2: fecha de GitHub --> |
-| `web-services` | `feature/service-foundation` | `1f4e828` (local) | `feat(routes): implement route planning API` | API Routes con persistencia PostgreSQL, validación, seguridad por perfil, OpenAPI y colección Postman. Commit local, todavía no publicado. | 2026-11-02 |
-| `frontend-web-application` | `feature/route-trip-planning` | `b4f6d32` (local) | `feat(routes): connect route planning frontend` | Integración Angular, formulario y listado de rutas, proxy de desarrollo, i18n y pruebas. Commit local, todavía no publicado. | 2026-11-02 |
+| `web-services` | `develop` (desde `feature/routes`) | [PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [b6b07a5](https://github.com/AIpaca-OS/web-services/commit/b6b07a599a6f7ed366c69cde2900a24a56f8c763) | Integración de Routes y edición controlada | Se fusionó el backend de Routes con las reglas de asignación, publicación y edición de ruta publicada. La seguridad intercontexto sigue sujeta a la autenticación real. | 10/11/2026 (hora Perú) |
+| `frontend-web-application` | `develop` (desde `feature/route-trip-planning`) | [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | `feat(routes): connect Angular route planning frontend` | Formulario de rutas, paradas, horarios, catálogo autorizado, integración REST y pruebas del módulo; PR fusionado a develop. | 08/11/2026 |
 
 Para la sustentación, cada cambio de código debe acompañarse con una demostración breve de la función que incorpora, no solo con la vista del repositorio.
+
+
+**Integraciones nuevas verificadas en GitHub al 10/11/2026.** Se listan los Pull Requests reales y su resultado. Una fusión no equivale por sí sola a que la versión integrada compile, funcione en producción o haya pasado todas las pruebas.
+
+| Contexto | Evidencia de integración | Resultado del PR | Alcance de código observado |
+|---|---|---|---|
+| Routes & Trip Planning | [Backend PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [Frontend PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | Ambos fusionados a `develop` | Modelo `Route`, paradas, horarios, asignaciones, estados, servicios de rutas/viajes y pantallas Angular. |
+| Subscriptions & Billing | [Backend PR #4](https://github.com/AIpaca-OS/web-services/pull/4) | Fusionado | `PlansController`, `SubscriptionsController`, servicios y persistencia de Billing. La conexión de su frontend a Spring Boot no está acreditada por el [PR de frontend #18](https://github.com/AIpaca-OS/frontend-web-application/pull/18), cerrado sin fusionar. |
+| Profiles & Relationship Management | [Backend PR #5](https://github.com/AIpaca-OS/web-services/pull/5) y [PR #8](https://github.com/AIpaca-OS/web-services/pull/8) | Fusionados | Modelos de `Student`, `TutorStudentRelationship` y `ServiceEnrollment`; controladores de perfiles, estudiantes y relaciones. Autorización productiva con IAM pendiente de verificación. |
+| Notifications | [Backend PR #6](https://github.com/AIpaca-OS/web-services/pull/6) | Fusionado | Servicios y controlador de notificaciones habilitados bajo configuración de demostración. El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) permanece abierto; no se da por integrado. |
+| Vehicles y consulta de tutor | [Rama backend `develop`](https://github.com/AIpaca-OS/web-services/tree/develop) | Código existente en `develop` | `VehiclesController`, `TutorJourneysController` y controladores de avisos/llegada; varios están sujetos a propiedades de demostración local. No se acredita con ello un despliegue de producción. |
+
+**Organización de código y convenciones:** el frontend mantiene módulos Angular por bounded context; el backend utiliza controladores REST, casos de uso, entidades/aggregates y persistencia con Spring Data JPA. La integración agregó tanto paquetes `com.aipaca.rumbo.*` como `com.aipaca.rumbo.platform.*`. El `pom.xml` vigente en `develop` apunta a **Java 27** y Spring Boot **4.1.2**; antes de demostrar una ejecución conjunta debe revisarse la versión de JDK de cada integrante y el arranque del conjunto integrado.
+
+**Evidencia histórica frente a versión actual:** los resultados locales y scripts citados más adelante corresponden a una versión de Routes probada el **02/11/2026**. Las referencias antiguas a commits «locales» o `feature/service-foundation` no se usan como prueba de la integración vigente; se sustituyeron por los PRs públicos. Toda evidencia nueva de código/ejecución debe asociarse a un commit o rama verificable.
+
+> **[CAPTURA PENDIENTE — AV2-DEV-01]** GitHub PR #3 fusionado y árbol de código de Routes en `develop`. Destino: `assets/chapter5/av2/routes-pr-merge.png`.
+
+> **[CAPTURA PENDIENTE — AV2-DEV-02]** Comparación de PRs backend #4, #5, #6 y #8 y sus archivos; mostrar contribuciones reales de cada integrante. Destino: `assets/chapter5/av2/backend-team-prs.png`.
+
+> **[CAPTURA PENDIENTE — AV2-DEV-03]** Estructura de controladores / entidades de Routes, Profiles y Billing desde IntelliJ IDEA, con versión de JDK visible. Destino: `assets/chapter5/av2/backend-architecture.png`.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -3195,6 +3210,29 @@ La evaluación de ejecución se enfoca en los User Flows definidos en el Capítu
 | Verificación visual y accesibilidad | Listado, asistente de cuatro pasos, validaciones, persistencia tras recarga, cambio de idioma, navegación por teclado y asignación/publicación. | No ejecutada: el controlador de Brave no pudo confirmar la URL de la ventana y detuvo la automatización. No se declara resultado visual ni se adjuntan capturas inexistentes. | [Protocolo manual y capturas requeridas](./assets/chapter5/routes-av2-evidence/manual-ui-validation.md). |
 
 La evidencia visual y el video de navegación siguen pendientes. Los escenarios del protocolo manual requieren datos ficticios y capturas Desktop/Mobile de la misma versión que se integre en GitHub.
+
+
+**Estado de la versión integrada después de los PRs de noviembre:** las pruebas históricas de la tabla anterior se conservan como evidencia de su fecha; deben repetirse sobre el `develop` que combina Routes, Billing, Profiles y Notifications. La presencia de un controlador o un PR fusionado no es por sí sola una prueba de ejecución.
+
+| Escenario de integración | Resultado comprobable en repositorios | Prueba pendiente para cerrar el AV2 |
+|---|---|---|
+| Crear/editar ruta con vehículo, paradas y horario | Formularios Angular y backend de Routes disponibles en `develop`. | `POST /api/v1/routes` y `PUT /api/v1/routes/{id}` con datos persistidos en PostgreSQL; recarga de pantalla y capturas. |
+| Asignar estudiante registrado por tutor | `RouteAssignment` y servicios de Profiles presentes; existe control de elegibilidad por conductor. | Verificar identidad y autorización efectiva de conductor/tutor; probar rechazo y asignación con datos reales de prueba, no ficticios de una API distinta. |
+| Publicar ruta y consultar traslado desde tutor | Publicación, servicios de viajes y vistas/consultas de tutor disponibles parcialmente. | Probar que una ruta publicada se muestra únicamente a tutores autorizados y que los estados corresponden al viaje correcto. |
+| Vehículo seleccionable | El frontend integra consulta de vehículos; existe `VehiclesController` de demostración. | Probar que los vehículos persisten y que el mismo ID es aceptado por Routes sin mezclarse con MockAPI. |
+| Notificaciones, retrasos y llegada | Controladores de avisos y llegada presentes para demostración local. | Confirmar evento real → creación de aviso → consulta por tutor y persistencia; distinguirlo del contenido estático o simulado. |
+| Billing | APIs `/api/v1/plans` y `/api/v1/subscriptions` presentes en backend integrado. | Probar creación/consulta de suscripción, vigencia y respuesta del frontend conectada a Spring Boot. |
+| Compilación y servicios | `pom.xml` de `develop` configura JDK 27; Angular 21 y proxy local definidos. | Ejecutar `mvnw.cmd test`, arrancar Spring Boot con PostgreSQL, `npm ci`, `npm test -- --watch=false` y `npm run build`, y guardar resultados de esta versión. |
+
+**Nota de perfiles de ejecución:** `application.properties` del backend establece perfiles `dev` y `local`. Las APIs de `VehiclesController`, `NotificationsController` y algunos recursos de consulta de tutores solo están disponibles cuando las propiedades `app.demo.enabled` o `app.profiles.demo.enabled` permiten su carga. El archivo `application-local.properties` fija `127.0.0.1` y advierte no usar esa modalidad en un despliegue público. El frontend de `develop` todavía consume MockAPI en Billing, Profiles y Alerting, mientras Routes y Vehicles apuntan a `/api/v1` en el entorno de desarrollo.
+
+> **[CAPTURA PENDIENTE — AV2-EXE-01]** Terminal de IntelliJ con backend integrado arrancado y resultado Maven (fecha, rama y commit visibles). Destino: `assets/chapter5/av2/backend-test-run.png`.
+
+> **[CAPTURA PENDIENTE — AV2-EXE-02]** Angular: creación/edición de rutas, selección de vehículo, paradas y horario (con datos de prueba). Destino: `assets/chapter5/av2/frontend-route-flow.png`.
+
+> **[CAPTURA PENDIENTE — AV2-EXE-03]** Postman y pgAdmin 4 mostrando una petición real y la fila correspondiente en PostgreSQL. Destino: `assets/chapter5/av2/postman-postgresql.png`.
+
+> **[CAPTURA PENDIENTE — AV2-EXE-04]** Flujo conductor → ruta publicada → estado del estudiante → notificación al tutor (solo cuando sea reproducible). Destino: `assets/chapter5/av2/driver-tutor-journey.png`.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
