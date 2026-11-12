@@ -2734,7 +2734,7 @@ En esta sección se presentan las evidencias del desarrollo realizado durante el
 
 A continuación, se presenta la URL pública del Frontend Web Application desplegado, junto con capturas de pantalla que evidencian las principales vistas implementadas durante el Sprint 2, organizadas según los Bounded Contexts de la plataforma Rumbo. Estas evidencias permiten visualizar la primera versión funcional de la aplicación y verificar los avances alcanzados durante el sprint.
 
-**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application/home
+**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application
 
 **URL pública del Repositorio del Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
 
@@ -3053,11 +3053,11 @@ Además, se presentan las métricas de GitHub correspondientes a la implementaci
 
 ### 5.2.3. Sprint 3
 
-La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
+En el Sprint 3 de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
 
 #### 5.2.3.1. Sprint Planning 3
 
-En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, facturación y notificaciones, así como avanzar en la implementación de una parte del backend.Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
+En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, subscripciones y notificaciones, así como avanzar en la implementación de una parte del backend. Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
 
 <table>
   <tbody>
@@ -3077,11 +3077,6 @@ En esta sección se registra el objetivo establecido durante la reunión de Spri
     <tr><th>Sum of Story Points</th><td>52 Story Points</td></tr>
   </tbody>
 </table>
-
-**Actualización de avance (10/11/2026).** Tras la revisión del repositorio y el tablero RMO, el equipo mantuvo cuatro integrantes activos y distribuyó los ámbitos principales de la siguiente forma: Leonardo coordinó el seguimiento e implementación de Routes & Trip Planning; Kevin desarrolló Billing; Alejandro asumió Profiles & Relationship Management y el apoyo mínimo requerido para Vehicles; Alexandra trabajó Alerting, Incidents y Notifications. Esta distribución no significa que todas las historias estén terminadas. En Jira, 76 incidencias tienen responsable, con **8 Listo, 13 En curso y 55 Por hacer** en la consulta realizada. Las historias no completadas conservan su estado y deben contrastarse con los criterios de aceptación del Sprint.
-
-El objetivo documentado del Sprint 3 sigue siendo completar la experiencia frontend y entregar una primera versión comprobable de servicios backend. La integración alcanzada comprende código consolidado en `develop` y servicios adicionales para pruebas locales. La autenticación real, la autorización entre contextos, la ejecución integral, las evidencias visuales y el despliegue público requieren comprobación adicional.
-
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -3106,9 +3101,6 @@ La matriz LACX refleja la distribución de responsabilidades establecida para el
 </tbody>
 </table>
 
-**Responsabilidades de coordinación e integración.** Leonardo efectuó seguimiento del avance en Jira y del proceso de integración de Routes; los demás integrantes mantienen liderazgo funcional en sus contextos y colaboran en pruebas y revisión. Para no confundir la matriz LACX con estados de terminación, se registran también las dependencias activas: Vehicles (apoyo de Alejandro, sujeto a verificación de su interfaz y backend); Profiles ↔ Routes (permisos de estudiante y conductor); Billing ↔ frontend (planes y suscripciones); Notifications ↔ Routes/Tutor (avisos visibles). El criterio de «Listo» se aplica solo a entregables comprobados; la asignación de un líder no implica un endpoint desplegado.
-
-
 #### 5.2.3.3. Sprint Backlog 3
 
 El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
@@ -3119,242 +3111,209 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
   <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
 </div>
 
-
-| Story Id | Story Title | SP | Engineering Tasks — propuesta (horas) | Jira assignee | Jira status |
-|---|---|---:|---|---|---|
-| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | Crear una ruta con sus paradas | 8 | API y persistencia de ruta/paradas (8 h); formulario Angular e integración (8 h); reglas y pruebas de aceptación (4 h). | Leonardo Lino | En curso |
-| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | Definir el horario de la ruta | 3 | Contrato y persistencia del horario (4 h); formulario reactivo y confirmación (4 h). | Leonardo Lino | En curso |
-| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | Asignar estudiantes a una ruta | 5 | Operación de asignación y restricciones (8 h); selección e integración con la interfaz (8 h). | Leonardo Lino | En curso |
-| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Publicar una ruta | 3 | Transición de estado y validación de completitud (4 h); acción de publicación y mensajes accesibles (4 h). | Leonardo Lino | En curso |
-| [RMO-24](https://aipaca.atlassian.net/browse/RMO-24) | Modificar una ruta publicada | 5 | Política de modificación y respuesta de conflicto (4 h); flujo de edición y regresión (4 h). | Leonardo Lino | En curso |
-| [RMO-25](https://aipaca.atlassian.net/browse/RMO-25) | Integración con servicio de mapas para direcciones de paradas | 5 | Adaptador de geocodificación y configuración (8 h); tratamiento de fallos y validación de cobertura (4 h). | Leonardo Lino | Por hacer |
-| [RMO-26](https://aipaca.atlassian.net/browse/RMO-26) | Programar el viaje de la jornada | 5 | Caso de uso y contrato de programación (8 h); persistencia y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
-| [RMO-27](https://aipaca.atlassian.net/browse/RMO-27) | Cancelar un viaje | 3 | Regla de transición de cancelación (4 h); respuestas de API y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
-| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | Endpoints del RESTful API para Route & Trip Planning | 5 | Contratos OpenAPI, errores y seguridad (8 h); colección Postman y validación de integración (8 h). | Leonardo Lino | En curso |
-| [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Leonardo Lino | Por hacer |
-| [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Alejandro Diaz Ramirez | Por hacer |
-
-
-**Seguimiento transversal de historias y tareas técnicas del Sprint 3 (consulta Jira del 10/11/2026).** Se conservaron la estimación y los títulos planificados; las asignaciones y estados anteriores se actualizaron sin afirmar cierre de historias que aún dependen de integración o evidencia.
-
-| Elemento de Jira | Responsable | Estado verificado | Alcance y dependencia actual |
-|---|---|---|---|
-| [RMO-59](https://aipaca.atlassian.net/browse/RMO-59) — Formulario, código y paradas | Leonardo | Listo | Frontend de configuración de rutas y paradas ordenadas. |
-| [RMO-60](https://aipaca.atlassian.net/browse/RMO-60) — Verificación de rutas | Leonardo | En curso | Faltan direcciones verificadas y pruebas visuales. |
-| [RMO-62](https://aipaca.atlassian.net/browse/RMO-62) — Persistencia de horario | Leonardo | Listo | Evidencia previa registrada de RouteSchedule. |
-| [RMO-63](https://aipaca.atlassian.net/browse/RMO-63) — Pruebas de horario | Leonardo | Listo | Casos de horario completo e incompleto documentados. |
-| [RMO-65](https://aipaca.atlassian.net/browse/RMO-65) — Duplicados | Leonardo | Listo | Validación de duplicidad registrada; no equivale a autorización integral. |
-| [RMO-66](https://aipaca.atlassian.net/browse/RMO-66) — Asignación autorizada | Leonardo | En curso | Verificación intercontexto con Profiles/IAM pendiente. |
-| [RMO-68](https://aipaca.atlassian.net/browse/RMO-68) — Contrato REST | Leonardo | En curso | Controladores disponibles; falta comprobar contrato integrado y despliegue. |
-| [RMO-36](https://aipaca.atlassian.net/browse/RMO-36) — Profiles REST | Alejandro | En curso | Controladores de perfiles, estudiantes y relaciones en backend integrado; falta validar permisos y flujo completo. |
-| [RMO-58](https://aipaca.atlassian.net/browse/RMO-58) — Billing REST | Kevin | En curso | Planes y suscripciones añadidos al backend; faltan pruebas de integración y conexión final con Angular. |
-| [RMO-76](https://aipaca.atlassian.net/browse/RMO-76) — Catálogo de planes | Kevin | En curso | Código de planes y persistencia presente; ejecución integrada por comprobar. |
-| [RMO-32](https://aipaca.atlassian.net/browse/RMO-32) — Alerting API | Alexandra | Por hacer | El backend contiene notificaciones de demostración local; no se considera completada toda la API de incidencias. |
-| [RMO-20](https://aipaca.atlassian.net/browse/RMO-20) — Vehicles API | Alejandro | Por hacer | Controlador básico disponible únicamente bajo configuración de demostración, sujeto a integración definitiva. |
-
-Las filas RMO-20, RMO-32, RMO-36, RMO-58 y RMO-76 documentan **dependencias y aportes de otros contextos**; no se añaden artificialmente al alcance ni al total de Story Points comprometidos originalmente en la tabla de Sprint 3. El tablero público se conserva como fuente de estados vigente.
-
+<br>
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-La evidencia de desarrollo se organiza por producto y por commit: documentación de diseño y contrato de datos, backend Spring Boot, componentes del Frontend y mejoras del Landing Page. El historial de GitHub permite identificar autor, rama, fecha, mensaje y alcance del cambio, además de las revisiones realizadas a través de Pull Requests.
+En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 3, cuyo objetivo principal fue completar la versión final del frontend web application de la plataforma Rumbo y desarrollar el 40 % de los web services que consumirá. Asimismo, se documenta, mediante commits, el desarrollo de todos los componentes correspondientes al sprint, incluyendo los cambios realizados en los distintos repositorios: Landing Page, frontend web application y web services.
 
-La revisión del diseño incorporó ocho archivos de Database Diagrams y actualizó su explicación en el Capítulo IV, respetando las responsabilidades de cada Bounded Context. El historial correspondiente se conserva en la rama `feature/chapter-4-product-design`; la documentación sincronizada de esta sección se encuentra en `feature/chapter-5-product-implementation-validation-and-deployment`.
+## Repositorio Landing Page
 
-| Repository | Branch | Commit Id | Commit Message / alcance | Commit Message Body / descripción | Committed on |
-|---|---|---|---|---|---|
-| `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | — |
-| `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | — |
-| `web-services` | `develop` (desde `feature/routes`) | [PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [b6b07a5](https://github.com/AIpaca-OS/web-services/commit/b6b07a599a6f7ed366c69cde2900a24a56f8c763) | Integración de Routes y edición controlada | Se fusionó el backend de Routes con las reglas de asignación, publicación y edición de ruta publicada. La seguridad intercontexto sigue sujeta a la autenticación real. | 10/11/2026 (hora Perú) |
-| `frontend-web-application` | `develop` (desde `feature/route-trip-planning`) | [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | `feat(routes): connect Angular route planning frontend` | Formulario de rutas, paradas, horarios, catálogo autorizado, integración REST y pruebas del módulo; PR fusionado a develop. | 08/11/2026 |
+## Repositorio Frontend Web Application
 
-Para la sustentación, cada cambio de código debe acompañarse con una demostración breve de la función que incorpora, no solo con la vista del repositorio.
-
-
-**Integraciones nuevas verificadas en GitHub al 10/11/2026.** Se listan los Pull Requests reales y su resultado. Una fusión no equivale por sí sola a que la versión integrada compile, funcione en producción o haya pasado todas las pruebas.
-
-| Contexto | Evidencia de integración | Resultado del PR | Alcance de código observado |
-|---|---|---|---|
-| Routes & Trip Planning | [Backend PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [Frontend PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | Ambos fusionados a `develop` | Modelo `Route`, paradas, horarios, asignaciones, estados, servicios de rutas/viajes y pantallas Angular. |
-| Subscriptions & Billing | [Backend PR #4](https://github.com/AIpaca-OS/web-services/pull/4) | Fusionado | `PlansController`, `SubscriptionsController`, servicios y persistencia de Billing. La conexión de su frontend a Spring Boot no está acreditada por el [PR de frontend #18](https://github.com/AIpaca-OS/frontend-web-application/pull/18), cerrado sin fusionar. |
-| Profiles & Relationship Management | [Backend PR #5](https://github.com/AIpaca-OS/web-services/pull/5) y [PR #8](https://github.com/AIpaca-OS/web-services/pull/8) | Fusionados | Modelos de `Student`, `TutorStudentRelationship` y `ServiceEnrollment`; controladores de perfiles, estudiantes y relaciones. Autorización productiva con IAM pendiente de verificación. |
-| Notifications | [Backend PR #6](https://github.com/AIpaca-OS/web-services/pull/6) | Fusionado | Servicios y controlador de notificaciones habilitados bajo configuración de demostración. El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) permanece abierto; no se da por integrado. |
-| Vehicles y consulta de tutor | [Rama backend `develop`](https://github.com/AIpaca-OS/web-services/tree/develop) | Código existente en `develop` | `VehiclesController`, `TutorJourneysController` y controladores de avisos/llegada; varios están sujetos a propiedades de demostración local. No se acredita con ello un despliegue de producción. |
-
-**Organización de código y convenciones:** el frontend mantiene módulos Angular por bounded context; el backend utiliza controladores REST, casos de uso, entidades/aggregates y persistencia con Spring Data JPA. La integración agregó tanto paquetes `com.aipaca.rumbo.*` como `com.aipaca.rumbo.platform.*`. El `pom.xml` vigente en `develop` apunta a **Java 27** y Spring Boot **4.1.2**; antes de demostrar una ejecución conjunta debe revisarse la versión de JDK de cada integrante y el arranque del conjunto integrado.
-
-**Evidencia histórica frente a versión actual:** los resultados locales y scripts citados más adelante corresponden a una versión de Routes probada el **02/11/2026**. Las referencias antiguas a commits «locales» o `feature/service-foundation` no se usan como prueba de la integración vigente; se sustituyeron por los PRs públicos. Toda evidencia nueva de código/ejecución debe asociarse a un commit o rama verificable.
-
-
-
+## Repositorio Web Services
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-La evaluación de ejecución se enfoca en los User Flows definidos en el Capítulo IV y en las operaciones de las User Stories asignadas al Sprint. Se registra la acción del usuario, la petición HTTP que interviene, el resultado mostrado por la interfaz y la respuesta efectiva del servicio.
+En este apartado se mostrarán las capturas que evidencian todo lo desarrollado durante el Sprint 3, incluyendo las modificaciones realizadas en la Landing Page, la aplicación web frontend y el backend, junto con los enlaces de despliegue correspondientes a cada uno de estos componentes.
 
-| Función / User Story | Escenario y datos de prueba | Resultado de la aplicación | Evidencia de ejecución |
-|---|---|---|---|
-| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — agregado Route | 5 pruebas unitarias Java: horario, publicación, duplicidad, modificación de publicada y días duplicados. | 5 aprobadas; son pruebas del dominio, no sustituyen autorización o persistencia. | [JUnit/Surefire](./assets/chapter5/routes-av2-evidence/backend-surefire-summary.txt). |
-| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — API / PostgreSQL | Script de integración local con datos ficticios: preflight, autenticación, CRUD, horario, asignaciones, duplicados, no autorizado, publicación incompleta, errores 404 y estado de ruta publicada. | 21/21 aserciones HTTP con estado esperado. Las 10 operaciones documentadas tuvieron al menos una respuesta exitosa. Incluyó 401, 400, 403, 404 y 409 negativos, además de 200, 201 y 204 positivos. | [Resultados JSON de 21 comprobaciones](./assets/chapter5/routes-av2-evidence/http-results.json); [detalle Problem Details RFC 9457](./assets/chapter5/routes-av2-evidence/problem-detail-check.json); [script reproducible](https://github.com/AIpaca-OS/web-services/blob/feature/service-foundation/scripts/verify-local-routes.ps1). |
-| Persistencia y recuperación tras reinicio | Ruta de prueba ficticia publicada, con dos paradas, dos días de servicio y una asignación. | PostgreSQL 17 contiene los cuatro tipos de recursos; después de reiniciar Spring Boot se recuperaron la ruta, paradas y horario. | [Consulta PostgreSQL](./assets/chapter5/routes-av2-evidence/postgres-route-check.json); [recuperación tras reinicio](./assets/chapter5/routes-av2-evidence/restart-persistence.json). |
-| Documentación OpenAPI / Swagger | Solicitud local a `/v3/api-docs` y `/swagger-ui.html`. | OpenAPI 3.1, diez operaciones; ambas direcciones respondieron HTTP 200. La documentación es local, no pública. | [Comprobación Swagger](./assets/chapter5/routes-av2-evidence/swagger-check.json). |
-| Integración local Angular → Routes | Solicitud sin encabezado de autorización del cliente a `/api/v1/routes` en el servidor Angular de desarrollo. | El proxy local incorporó Basic en el servidor y obtuvo HTTP 200 con dos rutas de PostgreSQL. La credencial permanece en el entorno del proceso Node; no está en el bundle Angular. | [Comprobación del proxy](./assets/chapter5/routes-av2-evidence/angular-proxy-check.json); [configuración de desarrollo](https://github.com/AIpaca-OS/frontend-web-application/blob/feature/route-trip-planning/src/proxy.conf.cjs). |
-| Pruebas Angular y compilación TypeScript | `npm test -- --watch=false`; `ngc -p tsconfig.app.json --noEmit`; GitHub Actions. | 3/3 pruebas Angular y compilación TypeScript/plantillas aprobadas localmente. La CI Ubuntu/Node 22 del PR #17 también pasó instalación, pruebas y build. Las pruebas actuales no son pruebas integrales de interfaz. | [Pruebas Angular](./assets/chapter5/routes-av2-evidence/angular-tests.log); [Angular Compiler](./assets/chapter5/routes-av2-evidence/angular-typescript-templates.log); [ejecución CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
-| Build Angular de producción | `ng build --configuration production` con Node 24.19.0 y Angular 21.2.25; repetido con Node 22.22.3 tras los cambios finales. También se intentó Node 22 con `--optimization=false`. | Los tres intentos locales en Windows terminaron con salida nativa `0xC0000005` y no produjeron `dist/`. En GitHub Actions, Ubuntu/Node 22 ejecutó correctamente `npm ci`, las pruebas y el build de producción (run #25). La causa del fallo específico de Windows continúa sin localizarse; no se atribuye a una incompatibilidad de versión. No hubo despliegue público. | [Registro final Node 24](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node24.log); [Node 22](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node22.log); [Node 22 sin optimización](./assets/chapter5/routes-av2-evidence/angular-build-no-optimization-node22.log); [run CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
-| Verificación visual y accesibilidad | Listado, asistente de cuatro pasos, validaciones, persistencia tras recarga, cambio de idioma, navegación por teclado y asignación/publicación. | No ejecutada: el controlador de Brave no pudo confirmar la URL de la ventana y detuvo la automatización. No se declara resultado visual ni se adjuntan capturas inexistentes. | [Protocolo manual y capturas requeridas](./assets/chapter5/routes-av2-evidence/manual-ui-validation.md). |
+En primer lugar, se presentan las nuevas secciones implementadas en la Landing Page, donde se exhiben los videos **About-the-Product**, que presenta la plataforma final a los usuarios, y **About-the-Team**, que ofrece un breve resumen del camino recorrido durante el desarrollo de Rumbo, acompañado de los testimonios de cada uno de los integrantes de la startup.
 
-La evidencia visual y el video de navegación siguen pendientes. Los escenarios del protocolo manual requieren datos ficticios y capturas Desktop/Mobile de la misma versión que se integre en GitHub.
+**URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page
+
+**URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
+
+### Sección About-the-Product
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+### Sección About-the-Team
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+<br>
+
+En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplicación web frontend de Rumbo, donde principalmente se organizaron las vistas en dos plataformas diferenciadas: una para conductores y otra para tutores. Asimismo, se realizaron modificaciones en las interfaces con el propósito de mejorar su apariencia y ofrecer una experiencia más atractiva para los usuarios.
+
+**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application
+
+**URL pública del Repositorio del Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
+
+### Login temporal
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
 
 
-**Estado de la versión integrada después de los PRs de noviembre:** las pruebas históricas de la tabla anterior se conservan como evidencia de su fecha; deben repetirse sobre el `develop` que combina Routes, Billing, Profiles y Notifications. La presencia de un controlador o un PR fusionado no es por sí sola una prueba de ejecución.
+### Rumbo: Conductores
 
-| Escenario de integración | Resultado comprobable en repositorios | Prueba pendiente para cerrar el AV2 |
-|---|---|---|
-| Crear/editar ruta con vehículo, paradas y horario | Formularios Angular y backend de Routes disponibles en `develop`. | `POST /api/v1/routes` y `PUT /api/v1/routes/{id}` con datos persistidos en PostgreSQL; recarga de pantalla y capturas. |
-| Asignar estudiante registrado por tutor | `RouteAssignment` y servicios de Profiles presentes; existe control de elegibilidad por conductor. | Verificar identidad y autorización efectiva de conductor/tutor; probar rechazo y asignación con datos reales de prueba, no ficticios de una API distinta. |
-| Publicar ruta y consultar traslado desde tutor | Publicación, servicios de viajes y vistas/consultas de tutor disponibles parcialmente. | Probar que una ruta publicada se muestra únicamente a tutores autorizados y que los estados corresponden al viaje correcto. |
-| Vehículo seleccionable | El frontend integra consulta de vehículos; existe `VehiclesController` de demostración. | Probar que los vehículos persisten y que el mismo ID es aceptado por Routes sin mezclarse con MockAPI. |
-| Notificaciones, retrasos y llegada | Controladores de avisos y llegada presentes para demostración local. | Confirmar evento real → creación de aviso → consulta por tutor y persistencia; distinguirlo del contenido estático o simulado. |
-| Billing | APIs `/api/v1/plans` y `/api/v1/subscriptions` presentes en backend integrado. | Probar creación/consulta de suscripción, vigencia y respuesta del frontend conectada a Spring Boot. |
-| Compilación y servicios | `pom.xml` de `develop` configura JDK 27; Angular 21 y proxy local definidos. | Ejecutar `mvnw.cmd test`, arrancar Spring Boot con PostgreSQL, `npm ci`, `npm test -- --watch=false` y `npm run build`, y guardar resultados de esta versión. |
+#### Inicio
 
-**Nota de perfiles de ejecución:** `application.properties` del backend establece perfiles `dev` y `local`. Las APIs de `VehiclesController`, `NotificationsController` y algunos recursos de consulta de tutores solo están disponibles cuando las propiedades `app.demo.enabled` o `app.profiles.demo.enabled` permiten su carga. El archivo `application-local.properties` fija `127.0.0.1` y advierte no usar esa modalidad en un despliegue público. El frontend de `develop` todavía consume MockAPI en Billing, Profiles y Alerting, mientras Routes y Vehicles apuntan a `/api/v1` en el entorno de desarrollo.
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Estudiantes
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Rutas
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Notificaciones
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Plan y facturación
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Configuración
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
 
 
+### Rumbo: Tutores
 
-**Evidencia visual de persistencia local — pgAdmin 4 (PostgreSQL 17).** La captura existente registra una consulta SQL ejecutada en la base `rumbo_demo` sobre `rp_routes`. El resultado presenta dos registros con estado `PUBLISHED`. Este resultado respalda que había rutas almacenadas al momento de la consulta, pero **no demuestra** por sí solo cómo se crearon, la autorización de estudiantes, un reinicio del servidor ni su publicación en Render.
+#### Inicio
 
-![Resultado de consulta SQL de rutas en pgAdmin 4](./assets/chapter5/pgAdmin-1.png)
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
 
-*Figura AV2-DB-01. Consulta `SELECT id, name, code, status FROM rp_routes ORDER BY name;` y resultado de dos rutas en estado PUBLISHED en `rumbo_demo`. Fuente: captura del entorno local del equipo.*
+#### Viaje Actual
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Notificaciones
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Estudiantes
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+#### Configuración
+
+<div align="center">
+  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+</div>
+
+<br>
+
+Por último, se presenta Swagger, donde se documentan todos los endpoints implementados durante este sprint. Estos ya se encuentran integrados con el frontend y permiten realizar la persistencia de los datos de la plataforma.
+
+**URL pública de los Web Services:** https://rumbo-team-backend.onrender.com/swagger-ui/index.html
+
+**URL pública del Repositorio de los Web Services:** https://github.com/AIpaca-OS/web-services
+
+### Plans
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Profiles
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Service Enrollments
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Service Enrollments
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Service Enrollments
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Data Deletion Requests
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Routes
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Trips
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Subscriptions 
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Students
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+### Notifications
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los Web Services de Rumbo se organizan a partir de los modelos de dominio y los diagramas de base de datos de la sección 4.8.1. El backend utiliza Java, Spring Boot y Spring Data JPA, y la especificación pública de la API sigue OpenAPI mediante Swagger, según las tecnologías establecidas en el Final Project Statement.
+Durante el Sprint 2 se implementaron **Fake REST APIs** utilizando **MockAPI** como herramienta para simular la persistencia de datos y los servicios del backend. Esta solución permitió publicar los diferentes endpoints REST y facilitar su consumo desde la aplicación web de Rumbo, posibilitando la integración y prueba de las operaciones de gestión de datos.
 
-Para evitar que el contrato de servicio dependa directamente de la estructura relacional, las entidades JPA representan la persistencia, los repositorios encapsulan el acceso a datos, los servicios aplican las reglas de negocio y los controladores atienden las solicitudes REST mediante DTOs. Una tabla no se convierte necesariamente en un CRUD público: las operaciones se seleccionan de acuerdo con User Stories y permisos del usuario.
-
-**Repositorio de Web Services:** https://github.com/AIpaca-OS/web-services
-
-La correspondencia entre los ocho diagramas y los recursos del backend se resume en la siguiente matriz de diseño. Las rutas son una **referencia de contrato** para organizar la implementación; la evidencia de endpoints funcionales corresponde a la tabla de operaciones verificadas.
-
-| Bounded Context | Entidades de persistencia representativas | Recurso REST de referencia |
-|---|---|---|
-| Identity & Access Management | `accounts`, `account_tokens` | `/api/v1/auth`, `/api/v1/accounts` |
-| Profiles & Relationship Management | `profiles`, `students`, `tutor_student_relationships` | `/api/v1/profiles`, `/api/v1/students` |
-| Vehicle & Credential Management | Referencia opcional `vehicleId`; sin CRUD de vehículos en el alcance actual | No se publica un recurso de vehículos en el MVP de Routes |
-| Route & Trip Planning | `routes`, `route_stops`, `route_schedules`, `route_assignments` | `/api/v1/routes` |
-| Trip Execution & Monitoring | `trips`, `trip_passengers`, `trip_events` | `/api/v1/trips` |
-| Incident & Delay Management | `incidents`, `incident_acknowledgements`, `delays` | `/api/v1/incidents`, `/api/v1/delays` |
-| Notification Management | `notifications`, `notification_settings` | `/api/v1/notifications` |
-| Subscriptions & Billing | `plans`, `subscriptions`, `subscription_payments` | `/api/v1/plans`, `/api/v1/subscriptions` |
-
-**Relación de operaciones y documentación OpenAPI**
-
-| HTTP Method | Endpoint | Parámetros / solicitud de ejemplo | Respuesta y códigos HTTP | Swagger URL / Evidence |
-|---|---|---|---|---|
-| GET | `/api/v1/routes` | Sin parámetros; obtiene rutas del conductor autenticado. | `200 RouteView[]`; `401`, `403`, `503` con ProblemDetail. | Local: `http://127.0.0.1:8080/swagger-ui.html`; comprobado HTTP 200. |
-| POST | `/api/v1/routes` | Cuerpo `RouteWrite`: nombre, turno, hora, paradas, horario; `vehicleId` opcional. | `201 RouteView`; `400`, `401`, `403`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| GET | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `200 RouteView`; `400`, `401`, `403`, `404`, `503`. | Esquemas y contrato en OpenAPI local. |
-| PUT | `/api/v1/routes/{id}` | `id`: UUID; cuerpo `RouteWrite`. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| PUT | `/api/v1/routes/{id}/schedule` | `id`: UUID; cuerpo `ScheduleWrite` con días, horas y confirmación. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-| GET | `/api/v1/routes/{id}/assignments` | `id`: UUID de ruta. | `200 AssignmentView[]`; `401`, `403`, `404`. | Esquemas y contrato en OpenAPI local. |
-| POST | `/api/v1/routes/{id}/assignments` | `id`: UUID; cuerpo `AssignmentWrite` (`studentId`, `stopId`). | `201 AssignmentView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| DELETE | `/api/v1/routes/{id}/assignments/{assignmentId}` | `id` y `assignmentId`: UUID. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-| PATCH | `/api/v1/routes/{id}/status` | `id`: UUID; cuerpo `StatusPatch` (`status: PUBLISHED`). | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| DELETE | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-
-El Final Project Statement (p. 27) solicita documentar cada endpoint relacionado con el alcance del Sprint, sus acciones implementadas, verbo HTTP, sintaxis, parámetros, respuesta, enlace a OpenAPI y capturas con datos de muestra. Esa sección no establece un umbral porcentual de endpoints. Las cifras siguientes se limitan al bounded context Routes y no representan el porcentaje de cobertura de todo el Sprint.
-
-**Corte de pruebas de Routes — 02/11/2026 (versión anterior a la integración actual):** se documentaron **10 operaciones** y **21 aserciones HTTP** ejecutadas con el script local. Estas cifras no se extienden automáticamente a los controladores adicionales que actualmente existen en `develop`.
-**Swagger histórico:** `http://127.0.0.1:8080/swagger-ui.html` y `/v3/api-docs`; comprobados localmente con HTTP 200 en el corte previo, no en un despliegue público.
-**Cliente de verificación histórico:** [script de verificación de Routes](./assets/chapter5/routes-av2-evidence/verify-local-routes.ps1) con datos ficticios y registros anexados al informe; la colección Postman puede servir para repetir pruebas, pero no fue la fuente de aquellas 21 aserciones.
-
-**Corte histórico de historias y pruebas al 02/11/2026 — no corresponde al estado actual de Jira**
-
-| Historia | Estado actual en Jira | Resultado local contrastado con criterios Given/When/Then | Pendiente / clasificación |
-|---|---|---|---|
-| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | En curso | Crear ruta configurable, mantener paradas ordenadas y guardar datos en PostgreSQL. | Dirección no localizable y la relación real de conductor/vehículo no están integradas. Parcial, con verificación visual pendiente. |
-| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | En curso | Guardar y recuperar horario; rechazar horario confirmado vacío con HTTP 400. | La CI de frontend pasó; siguen pendientes la verificación visual y el recorrido completo de la interfaz. Implementada localmente, pendiente de cierre. |
-| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | En curso | Las identidades ficticias permitidas pasan; estudiante no autorizado recibe 403; duplicado recibe 409. | El perfil productivo devuelve 503 porque la integración real con Students/Profiles no está implementada. Parcial y bloqueada por ese bounded context. No satisface la historia completa. |
-| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Por hacer | Publicación completa devuelve `PUBLISHED`; una ruta incompleta recibe HTTP 409. | La generación de viajes y la visibilidad para tutores pertenecen a integraciones aún pendientes. Implementada parcialmente en local; Jira sigue Por hacer. |
-| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | En curso | Diez operaciones OpenAPI cubiertas por 21 aserciones HTTP; datos verificados en PostgreSQL y tras reinicio. | Build de Angular verde en CI; siguen pendientes la verificación visual y la publicación remota. El backend no tiene workflow CI configurado y sus pruebas citadas son locales. |
-
-En el corte histórico del 02/11/2026, el Sprint 3 registraba 4 historias En curso y 7 Por hacer (52 SP). Esa consulta quedó superada por la **actualización de Jira del 10/11/2026**, documentada en 5.2.3.3: 76 incidencias del proyecto con responsable (8 Listo, 13 En curso y 55 Por hacer); RMO-23 y RMO-24 se encuentran En curso. Se mantienen las observaciones técnicas de este corte sin presentar sus estados como actuales.
-
-
-**Inventario actual del backend integrado (`develop`, 10/11/2026).** El inventario histórico anterior corresponde a una versión de Routes; los siguientes controladores y rutas se comprobaron leyendo el código del repositorio, no mediante solicitudes HTTP ejecutadas sobre la versión fusionada.
-
-| Bounded context / recurso | API REST declarada en Spring Boot | Estado de integración para AV2 |
-|---|---|---|
-| **Routes** | `GET, POST /api/v1/routes`; `GET, PUT, DELETE /api/v1/routes/{id}`; `PUT /api/v1/routes/{id}/schedule`; `GET, POST, PUT /api/v1/routes/{id}/assignments`; `GET /api/v1/routes/eligible-students`; `PATCH /api/v1/routes/{id}/status`; `POST, GET /api/v1/routes/{id}/trips`. | Código de ruta y persistencia presentes; validación real de estudiantes y seguridad de conductor requieren integración final. |
-| **Trips** | `GET /api/v1/trips/{id}`; `POST /api/v1/trips/{id}/absences`; `PATCH /api/v1/trips/{id}/start`, `/stops/{stopId}/served`, `/cancel`, `/complete`. | Operaciones declaradas; demostrar transiciones y notificaciones con estado real del viaje. |
-| **Profiles / Students** | `/api/v1/profiles`, `/api/v1/students`, `/api/v1/service-enrollments`, relaciones de tutores y consulta de estudiantes del conductor. | Controladores y dominio fusionados; permisos entre tutores, estudiantes y conductores no se acreditan como IAM productivo. |
-| **Billing** | `GET, POST /api/v1/plans`; `GET /api/v1/plans/{planId}`; `GET, POST /api/v1/subscriptions`. | Controladores integrados en el backend; frontend en `develop` todavía conserva consumo de MockAPI para planes y suscripciones. |
-| **Vehicles** | `GET, POST /api/v1/vehicles`, `GET, PUT, DELETE /api/v1/vehicles/{id}`. | Disponible en código solo cuando `app.demo.enabled=true`; no se considera API productiva. |
-| **Notifications / tutor** | `/api/v1/notifications`, `/api/v1/routes/{routeId}/notices`, `/api/v1/tutor/journeys`, `/api/v1/tutor/notifications`. | Funciones restringidas por flags de demostración; la generación y recepción integral de avisos debe verificarse. |
-| **Incident & Delay Management** | Modelos/MockAPI de frontend y funcionalidades relacionadas con avisos. | No se verifica una API Spring Boot completa de incidentes y retrasos mediante el controlador de Notifications. |
-
-**Dependencia concreta de autorización pendiente:** el adaptador `ProfilesStudentAuthorization` de Routes consulta `/api/v1/profiles/driver/eligible-students` y `/api/v1/profiles/driver/vehicles/{vehicleId}/access`, mientras que el módulo integrado de Profiles expone, entre otros, `/api/v1/service-enrollments/drivers/me/students`. Los contratos no coinciden todavía. Además, `PROFILES_AUTHORIZATION_ENABLED` está deshabilitado por defecto. Deben unificar los contratos y validar credenciales antes de afirmar que un estudiante autorizado puede publicarse y ser consultado por su tutor.
-
-**Conexión de APIs frontend:** en el entorno Angular `develop`, Routes y Vehicles se configuran con base `/api/v1`. Billing, Profiles y Alerting conservan URLs MockAPI en `environment.development.ts`; JSON Server constituye una alternativa de simulación local. En la entrega se distinguirá explícitamente **API propia Spring Boot, servicio simulado y datos de demostración**. Postman es el cliente de pruebas, Swagger/OpenAPI es el contrato navegable y PostgreSQL es el almacenamiento del backend.
-
-**Plan de verificación de contratos del Sprint 3:** registrar por operación método, endpoint, parámetro, body de ejemplo con datos no sensibles, respuesta HTTP real, URL de Swagger, fecha, commit y resultado. Los endpoints condicionales deben comprobarse solo bajo el perfil documentado; no se habilitan por defecto en Render.
-
-**Evidencia visual de la documentación OpenAPI del backend.** Las cinco capturas existentes muestran la interfaz Swagger de `Rumbo Web Services API` servida desde el entorno local `localhost:8080`. Permiten identificar los recursos y verbos HTTP declarados; **no acreditan por sí solas** que todas las operaciones hayan sido ejecutadas satisfactoriamente ni que estén publicadas en Render.
-
-![Swagger UI: API Rumbo y Service Enrollments](./assets/chapter5/Swagger-1.png)
-
-*Figura AV2-SW-01. Presentación de Rumbo Web Services API y recursos de Service Enrollments; sección de conductores de demostración local.*
-
-![Swagger UI: Routes, suscripciones, avisos del conductor y viajes](./assets/chapter5/Swagger-2.png)
-
-*Figura AV2-SW-02. Contratos de Routes para crear, consultar, editar, programar horarios y asignar estudiantes, además de recursos de suscripciones y avisos locales.*
-
-![Swagger UI: Vehicles, Students, Tutor Journeys y Plans](./assets/chapter5/Swagger-3.png)
-
-*Figura AV2-SW-03. Endpoints de vehículos (marcados como demostración local), estudiantes, consultas del tutor y planes de suscripción.*
-
-![Swagger UI: Profiles, Notifications, Data Deletion Requests y Trips](./assets/chapter5/Swagger-4.png)
-
-*Figura AV2-SW-04. Contratos de perfiles, notificaciones de demostración local, solicitudes de eliminación de datos personales y operaciones de ejecución de viajes.*
-
-![Swagger UI: Schools y esquemas de recursos](./assets/chapter5/Swagger-5.png)
-
-*Figura AV2-SW-05. Recursos de consulta de centros educativos y modelos de entrada/salida definidos en OpenAPI.*
-
-**Alcance de estas seis capturas:** cinco prueban la **presencia de documentación Swagger UI local** y una evidencia registros consultados en **PostgreSQL local**. No se adjuntaron capturas de Postman, integración frontend-backend ni de despliegue; no se atribuyen resultados no mostrados.
-
-
+A continuación, se presenta la documentación de los endpoints implementados, detallando sus métodos HTTP, sintaxis de llamada, parámetros, ejemplos de solicitudes y respuestas, así como la descripción de las operaciones disponibles.
 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
-
-**Publicación de código en rama principal.** El backend se integró a [`web-services/main`](https://github.com/AIpaca-OS/web-services/tree/main) mediante [PR #9](https://github.com/AIpaca-OS/web-services/pull/9), commit `569b520`, y el frontend se integró a [`frontend-web-application/main`](https://github.com/AIpaca-OS/frontend-web-application/tree/main) mediante [PR #19](https://github.com/AIpaca-OS/frontend-web-application/pull/19), commit `18ff617`. La integración GitHub Actions del frontend [completó exitosamente el despliegue de GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/42960952622). Estos resultados no sustituyen la validación del frontend publicado ni confirman un despliegue de backend en Render.
-
-
-
-La configuración de despliegue abarca los tres productos de Rumbo. La compilación local confirma que el frontend de Routes consume la API a través del proxy de desarrollo. La aplicación requiere integrar autenticación OIDC/JWT y un proxy inverso de mismo origen para la publicación productiva; las credenciales locales no se guardan en el paquete Angular.
-
-| Producto | Repositorio | Dirección / evidencia de despliegue |
-|---|---|---|
-| Landing Page | [AIpaca-OS/landing-page](https://github.com/AIpaca-OS/landing-page) | https://aipaca-os.github.io/landing-page/ |
-| Frontend Web Application | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | [Workflow de despliegue histórico del 07/10/2026](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104). La versión de Routes de Sprint 3 no está publicada; GitHub Pages tampoco aloja el proxy `/api/v1`. |
-| RESTful Web Services | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | Spring Boot local con PostgreSQL 17 en `127.0.0.1:8080`; no se ha desplegado en un servidor público. |
-| Swagger / OpenAPI | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | `http://127.0.0.1:8080/swagger-ui.html` local, comprobado HTTP 200; no tiene dirección pública. |
-| Build de producción Angular | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | El build local Windows no generó `dist/`; el run [CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985) en Ubuntu + Node 22 pasó instalación, pruebas y build. No se desplegó la aplicación ni se publicó un artefacto de producción. |
-
-El workflow de frontend ejecutó las pruebas Angular y el build en Ubuntu al abrir el PR #17 hacia `develop` (run #25, resultado exitoso). La validación visual de Routes permanece pendiente. Las pruebas de las páginas del Landing Page y los enlaces Call-To-Action mantienen su evidencia previa y no forman parte de la integración local Routes.
-
-
-**Situación del despliegue para AV2 al 10/11/2026:** la Landing Page mantiene la URL de GitHub Pages consignada anteriormente y el frontend dispone de un workflow de despliegue ejecutado con éxito tras el merge a `main`. No se aporta en estas capturas una comprobación visual de la página ya desplegada. Los endpoints Spring Boot observados en Swagger se sirvieron en `localhost:8080`; no se dispone de una URL de Render verificada para el backend integrado.
-
-En la versión actual, el backend `develop` configura **Java 27** en Maven. El despliegue requiere una imagen o servicio compatible, PostgreSQL disponible y variables de entorno `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`, `PORT`, `CORS_ALLOWED_ORIGINS` y `SPRING_PROFILES_ACTIVE=prod`. Para producción, los flags `app.demo.enabled` y `app.profiles.demo.enabled` deben quedar deshabilitados. Angular necesita una URL de API pública o un proxy inverso real: `proxy.conf.json` solo sirve para el servidor de desarrollo y no se publica con el build.
-
-**Criterio de cierre del despliegue:** comprobar URL accesible fuera de la máquina local, endpoint real de Swagger, conexión a PostgreSQL y frontend consumiendo el backend público. Hasta tener esos resultados no se reemplazarán las referencias de entorno local por enlaces inventados.
-
-
 
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
@@ -3379,9 +3338,6 @@ Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y depende
 
 **Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
 
-
-
-
 ## 5.3. Validation Interviews
 
 La validación de Rumbo se estructura alrededor de los segmentos definidos en Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con la Landing Page y con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
@@ -3398,6 +3354,32 @@ La sesión inicia con una presentación breve del objetivo y con la autorizació
 | Conductores | Examinar la claridad de las opciones para organizar y comunicar eventos del servicio. | Consultar una ruta asignada y registrar o interpretar una incidencia según el flujo disponible. |
 
 Se registran el dispositivo, el navegador, la versión examinada y las observaciones del evaluador. Las tareas utilizadas en cada sesión deben coincidir con las funciones demostrables del producto.
+
+### Padres 
+
+1. ¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
+2. ¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
+3. ¿Te resultó fácil navegar por la plataforma y encontrar la información que necesitabas? ¿Por qué?
+4. ¿Consideras que la información relacionada con la movilidad de tu hijo se presenta de manera clara y comprensible?
+5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
+6.	¿Qué funcionalidades de la plataforma te parecieron más útiles para realizar el seguimiento de la movilidad escolar?
+7.	¿Consideras que Rumbo podría ayudarte a reducir las dificultades de comunicación y coordinación con el conductor? ¿De qué manera?
+8.	¿Consideras que las notificaciones y los avisos proporcionados por la plataforma serían útiles para mantenerte informado sobre la movilidad?
+9.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+10. Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para realizar el seguimiento de la movilidad escolar de tu hijo? ¿Por qué?
+
+### Conductores
+
+1.	¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
+2.	¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
+3.	¿Te resultó fácil navegar por la plataforma y encontrar las opciones que necesitabas? ¿Por qué?
+4.	¿Consideras que la información de tus rutas y estudiantes se presenta de manera clara y organizada?
+5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
+6. ¿Qué funcionalidades de la plataforma te parecieron más útiles para gestionar tu servicio de movilidad?
+7.	¿Consideras que Rumbo podría facilitar la organización de tus rutas y paradas? ¿De qué manera?
+8.	¿Consideras que las opciones para registrar incidencias y comunicar retrasos serían útiles durante tus recorridos?
+9.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+10.	Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para gestionar tu servicio de movilidad escolar? ¿Por qué?
 
 ### 5.3.2. Registro de Entrevistas
 
@@ -3437,10 +3419,6 @@ Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres
 | Demostración | Grabación de la aplicación con los User Flows que forman parte de la versión presentada. |
 | Testimonios | Opiniones de participantes reales de las entrevistas de validación, al menos una por segmento. |
 | Cierre | Identidad de AIpaca/Rumbo e invitación a conocer la plataforma. |
-
-
-
-
 
 
 # Conclusiones
