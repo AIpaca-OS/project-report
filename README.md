@@ -83,9 +83,6 @@ La siguiente evidencia corresponde al resumen de actividad disponible en GitHub 
   <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
 </div>
 
-**Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
-**Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
-
 **Team Collaboration Network**
 
 Las siguientes capturas corresponden al Network Graph y permiten revisar visualmente la evolución e integración de las ramas del trabajo colaborativo.
@@ -99,35 +96,67 @@ Las siguientes capturas corresponden al Network Graph y permiten revisar visualm
   <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
 </div>
 
-**Branches:** https://github.com/AIpaca-OS/project-report/branches  
-**Network:** https://github.com/AIpaca-OS/project-report/network
+### TB1
 
-La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones sucesivas hacia `develop`. Se registran Pull Requests asociados a Requirements Elicitation, Requirements Specification, Product Design, Product Implementation y consolidación de AV1.
+Durante el desarrollo del TB1, se analizaron las contribuciones realizadas por los integrantes del equipo en el repositorio del Project Report, considerando la actividad correspondiente al Sprint 2. Para ello, se utilizaron las herramientas de análisis de GitHub, que permiten evidenciar la participación del equipo y la evolución colaborativa de la documentación del proyecto.
 
-**Contributors / Pull Requests**
+**Team Collaboration Pulse**
 
-La evidencia de Pull Requests se mantiene mediante los enlaces verificables de GitHub, evitando referencias a archivos de imagen que ya no existen en el repositorio.
+GitHub Pulse permite visualizar la actividad general del repositorio durante el Sprint 2, incluyendo los commits, Pull Requests y otros cambios realizados. Esta información permite evidenciar el ritmo de trabajo y las contribuciones relacionadas con la elaboración y actualización del reporte del proyecto.
 
-A la fecha de esta actualización, el Project Report registra **25 Pull Requests cerrados**, de los cuales **22 fueron integrados** y **3 fueron cerrados sin merge**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
-**Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
-**Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
+<div align="center">
+  <img src="./assets/tb1-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 
+
+**Team Contributors**
+
+La sección Contributors permite identificar la participación de cada integrante mediante sus contribuciones al repositorio. Esta métrica facilita el seguimiento de la actividad individual y permite observar cómo se distribuyó el trabajo de documentación durante el Sprint 2.
+
+<div align="center">
+  <img src="./assets/tb1-contributors-1.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/tb1-contributors-2.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+**Team Collaboration Network**
+
+El Network Graph permite visualizar la evolución del repositorio mediante sus ramas y commits, mostrando cómo se realizaron e integraron los cambios en el reporte. Esta evidencia permite apreciar el uso de GitHub como herramienta de control de versiones y colaboración durante la elaboración de la documentación del TB1.
+
+<div align="center">
+  <img src="./assets/av2-network-graph.png" alt="Project Report Collaboration Insights - GitHub Network Graph" width="95%">
+</div>
 
 ### AV2
 
-Para AV2, el informe incorpora la revisión del diseño de persistencia y la organización de la documentación correspondiente al Sprint 3. Los ocho diagramas nuevos fueron integrados en el apartado 4.8, se actualizaron sus explicaciones y se sustituyeron los assets anteriores. En paralelo, el Capítulo V fue alineado con la estructura y los formatos del Final Project Statement, manteniendo separados los registros del trabajo realizado y las evidencias que corresponden a nuevas implementaciones.
+La colaboración del equipo durante el desarrollo del Sprint 3 se verificó mediante las herramientas de análisis de actividad disponibles en GitHub para el repositorio **Project Report**. Las siguientes evidencias permiten observar la participación de los integrantes, la evolución de las contribuciones y la integración de los cambios realizados en el documento colaborativo.
 
-La colaboración documental puede revisarse directamente en las ramas del informe y en los siguientes commits:
+**Team Collaboration Pulse**
 
-- [Actualización de los ocho diagramas y su redacción](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a).
-- [Eliminación de versiones gráficas sustituidas en Chapter 4](https://github.com/AIpaca-OS/project-report/commit/06d0970db2e320cbdf165f73f1a3f31e460acf2b).
-- [Sincronización de recursos en la rama de Chapter 5](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222).
-- [Documentación de Sprint 3, entrevistas y About-the-Product](https://github.com/AIpaca-OS/project-report/commit/0d77f42d9c134269c60fad8dfc9509d1cb39a5d5).
+La siguiente evidencia corresponde a GitHub Pulse y presenta un resumen de la actividad del repositorio durante el periodo de trabajo de AV2, permitiendo identificar las contribuciones realizadas mediante commits, Pull Requests y otros cambios registrados.
 
-Los analíticos de Contributors, Network y Pull Requests sirven para verificar la participación individual y el proceso de integración. Las capturas de AV2 se incorporan a esta sección con el periodo de consulta identificado.
+<div align="center">
+  <img src="./assets/av2-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 
-<!-- AV2: incorporar imágenes de los analíticos y verificar la participación de cada integrante en el Project Report. -->
+**Team Contributors**
+
+La sección Contributors permite visualizar la participación de los integrantes en el repositorio, mostrando sus contribuciones y actividad registrada durante el desarrollo del informe. Esta evidencia complementa el historial de commits y permite reconocer la distribución del trabajo colaborativo.
+
+<div align="center">
+  <img src="./assets/av2-contributors.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+**Team Collaboration Network**
+
+La siguiente evidencia corresponde al Network Graph de GitHub, que permite observar la evolución del historial de versiones, las ramas de trabajo y la integración de los cambios realizados por los integrantes. De esta manera, se evidencia el uso del control de versiones para coordinar y consolidar las modificaciones del Project Report durante AV2.
+
+<div align="center">
+  <img src="./assets/av2-network-graph.png" alt="Project Report Collaboration Insights - GitHub Network Graph" width="95%">
+</div>
 
 ---
 
