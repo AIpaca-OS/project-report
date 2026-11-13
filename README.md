@@ -5321,7 +5321,7 @@ Desde la coordinación del equipo, se ha mantenido el registro de responsables e
 
 El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
 
-**URL del video About-the-Product publicado en YouTube:** https://www.youtube.com/watch?v=RQ0Z-Gsg2tA
+**URL del video About-the-Team publicado en YouTube:** https://www.youtube.com/watch?v=RQ0Z-Gsg2tA
 
 | Sección                   | Timing          |
 | ------------------------- | --------------- |
