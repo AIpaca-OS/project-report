@@ -116,7 +116,7 @@ A la fecha de esta actualización, el Project Report registra **25 Pull Requests
 
 ### AV2
 
-Para AV2, el informe incorpora la revisión del diseño de persistencia y la organización de la documentación correspondiente al Sprint 3. Los ocho diagramas nuevos fueron integrados en el apartado 4.8, se actualizaron sus explicaciones y se sustituyeron los assets anteriores. En paralelo, el Capítulo V fue alineado con la estructura y los formatos del Final Project Statement, manteniendo separados los registros del trabajo realizado y las evidencias que corresponden a nuevas implementaciones.
+Para AV2, el informe incorpora la revisión del diseño de persistencia y la organización de la documentación correspondiente al Sprint 3. Los ocho diagramas nuevos fueron integrados en la sección 4.8, se actualizaron sus explicaciones y se sustituyeron los assets anteriores. En paralelo, el Capítulo V fue alineado con la estructura y los formatos del Final Project Statement, manteniendo separados los registros del trabajo realizado y las evidencias que corresponden a nuevas implementaciones.
 
 La colaboración documental puede revisarse directamente en las ramas del informe y en los siguientes commits:
 
@@ -1065,7 +1065,7 @@ El mapa relaciona los objetivos de negocio con los cambios de comportamiento esp
 
 El **Product Backlog de Rumbo** organiza y prioriza las User Stories según su valor para el negocio y el orden de implementación definido por el equipo. Las historias de la Landing Page se mantienen al inicio porque corresponden al primer Sprint. A continuación se ubican las funcionalidades de negocio y los CRUD del Frontend Web Application; las historias de cuenta, acceso y autorización se mantienen hacia la parte final del bloque funcional, mientras que las Technical Stories del RESTful API se reservan para etapas posteriores del proyecto.
 
-Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8**, conforme al Statement. El Sprint 1 reúne las historias US31–US35 y suma **8 Story Points**. La selección definitiva de historias para  se realizará desde este backlog según los CRUD que se implementen en Angular con JSON Server y la capacidad acordada por el equipo.
+Las estimaciones utilizan únicamente la escala de Story Points **1, 2, 3, 5 y 8**, conforme al Statement. El Sprint 1 reúne las historias US31–US35 y suma **8 Story Points**. La selección de historias de cada Sprint se realiza desde este backlog según la capacidad acordada por el equipo; el detalle de los Sprints 2 y 3 se presenta en las secciones 5.2.2.3 y 5.2.3.3.
 
 **Product Backlog público (Trello):** https://trello.com/b/dd4dejIV/product-backlog
 
@@ -2237,7 +2237,7 @@ Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages de
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
+  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del Github Pages del Repositorio de Web Frontend Application" width="95%">
 </div>
 
 #### Web Services
@@ -3051,7 +3051,7 @@ Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages de
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
+  <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del de Github Pages del Repositorio de Web Frontend Application" width="95%">
 </div>
 
 
@@ -3623,7 +3623,7 @@ Durante el Sprint 3 se registraron, sin contar adiciones como los merges, 343 co
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-En este apartado se mostrarán las capturas que evidencian todo lo desarrollado durante el Sprint 3, incluyendo las modificaciones realizadas en la Landing Page, la aplicación web frontend y el backend, junto con los enlaces de despliegue correspondientes a cada uno de estos componentes.
+En esta sección se mostrarán las capturas que evidencian todo lo desarrollado durante el Sprint 3, incluyendo las modificaciones realizadas en la Landing Page, la aplicación web frontend y el backend, junto con los enlaces de despliegue correspondientes a cada uno de estos componentes.
 
 En primer lugar, se presentan las nuevas secciones implementadas en la Landing Page, donde se exhiben los videos **About-the-Product**, que presenta la plataforma final a los usuarios, y **About-the-Team**, que ofrece un breve resumen del camino recorrido durante el desarrollo de Rumbo, acompañado de los testimonios de cada uno de los integrantes de la startup.
 
@@ -3653,7 +3653,7 @@ En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplic
 
 ### Login temporal
 
-**Para entrar solo ingrese 1 como ID en cualquiera de los apartados**
+**Para entrar solo ingrese 1 como ID en cualquiera de los campos**
 
 <div align="center">
   <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
@@ -5226,26 +5226,15 @@ A continuación, se registran todas las entrevistas de validación realizadas a 
 
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
 |---|---|---|---|
-| 1 | El ingreso solicita un ID numérico de perfil en lugar de credenciales | 3 | Usability: Coincidencia entre el sistema y el mundo real |
-| 2 | Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor | 3 | Usability: Reconocer antes que recordar |
-| 3 | El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste | 2 | Inclusive Design: Proporciona experiencias comparables |
-| 4 | La preferencia de avisos no críticos no se conserva entre sesiones | 2 | Usability: Visibilidad del estado del sistema |
-| 5 | Las fechas de nacimiento se muestran en formato técnico (AAAA-MM-DD) | 1 | Usability: Coincidencia entre el sistema y el mundo real |
-| 6 | El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación | 1 | Usability: Consistencia y estándares |
+| 1 | Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor | 3 | Usability: Reconocer antes que recordar |
+| 2 | El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste | 2 | Inclusive Design: Proporciona experiencias comparables |
+| 3 | La preferencia de avisos no críticos no se conserva entre sesiones | 2 | Usability: Visibilidad del estado del sistema |
+| 4 | Las fechas de nacimiento se muestran en formato técnico (AAAA-MM-DD) | 1 | Usability: Coincidencia entre el sistema y el mundo real |
+| 5 | El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación | 1 | Usability: Consistencia y estándares |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
-**PROBLEMA #1: El ingreso solicita un ID numérico de perfil en lugar de credenciales**
-
-Severidad: 3<br>
-Heurística violada: Usability – Coincidencia entre el sistema y el mundo real<br>
-Problema: para entrar a la aplicación el usuario elige su rol y escribe el ID de su perfil en la base de datos. Un padre o un conductor no conoce ese dato ni tiene dónde consultarlo, por lo que no puede ingresar sin ayuda del equipo.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-login.png" alt="Problema 1: ingreso por ID de perfil" width="80%"></p>
-
-Recomendación: integrar el registro y el inicio de sesión (US01–US04, TS02). Mientras tanto, indicar en la pantalla de ingreso de dónde se obtiene el ID de prueba.
-
-**PROBLEMA #2: Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor**
+**PROBLEMA #1: Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor**
 
 Severidad: 3<br>
 Heurística violada: Usability – Reconocer antes que recordar<br>
@@ -5255,7 +5244,7 @@ Problema: en el detalle del estudiante, la sección «Servicio de transporte esc
 
 Recomendación: mostrar una lista o buscador de conductores con su nombre y vehículo declarado (US40) y permitir elegirlo.
 
-**PROBLEMA #3: El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste**
+**PROBLEMA #2: El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste**
 
 Severidad: 2<br>
 Heurística violada: Inclusive Design – Proporciona experiencias comparables<br>
@@ -5265,7 +5254,7 @@ Problema: en la pantalla de ingreso, parte del texto blanco «Peace of mind on e
 
 Recomendación: mover el círculo detrás de una zona sin texto o reducir su opacidad para mantener un contraste mínimo de 4.5:1.
 
-**PROBLEMA #4: La preferencia de avisos no críticos no se conserva entre sesiones**
+**PROBLEMA #3: La preferencia de avisos no críticos no se conserva entre sesiones**
 
 Severidad: 2<br>
 Heurística violada: Usability – Visibilidad del estado del sistema<br>
@@ -5275,7 +5264,7 @@ Problema: el interruptor «Avisos no críticos» cambia de estado, pero la prefe
 
 Recomendación: implementar el recurso de preferencias en el backend (US29) y confirmar visualmente cuando la preferencia se guarde.
 
-**PROBLEMA #5: Las fechas de nacimiento se muestran en formato técnico**
+**PROBLEMA #4: Las fechas de nacimiento se muestran en formato técnico**
 
 Severidad: 1<br>
 Heurística violada: Usability – Coincidencia entre el sistema y el mundo real<br>
@@ -5285,7 +5274,7 @@ Problema: la lista de estudiantes muestra la fecha de nacimiento como «2007-01-
 
 Recomendación: mostrar la fecha con el formato local del idioma activo (por ejemplo, «30/01/2007» en es_419 y «Jan 30, 2007» en en_US).
 
-**PROBLEMA #6: El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación**
+**PROBLEMA #5: El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación**
 
 Severidad: 1<br>
 Heurística violada: Usability – Consistencia y estándares<br>
