@@ -56,9 +56,10 @@
 | 1.7 | 05/10/2026 | Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile | Integración y pruebas de flujo completo de los 5 Bounded Contexts desarrollados, configuración de entorno y despliegue del frontend en producción. |
 | 2.0 | 06/10/2026 | Díaz Ramírez, Alejandro / Geronimo Puma, Kevin Joel / Lino Quispe, Leonardo Miguel / Meza Soza, Alexandra Yamile / Pareja Caceres, Diana | Consolidación y entrega final TB1: frontend desplegado con CRUD operativo en 5 Bounded Contexts (1 por integrante), cierre de Sprint 2 y levantamiento integral de observaciones del profesor. |
 | 2.1 | 20/10/2026 | Equipo AIpaca — actualización documental | Revisión de los ocho Database Diagrams del Capítulo IV; sincronización de assets y estructura de documentación de Sprint 3, Validation Interviews y videos de AV2 conforme al Final Project Statement. |
-| 2.2 — borrador | 02/11/2026 | Actualización asistida, pendiente de revisión del equipo | Ajuste del Sprint 3 a la distribución actual de cuatro integrantes; registro de backlog Jira, contratos Routes y estado de evidencias técnicas disponibles. |
-| 2.3 — actualización AV2 | 10/11/2026 | Lino Quispe, Leonardo Miguel — consolidación documental para revisión grupal | Actualización del Sprint 3, Jira, Routes, Billing, Profiles, Notifications, APIs y riesgos de integración. |
-| 2.4 — evidencias disponibles | 10/11/2026 | Equipo AIpaca — integración documental | Incorporación de cinco capturas reales de Swagger UI y una de pgAdmin/PostgreSQL; supresión de marcadores sin imagen, tablas vacías y enlaces no proporcionados. Registro de liberación de frontend y backend a main. |
+| 2.2 | 02/11/2026 | Actualización asistida, pendiente de revisión del equipo | Ajuste del Sprint 3 a la distribución actual de cuatro integrantes; registro de backlog Jira, contratos Routes y estado de evidencias técnicas disponibles. |
+| 2.3 | 10/11/2026 | Lino Quispe, Leonardo Miguel — consolidación documental para revisión grupal | Actualización del Sprint 3, Jira, Routes, Billing, Profiles, Notifications, APIs y riesgos de integración. |
+| 2.4 | 10/11/2026 | Equipo AIpaca — integración documental | Incorporación de cinco capturas reales de Swagger UI y una de pgAdmin/PostgreSQL; supresión de marcadores sin imagen, tablas vacías y enlaces no proporcionados. Registro de liberación de frontend y backend a main. |
+| 2.5 | 12/11/2026 | Meza soza, Alexandra Yamile / Geronimo Puma, Kevin Joel | Completar toda la documentación del Sprint 3 y las entrevistas de validación |
 
 ---
 
@@ -189,23 +190,8 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• AV1: Realizó entrevistas de Needfinding dirigidas a conductores de movilidad escolar, adaptando el lenguaje técnico hacia términos coloquiales de transporte diario.<br>• TB1: Expuso en video la navegación de la interfaz de usuario de perfiles y sustentó las decisiones de diseño tomadas para la interacción entre tutores y estudiantes.<br><br>**Geronimo Puma, Kevin Joel**<br>• AV1: Condujo entrevistas con padres de familia, enfocándose en la empatía y la resolución de preocupaciones sobre la seguridad en el traslado escolar.<br>• TB1: Sustentó ante cámara la lógica del flujo de suscripciones y facturación emulada en la Frontend Web Application.<br><br>**Lino Quispe, Leonardo Miguel**<br>• AV1: Lideró la exposición de la propuesta de valor y arquitectura de información de la Landing Page ante el docente y el equipo.<br>• TB1: Explicó de manera estructurada en la sustentación síncrona el flujo de trabajo colaborativo en GitFlow y la organización de rutas escolares.<br><br>**Meza Soza, Alexandra Yamile**<br>• AV1: Participó activamente en la exposición de requisitos del usuario y arquetipos User Persona durante las revisiones internas del equipo.<br>• TB1: Realizó la demostración guiada del módulo de alertas y configuración de notificaciones durante la grabación de la entrega.<br><br>**Pareja Caceres, Diana**<br>• AV1: Presentó la síntesis de competidores directos e indirectos y sustentó las ventajas diferenciales del producto durante la retrospectiva del Sprint 1.<br>• TB1: Expuso la demostración funcional del Bounded Context de gestión de vehículos y credenciales, explicando el consumo de servicios REST en la nube y el uso de Signals para la reactividad. | **Conclusión grupal AV1:** El equipo demostró adaptabilidad comunicativa al interactuar con perfiles contrastantes (padres de familia y transportistas escolares), logrando extraer necesidades críticas sin inducir respuestas técnicas complejas.<br><br>**Conclusión grupal TB1:** Durante la sustentación y demostración de software, el equipo articuló con claridad técnica el funcionamiento de la aplicación ante el docente, relacionando cada vista con los objetivos de negocio y demostrando fluidez en la argumentación de la arquitectura elegida. |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• AV1: Redactó la caracterización del segmento objetivo y el análisis competitivo en el Capítulo II.<br>• TB1: Documentó los contratos de datos y especificaciones funcionales para el Bounded Context de Profiles & Relationship Management.<br><br>**Geronimo Puma, Kevin Joel**<br>• AV1: Elaboró los artefactos de Needfinding (User Personas y Empathy Maps) empleando redacción centrada en el usuario.<br>• TB1: Redactó la documentación de tareas y casos de uso emulados para el Bounded Context de Subscriptions & Billing en el Capítulo V.<br><br>**Lino Quispe, Leonardo Miguel**<br>• AV1: Estructuró y redactó las directrices de configuración de software, políticas de ramas en GitFlow y la introducción formal del informe.<br>• TB1: Consolidó la trazabilidad de tareas en el Sprint Backlog 2 y documentó la configuración general del entorno Angular CLI y temas Material.<br><br>**Meza Soza, Alexandra Yamile**<br>• AV1: Redactó los escenarios de aceptación en formato Gherkin (Given-When-Then) para las User Stories del Sprint 1.<br>• TB1: Elaboró la documentación técnica de las interfaces de alerta, detallando las reglas de validación en el informe colaborativo.<br><br>**Pareja Caceres, Diana**<br>• AV1: Documentó el análisis del entorno y los antecedentes de la problemática del transporte escolar en Lima en la sección Solution Profile.<br>• TB1: Redactó íntegramente la documentación de infraestructura para Vehicle & Credential Management, detallando las llamadas HTTP a MockAPI, los modelos de dominio y las convenciones de Conventional Commits en el informe. | **Conclusión grupal AV1:** Se logró una especificación técnica rigurosa en Markdown, manteniendo uniformidad estilística y precisión en la definición de criterios de aceptación comprobables mediante Gherkin.<br><br>**Conclusión grupal TB1:** El equipo consolidó una redacción técnica clara y trazable en el Capítulo V, alineando sin ambigüedades los términos del negocio (Ubiquitous Language) con los artefactos de código fuente, endpoints REST y commits en GitHub. |
-
-
-### Avance del Student Outcome 3 — AV2 (registro a contrastar con las evidencias)
-
-El equipo mantiene las dos dimensiones del Student Outcome 3 establecidas en la rúbrica: **3.c1, comunicación oral**, y **3.c2, comunicación escrita**. La evidencia presentada para AV2 debe distinguir la documentación técnica ya redactada de los testimonios audiovisuales que todavía deben grabarse y publicarse.
-
-| Integrante | Evidencia de comunicación técnica preparada durante Sprint 3 | Testimonio oral y validación pendientes |
-|---|---|---|
-| **Lino Quispe, Leonardo Miguel** | Coordinación del seguimiento de Jira y revisión de integración entre módulos; especificación y explicación del flujo de creación de rutas, paradas ordenadas, horarios, asignaciones y publicación; organización de contratos REST y sus dependencias con Profiles. | Presentar ante cámara las decisiones implementadas, la integración Angular–Spring Boot y las dificultades de autorización; adjuntar captura y URL del video. |
-| **Geronimo Puma, Kevin Joel** | Trabajo en el contexto Subscriptions & Billing: estructura de planes y suscripciones, servicios del backend y sus contratos REST, con integración progresiva entre capas. | Mostrar y explicar el resultado comprobable de Billing, las decisiones de negocio y sus aprendizajes; adjuntar evidencia personal. |
-| **Díaz Ramírez, Alejandro** | Diseño e implementación progresiva de Profiles & Relationship Management, estudiantes y sus relaciones con tutores; revisión de dependencias de autorización y coordinación de la gestión básica de vehículos. | Explicar los flujos realmente ejecutados, el tratamiento responsable de datos de menores y la integración pendiente con IAM; adjuntar evidencia. |
-| **Meza Soza, Alexandra Yamile** | Desarrollo de interfaces de alertas e incidencias y seguimiento de la integración de servicios de notificaciones de la versión local. | Explicar el flujo de comunicación de incidencias/retrasos, los resultados verificables y las mejoras pendientes; adjuntar evidencia. |
-
-**Reflexión grupal para AV2:** la separación del sistema en bounded contexts permitió distribuir el desarrollo, pero reveló dependencias de integración entre las rutas, los perfiles autorizados, los vehículos y las notificaciones. El equipo debió comunicar contratos de API, discutir incompatibilidades de configuración y revisar los cambios en GitHub antes de incorporarlos al producto común. Estas experiencias sustentan el desarrollo de la comunicación técnica escrita y oral; los testimonios audiovisuales y las validaciones de usuarios se incorporarán únicamente cuando estén disponibles.
-
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• **AV1:** Realizó entrevistas de Needfinding dirigidas a conductores de movilidad escolar, adaptando el lenguaje técnico hacia términos coloquiales de transporte diario.<br>• **TB1:** Expuso en video la navegación de la interfaz de usuario de perfiles y sustentó las decisiones de diseño tomadas para la interacción entre tutores y estudiantes.<br>• **AV2:** Explicó los flujos implementados para la gestión de estudiantes y sus relaciones con tutores, el tratamiento responsable de los datos de menores y las decisiones relacionadas con la autorización de usuarios.<br><br>**Geronimo Puma, Kevin Joel**<br>• **AV1:** Condujo entrevistas con padres de familia, enfocándose en la empatía y la resolución de preocupaciones sobre la seguridad en el traslado escolar.<br>• **TB1:** Sustentó ante cámara la lógica del flujo de suscripciones y facturación emulada en la Frontend Web Application.<br>• **AV2:** Presentó el funcionamiento del módulo de Subscriptions & Billing, explicando las decisiones de negocio implementadas y su integración con Spring Boot.<br><br>**Lino Quispe, Leonardo Miguel**<br>• **AV1:** Lideró la exposición de la propuesta de valor y arquitectura de información de la Landing Page ante el docente y el equipo.<br>• **TB1:** Explicó de manera estructurada en la sustentación síncrona el flujo de trabajo colaborativo en GitFlow y la organización de rutas escolares.<br>• **AV2:** Explicó las decisiones de implementación de rutas, paradas, horarios, asignaciones y publicación, así como la integración entre Angular y Spring Boot y las dificultades de autorización encontradas.<br><br>**Meza Soza, Alexandra Yamile**<br>• **AV1:** Participó activamente en la exposición de requisitos del usuario y arquetipos User Persona durante las revisiones internas del equipo.<br>• **TB1:** Realizó la demostración guiada del módulo de alertas y configuración de notificaciones durante la grabación de la entrega.<br>• **AV2:** Explicó el flujo de comunicación de incidencias y retrasos, el funcionamiento de los servicios de notificaciones y los resultados obtenidos durante su integración.<br><br>**Pareja Caceres, Diana**<br>• **AV1:** Presentó la síntesis de competidores directos e indirectos y sustentó las ventajas diferenciales del producto durante la retrospectiva del Sprint 1.<br>• **TB1:** Expuso la demostración funcional del Bounded Context de gestión de vehículos y credenciales, explicando el consumo de servicios REST en la nube y el uso de Signals para la reactividad. | **Conclusión grupal AV1:** El equipo demostró adaptabilidad comunicativa al interactuar con perfiles contrastantes (padres de familia y transportistas escolares), logrando extraer necesidades críticas sin inducir respuestas técnicas complejas.<br><br>**Conclusión grupal TB1:** Durante la sustentación y demostración de software, el equipo articuló con claridad técnica el funcionamiento de la aplicación ante el docente, relacionando cada vista con los objetivos de negocio y demostrando fluidez en la argumentación de la arquitectura elegida.<br><br>**Conclusión grupal AV2:** El equipo comunicó las decisiones técnicas y funcionalidades implementadas durante el Sprint 3 mediante testimonios audiovisuales, explicando sus responsabilidades individuales y los desafíos de integración entre los bounded contexts. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Díaz Ramírez, Alejandro**<br>• **AV1:** Redactó la caracterización del segmento objetivo y el análisis competitivo en el Capítulo II.<br>• **TB1:** Documentó los contratos de datos y especificaciones funcionales para el Bounded Context de Profiles & Relationship Management.<br>• **AV2:** Participó en el desarrollo de la documentación técnica relacionada con Profiles & Relationship Management, la gestión de estudiantes y sus relaciones con tutores, así como las dependencias de autorización y gestión de vehículos.<br><br>**Geronimo Puma, Kevin Joel**<br>• **AV1:** Elaboró los artefactos de Needfinding (User Personas y Empathy Maps) empleando redacción centrada en el usuario.<br>• **TB1:** Redactó la documentación de tareas y casos de uso emulados para el Bounded Context de Subscriptions & Billing en el Capítulo V.<br>• **AV2:** Documentó los cambios correspondientes al contexto de Subscriptions & Billing, incluyendo la estructura de planes y suscripciones, los servicios backend y sus contratos REST.<br><br>**Lino Quispe, Leonardo Miguel**<br>• **AV1:** Estructuró y redactó las directrices de configuración de software, políticas de ramas en GitFlow y la introducción formal del informe.<br>• **TB1:** Consolidó la trazabilidad de tareas en el Sprint Backlog 2 y documentó la configuración general del entorno Angular CLI y temas Material.<br>• **AV2:** Documentó la gestión de rutas, paradas, horarios, asignaciones y publicación, además de las especificaciones de los servicios REST y sus dependencias con Profiles.<br><br>**Meza Soza, Alexandra Yamile**<br>• **AV1:** Redactó los escenarios de aceptación en formato Gherkin (Given-When-Then) para las User Stories del Sprint 1.<br>• **TB1:** Elaboró la documentación técnica de las interfaces de alerta, detallando las reglas de validación en el informe colaborativo.<br>• **AV2:** Elaboró la documentación técnica de los endpoints de los bounded contexts de Incidents & Delays Management y Notifications Management, incluyendo sus métodos HTTP, parámetros, ejemplos de solicitudes y respuestas y explicaciones funcionales. También documentó la evidencia del despliegue del backend y su conexión con PostgreSQL en Render.<br><br>**Pareja Caceres, Diana**<br>• **AV1:** Documentó el análisis del entorno y los antecedentes de la problemática del transporte escolar en Lima en la sección Solution Profile.<br>• **TB1:** Redactó íntegramente la documentación de infraestructura para Vehicle & Credential Management, detallando las llamadas HTTP a MockAPI, los modelos de dominio y las convenciones de Conventional Commits en el informe. | **Conclusión grupal AV1:** Se logró una especificación técnica rigurosa en Markdown, manteniendo uniformidad estilística y precisión en la definición de criterios de aceptación comprobables mediante Gherkin.<br><br>**Conclusión grupal TB1:** El equipo consolidó una redacción técnica clara y trazable en el Capítulo V, alineando sin ambigüedades los términos del negocio (Ubiquitous Language) con los artefactos de código fuente, endpoints REST y commits en GitHub.<br><br>**Conclusión grupal AV2:** El equipo fortaleció la documentación técnica del producto mediante la especificación de contratos REST, ejemplos de solicitudes y respuestas y evidencias del despliegue. La coordinación entre bounded contexts permitió mantener la trazabilidad de los cambios y comunicar las decisiones de integración.</td> |
 
 ---
 
@@ -2232,6 +2218,57 @@ Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages de
   <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
 </div>
 
+#### Web Services
+
+Se realizó el despliegue de los servicios backend de Rumbo utilizando la plataforma Render, mediante la cual se publicaron tanto la base de datos PostgreSQL como la aplicación backend encargada de proporcionar los Web Services para el consumo del frontend.
+
+| Configuración | Valor |
+|---|---|
+| Repository | `AIpaca-OS/web-services` |
+| Branch publicada | `main` |
+| URL de Render | https://web-services-gjgh.onrender.com/swagger-ui/index.html#/ |
+
+En primer lugar, se creó una instancia de base de datos PostgreSQL en Render, configurando los parámetros necesarios para su creación, como el nombre de la base de datos, el usuario, la región y las credenciales de acceso. Una vez completada la configuración, Render proporcionó los datos de conexión que permitirían establecer la comunicación con la base de datos desde la aplicación backend.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+Posteriormente, se modificó la configuración del backend para reemplazar los parámetros de conexión locales por los correspondientes a la base de datos desplegada en Render. Para ello, se actualizaron los datos de conexión, incluyendo la URL y las credenciales de acceso, de modo que la aplicación pudiera conectarse correctamente al entorno remoto y mantener la persistencia de la información.
+
+Finalmente, se desplegó la aplicación backend en Render, vinculándola con el repositorio de GitHub y configurando los parámetros necesarios para su compilación y ejecución. Una vez finalizado el proceso, se obtuvo una URL pública que permite acceder a los Web Services implementados y realizar solicitudes a los distintos endpoints de la API de Rumbo.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+### Servicios Desplegados
+
+<div align="center">
+  <img src="./assets/chapter5/deployed-services.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2734,7 +2771,7 @@ En esta sección se presentan las evidencias del desarrollo realizado durante el
 
 A continuación, se presenta la URL pública del Frontend Web Application desplegado, junto con capturas de pantalla que evidencian las principales vistas implementadas durante el Sprint 2, organizadas según los Bounded Contexts de la plataforma Rumbo. Estas evidencias permiten visualizar la primera versión funcional de la aplicación y verificar los avances alcanzados durante el sprint.
 
-**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application/home
+**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application
 
 **URL pública del Repositorio del Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
 
@@ -3053,11 +3090,11 @@ Además, se presentan las métricas de GitHub correspondientes a la implementaci
 
 ### 5.2.3. Sprint 3
 
-La tercera iteración de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
+En el Sprint 3 de Rumbo toma como punto de partida el Frontend Angular integrado durante el Sprint 2 y los ocho modelos de persistencia presentados en el Capítulo IV. El alcance de esta iteración contempla la evolución de los tres componentes principales del producto: la Landing Page, la Frontend Web Application y los RESTful Web Services desarrollados con Java y Spring Boot. En este sentido, el trabajo se centrará en completar el desarrollo de la aplicación web de Rumbo y avanzar en la implementación de su backend, fortaleciendo la integración entre ambos componentes.
 
 #### 5.2.3.1. Sprint Planning 3
 
-En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, facturación y notificaciones, así como avanzar en la implementación de una parte del backend.Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
+En esta sección se registra el objetivo establecido durante la reunión de Sprint Planning correspondiente al Sprint 3. Durante dicha reunión, se definió como objetivo completar el desarrollo de la Frontend Web Application de Rumbo, priorizando los módulos de planificación de rutas, gestión de estudiantes, subscripciones y notificaciones, así como avanzar en la implementación de una parte del backend. Asimismo, se acordó incorporar dos nuevas secciones en la Landing Page, destinadas a presentar los videos About-the-Product y About-the-Team. De esta manera, se busca que los potenciales usuarios puedan conocer mejor la plataforma, sus funcionalidades y al equipo responsable de su desarrollo.
 
 <table>
   <tbody>
@@ -3077,11 +3114,6 @@ En esta sección se registra el objetivo establecido durante la reunión de Spri
     <tr><th>Sum of Story Points</th><td>52 Story Points</td></tr>
   </tbody>
 </table>
-
-**Actualización de avance (10/11/2026).** Tras la revisión del repositorio y el tablero RMO, el equipo mantuvo cuatro integrantes activos y distribuyó los ámbitos principales de la siguiente forma: Leonardo coordinó el seguimiento e implementación de Routes & Trip Planning; Kevin desarrolló Billing; Alejandro asumió Profiles & Relationship Management y el apoyo mínimo requerido para Vehicles; Alexandra trabajó Alerting, Incidents y Notifications. Esta distribución no significa que todas las historias estén terminadas. En Jira, 76 incidencias tienen responsable, con **8 Listo, 13 En curso y 55 Por hacer** en la consulta realizada. Las historias no completadas conservan su estado y deben contrastarse con los criterios de aceptación del Sprint.
-
-El objetivo documentado del Sprint 3 sigue siendo completar la experiencia frontend y entregar una primera versión comprobable de servicios backend. La integración alcanzada comprende código consolidado en `develop` y servicios adicionales para pruebas locales. La autenticación real, la autorización entre contextos, la ejecución integral, las evidencias visuales y el despliegue público requieren comprobación adicional.
-
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -3106,9 +3138,6 @@ La matriz LACX refleja la distribución de responsabilidades establecida para el
 </tbody>
 </table>
 
-**Responsabilidades de coordinación e integración.** Leonardo efectuó seguimiento del avance en Jira y del proceso de integración de Routes; los demás integrantes mantienen liderazgo funcional en sus contextos y colaboran en pruebas y revisión. Para no confundir la matriz LACX con estados de terminación, se registran también las dependencias activas: Vehicles (apoyo de Alejandro, sujeto a verificación de su interfaz y backend); Profiles ↔ Routes (permisos de estudiante y conductor); Billing ↔ frontend (planes y suscripciones); Notifications ↔ Routes/Tutor (avisos visibles). El criterio de «Listo» se aplica solo a entregables comprobados; la asignación de un líder no implica un endpoint desplegado.
-
-
 #### 5.2.3.3. Sprint Backlog 3
 
 El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el sprint y las tareas asociadas a cada una, detallando el trabajo necesario para alcanzar el Sprint Goal establecido durante el Sprint Planning.
@@ -3119,329 +3148,1901 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
   <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
 </div>
 
-
-| Story Id | Story Title | SP | Engineering Tasks — propuesta (horas) | Jira assignee | Jira status |
-|---|---|---:|---|---|---|
-| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | Crear una ruta con sus paradas | 8 | API y persistencia de ruta/paradas (8 h); formulario Angular e integración (8 h); reglas y pruebas de aceptación (4 h). | Leonardo Lino | En curso |
-| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | Definir el horario de la ruta | 3 | Contrato y persistencia del horario (4 h); formulario reactivo y confirmación (4 h). | Leonardo Lino | En curso |
-| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | Asignar estudiantes a una ruta | 5 | Operación de asignación y restricciones (8 h); selección e integración con la interfaz (8 h). | Leonardo Lino | En curso |
-| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Publicar una ruta | 3 | Transición de estado y validación de completitud (4 h); acción de publicación y mensajes accesibles (4 h). | Leonardo Lino | En curso |
-| [RMO-24](https://aipaca.atlassian.net/browse/RMO-24) | Modificar una ruta publicada | 5 | Política de modificación y respuesta de conflicto (4 h); flujo de edición y regresión (4 h). | Leonardo Lino | En curso |
-| [RMO-25](https://aipaca.atlassian.net/browse/RMO-25) | Integración con servicio de mapas para direcciones de paradas | 5 | Adaptador de geocodificación y configuración (8 h); tratamiento de fallos y validación de cobertura (4 h). | Leonardo Lino | Por hacer |
-| [RMO-26](https://aipaca.atlassian.net/browse/RMO-26) | Programar el viaje de la jornada | 5 | Caso de uso y contrato de programación (8 h); persistencia y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
-| [RMO-27](https://aipaca.atlassian.net/browse/RMO-27) | Cancelar un viaje | 3 | Regla de transición de cancelación (4 h); respuestas de API y escenarios de aceptación (4 h). | Leonardo Lino | Por hacer |
-| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | Endpoints del RESTful API para Route & Trip Planning | 5 | Contratos OpenAPI, errores y seguridad (8 h); colección Postman y validación de integración (8 h). | Leonardo Lino | En curso |
-| [RMO-38](https://aipaca.atlassian.net/browse/RMO-38) | Reportar la ausencia del estudiante | 5 | Caso de uso, validaciones y contrato del dominio Students (8 h); interfaz y escenarios de aceptación (8 h). | Leonardo Lino | Por hacer |
-| [RMO-51](https://aipaca.atlassian.net/browse/RMO-51) | Habilitar el acceso de un asistente | 5 | Política de acceso e integración con IAM (8 h); interfaz y validación de seguridad (8 h). | Alejandro Diaz Ramirez | Por hacer |
+<br>
 
 
-**Seguimiento transversal de historias y tareas técnicas del Sprint 3 (consulta Jira del 10/11/2026).** Se conservaron la estimación y los títulos planificados; las asignaciones y estados anteriores se actualizaron sin afirmar cierre de historias que aún dependen de integración o evidencia.
+<table>
+<thead>
+<tr><th>Sprint #</th><th colspan="7">Sprint 3</th></tr>
+<tr><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
+<tr>
+<th>Story Id</th><th>Story Title</th><th>Task Id</th><th>Task Title</th><th>Task Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td rowspan="2">US-21</td><td rowspan="2">Definir el horario de la ruta</td><td>T01</td><td>Define Route Schedule Structure</td><td>Definir la estructura de datos necesaria para almacenar los horarios de las rutas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T02</td><td>Implement Route Schedule Configuration</td><td>Implementar la funcionalidad para registrar y configurar los horarios de las rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
 
-| Elemento de Jira | Responsable | Estado verificado | Alcance y dependencia actual |
-|---|---|---|---|
-| [RMO-59](https://aipaca.atlassian.net/browse/RMO-59) — Formulario, código y paradas | Leonardo | Listo | Frontend de configuración de rutas y paradas ordenadas. |
-| [RMO-60](https://aipaca.atlassian.net/browse/RMO-60) — Verificación de rutas | Leonardo | En curso | Faltan direcciones verificadas y pruebas visuales. |
-| [RMO-62](https://aipaca.atlassian.net/browse/RMO-62) — Persistencia de horario | Leonardo | Listo | Evidencia previa registrada de RouteSchedule. |
-| [RMO-63](https://aipaca.atlassian.net/browse/RMO-63) — Pruebas de horario | Leonardo | Listo | Casos de horario completo e incompleto documentados. |
-| [RMO-65](https://aipaca.atlassian.net/browse/RMO-65) — Duplicados | Leonardo | Listo | Validación de duplicidad registrada; no equivale a autorización integral. |
-| [RMO-66](https://aipaca.atlassian.net/browse/RMO-66) — Asignación autorizada | Leonardo | En curso | Verificación intercontexto con Profiles/IAM pendiente. |
-| [RMO-68](https://aipaca.atlassian.net/browse/RMO-68) — Contrato REST | Leonardo | En curso | Controladores disponibles; falta comprobar contrato integrado y despliegue. |
-| [RMO-36](https://aipaca.atlassian.net/browse/RMO-36) — Profiles REST | Alejandro | En curso | Controladores de perfiles, estudiantes y relaciones en backend integrado; falta validar permisos y flujo completo. |
-| [RMO-58](https://aipaca.atlassian.net/browse/RMO-58) — Billing REST | Kevin | En curso | Planes y suscripciones añadidos al backend; faltan pruebas de integración y conexión final con Angular. |
-| [RMO-76](https://aipaca.atlassian.net/browse/RMO-76) — Catálogo de planes | Kevin | En curso | Código de planes y persistencia presente; ejecución integrada por comprobar. |
-| [RMO-32](https://aipaca.atlassian.net/browse/RMO-32) — Alerting API | Alexandra | Por hacer | El backend contiene notificaciones de demostración local; no se considera completada toda la API de incidencias. |
-| [RMO-20](https://aipaca.atlassian.net/browse/RMO-20) — Vehicles API | Alejandro | Por hacer | Controlador básico disponible únicamente bajo configuración de demostración, sujeto a integración definitiva. |
+<tr><td rowspan="2">US-22</td><td rowspan="2">Asignar estudiantes a una ruta</td><td>T03</td><td>Implement Student Assignment Logic</td><td>Implementar la lógica para asociar estudiantes con sus respectivas rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T04</td><td>Validate Route Assignments</td><td>Implementar validaciones para verificar la correcta asignación de estudiantes a las rutas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
 
-Las filas RMO-20, RMO-32, RMO-36, RMO-58 y RMO-76 documentan **dependencias y aportes de otros contextos**; no se añaden artificialmente al alcance ni al total de Story Points comprometidos originalmente en la tabla de Sprint 3. El tablero público se conserva como fuente de estados vigente.
+<tr><td rowspan="2">US-28</td><td rowspan="2">Endpoints del RESTful API para Route & Trip Planning</td><td>T05</td><td>Implement Route Management Endpoints</td><td>Desarrollar endpoints RESTful para crear, consultar y actualizar rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T06</td><td>Implement Trip Planning Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las operaciones de planificación de viajes.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-23</td><td rowspan="2">Publicar una ruta</td><td>T07</td><td>Implement Route Publishing Service</td><td>Implementar el servicio encargado de publicar las rutas previamente configuradas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T08</td><td>Implement Route Publishing Endpoint</td><td>Crear el endpoint que permita publicar rutas y actualizar su estado.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-24</td><td rowspan="2">Modificar una ruta publicada</td><td>T09</td><td>Implement Route Update Service</td><td>Desarrollar el servicio para modificar la información de las rutas publicadas.</td><td>3</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T10</td><td>Implement Route Update Validations</td><td>Implementar validaciones para garantizar la consistencia de los datos al modificar una ruta.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-38</td><td rowspan="2">Reportar la ausencia del estudiante</td><td>T11</td><td>Implement Student Absence Registration</td><td>Implementar la funcionalidad para registrar las ausencias de los estudiantes.</td><td>3</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T12</td><td>Implement Absence Management</td><td>Gestionar la información de las ausencias y asociarla con los estudiantes correspondientes.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-26</td><td rowspan="2">Programar el viaje de la jornada</td><td>T13</td><td>Implement Daily Trip Creation</td><td>Desarrollar la funcionalidad para crear viajes diarios a partir de las rutas configuradas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T14</td><td>Implement Trip Scheduling Validations</td><td>Implementar validaciones para verificar los horarios y la información de los viajes programados.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-27</td><td rowspan="2">Cancelar un viaje</td><td>T15</td><td>Implement Trip Cancellation Service</td><td>Desarrollar el servicio encargado de cancelar los viajes programados.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T16</td><td>Implement Trip Status Updates</td><td>Actualizar el estado de los viajes y validar las condiciones necesarias para su cancelación.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-14</td><td rowspan="2">Registrar estudiante y vincularse como tutor</td><td>T17</td><td>Implement Student Registration</td><td>Desarrollar la funcionalidad para registrar nuevos estudiantes en la plataforma.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T18</td><td>Implement Tutor-Student Relationship</td><td>Implementar la funcionalidad para vincular estudiantes con sus respectivos tutores.</td><td>2</td><td>Alejandro Díaz</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-51</td><td rowspan="2">Habilitar el acceso de un asistente</td><td>T19</td><td>Implement Assistant Registration</td><td>Desarrollar la funcionalidad para registrar asistentes en la plataforma.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+<tr><td>T20</td><td>Implement Assistant Access Permissions</td><td>Configurar y validar los permisos de acceso de los asistentes.</td><td>3</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-36</td><td rowspan="2">Endpoints del RESTful API para Profiles & Relationship Management</td><td>T21</td><td>Implement Profile Management Endpoints</td><td>Desarrollar endpoints RESTful para consultar y actualizar los perfiles de usuario.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T22</td><td>Implement Relationship Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las relaciones entre usuarios.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-58</td><td rowspan="2">Endpoints del RESTful API para Subscriptions & Billing</td><td>T23</td><td>Implement Subscription Management Endpoints</td><td>Desarrollar endpoints RESTful para la creación y gestión de suscripciones.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T24</td><td>Implement Billing Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las operaciones de facturación y pagos.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-18</td><td rowspan="2">Activar la suscripción del conductor</td><td>T25</td><td>Implement Driver Subscription Activation</td><td>Desarrollar el servicio para activar la suscripción de un conductor.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T26</td><td>Implement Subscription Status Validation</td><td>Implementar validaciones del estado de las suscripciones y sus condiciones de activación.</td><td>2</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-08</td><td rowspan="2">Conocer la propuesta de valor de Rumbo</td><td>T27</td><td>Design Value Proposition Section</td><td>Estructurar la sección de la Landing Page destinada a presentar la propuesta de valor de Rumbo.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T28</td><td>Implement Value Proposition Content</td><td>Implementar visualmente el contenido que describe los principales beneficios de Rumbo.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-10</td><td rowspan="2">Consultar el contenido en inglés o español</td><td>T29</td><td>Implement Language Selection Component</td><td>Desarrollar el componente de interfaz para seleccionar el idioma de la plataforma.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T30</td><td>Configure English and Spanish Translations</td><td>Configurar e integrar las traducciones del contenido en inglés y español.</td><td>2</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-09</td><td rowspan="2">Identificar los beneficios de mi segmento e ingresar a Rumbo</td><td>T31</td><td>Implement Audience Segmentation Section</td><td>Desarrollar la sección de la Landing Page que presenta los beneficios para cada segmento objetivo.</td><td>2</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T32</td><td>Implement Platform Access Links</td><td>Implementar enlaces de navegación que permitan a los usuarios acceder a la plataforma.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-11</td><td rowspan="2">Consultar los documentos legales del servicio</td><td>T33</td><td>Implement Legal Documents Section</td><td>Desarrollar la sección destinada a mostrar la documentación legal del servicio.</td><td>1</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T34</td><td>Integrate Legal Document Links</td><td>Configurar los enlaces para acceder a los documentos legales correspondientes.</td><td>1</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-12</td><td rowspan="2">Resolver dudas antes de usar Rumbo</td><td>T35</td><td>Design Frequently Asked Questions Section</td><td>Estructurar la sección de preguntas frecuentes de acuerdo con las dudas comunes de los usuarios.</td><td>1</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T36</td><td>Implement FAQ Content and Interactions</td><td>Implementar las preguntas, respuestas y elementos de interacción de la sección de preguntas frecuentes.</td><td>2</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-19</td><td rowspan="2">Consultar la información declarada del conductor</td><td>T37</td><td>Implement Driver Information Retrieval</td><td>Desarrollar la funcionalidad para recuperar la información declarada del conductor.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+<tr><td>T38</td><td>Implement Driver Information Display</td><td>Implementar la visualización de la información del conductor en la interfaz correspondiente.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-30</td><td rowspan="2">Resolver una incidencia</td><td>T39</td><td>Implement Incident Resolution Logic</td><td>Desarrollar la funcionalidad para gestionar y actualizar las incidencias reportadas.</td><td>3</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T40</td><td>Implement Incident Status Tracking</td><td>Implementar el seguimiento de los estados de las incidencias durante su proceso de resolución.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-29</td><td rowspan="2">Registrar un retraso</td><td>T41</td><td>Implement Delay Registration</td><td>Desarrollar la funcionalidad para registrar los retrasos del servicio de transporte.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T42</td><td>Implement Delay Information Management</td><td>Gestionar los detalles de los retrasos y asociarlos con la ruta o viaje correspondiente.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-16</td><td rowspan="2">Registrar una incidencia</td><td>T43</td><td>Implement Incident Registration</td><td>Desarrollar la funcionalidad para registrar incidencias dentro de la plataforma.</td><td>3</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T44</td><td>Implement Incident Data Validation</td><td>Implementar validaciones de la información de las incidencias antes de su registro.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-20</td><td rowspan="2">Endpoints del RESTful API para Vehicle & Credential Management</td><td>T45</td><td>Implement Vehicle Management Endpoints</td><td>Desarrollar endpoints RESTful para el registro y la gestión de vehículos.</td><td>3</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td>T46</td><td>Implement Credential Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las credenciales de vehículos y usuarios.</td><td>3</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-39</td><td rowspan="2">Registrar los hitos de una parada</td><td>T47</td><td>Implement Stop Milestone Registration</td><td>Desarrollar la funcionalidad para registrar los hitos asociados a las paradas de una ruta.</td><td>3</td><td>Leonardo Lino</td><td>To-do</td></tr>
+<tr><td>T48</td><td>Implement Stop Milestone Tracking</td><td>Implementar el seguimiento y actualización de los hitos registrados en cada parada.</td><td>3</td><td>Leonardo Lino</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-17</td><td rowspan="2">Configurar las preferencias de notificación</td><td>T49</td><td>Implement Notification Preferences Management</td><td>Desarrollar la funcionalidad para configurar y gestionar las preferencias de notificación de los usuarios.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T50</td><td>Implement Notification Preference Validation</td><td>Implementar validaciones y aplicar las preferencias de notificación configuradas por los usuarios.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-15</td><td rowspan="2">Crear una ruta con sus paradas</td><td>T51</td><td>Define Route Model and MockAPI Infrastructure</td><td>Definir el modelo Route y configurar la infraestructura necesaria para gestionar las rutas mediante MockAPI.</td><td>5</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T52</td><td>Implement Route Store, List and Form</td><td>Implementar el store de rutas, el listado, el formulario de registro y la navegación correspondiente.</td><td>12</td><td>Leonardo Lino</td><td>Done</td></tr>
+</tbody>
+</table>
 
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-La evidencia de desarrollo se organiza por producto y por commit: documentación de diseño y contrato de datos, backend Spring Boot, componentes del Frontend y mejoras del Landing Page. El historial de GitHub permite identificar autor, rama, fecha, mensaje y alcance del cambio, además de las revisiones realizadas a través de Pull Requests.
+En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 3, cuyo objetivo principal fue completar la versión final del frontend web application de la plataforma Rumbo y desarrollar el 40 % de los web services que consumirá. Asimismo, se documenta, mediante commits, el desarrollo de todos los componentes correspondientes al sprint, incluyendo los cambios realizados en los distintos repositorios: Landing Page, frontend web application y web services.
 
-La revisión del diseño incorporó ocho archivos de Database Diagrams y actualizó su explicación en el Capítulo IV, respetando las responsabilidades de cada Bounded Context. El historial correspondiente se conserva en la rama `feature/chapter-4-product-design`; la documentación sincronizada de esta sección se encuentra en `feature/chapter-5-product-implementation-validation-and-deployment`.
+## Repositorio Landing Page
 
-| Repository | Branch | Commit Id | Commit Message / alcance | Commit Message Body / descripción | Committed on |
-|---|---|---|---|---|---|
-| `project-report` | `feature/chapter-4-product-design` | [3f54fc8](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a) | Actualización del Database Design | Incorporación de las ocho figuras revisadas y sus explicaciones. | — |
-| `project-report` | `feature/chapter-5-product-implementation-validation-and-deployment` | [bcdaada](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222) | Sincronización de assets | Integración de los PNG actualizados y eliminación de las versiones sustituidas. | — |
-| `web-services` | `develop` (desde `feature/routes`) | [PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [b6b07a5](https://github.com/AIpaca-OS/web-services/commit/b6b07a599a6f7ed366c69cde2900a24a56f8c763) | Integración de Routes y edición controlada | Se fusionó el backend de Routes con las reglas de asignación, publicación y edición de ruta publicada. La seguridad intercontexto sigue sujeta a la autenticación real. | 10/11/2026 (hora Perú) |
-| `frontend-web-application` | `develop` (desde `feature/route-trip-planning`) | [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | `feat(routes): connect Angular route planning frontend` | Formulario de rutas, paradas, horarios, catálogo autorizado, integración REST y pruebas del módulo; PR fusionado a develop. | 08/11/2026 |
+| Repository             | Branch                   | Commit Id | Commit Message                                                         | Commit Message Body / alcance                                                                                  | Committed on (Date) |
+| ---------------------- | ------------------------ | --------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------- |
+| AIpaca-OS/landing-page | main                     | `ae22d70` | Merge pull request #6 from AIpaca-OS/fix/remove-team-member            | Integra los cambios de la rama `fix/remove-team-member` mediante el Pull Request #6.                           | 13/11/2026          |
+| AIpaca-OS/landing-page | fix/remove-team-member   | `67346c2` | Merge remote-tracking branch 'origin/main' into fix/remove-team-member | Sincroniza la rama `fix/remove-team-member` con los últimos cambios de `main`.                                 | 13/11/2026          |
+| AIpaca-OS/landing-page | fix/remove-team-member   | `77b1623` | feat: embed about-the-product video in landing page                    | Incorpora el video de presentación del producto en la landing page.                                            | 13/11/2026          |
+| AIpaca-OS/landing-page | main                     | `713f5b`  | Merge pull request #5 from AIpaca-OS/fix/remove-team-member            | Integra los cambios de la rama `fix/remove-team-member` mediante el Pull Request #5.                           | 12/11/2026          |
+| AIpaca-OS/landing-page | fix/remove-team-member   | `dc2b8da` | Merge remote-tracking branch 'origin/main' into fix/remove-team-member | Sincroniza la rama `fix/remove-team-member` con los últimos cambios de `main`.                                 | 12/11/2026          |
+| AIpaca-OS/landing-page | fix/remove-team-member   | `14787aa` | fix: remove team member from another course                            | Corrige la sección del equipo eliminando a un integrante que pertenecía a otro curso.                          | 12/11/2026          |
+| AIpaca-OS/landing-page | main                     | `a8f895e` | Merge pull request #4 from AIpaca-OS/feature/about-team-video          | Integra los cambios de la rama `feature/about-team-video` mediante el Pull Request #4.                         | 12/11/2026          |
+| AIpaca-OS/landing-page | feature/about-team-video | `aeb6bdb` | feat: embed about-the-team video in landing page                       | Incorpora el video de presentación del equipo en la landing page.                                              | 12/11/2026          |
+| AIpaca-OS/landing-page | main                     | `0de67c5` | Merge pull request #3 from AIpaca-OS/feature/video-sections            | Integra los cambios de la rama `feature/video-sections` mediante el Pull Request #3.                           | 06/11/2026          |
+| AIpaca-OS/landing-page | feature/video-sections   | `d233a18` | feat: add product and team video sections with i18n                    | Agrega las secciones de videos del producto y del equipo, incluyendo soporte para internacionalización (i18n). | 06/11/2026          |
 
-Para la sustentación, cada cambio de código debe acompañarse con una demostración breve de la función que incorpora, no solo con la vista del repositorio.
+## Repositorio Frontend Web Application
 
+| Repository                         | Branch                                | Commit Id | Commit Message                                                                                                   | Commit Message Body / alcance                                                                                                        | Committed on (Date) |
+| ---------------------------------- | ------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| AIpaca-OS/frontend-web-application | develop                               | `8205bc4` | Merge pull request #31 from AIpaca-OS/develop                                                                    | Integra los cambios recientes de desarrollo.                                                                                         | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `0f45cab` | feat: add ApiError class for handling HTTP errors with context                                                   | Incorpora una clase ApiError para gestionar errores HTTP con información contextual.                                                 | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `8582028` | refactor: replace develop content with refactored structure                                                      | Reemplaza el contenido de desarrollo por una estructura refactorizada.                                                               | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/vehicle-credential-management | `58bb090` | Merge pull request #26 from AIpaca-OS/feature/vehicle-credential-management                                      | Integra los cambios de gestión de vehículos y credenciales.                                                                          | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `eb526da` | merge(develop): sync vehicle bounded with preview session contract                                               | Sincroniza el bounded context de vehículos con el contrato de sesión de vista previa.                                                | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/app-foundation                | `8422d0e` | Merge pull request #28 from AIpaca-OS/feature/app-foundation                                                     | Integra la estructura base de la aplicación frontend.                                                                                | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `178d9d0` | Merge pull request #29 from AIpaca-OS/feature/subscriptions-and-billing                                          | Integra los cambios del módulo de suscripciones y facturación.                                                                       | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `edc6bb3` | merge(develop): preserve shared foundation and add local-only preview profile contract                           | Conserva la estructura compartida e incorpora un contrato de perfiles para la vista previa local.                                    | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `868b7cc` | merge(develop): integrate tested Billing demo only, preserve other bounded contexts                              | Integra la demostración de facturación probada sin modificar los demás bounded contexts.                                             | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `0e845b7` | merge(develop): resolve vehicle context conflicts preserving current backend adapter                             | Resuelve conflictos del contexto de vehículos conservando el adaptador actual del backend.                                           | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `c350d64` | Merge pull request #25 from AIpaca-OS/feature/subscriptions-and-billing                                          | Integra los cambios del módulo de suscripciones y facturación.                                                                       | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | main                                  | `d200a25` | merge(main): preserve deployed Angular app and integrate isolated Billing demo                                   | Conserva la aplicación Angular desplegada e integra la demostración aislada de facturación.                                          | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `d9bfa99` | feat(billing): persist isolated browser demo subscriptions using Render API                                      | Implementa la persistencia de suscripciones de la demostración mediante la API de Render.                                            | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `1c35b34` | Merge pull request #24 from AIpaca-OS/feature/subscriptions-and-billing                                          | Integra los cambios del módulo de suscripciones y facturación.                                                                       | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | main                                  | `eb7d33c` | merge(main): retain production deployment and integrate Spring Billing views                                     | Conserva el despliegue de producción e integra las vistas de facturación de Spring.                                                  | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `8c51af9` | Merge pull request #23 from AIpaca-OS/feature/subscriptions-and-billing                                          | Integra los cambios del módulo de suscripciones y facturación.                                                                       | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `62aa633` | fix(billing): show plan management to drivers while keeping public catalog read-only                             | Permite a los conductores gestionar sus planes y mantiene el catálogo público en modo de solo lectura.                               | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `b8e5451` | fix(billing): use deployed Spring Boot API in production and local development                                   | Configura el uso de la API Spring Boot desplegada en producción y desarrollo local.                                                  | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `2a117e1` | feat(billing): connect subscription management to Spring Boot API                                                | Conecta la gestión de suscripciones con la API Spring Boot.                                                                          | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/vehicles                      | `f5a5205` | feat(vehicles): integrate vehicle management frontend                                                            | Integra la interfaz frontend para la gestión de vehículos.                                                                           | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/app-foundation                | `3f8e49`  | refactor(shared): integrate frontend application foundation                                                      | Integra la estructura base compartida de la aplicación frontend.                                                                     | 13/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `fb9c259` | fix(pages): connect the public plans catalog to Render (#21)                                                     | Conecta el catálogo público de planes con el servicio desplegado en Render.                                                          | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `9f8ffd0` | docs(setup): explain repeatable Windows build and local/remote REST usage                                        | Documenta la compilación reproducible en Windows y el consumo de servicios REST locales y remotos.                                   | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `d420c79` | fix(alerting): avoid accessing instance before super constructor                                                 | Corrige el acceso a la instancia antes de ejecutar el constructor de la clase padre.                                                 | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `c3c6e00` | fix(alerting): use same backend notification contract in both Angular builds                                     | Unifica el contrato de notificaciones del backend en ambas compilaciones de Angular.                                                 | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `ab00bea` | fix(profiles): use backend adapter consistently instead of production MockAPI                                    | Estandariza el uso del adaptador del backend en lugar de MockAPI en producción.                                                      | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `832740d` | fix(billing): stop switching production builds back to MockAPI                                                   | Evita que las compilaciones de producción vuelvan a utilizar MockAPI.                                                                | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `32216fb` | chore(frontend): remove duplicated JSON proxy after unifying ng serve                                            | Elimina el proxy JSON duplicado tras unificar el comando ng serve.                                                                   | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `9924d22` | ci(frontend): build and test main as well as develop                                                             | Actualiza la integración continua para compilar y probar las ramas main y develop.                                                   | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `2e1ab6d` | fix(frontend): make npm start and ng serve use same proxy                                                        | Unifica la configuración del proxy utilizada por npm start y ng serve.                                                               | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `edde81f` | fix(frontend): use one development proxy for all Spring REST endpoints                                           | Centraliza el proxy de desarrollo para todos los endpoints REST de Spring.                                                           | 11/11/2026          |
+| AIpaca-OS/frontend-web-application | main                                  | `18ff617` | release(av2): merge Angular develop into main                                                                    | Integra los cambios de desarrollo de Angular en main para preparar la versión.                                                       | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | feature/subscriptions-and-billing     | `10b19cd` | feat(billing): connect catalog and display subscription validity                                                 | Conecta el catálogo de planes y muestra la vigencia de las suscripciones.                                                            | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `0ab827f` | fix(routes): show driver pending enrollments and accept students directly in stops wizard                        | Muestra las solicitudes pendientes del conductor y permite aceptar estudiantes desde el asistente de paradas.                        | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `b44dd19` | fix(profiles): make tutor-to-driver transport requests explicit from student list and show pending student names | Hace explícitas las solicitudes de transporte de tutores y muestra los nombres de estudiantes pendientes.                            | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `d16e67a` | fix(routes): allow published route edits while preserving vehicle, student assignments and trip snapshots        | Permite editar rutas publicadas conservando el vehículo, las asignaciones y las instantáneas de los viajes.                          | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `ce18e63` | fix(profiles): select real schools from PostgreSQL catalog, remove hardcoded placeholder                         | Obtiene instituciones educativas del catálogo PostgreSQL y elimina los valores de ejemplo codificados.                               | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `68bb6d2` | test(alerting): align route notice contract with guardian-targeted endpoint                                      | Ajusta las pruebas del contrato de avisos de ruta al endpoint dirigido a tutores.                                                    | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `e064d79` | feat(alerting): display only tutor-authorized route, arrival, delay and incident notices                         | Muestra únicamente avisos de rutas, llegadas, retrasos e incidencias autorizados para el tutor.                                      | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `f5b3b3b` | feat(frontend): connect parent route tracking and driver trip/arrival controls                                   | Conecta el seguimiento de rutas de los padres con los controles de viaje y llegada del conductor.                                    | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `d8afc6a` | fix(navigation): restore parent student management and driver enrollments, remove misleading demo UI             | Restaura la gestión de estudiantes de los tutores y las inscripciones de conductores, eliminando elementos de demostración confusos. | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `9c16d00` | fix(profiles): resolve environment path for tutor list demo CTA                                                  | Corrige la ruta del entorno utilizada por la acción de demostración de la lista de tutores.                                          | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `4877680` | fix(profiles): make tutor-to-driver enrollment action discoverable in student list                               | Mejora la visibilidad de la acción para solicitar la inscripción de un estudiante con un conductor.                                  | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `7a4472a` | feat(profiles): connect tutor requests, driver approval and Routes student selector in develop                   | Conecta las solicitudes de tutores, la aprobación del conductor y el selector de estudiantes de Routes.                              | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `be11282` | fix(profiles): navigate only after backend saves student or tutor relationship                                   | Controla la navegación para que ocurra después de guardar los datos en el backend.                                                   | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `4a14a65` | fix(profiles): navigate only after backend saves student or tutor relationship                                   | Ajusta la navegación para esperar la persistencia de los datos en el backend.                                                        | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `a58d343` | fix(profiles): avoid retrying registration POSTs and await persisted student/relationship responses              | Evita repetir solicitudes POST y espera las respuestas persistidas del estudiante y sus relaciones.                                  | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `af5a59f` | test(profiles): verify Angular student CRUD REST contract and privacy guard                                      | Verifica el contrato REST CRUD de estudiantes en Angular y las restricciones de privacidad.                                          | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `3aba986` | fix(profiles): correct environment import in tutor student form                                                  | Corrige la importación del entorno en el formulario de estudiantes del tutor.                                                        | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `8d0f3ba` | fix(dev): proxy to IPv4 loopback matching restricted local Spring profile                                        | Ajusta el proxy para utilizar IPv4 loopback según la configuración local de Spring.                                                  | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `e3bdd01` | fix(profiles): correct RxJS relationship collection typing and operators                                         | Corrige los tipos y operadores RxJS utilizados para las colecciones de relaciones.                                                   | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `8e50f4f` | fix(profiles): use tutor-nested routes and local demo school selection                                           | Implementa rutas anidadas por tutor y selección local de instituciones educativas para la demostración.                              | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `a095992` | fix(profiles): use tutor-nested routes and local demo school selection                                           | Ajusta las rutas anidadas por tutor y la selección local de instituciones educativas.                                                | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `9181547` | fix(profiles): use tutor-nested routes and local demo school selection                                           | Continúa los ajustes de navegación y selección de instituciones educativas.                                                          | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `75af?46` | fix(profiles): use tutor-nested routes and local demo school selection                                           | Actualiza la implementación de rutas anidadas y selección de instituciones educativas.                                               | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `ae5e170` | feat(profiles): use Spring REST API in local demo and preserve MockAPI production preview                        | Utiliza la API REST de Spring en la demostración local y conserva MockAPI para la vista previa de producción.                        | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `5dab5cc` | feat(profiles): add local-only Angular Profiles contract adapter and demo role interceptor                       | Agrega un adaptador local del contrato de perfiles de Angular y un interceptor de roles para la demostración.                        | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `c170b9c` | test(alerting): verify driver incident and delay request contract                                                | Verifica el contrato de solicitudes de incidencias y retrasos del conductor.                                                         | 10/11/2026          |
+| AIpaca-OS/frontend-web-application | develop                               | `8941350` | feat(alerting): show local delay/incident reporter on driver notifications page only                             | Muestra el formulario local para reportar retrasos e incidencias únicamente en la página de notificaciones del conductor.            | 10/11/2026          |
 
-**Integraciones nuevas verificadas en GitHub al 10/11/2026.** Se listan los Pull Requests reales y su resultado. Una fusión no equivale por sí sola a que la versión integrada compile, funcione en producción o haya pasado todas las pruebas.
+## Repositorio Web Services
 
-| Contexto | Evidencia de integración | Resultado del PR | Alcance de código observado |
-|---|---|---|---|
-| Routes & Trip Planning | [Backend PR #3](https://github.com/AIpaca-OS/web-services/pull/3) / [Frontend PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17) | Ambos fusionados a `develop` | Modelo `Route`, paradas, horarios, asignaciones, estados, servicios de rutas/viajes y pantallas Angular. |
-| Subscriptions & Billing | [Backend PR #4](https://github.com/AIpaca-OS/web-services/pull/4) | Fusionado | `PlansController`, `SubscriptionsController`, servicios y persistencia de Billing. La conexión de su frontend a Spring Boot no está acreditada por el [PR de frontend #18](https://github.com/AIpaca-OS/frontend-web-application/pull/18), cerrado sin fusionar. |
-| Profiles & Relationship Management | [Backend PR #5](https://github.com/AIpaca-OS/web-services/pull/5) y [PR #8](https://github.com/AIpaca-OS/web-services/pull/8) | Fusionados | Modelos de `Student`, `TutorStudentRelationship` y `ServiceEnrollment`; controladores de perfiles, estudiantes y relaciones. Autorización productiva con IAM pendiente de verificación. |
-| Notifications | [Backend PR #6](https://github.com/AIpaca-OS/web-services/pull/6) | Fusionado | Servicios y controlador de notificaciones habilitados bajo configuración de demostración. El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) permanece abierto; no se da por integrado. |
-| Vehicles y consulta de tutor | [Rama backend `develop`](https://github.com/AIpaca-OS/web-services/tree/develop) | Código existente en `develop` | `VehiclesController`, `TutorJourneysController` y controladores de avisos/llegada; varios están sujetos a propiedades de demostración local. No se acredita con ello un despliegue de producción. |
-
-**Organización de código y convenciones:** el frontend mantiene módulos Angular por bounded context; el backend utiliza controladores REST, casos de uso, entidades/aggregates y persistencia con Spring Data JPA. La integración agregó tanto paquetes `com.aipaca.rumbo.*` como `com.aipaca.rumbo.platform.*`. El `pom.xml` vigente en `develop` apunta a **Java 27** y Spring Boot **4.1.2**; antes de demostrar una ejecución conjunta debe revisarse la versión de JDK de cada integrante y el arranque del conjunto integrado.
-
-**Evidencia histórica frente a versión actual:** los resultados locales y scripts citados más adelante corresponden a una versión de Routes probada el **02/11/2026**. Las referencias antiguas a commits «locales» o `feature/service-foundation` no se usan como prueba de la integración vigente; se sustituyeron por los PRs públicos. Toda evidencia nueva de código/ejecución debe asociarse a un commit o rama verificable.
-
-
-
+| Repository             | Branch | Commit Id | Commit Message                                                                                                                                     | Commit Message Body / alcance                                                                                               | Committed on (Date) |
+| ---------------------- | ------ | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| AIpaca-OS/web-services | main   | `a6c4b50` | fix(billing): enable CORS for billing demo, plans, and subscriptions controllers                                                                   | Habilita CORS para los controladores de demostración, planes y suscripciones.                                               | 13/11/2026          |
+| AIpaca-OS/web-services | main   | `c50f037` | feat(openapi): add production server configuration to OpenApiConfiguration                                                                         | Agrega la configuración del servidor de producción en OpenAPI.                                                              | 13/11/2026          |
+| AIpaca-OS/web-services | main   | `cae0c46` | Merge pull request #22 from AIpaca-OS/develop                                                                                                      | Integra los cambios de la rama develop en main.                                                                             | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `632019b` | feat(openapi): add OpenApiConfiguration for Swagger UI integration                                                                                 | Incorpora la configuración OpenAPI para integrar Swagger UI.                                                                | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `88a3def` | feat(docker): add Dockerfile and .dockerignore for application containerization                                                                    | Añade los archivos necesarios para contenerizar la aplicación.                                                              | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `aab8ee1` | fix: make JPA ddl-auto configuration environment variable dependent                                                                                | Permite configurar ddl-auto de JPA mediante variables de entorno.                                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `f73eb56` | Merge pull request #21 from AIpaca-OS/develop                                                                                                      | Integra los cambios de develop en main.                                                                                     | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `b70d38c` | fix: update application server port to 8080 in dev and prod configurations                                                                         | Actualiza el puerto del servidor en las configuraciones de desarrollo y producción.                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `b0fc31d` | test: remove commented-out tests from PlatformPersistenceMappingTests                                                                              | Elimina pruebas comentadas de la suite de persistencia de plataforma.                                                       | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `8132f23` | feat(incidents): integrate incidents and delays bounded context                                                                                    | Integra el bounded context de gestión de incidencias y retrasos.                                                            | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `53d919c` | feat(notifications): integrate notifications bounded context                                                                                       | Integra el bounded context de notificaciones.                                                                               | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `cfff8bd` | test: add unit tests for route command and persistence services                                                                                    | Incorpora pruebas unitarias para los servicios de comandos y persistencia de rutas.                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `6466077` | feat(routes): implement vehicles bounding context to the new project structure                                                                     | Adapta la implementación del contexto de vehículos a la nueva estructura del proyecto.                                      | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `f1d8589` | feat(routes): implement trips bounding context to the new project structure                                                                        | Adapta la implementación del contexto de viajes a la nueva estructura del proyecto.                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `45ee850` | feat(routes): implement routes bounding context to the new project structure                                                                       | Adapta la implementación del contexto de rutas a la nueva estructura del proyecto.                                          | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `ad5f80b` | Delete docs directory                                                                                                                              | Elimina el directorio de documentación del repositorio.                                                                     | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `42ad0d3` | refactor(tests): enhance application properties file check and update table name assertions                                                        | Mejora las verificaciones de configuración y las aserciones de nombres de tablas.                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `1c04843` | fix(incident): remove mistakenly added incident and delay files                                                                                    | Elimina archivos de incidencias y retrasos agregados incorrectamente.                                                       | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `a394c20` | Merge pull request #12 from AIpaca-OS/feature/alerting-incident-management                                                                         | Integra los cambios de gestión de alertas e incidencias.                                                                    | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `0e14314` | Merge pull request #20 from AIpaca-OS/feature/subscriptions-and-billing                                                                            | Integra los cambios del módulo de suscripciones y facturación.                                                              | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `43f8272` | Delete src/main/java/com/aipaca/rumbo/tutorjourneys directory                                                                                      | Elimina el directorio del antiguo contexto tutorjourneys.                                                                   | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `cb61287` | fix(billing): protect private billing endpoints in restructured platform                                                                           | Protege los endpoints privados de facturación en la nueva estructura de plataforma.                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `34578d7` | merge(develop): restore only Billing bounded context and its Java tests                                                                            | Recupera el bounded context de Billing y sus pruebas Java.                                                                  | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `1b4db81` | refactor(structure)!: reorganize project structure to facilitate new bounding context intergation                                                  | Reorganiza la estructura del proyecto para facilitar la integración de bounded contexts.                                    | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `93c7acd` | Merge remote-tracking branch 'origin/develop' into develop                                                                                         | Sincroniza la rama develop con su versión remota.                                                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `3f5f58d` | refactor(structure)!: clean up code structure to improve bounding contexts integration                                                             | Refactoriza la estructura del código para facilitar la integración de contextos.                                            | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `884dae3` | Merge pull request #16 from AIpaca-OS/feature/routes                                                                                               | Integra los cambios de la funcionalidad de rutas.                                                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `b59d674` | feat: Delete docs directory                                                                                                                        | Elimina el directorio de documentación.                                                                                     | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `7499746` | fix(routes): distinct Spring bean names for migrated bounded contexts                                                                              | Diferencia los nombres de beans de Spring para los contextos migrados.                                                      | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `e1380ae` | merge(develop): integrate route/trip bounded with staged REST activation                                                                           | Integra los contextos de rutas y viajes con activación progresiva de servicios REST.                                        | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `554a7d0` | Merge pull request #17 from AIpaca-OS/feature/backend-foundation                                                                                   | Integra la base de infraestructura del backend.                                                                             | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `a612eba` | test(shared): verify migrated bounded contexts during incremental AV2 integration                                                                  | Verifica los bounded contexts migrados durante la integración incremental de AV2.                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `05c9f1a` | Merge pull request #18 from AIpaca-OS/feature/subscriptions-and-billing                                                                            | Integra los cambios de suscripciones y facturación.                                                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `0818c3f` | merge(develop): integrate tested Billing demo only, preserve other bounded contexts                                                                | Integra la demostración de Billing probada y conserva los demás contextos.                                                  | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `81ee60b` | merge(develop): reconcile shared foundation, gate parallel Vehicles API                                                                            | Reconcilia la infraestructura compartida y controla la integración de la API de vehículos.                                  | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `2fb72fa` | Merge pull request #15 from AIpaca-OS/feature/subscriptions-and-billing                                                                            | Integra los cambios de suscripciones y facturación.                                                                         | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `681ac0f` | fix(billing): preserve existing preview access filter test constructor                                                                             | Conserva el constructor de pruebas del filtro de acceso de vista previa.                                                    | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `15baf09` | merge(main): layer isolated Billing demo on deployed backend without altering other modules                                                        | Integra la demostración aislada de Billing sobre el backend desplegado sin alterar otros módulos.                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `9e2114a` | feat(billing): isolated signed-session public demo backed by PostgreSQL                                                                            | Implementa una demostración pública aislada con sesión firmada y persistencia en PostgreSQL.                                | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `e3f2509` | Merge pull request #14 from AIpaca-OS/feature/subscriptions-and-billing                                                                            | Integra cambios del módulo de suscripciones y facturación.                                                                  | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `42d228c` | Merge pull request #13 from AIpaca-OS/feature/subscriptions-and-billing                                                                            | Integra cambios del módulo de suscripciones y facturación.                                                                  | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `4e3818b` | fix(billing): support one-month terms for imported AV2 catalog plans                                                                               | Admite periodos de un mes para los planes importados del catálogo AV2.                                                      | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `927fa4f` | feat(billing): implement subscription lifecycle management                                                                                         | Implementa el ciclo de vida de las suscripciones.                                                                           | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `0afe313` | feat(alerting): Add Incident and Delays Bounded context and components                                                                             | Incorpora el bounded context y los componentes de incidencias y retrasos.                                                   | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `a8171e5` | feat(routes): integrate routes and trip planning with notifications                                                                                | Integra las rutas y la planificación de viajes con las notificaciones.                                                      | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `14da8f9` | feat(vehicles): integrate vehicle credential management                                                                                            | Integra la gestión de vehículos y credenciales.                                                                             | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `0bfc1e0` | refactor(shared): integrate shared contracts and platform architecture                                                                             | Integra contratos compartidos y arquitectura de plataforma.                                                                 | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `f20249d` | feat(billing): import the existing Rumbo catalog to PostgreSQL (#11)                                                                               | Importa el catálogo existente de Rumbo a PostgreSQL.                                                                        | 12/11/2026          |
+| AIpaca-OS/web-services | main   | `7b4fb67` | docs(setup): add concise team build and PostgreSQL environment commands                                                                            | Documenta los comandos de compilación y configuración del entorno PostgreSQL.                                               | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `78a978f` | fix(backend): allow documented demo and preview headers for configured frontend origins                                                            | Permite encabezados de demostración y vista previa para los orígenes frontend configurados.                                 | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `689d296` | fix(backend): align default dev PostgreSQL settings with shared application                                                                        | Alinea la configuración predeterminada de PostgreSQL con la aplicación compartida.                                          | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `81afa4c` | ci(deploy): verify main branch using Render managed PostgreSQL URI                                                                                 | Verifica la rama main utilizando la URI de PostgreSQL administrada por Render.                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `4d1b19c` | fix(deploy): allow Render DB connection when explicit JDBC URL is empty                                                                            | Corrige la conexión a la base de datos de Render cuando la URL JDBC está vacía.                                             | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `8fdc5e5` | test(deploy): verify Render PostgreSQL URI conversion                                                                                              | Verifica la conversión de la URI de PostgreSQL de Render.                                                                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `46c5fd6` | fix(deploy): read resolved datasource credentials in production profile                                                                            | Obtiene las credenciales resueltas del datasource en producción.                                                            | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `dc2f076` | fix(deploy): configure Render PostgreSQL before Spring starts                                                                                      | Configura PostgreSQL de Render antes del inicio de Spring.                                                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `506bdc7` | fix(deploy): adapt Render Postgres connection URI to Spring JDBC                                                                                   | Adapta la URI de conexión de Render al formato de Spring JDBC.                                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `5874303` | fix(deploy): use Render Postgres supported connectionString reference                                                                              | Utiliza la referencia connectionString compatible con Render PostgreSQL.                                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `69000d4` | fix(deploy): target main branch for Render blueprint and auto-deploy on commit                                                                     | Configura Render para desplegar desde main automáticamente al detectar commits.                                             | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `f280d0d` | refactor: simplify descriptions in API tags for data deletion, profiles, and students controllers                                                  | Simplifica las descripciones de etiquetas API para controladores de perfiles, estudiantes y eliminación de datos.           | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `569b520` | release(av2): merge Spring Boot develop into main                                                                                                  | Integra los cambios de Spring Boot develop en main para AV2.                                                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `093f3cd` | docs(api): expose temporary Render preview key in Swagger Authorize                                                                                | Expone la clave temporal de vista previa de Render en Swagger Authorize.                                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `f09c2ee` | test(deploy): smoke-test prod profile PostgreSQL health and preview authorization                                                                  | Prueba la salud de PostgreSQL en producción y la autorización de vista previa.                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `86e98d3` | security(deploy): restrict Render PostgreSQL to private networking                                                                                 | Restringe PostgreSQL de Render a la red privada.                                                                            | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `e20f67e` | ci(deploy): verify the Java 27 Render Docker image builds                                                                                          | Verifica la compilación de la imagen Docker de Render con Java 27.                                                          | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `df223b4` | test(deploy): verify production access gate permits health and denies private APIs                                                                 | Verifica que el acceso público permita health y bloquee las API privadas.                                                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `75fdcda` | security(deploy): guard private REST endpoints in public preview until IAM is available                                                            | Protege los endpoints REST privados durante la vista previa pública hasta disponer de IAM.                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `3f4c98f` | chore(deploy): bind Render managed Postgres and health endpoint                                                                                    | Vincula PostgreSQL administrado por Render y el endpoint de salud.                                                          | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `6f64933` | chore(deploy): expose Spring Boot Actuator health for Render                                                                                       | Expone el endpoint de salud de Spring Boot Actuator para Render.                                                            | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `566daa5` | chore(deploy): add Render Docker build and preview infrastructure blueprint                                                                        | Agrega la configuración de infraestructura de Render para Docker y vista previa.                                            | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `30226eb` | chore(deploy): add Render Docker build and preview infrastructure blueprint                                                                        | Añade la configuración de compilación Docker y despliegue de vista previa en Render.                                        | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `6f3a69a` | chore(deploy): add Render Docker build and preview infrastructure blueprint                                                                        | Ajusta la configuración de infraestructura de despliegue en Render.                                                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `4258576` | fix(profiles): show driver names for explicitly requested transport before acceptance                                                              | Muestra los nombres de conductores para solicitudes explícitas de transporte antes de su aceptación.                        | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `284e279` | fix(profiles): present driver service catalog without placeholder demonstration copy                                                               | Presenta el catálogo de servicios de conductores sin textos de demostración.                                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `a63422e` | fix(security): return 401/403 instead of 500 for unauthorized tutor and driver operations                                                          | Corrige las respuestas de autorización para devolver 401/403 en lugar de 500.                                               | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `e023880` | test(e2e): close JSON publication payload before asserting guardian journey                                                                        | Corrige el payload JSON de publicación utilizado en las pruebas del recorrido del tutor.                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `6adcd76` | test(e2e): verify parent-to-driver enrollment, route and confirmed arrival by HTTP                                                                 | Verifica por HTTP la inscripción entre tutor y conductor, las rutas y la llegada confirmada.                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `7d96dcf` | feat(alerting): forward driver route delay and incident notices to assigned guardians                                                              | Envía avisos de retrasos e incidencias de rutas a los tutores asignados.                                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `71109a7` | feat(trips): explicit per-student driver arrival confirmation and guardian notification                                                            | Implementa la confirmación individual de llegada y la notificación al tutor.                                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `8e7c2b6` | feat(trips): connect tutor published routes, per-student trip progress and lifecycle notifications                                                 | Conecta las rutas publicadas con el progreso individual del viaje y las notificaciones de su ciclo de vida.                 | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `21a9d9d` | merge(config): integrate Alejandro's dev/prod profiles safely, preserve loopback demo and Java 27                                                  | Integra las configuraciones de desarrollo y producción conservando la demostración local y Java 27.                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `c288b2f` | feat: update application properties for environment-specific configurations                                                                        | Actualiza las propiedades de aplicación según el entorno.                                                                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `cff35a8` | test(profiles): verify student appears in Routes only after HTTP enrollment approval                                                               | Verifica que el estudiante aparezca en Routes tras la aprobación de la inscripción.                                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `2045b9c` | feat(profiles): expose fictitious driver enrollment option only in loopback demo                                                                   | Habilita una opción ficticia de inscripción con conductores solo en la demostración local.                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `334d15c` | test(integration): HTTP smoke tests for real local Profiles, Schools and Routes endpoints                                                          | Añade pruebas HTTP para los endpoints locales de perfiles, colegios y rutas.                                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `091ac64` | test(integration): verify local student registration, accepted enrollment and Routes eligibility with PostgreSQL                                   | Verifica el registro de estudiantes, las inscripciones aceptadas y su elegibilidad en Routes con PostgreSQL.                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `e6e6408` | merge: integrate Profiles REST, local-only demo identities and Routes eligibility into develop                                                     | Integra Profiles REST, identidades de demostración locales y elegibilidad de estudiantes en Routes.                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `11898ff` | fix(profiles): disambiguate domain Profile and Spring profile annotation                                                                           | Evita conflictos entre el modelo Profile y las anotaciones de Spring.                                                       | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `614eee3` | feat(profiles): seed fictitious tutor, driver and school only for opt-in loopback demo                                                             | Incorpora datos ficticios de tutor, conductor y colegio solo para la demostración local.                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `f32a082` | fix(profiles): resolve Profile annotation vs domain type import collision                                                                          | Corrige conflictos de importación entre Profile y el tipo de dominio.                                                       | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `22364d3` | feat(profiles): connect local-only demo actor and Routes student eligibility; keep production fail-closed                                          | Conecta el actor de demostración local con la elegibilidad de estudiantes y mantiene la protección en producción.           | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `9020604` | test(routes): reject duplicate publication of a route                                                                                              | Añade pruebas para impedir la publicación duplicada de rutas.                                                               | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `0520eb8` | fix(routes): prevent duplicate publication events and notifications                                                                                | Evita la emisión duplicada de eventos y notificaciones al publicar rutas.                                                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `cb4a76b` | test(alerting): add idempotent generic notification for local UI validation                                                                        | Añade una notificación genérica idempotente para validar la interfaz local.                                                 | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `26d7fac` | integrate(profiles): reconcile complete Profiles domain, services and REST with Java 27 (IAM deferred)                                             | Integra el dominio, servicios y REST de Profiles con Java 27; IAM queda diferido.                                           | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `1dda9fe` | fix(routes): retain simple constructor for unit tests when event bus is absent                                                                     | Mantiene un constructor simple para pruebas unitarias sin event bus.                                                        | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `c22e53c` | test(alerting): verify demo incident and delay guardrails                                                                                          | Verifica las restricciones de demostración para incidencias y retrasos.                                                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `046bce8` | feat(alerting): expose published-route delay and incident demo endpoint                                                                            | Expone un endpoint de demostración para reportar retrasos e incidencias de rutas publicadas.                                | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `d9b8960` | feat: implement SchoolQueryService for querying school data                                                                                        | Implementa SchoolQueryService para consultar información de instituciones educativas.                                       | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `480aff4` | feat(alerting): create generic local-demo notice after a route is published                                                                        | Genera una notificación genérica local después de publicar una ruta.                                                        | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `3ef0f75` | feat(routes): emit route-published event after verified publication                                                                                | Emite un evento de ruta publicada después de verificar su publicación.                                                      | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `d78d3e8` | feat(routes): define route published integration event without private data                                                                        | Define el evento de integración de publicación de ruta sin incluir datos privados.                                          | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `f710a00` | test(billing): provide idempotent local-only demo plan catalog                                                                                     | Añade un catálogo de planes idempotente para la demostración local.                                                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `a49bd08` | fix(database): grant local PostgreSQL application access to domain tables                                                                          | Otorga acceso a las tablas de dominio a la aplicación PostgreSQL local.                                                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `42447d3` | test(vehicles): validate pending registration duplicate plate and route association                                                                | Valida registros pendientes, placas duplicadas y asociación de vehículos con rutas.                                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `9fd318a` | test(vehicles): validate pending registration duplicate plate and route association                                                                | Amplía las pruebas de registro pendiente, duplicidad de placas y asociación con rutas.                                      | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `31fb4e0` | feat(vehicles): implement local REST CRUD with PostgreSQL and route deletion guard                                                                 | Implementa operaciones CRUD REST de vehículos con PostgreSQL y protección ante eliminación de vehículos asociados.          | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `6a6ef02` | feat(vehicles): implement local REST CRUD with PostgreSQL and route deletion guard                                                                 | Completa ajustes de las operaciones CRUD de vehículos y restricciones de eliminación.                                       | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `9c2451f` | feat(vehicles): prevent deleting a vehicle referenced by Routes                                                                                    | Impide eliminar vehículos que estén asociados a rutas.                                                                      | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `041c596` | feat(vehicles): add minimal persistent vehicle model and schema                                                                                    | Añade el modelo persistente y esquema básico de vehículos.                                                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `0f6e129` | feat(vehicles): add minimal persistent vehicle model and schema                                                                                    | Ajusta el modelo persistente y el esquema de vehículos.                                                                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `92dab5d` | feat(vehicles): add minimal persistent vehicle model and schema                                                                                    | Completa la implementación del modelo y esquema de vehículos.                                                               | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `ebbfb9a` | feat: add domain events                                                                                                                            | Incorpora eventos de dominio para la comunicación entre componentes.                                                        | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `7908d3f` | refactor: remove unused Tutor-Student relationship classes and related tests                                                                       | Elimina clases y pruebas no utilizadas de relaciones entre tutores y estudiantes.                                           | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `65b5622` | refactor: update import paths for ProfilesAuthorization and remove unused event publisher in command service tests                                 | Actualiza las importaciones de autorización y elimina un publicador de eventos no utilizado en pruebas.                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `a2ed272` | feat: add persistence mapping and assembler tests for Data Deletion Requests, Service Enrollments, and Tutor-Student Relationships                 | Añade pruebas de persistencia y ensambladores para solicitudes de eliminación, inscripciones y relaciones tutor-estudiante. | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `b66b26d` | feat: add resource assemblers for Data Deletion Requests, Profiles, Schools, Service Enrollments, Students, and Tutor-Student Relationships        | Implementa ensambladores de recursos para perfiles, colegios, estudiantes y relaciones.                                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `28d7cdb` | feat: add resource classes for profiles, students, and deletion requests with validation constraints                                               | Añade recursos y restricciones de validación para perfiles, estudiantes y solicitudes de eliminación.                       | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `1773b45` | feat: implement controllers for Data Deletion Requests, Profiles, Schools, Service Enrollments, and Students with authorization and error handling | Implementa controladores REST con autorización y manejo de errores.                                                         | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `0d211ea` | feat: add ProfilesOperationSupport and ProfilesResults classes for profile and student lookups and error handling                                  | Añade clases de soporte y resultados para consultas de perfiles y estudiantes.                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `ec05b77` | feat: implement access control classes for Profiles and Students, including authorization and exception handling                                   | Implementa clases de control de acceso, autorización y manejo de excepciones para perfiles y estudiantes.                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `3687df1` | feat: update import paths for ProfilesAuthorization and related exceptions in command service implementations                                      | Actualiza importaciones de autorización y excepciones en servicios de comandos.                                             | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `1c8de9f` | feat: update import paths for access-related classes in query service implementations                                                              | Actualiza las importaciones de clases de acceso en servicios de consulta.                                                   | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `6db08eb` | feat: implement command services for Data Deletion Requests, Profiles, Service Enrollments, and Students                                           | Implementa servicios de comandos para perfiles, estudiantes, inscripciones y solicitudes de eliminación.                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `3f11788` | feat: implement query services for Data Deletion Requests, Profiles, Schools, Service Enrollments, and Students                                    | Implementa servicios de consulta para perfiles, colegios, estudiantes e inscripciones.                                      | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `20e212d` | feat: add CQRS command services for Data Deletion Requests, Profiles, Service Enrollments, and Students                                            | Añade servicios de comandos CQRS para los contextos indicados.                                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `c2039ba` | feat: add CQRS query services for Data Deletion Requests, Profiles, Schools, Service Enrollments, and Students                                     | Añade servicios de consulta CQRS para los contextos indicados.                                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `4cde8c2` | feat: refine TutorStudentRelationship persistence layer by removing student ID and updating entity mapping                                         | Refina la persistencia de relaciones tutor-estudiante y actualiza el mapeo de entidades.                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `cc77799` | feat: enhance Student persistence layer with tutor relationships and versioning support                                                            | Mejora la persistencia de estudiantes con relaciones de tutores y soporte de versionado.                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `5bf85f8` | feat: implement persistence layer for service enrollments with assembler and repository                                                            | Implementa la persistencia de inscripciones con ensamblador y repositorio.                                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `8d9f7ed` | feat: implement Data Deletion Request persistence layer with assembler and repository                                                              | Implementa la persistencia de solicitudes de eliminación con ensamblador y repositorio.                                     | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `05d824d` | feat: update StudentRepository interface to include methods for retrieving students by tutor profile ID and clarify repository documentation       | Actualiza StudentRepository para consultar estudiantes por perfil de tutor.                                                 | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `d53a2c9` | feat: add cancellation support for service enrollments and enhance validation logic                                                                | Añade cancelación de inscripciones y mejora las validaciones.                                                               | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `c58d395` | feat: add commands for canceling service enrollment and revoking tutor-student relationships with validation                                       | Añade comandos para cancelar inscripciones y revocar relaciones tutor-estudiante.                                           | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `dd36f8c` | feat: rename query for active tutor-student relationships and add new query for listing students by driver ID                                      | Actualiza consultas de relaciones activas y añade consulta de estudiantes por conductor.                                    | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `520b618` | chore(notifications): add PostgreSQL schema for generic local-demo notices                                                                         | Añade el esquema PostgreSQL para notificaciones genéricas de demostración local.                                            | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `061a67c` | merge: integrate general Notifications API on Java 27 after CI                                                                                     | Integra la API general de notificaciones tras superar la integración continua.                                              | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `9d11e9a` | fix(notifications): restore original enums and command files in merged module                                                                      | Restaura enumeraciones y archivos de comandos del módulo de notificaciones.                                                 | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `30f2158` | feat(notifications): complete CRUD for generic demo notices                                                                                        | Completa las operaciones CRUD de notificaciones genéricas de demostración.                                                  | 11/11/2026          |
+| AIpaca-OS/web-services | main   | `e157e8d` | feat(notifications): support deleting generic demo notices                                                                                         | Añade la eliminación de notificaciones genéricas de demostración.                                                           | 11/11/2026          |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-La evaluación de ejecución se enfoca en los User Flows definidos en el Capítulo IV y en las operaciones de las User Stories asignadas al Sprint. Se registra la acción del usuario, la petición HTTP que interviene, el resultado mostrado por la interfaz y la respuesta efectiva del servicio.
+En este apartado se mostrarán las capturas que evidencian todo lo desarrollado durante el Sprint 3, incluyendo las modificaciones realizadas en la Landing Page, la aplicación web frontend y el backend, junto con los enlaces de despliegue correspondientes a cada uno de estos componentes.
 
-| Función / User Story | Escenario y datos de prueba | Resultado de la aplicación | Evidencia de ejecución |
-|---|---|---|---|
-| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — agregado Route | 5 pruebas unitarias Java: horario, publicación, duplicidad, modificación de publicada y días duplicados. | 5 aprobadas; son pruebas del dominio, no sustituyen autorización o persistencia. | [JUnit/Surefire](./assets/chapter5/routes-av2-evidence/backend-surefire-summary.txt). |
-| RMO-15, RMO-21, RMO-22, RMO-23, RMO-28 — API / PostgreSQL | Script de integración local con datos ficticios: preflight, autenticación, CRUD, horario, asignaciones, duplicados, no autorizado, publicación incompleta, errores 404 y estado de ruta publicada. | 21/21 aserciones HTTP con estado esperado. Las 10 operaciones documentadas tuvieron al menos una respuesta exitosa. Incluyó 401, 400, 403, 404 y 409 negativos, además de 200, 201 y 204 positivos. | [Resultados JSON de 21 comprobaciones](./assets/chapter5/routes-av2-evidence/http-results.json); [detalle Problem Details RFC 9457](./assets/chapter5/routes-av2-evidence/problem-detail-check.json); [script reproducible](https://github.com/AIpaca-OS/web-services/blob/feature/service-foundation/scripts/verify-local-routes.ps1). |
-| Persistencia y recuperación tras reinicio | Ruta de prueba ficticia publicada, con dos paradas, dos días de servicio y una asignación. | PostgreSQL 17 contiene los cuatro tipos de recursos; después de reiniciar Spring Boot se recuperaron la ruta, paradas y horario. | [Consulta PostgreSQL](./assets/chapter5/routes-av2-evidence/postgres-route-check.json); [recuperación tras reinicio](./assets/chapter5/routes-av2-evidence/restart-persistence.json). |
-| Documentación OpenAPI / Swagger | Solicitud local a `/v3/api-docs` y `/swagger-ui.html`. | OpenAPI 3.1, diez operaciones; ambas direcciones respondieron HTTP 200. La documentación es local, no pública. | [Comprobación Swagger](./assets/chapter5/routes-av2-evidence/swagger-check.json). |
-| Integración local Angular → Routes | Solicitud sin encabezado de autorización del cliente a `/api/v1/routes` en el servidor Angular de desarrollo. | El proxy local incorporó Basic en el servidor y obtuvo HTTP 200 con dos rutas de PostgreSQL. La credencial permanece en el entorno del proceso Node; no está en el bundle Angular. | [Comprobación del proxy](./assets/chapter5/routes-av2-evidence/angular-proxy-check.json); [configuración de desarrollo](https://github.com/AIpaca-OS/frontend-web-application/blob/feature/route-trip-planning/src/proxy.conf.cjs). |
-| Pruebas Angular y compilación TypeScript | `npm test -- --watch=false`; `ngc -p tsconfig.app.json --noEmit`; GitHub Actions. | 3/3 pruebas Angular y compilación TypeScript/plantillas aprobadas localmente. La CI Ubuntu/Node 22 del PR #17 también pasó instalación, pruebas y build. Las pruebas actuales no son pruebas integrales de interfaz. | [Pruebas Angular](./assets/chapter5/routes-av2-evidence/angular-tests.log); [Angular Compiler](./assets/chapter5/routes-av2-evidence/angular-typescript-templates.log); [ejecución CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
-| Build Angular de producción | `ng build --configuration production` con Node 24.19.0 y Angular 21.2.25; repetido con Node 22.22.3 tras los cambios finales. También se intentó Node 22 con `--optimization=false`. | Los tres intentos locales en Windows terminaron con salida nativa `0xC0000005` y no produjeron `dist/`. En GitHub Actions, Ubuntu/Node 22 ejecutó correctamente `npm ci`, las pruebas y el build de producción (run #25). La causa del fallo específico de Windows continúa sin localizarse; no se atribuye a una incompatibilidad de versión. No hubo despliegue público. | [Registro final Node 24](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node24.log); [Node 22](./assets/chapter5/routes-av2-evidence/angular-production-build-final-node22.log); [Node 22 sin optimización](./assets/chapter5/routes-av2-evidence/angular-build-no-optimization-node22.log); [run CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985). |
-| Verificación visual y accesibilidad | Listado, asistente de cuatro pasos, validaciones, persistencia tras recarga, cambio de idioma, navegación por teclado y asignación/publicación. | No ejecutada: el controlador de Brave no pudo confirmar la URL de la ventana y detuvo la automatización. No se declara resultado visual ni se adjuntan capturas inexistentes. | [Protocolo manual y capturas requeridas](./assets/chapter5/routes-av2-evidence/manual-ui-validation.md). |
+En primer lugar, se presentan las nuevas secciones implementadas en la Landing Page, donde se exhiben los videos **About-the-Product**, que presenta la plataforma final a los usuarios, y **About-the-Team**, que ofrece un breve resumen del camino recorrido durante el desarrollo de Rumbo, acompañado de los testimonios de cada uno de los integrantes de la startup.
 
-La evidencia visual y el video de navegación siguen pendientes. Los escenarios del protocolo manual requieren datos ficticios y capturas Desktop/Mobile de la misma versión que se integre en GitHub.
+**URL pública de la Landing Page:** https://aipaca-os.github.io/landing-page
+
+**URL pública del Repositorio de la Landing Page:** https://github.com/AIpaca-OS/landing-page
+
+### Sección About-the-Product
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-about-the-product.png" alt="Sección About-the-Product en la Landing Page" width="95%">
+</div>
+
+### Sección About-the-Team
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-about-the-team.png" alt="Sección About-the-Team en la Landing Page" width="95%">
+</div>
+
+<br>
+
+En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplicación web frontend de Rumbo, donde principalmente se organizaron las vistas en dos plataformas diferenciadas: una para conductores y otra para tutores. Asimismo, se realizaron modificaciones en las interfaces con el propósito de mejorar su apariencia y ofrecer una experiencia más atractiva para los usuarios.
+
+**URL pública del Frontend Web Application:** https://aipaca-os.github.io/frontend-web-application
+
+**URL pública del Repositorio del Frontend Web Application:** https://github.com/AIpaca-OS/frontend-web-application
+
+### Login temporal
+
+**Para entrar solo ingrese 1 como ID en cualquiera de los apartados**
+
+<div align="center">
+  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
 
 
-**Estado de la versión integrada después de los PRs de noviembre:** las pruebas históricas de la tabla anterior se conservan como evidencia de su fecha; deben repetirse sobre el `develop` que combina Routes, Billing, Profiles y Notifications. La presencia de un controlador o un PR fusionado no es por sí sola una prueba de ejecución.
+### Rumbo: Conductores
 
-| Escenario de integración | Resultado comprobable en repositorios | Prueba pendiente para cerrar el AV2 |
-|---|---|---|
-| Crear/editar ruta con vehículo, paradas y horario | Formularios Angular y backend de Routes disponibles en `develop`. | `POST /api/v1/routes` y `PUT /api/v1/routes/{id}` con datos persistidos en PostgreSQL; recarga de pantalla y capturas. |
-| Asignar estudiante registrado por tutor | `RouteAssignment` y servicios de Profiles presentes; existe control de elegibilidad por conductor. | Verificar identidad y autorización efectiva de conductor/tutor; probar rechazo y asignación con datos reales de prueba, no ficticios de una API distinta. |
-| Publicar ruta y consultar traslado desde tutor | Publicación, servicios de viajes y vistas/consultas de tutor disponibles parcialmente. | Probar que una ruta publicada se muestra únicamente a tutores autorizados y que los estados corresponden al viaje correcto. |
-| Vehículo seleccionable | El frontend integra consulta de vehículos; existe `VehiclesController` de demostración. | Probar que los vehículos persisten y que el mismo ID es aceptado por Routes sin mezclarse con MockAPI. |
-| Notificaciones, retrasos y llegada | Controladores de avisos y llegada presentes para demostración local. | Confirmar evento real → creación de aviso → consulta por tutor y persistencia; distinguirlo del contenido estático o simulado. |
-| Billing | APIs `/api/v1/plans` y `/api/v1/subscriptions` presentes en backend integrado. | Probar creación/consulta de suscripción, vigencia y respuesta del frontend conectada a Spring Boot. |
-| Compilación y servicios | `pom.xml` de `develop` configura JDK 27; Angular 21 y proxy local definidos. | Ejecutar `mvnw.cmd test`, arrancar Spring Boot con PostgreSQL, `npm ci`, `npm test -- --watch=false` y `npm run build`, y guardar resultados de esta versión. |
+#### Inicio
 
-**Nota de perfiles de ejecución:** `application.properties` del backend establece perfiles `dev` y `local`. Las APIs de `VehiclesController`, `NotificationsController` y algunos recursos de consulta de tutores solo están disponibles cuando las propiedades `app.demo.enabled` o `app.profiles.demo.enabled` permiten su carga. El archivo `application-local.properties` fija `127.0.0.1` y advierte no usar esa modalidad en un despliegue público. El frontend de `develop` todavía consume MockAPI en Billing, Profiles y Alerting, mientras Routes y Vehicles apuntan a `/api/v1` en el entorno de desarrollo.
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-home.png" alt="Pagina principal de los Conductores" width="95%">
+</div>
 
+#### Estudiantes
 
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-students.png" alt="Panel de Estudiantes de los Conductores" width="95%">
+</div>
 
-**Evidencia visual de persistencia local — pgAdmin 4 (PostgreSQL 17).** La captura existente registra una consulta SQL ejecutada en la base `rumbo_demo` sobre `rp_routes`. El resultado presenta dos registros con estado `PUBLISHED`. Este resultado respalda que había rutas almacenadas al momento de la consulta, pero **no demuestra** por sí solo cómo se crearon, la autorización de estudiantes, un reinicio del servidor ni su publicación en Render.
+#### Vehicles
 
-![Resultado de consulta SQL de rutas en pgAdmin 4](./assets/chapter5/pgAdmin-1.png)
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-vehicles-dashboard.png" alt="Panel de Vehiculos del Conductor" width="95%">
+</div>
 
-*Figura AV2-DB-01. Consulta `SELECT id, name, code, status FROM rp_routes ORDER BY name;` y resultado de dos rutas en estado PUBLISHED en `rumbo_demo`. Fuente: captura del entorno local del equipo.*
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-vehicle.png" alt="Registrar un nuevo vehiculo" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-edit-vehicle.png" alt="Editar la información de un vehiculo" width="95%">
+</div>
+
+#### Rutas
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-routes-dashboard.png" alt="Panel de rutas creadas por los Conductores" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-1.png" alt="Paso 1 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-2.png" alt="Paso 2 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-3.png" alt="Paso 3 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-4.png" alt="Paso 4 para crear una ruta" width="95%">
+</div>
+
+#### Notificaciones
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-notifications.png" alt="Panel de las Notificaciones recibidas" width="95%">
+</div>
+
+#### Plan y facturación
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-plans.png" alt="Panel de Planes disponibles" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-change-subscription.png" alt="Panel para cambiar de plan de subscripcion" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-cancel-subscription.png" alt="Dialogo de cancelación de Subscripcion" width="95%">
+</div>
+
+#### Configuración
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-settings.png" alt="Panel de configuración de los Conductores" width="95%">
+</div>
+
+### Rumbo: Tutores
+
+#### Inicio
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-home.png" alt="Pagina Principal de los Tutores" width="95%">
+</div>
+
+#### Viaje Actual
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-current-trip.png" alt="Panel viajes en curso del Estudiante" width="95%">
+</div>
+
+#### Notificaciones
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-notifications.png" alt="Panel de notificaciones de los Tutores" width="95%">
+</div>
+
+#### Estudiantes
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-students-dashboard.png" alt="Panel de Estudiantes de los Tutores" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-new-student.png" alt="Registro de un estudiante" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-student-information.png" alt="Pagina de visualización de la información de un Estudiante" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-edit-student.png" alt="Editar la información de un Estudiante" width="95%">
+</div>
+
+#### Configuración
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-settings.png" alt="Panel de configuración de los Tutores" width="95%">
+</div>
+
+<br>
+
+Por último, se presenta Swagger, donde se documentan todos los endpoints implementados durante este sprint. Estos ya se encuentran integrados con el frontend y permiten realizar la persistencia de los datos de la plataforma.
+
+**URL pública de los Web Services:** https://web-services-gjgh.onrender.com/swagger-ui/index.html#/
+
+**URL pública del Repositorio de los Web Services:** https://github.com/AIpaca-OS/web-services
+
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Swagger de Rumbo Web Services" width="95%">
+</div>
+
+### Plans
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
+</div>
+
+### Service Enrollments
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
+</div>
+
+### Incidents
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
+</div>
+
+### Trips
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
+</div>
+
+### Vehicles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
+</div>
+
+### Data Deletion Requests
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+</div>
+
+### Profiles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
+</div>
+
+### Subscriptions
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
+</div>
+
+### Routes
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
+</div>
+
+### Delays
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
+</div>
+
+### Notifications
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
+</div>
+
+### Students
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
+</div>
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los Web Services de Rumbo se organizan a partir de los modelos de dominio y los diagramas de base de datos de la sección 4.8.1. El backend utiliza Java, Spring Boot y Spring Data JPA, y la especificación pública de la API sigue OpenAPI mediante Swagger, según las tecnologías establecidas en el Final Project Statement.
+Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Services para permitir el consumo de sus funcionalidades desde el frontend y garantizar la persistencia de los datos, en esta sección se documentan todos los endpoints implementados, incluyendo sus sintaxis de llamada, parámetros, ejemplos de solicitudes y demás detalles necesarios para su utilización.
 
-Para evitar que el contrato de servicio dependa directamente de la estructura relacional, las entidades JPA representan la persistencia, los repositorios encapsulan el acceso a datos, los servicios aplican las reglas de negocio y los controladores atienden las solicitudes REST mediante DTOs. Una tabla no se convierte necesariamente en un CRUD público: las operaciones se seleccionan de acuerdo con User Stories y permisos del usuario.
+### Plans
 
-**Repositorio de Web Services:** https://github.com/AIpaca-OS/web-services
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
+</div>
 
-La correspondencia entre los ocho diagramas y los recursos del backend se resume en la siguiente matriz de diseño. Las rutas son una **referencia de contrato** para organizar la implementación; la evidencia de endpoints funcionales corresponde a la tabla de operaciones verificadas.
+<br>
+<br>
 
-| Bounded Context | Entidades de persistencia representativas | Recurso REST de referencia |
-|---|---|---|
-| Identity & Access Management | `accounts`, `account_tokens` | `/api/v1/auth`, `/api/v1/accounts` |
-| Profiles & Relationship Management | `profiles`, `students`, `tutor_student_relationships` | `/api/v1/profiles`, `/api/v1/students` |
-| Vehicle & Credential Management | Referencia opcional `vehicleId`; sin CRUD de vehículos en el alcance actual | No se publica un recurso de vehículos en el MVP de Routes |
-| Route & Trip Planning | `routes`, `route_stops`, `route_schedules`, `route_assignments` | `/api/v1/routes` |
-| Trip Execution & Monitoring | `trips`, `trip_passengers`, `trip_events` | `/api/v1/trips` |
-| Incident & Delay Management | `incidents`, `incident_acknowledgements`, `delays` | `/api/v1/incidents`, `/api/v1/delays` |
-| Notification Management | `notifications`, `notification_settings` | `/api/v1/notifications` |
-| Subscriptions & Billing | `plans`, `subscriptions`, `subscription_payments` | `/api/v1/plans`, `/api/v1/subscriptions` |
-
-**Relación de operaciones y documentación OpenAPI**
-
-| HTTP Method | Endpoint | Parámetros / solicitud de ejemplo | Respuesta y códigos HTTP | Swagger URL / Evidence |
-|---|---|---|---|---|
-| GET | `/api/v1/routes` | Sin parámetros; obtiene rutas del conductor autenticado. | `200 RouteView[]`; `401`, `403`, `503` con ProblemDetail. | Local: `http://127.0.0.1:8080/swagger-ui.html`; comprobado HTTP 200. |
-| POST | `/api/v1/routes` | Cuerpo `RouteWrite`: nombre, turno, hora, paradas, horario; `vehicleId` opcional. | `201 RouteView`; `400`, `401`, `403`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| GET | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `200 RouteView`; `400`, `401`, `403`, `404`, `503`. | Esquemas y contrato en OpenAPI local. |
-| PUT | `/api/v1/routes/{id}` | `id`: UUID; cuerpo `RouteWrite`. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| PUT | `/api/v1/routes/{id}/schedule` | `id`: UUID; cuerpo `ScheduleWrite` con días, horas y confirmación. | `200 RouteView`; `400`, `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-| GET | `/api/v1/routes/{id}/assignments` | `id`: UUID de ruta. | `200 AssignmentView[]`; `401`, `403`, `404`. | Esquemas y contrato en OpenAPI local. |
-| POST | `/api/v1/routes/{id}/assignments` | `id`: UUID; cuerpo `AssignmentWrite` (`studentId`, `stopId`). | `201 AssignmentView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| DELETE | `/api/v1/routes/{id}/assignments/{assignmentId}` | `id` y `assignmentId`: UUID. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-| PATCH | `/api/v1/routes/{id}/status` | `id`: UUID; cuerpo `StatusPatch` (`status: PUBLISHED`). | `200 RouteView`; `400`, `401`, `403`, `404`, `409`, `503`. | Esquemas y contrato en OpenAPI local. |
-| DELETE | `/api/v1/routes/{id}` | `id`: UUID de ruta. | `204`; `401`, `403`, `404`, `409`. | Esquemas y contrato en OpenAPI local. |
-
-El Final Project Statement (p. 27) solicita documentar cada endpoint relacionado con el alcance del Sprint, sus acciones implementadas, verbo HTTP, sintaxis, parámetros, respuesta, enlace a OpenAPI y capturas con datos de muestra. Esa sección no establece un umbral porcentual de endpoints. Las cifras siguientes se limitan al bounded context Routes y no representan el porcentaje de cobertura de todo el Sprint.
-
-**Corte de pruebas de Routes — 02/11/2026 (versión anterior a la integración actual):** se documentaron **10 operaciones** y **21 aserciones HTTP** ejecutadas con el script local. Estas cifras no se extienden automáticamente a los controladores adicionales que actualmente existen en `develop`.
-**Swagger histórico:** `http://127.0.0.1:8080/swagger-ui.html` y `/v3/api-docs`; comprobados localmente con HTTP 200 en el corte previo, no en un despliegue público.
-**Cliente de verificación histórico:** [script de verificación de Routes](./assets/chapter5/routes-av2-evidence/verify-local-routes.ps1) con datos ficticios y registros anexados al informe; la colección Postman puede servir para repetir pruebas, pero no fue la fuente de aquellas 21 aserciones.
-
-**Corte histórico de historias y pruebas al 02/11/2026 — no corresponde al estado actual de Jira**
-
-| Historia | Estado actual en Jira | Resultado local contrastado con criterios Given/When/Then | Pendiente / clasificación |
-|---|---|---|---|
-| [RMO-15](https://aipaca.atlassian.net/browse/RMO-15) | En curso | Crear ruta configurable, mantener paradas ordenadas y guardar datos en PostgreSQL. | Dirección no localizable y la relación real de conductor/vehículo no están integradas. Parcial, con verificación visual pendiente. |
-| [RMO-21](https://aipaca.atlassian.net/browse/RMO-21) | En curso | Guardar y recuperar horario; rechazar horario confirmado vacío con HTTP 400. | La CI de frontend pasó; siguen pendientes la verificación visual y el recorrido completo de la interfaz. Implementada localmente, pendiente de cierre. |
-| [RMO-22](https://aipaca.atlassian.net/browse/RMO-22) | En curso | Las identidades ficticias permitidas pasan; estudiante no autorizado recibe 403; duplicado recibe 409. | El perfil productivo devuelve 503 porque la integración real con Students/Profiles no está implementada. Parcial y bloqueada por ese bounded context. No satisface la historia completa. |
-| [RMO-23](https://aipaca.atlassian.net/browse/RMO-23) | Por hacer | Publicación completa devuelve `PUBLISHED`; una ruta incompleta recibe HTTP 409. | La generación de viajes y la visibilidad para tutores pertenecen a integraciones aún pendientes. Implementada parcialmente en local; Jira sigue Por hacer. |
-| [RMO-28](https://aipaca.atlassian.net/browse/RMO-28) | En curso | Diez operaciones OpenAPI cubiertas por 21 aserciones HTTP; datos verificados en PostgreSQL y tras reinicio. | Build de Angular verde en CI; siguen pendientes la verificación visual y la publicación remota. El backend no tiene workflow CI configurado y sus pruebas citadas son locales. |
-
-En el corte histórico del 02/11/2026, el Sprint 3 registraba 4 historias En curso y 7 Por hacer (52 SP). Esa consulta quedó superada por la **actualización de Jira del 10/11/2026**, documentada en 5.2.3.3: 76 incidencias del proyecto con responsable (8 Listo, 13 En curso y 55 Por hacer); RMO-23 y RMO-24 se encuentran En curso. Se mantienen las observaciones técnicas de este corte sin presentar sus estados como actuales.
-
-
-**Inventario actual del backend integrado (`develop`, 10/11/2026).** El inventario histórico anterior corresponde a una versión de Routes; los siguientes controladores y rutas se comprobaron leyendo el código del repositorio, no mediante solicitudes HTTP ejecutadas sobre la versión fusionada.
-
-| Bounded context / recurso | API REST declarada en Spring Boot | Estado de integración para AV2 |
-|---|---|---|
-| **Routes** | `GET, POST /api/v1/routes`; `GET, PUT, DELETE /api/v1/routes/{id}`; `PUT /api/v1/routes/{id}/schedule`; `GET, POST, PUT /api/v1/routes/{id}/assignments`; `GET /api/v1/routes/eligible-students`; `PATCH /api/v1/routes/{id}/status`; `POST, GET /api/v1/routes/{id}/trips`. | Código de ruta y persistencia presentes; validación real de estudiantes y seguridad de conductor requieren integración final. |
-| **Trips** | `GET /api/v1/trips/{id}`; `POST /api/v1/trips/{id}/absences`; `PATCH /api/v1/trips/{id}/start`, `/stops/{stopId}/served`, `/cancel`, `/complete`. | Operaciones declaradas; demostrar transiciones y notificaciones con estado real del viaje. |
-| **Profiles / Students** | `/api/v1/profiles`, `/api/v1/students`, `/api/v1/service-enrollments`, relaciones de tutores y consulta de estudiantes del conductor. | Controladores y dominio fusionados; permisos entre tutores, estudiantes y conductores no se acreditan como IAM productivo. |
-| **Billing** | `GET, POST /api/v1/plans`; `GET /api/v1/plans/{planId}`; `GET, POST /api/v1/subscriptions`. | Controladores integrados en el backend; frontend en `develop` todavía conserva consumo de MockAPI para planes y suscripciones. |
-| **Vehicles** | `GET, POST /api/v1/vehicles`, `GET, PUT, DELETE /api/v1/vehicles/{id}`. | Disponible en código solo cuando `app.demo.enabled=true`; no se considera API productiva. |
-| **Notifications / tutor** | `/api/v1/notifications`, `/api/v1/routes/{routeId}/notices`, `/api/v1/tutor/journeys`, `/api/v1/tutor/notifications`. | Funciones restringidas por flags de demostración; la generación y recepción integral de avisos debe verificarse. |
-| **Incident & Delay Management** | Modelos/MockAPI de frontend y funcionalidades relacionadas con avisos. | No se verifica una API Spring Boot completa de incidentes y retrasos mediante el controlador de Notifications. |
-
-**Dependencia concreta de autorización pendiente:** el adaptador `ProfilesStudentAuthorization` de Routes consulta `/api/v1/profiles/driver/eligible-students` y `/api/v1/profiles/driver/vehicles/{vehicleId}/access`, mientras que el módulo integrado de Profiles expone, entre otros, `/api/v1/service-enrollments/drivers/me/students`. Los contratos no coinciden todavía. Además, `PROFILES_AUTHORIZATION_ENABLED` está deshabilitado por defecto. Deben unificar los contratos y validar credenciales antes de afirmar que un estudiante autorizado puede publicarse y ser consultado por su tutor.
-
-**Conexión de APIs frontend:** en el entorno Angular `develop`, Routes y Vehicles se configuran con base `/api/v1`. Billing, Profiles y Alerting conservan URLs MockAPI en `environment.development.ts`; JSON Server constituye una alternativa de simulación local. En la entrega se distinguirá explícitamente **API propia Spring Boot, servicio simulado y datos de demostración**. Postman es el cliente de pruebas, Swagger/OpenAPI es el contrato navegable y PostgreSQL es el almacenamiento del backend.
-
-**Plan de verificación de contratos del Sprint 3:** registrar por operación método, endpoint, parámetro, body de ejemplo con datos no sensibles, respuesta HTTP real, URL de Swagger, fecha, commit y resultado. Los endpoints condicionales deben comprobarse solo bajo el perfil documentado; no se habilitan por defecto en Render.
-
-**Evidencia visual de la documentación OpenAPI del backend.** Las cinco capturas existentes muestran la interfaz Swagger de `Rumbo Web Services API` servida desde el entorno local `localhost:8080`. Permiten identificar los recursos y verbos HTTP declarados; **no acreditan por sí solas** que todas las operaciones hayan sido ejecutadas satisfactoriamente ni que estén publicadas en Render.
-
-![Swagger UI: API Rumbo y Service Enrollments](./assets/chapter5/Swagger-1.png)
-
-*Figura AV2-SW-01. Presentación de Rumbo Web Services API y recursos de Service Enrollments; sección de conductores de demostración local.*
-
-![Swagger UI: Routes, suscripciones, avisos del conductor y viajes](./assets/chapter5/Swagger-2.png)
-
-*Figura AV2-SW-02. Contratos de Routes para crear, consultar, editar, programar horarios y asignar estudiantes, además de recursos de suscripciones y avisos locales.*
-
-![Swagger UI: Vehicles, Students, Tutor Journeys y Plans](./assets/chapter5/Swagger-3.png)
-
-*Figura AV2-SW-03. Endpoints de vehículos (marcados como demostración local), estudiantes, consultas del tutor y planes de suscripción.*
-
-![Swagger UI: Profiles, Notifications, Data Deletion Requests y Trips](./assets/chapter5/Swagger-4.png)
-
-*Figura AV2-SW-04. Contratos de perfiles, notificaciones de demostración local, solicitudes de eliminación de datos personales y operaciones de ejecución de viajes.*
-
-![Swagger UI: Schools y esquemas de recursos](./assets/chapter5/Swagger-5.png)
-
-*Figura AV2-SW-05. Recursos de consulta de centros educativos y modelos de entrada/salida definidos en OpenAPI.*
-
-**Alcance de estas seis capturas:** cinco prueban la **presencia de documentación Swagger UI local** y una evidencia registros consultados en **PostgreSQL local**. No se adjuntaron capturas de Postman, integración frontend-backend ni de despliegue; no se atribuyen resultados no mostrados.
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/plans</code></td>
+      <td>GET</td>
+      <td>Obtener todos los planes</td>
+      <td><code>GET /api/v1/plans</code></td>
+      <td>Ninguno</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Devuelve una colección con los planes de suscripción registrados, incluyendo sus precios y condiciones comerciales.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plans</code></td>
+      <td>POST</td>
+      <td>Crear un plan</td>
+      <td><code>POST /api/v1/plans</code></td>
+      <td>Ninguno</td>
+      <td><code>{"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Registra un nuevo plan de suscripción y devuelve sus datos comerciales junto con el identificador asignado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plans/{planId}</code></td>
+      <td>GET</td>
+      <td>Obtener un plan por ID</td>
+      <td><code>GET /api/v1/plans/1</code></td>
+      <td>Path: planId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Devuelve la información de un plan específico, identificado mediante el parámetro planId de la ruta.</td>
+    </tr>
+  </tbody>
+</table>
 
 
+### Service Enrollments
 
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/service-enrollments</td>
+      <td>POST</td>
+      <td>Solicitar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments</code></td>
+      <td>Ninguno</td>
+      <td><code>{"studentId":1,"driverProfileId":2,"requestedByProfileId":3}</code></td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"PENDING","requestedAt":"2026-11-12T08:00:00","acceptedAt":null,"cancelledAt":null,"endedAt":null}</code></td>
+      <td>Registra una solicitud de matrícula entre un estudiante y un conductor. Devuelve la información de la solicitud, su estado inicial y la fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/end</code></td>
+      <td>POST</td>
+      <td>Finalizar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/end</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ENDED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":"2026-11-12T18:00:00"}</code></td>
+      <td>Finaliza la matrícula identificada y devuelve su información actualizada, incluyendo el estado y la fecha de finalización.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/cancel</code></td>
+      <td>POST</td>
+      <td>Cancelar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/cancel</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"CANCELLED","requestedAt":"2026-11-12T08:00:00","acceptedAt":null,"cancelledAt":"2026-11-12T09:00:00","endedAt":null}</code></td>
+      <td>Cancela la matrícula especificada y devuelve sus datos actualizados, reflejando el estado de cancelación y la fecha correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/accept</code></td>
+      <td>POST</td>
+      <td>Aceptar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/accept</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}</code></td>
+      <td>Acepta la solicitud de matrícula identificada y devuelve la información actualizada, incluyendo el nuevo estado y la fecha de aceptación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}</code></td>
+      <td>GET</td>
+      <td>Obtener una matrícula por ID</td>
+      <td><code>GET /api/v1/service-enrollments/1</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}</code></td>
+      <td>Devuelve los datos de una matrícula específica mediante su identificador, incluyendo los perfiles involucrados, su estado y las fechas asociadas.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/students/{studentId}</code></td>
+      <td>GET</td>
+      <td>Obtener matrículas por estudiante</td>
+      <td><code>GET /api/v1/service-enrollments/students/1</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve una colección de matrículas asociadas al estudiante indicado, mostrando los conductores vinculados, los estados y las fechas de cada solicitud.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/drivers/{driverProfileId}</code></td>
+      <td>GET</td>
+      <td>Obtener matrículas por conductor</td>
+      <td><code>GET /api/v1/service-enrollments/drivers/2</code></td>
+      <td>Path: driverProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve una colección de matrículas relacionadas con el conductor especificado, incluyendo los estudiantes vinculados y el estado de cada matrícula.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/drivers/{driverProfileId}/students</code></td>
+      <td>GET</td>
+      <td>Obtener estudiantes por conductor</td>
+      <td><code>GET /api/v1/service-enrollments/drivers/2/students</code></td>
+      <td>Path: driverProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve la información de las matrículas de los estudiantes asociados al conductor indicado.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Incidents
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:11%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:15%;">Ejemplo Request</th>
+      <th style="width:19%;">Ejemplo Response</th>
+      <th style="width:15%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}</td>
+      <td>GET</td>
+      <td>Obtener una incidencia por ID</td>
+      <td><code>GET /api/v1/incidents/{incidentId}</code></td>
+      <td><code>incidentId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve los datos de una incidencia específica, incluyendo el viaje asociado, el usuario que la reportó, el estudiante, su categoría, descripción, estado y confirmaciones de recepción.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar una incidencia</td>
+      <td><code>PUT /api/v1/incidents/{incidentId}</code></td>
+      <td><code>incidentId</code> (path), <code>category</code> y <code>description</code> (body)</td>
+      <td><code>{"category":"MECHANICAL_FAILURE","description":"El auxilio mecánico llega en 20 minutos"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"El auxilio mecánico llega en 20 minutos","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve la incidencia actualizada con la nueva categoría y descripción, conservando el resto de sus datos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents</code></td>
+      <td>GET</td>
+      <td>Obtener incidencias por viaje</td>
+      <td><code>GET /api/v1/incidents?tripId={tripId}</code></td>
+      <td><code>tripId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}]</code></td>
+      <td>Devuelve una lista de incidencias asociadas al viaje indicado mediante su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents</code></td>
+      <td>POST</td>
+      <td>Reportar una incidencia</td>
+      <td><code>POST /api/v1/incidents</code></td>
+      <td><code>tripId</code>, <code>reportedByProfileId</code>, <code>studentId</code>, <code>category</code> y <code>description</code> (body)</td>
+      <td><code>{"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve la incidencia registrada, incluyendo su identificador, datos del reporte, estado inicial y fecha de creación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}/acknowledgements</code></td>
+      <td>POST</td>
+      <td>Confirmar recepción de una incidencia</td>
+      <td><code>POST /api/v1/incidents/{incidentId}/acknowledgements</code></td>
+      <td><code>incidentId</code> (path), <code>tutorProfileId</code> (body)</td>
+      <td><code>{"tutorProfileId":1}</code></td>
+      <td><code>{"id":1,"tutorProfileId":1,"acknowledgedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la confirmación de recepción registrada, incluyendo su identificador, el tutor que confirmó y la fecha de confirmación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}/resolve</code></td>
+      <td>PATCH</td>
+      <td>Resolver una incidencia</td>
+      <td><code>PATCH /api/v1/incidents/{incidentId}/resolve</code></td>
+      <td><code>incidentId</code> (path), <code>resolution</code> (body)</td>
+      <td><code>{"resolution":"Se cambió de vehículo y el viaje continúa"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":"string","reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T03:04:06.174Z","acknowledgements":[{"id":1,"tutorProfileId":1,"acknowledgedAt":"2026-11-13T03:04:06.174Z"}]}</code></td>
+      <td>Devuelve la incidencia con su información general, la resolución registrada, la fecha de resolución y las confirmaciones de recepción asociadas.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Trips
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/trips</code></td>
+      <td>GET</td>
+      <td>Obtener viajes por ruta o conductor</td>
+      <td><code>/api/v1/trips?routeId={routeId}&amp;driverProfileId={driverProfileId}</code></td>
+      <td><code>routeId</code> y <code>driverProfileId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}]</code></td>
+      <td>Devuelve una lista de viajes filtrados por los identificadores de ruta y conductor proporcionados, incluyendo los datos generales y los estudiantes asignados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips</code></td>
+      <td>POST</td>
+      <td>Planificar un viaje</td>
+      <td><code>/api/v1/trips</code></td>
+      <td><code>routeId</code>, <code>driverProfileId</code>, <code>vehicleId</code>, <code>date</code>, <code>shift</code> y <code>passengers</code> (body)</td>
+      <td><code>{"routeId":1,"driverProfileId":2,"vehicleId":1,"date":"2026-11-16","shift":"MORNING","passengers":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123"}]}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje planificado con la información de la ruta, conductor, vehículo, fecha, turno y estudiantes asignados a sus respectivas paradas.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/absences</code></td>
+      <td>POST</td>
+      <td>Reportar ausencia de un estudiante</td>
+      <td><code>/api/v1/trips/{tripId}/absences</code></td>
+      <td><code>tripId</code> (path), <code>studentId</code> (body)</td>
+      <td><code>{"studentId":1}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":1,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":true,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado, reflejando la ausencia reportada para el estudiante correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/stops/{stopId}/served</code></td>
+      <td>PATCH</td>
+      <td>Marcar una parada como atendida</td>
+      <td><code>/api/v1/trips/{tripId}/stops/{stopId}/served</code></td>
+      <td><code>tripId</code> y <code>stopId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado, indicando que la parada seleccionada ha sido atendida por el conductor.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/start</code></td>
+      <td>PATCH</td>
+      <td>Iniciar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/start</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado después de iniciar su ejecución, reflejando el nuevo estado del viaje.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/passengers/{studentId}/arrived</code></td>
+      <td>PATCH</td>
+      <td>Confirmar llegada de un estudiante</td>
+      <td><code>/api/v1/trips/{tripId}/passengers/{studentId}/arrived</code></td>
+      <td><code>tripId</code> y <code>studentId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":true}]}</code></td>
+      <td>Devuelve el viaje actualizado, indicando que el conductor confirmó la llegada del estudiante seleccionado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/complete</code></td>
+      <td>PATCH</td>
+      <td>Completar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/complete</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"COMPLETED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":true}]}</code></td>
+      <td>Devuelve el viaje actualizado después de completar su ejecución, reflejando el estado final y la información de sus estudiantes.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/cancel</code></td>
+      <td>PATCH</td>
+      <td>Cancelar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/cancel</code></td>
+      <td><code>tripId</code> (path), <code>reason</code> (body)</td>
+      <td><code>{"reason":"Mechanical issue"}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"CANCELLED","cancelReason":"Mechanical issue","students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado como cancelado, incluyendo el motivo proporcionado y la información de los estudiantes asignados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}</code></td>
+      <td>GET</td>
+      <td>Obtener un viaje por ID</td>
+      <td><code>/api/v1/trips/{tripId}</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve la información detallada de un viaje específico, incluyendo sus datos generales y la lista ordenada de estudiantes asignados.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vehicles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>GET</td>
+      <td>Obtener vehículo por ID</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve la información de un vehículo específico, incluyendo su conductor propietario, marca, modelo, placa, capacidad, año y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar vehículo</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path), <code>brand</code>, <code>model</code>, <code>licensePlate</code>, <code>capacity</code> y <code>year</code> (body)</td>
+      <td><code>{"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022}</code></td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve la información del vehículo después de actualizar sus características, conservando su identificador, conductor propietario y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar vehículo</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido)</td>
+      <td>Elimina el vehículo identificado mediante el parámetro proporcionado. No retorna contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>GET</td>
+      <td>Obtener vehículos</td>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>Ninguno</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}]</code></td>
+      <td>Devuelve una lista de vehículos registrados en la plataforma, incluyendo sus características y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>POST</td>
+      <td>Registrar un vehículo</td>
+      <td><code>/api/v1/vehicles</code></td>
+      <td><code>driverProfileId</code>, <code>brand</code>, <code>model</code>, <code>licensePlate</code>, <code>capacity</code> y <code>year</code> (body)</td>
+      <td><code>{"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022}</code></td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve los datos del vehículo registrado, incluyendo su identificador generado y su estado inicial de verificación.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Data Deletion Requests
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests</code></td>
+      <td>POST</td>
+      <td>Solicitar eliminación de datos</td>
+      <td><code>/api/v1/data-deletion-requests</code></td>
+      <td><code>studentId</code> y <code>requestedByProfileId</code> (body)</td>
+      <td><code>{"studentId":1,"requestedByProfileId":1}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}</code></td>
+      <td>Devuelve la solicitud de eliminación de datos registrada, incluyendo el estudiante, el solicitante, su estado inicial y la fecha de creación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/reject</code></td>
+      <td>POST</td>
+      <td>Rechazar solicitud</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/reject</code></td>
+      <td><code>requestId</code> (path), <code>resolutionNote</code> (body)</td>
+      <td><code>{"resolutionNote":"Request reviewed"}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"REJECTED","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T04:04:06.174Z","resolutionNote":"Request reviewed"}</code></td>
+      <td>Devuelve la solicitud actualizada como rechazada, incluyendo la nota de resolución y la fecha en que fue atendida.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/approve</code></td>
+      <td>POST</td>
+      <td>Aprobar solicitud</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/approve</code></td>
+      <td><code>requestId</code> (path), <code>resolutionNote</code> (body)</td>
+      <td><code>{"resolutionNote":"Request reviewed"}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"APPROVED","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T04:04:06.174Z","resolutionNote":"Request reviewed"}</code></td>
+      <td>Devuelve la solicitud actualizada como aprobada, incluyendo la nota de resolución y la fecha en que fue atendida.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}</code></td>
+      <td>GET</td>
+      <td>Obtener solicitud por ID</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}</code></td>
+      <td><code>requestId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}</code></td>
+      <td>Devuelve la información detallada de una solicitud específica, incluyendo el estudiante, el solicitante, el estado y los datos de resolución.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/by-requester/{requestedByProfileId}</code></td>
+      <td>GET</td>
+      <td>Obtener solicitudes por solicitante</td>
+      <td><code>/api/v1/data-deletion-requests/by-requester/{requestedByProfileId}</code></td>
+      <td><code>requestedByProfileId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}]</code></td>
+      <td>Devuelve una lista de solicitudes de eliminación de datos realizadas por el perfil indicado, incluyendo sus estados y fechas correspondientes.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Profiles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/profiles</code></td>
+      <td>POST</td>
+      <td>Crear perfil</td>
+      <td><code>/api/v1/profiles</code></td>
+      <td><code>accountId</code>, <code>profileType</code>, <code>firstName</code>, <code>lastName</code> y <code>phoneNumber</code> (body)</td>
+      <td><code>{"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil creado, incluyendo su identificador, la cuenta asociada, el tipo de perfil y los datos personales y de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{profileId}/contact</code></td>
+      <td>PATCH</td>
+      <td>Actualizar contacto del perfil</td>
+      <td><code>/api/v1/profiles/{profileId}/contact</code></td>
+      <td><code>profileId</code> (path), <code>phoneNumber</code> (body)</td>
+      <td><code>{"phoneNumber":"987654321"}</code></td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil con el número telefónico actualizado, manteniendo los demás datos asociados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td>GET</td>
+      <td>Obtener perfil por ID</td>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td><code>profileId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información detallada del perfil correspondiente al identificador proporcionado, incluyendo sus datos personales, tipo de perfil y contacto.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/by-account/{accountId}</code></td>
+      <td>GET</td>
+      <td>Obtener perfil por ID de cuenta</td>
+      <td><code>/api/v1/profiles/by-account/{accountId}</code></td>
+      <td><code>accountId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil asociado al identificador de cuenta especificado, incluyendo sus datos personales y de contacto.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subscriptions
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td>GET</td>
+      <td>Obtener suscripciones por ID de conductor</td>
+      <td><code>/api/v1/subscriptions?driverId={driverId}</code></td>
+      <td><code>driverId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"driverId":1,"planId":1,"status":"ACTIVE","startDate":"2026-11-12","endDate":"2026-12-12","active":true,"vehicleLimit":2}]</code></td>
+      <td>Devuelve una lista de suscripciones asociadas al conductor indicado, incluyendo el plan contratado, estado, fechas de vigencia y límite de vehículos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td>POST</td>
+      <td>Activar suscripción del conductor</td>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td><code>driverId</code> y <code>planId</code> (body)</td>
+      <td><code>{"driverId":1,"planId":1}</code></td>
+      <td><code>{"id":1,"driverId":1,"planId":1,"status":"ACTIVE","startDate":"2026-11-12","endDate":"2026-12-12","active":true,"vehicleLimit":2}</code></td>
+      <td>Devuelve la información de la suscripción activada, incluyendo su identificador, conductor, plan asociado, estado, periodo de vigencia y límite de vehículos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/status</code></td>
+      <td>PATCH</td>
+      <td>Pausar o reanudar suscripción</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/status</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> y <code>status</code> (body).</td>
+      <td><code>{"driverId":1,"status":"SUSPENDED"}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Actualiza el estado de la suscripción del conductor. Los estados permitidos son <code>PENDING</code>, <code>ACTIVE</code>, <code>SUSPENDED</code>, <code>EXPIRED</code> y <code>CANCELLED</code>. No devuelve contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/plan</code></td>
+      <td>PATCH</td>
+      <td>Cambiar plan de suscripción</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/plan</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> y <code>planId</code> (body).</td>
+      <td><code>{"driverId":1,"planId":2}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Actualiza el plan asociado a la suscripción activa del conductor. No devuelve contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/cancel</code></td>
+      <td>PATCH</td>
+      <td>Cancelar suscripción activa</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/cancel</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> (body).</td>
+      <td><code>{"driverId":1}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Realiza la cancelación de la suscripción activa del conductor. No devuelve contenido en la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Routes
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:11%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:15%;">Ejemplo Request</th>
+      <th style="width:19%;">Ejemplo Response</th>
+      <th style="width:15%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>GET</td>
+      <td>Obtener ruta por ID</td>
+      <td><code>GET /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta solicitada, incluyendo sus paradas, estudiantes asignados y programación semanal.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar ruta</td>
+      <td><code>PUT /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"name":"Ruta Surco actualizada","shift":"MORNING","vehicleId":1,"stops":[{"id":1,"address":"Av. Primavera 123"},{"address":"Jr. Las Flores 456"}],"schedule":[],"scheduleConfirmed":false}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información actualizada de la ruta, incluyendo sus paradas y programación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar una ruta</td>
+      <td><code>DELETE /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido)</td>
+      <td>Elimina la ruta indicada mediante su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/schedule</code></td>
+      <td>PUT</td>
+      <td>Configurar programación semanal</td>
+      <td><code>PUT /api/v1/routes/{routeId}/schedule</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"schedule":[{"dayOfWeek":"MONDAY","departureTime":"07:00"}],"confirm":true}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta con la programación semanal actualizada y el estado de confirmación correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>GET</td>
+      <td>Obtener asignaciones de una ruta</td>
+      <td><code>GET /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"stopId":1,"studentId":1}]</code></td>
+      <td>Devuelve las asignaciones de estudiantes a las paradas de la ruta mediante una colección de objetos RouteAssignmentResponse.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>PUT</td>
+      <td>Sincronizar asignaciones de una ruta</td>
+      <td><code>PUT /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>[{"studentId":1,"stopId":1}]</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Actualiza las asignaciones de estudiantes a las paradas de la ruta y devuelve la información actualizada de esta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>POST</td>
+      <td>Asignar estudiante a una ruta</td>
+      <td><code>POST /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"studentId":1,"stopId":1}</code></td>
+      <td><code>{"id":1,"stopId":1,"studentId":1}</code></td>
+      <td>Devuelve la asignación creada, identificando al estudiante y la parada a la que fue asociado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes</code></td>
+      <td>GET</td>
+      <td>Obtener rutas por conductor</td>
+      <td><code>GET /api/v1/routes?driverProfileId={driverProfileId}</code></td>
+      <td><code>driverProfileId</code>: ID del perfil del conductor</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[RouteResponse]</code></td>
+      <td>Devuelve una colección con las rutas asociadas al perfil del conductor indicado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes</code></td>
+      <td>POST</td>
+      <td>Crear una nueva ruta</td>
+      <td><code>POST /api/v1/routes</code></td>
+      <td>Ninguno</td>
+      <td><code>{"driverProfileId":2,"name":"Ruta Surco","shift":"MORNING","vehicleId":1,"stops":[{"address":"Av. Primavera 123"}],"schedule":[{"dayOfWeek":"MONDAY","departureTime":"07:00"}],"scheduleConfirmed":true}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la ruta creada, incluyendo su identificador, conductor, paradas, programación y demás información registrada.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/status</code></td>
+      <td>PATCH</td>
+      <td>Publicar una ruta</td>
+      <td><code>PATCH /api/v1/routes/{routeId}/status</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"status":"PUBLISHED"}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta con su estado actualizado a PUBLISHED, indicando que ha sido publicada.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/eligible-students</code></td>
+      <td>GET</td>
+      <td>Obtener estudiantes elegibles</td>
+      <td><code>GET /api/v1/routes/eligible-students</code></td>
+      <td>N/A</td>
+      <td>N/A (No requiere body)</td>
+      <td>No implementado</td>
+      <td>Endpoint pendiente de integración. Actualmente no cuenta con una respuesta funcional implementada.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Delays
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/delays</code></td>
+      <td>GET</td>
+      <td>Obtener retrasos por viaje</td>
+      <td><code>/api/v1/delays?tripId={tripId}</code></td>
+      <td><code>tripId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}]</code></td>
+      <td>Devuelve una lista de retrasos asociados al viaje indicado, incluyendo la causa, tiempo estimado, estado, identificador del retraso anterior y fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays</code></td>
+      <td>POST</td>
+      <td>Reportar retraso</td>
+      <td><code>/api/v1/delays</code></td>
+      <td><code>tripId</code>, <code>reportedByProfileId</code>, <code>cause</code> y <code>estimatedMinutes</code> (body)</td>
+      <td><code>{"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la información del retraso registrado, incluyendo el viaje asociado, el perfil que lo reportó, la causa, el tiempo estimado, su estado y la fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays/{delayId}/updates</code></td>
+      <td>POST</td>
+      <td>Actualizar retraso</td>
+      <td><code>/api/v1/delays/{delayId}/updates</code></td>
+      <td><code>delayId</code> (path), <code>reportedByProfileId</code>, <code>cause</code> y <code>estimatedMinutes</code> (body)</td>
+      <td><code>{"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":25}</code></td>
+      <td><code>{"id":2,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":25,"status":"ACTIVE","previousDelayId":1,"reportedAt":"2026-11-13T03:30:06.174Z"}</code></td>
+      <td>Devuelve la información del nuevo registro de retraso actualizado, incluyendo su relación con el retraso anterior mediante <code>previousDelayId</code>. El registro anterior puede pasar al estado <code>SUPERSEDED</code>.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays/{delayId}</code></td>
+      <td>GET</td>
+      <td>Obtener retraso por ID</td>
+      <td><code>/api/v1/delays/{delayId}</code></td>
+      <td><code>delayId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la información detallada del retraso correspondiente al identificador proporcionado, incluyendo su causa, tiempo estimado, estado y fecha de registro.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Notifications
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/notifications</code></td>
+      <td>GET</td>
+      <td>Obtener notificaciones</td>
+      <td><code>/api/v1/notifications</code></td>
+      <td>Por confirmar (Parámetros de consulta no proporcionados).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}]</code></td>
+      <td>Devuelve una lista de notificaciones con su categoría, tipo, prioridad, contenido, fecha de creación, estado de lectura y datos relacionados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications</code></td>
+      <td>POST</td>
+      <td>Crear notificación</td>
+      <td><code>/api/v1/notifications</code></td>
+      <td><code>type</code>, <code>priority</code>, <code>title</code>, <code>message</code>, <code>routeId</code>, <code>studentId</code> y <code>recipientProfileId</code> (body).</td>
+      <td><code>{"type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","routeId":1,"studentId":null,"recipientProfileId":null}</code></td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la notificación creada, incluyendo su identificador, categoría, tipo, prioridad, contenido, fecha de creación y estado de lectura.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/student-journeys</code></td>
+      <td>POST</td>
+      <td>Notificar acontecimiento del viaje de un estudiante</td>
+      <td><code>/api/v1/notifications/student-journeys</code></td>
+      <td><code>studentId</code>, <code>routeId</code>, <code>tripId</code>, <code>journeyEvent</code>, <code>title</code>, <code>message</code> y <code>recipientProfileId</code> (body).</td>
+      <td><code>{"studentId":1,"routeId":1,"tripId":1,"journeyEvent":"TRIP_STARTED","title":"Viaje iniciado","message":"El conductor marcó el inicio del recorrido.","recipientProfileId":1}</code></td>
+      <td><code>{"id":2,"category":"STUDENT_JOURNEY","type":"INFO","priority":"REGULAR","title":"Viaje iniciado","message":"El conductor marcó el inicio del recorrido.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":1,"studentId":1,"recipientProfileId":1,"journeyEvent":"TRIP_STARTED"}</code></td>
+      <td>Devuelve la notificación generada para informar a los tutores sobre un acontecimiento del viaje del estudiante, incluyendo los identificadores relacionados y el evento ocurrido.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}/read</code></td>
+      <td>PATCH</td>
+      <td>Marcar notificación como leída</td>
+      <td><code>/api/v1/notifications/{notificationId}/read</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":"2026-11-13T04:04:06.174Z","read":true,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la notificación actualizada como leída, incluyendo la fecha en que fue marcada y conservando su información original.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td>GET</td>
+      <td>Obtener notificación por ID</td>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la información detallada de la notificación correspondiente al identificador proporcionado, incluyendo su contenido, estado de lectura y datos relacionados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar notificación</td>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Elimina la notificación correspondiente al identificador proporcionado. La operación no devuelve contenido en la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Students
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/students/{studentId}</td>
+      <td>GET</td>
+      <td>Obtener estudiante por ID</td>
+      <td><code>GET /api/v1/students/1</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante solicitado, incluyendo sus datos personales y su estado actual.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del estudiante</td>
+      <td><code>PUT /api/v1/students/1</code></td>
+      <td>Path: studentId</td>
+      <td><code>{"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve los datos actualizados del estudiante, incluyendo su identificador y estado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students</td>
+      <td>GET</td>
+      <td>Obtener estudiantes por tutor</td>
+      <td><code>GET /api/v1/students?tutorProfileId=1</code></td>
+      <td>Query: tutorProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}]</code></td>
+      <td>Devuelve una lista con los estudiantes asociados al perfil del tutor indicado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students</td>
+      <td>POST</td>
+      <td>Registrar un nuevo estudiante</td>
+      <td><code>POST /api/v1/students</code></td>
+      <td>Ninguno</td>
+      <td><code>{"tutorProfileId":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","relationshipType":"MOTHER"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante registrado, incluyendo el identificador generado y su estado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors</td>
+      <td>GET</td>
+      <td>Obtener tutores del estudiante</td>
+      <td><code>GET /api/v1/students/1/tutors</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-11-12T10:00:00Z","revokedAt":null}]</code></td>
+      <td>Devuelve una lista de las relaciones de autorización entre el estudiante y sus tutores, incluyendo el tipo de parentesco y el estado de autorización.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors</td>
+      <td>POST</td>
+      <td>Autorizar un tutor</td>
+      <td><code>POST /api/v1/students/1/tutors</code></td>
+      <td>Path: studentId</td>
+      <td><code>{"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante al que se le ha asociado el tutor autorizado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors/{tutorId}/revoke</td>
+      <td>POST</td>
+      <td>Revocar autorización de tutor</td>
+      <td><code>POST /api/v1/students/1/tutors/2/revoke</code></td>
+      <td>Path: studentId, tutorId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER","authorizationStatus":"REVOKED","authorizedAt":"2026-11-12T10:00:00Z","revokedAt":"2026-11-12T11:00:00Z"}</code></td>
+      <td>Devuelve la relación de autorización actualizada, indicando que el acceso del tutor fue revocado y registrando la fecha correspondiente.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-**Publicación de código en rama principal.** El backend se integró a [`web-services/main`](https://github.com/AIpaca-OS/web-services/tree/main) mediante [PR #9](https://github.com/AIpaca-OS/web-services/pull/9), commit `569b520`, y el frontend se integró a [`frontend-web-application/main`](https://github.com/AIpaca-OS/frontend-web-application/tree/main) mediante [PR #19](https://github.com/AIpaca-OS/frontend-web-application/pull/19), commit `18ff617`. La integración GitHub Actions del frontend [completó exitosamente el despliegue de GitHub Pages](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/42960952622). Estos resultados no sustituyen la validación del frontend publicado ni confirman un despliegue de backend en Render.
+Se realizó el despliegue de los servicios backend de Rumbo utilizando la plataforma Render, mediante la cual se publicaron tanto la base de datos PostgreSQL como la aplicación backend encargada de proporcionar los Web Services para el consumo del frontend.
+
+En primer lugar, se creó una instancia de base de datos PostgreSQL en Render, configurando los parámetros necesarios para su creación, como el nombre de la base de datos, el usuario, la región y las credenciales de acceso. Una vez completada la configuración, Render proporcionó los datos de conexión que permitirían establecer la comunicación con la base de datos desde la aplicación backend.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+Posteriormente, se modificó la configuración del backend para reemplazar los parámetros de conexión locales por los correspondientes a la base de datos desplegada en Render. Para ello, se actualizaron los datos de conexión, incluyendo la URL y las credenciales de acceso, de modo que la aplicación pudiera conectarse correctamente al entorno remoto y mantener la persistencia de la información.
+
+Finalmente, se desplegó la aplicación backend en Render, vinculándola con el repositorio de GitHub y configurando los parámetros necesarios para su compilación y ejecución. Una vez finalizado el proceso, se obtuvo una URL pública que permite acceder a los Web Services implementados y realizar solicitudes a los distintos endpoints de la API de Rumbo.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 
-
-La configuración de despliegue abarca los tres productos de Rumbo. La compilación local confirma que el frontend de Routes consume la API a través del proxy de desarrollo. La aplicación requiere integrar autenticación OIDC/JWT y un proxy inverso de mismo origen para la publicación productiva; las credenciales locales no se guardan en el paquete Angular.
-
-| Producto | Repositorio | Dirección / evidencia de despliegue |
-|---|---|---|
-| Landing Page | [AIpaca-OS/landing-page](https://github.com/AIpaca-OS/landing-page) | https://aipaca-os.github.io/landing-page/ |
-| Frontend Web Application | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | [Workflow de despliegue histórico del 07/10/2026](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/37638793104). La versión de Routes de Sprint 3 no está publicada; GitHub Pages tampoco aloja el proxy `/api/v1`. |
-| RESTful Web Services | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | Spring Boot local con PostgreSQL 17 en `127.0.0.1:8080`; no se ha desplegado en un servidor público. |
-| Swagger / OpenAPI | [AIpaca-OS/web-services](https://github.com/AIpaca-OS/web-services) | `http://127.0.0.1:8080/swagger-ui.html` local, comprobado HTTP 200; no tiene dirección pública. |
-| Build de producción Angular | [AIpaca-OS/frontend-web-application](https://github.com/AIpaca-OS/frontend-web-application) | El build local Windows no generó `dist/`; el run [CI #25](https://github.com/AIpaca-OS/frontend-web-application/actions/runs/41507710985) en Ubuntu + Node 22 pasó instalación, pruebas y build. No se desplegó la aplicación ni se publicó un artefacto de producción. |
-
-El workflow de frontend ejecutó las pruebas Angular y el build en Ubuntu al abrir el PR #17 hacia `develop` (run #25, resultado exitoso). La validación visual de Routes permanece pendiente. Las pruebas de las páginas del Landing Page y los enlaces Call-To-Action mantienen su evidencia previa y no forman parte de la integración local Routes.
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 
-**Situación del despliegue para AV2 al 10/11/2026:** la Landing Page mantiene la URL de GitHub Pages consignada anteriormente y el frontend dispone de un workflow de despliegue ejecutado con éxito tras el merge a `main`. No se aporta en estas capturas una comprobación visual de la página ya desplegada. Los endpoints Spring Boot observados en Swagger se sirvieron en `localhost:8080`; no se dispone de una URL de Render verificada para el backend integrado.
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
-En la versión actual, el backend `develop` configura **Java 27** en Maven. El despliegue requiere una imagen o servicio compatible, PostgreSQL disponible y variables de entorno `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`, `PORT`, `CORS_ALLOWED_ORIGINS` y `SPRING_PROFILES_ACTIVE=prod`. Para producción, los flags `app.demo.enabled` y `app.profiles.demo.enabled` deben quedar deshabilitados. Angular necesita una URL de API pública o un proxy inverso real: `proxy.conf.json` solo sirve para el servidor de desarrollo y no se publica con el build.
+### Servicios Desplegados
 
-**Criterio de cierre del despliegue:** comprobar URL accesible fuera de la máquina local, endpoint real de Swagger, conexión a PostgreSQL y frontend consumiendo el backend público. Hasta tener esos resultados no se reemplazarán las referencias de entorno local por enlaces inventados.
+<div align="center">
+  <img src="./assets/chapter5/deployed-services.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
-
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint se evidencia mediante la secuencia de commits, los Pull Requests, el Network Graph y los analíticos de Contributors y Pulse. La explicación relaciona las tareas del Sprint Backlog con el código integrado y con las revisiones efectuadas por otros miembros del equipo.
+La colaboración durante el Sprint 3 se evidencia mediante las métricas de actividad registradas en los repositorios de GitHub correspondientes al Landing Page, Frontend Web Application y Web Services de Rumbo. Estas métricas permiten identificar las contribuciones realizadas por cada integrante del equipo y visualizar el avance en el desarrollo de los distintos Bounded Contexts, tanto en el frontend como en el backend, a través de los commits asociados a los cambios implementados. 
 
-- [Historial de commits del Project Report](https://github.com/AIpaca-OS/project-report/commits)
-- [Pull Requests del Project Report](https://github.com/AIpaca-OS/project-report/pulls)
-- [Network del Project Report](https://github.com/AIpaca-OS/project-report/network)
-- [Pull Requests del Frontend](https://github.com/AIpaca-OS/frontend-web-application/pulls)
-- [Repositorio de Web Services](https://github.com/AIpaca-OS/web-services)
+A continuación, se presenta un resumen de estas métricas junto con las capturas correspondientes.
 
+**Frontend Web Application**
 
-La retrospectiva del equipo se vincula con el video About-the-Team, que complementa estos registros con sesiones de trabajo y testimonios de los integrantes sobre sus responsabilidades, dificultades y aprendizajes.
+El repositorio Frontend Web Application contiene la implementación de la plataforma utilizando Angular. Las siguientes capturas muestran el resumen de actividad, los colaboradores y la red de ramas del repositorio.
 
+**Resumen de actividad (Pulse)**
 
-**Resumen verificable de colaboración, 10/11/2026:** Jira registra **76 incidencias asignadas a los cuatro integrantes activos**: Leonardo (33), Kevin (16), Alejandro (16) y Alexandra (11). Los estados consultados son 8 Listo, 13 En curso y 55 Por hacer. Las cifras describen la distribución y el avance de tickets, **no** horas trabajadas ni número de commits por autor.
+<div align="center">
+  <img src="./assets/chapter5/sprint3-frontend-pulse.jpg" alt="Frontend Pulse" width="95%">
+</div>
 
-El equipo utilizó ramas por funcionalidad y revisiones mediante GitHub. El backend integró Routes mediante [PR #3](https://github.com/AIpaca-OS/web-services/pull/3), Billing mediante [PR #4](https://github.com/AIpaca-OS/web-services/pull/4), un primer conjunto de Profiles mediante [PR #5](https://github.com/AIpaca-OS/web-services/pull/5), Notifications mediante [PR #6](https://github.com/AIpaca-OS/web-services/pull/6) y ampliaciones REST de Profiles mediante [PR #8](https://github.com/AIpaca-OS/web-services/pull/8). El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) no estaba fusionado en la consulta. El frontend de Routes había ingresado a `develop` mediante [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17).
+**Colaboradores (Contributors)**
 
-Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y dependencias entre contextos, especialmente del contrato Routes–Profiles y de la relación entre vehículos, estudiantes y rutas. El trabajo colaborativo se debe sustentar con la autoría real de cada commit y las interacciones efectivamente registradas en Jira/PRs; no se atribuirán cambios que no puedan verificarse a integrantes distintos.
+<div align="center">
+  <img src="./assets/chapter5/sprint3-frontend-contributors.jpg" alt="Frontend Contributors" width="95%">
+</div>
 
-**Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
+**Gráfico de red (Network Graph)**
 
+<div align="center">
+  <img src="./assets/chapter5/sprint3-frontend-network.jpg" alt="Frontend Network Graph" width="95%">
+</div>
 
+<br>
 
+Referencias del repositorio:
+
+- [Frontend Web Application - Commits (develop)](https://github.com/AIpaca-OS/frontend-web-application/commits/develop)
+- [Frontend Web Application - Pull Requests](https://github.com/AIpaca-OS/frontend-web-application/pulls)
+
+<br>
+
+**Web Services**
+
+El repositorio Web Services contiene la implementación del backend utilizando Spring Boot. Las siguientes evidencias presentan la actividad de desarrollo, la distribución de contribuciones entre los integrantes y la estructura de ramas del repositorio.
+
+**Resumen de actividad (Pulse)**
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-backend-pulse.jpg" alt="Backend Pulse" width="95%">
+</div>
+
+**Colaboradores (Contributors)**
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-backend-contributors.jpg" alt="Backend Contributors" width="95%">
+</div>
+
+**Gráfico de red (Network Graph)**
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-backend-network.jpg" alt="Backend Network Graph" width="95%">
+</div>
+
+<br>
+
+Referencias del repositorio:
+
+- [Web Services - Commits (develop)](https://github.com/AIpaca-OS/web-services/commits/develop)
+- [Web Services - Pull Requests](https://github.com/AIpaca-OS/web-services/pulls)
+
+<br>
+
+**Landing Page**
+
+El repositorio Landing Page complementa la aplicación principal mediante la presentación del producto a sus usuarios objetivo. A continuación, se incluye la evidencia disponible sobre las contribuciones de los integrantes.
+
+**Colaboradores (Contributors)**
+
+<div align="center">
+  <img src="./assets/chapter5/sprint3-landing-contributors.jpg" alt="Landing Page Contributors" width="95%">
+</div>
+
+Referencias del repositorio:
+- [Landing Page - Commits (main)](https://github.com/AIpaca-OS/landing-page/commits/main)
+- [Landing Page - Pull Requests](https://github.com/AIpaca-OS/landing-page/pulls)
+
+**Análisis de la colaboración**
+
+Las evidencias de GitHub Insights ofrecen diferentes perspectivas sobre la actividad de desarrollo del equipo. Pulse resume la actividad del repositorio durante un periodo determinado, Contributors identifica las contribuciones asociadas a las cuentas de GitHub y Network Graph permite visualizar la relación entre las ramas y los commits.
+
+Estas visualizaciones deben interpretarse conjuntamente con el historial de commits, los Pull Requests y los registros de Jira. En particular, Network Graph representa el historial del repositorio y las relaciones entre sus ramas, mientras que el historial de commits permite identificar los cambios realizados durante el periodo correspondiente al Sprint 3.
+
+El proceso de desarrollo colaborativo involucró trabajo paralelo en los repositorios de frontend y backend, lo que requirió coordinación en los contratos de API, las dependencias entre los bounded contexts y la integración mediante Pull Requests. Asimismo, la revisión de estas contribuciones permitió destacar la importancia de mantener configuraciones consistentes y validar los cambios antes de incorporarlos a las ramas compartidas de desarrollo.
 
 ## 5.3. Validation Interviews
 
-La validación de Rumbo se estructura alrededor de los segmentos definidos en Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con la Landing Page y con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
-
-El Final Project Statement establece **de tres a cinco entrevistas por segmento**, registradas en video, junto con su evaluación de usabilidad, arquitectura de información y diseño inclusivo. En AV2 se utiliza el formato del Anexo D para describir y clasificar los hallazgos.
+La validación de Rumbo se estructura alrededor de los segmentos definidos en el Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
 
 ### 5.3.1. Diseño de Entrevistas
 
-La sesión inicia con una presentación breve del objetivo y con la autorización de grabación. Después se plantea una situación relacionada con el User Goal correspondiente y se observa cómo el participante intenta completarla. Las preguntas de cierre permiten comprender las dificultades, la interpretación de los mensajes y la percepción de utilidad del producto.
+La sesión inicia con una breve presentación del objetivo de la entrevista y una presentación del entrevistado, que incluye sus nombres y apellidos, edad y distrito de residencia. Después, se le presenta el Landing Page de Rumbo y se le permite interactuar con él.
 
-| Segmento | Objetivo de validación | Tareas vinculadas a User Goals |
-|---|---|---|
-| Padres / tutores | Comprobar si identifican el estado de la movilidad y comprenden los avisos dirigidos a la familia. | Consultar una ruta y localizar información del estudiante; interpretar una notificación cuando la vista correspondiente esté disponible. |
-| Conductores | Examinar la claridad de las opciones para organizar y comunicar eventos del servicio. | Consultar una ruta asignada y registrar o interpretar una incidencia según el flujo disponible. |
+A continuación, se pasa al Frontend, donde se presenta la plataforma al entrevistado y se le pide que interactúe con ella, guiándolo para que explore determinadas pantallas y funcionalidades, como registrar una ruta, revisar la ubicación de su hijo, enviar una notificación, entre otras.
 
-Se registran el dispositivo, el navegador, la versión examinada y las observaciones del evaluador. Las tareas utilizadas en cada sesión deben coincidir con las funciones demostrables del producto.
+Finalmente, después de completar la interacción con la plataforma, se le plantean las preguntas finales correspondientes a su segmento objetivo.
+
+### Preguntas de cierre
+
+#### Padres 
+
+1. ¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
+2. ¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
+3. ¿Te resultó fácil navegar por la plataforma y encontrar la información que necesitabas? ¿Por qué?
+4. ¿Consideras que la información relacionada con la movilidad de tu hijo se presenta de manera clara y comprensible?
+5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
+6.	¿Consideras que las notificaciones y los avisos proporcionados por la plataforma serían útiles para mantenerte informado sobre la movilidad?
+7.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+8. Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para realizar el seguimiento de la movilidad escolar de tu hijo? ¿Por qué?
+
+#### Conductores
+
+1.	¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
+2.	¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
+3.	¿Te resultó fácil navegar por la plataforma y encontrar las opciones que necesitabas? ¿Por qué?
+4.	¿Consideras que la información de tus rutas y estudiantes se presenta de manera clara y organizada?
+5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
+6. ¿Qué funcionalidades de la plataforma te parecieron más útiles para gestionar tu servicio de movilidad?
+7.	¿Consideras que las opciones para registrar incidencias y comunicar retrasos serían útiles durante tus recorridos?
+8.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+9.	Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para gestionar tu servicio de movilidad escolar? ¿Por qué?
 
 ### 5.3.2. Registro de Entrevistas
 
-Cada sesión incluye nombres y apellidos, edad, distrito, User Persona, fecha, captura representativa del video, el enlace a Microsoft Stream y el tiempo de inicio y duración dentro del video consolidado. El registro descriptivo recoge las apreciaciones del participante frente a las tareas realizadas.
+A continuación, se registran todas las entrevistas de validación realizadas a ambos segmentos objetivos, incluyendo los datos relevantes de cada una, como el nombre del entrevistado, edad, distrito de residencia, duración del video, tiempo de inicio, entre otros. Además, se incluye un breve resumen de los puntos más importantes identificados durante cada entrevista.
 
-**Registro AV2:** no se presentan fichas de Validation Interviews porque no se adjuntaron grabaciones, participantes ni resultados verificables. Se conserva la metodología de registro descrita arriba, sin agregar filas vacías.
+#### Entrevista 1 — Gabriela Salazar
+
+* **Edad:** 32 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Miraflores.
+* **Duración:** 07:19.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQD1AXwvDziBQJNjfqVNiPQWAeYMA26BAQOBC1tyKe_D9nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyIsInJlZmVycmFsVmlldyI6IlNoYXJlRGlhbG9nLUxpbmsiLCJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCJ9fQ%3D%3D&e=VWo0MB).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/40242b97-6671-4d6b-bff3-e4ff599c3349" alt="Captura de la entrevista a Gabriela Salazar" width="850"/></p>
+
+**Resumen:** Gabriela Salazar tiene 32 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus experiencias relacionadas con el transporte escolar de su sobrino de 8 años, especialmente los problemas ocasionados por retrasos mecánicos que no son comunicados oportunamente. Asimismo, destacó la importancia de evitar que el conductor manipule el celular mientras conduce, indicando que debería utilizarlo únicamente cuando se encuentre estacionado. Entre las funcionalidades de mayor interés se encuentra el rastreo en vivo de la movilidad. Respecto a la disposición de pago, considera viable un rango de S/ 15 a S/ 25 mensuales, siempre que pueda acceder previamente a un periodo de prueba gratuito.
 
 
+#### Entrevista 2 — Alejandro Choquehuanca
+
+* **Edad:** 34 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Surco.
+* **Duración:** 05:10.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQCneF6uJQneSbuVfMMPEvfKAdcXTo1sHeUy-SGF28JiP3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAifX0%3D&e=f5sdCh).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/2849ea94-a155-45c8-a9bd-2bb7d75106e3" alt="Captura de la entrevista a Alejandro" width="850"/></p>
+
+**Resumen:** Alejandro tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones como padre de un niño de 6 años que utiliza transporte escolar en Surco. Entre sus preocupaciones se encuentra la distracción del conductor ocasionada por las llamadas de otros padres durante el trayecto. También manifestó interés en contar con un mapa en tiempo real que permita conocer la ubicación de la movilidad y reducir el tiempo de espera en la calle. Asimismo, considera importante recibir alertas cuando el estudiante ingresa al colegio y contar con mecanismos de verificación de la situación legal del conductor. Respecto a la disposición de pago, considera viable una suscripción mensual de S/ 15 a S/ 25.
+
+#### Entrevista 3 — Eduardo Osorio
+
+* **Edad:** 34 años.
+* **Ocupación / segmento:** Padre / Tutor.
+* **Distrito:** Magdalena.
+* **Duración:** 03:26.
+* **Timing de inicio:** 00:00.
+* **Video:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422589_upc_edu_pe/IQDjMXK3n4smQaWYxZ2qTvKkAShiPN2nP5lMf1iIen8ONyA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IlNoYXJlRGlhbG9nLUxpbmsiLCJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCJ9fQ%3D%3D&e=HlhpOR).
+
+<p align="center"><img src="https://github.com/user-attachments/assets/30d1f42e-a634-4644-8e95-b447051ef6ee" alt="Captura de la entrevista a Eduardo Osorio" width="850"/></p>
+
+**Resumen:** Eduardo tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones respecto al transporte escolar de su hijo de 4 años, quien se encuentra en inicial. Entre sus principales problemas se encuentra la ansiedad generada por la falta de visibilidad del trayecto, especialmente cuando ocurren averías imprevistas durante el recorrido. Manifestó interés en recibir alertas automáticas relacionadas con el abordaje del menor, incluyendo la confirmación de que viaje con el cinturón de seguridad puesto y que sea entregado correctamente a la profesora. Asimismo, considera valioso contar con información que le permita evitar la espera en la vereda. Respecto a la disposición de pago, acepta un rango de S/ 15 a S/ 25 mensuales.
+
+
+#### Entrevista 4 — Gabriel Alexandro Sosa Guevara
+
+- **Edad:** 20 años.
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:** 2 años.
+- **Distrito:** Los Olivos.
+- **Duración:** 09:51.
+- **Timing de inicio:** 00:00.
+- **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** Gabriel cuenta con 2 años de experiencia realizando transporte escolar. Utiliza diariamente su teléfono para trabajar y principalmente usa WhatsApp para comunicarse con las familias y Google Maps para organizar sus rutas. Comenta que uno de los problemas que presenta es tener la información fragmentada en distintos chats, lo que hace poco práctico buscar entre conversaciones para verificar si un estudiante será recogido o consultar la dirección de un punto de llegada alternativo. Además, menciona que es repetitivo responder diariamente las preguntas de los padres sobre cuánto falta para que llegue su hijo, si la movilidad se encuentra cerca o si el estudiante se encuentra bien, ya que esto puede distraerlo mientras conduce. También considera que, en caso de utilizar una aplicación, esta debería ser fácil y rápida de utilizar para no quitarle tiempo durante la conducción. Entre las funcionalidades que considera útiles se encuentran una lista de alumnos, el orden de recojo y la posibilidad de registrar rápidamente cuándo recoge o entrega a un estudiante. Asimismo, le gustaría que los padres puedan visualizar el estado de la ruta y su ubicación para mantenerse informados sin necesidad de comunicarse constantemente con él.
+
+#### Entrevista 5 — Brayan Solorzano Pineda
+
+- **Edad:** 25 años.
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:** 5 años.
+- **Distrito:** Pueblo Libre.
+- **Duración:** 09:05.
+- **Timing de inicio:** 00:00.
+- **Video:** [Conductor 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQDViGOQ_7GOQYDKI1MqVAXNAacWQv3o8bRMqBJbKkhsKp8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6tRx0m).
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/brayan-solorzano-interview.png" alt="Captura de la entrevista a Brayan Solorzano Pineda" width="850"/></p>
+
+**Resumen:** Brayan cuenta con 5 años de experiencia en el rubro. Comenzó trabajando en transporte personal, pero luego se trasladó al rubro del transporte escolar. Utiliza un grupo de WhatsApp para enviar avisos a los padres; sin embargo, los tutores prefieren escribirle por privado. Además, utiliza Waze para evitar el tráfico y el calendario de su teléfono para recordar horarios especiales. Ha tenido problemas para recordar cambios en las rutas debido a modificaciones en el recojo de un alumno, especialmente porque varios padres le escriben. Diariamente, los padres también le preguntan si ya se encuentra cerca o si los niños ya llegaron a la escuela, lo cual considera repetitivo. Comenta que durante la conducción no utilizaría una aplicación. Sin embargo, le sería útil contar con un registro del inicio del recorrido, la hora de recojo de cada alumno y la hora de llegada a la escuela. También considera útil registrar cuando un alumno no será recogido. En general, considera que una aplicación debería ayudarlo a organizar los cambios y permitir que los padres puedan seguir la ruta sin necesidad de preguntarle constantemente. No utilizaría una aplicación que lo obligue a realizar muchas acciones manualmente o que tenga un costo muy elevado. Como característica adicional, le gustaría que pudiera utilizarse en zonas donde existe poca señal.
+
+#### Entrevista 6 — Vilma Hoyos Martinez
+
+- **Edad:** 56 años.
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:** 25 años.
+- **Distrito:** San Miguel.
+- **Duración:** 18:14.
+- **Timing de inicio:** 00:06.
+- **Video:** [Conductor 3.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b451_upc_edu_pe/IQAarNiMmGEZT73ZVhSkpNMNAVFqyptTBINEQvTJU6AW7BY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=asjxgo).
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/conductor-3.png" alt="Captura de la entrevista a Vilma Hoyos" width="850"/></p>
+
+**Resumen:** Vilma cuenta con 25 años de experiencia en el rubro de la movilidad escolar. Empezó llevando a estudiantes del colegio San Toribio, en el Rímac, hace 10 años y actualmente está a cargo de 26 niños en San Miguel, a quienes lleva a los colegios Claretiano y Los Rosales. La señora Vilma cuenta con un ayudante, quien utiliza la aplicación WhatsApp para comunicarse con las familias, coordinar horarios, llamar para avisar que deben bajar, informar si el niño asistirá, si necesita esperar y compartir su ubicación en tiempo real. Ha presentado problemas con la puntualidad de los niños y con la coordinación con los padres respecto a si los niños serán recogidos o no. Comenta que tiene conocimientos casi nulos en tecnología. Los padres le han recomendado utilizar algunas aplicaciones para poder realizar un mejor seguimiento del recorrido de sus hijos, pero menciona que no sabe cómo utilizarlas y, por ese motivo, no las implementa.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation** del Anexo D, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
+Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation**, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
 
 La escala de severidad indicada por el enunciado comprende cuatro niveles: **1, superficial; 2, menor; 3, mayor; 4, muy grave**. La calificación se sustenta en la frecuencia y el impacto de la dificultad para el usuario.
-
-**Resultados AV2:** no se aportaron fichas de evaluación heurística con observaciones verificadas; por tanto, no se incluyen tablas de hallazgos vacías.
-
-La comparación entre sesiones aporta criterios para priorizar cambios sobre las experiencias web. Los hallazgos se relacionan con modificaciones identificables y con su registro en la evolución del producto.
-
-
-**Estado de recopilación AV2:** la tabla V01–V06 anterior es una **plantilla** de sesiones; no contiene resultados ni participantes confirmados. La validación deberá realizarse con los dos segmentos objetivo y registrarse con autorizaciones, fechas, URL de video, tareas, observaciones y evaluación de heurísticas. No se sustituirá la entrevista real con capturas del prototipo, respuestas creadas para la demostración ni testimonio de un integrante del equipo.
-
-Para conectar la investigación con las funciones desarrolladas, se propone que los **conductores** intenten configurar una ruta, añadir paradas, asociar vehículo y entender cuándo es posible publicar; los **tutores**, registrar o identificar a un estudiante y consultar la información disponible sobre un traslado y sus avisos. Las tareas que aún dependan de autorización o APIs no integradas deberán informarse como prototipo o flujo parcial.
-
-
 
 ## 5.4. Video About-the-Product
 
 El video About-the-Product presenta la propuesta de Rumbo a los visitantes y usuarios de la plataforma. Su narrativa parte de la necesidad de comunicación durante el traslado escolar, explica los beneficios para padres y conductores y muestra escenas de interacción con las principales funciones del producto. El mensaje, la identidad visual y el tono se mantienen alineados con el Landing Page.
 
-Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres minutos**, incluye **al menos una opinión por segmento objetivo** y se publica en **Microsoft Stream y YouTube**. La versión de YouTube se integra en una sección del Landing Page. Para AV2, el enunciado solicita la **primera versión publicada** del video. El porcentaje concreto de edición y la publicación deberán acreditarse únicamente con la versión y el enlace efectivamente disponibles; no se declarará una publicación por contar con el guion.
+**URL del video About-the-Team publicado en YouTube:** https://www.youtube.com/watch?v=myYY6wuao8E
 
-| Secuencia | Contenido |
-|---|---|
-| Presentación | Problema de la coordinación del transporte escolar y propuesta de Rumbo. |
-| Beneficios | Información de rutas, hitos del traslado y comunicación de incidencias para los dos segmentos. |
-| Demostración | Grabación de la aplicación con los User Flows que forman parte de la versión presentada. |
-| Testimonios | Opiniones de participantes reales de las entrevistas de validación, al menos una por segmento. |
-| Cierre | Identidad de AIpaca/Rumbo e invitación a conocer la plataforma. |
+<div align="center">
+  <img src="./assets/chapter5/video-about-the-product.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
 
-
-
-
-
+<br>
+<br>
 
 # Conclusiones
 
@@ -3467,29 +5068,23 @@ Desde la coordinación del equipo, se ha mantenido el registro de responsables e
 
 El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
 
-La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de sesiones de trabajo reales, explicación de la coordinación y una retrospectiva del Sprint, seguidas de testimonios ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C del enunciado, la **referencia** es de cinco minutos de retrospectiva grupal más un minuto por integrante (aproximadamente nueve minutos en total). El equipo ha preparado una versión abreviada como borrador de edición; si utiliza una duración inferior, corresponde confirmar su aceptación con el docente. La duración, los timestamps y el nivel de edición solo se documentarán como hechos una vez grabado y publicado el video. La identidad visual, voz en off y escenas de reuniones deben corresponder a material real.
+**URL del video About-the-Product publicado en YouTube:** https://www.youtube.com/watch?v=RQ0Z-Gsg2tA
 
-**Estado de publicación AV2:** no se adjuntaron archivos de video ni enlaces verificables de Microsoft Stream o YouTube. Se conserva a continuación una pauta de grabación como propuesta, no como evidencia publicada.
+| Sección                   | Timing          |
+| ------------------------- | --------------- |
+| Testimonio Alexandra Meza | `00:00 - 02:24` |
+| Testimonio Kevin Geronimo | `02:25 - 04:50` |
+| Testimonio Alejandro Diaz | `04:51 - 06:44` |
+| Testimonio Leonardo Lino  | `06:45 - 08:38` |
 
-**Pauta de edición preliminar para un video abreviado** (no es la duración oficial sugerida en el enunciado; los tiempos definitivos se anotarán tras montar el video):
+<br>
 
-| Tramo propuesto | Narración / cuadro | Evidencia que debe insertarse |
-|---|---|---|
-| `00:00–00:20` | Presentación de AIpaca, Rumbo y del objetivo del transporte escolar. | Logo, Landing Page y presentación de participantes. |
-| `00:20–01:30` | Trabajo colaborativo y retrospectiva: Jira, GitHub, organización por contextos, problemas de integración y mejoras. | Sesiones reales del equipo, tableros, PRs y código, con voz en off. |
-| `01:30–02:15` | Leonardo: Routes & Trip Planning y coordinación de avances. | Frente a cámara; formulario Angular, paradas, horarios, API Spring Boot y Jira. |
-| `02:15–02:55` | Kevin: Subscriptions & Billing. | Frente a cámara; funcionalidad y pruebas que pueda acreditar. |
-| `02:55–03:35` | Alejandro: Profiles, estudiantes y relaciones. | Frente a cámara; formularios y relaciones con rutas, sin mostrar datos privados reales. |
-| `03:35–04:15` | Alexandra: Alerting, incidencias y notificaciones. | Frente a cámara; funcionalidades comprobables y decisiones de comunicación. |
-| `04:15–04:30` | Cierre: competencias aprendidas y objetivos pendientes. | Plano de equipo o identidad de Rumbo. |
+<div align="center">
+  <img src="./assets/chapter5/video-about-the-team.png" alt="Video About-the-Team" width="95%">
+</div>
 
-**Síntesis del testimonio de Leonardo (guion orientativo):** presentación personal y responsabilidad en Routes & Trip Planning; creación/edición de recorridos, paradas ordenadas, horarios y asignaciones; uso de Angular, Spring Boot, PostgreSQL y OpenAPI; dificultad de conectar los componentes y resolver la validación intercontexto de Profiles; seguimiento de tareas en Jira y coordinación de las dependencias del equipo; aprendizajes en arquitectura, APIs REST, resolución de problemas y comunicación. Evitar afirmar que la seguridad, los avisos productivos o el despliegue están completados sin evidencia.
-
-**Vinculación con ABET Student Outcome 3:** cada testimonio describe acciones personales verificables y comunica ante una audiencia no especializada qué problema se intentó resolver, qué metodología se aplicó, qué se aprendió y qué falta mejorar. El reporte se completa con el guion y los tiempos reales después de la edición.
-
-**Nombre de archivo requerido (Sprint 3):** `upc-pre-202620-1asi0729-7760-aipaca-about-the-team-sprint-3.mp4`.
-
-
+<br>
+<br>
 
 # Bibliografía
 
@@ -3547,3 +5142,4 @@ Los siguientes archivos **ya están en este repositorio** y se incorporaron como
 - https://github.com/AIpaca-OS/landing-page
 - https://github.com/AIpaca-OS/frontend-web-application
 - https://github.com/AIpaca-OS/web-services
+
