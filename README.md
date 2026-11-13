@@ -2232,6 +2232,57 @@ Posteriormente, se configuró GitHub Pages desde la sección Settings > Pages de
   <img src="./assets/chapter5/deploy-fronted-pages.png" alt="Configuración del apartado de Github Pages del Repositorio de Web Frontend Application" width="95%">
 </div>
 
+#### Web Services
+
+Se realizó el despliegue de los servicios backend de Rumbo utilizando la plataforma Render, mediante la cual se publicaron tanto la base de datos PostgreSQL como la aplicación backend encargada de proporcionar los Web Services para el consumo del frontend.
+
+| Configuración | Valor |
+|---|---|
+| Repository | `AIpaca-OS/web-services` |
+| Branch publicada | `main` |
+| URL de Render | https://web-services-gjgh.onrender.com/swagger-ui/index.html#/ |
+
+En primer lugar, se creó una instancia de base de datos PostgreSQL en Render, configurando los parámetros necesarios para su creación, como el nombre de la base de datos, el usuario, la región y las credenciales de acceso. Una vez completada la configuración, Render proporcionó los datos de conexión que permitirían establecer la comunicación con la base de datos desde la aplicación backend.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+Posteriormente, se modificó la configuración del backend para reemplazar los parámetros de conexión locales por los correspondientes a la base de datos desplegada en Render. Para ello, se actualizaron los datos de conexión, incluyendo la URL y las credenciales de acceso, de modo que la aplicación pudiera conectarse correctamente al entorno remoto y mantener la persistencia de la información.
+
+Finalmente, se desplegó la aplicación backend en Render, vinculándola con el repositorio de GitHub y configurando los parámetros necesarios para su compilación y ejecución. Una vez finalizado el proceso, se obtuvo una URL pública que permite acceder a los Web Services implementados y realizar solicitudes a los distintos endpoints de la API de Rumbo.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+### Servicios Desplegados
+
+<div align="center">
+  <img src="./assets/chapter5/deployed-services.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -3113,6 +3164,97 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
 
 <br>
 
+
+<table>
+<thead>
+<tr><th>Sprint #</th><th colspan="7">Sprint 3</th></tr>
+<tr><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
+<tr>
+<th>Story Id</th><th>Story Title</th><th>Task Id</th><th>Task Title</th><th>Task Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td rowspan="2">US-21</td><td rowspan="2">Definir el horario de la ruta</td><td>T01</td><td>Define Route Schedule Structure</td><td>Definir la estructura de datos necesaria para almacenar los horarios de las rutas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T02</td><td>Implement Route Schedule Configuration</td><td>Implementar la funcionalidad para registrar y configurar los horarios de las rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-22</td><td rowspan="2">Asignar estudiantes a una ruta</td><td>T03</td><td>Implement Student Assignment Logic</td><td>Implementar la lógica para asociar estudiantes con sus respectivas rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T04</td><td>Validate Route Assignments</td><td>Implementar validaciones para verificar la correcta asignación de estudiantes a las rutas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-28</td><td rowspan="2">Endpoints del RESTful API para Route & Trip Planning</td><td>T05</td><td>Implement Route Management Endpoints</td><td>Desarrollar endpoints RESTful para crear, consultar y actualizar rutas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T06</td><td>Implement Trip Planning Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las operaciones de planificación de viajes.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-23</td><td rowspan="2">Publicar una ruta</td><td>T07</td><td>Implement Route Publishing Service</td><td>Implementar el servicio encargado de publicar las rutas previamente configuradas.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T08</td><td>Implement Route Publishing Endpoint</td><td>Crear el endpoint que permita publicar rutas y actualizar su estado.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-24</td><td rowspan="2">Modificar una ruta publicada</td><td>T09</td><td>Implement Route Update Service</td><td>Desarrollar el servicio para modificar la información de las rutas publicadas.</td><td>3</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T10</td><td>Implement Route Update Validations</td><td>Implementar validaciones para garantizar la consistencia de los datos al modificar una ruta.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-38</td><td rowspan="2">Reportar la ausencia del estudiante</td><td>T11</td><td>Implement Student Absence Registration</td><td>Implementar la funcionalidad para registrar las ausencias de los estudiantes.</td><td>3</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T12</td><td>Implement Absence Management</td><td>Gestionar la información de las ausencias y asociarla con los estudiantes correspondientes.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-26</td><td rowspan="2">Programar el viaje de la jornada</td><td>T13</td><td>Implement Daily Trip Creation</td><td>Desarrollar la funcionalidad para crear viajes diarios a partir de las rutas configuradas.</td><td>3</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T14</td><td>Implement Trip Scheduling Validations</td><td>Implementar validaciones para verificar los horarios y la información de los viajes programados.</td><td>2</td><td>Leonardo Lino</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-27</td><td rowspan="2">Cancelar un viaje</td><td>T15</td><td>Implement Trip Cancellation Service</td><td>Desarrollar el servicio encargado de cancelar los viajes programados.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+<tr><td>T16</td><td>Implement Trip Status Updates</td><td>Actualizar el estado de los viajes y validar las condiciones necesarias para su cancelación.</td><td>2</td><td>Leonardo Lino</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-14</td><td rowspan="2">Registrar estudiante y vincularse como tutor</td><td>T17</td><td>Implement Student Registration</td><td>Desarrollar la funcionalidad para registrar nuevos estudiantes en la plataforma.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T18</td><td>Implement Tutor-Student Relationship</td><td>Implementar la funcionalidad para vincular estudiantes con sus respectivos tutores.</td><td>2</td><td>Alejandro Díaz</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-51</td><td rowspan="2">Habilitar el acceso de un asistente</td><td>T19</td><td>Implement Assistant Registration</td><td>Desarrollar la funcionalidad para registrar asistentes en la plataforma.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+<tr><td>T20</td><td>Implement Assistant Access Permissions</td><td>Configurar y validar los permisos de acceso de los asistentes.</td><td>3</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-36</td><td rowspan="2">Endpoints del RESTful API para Profiles & Relationship Management</td><td>T21</td><td>Implement Profile Management Endpoints</td><td>Desarrollar endpoints RESTful para consultar y actualizar los perfiles de usuario.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+<tr><td>T22</td><td>Implement Relationship Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las relaciones entre usuarios.</td><td>3</td><td>Alejandro Díaz</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-58</td><td rowspan="2">Endpoints del RESTful API para Subscriptions & Billing</td><td>T23</td><td>Implement Subscription Management Endpoints</td><td>Desarrollar endpoints RESTful para la creación y gestión de suscripciones.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T24</td><td>Implement Billing Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las operaciones de facturación y pagos.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-18</td><td rowspan="2">Activar la suscripción del conductor</td><td>T25</td><td>Implement Driver Subscription Activation</td><td>Desarrollar el servicio para activar la suscripción de un conductor.</td><td>3</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T26</td><td>Implement Subscription Status Validation</td><td>Implementar validaciones del estado de las suscripciones y sus condiciones de activación.</td><td>2</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-08</td><td rowspan="2">Conocer la propuesta de valor de Rumbo</td><td>T27</td><td>Design Value Proposition Section</td><td>Estructurar la sección de la Landing Page destinada a presentar la propuesta de valor de Rumbo.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T28</td><td>Implement Value Proposition Content</td><td>Implementar visualmente el contenido que describe los principales beneficios de Rumbo.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-10</td><td rowspan="2">Consultar el contenido en inglés o español</td><td>T29</td><td>Implement Language Selection Component</td><td>Desarrollar el componente de interfaz para seleccionar el idioma de la plataforma.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T30</td><td>Configure English and Spanish Translations</td><td>Configurar e integrar las traducciones del contenido en inglés y español.</td><td>2</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-09</td><td rowspan="2">Identificar los beneficios de mi segmento e ingresar a Rumbo</td><td>T31</td><td>Implement Audience Segmentation Section</td><td>Desarrollar la sección de la Landing Page que presenta los beneficios para cada segmento objetivo.</td><td>2</td><td>Kevin Geronimo</td><td>Done</td></tr>
+<tr><td>T32</td><td>Implement Platform Access Links</td><td>Implementar enlaces de navegación que permitan a los usuarios acceder a la plataforma.</td><td>1</td><td>Kevin Geronimo</td><td>Done</td></tr>
+
+<tr><td rowspan="2">US-11</td><td rowspan="2">Consultar los documentos legales del servicio</td><td>T33</td><td>Implement Legal Documents Section</td><td>Desarrollar la sección destinada a mostrar la documentación legal del servicio.</td><td>1</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+<tr><td>T34</td><td>Integrate Legal Document Links</td><td>Configurar los enlaces para acceder a los documentos legales correspondientes.</td><td>1</td><td>Kevin Geronimo</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-12</td><td rowspan="2">Resolver dudas antes de usar Rumbo</td><td>T35</td><td>Design Frequently Asked Questions Section</td><td>Estructurar la sección de preguntas frecuentes de acuerdo con las dudas comunes de los usuarios.</td><td>1</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+<tr><td>T36</td><td>Implement FAQ Content and Interactions</td><td>Implementar las preguntas, respuestas y elementos de interacción de la sección de preguntas frecuentes.</td><td>2</td><td>Kevin Geronimo</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-19</td><td rowspan="2">Consultar la información declarada del conductor</td><td>T37</td><td>Implement Driver Information Retrieval</td><td>Desarrollar la funcionalidad para recuperar la información declarada del conductor.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+<tr><td>T38</td><td>Implement Driver Information Display</td><td>Implementar la visualización de la información del conductor en la interfaz correspondiente.</td><td>2</td><td>Alejandro Díaz</td><td>In-Process</td></tr>
+
+<tr><td rowspan="2">US-30</td><td rowspan="2">Resolver una incidencia</td><td>T39</td><td>Implement Incident Resolution Logic</td><td>Desarrollar la funcionalidad para gestionar y actualizar las incidencias reportadas.</td><td>3</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T40</td><td>Implement Incident Status Tracking</td><td>Implementar el seguimiento de los estados de las incidencias durante su proceso de resolución.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-29</td><td rowspan="2">Registrar un retraso</td><td>T41</td><td>Implement Delay Registration</td><td>Desarrollar la funcionalidad para registrar los retrasos del servicio de transporte.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T42</td><td>Implement Delay Information Management</td><td>Gestionar los detalles de los retrasos y asociarlos con la ruta o viaje correspondiente.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-16</td><td rowspan="2">Registrar una incidencia</td><td>T43</td><td>Implement Incident Registration</td><td>Desarrollar la funcionalidad para registrar incidencias dentro de la plataforma.</td><td>3</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T44</td><td>Implement Incident Data Validation</td><td>Implementar validaciones de la información de las incidencias antes de su registro.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-20</td><td rowspan="2">Endpoints del RESTful API para Vehicle & Credential Management</td><td>T45</td><td>Implement Vehicle Management Endpoints</td><td>Desarrollar endpoints RESTful para el registro y la gestión de vehículos.</td><td>3</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+<tr><td>T46</td><td>Implement Credential Management Endpoints</td><td>Desarrollar endpoints RESTful para gestionar las credenciales de vehículos y usuarios.</td><td>3</td><td>Alejandro Díaz</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-39</td><td rowspan="2">Registrar los hitos de una parada</td><td>T47</td><td>Implement Stop Milestone Registration</td><td>Desarrollar la funcionalidad para registrar los hitos asociados a las paradas de una ruta.</td><td>3</td><td>Leonardo Lino</td><td>To-do</td></tr>
+<tr><td>T48</td><td>Implement Stop Milestone Tracking</td><td>Implementar el seguimiento y actualización de los hitos registrados en cada parada.</td><td>3</td><td>Leonardo Lino</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-17</td><td rowspan="2">Configurar las preferencias de notificación</td><td>T49</td><td>Implement Notification Preferences Management</td><td>Desarrollar la funcionalidad para configurar y gestionar las preferencias de notificación de los usuarios.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+<tr><td>T50</td><td>Implement Notification Preference Validation</td><td>Implementar validaciones y aplicar las preferencias de notificación configuradas por los usuarios.</td><td>2</td><td>Alexandra Meza</td><td>To-do</td></tr>
+
+<tr><td rowspan="2">US-15</td><td rowspan="2">Crear una ruta con sus paradas</td><td>T51</td><td>Define Route Model and MockAPI Infrastructure</td><td>Definir el modelo Route y configurar la infraestructura necesaria para gestionar las rutas mediante MockAPI.</td><td>5</td><td>Leonardo Lino</td><td>Done</td></tr>
+<tr><td>T52</td><td>Implement Route Store, List and Form</td><td>Implementar el store de rutas, el listado, el formulario de registro y la navegación correspondiente.</td><td>12</td><td>Leonardo Lino</td><td>Done</td></tr>
+</tbody>
+</table>
+
+
 #### 5.2.3.4. Development Evidence for Sprint Review
 
 En esta sección se presentan las evidencias del desarrollo realizado durante el Sprint 3, cuyo objetivo principal fue completar la versión final del frontend web application de la plataforma Rumbo y desarrollar el 40 % de los web services que consumirá. Asimismo, se documenta, mediante commits, el desarrollo de todos los componentes correspondientes al sprint, incluyendo los cambios realizados en los distintos repositorios: Landing Page, frontend web application y web services.
@@ -3136,13 +3278,13 @@ En primer lugar, se presentan las nuevas secciones implementadas en la Landing P
 ### Sección About-the-Product
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/sprint3-about-the-product.png" alt="Sección About-the-Product en la Landing Page" width="95%">
 </div>
 
 ### Sección About-the-Team
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/sprint3-about-the-team.png" alt="Sección About-the-Team en la Landing Page" width="95%">
 </div>
 
 <br>
@@ -3165,160 +3307,1309 @@ En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplic
 #### Inicio
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-home.png" alt="Pagina principal de los Conductores" width="95%">
 </div>
 
 #### Estudiantes
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-students.png" alt="Panel de Estudiantes de los Conductores" width="95%">
+</div>
+
+#### Vehicles
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-vehicles-dashboard.png" alt="Panel de Vehiculos del Conductor" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-vehicle.png" alt="Registrar un nuevo vehiculo" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-edit-vehicle.png" alt="Editar la información de un vehiculo" width="95%">
 </div>
 
 #### Rutas
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-routes-dashboard.png" alt="Panel de rutas creadas por los Conductores" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-1.png" alt="Paso 1 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-2.png" alt="Paso 2 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-3.png" alt="Paso 3 para crear una ruta" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-create-route-4.png" alt="Paso 4 para crear una ruta" width="95%">
 </div>
 
 #### Notificaciones
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-notifications.png" alt="Panel de las Notificaciones recibidas" width="95%">
 </div>
 
 #### Plan y facturación
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-plans.png" alt="Panel de Planes disponibles" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-change-subscription.png" alt="Panel para cambiar de plan de subscripcion" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-driver-cancel-subscription.png" alt="Dialogo de cancelación de Subscripcion" width="95%">
 </div>
 
 #### Configuración
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-driver-settings.png" alt="Panel de configuración de los Conductores" width="95%">
 </div>
-
 
 ### Rumbo: Tutores
 
 #### Inicio
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-tutor-home.png" alt="Pagina Principal de los Tutores" width="95%">
 </div>
 
 #### Viaje Actual
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-tutor-current-trip.png" alt="Panel viajes en curso del Estudiante" width="95%">
 </div>
 
 #### Notificaciones
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-tutor-notifications.png" alt="Panel de notificaciones de los Tutores" width="95%">
 </div>
 
 #### Estudiantes
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-tutor-students-dashboard.png" alt="Panel de Estudiantes de los Tutores" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-new-student.png" alt="Registro de un estudiante" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-student-information.png" alt="Pagina de visualización de la información de un Estudiante" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/execution-tutor-edit-student.png" alt="Editar la información de un Estudiante" width="95%">
 </div>
 
 #### Configuración
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter5/execution-tutor-settings.png" alt="Panel de configuración de los Tutores" width="95%">
 </div>
 
 <br>
 
 Por último, se presenta Swagger, donde se documentan todos los endpoints implementados durante este sprint. Estos ya se encuentran integrados con el frontend y permiten realizar la persistencia de los datos de la plataforma.
 
-**URL pública de los Web Services:** https://rumbo-team-backend.onrender.com/swagger-ui/index.html
+**URL pública de los Web Services:** https://web-services-gjgh.onrender.com/swagger-ui/index.html#/
 
 **URL pública del Repositorio de los Web Services:** https://github.com/AIpaca-OS/web-services
+
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Swagger de Rumbo Web Services" width="95%">
+</div>
 
 ### Plans
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
-</div>
-
-### Profiles
-
-<div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
 </div>
 
 ### Service Enrollments
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
 </div>
 
-### Service Enrollments
+### Incidents
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
-</div>
-
-### Service Enrollments
-
-<div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
-</div>
-
-### Data Deletion Requests
-
-<div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
-</div>
-
-### Routes
-
-<div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
 </div>
 
 ### Trips
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
 </div>
 
-### Subscriptions 
+### Vehicles
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
 </div>
 
-### Students
+### Data Deletion Requests
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+</div>
+
+### Profiles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
+</div>
+
+### Subscriptions
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
+</div>
+
+### Routes
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
+</div>
+
+### Delays
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
 </div>
 
 ### Notifications
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
+</div>
+
+### Students
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
 </div>
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2 se implementaron **Fake REST APIs** utilizando **MockAPI** como herramienta para simular la persistencia de datos y los servicios del backend. Esta solución permitió publicar los diferentes endpoints REST y facilitar su consumo desde la aplicación web de Rumbo, posibilitando la integración y prueba de las operaciones de gestión de datos.
+Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Services para permitir el consumo de sus funcionalidades desde el frontend y garantizar la persistencia de los datos, en esta sección se documentan todos los endpoints implementados, incluyendo sus sintaxis de llamada, parámetros, ejemplos de solicitudes y demás detalles necesarios para su utilización.
 
-A continuación, se presenta la documentación de los endpoints implementados, detallando sus métodos HTTP, sintaxis de llamada, parámetros, ejemplos de solicitudes y respuestas, así como la descripción de las operaciones disponibles.
+### Plans
 
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/plans</code></td>
+      <td>GET</td>
+      <td>Obtener todos los planes</td>
+      <td><code>GET /api/v1/plans</code></td>
+      <td>Ninguno</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Devuelve una colección con los planes de suscripción registrados, incluyendo sus precios y condiciones comerciales.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plans</code></td>
+      <td>POST</td>
+      <td>Crear un plan</td>
+      <td><code>POST /api/v1/plans</code></td>
+      <td>Ninguno</td>
+      <td><code>{"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Registra un nuevo plan de suscripción y devuelve sus datos comerciales junto con el identificador asignado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plans/{planId}</code></td>
+      <td>GET</td>
+      <td>Obtener un plan por ID</td>
+      <td><code>GET /api/v1/plans/1</code></td>
+      <td>Path: planId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"name":"Basic Plan","description":"Plan básico","referencePrice":99.90,"currency":"PEN","billingPeriodMonths":1,"vehicleLimit":2,"active":true}</code></td>
+      <td>Devuelve la información de un plan específico, identificado mediante el parámetro planId de la ruta.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Service Enrollments
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/service-enrollments</td>
+      <td>POST</td>
+      <td>Solicitar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments</code></td>
+      <td>Ninguno</td>
+      <td><code>{"studentId":1,"driverProfileId":2,"requestedByProfileId":3}</code></td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"PENDING","requestedAt":"2026-11-12T08:00:00","acceptedAt":null,"cancelledAt":null,"endedAt":null}</code></td>
+      <td>Registra una solicitud de matrícula entre un estudiante y un conductor. Devuelve la información de la solicitud, su estado inicial y la fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/end</code></td>
+      <td>POST</td>
+      <td>Finalizar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/end</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ENDED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":"2026-11-12T18:00:00"}</code></td>
+      <td>Finaliza la matrícula identificada y devuelve su información actualizada, incluyendo el estado y la fecha de finalización.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/cancel</code></td>
+      <td>POST</td>
+      <td>Cancelar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/cancel</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"CANCELLED","requestedAt":"2026-11-12T08:00:00","acceptedAt":null,"cancelledAt":"2026-11-12T09:00:00","endedAt":null}</code></td>
+      <td>Cancela la matrícula especificada y devuelve sus datos actualizados, reflejando el estado de cancelación y la fecha correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}/accept</code></td>
+      <td>POST</td>
+      <td>Aceptar una matrícula de servicio</td>
+      <td><code>POST /api/v1/service-enrollments/1/accept</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}</code></td>
+      <td>Acepta la solicitud de matrícula identificada y devuelve la información actualizada, incluyendo el nuevo estado y la fecha de aceptación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/{enrollmentId}</code></td>
+      <td>GET</td>
+      <td>Obtener una matrícula por ID</td>
+      <td><code>GET /api/v1/service-enrollments/1</code></td>
+      <td>Path: enrollmentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}</code></td>
+      <td>Devuelve los datos de una matrícula específica mediante su identificador, incluyendo los perfiles involucrados, su estado y las fechas asociadas.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/students/{studentId}</code></td>
+      <td>GET</td>
+      <td>Obtener matrículas por estudiante</td>
+      <td><code>GET /api/v1/service-enrollments/students/1</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve una colección de matrículas asociadas al estudiante indicado, mostrando los conductores vinculados, los estados y las fechas de cada solicitud.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/drivers/{driverProfileId}</code></td>
+      <td>GET</td>
+      <td>Obtener matrículas por conductor</td>
+      <td><code>GET /api/v1/service-enrollments/drivers/2</code></td>
+      <td>Path: driverProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve una colección de matrículas relacionadas con el conductor especificado, incluyendo los estudiantes vinculados y el estado de cada matrícula.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/service-enrollments/drivers/{driverProfileId}/students</code></td>
+      <td>GET</td>
+      <td>Obtener estudiantes por conductor</td>
+      <td><code>GET /api/v1/service-enrollments/drivers/2/students</code></td>
+      <td>Path: driverProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"driverProfileId":2,"requestedByProfileId":3,"status":"ACCEPTED","requestedAt":"2026-11-12T08:00:00","acceptedAt":"2026-11-12T08:15:00","cancelledAt":null,"endedAt":null}]</code></td>
+      <td>Devuelve la información de las matrículas de los estudiantes asociados al conductor indicado.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Incidents
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:11%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:15%;">Ejemplo Request</th>
+      <th style="width:19%;">Ejemplo Response</th>
+      <th style="width:15%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}</td>
+      <td>GET</td>
+      <td>Obtener una incidencia por ID</td>
+      <td><code>GET /api/v1/incidents/{incidentId}</code></td>
+      <td><code>incidentId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve los datos de una incidencia específica, incluyendo el viaje asociado, el usuario que la reportó, el estudiante, su categoría, descripción, estado y confirmaciones de recepción.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar una incidencia</td>
+      <td><code>PUT /api/v1/incidents/{incidentId}</code></td>
+      <td><code>incidentId</code> (path), <code>category</code> y <code>description</code> (body)</td>
+      <td><code>{"category":"MECHANICAL_FAILURE","description":"El auxilio mecánico llega en 20 minutos"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"El auxilio mecánico llega en 20 minutos","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve la incidencia actualizada con la nueva categoría y descripción, conservando el resto de sus datos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents</code></td>
+      <td>GET</td>
+      <td>Obtener incidencias por viaje</td>
+      <td><code>GET /api/v1/incidents?tripId={tripId}</code></td>
+      <td><code>tripId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}]</code></td>
+      <td>Devuelve una lista de incidencias asociadas al viaje indicado mediante su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents</code></td>
+      <td>POST</td>
+      <td>Reportar una incidencia</td>
+      <td><code>POST /api/v1/incidents</code></td>
+      <td><code>tripId</code>, <code>reportedByProfileId</code>, <code>studentId</code>, <code>category</code> y <code>description</code> (body)</td>
+      <td><code>{"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":null,"reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"acknowledgements":[]}</code></td>
+      <td>Devuelve la incidencia registrada, incluyendo su identificador, datos del reporte, estado inicial y fecha de creación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}/acknowledgements</code></td>
+      <td>POST</td>
+      <td>Confirmar recepción de una incidencia</td>
+      <td><code>POST /api/v1/incidents/{incidentId}/acknowledgements</code></td>
+      <td><code>incidentId</code> (path), <code>tutorProfileId</code> (body)</td>
+      <td><code>{"tutorProfileId":1}</code></td>
+      <td><code>{"id":1,"tutorProfileId":1,"acknowledgedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la confirmación de recepción registrada, incluyendo su identificador, el tutor que confirmó y la fecha de confirmación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/incidents/{incidentId}/resolve</code></td>
+      <td>PATCH</td>
+      <td>Resolver una incidencia</td>
+      <td><code>PATCH /api/v1/incidents/{incidentId}/resolve</code></td>
+      <td><code>incidentId</code> (path), <code>resolution</code> (body)</td>
+      <td><code>{"resolution":"Se cambió de vehículo y el viaje continúa"}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"studentId":1,"category":"MECHANICAL_FAILURE","description":"Falla en el motor, esperando auxilio mecánico","status":"OPEN","resolution":"string","reportedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T03:04:06.174Z","acknowledgements":[{"id":1,"tutorProfileId":1,"acknowledgedAt":"2026-11-13T03:04:06.174Z"}]}</code></td>
+      <td>Devuelve la incidencia con su información general, la resolución registrada, la fecha de resolución y las confirmaciones de recepción asociadas.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Trips
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/trips</code></td>
+      <td>GET</td>
+      <td>Obtener viajes por ruta o conductor</td>
+      <td><code>/api/v1/trips?routeId={routeId}&amp;driverProfileId={driverProfileId}</code></td>
+      <td><code>routeId</code> y <code>driverProfileId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}]</code></td>
+      <td>Devuelve una lista de viajes filtrados por los identificadores de ruta y conductor proporcionados, incluyendo los datos generales y los estudiantes asignados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips</code></td>
+      <td>POST</td>
+      <td>Planificar un viaje</td>
+      <td><code>/api/v1/trips</code></td>
+      <td><code>routeId</code>, <code>driverProfileId</code>, <code>vehicleId</code>, <code>date</code>, <code>shift</code> y <code>passengers</code> (body)</td>
+      <td><code>{"routeId":1,"driverProfileId":2,"vehicleId":1,"date":"2026-11-16","shift":"MORNING","passengers":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123"}]}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje planificado con la información de la ruta, conductor, vehículo, fecha, turno y estudiantes asignados a sus respectivas paradas.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/absences</code></td>
+      <td>POST</td>
+      <td>Reportar ausencia de un estudiante</td>
+      <td><code>/api/v1/trips/{tripId}/absences</code></td>
+      <td><code>tripId</code> (path), <code>studentId</code> (body)</td>
+      <td><code>{"studentId":1}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":1,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":true,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado, reflejando la ausencia reportada para el estudiante correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/stops/{stopId}/served</code></td>
+      <td>PATCH</td>
+      <td>Marcar una parada como atendida</td>
+      <td><code>/api/v1/trips/{tripId}/stops/{stopId}/served</code></td>
+      <td><code>tripId</code> y <code>stopId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado, indicando que la parada seleccionada ha sido atendida por el conductor.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/start</code></td>
+      <td>PATCH</td>
+      <td>Iniciar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/start</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado después de iniciar su ejecución, reflejando el nuevo estado del viaje.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/passengers/{studentId}/arrived</code></td>
+      <td>PATCH</td>
+      <td>Confirmar llegada de un estudiante</td>
+      <td><code>/api/v1/trips/{tripId}/passengers/{studentId}/arrived</code></td>
+      <td><code>tripId</code> y <code>studentId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"IN_PROGRESS","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":true}]}</code></td>
+      <td>Devuelve el viaje actualizado, indicando que el conductor confirmó la llegada del estudiante seleccionado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/complete</code></td>
+      <td>PATCH</td>
+      <td>Completar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/complete</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"COMPLETED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":true,"arrived":true}]}</code></td>
+      <td>Devuelve el viaje actualizado después de completar su ejecución, reflejando el estado final y la información de sus estudiantes.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}/cancel</code></td>
+      <td>PATCH</td>
+      <td>Cancelar un viaje</td>
+      <td><code>/api/v1/trips/{tripId}/cancel</code></td>
+      <td><code>tripId</code> (path), <code>reason</code> (body)</td>
+      <td><code>{"reason":"Mechanical issue"}</code></td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"CANCELLED","cancelReason":"Mechanical issue","students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve el viaje actualizado como cancelado, incluyendo el motivo proporcionado y la información de los estudiantes asignados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/trips/{tripId}</code></td>
+      <td>GET</td>
+      <td>Obtener un viaje por ID</td>
+      <td><code>/api/v1/trips/{tripId}</code></td>
+      <td><code>tripId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"routeId":1,"driverProfileId":2,"vehicleId":1,"serviceDate":"2026-11-16","shift":"MORNING","status":"SCHEDULED","cancelReason":null,"students":[{"studentId":5,"stopId":1,"stopPosition":1,"stopAddress":"Av. Primavera 123","absent":false,"stopServed":false,"arrived":false}]}</code></td>
+      <td>Devuelve la información detallada de un viaje específico, incluyendo sus datos generales y la lista ordenada de estudiantes asignados.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vehicles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>GET</td>
+      <td>Obtener vehículo por ID</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve la información de un vehículo específico, incluyendo su conductor propietario, marca, modelo, placa, capacidad, año y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar vehículo</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path), <code>brand</code>, <code>model</code>, <code>licensePlate</code>, <code>capacity</code> y <code>year</code> (body)</td>
+      <td><code>{"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022}</code></td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve la información del vehículo después de actualizar sus características, conservando su identificador, conductor propietario y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar vehículo</td>
+      <td><code>/api/v1/vehicles/{vehicleId}</code></td>
+      <td><code>vehicleId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido)</td>
+      <td>Elimina el vehículo identificado mediante el parámetro proporcionado. No retorna contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>GET</td>
+      <td>Obtener vehículos</td>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>Ninguno</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}]</code></td>
+      <td>Devuelve una lista de vehículos registrados en la plataforma, incluyendo sus características y estado de verificación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/vehicles</code></td>
+      <td>POST</td>
+      <td>Registrar un vehículo</td>
+      <td><code>/api/v1/vehicles</code></td>
+      <td><code>driverProfileId</code>, <code>brand</code>, <code>model</code>, <code>licensePlate</code>, <code>capacity</code> y <code>year</code> (body)</td>
+      <td><code>{"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022}</code></td>
+      <td><code>{"id":1,"driverProfileId":2,"brand":"Toyota","model":"Hiace","licensePlate":"ABC-123","capacity":15,"year":2022,"status":"PENDING_VERIFICATION"}</code></td>
+      <td>Devuelve los datos del vehículo registrado, incluyendo su identificador generado y su estado inicial de verificación.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Data Deletion Requests
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests</code></td>
+      <td>POST</td>
+      <td>Solicitar eliminación de datos</td>
+      <td><code>/api/v1/data-deletion-requests</code></td>
+      <td><code>studentId</code> y <code>requestedByProfileId</code> (body)</td>
+      <td><code>{"studentId":1,"requestedByProfileId":1}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}</code></td>
+      <td>Devuelve la solicitud de eliminación de datos registrada, incluyendo el estudiante, el solicitante, su estado inicial y la fecha de creación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/reject</code></td>
+      <td>POST</td>
+      <td>Rechazar solicitud</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/reject</code></td>
+      <td><code>requestId</code> (path), <code>resolutionNote</code> (body)</td>
+      <td><code>{"resolutionNote":"Request reviewed"}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"REJECTED","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T04:04:06.174Z","resolutionNote":"Request reviewed"}</code></td>
+      <td>Devuelve la solicitud actualizada como rechazada, incluyendo la nota de resolución y la fecha en que fue atendida.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/approve</code></td>
+      <td>POST</td>
+      <td>Aprobar solicitud</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}/approve</code></td>
+      <td><code>requestId</code> (path), <code>resolutionNote</code> (body)</td>
+      <td><code>{"resolutionNote":"Request reviewed"}</code></td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"APPROVED","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":"2026-11-13T04:04:06.174Z","resolutionNote":"Request reviewed"}</code></td>
+      <td>Devuelve la solicitud actualizada como aprobada, incluyendo la nota de resolución y la fecha en que fue atendida.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/{requestId}</code></td>
+      <td>GET</td>
+      <td>Obtener solicitud por ID</td>
+      <td><code>/api/v1/data-deletion-requests/{requestId}</code></td>
+      <td><code>requestId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}</code></td>
+      <td>Devuelve la información detallada de una solicitud específica, incluyendo el estudiante, el solicitante, el estado y los datos de resolución.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/data-deletion-requests/by-requester/{requestedByProfileId}</code></td>
+      <td>GET</td>
+      <td>Obtener solicitudes por solicitante</td>
+      <td><code>/api/v1/data-deletion-requests/by-requester/{requestedByProfileId}</code></td>
+      <td><code>requestedByProfileId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"studentId":1,"requestedByProfileId":1,"status":"PENDING","requestedAt":"2026-11-13T03:04:06.174Z","resolvedAt":null,"resolutionNote":null}]</code></td>
+      <td>Devuelve una lista de solicitudes de eliminación de datos realizadas por el perfil indicado, incluyendo sus estados y fechas correspondientes.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Profiles
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/profiles</code></td>
+      <td>POST</td>
+      <td>Crear perfil</td>
+      <td><code>/api/v1/profiles</code></td>
+      <td><code>accountId</code>, <code>profileType</code>, <code>firstName</code>, <code>lastName</code> y <code>phoneNumber</code> (body)</td>
+      <td><code>{"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil creado, incluyendo su identificador, la cuenta asociada, el tipo de perfil y los datos personales y de contacto.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{profileId}/contact</code></td>
+      <td>PATCH</td>
+      <td>Actualizar contacto del perfil</td>
+      <td><code>/api/v1/profiles/{profileId}/contact</code></td>
+      <td><code>profileId</code> (path), <code>phoneNumber</code> (body)</td>
+      <td><code>{"phoneNumber":"987654321"}</code></td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil con el número telefónico actualizado, manteniendo los demás datos asociados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td>GET</td>
+      <td>Obtener perfil por ID</td>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td><code>profileId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información detallada del perfil correspondiente al identificador proporcionado, incluyendo sus datos personales, tipo de perfil y contacto.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/by-account/{accountId}</code></td>
+      <td>GET</td>
+      <td>Obtener perfil por ID de cuenta</td>
+      <td><code>/api/v1/profiles/by-account/{accountId}</code></td>
+      <td><code>accountId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"accountId":1,"profileType":"TUTOR","firstName":"Ana","lastName":"Pérez","phoneNumber":"987654321"}</code></td>
+      <td>Devuelve la información del perfil asociado al identificador de cuenta especificado, incluyendo sus datos personales y de contacto.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subscriptions
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td>GET</td>
+      <td>Obtener suscripciones por ID de conductor</td>
+      <td><code>/api/v1/subscriptions?driverId={driverId}</code></td>
+      <td><code>driverId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"driverId":1,"planId":1,"status":"ACTIVE","startDate":"2026-11-12","endDate":"2026-12-12","active":true,"vehicleLimit":2}]</code></td>
+      <td>Devuelve una lista de suscripciones asociadas al conductor indicado, incluyendo el plan contratado, estado, fechas de vigencia y límite de vehículos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td>POST</td>
+      <td>Activar suscripción del conductor</td>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td><code>driverId</code> y <code>planId</code> (body)</td>
+      <td><code>{"driverId":1,"planId":1}</code></td>
+      <td><code>{"id":1,"driverId":1,"planId":1,"status":"ACTIVE","startDate":"2026-11-12","endDate":"2026-12-12","active":true,"vehicleLimit":2}</code></td>
+      <td>Devuelve la información de la suscripción activada, incluyendo su identificador, conductor, plan asociado, estado, periodo de vigencia y límite de vehículos.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/status</code></td>
+      <td>PATCH</td>
+      <td>Pausar o reanudar suscripción</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/status</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> y <code>status</code> (body).</td>
+      <td><code>{"driverId":1,"status":"SUSPENDED"}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Actualiza el estado de la suscripción del conductor. Los estados permitidos son <code>PENDING</code>, <code>ACTIVE</code>, <code>SUSPENDED</code>, <code>EXPIRED</code> y <code>CANCELLED</code>. No devuelve contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/plan</code></td>
+      <td>PATCH</td>
+      <td>Cambiar plan de suscripción</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/plan</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> y <code>planId</code> (body).</td>
+      <td><code>{"driverId":1,"planId":2}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Actualiza el plan asociado a la suscripción activa del conductor. No devuelve contenido en la respuesta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/cancel</code></td>
+      <td>PATCH</td>
+      <td>Cancelar suscripción activa</td>
+      <td><code>/api/v1/subscriptions/{subscriptionId}/cancel</code></td>
+      <td><code>subscriptionId</code> (path), <code>driverId</code> (body).</td>
+      <td><code>{"driverId":1}</code></td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Realiza la cancelación de la suscripción activa del conductor. No devuelve contenido en la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Routes
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:11%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:15%;">Ejemplo Request</th>
+      <th style="width:19%;">Ejemplo Response</th>
+      <th style="width:15%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>GET</td>
+      <td>Obtener ruta por ID</td>
+      <td><code>GET /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta solicitada, incluyendo sus paradas, estudiantes asignados y programación semanal.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>PUT</td>
+      <td>Actualizar ruta</td>
+      <td><code>PUT /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"name":"Ruta Surco actualizada","shift":"MORNING","vehicleId":1,"stops":[{"id":1,"address":"Av. Primavera 123"},{"address":"Jr. Las Flores 456"}],"schedule":[],"scheduleConfirmed":false}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información actualizada de la ruta, incluyendo sus paradas y programación.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar una ruta</td>
+      <td><code>DELETE /api/v1/routes/{routeId}</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido)</td>
+      <td>Elimina la ruta indicada mediante su identificador.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/schedule</code></td>
+      <td>PUT</td>
+      <td>Configurar programación semanal</td>
+      <td><code>PUT /api/v1/routes/{routeId}/schedule</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"schedule":[{"dayOfWeek":"MONDAY","departureTime":"07:00"}],"confirm":true}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta con la programación semanal actualizada y el estado de confirmación correspondiente.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>GET</td>
+      <td>Obtener asignaciones de una ruta</td>
+      <td><code>GET /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"stopId":1,"studentId":1}]</code></td>
+      <td>Devuelve las asignaciones de estudiantes a las paradas de la ruta mediante una colección de objetos RouteAssignmentResponse.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>PUT</td>
+      <td>Sincronizar asignaciones de una ruta</td>
+      <td><code>PUT /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>[{"studentId":1,"stopId":1}]</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Actualiza las asignaciones de estudiantes a las paradas de la ruta y devuelve la información actualizada de esta.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/assignments</code></td>
+      <td>POST</td>
+      <td>Asignar estudiante a una ruta</td>
+      <td><code>POST /api/v1/routes/{routeId}/assignments</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"studentId":1,"stopId":1}</code></td>
+      <td><code>{"id":1,"stopId":1,"studentId":1}</code></td>
+      <td>Devuelve la asignación creada, identificando al estudiante y la parada a la que fue asociado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes</code></td>
+      <td>GET</td>
+      <td>Obtener rutas por conductor</td>
+      <td><code>GET /api/v1/routes?driverProfileId={driverProfileId}</code></td>
+      <td><code>driverProfileId</code>: ID del perfil del conductor</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[RouteResponse]</code></td>
+      <td>Devuelve una colección con las rutas asociadas al perfil del conductor indicado.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes</code></td>
+      <td>POST</td>
+      <td>Crear una nueva ruta</td>
+      <td><code>POST /api/v1/routes</code></td>
+      <td>Ninguno</td>
+      <td><code>{"driverProfileId":2,"name":"Ruta Surco","shift":"MORNING","vehicleId":1,"stops":[{"address":"Av. Primavera 123"}],"schedule":[{"dayOfWeek":"MONDAY","departureTime":"07:00"}],"scheduleConfirmed":true}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la ruta creada, incluyendo su identificador, conductor, paradas, programación y demás información registrada.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/{routeId}/status</code></td>
+      <td>PATCH</td>
+      <td>Publicar una ruta</td>
+      <td><code>PATCH /api/v1/routes/{routeId}/status</code></td>
+      <td><code>routeId</code>: ID de la ruta</td>
+      <td><code>{"status":"PUBLISHED"}</code></td>
+      <td><code>RouteResponse</code></td>
+      <td>Devuelve la información de la ruta con su estado actualizado a PUBLISHED, indicando que ha sido publicada.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/routes/eligible-students</code></td>
+      <td>GET</td>
+      <td>Obtener estudiantes elegibles</td>
+      <td><code>GET /api/v1/routes/eligible-students</code></td>
+      <td>N/A</td>
+      <td>N/A (No requiere body)</td>
+      <td>No implementado</td>
+      <td>Endpoint pendiente de integración. Actualmente no cuenta con una respuesta funcional implementada.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Delays
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/delays</code></td>
+      <td>GET</td>
+      <td>Obtener retrasos por viaje</td>
+      <td><code>/api/v1/delays?tripId={tripId}</code></td>
+      <td><code>tripId</code> (query)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}]</code></td>
+      <td>Devuelve una lista de retrasos asociados al viaje indicado, incluyendo la causa, tiempo estimado, estado, identificador del retraso anterior y fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays</code></td>
+      <td>POST</td>
+      <td>Reportar retraso</td>
+      <td><code>/api/v1/delays</code></td>
+      <td><code>tripId</code>, <code>reportedByProfileId</code>, <code>cause</code> y <code>estimatedMinutes</code> (body)</td>
+      <td><code>{"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15}</code></td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la información del retraso registrado, incluyendo el viaje asociado, el perfil que lo reportó, la causa, el tiempo estimado, su estado y la fecha de registro.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays/{delayId}/updates</code></td>
+      <td>POST</td>
+      <td>Actualizar retraso</td>
+      <td><code>/api/v1/delays/{delayId}/updates</code></td>
+      <td><code>delayId</code> (path), <code>reportedByProfileId</code>, <code>cause</code> y <code>estimatedMinutes</code> (body)</td>
+      <td><code>{"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":25}</code></td>
+      <td><code>{"id":2,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":25,"status":"ACTIVE","previousDelayId":1,"reportedAt":"2026-11-13T03:30:06.174Z"}</code></td>
+      <td>Devuelve la información del nuevo registro de retraso actualizado, incluyendo su relación con el retraso anterior mediante <code>previousDelayId</code>. El registro anterior puede pasar al estado <code>SUPERSEDED</code>.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/delays/{delayId}</code></td>
+      <td>GET</td>
+      <td>Obtener retraso por ID</td>
+      <td><code>/api/v1/delays/{delayId}</code></td>
+      <td><code>delayId</code> (path)</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tripId":1,"reportedByProfileId":2,"cause":"Tráfico intenso en la avenida principal","estimatedMinutes":15,"status":"ACTIVE","previousDelayId":null,"reportedAt":"2026-11-13T03:04:06.174Z"}</code></td>
+      <td>Devuelve la información detallada del retraso correspondiente al identificador proporcionado, incluyendo su causa, tiempo estimado, estado y fecha de registro.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Notifications
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/notifications</code></td>
+      <td>GET</td>
+      <td>Obtener notificaciones</td>
+      <td><code>/api/v1/notifications</code></td>
+      <td>Por confirmar (Parámetros de consulta no proporcionados).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}]</code></td>
+      <td>Devuelve una lista de notificaciones con su categoría, tipo, prioridad, contenido, fecha de creación, estado de lectura y datos relacionados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications</code></td>
+      <td>POST</td>
+      <td>Crear notificación</td>
+      <td><code>/api/v1/notifications</code></td>
+      <td><code>type</code>, <code>priority</code>, <code>title</code>, <code>message</code>, <code>routeId</code>, <code>studentId</code> y <code>recipientProfileId</code> (body).</td>
+      <td><code>{"type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","routeId":1,"studentId":null,"recipientProfileId":null}</code></td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la notificación creada, incluyendo su identificador, categoría, tipo, prioridad, contenido, fecha de creación y estado de lectura.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/student-journeys</code></td>
+      <td>POST</td>
+      <td>Notificar acontecimiento del viaje de un estudiante</td>
+      <td><code>/api/v1/notifications/student-journeys</code></td>
+      <td><code>studentId</code>, <code>routeId</code>, <code>tripId</code>, <code>journeyEvent</code>, <code>title</code>, <code>message</code> y <code>recipientProfileId</code> (body).</td>
+      <td><code>{"studentId":1,"routeId":1,"tripId":1,"journeyEvent":"TRIP_STARTED","title":"Viaje iniciado","message":"El conductor marcó el inicio del recorrido.","recipientProfileId":1}</code></td>
+      <td><code>{"id":2,"category":"STUDENT_JOURNEY","type":"INFO","priority":"REGULAR","title":"Viaje iniciado","message":"El conductor marcó el inicio del recorrido.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":1,"studentId":1,"recipientProfileId":1,"journeyEvent":"TRIP_STARTED"}</code></td>
+      <td>Devuelve la notificación generada para informar a los tutores sobre un acontecimiento del viaje del estudiante, incluyendo los identificadores relacionados y el evento ocurrido.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}/read</code></td>
+      <td>PATCH</td>
+      <td>Marcar notificación como leída</td>
+      <td><code>/api/v1/notifications/{notificationId}/read</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":"2026-11-13T04:04:06.174Z","read":true,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la notificación actualizada como leída, incluyendo la fecha en que fue marcada y conservando su información original.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td>GET</td>
+      <td>Obtener notificación por ID</td>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"category":"GENERAL","type":"INFO","priority":"REGULAR","title":"Ruta publicada","message":"La ruta ya está disponible.","createdAt":"2026-11-13T03:04:06.174Z","readAt":null,"read":false,"routeId":1,"tripId":null,"studentId":null,"recipientProfileId":null,"journeyEvent":null}</code></td>
+      <td>Devuelve la información detallada de la notificación correspondiente al identificador proporcionado, incluyendo su contenido, estado de lectura y datos relacionados.</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td>DELETE</td>
+      <td>Eliminar notificación</td>
+      <td><code>/api/v1/notifications/{notificationId}</code></td>
+      <td><code>notificationId</code> (path).</td>
+      <td>N/A (No requiere body)</td>
+      <td>N/A (No devuelve contenido).</td>
+      <td>Elimina la notificación correspondiente al identificador proporcionado. La operación no devuelve contenido en la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Students
+
+<div align="center">
+  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
+</div>
+
+<br>
+<br>
+
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:9px;">
+  <thead>
+    <tr>
+      <th style="width:15%;">Endpoint</th>
+      <th style="width:6%;">Método HTTP</th>
+      <th style="width:12%;">Acción implementada</th>
+      <th style="width:12%;">Sintaxis de llamada</th>
+      <th style="width:10%;">Parámetros</th>
+      <th style="width:13%;">Ejemplo Request</th>
+      <th style="width:18%;">Ejemplo Response</th>
+      <th style="width:14%;">Explicación Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/students/{studentId}</td>
+      <td>GET</td>
+      <td>Obtener estudiante por ID</td>
+      <td><code>GET /api/v1/students/1</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante solicitado, incluyendo sus datos personales y su estado actual.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del estudiante</td>
+      <td><code>PUT /api/v1/students/1</code></td>
+      <td>Path: studentId</td>
+      <td><code>{"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve los datos actualizados del estudiante, incluyendo su identificador y estado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students</td>
+      <td>GET</td>
+      <td>Obtener estudiantes por tutor</td>
+      <td><code>GET /api/v1/students?tutorProfileId=1</code></td>
+      <td>Query: tutorProfileId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}]</code></td>
+      <td>Devuelve una lista con los estudiantes asociados al perfil del tutor indicado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students</td>
+      <td>POST</td>
+      <td>Registrar un nuevo estudiante</td>
+      <td><code>POST /api/v1/students</code></td>
+      <td>Ninguno</td>
+      <td><code>{"tutorProfileId":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","relationshipType":"MOTHER"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante registrado, incluyendo el identificador generado y su estado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors</td>
+      <td>GET</td>
+      <td>Obtener tutores del estudiante</td>
+      <td><code>GET /api/v1/students/1/tutors</code></td>
+      <td>Path: studentId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>[{"id":1,"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER","authorizationStatus":"AUTHORIZED","authorizedAt":"2026-11-12T10:00:00Z","revokedAt":null}]</code></td>
+      <td>Devuelve una lista de las relaciones de autorización entre el estudiante y sus tutores, incluyendo el tipo de parentesco y el estado de autorización.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors</td>
+      <td>POST</td>
+      <td>Autorizar un tutor</td>
+      <td><code>POST /api/v1/students/1/tutors</code></td>
+      <td>Path: studentId</td>
+      <td><code>{"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER"}</code></td>
+      <td><code>{"id":1,"firstName":"Lucía","lastName":"Pérez","birthDate":"2016-05-03","status":"ACTIVE","anonymizedAt":null}</code></td>
+      <td>Devuelve la información del estudiante al que se le ha asociado el tutor autorizado.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/students/{studentId}/tutors/{tutorId}/revoke</td>
+      <td>POST</td>
+      <td>Revocar autorización de tutor</td>
+      <td><code>POST /api/v1/students/1/tutors/2/revoke</code></td>
+      <td>Path: studentId, tutorId</td>
+      <td>N/A (No requiere body)</td>
+      <td><code>{"id":1,"tutorProfileId":2,"authorizedByProfileId":1,"relationshipType":"FATHER","authorizationStatus":"REVOKED","authorizedAt":"2026-11-12T10:00:00Z","revokedAt":"2026-11-12T11:00:00Z"}</code></td>
+      <td>Devuelve la relación de autorización actualizada, indicando que el acceso del tutor fue revocado y registrando la fecha correspondiente.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Se realizó el despliegue de los servicios backend de Rumbo utilizando la plataforma Render, mediante la cual se publicaron tanto la base de datos PostgreSQL como la aplicación backend encargada de proporcionar los Web Services para el consumo del frontend.
+
+En primer lugar, se creó una instancia de base de datos PostgreSQL en Render, configurando los parámetros necesarios para su creación, como el nombre de la base de datos, el usuario, la región y las credenciales de acceso. Una vez completada la configuración, Render proporcionó los datos de conexión que permitirían establecer la comunicación con la base de datos desde la aplicación backend.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+</div>
+
+Posteriormente, se modificó la configuración del backend para reemplazar los parámetros de conexión locales por los correspondientes a la base de datos desplegada en Render. Para ello, se actualizaron los datos de conexión, incluyendo la URL y las credenciales de acceso, de modo que la aplicación pudiera conectarse correctamente al entorno remoto y mantener la persistencia de la información.
+
+Finalmente, se desplegó la aplicación backend en Render, vinculándola con el repositorio de GitHub y configurando los parámetros necesarios para su compilación y ejecución. Una vez finalizado el proceso, se obtuvo una URL pública que permite acceder a los Web Services implementados y realizar solicitudes a los distintos endpoints de la API de Rumbo.
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter5/deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+### Servicios Desplegados
+
+<div align="center">
+  <img src="./assets/chapter5/deployed-services.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/chapter5/backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
 
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint se evidencia mediante la secuencia de commits, los Pull Requests, el Network Graph y los analíticos de Contributors y Pulse. La explicación relaciona las tareas del Sprint Backlog con el código integrado y con las revisiones efectuadas por otros miembros del equipo.
+La colaboración durante el Sprint 3 se evidencia mediante las métricas de actividad registradas en los repositorios de GitHub correspondientes al Landing Page, Frontend Web Application y Web Services de Rumbo. Estas métricas permiten identificar las contribuciones realizadas por cada integrante del equipo y visualizar el avance en el desarrollo de los distintos Bounded Contexts, tanto en el frontend como en el backend, a través de los commits asociados a los cambios implementados. 
+
+A continuación, se presenta un resumen de estas métricas junto con las capturas correspondientes.
 
 - [Historial de commits del Project Report](https://github.com/AIpaca-OS/project-report/commits)
 - [Pull Requests del Project Report](https://github.com/AIpaca-OS/project-report/pulls)
@@ -3327,48 +4618,33 @@ La colaboración del Sprint se evidencia mediante la secuencia de commits, los P
 - [Repositorio de Web Services](https://github.com/AIpaca-OS/web-services)
 
 
-La retrospectiva del equipo se vincula con el video About-the-Team, que complementa estos registros con sesiones de trabajo y testimonios de los integrantes sobre sus responsabilidades, dificultades y aprendizajes.
-
-
-**Resumen verificable de colaboración, 10/11/2026:** Jira registra **76 incidencias asignadas a los cuatro integrantes activos**: Leonardo (33), Kevin (16), Alejandro (16) y Alexandra (11). Los estados consultados son 8 Listo, 13 En curso y 55 Por hacer. Las cifras describen la distribución y el avance de tickets, **no** horas trabajadas ni número de commits por autor.
-
-El equipo utilizó ramas por funcionalidad y revisiones mediante GitHub. El backend integró Routes mediante [PR #3](https://github.com/AIpaca-OS/web-services/pull/3), Billing mediante [PR #4](https://github.com/AIpaca-OS/web-services/pull/4), un primer conjunto de Profiles mediante [PR #5](https://github.com/AIpaca-OS/web-services/pull/5), Notifications mediante [PR #6](https://github.com/AIpaca-OS/web-services/pull/6) y ampliaciones REST de Profiles mediante [PR #8](https://github.com/AIpaca-OS/web-services/pull/8). El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) no estaba fusionado en la consulta. El frontend de Routes había ingresado a `develop` mediante [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17).
-
-Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y dependencias entre contextos, especialmente del contrato Routes–Profiles y de la relación entre vehículos, estudiantes y rutas. El trabajo colaborativo se debe sustentar con la autoría real de cada commit y las interacciones efectivamente registradas en Jira/PRs; no se atribuirán cambios que no puedan verificarse a integrantes distintos.
-
-**Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
 
 ## 5.3. Validation Interviews
 
-La validación de Rumbo se estructura alrededor de los segmentos definidos en Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con la Landing Page y con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
-
-El Final Project Statement establece **de tres a cinco entrevistas por segmento**, registradas en video, junto con su evaluación de usabilidad, arquitectura de información y diseño inclusivo. En AV2 se utiliza el formato del Anexo D para describir y clasificar los hallazgos.
+La validación de Rumbo se estructura alrededor de los segmentos definidos en el Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
 
 ### 5.3.1. Diseño de Entrevistas
 
-La sesión inicia con una presentación breve del objetivo y con la autorización de grabación. Después se plantea una situación relacionada con el User Goal correspondiente y se observa cómo el participante intenta completarla. Las preguntas de cierre permiten comprender las dificultades, la interpretación de los mensajes y la percepción de utilidad del producto.
+La sesión inicia con una breve presentación del objetivo de la entrevista y una presentación del entrevistado, que incluye sus nombres y apellidos, edad y distrito de residencia. Después, se le presenta el Landing Page de Rumbo y se le permite interactuar con él.
 
-| Segmento | Objetivo de validación | Tareas vinculadas a User Goals |
-|---|---|---|
-| Padres / tutores | Comprobar si identifican el estado de la movilidad y comprenden los avisos dirigidos a la familia. | Consultar una ruta y localizar información del estudiante; interpretar una notificación cuando la vista correspondiente esté disponible. |
-| Conductores | Examinar la claridad de las opciones para organizar y comunicar eventos del servicio. | Consultar una ruta asignada y registrar o interpretar una incidencia según el flujo disponible. |
+A continuación, se pasa al Frontend, donde se presenta la plataforma al entrevistado y se le pide que interactúe con ella, guiándolo para que explore determinadas pantallas y funcionalidades, como registrar una ruta, revisar la ubicación de su hijo, enviar una notificación, entre otras.
 
-Se registran el dispositivo, el navegador, la versión examinada y las observaciones del evaluador. Las tareas utilizadas en cada sesión deben coincidir con las funciones demostrables del producto.
+Finalmente, después de completar la interacción con la plataforma, se le plantean las preguntas finales correspondientes a su segmento objetivo.
 
-### Padres 
+### Preguntas de cierre
+
+#### Padres 
 
 1. ¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
 2. ¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
 3. ¿Te resultó fácil navegar por la plataforma y encontrar la información que necesitabas? ¿Por qué?
 4. ¿Consideras que la información relacionada con la movilidad de tu hijo se presenta de manera clara y comprensible?
 5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
-6.	¿Qué funcionalidades de la plataforma te parecieron más útiles para realizar el seguimiento de la movilidad escolar?
-7.	¿Consideras que Rumbo podría ayudarte a reducir las dificultades de comunicación y coordinación con el conductor? ¿De qué manera?
-8.	¿Consideras que las notificaciones y los avisos proporcionados por la plataforma serían útiles para mantenerte informado sobre la movilidad?
-9.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
-10. Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para realizar el seguimiento de la movilidad escolar de tu hijo? ¿Por qué?
+6.	¿Consideras que las notificaciones y los avisos proporcionados por la plataforma serían útiles para mantenerte informado sobre la movilidad?
+7.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+8. Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para realizar el seguimiento de la movilidad escolar de tu hijo? ¿Por qué?
 
-### Conductores
+#### Conductores
 
 1.	¿Cuál fue tu primera impresión al ingresar a la plataforma Rumbo?
 2.	¿Qué opinas del diseño y la organización de las diferentes secciones de la plataforma?
@@ -3376,50 +4652,122 @@ Se registran el dispositivo, el navegador, la versión examinada y las observaci
 4.	¿Consideras que la información de tus rutas y estudiantes se presenta de manera clara y organizada?
 5.	¿Hubo alguna funcionalidad o sección que te resultara confusa o difícil de utilizar?
 6. ¿Qué funcionalidades de la plataforma te parecieron más útiles para gestionar tu servicio de movilidad?
-7.	¿Consideras que Rumbo podría facilitar la organización de tus rutas y paradas? ¿De qué manera?
-8.	¿Consideras que las opciones para registrar incidencias y comunicar retrasos serían útiles durante tus recorridos?
-9.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
-10.	Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para gestionar tu servicio de movilidad escolar? ¿Por qué?
+7.	¿Consideras que las opciones para registrar incidencias y comunicar retrasos serían útiles durante tus recorridos?
+8.	¿Qué funcionalidades o características adicionales te gustaría que se implementaran en Rumbo?
+9.	Después de utilizar la plataforma, ¿estarías dispuesto(a) a utilizarla para gestionar tu servicio de movilidad escolar? ¿Por qué?
 
 ### 5.3.2. Registro de Entrevistas
 
-Cada sesión incluye nombres y apellidos, edad, distrito, User Persona, fecha, captura representativa del video, el enlace a Microsoft Stream y el tiempo de inicio y duración dentro del video consolidado. El registro descriptivo recoge las apreciaciones del participante frente a las tareas realizadas.
+A continuación, se registran todas las entrevistas de validación realizadas a ambos segmentos objetivos, incluyendo los datos relevantes de cada una, como el nombre del entrevistado, edad, distrito de residencia, duración del video, tiempo de inicio, entre otros. Además, se incluye un breve resumen de los puntos más importantes identificados durante cada entrevista.
 
-**Registro AV2:** no se presentan fichas de Validation Interviews porque no se adjuntaron grabaciones, participantes ni resultados verificables. Se conserva la metodología de registro descrita arriba, sin agregar filas vacías.
+### Padres y/o Tutores
 
+#### Entrevista 1 — [Nombre entrevistado]
 
+- **Edad:**
+- **Ocupación / segmento:** Padre y/o Tutor.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
+
+#### Entrevista 2 — [Nombre entrevistado]
+
+- **Edad:**
+- **Ocupación / segmento:** Padre y/o Tutor.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
+
+#### Entrevista 3 — [Nombre entrevistado]
+
+- **Edad:**
+- **Ocupación / segmento:** Padre y/o Tutor.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
+
+### Padres y/o Tutores
+
+#### Entrevista 4 — [Nombre entrevistado]
+
+- **Edad:**
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
+
+#### Entrevista 5 — [Nombre entrevistado]
+
+- **Edad:**
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
+
+#### Entrevista 6 — [Nombre entrevistado]
+
+- **Edad:**
+- **Ocupación / segmento:** Conductor de movilidad escolar.
+- **Experiencia en el rubro:**
+- **Distrito:** 
+- **Duración:**
+- **Timing de inicio:** 
+- **Video:**
+
+<p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
+
+**Resumen:** [Resumen]
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation** del Anexo D, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
+Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation**, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
 
 La escala de severidad indicada por el enunciado comprende cuatro niveles: **1, superficial; 2, menor; 3, mayor; 4, muy grave**. La calificación se sustenta en la frecuencia y el impacto de la dificultad para el usuario.
-
-**Resultados AV2:** no se aportaron fichas de evaluación heurística con observaciones verificadas; por tanto, no se incluyen tablas de hallazgos vacías.
-
-La comparación entre sesiones aporta criterios para priorizar cambios sobre las experiencias web. Los hallazgos se relacionan con modificaciones identificables y con su registro en la evolución del producto.
-
-
-**Estado de recopilación AV2:** la tabla V01–V06 anterior es una **plantilla** de sesiones; no contiene resultados ni participantes confirmados. La validación deberá realizarse con los dos segmentos objetivo y registrarse con autorizaciones, fechas, URL de video, tareas, observaciones y evaluación de heurísticas. No se sustituirá la entrevista real con capturas del prototipo, respuestas creadas para la demostración ni testimonio de un integrante del equipo.
-
-Para conectar la investigación con las funciones desarrolladas, se propone que los **conductores** intenten configurar una ruta, añadir paradas, asociar vehículo y entender cuándo es posible publicar; los **tutores**, registrar o identificar a un estudiante y consultar la información disponible sobre un traslado y sus avisos. Las tareas que aún dependan de autorización o APIs no integradas deberán informarse como prototipo o flujo parcial.
-
-
 
 ## 5.4. Video About-the-Product
 
 El video About-the-Product presenta la propuesta de Rumbo a los visitantes y usuarios de la plataforma. Su narrativa parte de la necesidad de comunicación durante el traslado escolar, explica los beneficios para padres y conductores y muestra escenas de interacción con las principales funciones del producto. El mensaje, la identidad visual y el tono se mantienen alineados con el Landing Page.
 
-Según el Anexo C del Final Project Statement, el video tiene **entre uno y tres minutos**, incluye **al menos una opinión por segmento objetivo** y se publica en **Microsoft Stream y YouTube**. La versión de YouTube se integra en una sección del Landing Page. Para AV2, el enunciado solicita la **primera versión publicada** del video. El porcentaje concreto de edición y la publicación deberán acreditarse únicamente con la versión y el enlace efectivamente disponibles; no se declarará una publicación por contar con el guion.
+**URL del video About-the-Team publicado en Microsoft Stream:**
 
-| Secuencia | Contenido |
-|---|---|
-| Presentación | Problema de la coordinación del transporte escolar y propuesta de Rumbo. |
-| Beneficios | Información de rutas, hitos del traslado y comunicación de incidencias para los dos segmentos. |
-| Demostración | Grabación de la aplicación con los User Flows que forman parte de la versión presentada. |
-| Testimonios | Opiniones de participantes reales de las entrevistas de validación, al menos una por segmento. |
-| Cierre | Identidad de AIpaca/Rumbo e invitación a conocer la plataforma. |
+**URL del video About-the-Team publicado en YouTube:** https://www.youtube.com/watch?v=myYY6wuao8E
 
+<div align="center">
+  <img src="./assets/chapter5/video-about-the-product.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+</div>
+
+<br>
+<br>
 
 # Conclusiones
 
@@ -3445,29 +4793,25 @@ Desde la coordinación del equipo, se ha mantenido el registro de responsables e
 
 El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspectiva de sus integrantes. Reúne escenas de coordinación, revisión de artefactos, desarrollo y demostración de la aplicación, junto con una retrospectiva del equipo. Los testimonios individuales relacionan las responsabilidades asumidas, las dificultades técnicas y los aprendizajes con el Student Outcome 3, referido a la comunicación efectiva para diferentes audiencias.
 
-La pauta de grabación propone una introducción a AIpaca y Rumbo, escenas de sesiones de trabajo reales, explicación de la coordinación y una retrospectiva del Sprint, seguidas de testimonios ante cámara de los cuatro integrantes activos: Alejandro, Kevin, Leonardo y Alexandra. Conforme al Anexo C del enunciado, la **referencia** es de cinco minutos de retrospectiva grupal más un minuto por integrante (aproximadamente nueve minutos en total). El equipo ha preparado una versión abreviada como borrador de edición; si utiliza una duración inferior, corresponde confirmar su aceptación con el docente. La duración, los timestamps y el nivel de edición solo se documentarán como hechos una vez grabado y publicado el video. La identidad visual, voz en off y escenas de reuniones deben corresponder a material real.
+**URL del video About-the-Product publicado en Microsoft Stream:**
 
-**Estado de publicación AV2:** no se adjuntaron archivos de video ni enlaces verificables de Microsoft Stream o YouTube. Se conserva a continuación una pauta de grabación como propuesta, no como evidencia publicada.
+**URL del video About-the-Product publicado en YouTube:** https://www.youtube.com/watch?v=RQ0Z-Gsg2tA
 
-**Pauta de edición preliminar para un video abreviado** (no es la duración oficial sugerida en el enunciado; los tiempos definitivos se anotarán tras montar el video):
+| Sección                   | Timing          |
+| ------------------------- | --------------- |
+| Testimonio Alexandra Meza | `00:00 - 02:24` |
+| Testimonio Kevin Geronimo | `02:25 - 04:50` |
+| Testimonio Alejandro Diaz | `04:51 - 06:44` |
+| Testimonio Leonardo Lino  | `06:45 - 08:38` |
 
-| Tramo propuesto | Narración / cuadro | Evidencia que debe insertarse |
-|---|---|---|
-| `00:00–00:20` | Presentación de AIpaca, Rumbo y del objetivo del transporte escolar. | Logo, Landing Page y presentación de participantes. |
-| `00:20–01:30` | Trabajo colaborativo y retrospectiva: Jira, GitHub, organización por contextos, problemas de integración y mejoras. | Sesiones reales del equipo, tableros, PRs y código, con voz en off. |
-| `01:30–02:15` | Leonardo: Routes & Trip Planning y coordinación de avances. | Frente a cámara; formulario Angular, paradas, horarios, API Spring Boot y Jira. |
-| `02:15–02:55` | Kevin: Subscriptions & Billing. | Frente a cámara; funcionalidad y pruebas que pueda acreditar. |
-| `02:55–03:35` | Alejandro: Profiles, estudiantes y relaciones. | Frente a cámara; formularios y relaciones con rutas, sin mostrar datos privados reales. |
-| `03:35–04:15` | Alexandra: Alerting, incidencias y notificaciones. | Frente a cámara; funcionalidades comprobables y decisiones de comunicación. |
-| `04:15–04:30` | Cierre: competencias aprendidas y objetivos pendientes. | Plano de equipo o identidad de Rumbo. |
+<br>
 
-**Síntesis del testimonio de Leonardo (guion orientativo):** presentación personal y responsabilidad en Routes & Trip Planning; creación/edición de recorridos, paradas ordenadas, horarios y asignaciones; uso de Angular, Spring Boot, PostgreSQL y OpenAPI; dificultad de conectar los componentes y resolver la validación intercontexto de Profiles; seguimiento de tareas en Jira y coordinación de las dependencias del equipo; aprendizajes en arquitectura, APIs REST, resolución de problemas y comunicación. Evitar afirmar que la seguridad, los avisos productivos o el despliegue están completados sin evidencia.
+<div align="center">
+  <img src="./assets/chapter5/video-about-the-team.png" alt="Video About-the-Team" width="95%">
+</div>
 
-**Vinculación con ABET Student Outcome 3:** cada testimonio describe acciones personales verificables y comunica ante una audiencia no especializada qué problema se intentó resolver, qué metodología se aplicó, qué se aprendió y qué falta mejorar. El reporte se completa con el guion y los tiempos reales después de la edición.
-
-**Nombre de archivo requerido (Sprint 3):** `upc-pre-202620-1asi0729-7760-aipaca-about-the-team-sprint-3.mp4`.
-
-
+<br>
+<br>
 
 # Bibliografía
 
@@ -3525,3 +4869,4 @@ Los siguientes archivos **ya están en este repositorio** y se incorporaron como
 - https://github.com/AIpaca-OS/landing-page
 - https://github.com/AIpaca-OS/frontend-web-application
 - https://github.com/AIpaca-OS/web-services
+
