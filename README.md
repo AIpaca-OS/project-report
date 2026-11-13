@@ -3318,26 +3318,69 @@ A continuación, se presenta la documentación de los endpoints implementados, d
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint se evidencia mediante la secuencia de commits, los Pull Requests, el Network Graph y los analíticos de Contributors y Pulse. La explicación relaciona las tareas del Sprint Backlog con el código integrado y con las revisiones efectuadas por otros miembros del equipo.
+La colaboración durante el Sprint 3 se documenta mediante GitHub Insights, que proporciona información sobre la actividad de los repositorios, las contribuciones individuales y la evolución de las ramas. El análisis considera los tres repositorios involucrados en el desarrollo de Rumbo: Frontend Web Application, Web Services y Landing Page.
 
-- [Historial de commits del Project Report](https://github.com/AIpaca-OS/project-report/commits)
-- [Pull Requests del Project Report](https://github.com/AIpaca-OS/project-report/pulls)
-- [Network del Project Report](https://github.com/AIpaca-OS/project-report/network)
-- [Pull Requests del Frontend](https://github.com/AIpaca-OS/frontend-web-application/pulls)
-- [Repositorio de Web Services](https://github.com/AIpaca-OS/web-services)
+Las siguientes evidencias complementan el Sprint Backlog y los registros de desarrollo en Jira, mostrando el trabajo colaborativo realizado en los diferentes repositorios.
 
+**Frontend Web Application**
 
-La retrospectiva del equipo se vincula con el video About-the-Team, que complementa estos registros con sesiones de trabajo y testimonios de los integrantes sobre sus responsabilidades, dificultades y aprendizajes.
+El repositorio Frontend Web Application contiene la implementación de la plataforma utilizando Angular. Las siguientes capturas muestran el resumen de actividad, los colaboradores y la red de ramas del repositorio.
 
+**Resumen de actividad (Pulse)**
 
-**Resumen verificable de colaboración, 10/11/2026:** Jira registra **76 incidencias asignadas a los cuatro integrantes activos**: Leonardo (33), Kevin (16), Alejandro (16) y Alexandra (11). Los estados consultados son 8 Listo, 13 En curso y 55 Por hacer. Las cifras describen la distribución y el avance de tickets, **no** horas trabajadas ni número de commits por autor.
+![Frontend Pulse](assets/chapter5/sprint3-frontend-pulse.jpg)
 
-El equipo utilizó ramas por funcionalidad y revisiones mediante GitHub. El backend integró Routes mediante [PR #3](https://github.com/AIpaca-OS/web-services/pull/3), Billing mediante [PR #4](https://github.com/AIpaca-OS/web-services/pull/4), un primer conjunto de Profiles mediante [PR #5](https://github.com/AIpaca-OS/web-services/pull/5), Notifications mediante [PR #6](https://github.com/AIpaca-OS/web-services/pull/6) y ampliaciones REST de Profiles mediante [PR #8](https://github.com/AIpaca-OS/web-services/pull/8). El [PR #7](https://github.com/AIpaca-OS/web-services/pull/7) no estaba fusionado en la consulta. El frontend de Routes había ingresado a `develop` mediante [PR #17](https://github.com/AIpaca-OS/frontend-web-application/pull/17).
+**Colaboradores (Contributors)**
 
-Desde la coordinación del Sprint, Leonardo hizo seguimiento de tareas y dependencias entre contextos, especialmente del contrato Routes–Profiles y de la relación entre vehículos, estudiantes y rutas. El trabajo colaborativo se debe sustentar con la autoría real de cada commit y las interacciones efectivamente registradas en Jira/PRs; no se atribuirán cambios que no puedan verificarse a integrantes distintos.
+![Frontend Contributors](assets/chapter5/sprint3-frontend-contributors.jpg)
 
-**Retrospectiva provisional:** el trabajo en paralelo permitió avanzar en módulos especializados, pero provocó divergencias en los paquetes Java, en las versiones de JDK, en los contratos de autorización y en los orígenes de datos consumidos por Angular. Como medidas de mejora se priorizan contratos compartidos documentados en Swagger, pruebas de integración entre módulos, revisión del perfil de ejecución antes del despliegue, conexión gradual del frontend al backend real y validación temprana mediante demostraciones reproducibles.
+**Gráfico de red (Network Graph)**
 
+![Frontend Network Graph](assets/chapter5/sprint3-frontend-network.jpg)
+
+Referencias del repositorio:
+- [Frontend Web Application - Commits (develop)](https://github.com/AIpaca-OS/frontend-web-application/commits/develop)
+- [Frontend Web Application - Pull Requests](https://github.com/AIpaca-OS/frontend-web-application/pulls)
+
+**Web Services**
+
+El repositorio Web Services contiene la implementación del backend utilizando Spring Boot. Las siguientes evidencias presentan la actividad de desarrollo, la distribución de contribuciones entre los integrantes y la estructura de ramas del repositorio.
+
+**Resumen de actividad (Pulse)**
+
+![Backend Pulse](assets/chapter5/sprint3-backend-pulse.jpg)
+
+**Colaboradores (Contributors)**
+
+![Backend Contributors](assets/chapter5/sprint3-backend-contributors.jpg)
+
+**Gráfico de red (Network Graph)**
+
+![Backend Network Graph](assets/chapter5/sprint3-backend-network.jpg)
+
+Referencias del repositorio:
+- [Web Services - Commits (develop)](https://github.com/AIpaca-OS/web-services/commits/develop)
+- [Web Services - Pull Requests](https://github.com/AIpaca-OS/web-services/pulls)
+
+**Landing Page**
+
+El repositorio Landing Page complementa la aplicación principal mediante la presentación del producto a sus usuarios objetivo. A continuación, se incluye la evidencia disponible sobre las contribuciones de los integrantes.
+
+**Colaboradores (Contributors)**
+
+![Landing Page Contributors](assets/chapter5/sprint3-landing-contributors.jpg)
+
+Referencias del repositorio:
+- [Landing Page - Commits (main)](https://github.com/AIpaca-OS/landing-page/commits/main)
+- [Landing Page - Pull Requests](https://github.com/AIpaca-OS/landing-page/pulls)
+
+**Análisis de la colaboración**
+
+Las evidencias de GitHub Insights ofrecen diferentes perspectivas sobre la actividad de desarrollo del equipo. Pulse resume la actividad del repositorio durante un periodo determinado, Contributors identifica las contribuciones asociadas a las cuentas de GitHub y Network Graph permite visualizar la relación entre las ramas y los commits.
+
+Estas visualizaciones deben interpretarse conjuntamente con el historial de commits, los Pull Requests y los registros de Jira. En particular, Network Graph representa el historial del repositorio y las relaciones entre sus ramas, mientras que el historial de commits permite identificar los cambios realizados durante el periodo correspondiente al Sprint 3.
+
+El proceso de desarrollo colaborativo involucró trabajo paralelo en los repositorios de frontend y backend, lo que requirió coordinación en los contratos de API, las dependencias entre los bounded contexts y la integración mediante Pull Requests. Asimismo, la revisión de estas contribuciones permitió destacar la importancia de mantener configuraciones consistentes y validar los cambios antes de incorporarlos a las ramas compartidas de desarrollo.
 ## 5.3. Validation Interviews
 
 La validación de Rumbo se estructura alrededor de los segmentos definidos en Needfinding: padres o tutores y conductores de movilidad escolar. Las sesiones contemplan la interacción directa con la Landing Page y con los User Flows de la aplicación web. Las tareas se presentan a través de situaciones de uso, sin guiar al entrevistado hacia una secuencia específica de botones.
