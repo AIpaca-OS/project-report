@@ -5135,15 +5135,15 @@ A continuación, se registran todas las entrevistas de validación realizadas a 
 **Resumen:** Eduardo tiene 34 años y pertenece al segmento de padres/tutores. Durante la entrevista se abordaron sus principales preocupaciones respecto al transporte escolar de su hijo de 4 años, quien se encuentra en inicial. Entre sus principales problemas se encuentra la ansiedad generada por la falta de visibilidad del trayecto, especialmente cuando ocurren averías imprevistas durante el recorrido. Manifestó interés en recibir alertas automáticas relacionadas con el abordaje del menor, incluyendo la confirmación de que viaje con el cinturón de seguridad puesto y que sea entregado correctamente a la profesora. Asimismo, considera valioso contar con información que le permita evitar la espera en la vereda. Respecto a la disposición de pago, acepta un rango de S/ 15 a S/ 25 mensuales.
 
 
-#### Entrevista 4 — Gabriel Alexandro Sosa Guevara
+#### Entrevista 4 — Jefferson Chavez
 
-- **Edad:** 20 años.
+- **Edad:** 28 años.
 - **Ocupación / segmento:** Conductor de movilidad escolar.
-- **Experiencia en el rubro:** 2 años.
-- **Distrito:** Los Olivos.
-- **Duración:** 09:51.
+- **Experiencia en el rubro:** 5 años.
+- **Distrito:** Ventanilla.
+- **Duración:** 07:48.
 - **Timing de inicio:** 00:00.
-- **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQC8MugJp8RuRYBv6-JB1JqxAa7zKfdSDfWOW6lMscwFzxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MUf4ft).
+- **Video:** [Conductor 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202422298_upc_edu_pe/IQD3rywL2d4WT5TRdNv1fQjwAUm8JC7ZllpeMnNBYv4Tpv4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p5obuS).
 
 <p align="center"><img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/screenshots-interwiews/gabriel-sosa-interview.png" alt="Captura de la entrevista a Gabriel Alexandro Sosa Guevara" width="850"/></p>
 
