@@ -83,9 +83,6 @@ La siguiente evidencia corresponde al resumen de actividad disponible en GitHub 
   <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/collaboration-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
 </div>
 
-**Historial verificable:** https://github.com/AIpaca-OS/project-report/commits/develop/  
-**Landing Page:** https://github.com/AIpaca-OS/landing-page/commits/main/
-
 **Team Collaboration Network**
 
 Las siguientes capturas corresponden al Network Graph y permiten revisar visualmente la evolución e integración de las ramas del trabajo colaborativo.
@@ -99,35 +96,67 @@ Las siguientes capturas corresponden al Network Graph y permiten revisar visualm
   <img src="https://raw.githubusercontent.com/AIpaca-OS/project-report/main/assets/chapter5/network-6.png" alt="Team Collaboration Network - Evidence 6" width="95%">
 </div>
 
-**Branches:** https://github.com/AIpaca-OS/project-report/branches  
-**Network:** https://github.com/AIpaca-OS/project-report/network
+### TB1
 
-La evidencia muestra trabajo mediante ramas por capítulo y consolidaciones sucesivas hacia `develop`. Se registran Pull Requests asociados a Requirements Elicitation, Requirements Specification, Product Design, Product Implementation y consolidación de AV1.
+Durante el desarrollo del TB1, se analizaron las contribuciones realizadas por los integrantes del equipo en el repositorio del Project Report, considerando la actividad correspondiente al Sprint 2. Para ello, se utilizaron las herramientas de análisis de GitHub, que permiten evidenciar la participación del equipo y la evolución colaborativa de la documentación del proyecto.
 
-**Contributors / Pull Requests**
+**Team Collaboration Pulse**
 
-La evidencia de Pull Requests se mantiene mediante los enlaces verificables de GitHub, evitando referencias a archivos de imagen que ya no existen en el repositorio.
+GitHub Pulse permite visualizar la actividad general del repositorio durante el Sprint 2, incluyendo los commits, Pull Requests y otros cambios realizados. Esta información permite evidenciar el ritmo de trabajo y las contribuciones relacionadas con la elaboración y actualización del reporte del proyecto.
 
-A la fecha de esta actualización, el Project Report registra **25 Pull Requests cerrados**, de los cuales **22 fueron integrados** y **3 fueron cerrados sin merge**. Entre los creadores de Pull Requests figuran `linolw`, `AlexandraYMS` y `DianaParejaCaceres`; el historial de commits también evidencia contribuciones de `aleedr` y `qebim18`.
 
-**Contributors:** https://github.com/AIpaca-OS/project-report/graphs/contributors  
-**Pull Requests:** https://github.com/AIpaca-OS/project-report/pulls?q=is%3Apr+is%3Aclosed
+<div align="center">
+  <img src="./assets/tb1-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 
+
+**Team Contributors**
+
+La sección Contributors permite identificar la participación de cada integrante mediante sus contribuciones al repositorio. Esta métrica facilita el seguimiento de la actividad individual y permite observar cómo se distribuyó el trabajo de documentación durante el Sprint 2.
+
+<div align="center">
+  <img src="./assets/tb1-contributors-1.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+<div align="center">
+  <img src="./assets/tb1-contributors-2.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+**Team Collaboration Network**
+
+El Network Graph permite visualizar la evolución del repositorio mediante sus ramas y commits, mostrando cómo se realizaron e integraron los cambios en el reporte. Esta evidencia permite apreciar el uso de GitHub como herramienta de control de versiones y colaboración durante la elaboración de la documentación del TB1.
+
+<div align="center">
+  <img src="./assets/av2-network-graph.png" alt="Project Report Collaboration Insights - GitHub Network Graph" width="95%">
+</div>
 
 ### AV2
 
-Para AV2, el informe incorpora la revisión del diseño de persistencia y la organización de la documentación correspondiente al Sprint 3. Los ocho diagramas nuevos fueron integrados en el apartado 4.8, se actualizaron sus explicaciones y se sustituyeron los assets anteriores. En paralelo, el Capítulo V fue alineado con la estructura y los formatos del Final Project Statement, manteniendo separados los registros del trabajo realizado y las evidencias que corresponden a nuevas implementaciones.
+La colaboración del equipo durante el desarrollo del Sprint 3 se verificó mediante las herramientas de análisis de actividad disponibles en GitHub para el repositorio **Project Report**. Las siguientes evidencias permiten observar la participación de los integrantes, la evolución de las contribuciones y la integración de los cambios realizados en el documento colaborativo.
 
-La colaboración documental puede revisarse directamente en las ramas del informe y en los siguientes commits:
+**Team Collaboration Pulse**
 
-- [Actualización de los ocho diagramas y su redacción](https://github.com/AIpaca-OS/project-report/commit/3f54fc8dc33a7be44600b8aef3a6ed479df48c7a).
-- [Eliminación de versiones gráficas sustituidas en Chapter 4](https://github.com/AIpaca-OS/project-report/commit/06d0970db2e320cbdf165f73f1a3f31e460acf2b).
-- [Sincronización de recursos en la rama de Chapter 5](https://github.com/AIpaca-OS/project-report/commit/bcdaada5fd87dc7893ea8182f8002244a4bf0222).
-- [Documentación de Sprint 3, entrevistas y About-the-Product](https://github.com/AIpaca-OS/project-report/commit/0d77f42d9c134269c60fad8dfc9509d1cb39a5d5).
+La siguiente evidencia corresponde a GitHub Pulse y presenta un resumen de la actividad del repositorio durante el periodo de trabajo de AV2, permitiendo identificar las contribuciones realizadas mediante commits, Pull Requests y otros cambios registrados.
 
-Los analíticos de Contributors, Network y Pull Requests sirven para verificar la participación individual y el proceso de integración. Las capturas de AV2 se incorporan a esta sección con el periodo de consulta identificado.
+<div align="center">
+  <img src="./assets/av2-pulse.png" alt="Project Report Collaboration Insights - GitHub Pulse" width="95%">
+</div>
 
-<!-- AV2: incorporar imágenes de los analíticos y verificar la participación de cada integrante en el Project Report. -->
+**Team Contributors**
+
+La sección Contributors permite visualizar la participación de los integrantes en el repositorio, mostrando sus contribuciones y actividad registrada durante el desarrollo del informe. Esta evidencia complementa el historial de commits y permite reconocer la distribución del trabajo colaborativo.
+
+<div align="center">
+  <img src="./assets/av2-contributors.png" alt="Project Report Collaboration Insights - GitHub Contributors" width="95%">
+</div>
+
+**Team Collaboration Network**
+
+La siguiente evidencia corresponde al Network Graph de GitHub, que permite observar la evolución del historial de versiones, las ramas de trabajo y la integración de los cambios realizados por los integrantes. De esta manera, se evidencia el uso del control de versiones para coordinar y consolidar las modificaciones del Project Report durante AV2.
+
+<div align="center">
+  <img src="./assets/av2-network-graph.png" alt="Project Report Collaboration Insights - GitHub Network Graph" width="95%">
+</div>
 
 ---
 
@@ -5029,7 +5058,268 @@ A continuación, se registran todas las entrevistas de validación realizadas a 
 
 Los resultados de cada sesión se examinan con el formato **UX Heuristics & Principles Evaluation**, que contempla usabilidad, diseño inclusivo y arquitectura de información. Los problemas se documentan con referencia a la tarea y sesión, una captura que muestre el comportamiento observado, la heurística afectada y una recomendación concreta.
 
-La escala de severidad indicada por el enunciado comprende cuatro niveles: **1, superficial; 2, menor; 3, mayor; 4, muy grave**. La calificación se sustenta en la frecuencia y el impacto de la dificultad para el usuario.
+**UX Heuristics & Principles Evaluation**  
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** Desarrollo de Aplicaciones Open Source  
+**SECCIÓN:** 7760 
+**PROFESORES:** Todos  
+**AUDITOR:** AIpaca  
+**CLIENTE(S):** Entrevistados
+
+## SITE o APP A EVALUAR:
+
+**Rumbo – Plataforma web de seguimiento de movilidad escolar**
+
+**Enlace:** https://aipaca-os.github.io/frontend-web-application/login
+
+## TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas dentro de la plataforma Rumbo:
+
+1. Inicio de sesión de un usuario registrado.
+2. Visualización del panel principal según el tipo de usuario (tutor o conductor).
+3. Consulta de la información de los estudiantes registrados.
+4. Visualización de las rutas y sus respectivas paradas.
+5. Consulta del estado y progreso de los viajes escolares.
+6. Visualización de notificaciones relacionadas con los viajes.
+7. Consulta y seguimiento de incidencias y retrasos reportados.
+8. Actualización de las preferencias de notificaciones.
+9. Consulta y actualización de la información del perfil del usuario.
+10. Registro y consulta de vehículos.
+11. Consulta de los planes y suscripciones disponibles.
+12. Cierre de sesión de la plataforma.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Registro y autenticación mediante proveedores externos.
+2. Recuperación de contraseña mediante servicios externos de correo electrónico.
+3. Administración de roles y permisos de usuarios.
+4. Gestión de pagos y suscripciones mediante pasarelas de pago externas.
+5. Integración con servicios externos de geolocalización y seguimiento GPS en tiempo real.
+6. Generación de reportes estadísticos avanzados sobre los viajes escolares.
+
+## ESCALA DE SEVERIDAD:
+
+Los problemas identificados serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|---|---|
+| 1 | **Problema superficial:** Puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser corregido, a menos que exista disponibilidad de tiempo. |
+| 2 | **Problema menor:** Puede ocurrir con mayor frecuencia o resultar un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para el siguiente release. |
+| 3 | **Problema mayor:** Ocurre frecuentemente o los usuarios tienen dificultades para resolverlo. Es importante corregirlo y asignarle una prioridad alta. |
+| 4 | **Problema muy grave:** Es un error de gran impacto que impide al usuario continuar utilizando la herramienta. Es indispensable corregirlo antes del lanzamiento. |
+
+## TABLA RESUMEN:
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---:|---|
+| 1 | El panel de conductores únicamente muestra el nombre completo y estado de los estudiantes asignados, sin permitir consultar información adicional relevante. | 3 | Usability: Reconocimiento antes que recuerdo |
+| 2 | El registro de vehículos no permite adjuntar ni registrar documentos importantes, como el SOAT vigente u otra documentación del vehículo. | 3 | Information Architecture: Is it usable? |
+| 3 | La sección de planes no especifica las funcionalidades, beneficios ni diferencias concretas entre los planes disponibles. | 3 | Information Architecture: Is it understandable? |
+| 4 | El dashboard principal del conductor no prioriza información relevante para sus actividades diarias, como el próximo viaje o una vista previa de sus estudiantes asignados. | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 5 | La sección Current Trip del tutor no presenta un mapa que permita visualizar la ubicación del estudiante durante su viaje. | 3 | Usability: Visibilidad del estado del sistema |
+| 6 | El registro de estudiantes desde el perfil del tutor no contempla campos para información importante, como DNI y contactos de emergencia. | 3 | Inclusive Design: Proporciona experiencias comparables |
+| 7 | Algunas secciones de la plataforma presentan traducciones al inglés poco naturales o inadecuadas para el contexto de la movilidad escolar. | 2 | Usability: Consistencia y estándares |
+
+
+<br>
+
+
+# DESCRIPCIÓN DE PROBLEMAS:
+
+**PROBLEMA #1:** El panel de conductores no permite visualizar información detallada de los estudiantes asignados.
+
+**Severidad:** 3
+
+**Heurística violada:** Usabilidad — Reconocimiento antes que recuerdo.
+
+**Problema:**
+
+En el panel de conductores, la sección de estudiantes asignados únicamente muestra el nombre completo y el estado de cada estudiante. No existe una opción que permita consultar información adicional sobre ellos, como sus datos personales, información de contacto u otros detalles relevantes para el conductor durante la prestación del servicio de movilidad escolar.
+
+Esta limitación dificulta que el conductor pueda acceder rápidamente a la información necesaria para identificar y atender adecuadamente a los estudiantes bajo su responsabilidad.
+
+![alt text](image.png)
+
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-1.png"
+       alt="Problema 1 - Información limitada de estudiantes en el panel del conductor" width="700">
+  <br>
+  <em>Figura. Captura del panel de conductores mostrando únicamente el nombre completo y el estado de los estudiantes asignados.</em>
+</p>
+
+**Recomendación:**
+
+Incorporar una opción para visualizar el perfil detallado de cada estudiante desde el panel del conductor, permitiendo consultar información relevante para la gestión de los viajes y la atención de los estudiantes.
+
+---
+
+**PROBLEMA #2:** El registro de vehículos no permite adjuntar documentación relevante para informar sobre su estado y vigencia.
+
+**Severidad:** 3
+
+**Heurística violada:** Arquitectura de la información — Is it usable?
+
+**Problema:**
+
+En el apartado de registro de vehículos, la plataforma no contempla campos para adjuntar o registrar documentos importantes relacionados con el vehículo, como el SOAT vigente, la tarjeta de identificación vehicular u otros documentos que permitan verificar su situación y documentación actualizada.
+
+Esta limitación reduce la cantidad de información disponible sobre los vehículos utilizados para el transporte escolar y dificulta que los tutores puedan conocer aspectos importantes relacionados con la documentación y seguridad del vehículo asignado a sus hijos.
+
+![alt text](image-1.png)
+
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-2.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
+  <br>
+  <em>Figura. Captura del formulario de registro de vehículos mostrando la ausencia de campos para registrar o adjuntar documentación relevante.</em>
+</p>
+
+**Recomendación:**
+
+Incorporar una sección de documentación dentro del registro y administración de vehículos, que permita adjuntar archivos y registrar fechas de emisión y vencimiento de documentos como el SOAT, además de facilitar la consulta de su vigencia por parte de los usuarios autorizados.
+
+---
+
+**PROBLEMA #3:** La sección de planes no especifica las funcionalidades y beneficios incluidos en cada suscripción.
+
+**Severidad:** 3
+
+**Heurística violada:** Arquitectura de la información — Is it understandable?
+
+**Problema:**
+
+En la sección de planes y suscripciones, las descripciones presentan información general sobre el público al que están dirigidos los planes, utilizando expresiones como una experiencia más completa para los conductores. Sin embargo, no se detallan las funcionalidades, beneficios ni características específicas que incluye cada alternativa.
+
+Esta falta de información dificulta que los conductores puedan comprender las diferencias entre los planes disponibles y tomar una decisión informada al momento de seleccionar una suscripción.
+
+![alt text](image-2.png)
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-3.png"
+       alt="Problema 3 - Planes sin especificación de funcionalidades" width="700">
+  <br>
+  <em>Figura. Captura de la sección de planes mostrando descripciones generales sin detallar las funcionalidades incluidas en cada alternativa.</em>
+</p>
+
+**Recomendación:**
+
+Ampliar las descripciones de los planes mediante una lista de funcionalidades y beneficios específicos, indicando claramente qué características están disponibles en cada suscripción. También se recomienda incorporar una tabla comparativa que permita identificar fácilmente las diferencias entre los planes.
+
+---
+
+**PROBLEMA #4:** El dashboard principal del conductor no presenta información prioritaria para la gestión de sus actividades diarias.
+
+**Severidad:** 2
+
+**Heurística violada:** Usabilidad — Flexibilidad y eficiencia de uso.
+
+**Problema:**
+
+El dashboard principal del conductor podría aprovechar mejor su espacio para mostrar información directamente relacionada con sus actividades diarias. Actualmente, no se priorizan elementos como un resumen del próximo viaje programado, sus horarios, las paradas pendientes o una vista previa de los estudiantes asignados.
+
+Esto ocasiona que el conductor deba navegar hacia otras secciones de la plataforma para consultar información que podría encontrarse disponible desde la pantalla principal, incrementando los pasos necesarios para acceder a sus actividades más frecuentes.
+
+![alt text](image-3.png)
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-4.png"
+       alt="Problema 4 - Dashboard del conductor sin información prioritaria" width="700">
+  <br>
+  <em>Figura. Captura del dashboard principal del conductor mostrando la distribución actual de sus elementos e información disponible.</em>
+</p>
+
+**Recomendación:**
+
+Rediseñar el dashboard del conductor para priorizar información operativa, incorporando una tarjeta con el próximo viaje programado, sus horarios y paradas, además de un resumen de los estudiantes asignados y accesos directos a las funcionalidades más utilizadas.
+
+---
+
+**PROBLEMA #5:** La sección Current Trip del tutor no permite visualizar la ubicación del estudiante mediante un mapa en tiempo real.
+
+**Severidad:** 3
+
+**Heurística violada:** Usabilidad — Visibilidad del estado del sistema.
+
+**Problema:**
+
+En la sección Current Trip del perfil del tutor, se presenta información relacionada con el viaje actual del estudiante; sin embargo, no se incluye un mapa que permita visualizar su ubicación geográfica durante el recorrido.
+
+Esta limitación impide que los tutores tengan una referencia visual de la ubicación y el progreso del vehículo durante el trayecto, reduciendo la visibilidad sobre el desplazamiento de sus hijos y la confianza en el seguimiento de la movilidad escolar.
+
+![alt text](image-7.png)
+
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-5.png"
+       alt="Problema 5 - Current Trip sin mapa de ubicación" width="700">
+  <br>
+  <em>Figura. Captura de la sección Current Trip del tutor mostrando la información del viaje sin una representación geográfica de la ubicación del estudiante.</em>
+</p>
+
+**Recomendación:**
+
+Incorporar un mapa interactivo en la sección Current Trip que permita visualizar la ubicación del vehículo en tiempo real, junto con el recorrido realizado y las paradas correspondientes. Esta funcionalidad debe integrarse con un servicio de geolocalización para proporcionar información actualizada sobre el desplazamiento.
+
+---
+
+**PROBLEMA #6:** El registro de estudiantes no contempla información personal y contactos de emergencia relevantes para su seguridad.
+
+**Severidad:** 3
+
+**Heurística violada:** Inclusive Design — Proporciona experiencias comparables.
+
+**Problema:**
+
+En el apartado de administración de estudiantes del perfil del tutor, el formulario de registro no contempla suficientes campos para almacenar información complementaria que podría resultar importante durante la prestación del servicio de movilidad escolar.
+
+Entre los datos que podrían resultar necesarios se encuentran el número de DNI del estudiante, teléfonos de contactos de emergencia, información de personas autorizadas para recogerlo y otros datos relevantes ante una eventual situación de emergencia.
+
+La ausencia de estos campos limita la disponibilidad de información que el conductor podría necesitar para actuar oportunamente ante incidentes o situaciones imprevistas durante los viajes escolares.
+
+![alt text](image-4.png)
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-6.png"
+       alt="Problema 6 - Formulario de estudiantes sin información complementaria" width="700">
+  <br>
+  <em>Figura. Captura del formulario de registro de estudiantes desde el perfil del tutor, mostrando los campos de información disponibles.</em>
+</p>
+
+**Recomendación:**
+
+Ampliar el formulario de registro de estudiantes para incorporar información complementaria, como DNI, teléfonos de emergencia, personas de contacto autorizadas y observaciones importantes. Asimismo, permitir que los conductores autorizados puedan consultar esta información cuando sea necesaria durante la prestación del servicio, aplicando controles adecuados de privacidad y acceso a los datos.
+
+---
+
+**PROBLEMA #7:** Algunas secciones de la plataforma presentan traducciones al inglés poco naturales o inadecuadas para el contexto de la movilidad escolar.
+
+**Severidad:** 2
+
+**Heurística violada:** Usabilidad — Consistencia y estándares.
+
+**Problema:**
+
+Al navegar por la plataforma en inglés, se identifican algunas secciones cuyos textos presentan traducciones poco naturales o que no utilizan los términos más adecuados para el contexto de la movilidad escolar.
+
+Por ejemplo, en la sección de rutas de los estudiantes se muestra el texto "My students' routes" acompañado de la descripción "Check the published route and the states registered by the driver". En este último caso, la expresión "states registered by the driver" no representa de manera natural el concepto de estados o actualizaciones del viaje registrados por el conductor.
+
+Este tipo de traducciones puede generar confusión en los usuarios y afectar la comprensión de las funcionalidades, además de reducir la consistencia y profesionalismo de la interfaz en su versión en inglés.
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+<p align="center">
+  <img src="public/assets/images-doc/heuristica-problema-7.png"
+       alt="Problema 7 - Traducción poco natural en la sección de rutas de los estudiantes" width="700">
+  <br>
+  <em>Figura. Captura de la sección My students' routes mostrando una descripción en inglés cuya traducción no utiliza términos adecuados para el contexto de la movilidad escolar.</em>
+</p>
+
+**Recomendación:**
+
+Revisar los textos de todas las secciones disponibles en inglés para garantizar traducciones naturales, correctas y coherentes con el contexto de la plataforma. Se recomienda utilizar términos propios del seguimiento de movilidad escolar, como "trip status" o "statuses updated by the driver", en lugar de traducciones literales que puedan generar confusión. Asimismo, mantener una terminología uniforme en todos los módulos de Rumbo.
+
+---
 
 ## 5.4. Video About-the-Product
 
@@ -5074,7 +5364,7 @@ El video About-the-Team presenta el proceso de trabajo de AIpaca desde la perspe
 | ------------------------- | --------------- |
 | Testimonio Alexandra Meza | `00:00 - 02:24` |
 | Testimonio Kevin Geronimo | `02:25 - 04:50` |
-| Testimonio Alejandro Diaz | `04:51 - 06:44` |
+| Testimonio Alejandro Diaz | `04:51 - 06:44` |30032007
 | Testimonio Leonardo Lino  | `06:45 - 08:38` |
 
 <br>
