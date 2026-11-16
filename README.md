@@ -3817,6 +3817,18 @@ Por último, se presenta Swagger, donde se documentan todos los endpoints implem
 
 **URL pública del Repositorio de los Web Services:** https://github.com/AIpaca-OS/web-services
 
+![alt text](image-9.png)
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
 <div align="center">
   <img src="./assets/chapter5/backend-swagger.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
@@ -5210,110 +5222,6 @@ A continuación, se registran todas las entrevistas de validación realizadas a 
 
 <h4 align="center">UX Heuristics &amp; Principles Evaluation<br>Usability – Inclusive Design – Information Architecture</h4>
 
-| Campo | Valor |
-|---|---|
-| CARRERA | Ingeniería de Software |
-| CURSO | Desarrollo de Aplicaciones Open Source |
-| SECCIÓN | 7760 |
-| PROFESORES | Todos |
-| AUDITOR | AIpaca |
-| CLIENTE(S) | Inspección del equipo AIpaca y participantes de las entrevistas de validación (sección 5.3.2) |
-
-**SITE o APP A EVALUAR:** Rumbo — Landing Page y Frontend Web Application (versiones desplegadas del Sprint 3).
-
-**TAREAS A EVALUAR:** el alcance de esta evaluación incluye la usabilidad de las siguientes tareas:
-
-1. Ingreso a la aplicación según rol.
-2. Registro de un estudiante.
-3. Solicitud del servicio de transporte de un conductor.
-4. Consulta de la ruta del estudiante («Viaje actual»).
-5. Revisión de avisos y marcado como leído.
-6. Configuración y publicación de una ruta con paradas, horario y estudiantes.
-7. Programación, inicio y cierre del viaje del día.
-8. Registro de un retraso o una incidencia.
-9. Consulta de planes de suscripción.
-10. Cambio de idioma de la aplicación.
-
-**No están incluidas** en esta versión de la evaluación las siguientes tareas:
-
-1. Registro de cuenta, inicio de sesión con credenciales y recuperación de acceso (IAM no integrado).
-2. Recepción de avisos por un canal externo (correo o mensajería).
-3. Configuración persistente de las preferencias de notificación.
-4. Reporte de ausencia y cancelación de un viaje desde la aplicación web.
-5. Habilitación del acceso de un asistente.
-
-**ESCALA DE SEVERIDAD:**
-
-| Nivel | Descripción |
-|---|---|
-| 1 | Problema superficial: puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
-| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
-| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
-| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
-
-**TABLA RESUMEN:**
-
-| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
-|---|---|---|---|
-| 1 | Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor | 3 | Usability: Reconocer antes que recordar |
-| 2 | El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste | 2 | Inclusive Design: Proporciona experiencias comparables |
-| 3 | La preferencia de avisos no críticos no se conserva entre sesiones | 2 | Usability: Visibilidad del estado del sistema |
-| 4 | Las fechas de nacimiento se muestran en formato técnico (AAAA-MM-DD) | 1 | Usability: Coincidencia entre el sistema y el mundo real |
-| 5 | El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación | 1 | Usability: Consistencia y estándares |
-
-**DESCRIPCIÓN DE PROBLEMAS:**
-
-**PROBLEMA #1: Para solicitar el transporte, el tutor debe escribir el ID de perfil del conductor**
-
-Severidad: 3<br>
-Heurística violada: Usability – Reconocer antes que recordar<br>
-Problema: en el detalle del estudiante, la sección «Servicio de transporte escolar» pide un ID numérico de conductor. El tutor conoce al conductor por su nombre o por su vehículo, no por un identificador interno.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-tutor-student-detail.png" alt="Problema 2: solicitud de transporte por ID de conductor" width="80%"></p>
-
-Recomendación: mostrar una lista o buscador de conductores con su nombre y vehículo declarado (US40) y permitir elegirlo.
-
-**PROBLEMA #2: El titular del ingreso se superpone a un círculo decorativo claro y pierde contraste**
-
-Severidad: 2<br>
-Heurística violada: Inclusive Design – Proporciona experiencias comparables<br>
-Problema: en la pantalla de ingreso, parte del texto blanco «Peace of mind on every trip» queda sobre un círculo verde claro. En esa zona el contraste baja y la lectura se dificulta para personas con baja visión.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-login.png" alt="Problema 3: contraste del titular" width="80%"></p>
-
-Recomendación: mover el círculo detrás de una zona sin texto o reducir su opacidad para mantener un contraste mínimo de 4.5:1.
-
-**PROBLEMA #3: La preferencia de avisos no críticos no se conserva entre sesiones**
-
-Severidad: 2<br>
-Heurística violada: Usability – Visibilidad del estado del sistema<br>
-Problema: el interruptor «Avisos no críticos» cambia de estado, pero la preferencia se pierde al cerrar la sesión porque los Web Services aún no la almacenan. La pantalla lo advierte con un texto, pero el usuario puede asumir que quedó guardada.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-driver-notifications.png" alt="Problema 4: preferencia de avisos" width="80%"></p>
-
-Recomendación: implementar el recurso de preferencias en el backend (US29) y confirmar visualmente cuando la preferencia se guarde.
-
-**PROBLEMA #4: Las fechas de nacimiento se muestran en formato técnico**
-
-Severidad: 1<br>
-Heurística violada: Usability – Coincidencia entre el sistema y el mundo real<br>
-Problema: la lista de estudiantes muestra la fecha de nacimiento como «2007-01-30», el formato de la API, sin adaptarlo al idioma seleccionado.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-tutor-students.png" alt="Problema 5: formato de fecha" width="80%"></p>
-
-Recomendación: mostrar la fecha con el formato local del idioma activo (por ejemplo, «30/01/2007» en es_419 y «Jan 30, 2007» en en_US).
-
-**PROBLEMA #5: El cambio de idioma usa controles distintos en el ingreso y dentro de la aplicación**
-
-Severidad: 1<br>
-Heurística violada: Usability – Consistencia y estándares<br>
-Problema: en la pantalla de ingreso el idioma se cambia con un botón que alterna «EN/ES», mientras que dentro de la aplicación se usa un menú desplegable con los nombres de los idiomas.
-
-<p align="center"><img src="./assets/chapter5/sprint3/app-tutor-settings.png" alt="Problema 6: selector de idioma" width="80%"></p>
-
-**UX Heuristics & Principles Evaluation**  
-**Usability – Inclusive Design – Information Architecture**
-
 **CARRERA:** Ingeniería de Software  
 **CURSO:** Desarrollo de Aplicaciones Open Source  
 **SECCIÓN:** 7760 
@@ -5394,13 +5302,9 @@ En el panel de conductores, la sección de estudiantes asignados únicamente mue
 
 Esta limitación dificulta que el conductor pueda acceder rápidamente a la información necesaria para identificar y atender adecuadamente a los estudiantes bajo su responsabilidad.
 
-![alt text](image.png)
-
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-1.png"
-       alt="Problema 1 - Información limitada de estudiantes en el panel del conductor" width="700">
-  <br>
-  <em>Figura. Captura del panel de conductores mostrando únicamente el nombre completo y el estado de los estudiantes asignados.</em>
+  <img src="image.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
 
 **Recomendación:**
@@ -5421,13 +5325,10 @@ En el apartado de registro de vehículos, la plataforma no contempla campos para
 
 Esta limitación reduce la cantidad de información disponible sobre los vehículos utilizados para el transporte escolar y dificulta que los tutores puedan conocer aspectos importantes relacionados con la documentación y seguridad del vehículo asignado a sus hijos.
 
-![alt text](image-1.png)
 
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-2.png"
+  <img src="image-1.png"
        alt="Problema 2 - Registro de vehículos sin documentación" width="700">
-  <br>
-  <em>Figura. Captura del formulario de registro de vehículos mostrando la ausencia de campos para registrar o adjuntar documentación relevante.</em>
 </p>
 
 **Recomendación:**
@@ -5448,13 +5349,11 @@ En la sección de planes y suscripciones, las descripciones presentan informaci�
 
 Esta falta de información dificulta que los conductores puedan comprender las diferencias entre los planes disponibles y tomar una decisión informada al momento de seleccionar una suscripción.
 
-![alt text](image-2.png)
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-3.png"
-       alt="Problema 3 - Planes sin especificación de funcionalidades" width="700">
-  <br>
-  <em>Figura. Captura de la sección de planes mostrando descripciones generales sin detallar las funcionalidades incluidas en cada alternativa.</em>
+  <img src="image-2.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
+
 
 **Recomendación:**
 
@@ -5474,12 +5373,9 @@ El dashboard principal del conductor podría aprovechar mejor su espacio para mo
 
 Esto ocasiona que el conductor deba navegar hacia otras secciones de la plataforma para consultar información que podría encontrarse disponible desde la pantalla principal, incrementando los pasos necesarios para acceder a sus actividades más frecuentes.
 
-![alt text](image-3.png)
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-4.png"
-       alt="Problema 4 - Dashboard del conductor sin información prioritaria" width="700">
-  <br>
-  <em>Figura. Captura del dashboard principal del conductor mostrando la distribución actual de sus elementos e información disponible.</em>
+  <img src="image-3.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
 
 **Recomendación:**
@@ -5500,13 +5396,9 @@ En la sección Current Trip del perfil del tutor, se presenta información relac
 
 Esta limitación impide que los tutores tengan una referencia visual de la ubicación y el progreso del vehículo durante el trayecto, reduciendo la visibilidad sobre el desplazamiento de sus hijos y la confianza en el seguimiento de la movilidad escolar.
 
-![alt text](image-7.png)
-
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-5.png"
-       alt="Problema 5 - Current Trip sin mapa de ubicación" width="700">
-  <br>
-  <em>Figura. Captura de la sección Current Trip del tutor mostrando la información del viaje sin una representación geográfica de la ubicación del estudiante.</em>
+  <img src="image-7.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
 
 **Recomendación:**
@@ -5529,12 +5421,9 @@ Entre los datos que podrían resultar necesarios se encuentran el número de DNI
 
 La ausencia de estos campos limita la disponibilidad de información que el conductor podría necesitar para actuar oportunamente ante incidentes o situaciones imprevistas durante los viajes escolares.
 
-![alt text](image-4.png)
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-6.png"
-       alt="Problema 6 - Formulario de estudiantes sin información complementaria" width="700">
-  <br>
-  <em>Figura. Captura del formulario de registro de estudiantes desde el perfil del tutor, mostrando los campos de información disponibles.</em>
+  <img src="image-4.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
 
 **Recomendación:**
@@ -5557,15 +5446,14 @@ Por ejemplo, en la sección de rutas de los estudiantes se muestra el texto "My 
 
 Este tipo de traducciones puede generar confusión en los usuarios y afectar la comprensión de las funcionalidades, además de reducir la consistencia y profesionalismo de la interfaz en su versión en inglés.
 
-![alt text](image-5.png)
-
-![alt text](image-6.png)
+<p align="center">
+  <img src="image-5.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
+</p>
 
 <p align="center">
-  <img src="public/assets/images-doc/heuristica-problema-7.png"
-       alt="Problema 7 - Traducción poco natural en la sección de rutas de los estudiantes" width="700">
-  <br>
-  <em>Figura. Captura de la sección My students' routes mostrando una descripción en inglés cuya traducción no utiliza términos adecuados para el contexto de la movilidad escolar.</em>
+  <img src="image-6.png"
+       alt="Problema 2 - Registro de vehículos sin documentación" width="700">
 </p>
 
 **Recomendación:**
