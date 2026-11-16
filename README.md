@@ -3196,7 +3196,7 @@ El Sprint Backlog 3 presenta las historias de usuario seleccionadas para el spri
 **Sprint Board público:** https://aipaca.atlassian.net/jira/software/projects/RMO/boards/2/backlog
 
 <div align="center">
-  <img src="./assets/chapter5/sprint-3.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
+  <img src="./assets/chapter-05/sprint-03/sprint3-backlog-board.png" alt="Sprint 3 Backlog Board en Jira" width="95%">
 </div>
 
 <br>
@@ -3663,13 +3663,13 @@ En primer lugar, se presentan las nuevas secciones implementadas en la Landing P
 ### Sección About-the-Product
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-about-the-product.png" alt="Sección About-the-Product en la Landing Page" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/landing-page/sprint3-execution-about-the-product.png" alt="Sección About-the-Product en la Landing Page" width="95%">
 </div>
 
 ### Sección About-the-Team
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-about-the-team.png" alt="Sección About-the-Team en la Landing Page" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/landing-page/sprint3-execution-about-the-team.png" alt="Sección About-the-Team en la Landing Page" width="95%">
 </div>
 
 <br>
@@ -3685,84 +3685,83 @@ En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplic
 **Para entrar solo ingrese 1 como ID en cualquiera de los campos**
 
 <div align="center">
-  <img src="./assets/chapter5/execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/sprint3-execution-temp-login.png" alt="Login temporal para la plataforma de Rumbo" width="95%">
 </div>
-
 
 ### Rumbo: Conductores
 
 #### Inicio
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-home.png" alt="Pagina principal de los Conductores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-home.png" alt="Pagina principal de los Conductores" width="95%">
 </div>
 
 #### Estudiantes
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-students.png" alt="Panel de Estudiantes de los Conductores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-students.png" alt="Panel de Estudiantes de los Conductores" width="95%">
 </div>
 
 #### Vehicles
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-vehicles-dashboard.png" alt="Panel de Vehiculos del Conductor" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-vehicles-dashboard.png" alt="Panel de Vehiculos del Conductor" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-create-vehicle.png" alt="Registrar un nuevo vehiculo" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-create-vehicle.png" alt="Registrar un nuevo vehiculo" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-edit-vehicle.png" alt="Editar la información de un vehiculo" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-edit-vehicle.png" alt="Editar la información de un vehiculo" width="95%">
 </div>
 
 #### Rutas
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-routes-dashboard.png" alt="Panel de rutas creadas por los Conductores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-routes-dashboard.png" alt="Panel de rutas creadas por los Conductores" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-create-route-1.png" alt="Paso 1 para crear una ruta" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-create-route-1.png" alt="Paso 1 para crear una ruta" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-create-route-2.png" alt="Paso 2 para crear una ruta" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-create-route-2.png" alt="Paso 2 para crear una ruta" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-create-route-3.png" alt="Paso 3 para crear una ruta" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-create-route-3.png" alt="Paso 3 para crear una ruta" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-create-route-4.png" alt="Paso 4 para crear una ruta" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-create-route-4.png" alt="Paso 4 para crear una ruta" width="95%">
 </div>
 
 #### Notificaciones
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-notifications.png" alt="Panel de las Notificaciones recibidas" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-notifications.png" alt="Panel de las Notificaciones recibidas" width="95%">
 </div>
 
 #### Plan y facturación
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-plans.png" alt="Panel de Planes disponibles" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-plans.png" alt="Panel de Planes disponibles" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-change-subscription.png" alt="Panel para cambiar de plan de subscripcion" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-change-subscription.png" alt="Panel para cambiar de plan de subscripcion" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-cancel-subscription.png" alt="Dialogo de cancelación de Subscripcion" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-cancel-subscription.png" alt="Dialogo de cancelación de Subscripcion" width="95%">
 </div>
 
 #### Configuración
 
 <div align="center">
-  <img src="./assets/chapter5/execution-driver-settings.png" alt="Panel de configuración de los Conductores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/driver/sprint3-execution-driver-settings.png" alt="Panel de configuración de los Conductores" width="95%">
 </div>
 
 ### Rumbo: Tutores
@@ -3770,43 +3769,43 @@ En segundo lugar, se presentan las capturas de las nuevas interfaces de la aplic
 #### Inicio
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-home.png" alt="Pagina Principal de los Tutores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-home.png" alt="Pagina Principal de los Tutores" width="95%">
 </div>
 
 #### Viaje Actual
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-current-trip.png" alt="Panel viajes en curso del Estudiante" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-current-trip.png" alt="Panel viajes en curso del Estudiante" width="95%">
 </div>
 
 #### Notificaciones
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-notifications.png" alt="Panel de notificaciones de los Tutores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-notifications.png" alt="Panel de notificaciones de los Tutores" width="95%">
 </div>
 
 #### Estudiantes
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-students-dashboard.png" alt="Panel de Estudiantes de los Tutores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-students-dashboard.png" alt="Panel de Estudiantes de los Tutores" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-new-student.png" alt="Registro de un estudiante" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-new-student.png" alt="Registro de un estudiante" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-student-information.png" alt="Pagina de visualización de la información de un Estudiante" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-student-information.png" alt="Pagina de visualización de la información de un Estudiante" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-edit-student.png" alt="Editar la información de un Estudiante" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-edit-student.png" alt="Editar la información de un Estudiante" width="95%">
 </div>
 
 #### Configuración
 
 <div align="center">
-  <img src="./assets/chapter5/execution-tutor-settings.png" alt="Panel de configuración de los Tutores" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/frontend-application/tutor/sprint3-execution-tutor-settings.png" alt="Panel de configuración de los Tutores" width="95%">
 </div>
 
 <br>
@@ -3817,94 +3816,39 @@ Por último, se presenta Swagger, donde se documentan todos los endpoints implem
 
 **URL pública del Repositorio de los Web Services:** https://github.com/AIpaca-OS/web-services
 
-![alt text](image-9.png)
-
-![alt text](image-10.png)
-
-![alt text](image-11.png)
-
-![alt text](image-12.png)
-
-![alt text](image-13.png)
-
-![alt text](image-14.png)
+**Importante:** Para utilizar los endpoints directamente del swagger es necesario cambiar el servidor de **http://localhost:8080 - Local Development Environment** a **https://web-services-gjgh.onrender.com - Production Environment**, de lo contrario, presentara problemas de CORDS.
 
 <div align="center">
-  <img src="./assets/chapter5/backend-swagger.png" alt="Swagger de Rumbo Web Services" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-indication.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
 
-### Plans
+#### Swagger Endpoints
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-1.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
-
-### Service Enrollments
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-2.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
-
-### Incidents
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-3.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
-
-### Trips
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-4.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
-
-### Vehicles
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-5.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
 
-### Data Deletion Requests
+#### Schemas
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/execution-evidence/backend-services/sprint3-execution-swagger-6.png" alt="Swagger de Rumbo Web Services" width="95%">
 </div>
-
-### Profiles
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
-</div>
-
-### Subscriptions
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
-</div>
-
-### Routes
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
-</div>
-
-### Delays
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
-</div>
-
-### Notifications
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
-</div>
-
-### Students
-
-<div align="center">
-  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
-</div>
-
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -3913,7 +3857,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Plans
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-plans.png" alt="Plans Endpoint" width="95%">
 </div>
 
 <br>
@@ -3970,7 +3914,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Service Enrollments
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-service-enrollments.png" alt="Service Enrollments Endpoint" width="95%">
 </div>
 
 <br>
@@ -4076,7 +4020,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Incidents
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-incidents.png" alt="Incidents Endpoint" width="95%">
 </div>
 
 <br>
@@ -4162,7 +4106,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Trips
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-trips.png" alt="Trips Endpoint" width="95%">
 </div>
 
 <br>
@@ -4278,7 +4222,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Vehicles
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-vehicles.png" alt="Vehicles Endpoint" width="95%">
 </div>
 
 <br>
@@ -4355,7 +4299,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Data Deletion Requests
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-deletion-request.png" alt="Data Deletion Requests Endpoint" width="95%">
 </div>
 
 <br>
@@ -4431,7 +4375,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Profiles
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-profiles.png" alt="Profiles Endpoint" width="95%">
 </div>
 
 <br>
@@ -4497,7 +4441,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Subscriptions
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-subscriptions.png" alt="Subscriptions Endpoint" width="95%">
 </div>
 
 <br>
@@ -4574,7 +4518,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Routes
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-routes.png" alt="Routes Endpoint" width="95%">
 </div>
 
 <br>
@@ -4711,7 +4655,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Delays
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-delays.png" alt="Delays Endpoint" width="95%">
 </div>
 
 <br>
@@ -4777,7 +4721,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Notifications
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-notifications.png" alt="Notifications Endpoint" width="95%">
 </div>
 
 <br>
@@ -4864,7 +4808,7 @@ Dado que durante el Sprint 3 se desplegó el backend de Rumbo mediante Web Servi
 ### Students
 
 <div align="center">
-  <img src="./assets/chapter5/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
+  <img src="./assets/chapter-05/sprint-03/services-documentation-evidence/backend-endpoint-students.png" alt="Students Endpoint" width="95%">
 </div>
 
 <br>
@@ -4964,11 +4908,11 @@ Se realizó el despliegue de los servicios backend de Rumbo utilizando la plataf
 En primer lugar, se creó una instancia de base de datos PostgreSQL en Render, configurando los parámetros necesarios para su creación, como el nombre de la base de datos, el usuario, la región y las credenciales de acceso. Una vez completada la configuración, Render proporcionó los datos de conexión que permitirían establecer la comunicación con la base de datos desde la aplicación backend.
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+  <img src="./assets/chapter-05/sprint-03//software-deployment-evidence/data-base/sprint3-deploy-db-1.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
+  <img src="./assets/chapter-05/sprint-03//software-deployment-evidence/data-base/sprint3-deploy-db-2.png" alt="Evidencia del Deploy de la Base de Datos" width="95%">
 </div>
 
 Posteriormente, se modificó la configuración del backend para reemplazar los parámetros de conexión locales por los correspondientes a la base de datos desplegada en Render. Para ello, se actualizaron los datos de conexión, incluyendo la URL y las credenciales de acceso, de modo que la aplicación pudiera conectarse correctamente al entorno remoto y mantener la persistencia de la información.
@@ -4976,31 +4920,31 @@ Posteriormente, se modificó la configuración del backend para reemplazar los p
 Finalmente, se desplegó la aplicación backend en Render, vinculándola con el repositorio de GitHub y configurando los parámetros necesarios para su compilación y ejecución. Una vez finalizado el proceso, se obtuvo una URL pública que permite acceder a los Web Services implementados y realizar solicitudes a los distintos endpoints de la API de Rumbo.
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/backend-services/sprint3-deploy-backend-1.png" alt="Evidencia del Deploy de Backend" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
-</div>
-
-
-<div align="center">
-  <img src="./assets/chapter5/deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/backend-services/sprint3-deploy-backend-2.png" alt="Evidencia del Deploy de Backend" width="95%">
 </div>
 
 
 <div align="center">
-  <img src="./assets/chapter5/deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/backend-services/sprint3-deploy-backend-3.png" alt="Evidencia del Deploy de Backend" width="95%">
+</div>
+
+
+<div align="center">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/backend-services/sprint3-deploy-backend-4.png" alt="Evidencia del Deploy de Backend" width="95%">
 </div>
 
 ### Servicios Desplegados
 
 <div align="center">
-  <img src="./assets/chapter5/deployed-services.png" alt="Evidencia del Deploy de Backend" width="95%">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/sprint3-deploy-services.png" alt="Evidencia del Deploy de Backend" width="95%">
 </div>
 
 <div align="center">
-  <img src="./assets/chapter5/backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
+  <img src="./assets/chapter-05/sprint-03/software-deployment-evidence/sprint3-deploy-backend-swagger.png" alt="Evidencia del Deploy de Backend" width="95%">
 </div>
 
 
@@ -5017,19 +4961,23 @@ El repositorio Frontend Web Application contiene la implementación de la plataf
 **Resumen de actividad (Pulse)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-frontend-pulse.jpg" alt="Frontend Pulse" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/frontend-application/sprint3-frontend-pulse.jpg" alt="Frontend Pulse" width="95%">
 </div>
+
+<br>
 
 **Colaboradores (Contributors)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-frontend-contributors.jpg" alt="Frontend Contributors" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/frontend-application/sprint3-frontend-contributors.jpg" alt="Frontend Contributors" width="95%">
 </div>
+
+<br>
 
 **Gráfico de red (Network Graph)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-frontend-network.jpg" alt="Frontend Network Graph" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/frontend-application/sprint3-frontend-network.jpg" alt="Frontend Network Graph" width="95%">
 </div>
 
 <br>
@@ -5048,19 +4996,23 @@ El repositorio Web Services contiene la implementación del backend utilizando S
 **Resumen de actividad (Pulse)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-backend-pulse.jpg" alt="Backend Pulse" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/backend-services/sprint3-backend-pulse.jpg" alt="Backend Pulse" width="95%">
 </div>
+
+<br>
 
 **Colaboradores (Contributors)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-backend-contributors.jpg" alt="Backend Contributors" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/backend-services/sprint3-backend-contributors.jpg" alt="Backend Contributors" width="95%">
 </div>
+
+<br>
 
 **Gráfico de red (Network Graph)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-backend-network.jpg" alt="Backend Network Graph" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/backend-services/sprint3-backend-network.jpg" alt="Backend Network Graph" width="95%">
 </div>
 
 <br>
@@ -5079,8 +5031,9 @@ El repositorio Landing Page complementa la aplicación principal mediante la pre
 **Colaboradores (Contributors)**
 
 <div align="center">
-  <img src="./assets/chapter5/sprint3-landing-contributors.jpg" alt="Landing Page Contributors" width="95%">
+  <img src="./assets/chapter-05/sprint-03/team-collaboration-insights/landing-page/sprint3-landing-contributors.jpg" alt="Landing Page Contributors" width="95%">
 </div>
+<br>
 
 Referencias del repositorio:
 - [Landing Page - Commits (main)](https://github.com/AIpaca-OS/landing-page/commits/main)
